@@ -1,0 +1,213 @@
+{
+    "companySummary": "Tavyn AI is an email-native blog operations tool for founder-led SaaS teams. It helps founders plan, generate, revise, approve, and publish SEO-focused blog content without managing a heavy content workflow. Tavyn builds content plans from a company profile, generates SEO briefs, asks founder questions when needed, creates outlines and blog drafts, and prepares content for direct publishing into a company website through GitHub or CMS workflows.",
+    "primaryICP": {
+        "name": "Founder-led SaaS teams that need consistent SEO blog operations",
+        "description": "Early-stage and growth-stage SaaS founders who know organic content matters but do not have the time, process, or internal team to consistently plan, write, revise, and publish high-quality SEO blog posts. They want agency-like SEO execution without hiring an agency or managing a complicated content tool.",
+        "industries": [
+            "B2B SaaS",
+            "AI SaaS",
+            "Developer tools",
+            "Marketing technology",
+            "Sales technology",
+            "Productivity software",
+            "Vertical SaaS",
+            "Founder-led software companies"
+        ],
+        "companySize": [
+            "1-10 employees",
+            "11-50 employees",
+            "Founder-led teams",
+            "Early-stage SaaS startups",
+            "Lean software teams"
+        ],
+        "roles": [
+            "Founder",
+            "Co-founder",
+            "CEO",
+            "Solo founder",
+            "Head of Growth",
+            "Marketing Lead",
+            "Content Lead"
+        ],
+        "seniority": [
+            "Founder/Owner",
+            "C-suite",
+            "Head of Department",
+            "Manager"
+        ],
+        "technicalLevel": "medium",
+        "budgetLevel": "medium"
+    },
+    "pains": [
+        "Difficulty publishing SEO blog content consistently",
+        "Lack of time to research, outline, write, revise, and publish blog posts",
+        "No clear content plan or SEO roadmap",
+        "Random blog ideas that do not connect to business goals",
+        "Generic AI-written content that lacks founder perspective",
+        "Manual back-and-forth between SEO research, writing, editing, and publishing",
+        "Content tools that stop at drafts instead of helping with the full publishing workflow",
+        "Difficulty keeping blog content aligned with product positioning and ICP",
+        "Limited internal bandwidth to manage freelancers, agencies, or content calendars",
+        "Friction publishing content into code-based websites or GitHub-backed landing pages"
+    ],
+    "goals": [
+        "Build topical authority around the company\u2019s core product category",
+        "Publish SEO blog content on a consistent schedule",
+        "Turn company positioning and founder perspective into useful content",
+        "Create content plans that explain what to publish and why",
+        "Reduce founder time spent managing content operations",
+        "Generate high-quality SEO briefs, outlines, and blog drafts",
+        "Publish content directly to the company website with minimal manual work",
+        "Drive organic traffic, product awareness, and waitlist or trial signups",
+        "Replace scattered content workflows with one lightweight system",
+        "Make SEO execution feel simple, visible, and founder-controlled"
+    ],
+    "buyingTriggers": [
+        "Founder wants to start investing in SEO but does not know what to publish",
+        "Company is preparing for a launch, LTD campaign, or early growth push",
+        "Founder is tired of inconsistent blog publishing",
+        "Team has tried AI writing tools but still struggles to ship content",
+        "Company has a code-based website and wants blog posts published without manual developer work",
+        "Founder wants agency-like content strategy without paying agency retainers",
+        "Competitors are ranking for relevant topics and the company wants to catch up",
+        "Founder needs a lightweight way to approve and revise content"
+    ],
+    "objections": [
+        "Concerns that AI-generated blog content will sound generic",
+        "Worries about giving GitHub or CMS access",
+        "Questions about whether Tavyn can understand the company\u2019s positioning deeply enough",
+        "Concerns about SEO taking too long to show results",
+        "Uncertainty around whether automated content can match agency quality",
+        "Fear of publishing inaccurate, off-brand, or low-quality content",
+        "Questions about how much founder input is still required",
+        "Concern that the tool may create content but not drive meaningful business outcomes"
+    ],
+    "desiredOutcomes": [
+        "A clear SEO content plan with topics, clusters, and publishing order",
+        "Consistent blog publishing without heavy founder involvement",
+        "Better organic visibility for product-relevant search terms",
+        "Content that reflects the founder\u2019s perspective and product positioning",
+        "Reduced time spent managing content workflows",
+        "Higher-quality SEO briefs and outlines before writing starts",
+        "A simple approval loop through email",
+        "Published blog posts that are integrated directly into the company website",
+        "More qualified organic traffic, waitlist signups, demo requests, or trial starts",
+        "A lightweight alternative to hiring an SEO agency or managing freelancers"
+    ],
+    "messaging": {
+        "valueProposition": "Tavyn helps founder-led SaaS teams run their SEO blog operation from their inbox, turning company positioning into content plans, SEO briefs, founder-informed drafts, and publish-ready blog posts that can go straight to their site.",
+        "positioning": "Tavyn is not just an AI blog writer. It is an email-native blog operations layer for SaaS founders who want agency-like SEO execution without managing an agency, a content team, or a complex workflow.",
+        "tone": [
+            "clear",
+            "practical",
+            "founder-friendly",
+            "confident",
+            "strategic",
+            "lightweight",
+            "modern"
+        ],
+        "wordsToUse": [
+            "email-native",
+            "blog operations",
+            "founder-led SaaS",
+            "SEO content plan",
+            "content roadmap",
+            "SEO brief",
+            "founder perspective",
+            "direct publishing",
+            "GitHub publishing",
+            "approval workflow",
+            "organic growth",
+            "content consistency",
+            "lightweight workflow",
+            "publish straight to your site"
+        ],
+        "wordsToAvoid": [
+            "spam",
+            "content farm",
+            "cheap AI content",
+            "guaranteed rankings",
+            "instant SEO results",
+            "fully autonomous with no oversight",
+            "one-size-fits-all",
+            "keyword stuffing",
+            "growth hack",
+            "set it and forget it"
+        ]
+    },
+    "seo": {
+        "coreTopics": [
+            "SEO content planning for SaaS",
+            "Founder-led blog operations",
+            "AI SEO content workflows",
+            "SEO briefs for SaaS blogs",
+            "Content calendars for founder-led SaaS",
+            "GitHub blog publishing",
+            "Email-native content workflows",
+            "AI blog generation for SaaS",
+            "Topical authority for SaaS startups",
+            "Automated SEO content operations"
+        ],
+        "blogAngles": [
+            "How founder-led SaaS teams can build a consistent blog workflow",
+            "Why AI blog writers are not enough for SaaS SEO",
+            "How to create an SEO content plan before writing blog posts",
+            "How to turn founder perspective into SEO content",
+            "How to publish SEO blogs directly to a code-based website",
+            "What SaaS founders should know before hiring an SEO agency",
+            "How to build topical authority without a full content team",
+            "How email-based approval workflows can simplify content operations",
+            "How to go from company profile to SEO brief to blog draft",
+            "How SaaS startups can use content clusters to plan better blogs"
+        ],
+        "commercialKeywords": [
+            "AI SEO tool for SaaS",
+            "blog automation software for SaaS",
+            "SEO content planning tool",
+            "AI blog writer for SaaS",
+            "content operations software",
+            "SEO blog automation",
+            "blog publishing automation",
+            "AI content workflow tool",
+            "SEO agency alternative for startups",
+            "GitHub blog publishing tool"
+        ],
+        "informationalKeywords": [
+            "how to create an SEO content plan",
+            "how to write SEO blogs for SaaS",
+            "how to build topical authority for SaaS",
+            "how often should SaaS companies publish blog posts",
+            "how to create an SEO brief",
+            "how to turn customer questions into blog posts",
+            "how to manage a SaaS blog as a founder",
+            "how to publish blog posts to a Next.js site",
+            "SEO content workflow for startups",
+            "founder-led content strategy"
+        ],
+        "funnelStages": [
+            "Awareness",
+            "Consideration",
+            "Purchase",
+            "Retention"
+        ]
+    },
+    "confidence": {
+        "score": 78,
+        "missingInfo": [
+            "Exact pricing model is not finalized",
+            "Customer case studies are not available yet",
+            "Quantified SEO results are not available yet",
+            "Exact CMS and GitHub publishing support scope may still change",
+            "Final ICP may narrow after LTD users and design partners give feedback",
+            "Security details around GitHub access need to be finalized for customer-facing messaging"
+        ],
+        "assumptions": [
+            "Primary ICP is founder-led B2B SaaS teams rather than agencies or enterprise marketing teams",
+            "Tavyn should prioritize blog operations and direct publishing over generic AI writing",
+            "The main wedge is reducing founder effort while keeping founder visibility and approval",
+            "Email-native workflow is a key product differentiator",
+            "GitHub or code-based publishing is a meaningful differentiator for SaaS landing pages",
+            "The first content generation MVP will focus on content planning, SEO briefs, outlines, and blog drafts before advanced reporting or full SEO audits"
+        ]
+    }
+}

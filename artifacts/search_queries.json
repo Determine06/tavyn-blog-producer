@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-05-29T00:13:23.164Z",
+  "companyName": "Tavyn AI",
+  "totalQueries": 12,
+  "queries": [
+    {
+      "id": "sq_01",
+      "query": "how to create an SEO content plan",
+      "queryType": "problem_aware",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "whySearchThis": "Tests how buyers research the problem before they know they need Tavyn's full blog operations workflow.",
+      "sourceSignals": [
+        "seo.informationalKeywords",
+        "pains",
+        "primaryICP.description"
+      ]
+    },
+    {
+      "id": "sq_02",
+      "query": "how to write SEO blogs for SaaS",
+      "queryType": "problem_aware",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "whySearchThis": "Tests how buyers research the problem before they know they need Tavyn's full blog operations workflow.",
+      "sourceSignals": [
+        "seo.informationalKeywords",
+        "pains",
+        "primaryICP.description"
+      ]
+    },
+    {
+      "id": "sq_03",
+      "query": "how to build topical authority for SaaS",
+      "queryType": "problem_aware",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "whySearchThis": "Tests how buyers research the problem before they know they need Tavyn's full blog operations workflow.",
+      "sourceSignals": [
+        "seo.informationalKeywords",
+        "pains",
+        "primaryICP.description"
+      ]
+    },
+    {
+      "id": "sq_04",
+      "query": "SEO content planning for SaaS",
+      "queryType": "core_category",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "whySearchThis": "Tests the core category language Tavyn may need to educate and rank around.",
+      "sourceSignals": [
+        "seo.coreTopics",
+        "companySummary",
+        "primaryICP.name"
+      ]
+    },
+    {
+      "id": "sq_05",
+      "query": "topical authority for SaaS startups",
+      "queryType": "solution_aware",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "whySearchThis": "Tests workflow and system language buyers use once they know they need a better content process.",
+      "sourceSignals": [
+        "goals",
+        "desiredOutcomes",
+        "messaging.valueProposition"
+      ]
+    },
+    {
+      "id": "sq_06",
+      "query": "SEO content workflow for startups",
+      "queryType": "solution_aware",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "whySearchThis": "Tests workflow and system language buyers use once they know they need a better content process.",
+      "sourceSignals": [
+        "goals",
+        "desiredOutcomes",
+        "messaging.valueProposition"
+      ]
+    },
+    {
+      "id": "sq_07",
+      "query": "founder-led content strategy",
+      "queryType": "solution_aware",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "whySearchThis": "Tests workflow and system language buyers use once they know they need a better content process.",
+      "sourceSignals": [
+        "goals",
+        "desiredOutcomes",
+        "messaging.valueProposition"
+      ]
+    },
+    {
+      "id": "sq_08",
+      "query": "publish blog posts to Next.js site",
+      "queryType": "product_wedge",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "whySearchThis": "Tests whether the SERP connects SEO blog operations with direct publishing to code-based SaaS sites.",
+      "sourceSignals": [
+        "companySummary",
+        "desiredOutcomes",
+        "seo.informationalKeywords"
+      ]
+    },
+    {
+      "id": "sq_09",
+      "query": "GitHub blog publishing tool",
+      "queryType": "product_wedge",
+      "funnelStage": "bofu",
+      "readerStage": "product-aware",
+      "whySearchThis": "Tests Tavyn's code-based publishing wedge against existing GitHub and static-site publishing options.",
+      "sourceSignals": [
+        "companySummary",
+        "messaging.wordsToUse",
+        "pains"
+      ]
+    },
+    {
+      "id": "sq_10",
+      "query": "AI SEO tool for SaaS",
+      "queryType": "commercial",
+      "funnelStage": "bofu",
+      "readerStage": "product-aware",
+      "whySearchThis": "Tests purchase-stage language around tools, software, and alternatives buyers may compare against Tavyn.",
+      "sourceSignals": [
+        "seo.commercialKeywords",
+        "messaging.positioning",
+        "buyingTriggers"
+      ]
+    },
+    {
+      "id": "sq_11",
+      "query": "AI blog writer for SaaS",
+      "queryType": "vendor_aware",
+      "funnelStage": "bofu",
+      "readerStage": "vendor-aware",
+      "whySearchThis": "Tests purchase-stage language around tools, software, and alternatives buyers may compare against Tavyn.",
+      "sourceSignals": [
+        "seo.commercialKeywords",
+        "messaging.positioning",
+        "buyingTriggers"
+      ]
+    },
+    {
+      "id": "sq_12",
+      "query": "best AI SEO tools for SaaS",
+      "queryType": "comparison",
+      "funnelStage": "bofu",
+      "readerStage": "vendor-aware",
+      "whySearchThis": "Tests comparison SERPs where Tavyn may eventually need to be positioned against AI SEO tools.",
+      "sourceSignals": [
+        "seo.commercialKeywords",
+        "objections",
+        "messaging.positioning"
+      ]
+    }
+  ]
+}
