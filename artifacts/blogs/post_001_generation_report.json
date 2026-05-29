@@ -1,0 +1,13 @@
+{
+  "plannedItemId": "post_001",
+  "title": "How Founder-Led SaaS Teams Can Build a Consistent SEO Blog Workflow Without Managing Complex Tools",
+  "slug": "founder-led-saas-seo-blog-workflow",
+  "checks": {
+    "hasNoEmDashes": true,
+    "estimatedWordCount": 1167,
+    "includesPrimaryKeyword": true,
+    "includesFounderContext": true,
+    "includesSoftProductTieIn": true
+  },
+  "generatedAt": "2026-05-29T02:03:56.662Z"
+}

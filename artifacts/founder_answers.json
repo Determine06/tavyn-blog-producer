@@ -1,0 +1,27 @@
+{
+    "answerSetId": "answers_post_001",
+    "plannedItemId": "post_001",
+    "briefId": "brief_post_001",
+    "createdAt": "2026-05-29T00:00:00.000Z",
+    "status": "answered",
+    "answers": [
+        {
+            "questionId": "q1",
+            "gapType": "founder_pov",
+            "question": "What do founders usually get wrong about staying consistent with SEO blogs?",
+            "rawAnswer": "I think one of the things that founders get wrong is that, like, is the fact that it is a very compounding process, and it takes a while, almost three to six months, um, for SEO blogs to actually convert. And when founders are focused on a lot of other things, like development, talking to customers, um, improving their product, reducing churn. That's why we kind of use, we have that email feature because it is, because making it email native makes it much easier for founders to stay consistent as we ask them questions, get it approved, and make revisions right through our email where, like, the, the, uh, and they don't have to go on like a dashboard or anything else like that."
+        },
+        {
+            "questionId": "q2",
+            "gapType": "founder_pov",
+            "question": "Why is founder control and visibility important in managing SEO blog workflows?",
+            "rawAnswer": "This climate, like one of the biggest issues with SEO is that a lot of people think that posting 30 AI-generated slop content will give them optimization, but what really gives an SEO, like what really makes SEO strong is adding authentic opinion and authentic feedback into every single question and giving that authentic founder view rather than just having AI generate everything. Because what that does is it distinguishes your blog and it distinguishes your SEO from everyone else, which Google has said it a lot of times, like in their SEO docs and so have a lot of agencies and all of that, that authenticity is very important. That's why a lot of agencies do a lot of interviews before they write a blog post."
+        },
+        {
+            "questionId": "q3",
+            "gapType": "product_accuracy",
+            "question": "Which Tavyn workflow pieces should we mention as live today?",
+            "rawAnswer": "that one of our main pieces is obviously our GitHub publishing. We run an analysis of the questions, a SERP analysis, of like common questions that customers may ask that should be leading to your page. And also, some of the other features are like our email native publishing and all of that."
+        }
+    ]
+}

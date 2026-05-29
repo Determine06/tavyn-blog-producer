@@ -1,0 +1,211 @@
+{
+  "briefId": "brief_post_001",
+  "plannedItemId": "post_001",
+  "companyName": "Tavyn AI",
+  "createdAt": "2026-05-29T02:15:00.000Z",
+  "status": "draft",
+  "sourceContentPlanItem": {
+    "workingTitle": "How Founder-Led SaaS Teams Can Build a Consistent SEO Blog Workflow Without Managing Complex Tools",
+    "clusterName": "Founder-led SEO blog operations",
+    "funnelStage": "tofu",
+    "readerStage": "problem-aware",
+    "searchIntent": "informational"
+  },
+  "searchTarget": {
+    "primaryKeyword": "SEO blog workflow for SaaS founders",
+    "targetQueryCluster": [
+      "SEO blog workflow for SaaS founders",
+      "founder-led content strategy",
+      "SEO content workflow for startups",
+      "how to write SEO blogs for SaaS"
+    ],
+    "searchIntent": "informational",
+    "contentGoal": "Educate founder-led SaaS teams on building a consistent, lightweight SEO blog workflow that avoids complex tools and maximizes founder control."
+  },
+  "keywordMap": {
+    "primaryKeyword": {
+      "term": "SEO blog workflow for SaaS founders",
+      "required": true,
+      "recommendedPlacements": [
+        "title",
+        "meta title",
+        "meta description",
+        "H1",
+        "early paragraphs",
+        "H2 headings"
+      ],
+      "usageGuidance": "Use naturally and sparingly to avoid keyword stuffing; emphasize founder leadership and strategy aspects in SEO blog workflows."
+    },
+    "secondaryKeywords": [
+      {
+        "term": "SEO content workflow for startups",
+        "recommendedPlacements": [
+          "introduction",
+          "H2 or H3 subheadings",
+          "body paragraphs"
+        ]
+      },
+      {
+        "term": "how to write SEO blogs for SaaS",
+        "recommendedPlacements": [
+          "body content",
+          "examples section",
+          "conclusion"
+        ]
+      }
+    ],
+    "semanticTermsToInclude": [
+      "email-native blog operations",
+      "founder control",
+      "content consistency",
+      "lightweight workflow",
+      "direct publishing",
+      "approval workflow",
+      "organic growth",
+      "SEO blog operations",
+      "founder-led content strategy"
+    ],
+    "termsToAvoidOrUseCarefully": [
+      "spam",
+      "content farm",
+      "cheap AI content",
+      "guaranteed rankings",
+      "instant SEO results",
+      "fully autonomous with no oversight",
+      "one-size-fits-all",
+      "keyword stuffing",
+      "growth hack",
+      "set it and forget it"
+    ]
+  },
+  "serpRequirements": {
+    "dominantContentTypes": [
+      "blog posts",
+      "how-to guides",
+      "video tutorials"
+    ],
+    "commonThemesToCover": [
+      "founder-led SEO blog workflow challenges",
+      "simplifying SEO content operations",
+      "importance of founder visibility and control",
+      "email-native approval and revision workflows",
+      "avoiding complex SEO tools",
+      "founder-focused content planning",
+      "direct publishing to SaaS sites"
+    ],
+    "contentGapsToExploit": [
+      "lack of founder-led SaaS blog operations workflow content",
+      "absence of email-native blog operations workflows",
+      "missing integration of publishing workflows with SEO planning",
+      "limited SaaS-specific SEO blog operations guidance"
+    ],
+    "informationGainRequirement": "Provide unique insights on email-native workflows and founder control in SEO blog operations, plus practical steps to build consistent workflows without complex tools."
+  },
+  "onPageSeo": {
+    "recommendedSlug": "founder-led-saas-seo-blog-workflow",
+    "metaTitle": {
+      "draft": "SEO Blog Workflow for SaaS Founders",
+      "maxLength": 60,
+      "mustInclude": [
+        "SEO",
+        "Blog Workflow",
+        "SaaS Founders"
+      ]
+    },
+    "metaDescription": {
+      "draft": "Learn how founder-led SaaS teams can build a consistent SEO blog workflow without managing complex tools using lightweight, email-native operations.",
+      "maxLength": 160,
+      "mustInclude": [
+        "founder-led SaaS",
+        "SEO blog workflow",
+        "lightweight",
+        "email-native"
+      ]
+    },
+    "h1": "How Founder-Led SaaS Teams Can Build a Consistent SEO Blog Workflow Without Managing Complex Tools",
+    "headingRequirements": {
+      "mustIncludeH2sAbout": [
+        "Challenges founders face managing SEO blog workflows",
+        "Benefits of a lightweight, email-native SEO blog workflow",
+        "Key components of a founder-led SEO blog operations system",
+        "How to maintain founder control and visibility",
+        "Simplifying approval and publishing processes",
+        "Avoiding common pitfalls with complex SEO tools"
+      ],
+      "avoidDuplicateH1": true
+    },
+    "recommendedWordCount": {
+      "min": 1200,
+      "target": 1800,
+      "max": 2400
+    }
+  },
+  "technicalPublishing": {
+    "canonicalSlug": "founder-led-saas-seo-blog-workflow",
+    "contentType": "blog_post",
+    "suggestedTags": [
+      "founder-led SEO",
+      "SaaS SEO",
+      "SEO workflow",
+      "content operations",
+      "email-native",
+      "blog publishing"
+    ],
+    "schemaMarkup": {
+      "recommendedType": "BlogPosting",
+      "includeFaqSchema": false,
+      "includeHowToSchema": false,
+      "reason": "The post is an informational blog post, not a step-by-step procedural guide."
+    },
+    "imageRequirements": {
+      "recommendedHeroImageAlt": "Founder working on a laptop managing SEO blog workflow",
+      "suggestedDiagram": "Diagram illustrating an email-native SEO blog workflow for founder-led SaaS teams"
+    }
+  },
+  "contentCoverageChecklist": [
+    "Explain common challenges founders face with complex SEO blog workflows",
+    "Describe the concept and benefits of email-native blog operations",
+    "Outline a lightweight SEO blog workflow tailored for founder-led SaaS teams",
+    "Emphasize the importance of founder control and visibility in content operations",
+    "Detail how to simplify approval and revision processes via email",
+    "Discuss how to avoid managing multiple complex SEO tools",
+    "Introduce the concept of direct publishing to SaaS websites (without heavy developer involvement)",
+    "Provide actionable tips for founders to maintain consistency in SEO blogging",
+    "Highlight how Tavyn’s approach addresses these pain points without overpromising"
+  ],
+  "seoRiskWarnings": [
+    "Avoid overusing exact-match keywords to prevent keyword stuffing penalties",
+    "Do not overstate Tavyn’s product capabilities or guarantee SEO rankings",
+    "Avoid generic AI content claims that may sound untrustworthy to founders",
+    "Be cautious about security concerns related to GitHub access; do not make unsupported claims",
+    "Avoid using banned or negative terms like 'spam', 'content farm', or 'instant SEO results'",
+    "Do not imply SEO results will be immediate or fully autonomous without founder oversight"
+  ],
+  "founderQuestionTriggers": {
+    "askFounder": true,
+    "reason": "The post requires proprietary founder perspective on SEO blog workflow challenges and the importance of founder control to differentiate Tavyn’s positioning.",
+    "maxQuestions": 3,
+    "fallbackAllowed": true,
+    "questionAreas": [
+      {
+        "gapType": "founder_pov",
+        "whyNeeded": "To provide authentic insights on common challenges founders face managing SEO blog workflows.",
+        "suggestedQuestion": "What do founders usually get wrong about staying consistent with SEO blogs?"
+      },
+      {
+        "gapType": "founder_pov",
+        "whyNeeded": "To highlight why founder control and visibility are critical in SEO blog operations.",
+        "suggestedQuestion": "Why is founder control and visibility important in managing SEO blog workflows?"
+      },
+      {
+        "gapType": "product_accuracy",
+        "whyNeeded": "To clarify which Tavyn workflow features best illustrate the email-native, lightweight approach for founders.",
+        "suggestedQuestion": "Which Tavyn workflow pieces should we mention as live today?"
+      }
+    ]
+  },
+  "nextRecommendedAction": {
+    "type": "generate_founder_questions",
+    "reason": "Founder input is needed to ensure the article authentically reflects founder challenges and Tavyn’s unique workflow benefits before outline creation."
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "planId": "plan_2026_05_tavyn_ai",
+  "companyName": "Tavyn AI",
+  "createdAt": "2026-05-29T02:00:00.000Z",
+  "durationWeeks": 4,
+  "postsPerWeek": 3,
+  "totalPlannedItems": 12,
+  "status": "draft",
+  "strategy": {
+    "primaryFocus": "Founder-led SaaS SEO blog operations with email-native workflows and direct publishing",
+    "positioningThesis": "Build a content ecosystem around founder-led SaaS SEO blog operations emphasizing Tavyn's email-native workflow, founder perspective integration, and seamless publishing to GitHub and Next.js sites. Prioritize educational content on workflow simplification, approval processes, and technical publishing to differentiate from generic AI writing tools and agency complexity.",
+    "recommendedFirstPost": "How Founder-Led SaaS Teams Can Build a Consistent SEO Blog Workflow Without Managing Complex Tools",
+    "topicsToPrioritize": [
+      "How founder-led SaaS teams can build consistent SEO blog workflows",
+      "Creating SEO content plans with founder input before writing",
+      "Publishing SEO blogs directly to Next.js and GitHub sites",
+      "Email-based approval workflows for SEO content",
+      "Avoiding generic AI content: integrating founder perspective"
+    ],
+    "topicsToAvoidOrDelay": [
+      "Generic AI blog writing tool comparisons",
+      "Broad SEO strategy not tailored to SaaS or founders",
+      "Agency service promotion without workflow focus"
+    ]
+  },
+  "clusters": [
+    {
+      "id": "cluster_001",
+      "name": "Founder-led SEO blog operations",
+      "description": "Content focused on how founders can lead and manage SEO blog workflows with minimal overhead and maximum control.",
+      "businessValue": "high",
+      "priority": 1
+    },
+    {
+      "id": "cluster_002",
+      "name": "SaaS-specific SEO content planning",
+      "description": "Guides and frameworks tailored to SaaS startups for SEO content planning with founder input and topical authority building.",
+      "businessValue": "high",
+      "priority": 2
+    },
+    {
+      "id": "cluster_003",
+      "name": "Email-native content workflows and approval",
+      "description": "Posts emphasizing email-based planning, revision, and approval workflows that reduce friction and increase founder involvement.",
+      "businessValue": "high",
+      "priority": 3
+    },
+    {
+      "id": "cluster_004",
+      "name": "Technical publishing workflows for SaaS blogs",
+      "description": "Technical content on publishing SEO blogs directly to Next.js and GitHub-backed SaaS sites with integrated workflows.",
+      "businessValue": "high",
+      "priority": 4
+    },
+    {
+      "id": "cluster_005",
+      "name": "Agency alternative for SaaS SEO",
+      "description": "Content positioning Tavyn as a lightweight, founder-friendly alternative to SEO agencies for SaaS blog operations.",
+      "businessValue": "medium",
+      "priority": 5
+    }
+  ],
+  "plannedItems": [
+    {
+      "id": "post_001",
+      "week": 1,
+      "sequence": 1,
+      "workingTitle": "How Founder-Led SaaS Teams Can Build a Consistent SEO Blog Workflow Without Managing Complex Tools",
+      "clusterId": "cluster_001",
+      "clusterName": "Founder-led SEO blog operations",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "founder-led content strategy",
+      "supportingKeywords": [
+        "SEO content workflow for startups",
+        "how to write SEO blogs for SaaS"
+      ],
+      "whyThisPost": "Establishes Tavyn's core positioning by addressing founders' pain of managing complex SEO blog workflows, emphasizing lightweight, founder-controlled operations.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "founder-led content strategy",
+          "SEO content workflow for startups",
+          "how to write SEO blogs for SaaS"
+        ],
+        "relatedGaps": [
+          "Founder-led SaaS blog operations workflow content"
+        ],
+        "angleOpportunity": "Email-native blog operations for founder-led SaaS teams"
+      },
+      "productTieIn": "Introduces Tavyn's email-native blog operations tool that simplifies SEO blog workflows for founders without complex tools.",
+      "founderPerspectiveNeeded": [
+        "Challenges managing SEO blog workflows",
+        "Importance of founder control and visibility"
+      ],
+      "priorityScore": 98,
+      "status": "planned"
+    },
+    {
+      "id": "post_002",
+      "week": 1,
+      "sequence": 2,
+      "workingTitle": "Modern SEO Content Planning Frameworks Tailored for Founder-Led SaaS Startups",
+      "clusterId": "cluster_002",
+      "clusterName": "SaaS-specific SEO content planning",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "how to create an SEO content plan",
+      "supportingKeywords": [
+        "SEO content planning for SaaS",
+        "how to build topical authority for SaaS"
+      ],
+      "whyThisPost": "Fills the gap of outdated or generic SEO content planning by providing SaaS-specific frameworks that founders can use to build topical authority.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "how to create an SEO content plan",
+          "SEO content planning for SaaS",
+          "how to build topical authority for SaaS"
+        ],
+        "relatedGaps": [
+          "Fresh, SaaS-specific SEO content planning frameworks"
+        ],
+        "angleOpportunity": "Founder perspective-driven SEO content creation"
+      },
+      "productTieIn": "Shows how Tavyn builds SEO content plans from company profiles integrating founder input for topical authority.",
+      "founderPerspectiveNeeded": [
+        "Input on company positioning and target keywords"
+      ],
+      "priorityScore": 95,
+      "status": "planned"
+    },
+    {
+      "id": "post_003",
+      "week": 1,
+      "sequence": 3,
+      "workingTitle": "How to Turn Founder Perspective into SEO Blog Content That Resonates",
+      "clusterId": "cluster_002",
+      "clusterName": "SaaS-specific SEO content planning",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "founder-led content strategy",
+      "supportingKeywords": [
+        "how to write SEO blogs for SaaS",
+        "AI blog writer for SaaS"
+      ],
+      "whyThisPost": "Addresses the common pain of generic AI content by showing how founder insights can be integrated into SEO content for authenticity and effectiveness.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "founder-led content strategy",
+          "how to write SEO blogs for SaaS",
+          "AI blog writer for SaaS"
+        ],
+        "relatedGaps": [
+          "Founder perspective integration in AI-generated SEO content"
+        ],
+        "angleOpportunity": "Founder perspective-driven SEO content creation"
+      },
+      "productTieIn": "Explains Tavyn's process of generating SEO briefs and drafts that incorporate founder input to avoid generic AI content.",
+      "founderPerspectiveNeeded": [
+        "Examples of founder insights and voice"
+      ],
+      "priorityScore": 92,
+      "status": "planned"
+    },
+    {
+      "id": "post_004",
+      "week": 2,
+      "sequence": 1,
+      "workingTitle": "Creating SEO Content Plans with Founder Input Before Writing",
+      "clusterId": "cluster_002",
+      "clusterName": "SaaS-specific SEO content planning",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "SEO content planning for SaaS",
+      "supportingKeywords": [
+        "how to create an SEO content plan",
+        "founder-led content strategy"
+      ],
+      "whyThisPost": "Deepens understanding of SEO planning by emphasizing the critical role of founder input in shaping content plans that align with business goals.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "SEO content planning for SaaS",
+          "how to create an SEO content plan",
+          "founder-led content strategy"
+        ],
+        "relatedGaps": [
+          "Founder-led SaaS blog operations workflow content"
+        ],
+        "angleOpportunity": "Founder perspective-driven SEO content creation"
+      },
+      "productTieIn": "Highlights Tavyn's ability to capture founder insights early to generate precise SEO briefs and content roadmaps.",
+      "founderPerspectiveNeeded": [
+        "Founder involvement in keyword and topic selection"
+      ],
+      "priorityScore": 94,
+      "status": "planned"
+    },
+    {
+      "id": "post_005",
+      "week": 2,
+      "sequence": 2,
+      "workingTitle": "Building Topical Authority for SaaS Startups with Founder-Led SEO Content",
+      "clusterId": "cluster_002",
+      "clusterName": "SaaS-specific SEO content planning",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "topical authority for SaaS startups",
+      "supportingKeywords": [
+        "how to build topical authority for SaaS",
+        "SEO content planning for SaaS"
+      ],
+      "whyThisPost": "Positions Tavyn as the solution to operationalize topical authority building through founder-informed content plans and consistent publishing workflows.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "topical authority for SaaS startups",
+          "how to build topical authority for SaaS",
+          "SEO content planning for SaaS"
+        ],
+        "relatedGaps": [
+          "Founder-led SaaS blog operations workflow content"
+        ],
+        "angleOpportunity": "Email-native blog operations for founder-led SaaS teams"
+      },
+      "productTieIn": "Demonstrates how Tavyn supports building comprehensive topical authority with founder input and automated workflows.",
+      "founderPerspectiveNeeded": [
+        "Founder vision on content themes and clusters"
+      ],
+      "priorityScore": 93,
+      "status": "planned"
+    },
+    {
+      "id": "post_006",
+      "week": 2,
+      "sequence": 3,
+      "workingTitle": "Email-Based Approval Workflows That Simplify SEO Blog Operations for Founders",
+      "clusterId": "cluster_003",
+      "clusterName": "Email-native content workflows and approval",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "SEO content workflow for startups",
+      "supportingKeywords": [
+        "founder-led content strategy",
+        "email-native content workflows"
+      ],
+      "whyThisPost": "Addresses the workflow gap by showing how email-native approval loops reduce friction and increase founder involvement without complex tools.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "SEO content workflow for startups",
+          "founder-led content strategy"
+        ],
+        "relatedGaps": [
+          "Email-native content planning and approval workflows"
+        ],
+        "angleOpportunity": "Email-native blog operations for founder-led SaaS teams"
+      },
+      "productTieIn": "Explains Tavyn's email-native workflow that enables founders to approve and revise SEO content directly from their inbox.",
+      "founderPerspectiveNeeded": [
+        "Founder preferences on content review and approval"
+      ],
+      "priorityScore": 96,
+      "status": "planned"
+    },
+    {
+      "id": "post_007",
+      "week": 3,
+      "sequence": 1,
+      "workingTitle": "How to Publish SEO Blogs Directly to Your Next.js or GitHub-Backed SaaS Site",
+      "clusterId": "cluster_004",
+      "clusterName": "Technical publishing workflows for SaaS blogs",
+      "funnelStage": "tofu",
+      "readerStage": "problem-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "publish blog posts to Next.js site",
+      "supportingKeywords": [
+        "GitHub blog publishing tool",
+        "SEO content workflow for startups"
+      ],
+      "whyThisPost": "Fills a critical product gap by educating SaaS founders on seamless publishing workflows that avoid manual developer intervention.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "publish blog posts to Next.js site",
+          "GitHub blog publishing tool",
+          "SEO content workflow for startups"
+        ],
+        "relatedGaps": [
+          "Direct publishing to GitHub and code-based SaaS sites"
+        ],
+        "angleOpportunity": "Direct publishing of SEO blog content to GitHub and Next.js sites"
+      },
+      "productTieIn": "Showcases Tavyn's unique integration enabling direct publishing from SEO content plans and drafts to developer-friendly platforms.",
+      "founderPerspectiveNeeded": [
+        "Technical publishing challenges and needs"
+      ],
+      "priorityScore": 97,
+      "status": "planned"
+    },
+    {
+      "id": "post_008",
+      "week": 3,
+      "sequence": 2,
+      "workingTitle": "How Email-Native Workflows Transform SaaS SEO Blog Operations for Founders",
+      "clusterId": "cluster_003",
+      "clusterName": "Email-native content workflows and approval",
+      "funnelStage": "mofu",
+      "readerStage": "solution-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "founder-led content strategy",
+      "supportingKeywords": [
+        "SEO content workflow for startups",
+        "email-native content workflows"
+      ],
+      "whyThisPost": "Deepens the workflow narrative by highlighting how email-native processes reduce friction and keep founders in control throughout SEO blog operations.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "founder-led content strategy",
+          "SEO content workflow for startups"
+        ],
+        "relatedGaps": [
+          "Email-native content planning and approval workflows"
+        ],
+        "angleOpportunity": "Email-native blog operations for founder-led SaaS teams"
+      },
+      "productTieIn": "Details Tavyn's email-native approval and revision loops that integrate with SEO content planning and publishing.",
+      "founderPerspectiveNeeded": [
+        "Founder feedback on workflow simplicity and control"
+      ],
+      "priorityScore": 94,
+      "status": "planned"
+    },
+    {
+      "id": "post_009",
+      "week": 3,
+      "sequence": 3,
+      "workingTitle": "Avoiding Generic AI Content: How Founder Insights Elevate SaaS SEO Blogs",
+      "clusterId": "cluster_002",
+      "clusterName": "SaaS-specific SEO content planning",
+      "funnelStage": "bofu",
+      "readerStage": "product-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "AI blog writer for SaaS",
+      "supportingKeywords": [
+        "AI SEO tool for SaaS",
+        "founder-led content strategy"
+      ],
+      "whyThisPost": "Addresses a medium priority gap by differentiating Tavyn from generic AI writing tools through founder perspective integration in SEO content.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "AI blog writer for SaaS",
+          "AI SEO tool for SaaS",
+          "founder-led content strategy"
+        ],
+        "relatedGaps": [
+          "Founder perspective integration in AI-generated SEO content"
+        ],
+        "angleOpportunity": "Founder perspective-driven SEO content creation"
+      },
+      "productTieIn": "Highlights Tavyn's unique process that combines AI assistance with founder input to produce authentic, high-quality SEO blog drafts.",
+      "founderPerspectiveNeeded": [
+        "Examples of founder voice integration"
+      ],
+      "priorityScore": 90,
+      "status": "planned"
+    },
+    {
+      "id": "post_010",
+      "week": 4,
+      "sequence": 1,
+      "workingTitle": "How Tavyn Replaces Agencies with a Lightweight SEO Blog Operations Platform for SaaS Founders",
+      "clusterId": "cluster_005",
+      "clusterName": "Agency alternative for SaaS SEO",
+      "funnelStage": "bofu",
+      "readerStage": "vendor-aware",
+      "searchIntent": "commercial",
+      "primaryKeyword": "AI SEO tool for SaaS",
+      "supportingKeywords": [
+        "best AI SEO tools for SaaS",
+        "SEO content planning tool"
+      ],
+      "whyThisPost": "Positions Tavyn as a cost-effective, founder-friendly alternative to expensive and complex SEO agencies, addressing a medium priority gap.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "AI SEO tool for SaaS",
+          "best AI SEO tools for SaaS"
+        ],
+        "relatedGaps": [
+          "Agency alternative positioning for SaaS SEO blog operations"
+        ],
+        "angleOpportunity": "Lightweight alternative to SEO agencies for SaaS startups"
+      },
+      "productTieIn": "Demonstrates how Tavyn delivers agency-like SEO execution with email-native workflows and direct publishing without agency retainers.",
+      "founderPerspectiveNeeded": [
+        "Founder frustrations with agencies",
+        "Desire for lightweight, founder-controlled SEO solutions"
+      ],
+      "priorityScore": 88,
+      "status": "planned"
+    },
+    {
+      "id": "post_011",
+      "week": 4,
+      "sequence": 2,
+      "workingTitle": "Scaling SaaS SEO Blog Operations: Direct Publishing and Automated Workflows with Tavyn",
+      "clusterId": "cluster_004",
+      "clusterName": "Technical publishing workflows for SaaS blogs",
+      "funnelStage": "bofu",
+      "readerStage": "product-aware",
+      "searchIntent": "informational",
+      "primaryKeyword": "GitHub blog publishing tool",
+      "supportingKeywords": [
+        "publish blog posts to Next.js site",
+        "SEO blog automation"
+      ],
+      "whyThisPost": "Showcases Tavyn's technical publishing capabilities that enable SaaS startups to scale SEO blog operations with automation and direct site integration.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "GitHub blog publishing tool",
+          "publish blog posts to Next.js site"
+        ],
+        "relatedGaps": [
+          "Direct publishing to GitHub and code-based SaaS sites"
+        ],
+        "angleOpportunity": "Direct publishing of SEO blog content to GitHub and Next.js sites"
+      },
+      "productTieIn": "Highlights Tavyn's seamless integration with GitHub and Next.js for publish-ready SEO blog content without developer bottlenecks.",
+      "founderPerspectiveNeeded": [
+        "Technical challenges in publishing workflows"
+      ],
+      "priorityScore": 91,
+      "status": "planned"
+    },
+    {
+      "id": "post_012",
+      "week": 4,
+      "sequence": 3,
+      "workingTitle": "Why Founder-Led SaaS Teams Choose Tavyn Over Generic AI SEO Tools",
+      "clusterId": "cluster_005",
+      "clusterName": "Agency alternative for SaaS SEO",
+      "funnelStage": "bofu",
+      "readerStage": "vendor-aware",
+      "searchIntent": "comparison",
+      "primaryKeyword": "best AI SEO tools for SaaS",
+      "supportingKeywords": [
+        "AI SEO tool for SaaS",
+        "AI blog writer for SaaS"
+      ],
+      "whyThisPost": "Differentiates Tavyn from generic AI SEO tools by emphasizing founder control, email-native workflows, and integrated publishing for SaaS teams.",
+      "searchLandscapeSupport": {
+        "relatedQueries": [
+          "best AI SEO tools for SaaS",
+          "AI SEO tool for SaaS",
+          "AI blog writer for SaaS"
+        ],
+        "relatedGaps": [
+          "Founder-led SaaS blog operations workflow content"
+        ],
+        "angleOpportunity": "Founder perspective-driven SEO content creation"
+      },
+      "productTieIn": "Positions Tavyn as the AI SEO tool designed specifically for founder-led SaaS blog operations with unique workflow and publishing features.",
+      "founderPerspectiveNeeded": [
+        "Concerns about generic AI content",
+        "Desire for founder-led SEO solutions"
+      ],
+      "priorityScore": 89,
+      "status": "planned"
+    }
+  ],
+  "nextRecommendedAction": {
+    "type": "generate_seo_brief",
+    "plannedItemId": "post_001",
+    "reason": "Start with the foundational TOFU post establishing Tavyn's core positioning and workflow differentiation as recommended by the search landscape."
+  }
+}
