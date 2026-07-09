@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "",
+  "generated_at": "",
+
+  "source_pages": [
+    {
+      "url": "",
+      "title": ""
+    }
+  ],
+
+  "company_identity": {
+    "company_name": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "domain": "",
+    "one_sentence_description": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "product_category": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "business_model": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "stage_or_maturity": {
+      "value": "",
+      "confidence": "low",
+      "evidence": []
+    }
+  },
+
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "",
+      "description": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "secondary_audiences": [
+      {
+        "value": "",
+        "description": "",
+        "confidence": "medium",
+        "evidence": []
+      }
+    ],
+    "audience_notes": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    }
+  },
+
+  "buyer_pains": [
+    {
+      "pain": "",
+      "description": "",
+      "audience_segment": "",
+      "confidence": "medium",
+      "evidence": []
+    }
+  ],
+
+  "product_capabilities": [
+    {
+      "capability": "",
+      "description": "",
+      "capability_type": "core",
+      "confidence": "medium",
+      "evidence": []
+    }
+  ],
+
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "",
+        "description": "",
+        "confidence": "medium",
+        "evidence": []
+      }
+    ],
+    "category_point_of_view": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "positioning_notes": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    }
+  },
+
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [],
+      "confidence": "medium",
+      "evidence": []
+    },
+    "writing_style": {
+      "value": "",
+      "confidence": "medium",
+      "evidence": []
+    },
+    "common_phrases": [
+      {
+        "phrase": "",
+        "context": "",
+        "evidence": []
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "",
+        "description": "",
+        "evidence": []
+      }
+    ]
+  },
+
+  "profile_quality": {
+    "overall_confidence": "medium",
+    "missing_information": [],
+    "potential_risks": [],
+    "notes": ""
+  }
+}

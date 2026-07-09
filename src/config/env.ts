@@ -1,6 +1,10 @@
 import "dotenv/config";
 
-const requiredEnvVars = ["OPENAI_API_KEY", "FIRECRAWL_API_KEY"] as const;
+const requiredEnvVars = [
+  "OPENAI_API_KEY",
+  "FIRECRAWL_API_KEY",
+  "SERPER_API_KEY",
+] as const;
 
 type RequiredEnvVar = (typeof requiredEnvVars)[number];
 
@@ -15,4 +19,5 @@ if (missingEnvVars.length > 0) {
 export const env: Record<RequiredEnvVar, string> = {
   OPENAI_API_KEY: process.env.OPENAI_API_KEY as string,
   FIRECRAWL_API_KEY: process.env.FIRECRAWL_API_KEY as string,
+  SERPER_API_KEY: process.env.SERPER_API_KEY as string,
 };

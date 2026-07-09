@@ -1,0 +1,54 @@
+{
+  "query": "",
+  "source_page": {
+    "cluster_name": "",
+    "page_title": "",
+    "page_role": "pillar"
+  },
+
+  "metrics": {
+    "search_volume": null,
+    "cpc": null,
+    "demand_bucket": "unknown",
+    "avg_authority": null,
+    "median_authority": null,
+    "competition_bucket": "unknown"
+  },
+
+  "serp_shape": {
+    "dominant_page_type": "unknown",
+    "blog_ratio": 0,
+    "landing_page_ratio": 0,
+    "directory_ratio": 0,
+    "forum_ratio": 0,
+    "mixed_serp": false
+  },
+
+  "llm_analysis": {
+    "intent": {
+      "value": "unknown",
+      "confidence": "medium",
+      "evidence": ""
+    },
+    "funnel_stage": {
+      "value": "unknown",
+      "confidence": "medium",
+      "evidence": ""
+    },
+    "content_type_fit": {
+      "value": "unknown",
+      "confidence": "medium",
+      "evidence": ""
+    },
+    "query_fit": {
+      "recommendation": "needs_review",
+      "confidence": "medium",
+      "reasoning": ""
+    }
+  },
+
+  "notes": {
+    "serp_evidence": "",
+    "risk": ""
+  }
+}

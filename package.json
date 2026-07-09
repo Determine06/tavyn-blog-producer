@@ -5,6 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "cli": "tsx src/cli.ts",
+    "dev": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +27,8 @@
   },
   "dependencies": {
     "dotenv": "^17.4.2",
-    "openai": "^6.45.0"
+    "firecrawl": "^4.29.2",
+    "openai": "^6.45.0",
+    "zod": "^4.4.3"
   }
 }

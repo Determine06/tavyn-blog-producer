@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "",
+  "generated_at": "",
+
+  "serp_provider": "serper",
+  "search_settings": {
+    "search_engine": "google",
+    "location_code": 2840,
+    "language_code": "en",
+    "country": "us",
+    "result_count_requested": 10
+  },
+
+  "source_clusters": {
+    "schema_version": "",
+    "generated_at": "",
+    "cluster_count": 0,
+    "query_count": 0
+  },
+
+  "queries": [
+    {
+      "query_id": "",
+      "cluster_id": "",
+      "cluster_name": "",
+      "page_id": "",
+      "page_role": "pillar",
+      "page_title": "",
+      "query": "",
+      "expected_intent_from_cluster": "informational",
+      "expected_funnel_stage_from_cluster": "top",
+
+      "serp": {
+        "fetched_at": "",
+        "cache_status": "fresh",
+        "organic_result_count": 0,
+
+        "top_results": [
+          {
+            "position": 1,
+            "title": "",
+            "url": "",
+            "host": "",
+            "root_domain": "",
+            "authority_target": "",
+            "authority_target_type": "root_domain",
+            "result_type_hint": "unknown",
+            "url_path": "",
+            "snippet": ""
+          }
+        ],
+
+        "people_also_ask": [
+          {
+            "question": ""
+          }
+        ],
+
+        "related_searches": [
+          ""
+        ]
+      },
+
+      "serp_llm_input": {
+        "top_results_summary": [
+          {
+            "position": 1,
+            "title": "",
+            "root_domain": "",
+            "url_path": "",
+            "result_type_hint": "blog_post",
+            "snippet": ""
+          }
+        ],
+        "paa_questions": [],
+        "related_searches": []
+      },
+
+      "metric_extraction": {
+        "keyword_metric_query": "",
+        "root_domains_for_authority": []
+      },
+
+      "quality_control": {
+        "missing_serp": false,
+        "organic_results_missing": false,
+        "notes": ""
+      }
+    }
+  ],
+
+  "api_batches": {
+    "keyword_metrics": {
+      "provider": "dataforseo",
+      "endpoint": "keywords_data.google_ads.search_volume.live",
+      "queries": []
+    },
+    "authority_metrics": {
+      "provider": "dataforseo",
+      "endpoint": "backlinks.bulk_ranks.live",
+      "targets": [],
+      "rank_scale": "one_hundred"
+    }
+  }
+}
