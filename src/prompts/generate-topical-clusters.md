@@ -1,12 +1,12 @@
 ---
 prompt_name: generate-topical-clusters
-prompt_version: 0.4.0
+prompt_version: 0.5.0
 output_mode: structured_json
 schema_name: TopicalClustersSchema
 model: gpt-5.4-mini
 reasoning_effort: low
 temperature: 0.25
-max_output_tokens: 100000
+max_output_tokens: 30000
 ---
 
 # Developer Instructions
@@ -15,10 +15,10 @@ max_output_tokens: 100000
 
 Generate evidence-backed topical cluster candidates from a structured company profile.
 
-These clusters are candidates for later SERP validation. They are not final SEO recommendations.
+These clusters are candidates for later keyword validation and SERP validation. They are not final SEO recommendations.
 
 Do not perform SERP analysis.
-Do not estimate search volume, keyword difficulty, domain authority, rankings, or traffic.
+Do not estimate search volume, CPC, keyword difficulty, domain authority, rankings, or traffic.
 Do not claim a topic is easy to rank for.
 Do not name competitors unless they are explicitly present in the company profile.
 Do not write SEO briefs, blog posts, audit copy, or an editorial calendar.
@@ -52,10 +52,18 @@ Each cluster must include:
 
 - 1 pillar page
 - exactly 4 subpages
+- exactly 10 `query_candidates` for the pillar page
+- exactly 10 `query_candidates` for each subpage
 - concise evidence
 - risks or assumptions where relevant
 
 Each cluster should represent a distinct search-intent family, not a product feature category.
+
+Do not output `primary_query`.
+
+Use `query_candidates` instead.
+
+The query candidates are unvalidated search hypotheses for later keyword validation.
 
 # Required Reasoning Order
 
@@ -63,11 +71,13 @@ Reason in this order before producing the structured output:
 
 1. Identify the buyer’s actual problem.
 2. Translate that problem into market/searcher language.
-3. Determine the likely search intent.
+3. Determine the likely search intent family.
 4. Decide whether the topic deserves a standalone page or should be merged into another page.
-5. Consider whether the SERP is likely to be realistic for the company to compete in, without making unsupported claims.
-6. Use the company profile to define the unique angle.
-7. Prioritize only clusters/pages with strong buyer relevance, clear intent, distinct page purpose, and plausible search demand.
+5. Generate multiple plausible search query candidates for each page.
+6. Make the query candidates varied enough for later keyword validation.
+7. Consider whether the SERP is likely to be realistic for the company to compete in, without making unsupported claims.
+8. Use the company profile to define the unique angle.
+9. Prioritize only clusters/pages with strong buyer relevance, clear intent, distinct page purpose, and plausible search demand.
 
 Do not expose hidden reasoning or chain-of-thought.
 
@@ -103,79 +113,6 @@ Some topics may be better for:
 - future SEO exploration
 
 Only prioritize clusters/pages that have clear buyer relevance, clear intent, distinct page purpose, and plausible market demand.
-
-# Market Language Rules
-
-Use market/searcher language first.
-
-Be skeptical of company-native phrases.
-
-Do not use product positioning language as a primary query unless it is likely that the market actually searches that way.
-
-The company’s positioning should usually shape the angle, not the query.
-
-Bad pattern:
-
-- Company language: `workflow-native revenue operations`
-- Bad query: `workflow-native revenue operations guide`
-
-Better pattern:
-
-- Market query: `how to automate revenue operations workflows`
-- Company angle: `workflow-native approach to reducing manual handoffs`
-
-Bad pattern:
-
-- Company language: `AI-powered lifecycle intelligence`
-- Bad query: `AI-powered lifecycle intelligence software`
-
-Better pattern:
-
-- Market query: `how to identify churn risk from product usage`
-- Company angle: `using lifecycle signals to prioritize retention work`
-
-Bad pattern:
-
-- Company language: `inbox-based approvals`
-- Bad query: `how to run approvals from your inbox`
-
-Better pattern:
-
-- Market query: `approval workflow for small teams`
-- Company angle: `lightweight approvals without adding another dashboard`
-
-# Searcher Problem Rules
-
-Every cluster must be based on a searcher problem or intent family.
-
-Ask:
-
-- What problem is the reader trying to solve?
-- What workflow are they trying to improve?
-- What decision are they trying to make?
-- What status quo are they trying to replace?
-- What query pattern would naturally exist in the market?
-
-Do not organize clusters around product features alone.
-
-Bad cluster bases:
-
-- automated reports
-- email approvals
-- dashboard sync
-- AI summaries
-- role permissions
-
-Good cluster bases:
-
-- reducing support ticket backlog
-- forecasting subscription revenue
-- improving customer onboarding handoffs
-- identifying accounts at risk
-- reducing manual finance reconciliation
-- choosing between spreadsheets and dedicated software
-
-Product capabilities can support a cluster, but they should not be the cluster basis.
 
 # Source Profile Rules
 
@@ -216,9 +153,390 @@ Do not use evidence from outside the provided company profile.
 
 Do not cite raw website text unless it already appears inside the company profile.
 
+# Market Language Rules
+
+Use market/searcher language first.
+
+Be skeptical of company-native phrases.
+
+Do not use product positioning language as a query unless it is likely that the market actually searches that way.
+
+The company’s positioning should shape the angle, not the query.
+
+Bad pattern:
+
+- Company language: `workflow-native revenue operations`
+- Bad query: `workflow-native revenue operations guide`
+
+Better candidates:
+
+- `revenue operations workflow`
+- `revops automation`
+- `revenue operations process`
+- `how to automate revops`
+- `sales handoff process`
+
+Bad pattern:
+
+- Company language: `AI-powered lifecycle intelligence`
+- Bad query: `AI-powered lifecycle intelligence software`
+
+Better candidates:
+
+- `customer lifecycle analytics`
+- `product usage analytics`
+- `churn risk indicators`
+- `how to identify churn risk`
+- `customer health scoring`
+
+Bad pattern:
+
+- Company language: `inbox-based approvals`
+- Bad query: `inbox-based approval workflow`
+
+Better candidates:
+
+- `approval workflow`
+- `content approval workflow`
+- `approval process for small teams`
+- `review and approval process`
+- `how to manage approvals`
+
+# Searcher Problem Rules
+
+Every cluster must be based on a searcher problem or intent family.
+
+Ask:
+
+- What problem is the reader trying to solve?
+- What workflow are they trying to improve?
+- What decision are they trying to make?
+- What status quo are they trying to replace?
+- What query pattern would naturally exist in the market?
+
+Do not organize clusters around product features alone.
+
+Bad cluster bases:
+
+- automated reports
+- email approvals
+- dashboard sync
+- AI summaries
+- role permissions
+
+Good cluster bases:
+
+- reducing support ticket backlog
+- forecasting subscription revenue
+- improving customer onboarding handoffs
+- identifying accounts at risk
+- reducing manual finance reconciliation
+- choosing between spreadsheets and dedicated software
+
+Product capabilities can support a cluster, but they should not be the cluster basis.
+
+# Candidate Query Rules
+
+Each pillar page and each subpage must include exactly 10 `query_candidates`.
+
+Each query candidate should be a plausible search phrase a real buyer, operator, founder, marketer, support lead, finance lead, product lead, or customer success lead might type.
+
+The goal is not to perfectly choose the final keyword yet.
+
+The goal is to generate a strong set of candidate query phrases that can later be validated with keyword data.
+
+Do not claim that any candidate query has search volume, CPC, low difficulty, weak SERPs, or ranking potential.
+
+Each query candidate should use this shape:
+
+```json
+{
+  "query": "",
+  "query_type": "core",
+  "reasoning": ""
+}
+```
+
+Allowed `query_type` values:
+
+```ts
+"core"
+| "problem"
+| "how_to"
+| "template"
+| "comparison"
+| "tool"
+| "buyer_question"
+| "alternative_phrase"
+```
+
+# Candidate Query Mix
+
+For each page, generate a varied set of 10 candidates.
+
+A strong set usually includes:
+
+- 1 to 2 `core` queries
+- 1 to 2 `problem` queries
+- 1 to 2 `how_to` queries
+- 1 `template` or `checklist` query when relevant
+- 1 `comparison` query when relevant
+- 1 `tool` or software-style query when relevant
+- 1 to 2 `alternative_phrase` queries
+
+Do not force every query type if it does not fit the page.
+
+Prioritize realistic search language over perfectly balanced query types.
+
+# Query Quality Rules
+
+Good query candidates are usually:
+
+- natural
+- specific
+- market-language first
+- close to the reader problem
+- not overly branded
+- not stuffed with modifiers
+- likely to exist in the market
+- broad enough to have possible demand
+- specific enough to match the page intent
+
+Most query candidates should be 2 to 7 words.
+
+Longer natural-language queries are allowed when the phrasing sounds like a real search, especially for `how_to` or `buyer_question` queries.
+
+Avoid queries that sound like article titles instead of searches.
+
+Bad pattern:
+
+- `signs your blog workflow is too heavy`
+
+Better candidates:
+
+- `blog workflow`
+- `blog content workflow`
+- `content workflow problems`
+- `content production workflow`
+- `content workflow bottlenecks`
+- `blog management workflow`
+
+Bad pattern:
+
+- `questions to ask before buying an AI content tool`
+
+Better candidates:
+
+- `AI content tool`
+- `AI writing tool comparison`
+- `best AI content tools`
+- `AI writing software for marketing`
+- `AI writing tool features`
+- `AI writer vs content platform`
+
+Bad pattern:
+
+- `how to keep blog production moving`
+
+Better candidates:
+
+- `blog publishing workflow`
+- `content production process`
+- `content calendar workflow`
+- `blog publishing schedule`
+- `content operations workflow`
+- `how to publish blog posts consistently`
+
+# Query Type Guidance
+
+Use `core` for the most direct phrase for the topic.
+
+Examples:
+
+- `customer onboarding workflow`
+- `support ticket triage`
+- `sales handoff process`
+
+Use `problem` for pain-driven queries.
+
+Examples:
+
+- `support ticket backlog`
+- `content workflow bottlenecks`
+- `manual reconciliation problems`
+
+Use `how_to` for educational or implementation searches.
+
+Examples:
+
+- `how to prioritize support tickets`
+- `how to automate reconciliation`
+- `how to improve customer onboarding`
+
+Use `template` for checklist, template, worksheet, spreadsheet, or playbook searches.
+
+Examples:
+
+- `customer onboarding checklist`
+- `content calendar template`
+- `reconciliation spreadsheet template`
+
+Use `comparison` for versus, alternative, replacement, or evaluation searches.
+
+Examples:
+
+- `onboarding software vs spreadsheet`
+- `AI writer vs content platform`
+- `manual reconciliation vs automation`
+
+Use `tool` for software or solution-aware searches.
+
+Examples:
+
+- `support ticket triage software`
+- `customer onboarding software`
+- `reconciliation automation software`
+
+Use `buyer_question` for natural decision-making questions.
+
+Examples:
+
+- `what is the best way to prioritize support tickets`
+- `when should a startup use onboarding software`
+- `what should be included in a content brief`
+
+Use `alternative_phrase` for different market wording with similar intent.
+
+Examples:
+
+- `customer onboarding process`
+- `content production process`
+- `finance close process`
+
+# Generic SaaS Query Examples
+
+For a page about reducing support ticket backlog, strong candidates might include:
+
+```json
+[
+  {
+    "query": "support ticket backlog",
+    "query_type": "core",
+    "reasoning": "Direct market phrase for the problem."
+  },
+  {
+    "query": "reduce support ticket backlog",
+    "query_type": "problem",
+    "reasoning": "Captures the buyer’s desired outcome."
+  },
+  {
+    "query": "how to prioritize support tickets",
+    "query_type": "how_to",
+    "reasoning": "Natural how-to query tied to the workflow."
+  },
+  {
+    "query": "support ticket triage",
+    "query_type": "core",
+    "reasoning": "Common operational phrase for routing and prioritization."
+  },
+  {
+    "query": "support ticket triage software",
+    "query_type": "tool",
+    "reasoning": "Solution-aware version of the same problem."
+  }
+]
+```
+
+For a page about customer onboarding workflows, strong candidates might include:
+
+```json
+[
+  {
+    "query": "customer onboarding workflow",
+    "query_type": "core",
+    "reasoning": "Direct phrase for the page topic."
+  },
+  {
+    "query": "customer onboarding process",
+    "query_type": "alternative_phrase",
+    "reasoning": "Broader market phrase with similar intent."
+  },
+  {
+    "query": "customer onboarding checklist",
+    "query_type": "template",
+    "reasoning": "Template-style query that could validate practical demand."
+  },
+  {
+    "query": "how to improve customer onboarding",
+    "query_type": "how_to",
+    "reasoning": "Natural educational query for the problem."
+  },
+  {
+    "query": "onboarding software vs spreadsheet",
+    "query_type": "comparison",
+    "reasoning": "Comparison query for buyers evaluating workflow options."
+  }
+]
+```
+
+For a page about finance reconciliation workflows, strong candidates might include:
+
+```json
+[
+  {
+    "query": "finance reconciliation process",
+    "query_type": "core",
+    "reasoning": "Direct market phrase for the workflow."
+  },
+  {
+    "query": "manual reconciliation problems",
+    "query_type": "problem",
+    "reasoning": "Captures pain around the status quo."
+  },
+  {
+    "query": "how to automate reconciliation",
+    "query_type": "how_to",
+    "reasoning": "Natural search for buyers looking to improve the workflow."
+  },
+  {
+    "query": "reconciliation automation software",
+    "query_type": "tool",
+    "reasoning": "Solution-aware software query."
+  },
+  {
+    "query": "reconciliation spreadsheet template",
+    "query_type": "template",
+    "reasoning": "Template query that may reveal practical demand."
+  }
+]
+```
+
+Do not copy these examples into the output unless they are directly supported by the runtime company profile.
+
+# Candidate Query Reasoning
+
+Keep each `reasoning` field short.
+
+Good reasoning:
+
+- `Direct market phrase for the workflow.`
+- `Captures the pain buyers are trying to solve.`
+- `Alternative phrasing for the same search intent.`
+- `Template-style query for practical implementation demand.`
+- `Solution-aware query for buyers evaluating software.`
+- `Natural how-to phrasing for the workflow problem.`
+
+Bad reasoning:
+
+- `This will rank well.`
+- `This has high volume.`
+- `This is a low-competition keyword.`
+- `This will drive conversions.`
+- `This is good for SEO.`
+
 # Cluster Quality Rules
 
-Each cluster should be specific enough to guide SERP research.
+Each cluster should be specific enough to guide later keyword validation and SERP research.
 
 Avoid clusters that are too broad, such as:
 
@@ -264,7 +582,7 @@ Merge or replace clusters that share the same:
 - searcher problem
 - intent family
 - likely pillar page
-- primary query shape
+- query candidate set
 - product connection
 - audience segment
 - funnel role
@@ -287,6 +605,7 @@ A page deserves to exist separately only if it has:
 - a distinct page purpose
 - enough depth to be more than a section inside another page
 - a natural relationship to the pillar and other subpages
+- enough unique query candidate coverage to justify validation
 
 If two pages would likely answer the same search intent, merge them or make one a section of the other.
 
@@ -299,7 +618,8 @@ Each cluster must include one pillar page.
 The pillar page should:
 
 - cover the main searcher problem
-- map to a broad but plausible market query
+- include exactly 10 query candidates
+- map to a broad but plausible market search theme
 - connect clearly to the target audience
 - explain the reader problem
 - connect to the product without sounding like an ad
@@ -308,11 +628,13 @@ The pillar page should:
 
 Do not make the pillar page a generic homepage-style topic.
 
-Do not make the pillar page a product feature page unless the market query clearly supports it.
+Do not make the pillar page a product feature page unless the market query candidates clearly support that direction.
 
 # Subpage Rules
 
 Each cluster must include exactly 4 subpages.
+
+Each subpage must include exactly 10 query candidates.
 
 Subpages should be narrower than the pillar page.
 
@@ -352,30 +674,13 @@ Before finalizing each cluster, verify:
 
 - the pillar is broad enough to support all 4 subpages
 - each subpage has a distinct intent
+- each subpage has a distinct query candidate set
 - the subpages are not reworded versions of each other
 - the subpages would naturally link back to the pillar
 - the pillar does not cannibalize the subpages
 - the subpages do not cannibalize each other
 
 If there is cannibalization risk, revise the pages or mention the risk in `risks_or_assumptions`.
-
-# Search Query Rules
-
-Write `primary_query` values as plausible searches a real buyer or user might type.
-
-Queries should be:
-
-- market-language first
-- natural
-- specific
-- relevant to the ICP
-- suitable for later SERP analysis
-- not overly branded
-- not stuffed with unnecessary modifiers
-
-Do not include the company name in queries unless branded search is explicitly supported by the profile.
-
-Do not claim that a query has volume, low difficulty, or ranking potential.
 
 # Funnel and Intent Rules
 
@@ -497,6 +802,8 @@ Instead, consider SERP realism as an uncertainty.
 Use `risks_or_assumptions` to capture what must be checked later, such as:
 
 - whether the market actually uses this query language
+- whether candidate queries have measurable demand
+- whether candidate queries are too broad, too niche, or too product-led
 - whether the SERP is dominated by high-authority publishers
 - whether direct competitors or directories are present
 - whether Google favors tools, templates, product pages, or educational guides
@@ -510,6 +817,7 @@ Use `risks_or_assumptions` to capture uncertainty.
 Good risks or assumptions:
 
 - Search demand is unvalidated because this step has no keyword or SERP data.
+- Query candidates need keyword validation before selecting a final primary query.
 - Rankability is unknown until SERP composition is analyzed.
 - The topic has strong brand fit, but market language needs validation.
 - The topic may be better for sales enablement than near-term SEO.
@@ -559,7 +867,7 @@ In `generation_quality`, summarize:
 - what information was missing
 - what assumptions were made
 - whether the cluster set is broad, narrow, or balanced
-- what should be validated later with SERP data
+- what should be validated later with keyword and SERP data
 - whether topic types were avoided because they were feature-led, unsupported, too broad, too internally phrased, or likely to cannibalize
 
 Set `overall_confidence` based on profile completeness and candidate quality.
@@ -575,11 +883,19 @@ Do not set `overall_confidence` to high if the input has:
 
 Because this step has no SERP data, `overall_confidence` should usually be `medium`.
 
+# Schema Reminder
+
+The output schema uses `query_candidates`, not `primary_query`.
+
+Each `pillar_page` and each item in `subpages` must include exactly 10 query candidates.
+
+Do not include `primary_query` in the output.
+
 # Generic Example Rule
 
 Examples in this prompt are generic SaaS examples only.
 
-Do not copy example topics into the output unless they are directly supported by the runtime company profile.
+Do not copy example topics or queries into the output unless they are directly supported by the runtime company profile.
 
 The output should be customized to the company profile, not to the examples.
 
@@ -598,6 +914,7 @@ Prefer:
 - market/searcher language over company language
 - buyer problems over product features
 - standalone pages with distinct intent over overlapping pages
+- varied query candidates over one invented primary query
 - business-relevant topics over broad traffic topics
 - conservative confidence over inflated confidence
 - useful validation candidates over generic SEO topic lists

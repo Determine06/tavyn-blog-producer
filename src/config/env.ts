@@ -21,3 +21,13 @@ export const env: Record<RequiredEnvVar, string> = {
   FIRECRAWL_API_KEY: process.env.FIRECRAWL_API_KEY as string,
   SERPER_API_KEY: process.env.SERPER_API_KEY as string,
 };
+
+export function getRequiredEnvVar(key: string): string {
+  const value = process.env[key];
+
+  if (!value) {
+    throw new Error(`Missing required environment variable: ${key}`);
+  }
+
+  return value;
+}

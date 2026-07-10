@@ -9,36 +9,35 @@
   "metrics": {
     "search_volume": null,
     "cpc": null,
-    "demand_bucket": "unknown",
     "avg_authority": null,
     "median_authority": null,
-    "competition_bucket": "unknown"
+    "lowest_authority": null
   },
 
   "serp_shape": {
-    "dominant_page_type": "unknown",
-    "blog_ratio": 0,
-    "landing_page_ratio": 0,
-    "directory_ratio": 0,
-    "forum_ratio": 0,
-    "mixed_serp": false
+    "top_3_dominant_page_type": "unknown",
+    "top_5_dominant_page_type": "unknown",
+    "serp_features": {
+      "people_also_ask_present": false,
+      "related_searches_present": false,
+      "video_result_present": false,
+      "forum_result_present": false,
+      "docs_result_present": false,
+      "homepage_result_present": false,
+      "mixed_page_types": false
+    }
   },
 
   "llm_analysis": {
-    "intent": {
+    "standalone_page_fit": {
       "value": "unknown",
       "confidence": "medium",
-      "evidence": ""
+      "reasoning": ""
     },
-    "funnel_stage": {
-      "value": "unknown",
+    "angle_to_win": {
+      "value": "",
       "confidence": "medium",
-      "evidence": ""
-    },
-    "content_type_fit": {
-      "value": "unknown",
-      "confidence": "medium",
-      "evidence": ""
+      "reasoning": ""
     },
     "query_fit": {
       "recommendation": "needs_review",

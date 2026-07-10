@@ -32,7 +32,13 @@
 
       "pillar_page": {
         "page_title": "",
-        "primary_query": "",
+        "query_candidates": [
+          {
+            "query": "",
+            "query_type": "core",
+            "reasoning": ""
+          }
+        ],
         "search_intent": "informational",
         "funnel_stage": "top",
         "page_angle": "",
@@ -51,7 +57,13 @@
       "subpages": [
         {
           "page_title": "",
-          "primary_query": "",
+          "query_candidates": [
+            {
+              "query": "",
+              "query_type": "core",
+              "reasoning": ""
+            }
+          ],
           "search_intent": "informational",
           "funnel_stage": "top",
           "reader_problem": "",

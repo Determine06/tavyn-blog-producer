@@ -8,8 +8,9 @@ npm run dev
 
 What it does:
 - Uses the default website: https://tavyn.dev/
-- Uses cached crawl artifact if it exists
-- Runs Firecrawl only if no cached crawl artifact exists
+- Runs the local pipeline from crawl through query metrics
+- Uses cached artifacts when they exist
+- Runs a step only when its artifact is missing or its force flag is passed
 
 ## Custom website crawl
 
@@ -91,6 +92,50 @@ What it does:
 - Regenerates company-profile.json
 - Regenerates topical-clusters.json
 
+## Force SERP data collection
+
+Command:
+
+npm run dev -- --force-serp
+
+What it does:
+- Uses cached crawl, company profile, and topical clusters if available
+- Refetches Serper data
+- Regenerates serp-data.json
+
+Required environment variable:
+- SERPER_API_KEY
+
+## Force query metrics collection
+
+Command:
+
+npm run dev -- --force-query-metrics
+
+What it does:
+- Uses cached crawl, company profile, topical clusters, and SERP data if available
+- Calls DataForSEO for keyword search volume/CPC
+- Calls DataForSEO for authority ranks
+- Regenerates query-analysis.json
+- Does not run LLM analysis
+
+Required environment variables:
+- DATAFORSEO_LOGIN
+- DATAFORSEO_PASSWORD
+
+## Force full current pipeline
+
+Command:
+
+npm run dev -- --force-crawl --force-profile --force-clusters --force-serp --force-query-metrics
+
+What it does:
+- Reruns Firecrawl
+- Regenerates company-profile.json
+- Regenerates topical-clusters.json
+- Refetches Serper data
+- Refetches DataForSEO metrics
+
 ## Hyperparameter logging
 
 Command:
@@ -102,30 +147,10 @@ What it does:
 - Shows the final model, developer message, input, schema config, max output tokens, and reasoning effort
 - Stays off by default when LOG_HYPERPARAMETERS is not set to true
 
-## SERP data collection
+## Query LLM analysis
 
-Command:
-
-npm run cli -- collect-serp-data
-
-Force command:
-
-npm run cli -- collect-serp-data --force
-
-What it does:
-- Reads topical clusters from artifacts/tavyn-dev/topical-clusters.json
-- Calls Serper once per unique primary query
-- Normalizes Google SERP data into artifacts/tavyn-dev/serp-data.json
-- Reuses cached serp-data.json unless --force is passed
-
-Required environment variable:
-- SERPER_API_KEY
-
-Input artifact:
-- artifacts/tavyn-dev/topical-clusters.json
-
-Output artifact:
-- artifacts/tavyn-dev/serp-data.json
+Status:
+- Placeholder only. LLM query analysis is not implemented yet.
 
 ## Artifact location
 
@@ -144,6 +169,10 @@ artifacts/<safe-hostname>/topical-clusters.json
 SERP data artifacts are saved under:
 
 artifacts/<safe-hostname>/serp-data.json
+
+Query analysis artifacts are saved under:
+
+artifacts/<safe-hostname>/query-analysis.json
 
 Examples:
 - https://tavyn.dev/ -> artifacts/tavyn-dev/crawl-context.json

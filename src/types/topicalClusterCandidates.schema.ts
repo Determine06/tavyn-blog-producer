@@ -8,6 +8,16 @@ const SearchIntentSchema = z.enum([
   "navigational",
 ]);
 const FunnelStageSchema = z.enum(["top", "middle", "bottom"]);
+const QueryTypeSchema = z.enum([
+  "core",
+  "problem",
+  "how_to",
+  "template",
+  "comparison",
+  "tool",
+  "buyer_question",
+  "alternative_phrase",
+]);
 
 const EvidenceSchema = z
   .object({
@@ -17,10 +27,18 @@ const EvidenceSchema = z
   })
   .strict();
 
+const QueryCandidateSchema = z
+  .object({
+    query: z.string(),
+    query_type: QueryTypeSchema,
+    reasoning: z.string(),
+  })
+  .strict();
+
 const ClusterPageSchema = z
   .object({
     page_title: z.string(),
-    primary_query: z.string(),
+    query_candidates: z.array(QueryCandidateSchema).length(10),
     search_intent: SearchIntentSchema,
     funnel_stage: FunnelStageSchema,
     reader_problem: z.string(),
@@ -34,7 +52,7 @@ const ClusterPageSchema = z
 const PillarPageSchema = z
   .object({
     page_title: z.string(),
-    primary_query: z.string(),
+    query_candidates: z.array(QueryCandidateSchema).length(10),
     search_intent: SearchIntentSchema,
     funnel_stage: FunnelStageSchema,
     page_angle: z.string(),

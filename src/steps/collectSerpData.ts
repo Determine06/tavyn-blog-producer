@@ -1,7 +1,24 @@
 import { env } from "../config/env.js";
 import { logError, logInfo, logStep, logSuccess } from "../lib/logger.js";
-import type { TopicalClusterCandidates } from "../types/topicalClusterCandidates.schema.js";
 import { SerpDataSchema, type SerpData } from "../types/serpData.schema.js";
+
+type LegacyTopicalClusterCandidates = {
+  schema_version: string;
+  website_url: string;
+  generated_at: string;
+  topical_clusters: Array<{
+    cluster_name: string;
+    pillar_page: LegacyTopicalClusterPage;
+    subpages: LegacyTopicalClusterPage[];
+  }>;
+};
+
+type LegacyTopicalClusterPage = {
+  page_title: string;
+  primary_query: string;
+  search_intent: "informational" | "commercial" | "transactional" | "navigational";
+  funnel_stage: "top" | "middle" | "bottom";
+};
 
 type QuerySource = {
   query: string;
@@ -61,7 +78,7 @@ const COMMON_TWO_PART_PUBLIC_SUFFIXES = new Set([
 ]);
 
 export async function collectSerpData(
-  topicalClusters: TopicalClusterCandidates,
+  topicalClusters: LegacyTopicalClusterCandidates,
 ): Promise<SerpData> {
   logStep("Starting SERP data collection");
 
@@ -184,7 +201,7 @@ export async function collectSerpData(
 }
 
 function extractQuerySources(
-  topicalClusters: TopicalClusterCandidates,
+  topicalClusters: LegacyTopicalClusterCandidates,
 ): QuerySource[] {
   return topicalClusters.topical_clusters.flatMap((cluster, clusterIndex) => {
     const clusterId = `cluster-${clusterIndex + 1}`;
