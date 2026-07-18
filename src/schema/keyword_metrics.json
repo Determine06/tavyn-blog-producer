@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_example",
+  "generated_at": "ISO-8601",
+  "source_artifacts": [
+    "query-candidates.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://example.com",
+  "market": {
+    "location_code": 2840,
+    "location_name": "United States",
+    "language_code": "en"
+  },
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/keyword_overview/live",
+    "task_id": "dataforseo-task-uuid",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "cost_usd": 0.0192
+  },
+  "query_families": [
+    {
+      "family_id": "family_01",
+      "territory": "problem_demand",
+      "family_name": "Manual workflow management",
+      "search_intent": "informational",
+      "buyer_stage": "problem_aware",
+      "likely_page_type": "guide",
+      "product_relevance": "high",
+      "queries": [
+        {
+          "query": "how to manage example workflow",
+          "normalized_query": "how to manage example workflow",
+          "query_type": "core",
+          "generation_reasoning": "Direct market-language query for this intent",
+          "data_status": "available",
+          "provider_keyword": "how to manage example workflow",
+          "metrics": {
+            "keyword_data_updated_at": "ISO-8601",
+            "search_volume": 90,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 12,
+              "yearly": 28
+            },
+            "keyword_difficulty": 24,
+            "main_intent": "informational",
+            "foreign_intents": [],
+            "search_intent_updated_at": "ISO-8601",
+            "cpc_usd": 4.25,
+            "paid_competition": 0.42,
+            "paid_competition_level": "MEDIUM",
+            "core_keyword": "manage example workflow",
+            "detected_language": "en",
+            "is_another_language": false,
+            "avg_backlinks_info": {
+              "backlinks": 184.5,
+              "dofollow": 120.2,
+              "referring_pages": 143.8,
+              "referring_domains": 38.4,
+              "referring_main_domains": 31.6,
+              "rank": 216.4,
+              "main_domain_rank": 412.6,
+              "last_updated_at": "ISO-8601"
+            }
+          }
+        },
+        {
+          "query": "example query with no provider data",
+          "normalized_query": "example query with no provider data",
+          "query_type": "long_tail",
+          "generation_reasoning": "Alternative market-language expression",
+          "data_status": "no_data",
+          "provider_keyword": null,
+          "metrics": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "submitted_queries": 60,
+    "returned_queries": 48,
+    "no_data_queries": 12,
+    "positive_volume_queries": 21,
+    "zero_volume_queries": 19,
+    "null_volume_queries": 8,
+    "families_with_positive_volume": 6,
+    "provider_cost_usd": 0.0192
+  }
+}

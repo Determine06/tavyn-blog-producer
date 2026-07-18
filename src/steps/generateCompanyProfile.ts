@@ -155,6 +155,12 @@ export async function generateCompanyProfileContext(
     .filter((page): page is CrawledProfilePage => page !== null);
   const combinedMarkdown = buildCombinedMarkdown(pages);
 
+  if (pages.length === 0 || combinedMarkdown.trim().length === 0) {
+    throw new Error(
+      `Firecrawl returned no usable website content for ${websiteUrl}.`,
+    );
+  }
+
   logInfo(`Firecrawl pages returned with markdown: ${pages.length}`);
 
   for (const page of pages) {

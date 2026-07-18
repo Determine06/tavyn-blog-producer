@@ -6,7 +6,7 @@ schema_name: CompanyProfileSchema
 model: gpt-5.4-mini
 reasoning_effort: low
 temperature: 0.1
-max_output_tokens: 3000
+max_output_tokens: 10000
 ---
 
 # Developer Instructions

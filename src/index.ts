@@ -1,27 +1,35 @@
+import { randomUUID } from "node:crypto";
+
 import { env } from "./config/env.js";
 import { runCachedStep } from "./cache/runCachedStep.js";
 import { logError, logInfo, logSuccess } from "./lib/logger.js";
-import {
-  generateCompanyProfileContext,
-  generateCompanyProfileFromContext,
-} from "./steps/generateCompanyProfile.js";
-import { collectQueryMetrics } from "./steps/collectQueryMetrics.js";
-import { collectSerpData } from "./steps/collectSerpData.js";
-import { generateCandidateTopicalClusters } from "./steps/generateCandidateTopicalClusters.js";
 
 type CliOptions = {
   websiteUrl: string;
   forceCrawl: boolean;
   forceProfile: boolean;
-  forceClusters: boolean;
+  forceQueryCandidates: boolean;
   forceSerp: boolean;
   forceQueryMetrics: boolean;
+};
+
+type RunContext = {
+  runId: string;
+  websiteUrl: string;
+  targetDomain: string;
+  locationCode: number;
+  languageCode: string;
+  country: string;
+  device: "desktop";
+  generatedAt: string;
 };
 
 function parseCliOptions(argv: string[]): CliOptions {
   const forceCrawl = argv.includes("--force-crawl");
   const forceProfile = argv.includes("--force-profile");
-  const forceClusters = argv.includes("--force-clusters");
+  const forceQueryCandidates =
+    argv.includes("--force-query-candidates") ||
+    argv.includes("--force-clusters");
   const forceSerp = argv.includes("--force-serp");
   const forceQueryMetrics = argv.includes("--force-query-metrics");
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
@@ -30,9 +38,24 @@ function parseCliOptions(argv: string[]): CliOptions {
     websiteUrl: urlArgs[0] ?? "https://tavyn.dev/",
     forceCrawl,
     forceProfile,
-    forceClusters,
+    forceQueryCandidates,
     forceSerp,
     forceQueryMetrics,
+  };
+}
+
+function createRunContext(websiteUrl: string): RunContext {
+  const normalizedUrl = new URL(websiteUrl);
+
+  return {
+    runId: randomUUID(),
+    websiteUrl: normalizedUrl.toString(),
+    targetDomain: normalizedUrl.hostname.replace(/^www\./, ""),
+    locationCode: 2840,
+    languageCode: "en",
+    country: "United States",
+    device: "desktop",
+    generatedAt: new Date().toISOString(),
   };
 }
 
@@ -43,95 +66,53 @@ function createSafeHostname(websiteUrl: string): string {
     .toLowerCase();
 }
 
-function hasQueryCandidates(value: unknown): boolean {
-  if (!isRecord(value) || !Array.isArray(value.topical_clusters)) {
-    return false;
-  }
-
-  return value.topical_clusters.some((cluster) => {
-    if (!isRecord(cluster)) {
-      return false;
-    }
-
-    const pillarPage = cluster.pillar_page;
-    const subpages = cluster.subpages;
-
-    return (
-      (isRecord(pillarPage) && Array.isArray(pillarPage.query_candidates)) ||
-      (Array.isArray(subpages) &&
-        subpages.some(
-          (subpage) =>
-            isRecord(subpage) && Array.isArray(subpage.query_candidates),
-        ))
-    );
-  });
-}
-
-function hasLegacyPrimaryQueries(
-  value: unknown,
-): value is Parameters<typeof collectSerpData>[0] {
-  if (!isRecord(value) || !Array.isArray(value.topical_clusters)) {
-    return false;
-  }
-
-  return value.topical_clusters.every((cluster) => {
-    if (!isRecord(cluster) || !isRecord(cluster.pillar_page)) {
-      return false;
-    }
-
-    const subpages = cluster.subpages;
-
-    return (
-      typeof cluster.pillar_page.primary_query === "string" &&
-      Array.isArray(subpages) &&
-      subpages.every(
-        (subpage) =>
-          isRecord(subpage) && typeof subpage.primary_query === "string",
-      )
-    );
-  });
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === "object" && value !== null;
-}
-
 async function main(): Promise<void> {
   try {
     const {
       websiteUrl,
       forceCrawl,
       forceProfile,
-      forceClusters,
+      forceQueryCandidates,
       forceSerp,
       forceQueryMetrics,
     } = parseCliOptions(process.argv.slice(2));
-    const safeHostname = createSafeHostname(websiteUrl);
+    const runContext = createRunContext(websiteUrl);
+    const safeHostname = createSafeHostname(runContext.websiteUrl);
     const crawlArtifactPath = `artifacts/${safeHostname}/crawl-context.json`;
     const companyProfileArtifactPath = `artifacts/${safeHostname}/company-profile.json`;
-    const topicalClustersArtifactPath = `artifacts/${safeHostname}/topical-clusters.json`;
-    const serpDataArtifactPath = `artifacts/${safeHostname}/serp-data.json`;
-    const queryAnalysisArtifactPath = `artifacts/${safeHostname}/query-analysis.json`;
+    const queryCandidatesArtifactPath = `artifacts/${safeHostname}/query-candidates.json`;
+    const keywordMetricsArtifactPath = `artifacts/${safeHostname}/keyword_metrics.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
-    logInfo(`Company profile website URL: ${websiteUrl}`);
+    logInfo(`Run ID: ${runContext.runId}`);
+    logInfo(`Target domain: ${runContext.targetDomain}`);
+    logInfo(
+      `Search market: ${runContext.country}, ${runContext.languageCode}`,
+    );
+    logInfo(`Device: ${runContext.device}`);
+    logInfo(`Company profile website URL: ${runContext.websiteUrl}`);
     logInfo(`forceCrawl: ${forceCrawl}`);
     logInfo(`forceProfile: ${forceProfile}`);
-    logInfo(`forceClusters: ${forceClusters}`);
+    logInfo(`forceQueryCandidates: ${forceQueryCandidates}`);
     logInfo(`forceSerp: ${forceSerp}`);
     logInfo(`forceQueryMetrics: ${forceQueryMetrics}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
-    logInfo(`Topical clusters artifact path: ${topicalClustersArtifactPath}`);
-    logInfo(`SERP data artifact path: ${serpDataArtifactPath}`);
-    logInfo(`Query analysis artifact path: ${queryAnalysisArtifactPath}`);
+    logInfo(`Query candidates artifact path: ${queryCandidatesArtifactPath}`);
+    logInfo(`Keyword metrics artifact path: ${keywordMetricsArtifactPath}`);
 
     const crawlResult = await runCachedStep({
       stepName: "company-profile-crawl",
       artifactPath: crawlArtifactPath,
       force: forceCrawl,
-      run: () => generateCompanyProfileContext(websiteUrl),
+      run: async () => {
+        const { generateCompanyProfileContext } = await import(
+          "./steps/generateCompanyProfile.js"
+        );
+
+        return generateCompanyProfileContext(runContext.websiteUrl);
+      },
     });
     const companyProfileContext = crawlResult.data;
 
@@ -144,11 +125,25 @@ async function main(): Promise<void> {
       `Crawl context combined markdown length: ${companyProfileContext.combinedMarkdown.length}`,
     );
 
+    const shouldForceProfile = forceProfile || crawlResult.didRun;
+
+    if (crawlResult.didRun && !forceProfile) {
+      logInfo(
+        "Company profile regeneration required because the crawl artifact changed.",
+      );
+    }
+
     const companyProfileResult = await runCachedStep({
       stepName: "company-profile-generation",
       artifactPath: companyProfileArtifactPath,
-      force: forceProfile,
-      run: () => generateCompanyProfileFromContext(companyProfileContext),
+      force: shouldForceProfile,
+      run: async () => {
+        const { generateCompanyProfileFromContext } = await import(
+          "./steps/generateCompanyProfile.js"
+        );
+
+        return generateCompanyProfileFromContext(companyProfileContext);
+      },
     });
     const companyProfile = companyProfileResult.data;
 
@@ -158,57 +153,85 @@ async function main(): Promise<void> {
       `Overall confidence: ${companyProfile.profile_quality.overall_confidence}`,
     );
 
-    const topicalClustersResult = await runCachedStep({
-      stepName: "topical-cluster-generation",
-      artifactPath: topicalClustersArtifactPath,
-      force: forceClusters,
-      run: () => generateCandidateTopicalClusters(companyProfile),
-    });
-    const topicalClusters = topicalClustersResult.data;
+    const shouldForceQueryCandidates =
+      forceQueryCandidates || companyProfileResult.didRun;
 
-    logInfo(`Topical clusters cache hit: ${topicalClustersResult.cacheHit}`);
-    logInfo(`Topical clusters step ran: ${topicalClustersResult.didRun}`);
-    logInfo(`Topical cluster count: ${topicalClusters.topical_clusters.length}`);
+    if (companyProfileResult.didRun && !forceQueryCandidates) {
+      logInfo(
+        "Query candidate regeneration required because the company profile changed.",
+      );
+    }
+
+    const queryCandidatesResult = await runCachedStep({
+      stepName: "query-candidate-generation",
+      artifactPath: queryCandidatesArtifactPath,
+      force: shouldForceQueryCandidates,
+      run: async () => {
+        const { generateQueryCandidates } = await import(
+          "./steps/generateQueryCandidates.js"
+        );
+
+        return generateQueryCandidates(companyProfile, runContext.runId);
+      },
+    });
+    const queryCandidates = queryCandidatesResult.data;
+
+    logInfo(`Query candidates cache hit: ${queryCandidatesResult.cacheHit}`);
+    logInfo(`Query candidate step ran: ${queryCandidatesResult.didRun}`);
+    logInfo(`Query family count: ${queryCandidates.query_families.length}`);
     logInfo(
-      `Topical clusters confidence: ${topicalClusters.generation_quality.overall_confidence}`,
+      `Total query candidate count: ${queryCandidates.query_families.reduce(
+        (total, family) => total + family.query_candidates.length,
+        0,
+      )}`,
     );
+    logInfo(
+      `Query generation confidence: ${queryCandidates.generation_quality.overall_confidence}`,
+    );
+    logSuccess("Query candidate generation stage completed");
 
-    if (hasQueryCandidates(topicalClusters)) {
-      logInfo(
-        "Topical clusters generated with query_candidates. SERP collection requires validated selected queries and is skipped for now.",
-      );
-      return;
-    }
-
-    if (!hasLegacyPrimaryQueries(topicalClusters)) {
-      logInfo(
-        "Topical clusters do not include selected SERP queries. SERP collection is skipped for now.",
-      );
-      return;
-    }
-
-    const serpDataResult = await runCachedStep({
-      stepName: "serp-data-collection",
-      artifactPath: serpDataArtifactPath,
-      force: forceSerp,
-      run: () => collectSerpData(topicalClusters),
-    });
-    const serpData = serpDataResult.data;
-
-    logInfo(`SERP data cache hit: ${serpDataResult.cacheHit}`);
-    logInfo(`SERP data step ran: ${serpDataResult.didRun}`);
-    logInfo(`SERP query entries: ${serpData.queries.length}`);
-
-    const queryMetricsResult = await runCachedStep({
-      stepName: "query-metrics-collection",
-      artifactPath: queryAnalysisArtifactPath,
+    const keywordMetricsResult = await runCachedStep({
+      stepName: "keyword-metrics-generation",
+      artifactPath: keywordMetricsArtifactPath,
       force: forceQueryMetrics,
-      run: () => collectQueryMetrics(serpData),
-    });
+      run: async () => {
+        const { generateKeywordMetrics } = await import(
+          "./steps/generateKeywordMetrics.js"
+        );
 
-    logInfo(`Query metrics cache hit: ${queryMetricsResult.cacheHit}`);
-    logInfo(`Query metrics step ran: ${queryMetricsResult.didRun}`);
-    logInfo(`Query analyses: ${queryMetricsResult.data.length}`);
+        return generateKeywordMetrics(queryCandidates, runContext.runId, {
+          locationCode: runContext.locationCode,
+          locationName: runContext.country,
+          languageCode: runContext.languageCode,
+        });
+      },
+    });
+    const keywordMetrics = keywordMetricsResult.data;
+
+    logInfo(`Keyword metrics cache hit: ${keywordMetricsResult.cacheHit}`);
+    logInfo(`Keyword metrics step ran: ${keywordMetricsResult.didRun}`);
+    logInfo(
+      `Keyword metrics submitted queries: ${keywordMetrics.summary.submitted_queries}`,
+    );
+    logInfo(
+      `Keyword metrics returned queries: ${keywordMetrics.summary.returned_queries}`,
+    );
+    logInfo(
+      `Keyword metrics no-data queries: ${keywordMetrics.summary.no_data_queries}`,
+    );
+    logInfo(
+      `Keyword metrics positive-volume queries: ${keywordMetrics.summary.positive_volume_queries}`,
+    );
+    logInfo(
+      `Keyword metrics families with positive volume: ${keywordMetrics.summary.families_with_positive_volume}`,
+    );
+    logInfo(
+      `Keyword metrics provider cost: ${keywordMetrics.summary.provider_cost_usd}`,
+    );
+    logSuccess("Keyword metrics generation stage completed");
+    logInfo(
+      "Keyword validation is not implemented yet; stopping after keyword_metrics.json.",
+    );
   } catch (error) {
     logError("Local pipeline run failed", error);
     process.exitCode = 1;
