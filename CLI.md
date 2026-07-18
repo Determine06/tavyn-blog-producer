@@ -8,9 +8,10 @@ npm run dev
 
 What it does:
 - Uses the default website: https://tavyn.dev/
-- Runs the local pipeline from crawl through query metrics
+- Runs the local pipeline from crawl through query candidates
 - Uses cached artifacts when they exist
 - Runs a step only when its artifact is missing or its force flag is passed
+- Stops after query-candidates.json because keyword validation is not implemented yet
 
 ## Custom website crawl
 
@@ -70,7 +71,50 @@ What it does:
 - Overwrites crawl-context.json
 - Regenerates company-profile.json
 
-## Force topical clusters
+## Generate query candidates from cached crawl and profile
+
+Command:
+
+npm run query-candidates
+
+What it does:
+- Uses the default website: https://tavyn.dev/
+- Uses cached crawl-context.json if available
+- Uses cached company-profile.json if available
+- Regenerates query-candidates.json
+- Does not rerun crawl or company profile unless their cached artifacts are missing
+- Stops after query-candidates.json
+
+## Generate query candidates for a custom website from cached crawl and profile
+
+Command:
+
+npm run dev -- https://example.com --force-query-candidates
+
+What it does:
+- Uses the provided website URL
+- Uses cached crawl-context.json for that website if available
+- Uses cached company-profile.json for that website if available
+- Regenerates query-candidates.json for that website
+- Does not rerun crawl or company profile unless their cached artifacts are missing
+- Stops after query-candidates.json
+
+## Force query candidates
+
+Command:
+
+npm run dev -- --force-query-candidates
+
+What it does:
+- Uses cached crawl context if available
+- Uses cached company-profile.json if available
+- Regenerates query-candidates.json
+- Stops after query-candidates.json
+
+Compatibility alias:
+- npm run dev -- --force-clusters
+
+## Legacy force topical clusters alias
 
 Command:
 
@@ -79,18 +123,20 @@ npm run dev -- --force-clusters
 What it does:
 - Uses cached crawl context if available
 - Uses cached company-profile.json if available
-- Regenerates topical-clusters.json
+- Regenerates query-candidates.json
+- Preserved as a temporary alias for --force-query-candidates
 
 ## Force full early pipeline
 
 Command:
 
-npm run dev -- --force-crawl --force-profile --force-clusters
+npm run dev -- --force-crawl --force-profile --force-query-candidates
 
 What it does:
 - Reruns Firecrawl
 - Regenerates company-profile.json
-- Regenerates topical-clusters.json
+- Regenerates query-candidates.json
+- Stops after query-candidates.json
 
 ## Force SERP data collection
 
@@ -99,9 +145,8 @@ Command:
 npm run dev -- --force-serp
 
 What it does:
-- Uses cached crawl, company profile, and topical clusters if available
-- Refetches Serper data
-- Regenerates serp-data.json
+- Not currently connected to the main pipeline
+- The pipeline stops after query-candidates.json
 
 Required environment variable:
 - SERPER_API_KEY
@@ -113,11 +158,8 @@ Command:
 npm run dev -- --force-query-metrics
 
 What it does:
-- Uses cached crawl, company profile, topical clusters, and SERP data if available
-- Calls DataForSEO for keyword search volume/CPC
-- Calls DataForSEO for authority ranks
-- Regenerates query-analysis.json
-- Does not run LLM analysis
+- Not currently connected to the main pipeline
+- The pipeline stops after query-candidates.json
 
 Required environment variables:
 - DATAFORSEO_LOGIN
@@ -127,14 +169,13 @@ Required environment variables:
 
 Command:
 
-npm run dev -- --force-crawl --force-profile --force-clusters --force-serp --force-query-metrics
+npm run dev -- --force-crawl --force-profile --force-query-candidates
 
 What it does:
 - Reruns Firecrawl
 - Regenerates company-profile.json
-- Regenerates topical-clusters.json
-- Refetches Serper data
-- Refetches DataForSEO metrics
+- Regenerates query-candidates.json
+- Stops after query-candidates.json
 
 ## Hyperparameter logging
 
@@ -162,9 +203,9 @@ Company profile artifacts are saved under:
 
 artifacts/<safe-hostname>/company-profile.json
 
-Topical cluster artifacts are saved under:
+Query candidate artifacts are saved under:
 
-artifacts/<safe-hostname>/topical-clusters.json
+artifacts/<safe-hostname>/query-candidates.json
 
 SERP data artifacts are saved under:
 
@@ -182,4 +223,5 @@ Examples:
 
 - Generated artifacts are ignored by Git.
 - Use --force-crawl when you want fresh Firecrawl data.
-- Later pipeline steps like company profile, clusters, SERP results, and final audit JSON will use the same cached-step pattern.
+- Use npm run query-candidates when you want cached crawl/profile inputs and a fresh query-candidates.json for the default Tavyn site.
+- Later pipeline steps like keyword validation, SERP results, and final audit JSON will use the same cached-step pattern.

@@ -8,9 +8,11 @@ type CliOptions = {
   websiteUrl: string;
   forceCrawl: boolean;
   forceProfile: boolean;
+  forceSeedKeywords: boolean;
   forceQueryCandidates: boolean;
   forceSerp: boolean;
   forceQueryMetrics: boolean;
+  forceQueryValidation: boolean;
 };
 
 type RunContext = {
@@ -27,20 +29,24 @@ type RunContext = {
 function parseCliOptions(argv: string[]): CliOptions {
   const forceCrawl = argv.includes("--force-crawl");
   const forceProfile = argv.includes("--force-profile");
+  const forceSeedKeywords = argv.includes("--force-seed-keywords");
   const forceQueryCandidates =
     argv.includes("--force-query-candidates") ||
     argv.includes("--force-clusters");
   const forceSerp = argv.includes("--force-serp");
   const forceQueryMetrics = argv.includes("--force-query-metrics");
+  const forceQueryValidation = argv.includes("--force-query-validation");
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
 
   return {
     websiteUrl: urlArgs[0] ?? "https://tavyn.dev/",
     forceCrawl,
     forceProfile,
+    forceSeedKeywords,
     forceQueryCandidates,
     forceSerp,
     forceQueryMetrics,
+    forceQueryValidation,
   };
 }
 
@@ -72,16 +78,19 @@ async function main(): Promise<void> {
       websiteUrl,
       forceCrawl,
       forceProfile,
+      forceSeedKeywords,
       forceQueryCandidates,
       forceSerp,
       forceQueryMetrics,
+      forceQueryValidation,
     } = parseCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
     const crawlArtifactPath = `artifacts/${safeHostname}/crawl-context.json`;
     const companyProfileArtifactPath = `artifacts/${safeHostname}/company-profile.json`;
-    const queryCandidatesArtifactPath = `artifacts/${safeHostname}/query-candidates.json`;
+    const seedKeywordsArtifactPath = `artifacts/${safeHostname}/seed-keywords.json`;
     const keywordMetricsArtifactPath = `artifacts/${safeHostname}/keyword_metrics.json`;
+    const queryValidationArtifactPath = `artifacts/${safeHostname}/query-validations.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -94,13 +103,16 @@ async function main(): Promise<void> {
     logInfo(`Company profile website URL: ${runContext.websiteUrl}`);
     logInfo(`forceCrawl: ${forceCrawl}`);
     logInfo(`forceProfile: ${forceProfile}`);
+    logInfo(`forceSeedKeywords: ${forceSeedKeywords}`);
     logInfo(`forceQueryCandidates: ${forceQueryCandidates}`);
     logInfo(`forceSerp: ${forceSerp}`);
     logInfo(`forceQueryMetrics: ${forceQueryMetrics}`);
+    logInfo(`forceQueryValidation: ${forceQueryValidation}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
-    logInfo(`Query candidates artifact path: ${queryCandidatesArtifactPath}`);
+    logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
     logInfo(`Keyword metrics artifact path: ${keywordMetricsArtifactPath}`);
+    logInfo(`Query validation artifact path: ${queryValidationArtifactPath}`);
 
     const crawlResult = await runCachedStep({
       stepName: "company-profile-crawl",
@@ -153,42 +165,51 @@ async function main(): Promise<void> {
       `Overall confidence: ${companyProfile.profile_quality.overall_confidence}`,
     );
 
-    const shouldForceQueryCandidates =
-      forceQueryCandidates || companyProfileResult.didRun;
+    const shouldForceSeedKeywords =
+      forceSeedKeywords || companyProfileResult.didRun;
 
-    if (companyProfileResult.didRun && !forceQueryCandidates) {
+    if (companyProfileResult.didRun && !forceSeedKeywords) {
       logInfo(
-        "Query candidate regeneration required because the company profile changed.",
+        "Seed keyword regeneration required because the company profile changed.",
       );
     }
 
-    const queryCandidatesResult = await runCachedStep({
-      stepName: "query-candidate-generation",
-      artifactPath: queryCandidatesArtifactPath,
-      force: shouldForceQueryCandidates,
+    const seedKeywordsResult = await runCachedStep({
+      stepName: "seed-keyword-generation",
+      artifactPath: seedKeywordsArtifactPath,
+      force: shouldForceSeedKeywords,
       run: async () => {
-        const { generateQueryCandidates } = await import(
-          "./steps/generateQueryCandidates.js"
+        const { generateSeedKeywords } = await import(
+          "./steps/generateSeedKeywords.js"
         );
 
-        return generateQueryCandidates(companyProfile, runContext.runId);
+        return generateSeedKeywords(companyProfile, runContext.runId);
       },
     });
-    const queryCandidates = queryCandidatesResult.data;
+    const seedKeywords = seedKeywordsResult.data;
+    const problemDemandSeedCount =
+      seedKeywords.demand_territories.find(
+        (territory) => territory.territory_id === "problem_demand",
+      )?.seed_keywords.length ?? 0;
+    const solutionDemandSeedCount =
+      seedKeywords.demand_territories.find(
+        (territory) => territory.territory_id === "solution_demand",
+      )?.seed_keywords.length ?? 0;
+    const totalSeedCount = seedKeywords.demand_territories.reduce(
+      (total, territory) => total + territory.seed_keywords.length,
+      0,
+    );
 
-    logInfo(`Query candidates cache hit: ${queryCandidatesResult.cacheHit}`);
-    logInfo(`Query candidate step ran: ${queryCandidatesResult.didRun}`);
-    logInfo(`Query family count: ${queryCandidates.query_families.length}`);
+    logInfo(`Seed keywords cache hit: ${seedKeywordsResult.cacheHit}`);
+    logInfo(`Seed keyword step ran: ${seedKeywordsResult.didRun}`);
+    logInfo(`Demand territory count: ${seedKeywords.demand_territories.length}`);
+    logInfo(`Problem-demand seed count: ${problemDemandSeedCount}`);
+    logInfo(`Solution-demand seed count: ${solutionDemandSeedCount}`);
+    logInfo(`Total seed count: ${totalSeedCount}`);
     logInfo(
-      `Total query candidate count: ${queryCandidates.query_families.reduce(
-        (total, family) => total + family.query_candidates.length,
-        0,
-      )}`,
+      `Seed generation confidence: ${seedKeywords.generation_quality.overall_confidence}`,
     );
-    logInfo(
-      `Query generation confidence: ${queryCandidates.generation_quality.overall_confidence}`,
-    );
-    logSuccess("Query candidate generation stage completed");
+    logSuccess("Seed keyword generation stage completed");
 
     const keywordMetricsResult = await runCachedStep({
       stepName: "keyword-metrics-generation",
@@ -199,11 +220,7 @@ async function main(): Promise<void> {
           "./steps/generateKeywordMetrics.js"
         );
 
-        return generateKeywordMetrics(queryCandidates, runContext.runId, {
-          locationCode: runContext.locationCode,
-          locationName: runContext.country,
-          languageCode: runContext.languageCode,
-        });
+        return generateKeywordMetrics(seedKeywords, runContext.runId);
       },
     });
     const keywordMetrics = keywordMetricsResult.data;
@@ -211,26 +228,75 @@ async function main(): Promise<void> {
     logInfo(`Keyword metrics cache hit: ${keywordMetricsResult.cacheHit}`);
     logInfo(`Keyword metrics step ran: ${keywordMetricsResult.didRun}`);
     logInfo(
-      `Keyword metrics submitted queries: ${keywordMetrics.summary.submitted_queries}`,
+      `Problem queries received: ${keywordMetrics.summary.problem_queries_received}`,
     );
     logInfo(
-      `Keyword metrics returned queries: ${keywordMetrics.summary.returned_queries}`,
+      `Solution queries received: ${keywordMetrics.summary.solution_queries_received}`,
     );
     logInfo(
-      `Keyword metrics no-data queries: ${keywordMetrics.summary.no_data_queries}`,
+      `Total queries received: ${keywordMetrics.summary.total_queries_received}`,
     );
     logInfo(
-      `Keyword metrics positive-volume queries: ${keywordMetrics.summary.positive_volume_queries}`,
+      `Unique queries received: ${keywordMetrics.summary.unique_queries_received}`,
     );
     logInfo(
-      `Keyword metrics families with positive volume: ${keywordMetrics.summary.families_with_positive_volume}`,
+      `Cross-territory duplicate count: ${keywordMetrics.summary.queries_returned_in_both_sets}`,
     );
     logInfo(
-      `Keyword metrics provider cost: ${keywordMetrics.summary.provider_cost_usd}`,
+      `Keyword metrics provider cost: ${keywordMetrics.provider.total_cost_usd}`,
     );
     logSuccess("Keyword metrics generation stage completed");
+
+    const shouldForceQueryValidation =
+      forceQueryValidation ||
+      companyProfileResult.didRun ||
+      keywordMetricsResult.didRun;
+
+    if (keywordMetricsResult.didRun && !forceQueryValidation) {
+      logInfo(
+        "Query validation regeneration required because keyword metrics changed.",
+      );
+    }
+
+    if (companyProfileResult.didRun && !forceQueryValidation) {
+      logInfo(
+        "Query validation regeneration required because the company profile changed.",
+      );
+    }
+
+    const queryValidationResult = await runCachedStep({
+      stepName: "query-validation",
+      artifactPath: queryValidationArtifactPath,
+      force: shouldForceQueryValidation,
+      run: async () => {
+        const { generateQueryValidation } = await import(
+          "./steps/generateQueryValidation.js"
+        );
+
+        return generateQueryValidation(
+          companyProfile,
+          keywordMetrics,
+          runContext.runId,
+        );
+      },
+    });
+    const queryValidation = queryValidationResult.data;
+    const validQueryCount = queryValidation.query_validations.filter(
+      (validation) => validation.verdict === "valid",
+    ).length;
+    const invalidQueryCount =
+      queryValidation.query_validations.length - validQueryCount;
+
+    logInfo(`Query validation cache hit: ${queryValidationResult.cacheHit}`);
+    logInfo(`Query validation step ran: ${queryValidationResult.didRun}`);
     logInfo(
-      "Keyword validation is not implemented yet; stopping after keyword_metrics.json.",
+      `Query validation count: ${queryValidation.query_validations.length}`,
+    );
+    logInfo(`Valid query count: ${validQueryCount}`);
+    logInfo(`Invalid query count: ${invalidQueryCount}`);
+    logSuccess("Query validation stage completed");
+    logInfo(
+      "Query clustering is not implemented yet; stopping after query-validations.json.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);

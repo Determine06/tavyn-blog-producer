@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_example",
+  "generated_at": "ISO-8601",
+  "source_artifacts": [
+    "seed-keywords.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://example.com",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/keyword_ideas/live",
+    "http_requests_made": 2,
+    "tasks_submitted": 2,
+    "total_cost_usd": 0
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "limit_per_task": 100,
+    "closely_variants": true,
+    "ignore_synonyms": false,
+    "include_serp_info": false,
+    "include_clickstream_data": false,
+    "minimum_search_volume": 1
+  },
+  "query_sets": [
+    {
+      "territory": "problem_demand",
+      "task_tag": "problem_demand",
+      "seeds_used": [
+        "problem seed one",
+        "problem seed two",
+        "problem seed three",
+        "problem seed four",
+        "problem seed five",
+        "problem seed six"
+      ],
+      "task_result": {
+        "task_id": "dataforseo-problem-task-id",
+        "status_code": 20000,
+        "status_message": "Ok.",
+        "cost_usd": 0,
+        "total_available_results": 0,
+        "items_received": 0
+      },
+      "queries": [
+        {
+          "query": "example problem query",
+          "discovery_rank": 1,
+          "core_keyword": "example core keyword",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 110
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 10,
+              "quarterly": 20,
+              "yearly": 35
+            },
+            "cpc": 4.25,
+            "paid_competition": 0.42,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 24,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 120.5,
+              "referring_domains": 28.3,
+              "main_domain_rank": 462.8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "task_tag": "solution_demand",
+      "seeds_used": [
+        "solution seed one",
+        "solution seed two",
+        "solution seed three",
+        "solution seed four",
+        "solution seed five",
+        "solution seed six"
+      ],
+      "task_result": {
+        "task_id": "dataforseo-solution-task-id",
+        "status_code": 20000,
+        "status_message": "Ok.",
+        "cost_usd": 0,
+        "total_available_results": 0,
+        "items_received": 0
+      },
+      "queries": [
+        {
+          "query": "example solution query",
+          "discovery_rank": 1,
+          "core_keyword": "example core keyword",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 90,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 100
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 11,
+              "quarterly": 18,
+              "yearly": 30
+            },
+            "cpc": 7.5,
+            "paid_competition": 0.65,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 31,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": [
+                "transactional"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 180.2,
+              "referring_domains": 36.4,
+              "main_domain_rank": 510.6
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "problem_queries_received": 0,
+    "solution_queries_received": 0,
+    "total_queries_received": 0,
+    "unique_queries_received": 0,
+    "queries_returned_in_both_sets": 0,
+    "missing_search_volume_count": 0,
+    "missing_keyword_difficulty_count": 0,
+    "missing_search_intent_count": 0,
+    "missing_average_top_10_count": 0
+  }
+}

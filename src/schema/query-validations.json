@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_example",
+  "generated_at": "ISO-8601",
+  "source_artifacts": [
+    "company-profile.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://example.com",
+  "source_profile": {
+    "company_name": "Example Company",
+    "product_category": "Product category",
+    "primary_icp": "Primary ICP"
+  },
+  "query_validations": [
+    {
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "query": "example problem-demand query",
+      "verdict": "valid",
+      "reasoning": "The query describes a problem, process, or outcome directly connected to the company’s primary ICP and product."
+    },
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "query": "unrelated problem-demand query",
+      "verdict": "invalid",
+      "reasoning": "The query uses similar language but refers to an unrelated market, brand, place, industry, or customer problem."
+    },
+    {
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "example solution-demand query",
+      "verdict": "valid",
+      "reasoning": "The query represents a product category or solution approach the company’s target customer could reasonably evaluate."
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "unrelated solution-demand query",
+      "verdict": "invalid",
+      "reasoning": "The query represents a software category or solution use case that the company does not serve."
+    }
+  ]
+}

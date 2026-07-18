@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_example",
+  "generated_at": "ISO-8601",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://example.com",
+  "source_profile": {
+    "company_name": "Example Company",
+    "product_category": "Product category",
+    "primary_icp": "Primary ICP"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "Primary problem or desired outcome",
+      "territory_summary": "The fundamental problem, job, or desired outcome the product helps its ICP address.",
+      "market_topic": "Established market topic representing the problem",
+      "primary_icp": "Primary ICP",
+      "product_connection": "Why this problem territory is directly relevant to the company and its product.",
+      "evidence": [
+        {
+          "source_field": "buyer_pains[0].pain",
+          "evidence_text": "Relevant company-profile evidence",
+          "reasoning": "Why this evidence supports the problem-demand territory"
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "problem_seed_01",
+          "keyword": "core problem term",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Broad, established term representing the fundamental customer problem.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "problem_seed_02",
+          "keyword": "problem term for icp",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Connects the core problem to the company’s primary ICP.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "problem_seed_03",
+          "keyword": "problem strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents how the ICP may search for a process or strategy.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "problem_seed_04",
+          "keyword": "desired customer outcome",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents the outcome the customer is trying to achieve.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "problem_seed_05",
+          "keyword": "alternative problem phrase",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A distinct market-language expression of the same underlying problem.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "problem_seed_06",
+          "keyword": "icp outcome strategy",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Combines the customer segment with the outcome without describing a specific product.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "Primary solution category",
+      "territory_summary": "The solution category, product approach, or software category the company operates within.",
+      "market_topic": "Established market topic representing the solution category",
+      "primary_icp": "Primary ICP",
+      "product_connection": "Why this solution territory accurately represents the company’s product category.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "Relevant company-profile evidence",
+          "reasoning": "Why this evidence supports the solution-demand territory"
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "solution_seed_01",
+          "keyword": "core solution category",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Broad, established term for the product’s fundamental solution category.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_seed_02",
+          "keyword": "solution category for icp",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Connects the solution category to the company’s primary ICP.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_seed_03",
+          "keyword": "automated solution category",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Represents the product’s approach without using proprietary product language.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "solution_seed_04",
+          "keyword": "solution software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Commercial category phrasing likely to surface software-selection queries.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_seed_05",
+          "keyword": "best solution tools",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Commercial discovery seed intended to surface tool and comparison opportunities.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "solution_seed_06",
+          "keyword": "alternative solution approach",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "A distinct established description of the product’s solution approach.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "medium",
+    "missing_information": [],
+    "potential_risks": [],
+    "notes": "Exactly two demand territories and six globally unique seed keywords per territory are required."
+  }
+}

@@ -7,6 +7,7 @@
   "scripts": {
     "cli": "tsx src/cli.ts",
     "dev": "tsx src/index.ts",
+    "query-candidates": "tsx src/index.ts --force-query-candidates",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
