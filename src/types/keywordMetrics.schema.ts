@@ -84,7 +84,7 @@ const AverageTop10Schema = z
   })
   .strict();
 
-const QueryMetricsSchema = z
+export const QueryMetricsSchema = z
   .object({
     search_volume: z.number().int().min(0).nullable(),
     monthly_searches: z.array(MonthlySearchSchema),

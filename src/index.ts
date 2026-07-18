@@ -13,6 +13,7 @@ type CliOptions = {
   forceSerp: boolean;
   forceQueryMetrics: boolean;
   forceQueryValidation: boolean;
+  forceQueryOpportunities: boolean;
 };
 
 type RunContext = {
@@ -36,6 +37,9 @@ function parseCliOptions(argv: string[]): CliOptions {
   const forceSerp = argv.includes("--force-serp");
   const forceQueryMetrics = argv.includes("--force-query-metrics");
   const forceQueryValidation = argv.includes("--force-query-validation");
+  const forceQueryOpportunities = argv.includes(
+    "--force-query-opportunities",
+  );
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
 
   return {
@@ -47,6 +51,7 @@ function parseCliOptions(argv: string[]): CliOptions {
     forceSerp,
     forceQueryMetrics,
     forceQueryValidation,
+    forceQueryOpportunities,
   };
 }
 
@@ -83,6 +88,7 @@ async function main(): Promise<void> {
       forceSerp,
       forceQueryMetrics,
       forceQueryValidation,
+      forceQueryOpportunities,
     } = parseCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
@@ -91,6 +97,9 @@ async function main(): Promise<void> {
     const seedKeywordsArtifactPath = `artifacts/${safeHostname}/seed-keywords.json`;
     const keywordMetricsArtifactPath = `artifacts/${safeHostname}/keyword_metrics.json`;
     const queryValidationArtifactPath = `artifacts/${safeHostname}/query-validations.json`;
+    const confirmedQueriesArtifactPath = `artifacts/${safeHostname}/confirmed-queries.json`;
+    const queryOpportunitiesArtifactPath =
+      `artifacts/${safeHostname}/query-opportunities.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -108,11 +117,16 @@ async function main(): Promise<void> {
     logInfo(`forceSerp: ${forceSerp}`);
     logInfo(`forceQueryMetrics: ${forceQueryMetrics}`);
     logInfo(`forceQueryValidation: ${forceQueryValidation}`);
+    logInfo(`forceQueryOpportunities: ${forceQueryOpportunities}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
     logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
     logInfo(`Keyword metrics artifact path: ${keywordMetricsArtifactPath}`);
     logInfo(`Query validation artifact path: ${queryValidationArtifactPath}`);
+    logInfo(`Confirmed queries artifact path: ${confirmedQueriesArtifactPath}`);
+    logInfo(
+      `Query opportunities artifact path: ${queryOpportunitiesArtifactPath}`,
+    );
 
     const crawlResult = await runCachedStep({
       stepName: "company-profile-crawl",
@@ -295,8 +309,79 @@ async function main(): Promise<void> {
     logInfo(`Valid query count: ${validQueryCount}`);
     logInfo(`Invalid query count: ${invalidQueryCount}`);
     logSuccess("Query validation stage completed");
+
+    const confirmedQueriesResult = await runCachedStep({
+      stepName: "confirmed-query-generation",
+      artifactPath: confirmedQueriesArtifactPath,
+      force: queryValidationResult.didRun || keywordMetricsResult.didRun,
+      run: async () => {
+        const { generateConfirmedQueries } = await import(
+          "./steps/generateQueryValidation.js"
+        );
+
+        return generateConfirmedQueries(queryValidation, keywordMetrics);
+      },
+    });
+    const confirmedQueries = confirmedQueriesResult.data;
+
+    logInfo(`Confirmed queries cache hit: ${confirmedQueriesResult.cacheHit}`);
+    logInfo(`Confirmed query step ran: ${confirmedQueriesResult.didRun}`);
     logInfo(
-      "Query clustering is not implemented yet; stopping after query-validations.json.",
+      `Total queries evaluated: ${confirmedQueries.summary.total_queries_evaluated}`,
+    );
+    logInfo(
+      `Total queries confirmed: ${confirmedQueries.summary.total_queries_confirmed}`,
+    );
+    logInfo(
+      `Total queries rejected: ${confirmedQueries.summary.total_queries_rejected}`,
+    );
+    logInfo(
+      `Problem-demand confirmed: ${confirmedQueries.summary.problem_queries_confirmed}`,
+    );
+    logInfo(
+      `Solution-demand confirmed: ${confirmedQueries.summary.solution_queries_confirmed}`,
+    );
+    logSuccess("Confirmed query generation stage completed");
+
+    const shouldForceQueryOpportunities =
+      forceQueryOpportunities || confirmedQueriesResult.didRun;
+
+    const queryOpportunitiesResult = await runCachedStep({
+      stepName: "query-opportunity-scoring",
+      artifactPath: queryOpportunitiesArtifactPath,
+      force: shouldForceQueryOpportunities,
+      run: async () => {
+        const { generateQueryOpportunities } = await import(
+          "./steps/generateQueryOpportunities.js"
+        );
+
+        return generateQueryOpportunities(
+          confirmedQueries,
+          runContext.runId,
+        );
+      },
+    });
+    const queryOpportunities = queryOpportunitiesResult.data;
+
+    logInfo(
+      `Query opportunities cache hit: ${queryOpportunitiesResult.cacheHit}`,
+    );
+    logInfo(
+      `Query opportunity step ran: ${queryOpportunitiesResult.didRun}`,
+    );
+    logInfo(
+      `Problem-demand queries selected: ${queryOpportunities.summary.problem_queries_selected}`,
+    );
+    logInfo(
+      `Solution-demand queries selected: ${queryOpportunities.summary.solution_queries_selected}`,
+    );
+    logInfo(
+      `Total queries selected: ${queryOpportunities.summary.total_queries_selected}`,
+    );
+    logInfo(`Query opportunities artifact path: ${queryOpportunitiesArtifactPath}`);
+    logSuccess("Query opportunity scoring stage completed");
+    logInfo(
+      "Opportunity scoring is complete; stopping before LLM recommendation selection.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);
