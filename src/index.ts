@@ -16,6 +16,7 @@ type CliOptions = {
   forceQueryOpportunities: boolean;
   forceQueryRecommendations: boolean;
   forceContentRecommendation: boolean;
+  forceCompetitorLandscape: boolean;
 };
 
 type RunContext = {
@@ -48,6 +49,9 @@ function parseCliOptions(argv: string[]): CliOptions {
   const forceContentRecommendation = argv.includes(
     "--force-content-recommendation",
   );
+  const forceCompetitorLandscape = argv.includes(
+    "--force-competitor-landscape",
+  );
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
 
   return {
@@ -62,6 +66,7 @@ function parseCliOptions(argv: string[]): CliOptions {
     forceQueryOpportunities,
     forceQueryRecommendations,
     forceContentRecommendation,
+    forceCompetitorLandscape,
   };
 }
 
@@ -101,6 +106,7 @@ async function main(): Promise<void> {
       forceQueryOpportunities,
       forceQueryRecommendations,
       forceContentRecommendation,
+      forceCompetitorLandscape,
     } = parseCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
@@ -118,6 +124,8 @@ async function main(): Promise<void> {
       `artifacts/${safeHostname}/serp-results.json`;
     const contentRecommendationArtifactPath =
       `artifacts/${safeHostname}/content-recommendation.json`;
+    const competitorLandscapeArtifactPath =
+      `artifacts/${safeHostname}/competitor-landscape.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -138,6 +146,7 @@ async function main(): Promise<void> {
     logInfo(`forceQueryOpportunities: ${forceQueryOpportunities}`);
     logInfo(`forceQueryRecommendations: ${forceQueryRecommendations}`);
     logInfo(`forceContentRecommendation: ${forceContentRecommendation}`);
+    logInfo(`forceCompetitorLandscape: ${forceCompetitorLandscape}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
     logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
@@ -153,6 +162,9 @@ async function main(): Promise<void> {
     logInfo(`SERP results artifact path: ${serpResultsArtifactPath}`);
     logInfo(
       `Content recommendation artifact path: ${contentRecommendationArtifactPath}`,
+    );
+    logInfo(
+      `Competitor landscape artifact path: ${competitorLandscapeArtifactPath}`,
     );
 
     const crawlResult = await runCachedStep({
@@ -566,8 +578,54 @@ async function main(): Promise<void> {
       `Content recommendation artifact path: ${contentRecommendationArtifactPath}`,
     );
     logSuccess("SERP-informed content recommendation stage completed");
+
+    const shouldForceCompetitorLandscape =
+      forceCompetitorLandscape || confirmedQueriesResult.didRun;
+
+    const competitorLandscapeResult = await runCachedStep({
+      stepName: "dataforseo-serp-competitor-landscape",
+      artifactPath: competitorLandscapeArtifactPath,
+      force: shouldForceCompetitorLandscape,
+      run: async () => {
+        const { generateCompetitorLandscape } = await import(
+          "./steps/generateCompetitorLandscape.js"
+        );
+
+        return generateCompetitorLandscape(
+          confirmedQueries,
+          runContext.runId,
+        );
+      },
+    });
+    const competitorLandscape = competitorLandscapeResult.data;
+
     logInfo(
-      "SERP-informed content recommendation generation is complete.",
+      `Competitor landscape cache hit: ${competitorLandscapeResult.cacheHit}`,
+    );
+    logInfo(
+      `Competitor landscape step ran: ${competitorLandscapeResult.didRun}`,
+    );
+    logInfo(
+      `Competitor landscape confirmed queries received: ${competitorLandscape.scope.confirmed_queries_received}`,
+    );
+    logInfo(
+      `Competitor landscape unique queries submitted: ${competitorLandscape.scope.unique_queries_submitted}`,
+    );
+    logInfo(
+      `Competitor landscape total domains found: ${competitorLandscape.summary.total_domains_found}`,
+    );
+    logInfo(
+      `Competitors included: ${competitorLandscape.summary.competitors_included}`,
+    );
+    logInfo(
+      `Competitor landscape provider cost: ${competitorLandscape.provider.total_cost_usd}`,
+    );
+    logInfo(
+      `Competitor landscape artifact path: ${competitorLandscapeArtifactPath}`,
+    );
+    logSuccess("Competitor landscape collection stage completed");
+    logInfo(
+      "Competitor landscape collection is complete.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);

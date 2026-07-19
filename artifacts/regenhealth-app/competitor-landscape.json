@@ -1,0 +1,1557 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "ea74ae89-ba0f-4b4f-b62e-64b1e36c258c",
+  "generated_at": "2026-07-19T21:17:00.419Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://regenhealth.app/",
+  "target_domain": "regenhealth.app",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
+    "http_requests_made": 1,
+    "tasks_submitted": 1,
+    "task_id": "07200017-2045-0383-0000-2f0ee8852de0",
+    "task_status_code": 20000,
+    "task_status_message": "Ok.",
+    "total_cost_usd": 0.018
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "include_subdomains": true,
+    "item_types": [
+      "organic"
+    ],
+    "limit": 50,
+    "order_by": [
+      "rating,desc"
+    ],
+    "target_domain_exclusion_filter": "(^|\\.)regenhealth\\.app$"
+  },
+  "scope": {
+    "based_on": "all_validated_queries",
+    "confirmed_queries_received": 14,
+    "unique_queries_submitted": 14,
+    "duplicate_queries_removed": 0,
+    "provider_keyword_limit": 200,
+    "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+  },
+  "summary": {
+    "total_domains_found": 108,
+    "domains_received": 50,
+    "competitors_included": 50,
+    "target_domain_excluded": true
+  },
+  "competitors": [
+    {
+      "competitor_id": "competitor_reddit-com",
+      "rank": 1,
+      "domain": "reddit.com",
+      "average_position": 9.2,
+      "median_position": 3,
+      "visibility_rating": 454,
+      "visibility_index": 2.6,
+      "estimated_traffic_from_analyzed_queries": 37.397999999999996,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 35.71,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_youtube-com",
+      "rank": 2,
+      "domain": "youtube.com",
+      "average_position": 9.2,
+      "median_position": 8,
+      "visibility_rating": 454,
+      "visibility_index": 1.7,
+      "estimated_traffic_from_analyzed_queries": 47.54599999999999,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 35.71,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_instagram-com",
+      "rank": 3,
+      "domain": "instagram.com",
+      "average_position": 13.2,
+      "median_position": 13,
+      "visibility_rating": 434,
+      "visibility_index": 0.30000000000000004,
+      "estimated_traffic_from_analyzed_queries": 5.198,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 35.71,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_apps-apple-com",
+      "rank": 4,
+      "domain": "apps.apple.com",
+      "average_position": 1.3333333333333333,
+      "median_position": 1,
+      "visibility_rating": 296,
+      "visibility_index": 2.9,
+      "estimated_traffic_from_analyzed_queries": 97.67999999999999,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_play-google-com",
+      "rank": 5,
+      "domain": "play.google.com",
+      "average_position": 2,
+      "median_position": 2,
+      "visibility_rating": 294,
+      "visibility_index": 2.7,
+      "estimated_traffic_from_analyzed_queries": 58.172000000000004,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptiq-io",
+      "rank": 6,
+      "domain": "peptiq.io",
+      "average_position": 4,
+      "median_position": 4,
+      "visibility_rating": 288,
+      "visibility_index": 2.0999999999999996,
+      "estimated_traffic_from_analyzed_queries": 22.406,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_helloregimen-com",
+      "rank": 7,
+      "domain": "helloregimen.com",
+      "average_position": 8.333333333333334,
+      "median_position": 7,
+      "visibility_rating": 275,
+      "visibility_index": 0.95,
+      "estimated_traffic_from_analyzed_queries": 4.3260000000000005,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidepro-app",
+      "rank": 8,
+      "domain": "peptidepro.app",
+      "average_position": 10.666666666666666,
+      "median_position": 10,
+      "visibility_rating": 268,
+      "visibility_index": 0.45,
+      "estimated_traffic_from_analyzed_queries": 2.6959999999999997,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidekit-app",
+      "rank": 9,
+      "domain": "peptidekit.app",
+      "average_position": 11.333333333333334,
+      "median_position": 11,
+      "visibility_rating": 266,
+      "visibility_index": 0.3,
+      "estimated_traffic_from_analyzed_queries": 3.1900000000000004,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mypeptideapp-com",
+      "rank": 10,
+      "domain": "mypeptideapp.com",
+      "average_position": 16.666666666666668,
+      "median_position": 17,
+      "visibility_rating": 250,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 1.4500000000000002,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_bodydex-app",
+      "rank": 11,
+      "domain": "bodydex.app",
+      "average_position": 31.666666666666668,
+      "median_position": 29,
+      "visibility_rating": 205,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.7139999999999999,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidedosingprotocols-com",
+      "rank": 12,
+      "domain": "peptidedosingprotocols.com",
+      "average_position": 1,
+      "median_position": 1,
+      "visibility_rating": 198,
+      "visibility_index": 2,
+      "estimated_traffic_from_analyzed_queries": 194.56,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidedosages-com",
+      "rank": 13,
+      "domain": "peptidedosages.com",
+      "average_position": 2,
+      "median_position": 2,
+      "visibility_rating": 196,
+      "visibility_index": 1.8,
+      "estimated_traffic_from_analyzed_queries": 103.68,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_dosetrack-app",
+      "rank": 14,
+      "domain": "dosetrack.app",
+      "average_position": 35.666666666666664,
+      "median_position": 36,
+      "visibility_rating": 193,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.7139999999999999,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_poseidonperformance-com",
+      "rank": 15,
+      "domain": "poseidonperformance.com",
+      "average_position": 3.5,
+      "median_position": 3,
+      "visibility_rating": 193,
+      "visibility_index": 1.5,
+      "estimated_traffic_from_analyzed_queries": 52.224000000000004,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thepeptideuniversity-com",
+      "rank": 16,
+      "domain": "thepeptideuniversity.com",
+      "average_position": 5.5,
+      "median_position": 4,
+      "visibility_rating": 189,
+      "visibility_index": 1.1,
+      "estimated_traffic_from_analyzed_queries": 29.28,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_bewelllifestylecenters-com",
+      "rank": 17,
+      "domain": "bewelllifestylecenters.com",
+      "average_position": 5.5,
+      "median_position": 5,
+      "visibility_rating": 189,
+      "visibility_index": 1.1,
+      "estimated_traffic_from_analyzed_queries": 25.823999999999998,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_scribd-com",
+      "rank": 18,
+      "domain": "scribd.com",
+      "average_position": 8,
+      "median_position": 7,
+      "visibility_rating": 184,
+      "visibility_index": 0.6000000000000001,
+      "estimated_traffic_from_analyzed_queries": 12.992,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_extension-health",
+      "rank": 19,
+      "domain": "extension.health",
+      "average_position": 8,
+      "median_position": 8,
+      "visibility_rating": 184,
+      "visibility_index": 0.6,
+      "estimated_traffic_from_analyzed_queries": 12.607999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_halflife-labs-com",
+      "rank": 20,
+      "domain": "halflife-labs.com",
+      "average_position": 39,
+      "median_position": 40,
+      "visibility_rating": 183,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.7139999999999999,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 21.43,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_deltapeptides-com",
+      "rank": 21,
+      "domain": "deltapeptides.com",
+      "average_position": 12,
+      "median_position": 11,
+      "visibility_rating": 176,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 4.8,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_documents-tcurgentcare-com",
+      "rank": 22,
+      "domain": "documents.tcurgentcare.com",
+      "average_position": 13,
+      "median_position": 9,
+      "visibility_rating": 174,
+      "visibility_index": 0.25,
+      "estimated_traffic_from_analyzed_queries": 6.176,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_alpha-rejuvenation-com",
+      "rank": 23,
+      "domain": "alpha-rejuvenation.com",
+      "average_position": 15.5,
+      "median_position": 15,
+      "visibility_rating": 169,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 3.008,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidebasics-com",
+      "rank": 24,
+      "domain": "peptidebasics.com",
+      "average_position": 22.5,
+      "median_position": 22,
+      "visibility_rating": 155,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.376,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_redfoxpeptides-is",
+      "rank": 25,
+      "domain": "redfoxpeptides.is",
+      "average_position": 23.5,
+      "median_position": 20,
+      "visibility_rating": 153,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 1.44,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_dosagepeptide-com",
+      "rank": 26,
+      "domain": "dosagepeptide.com",
+      "average_position": 24.5,
+      "median_position": 24,
+      "visibility_rating": 151,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_luminpeptides-com",
+      "rank": 27,
+      "domain": "luminpeptides.com",
+      "average_position": 27.5,
+      "median_position": 26,
+      "visibility_rating": 145,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_dkdermal-com",
+      "rank": 28,
+      "domain": "dkdermal.com",
+      "average_position": 28,
+      "median_position": 23,
+      "visibility_rating": 144,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidesdosing-com",
+      "rank": 29,
+      "domain": "peptidesdosing.com",
+      "average_position": 31,
+      "median_position": 28,
+      "visibility_rating": 138,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptides-org",
+      "rank": 30,
+      "domain": "peptides.org",
+      "average_position": 31,
+      "median_position": 30,
+      "visibility_rating": 138,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_protidehealth-com",
+      "rank": 31,
+      "domain": "protidehealth.com",
+      "average_position": 33,
+      "median_position": 31,
+      "visibility_rating": 134,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_dosefi-app",
+      "rank": 32,
+      "domain": "dosefi.app",
+      "average_position": 33.5,
+      "median_position": 33,
+      "visibility_rating": 133,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.6299999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "best peptide tracker app",
+          "positions": [
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidesexplorer-com",
+      "rank": 33,
+      "domain": "peptidesexplorer.com",
+      "average_position": 34.5,
+      "median_position": 32,
+      "visibility_rating": 131,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_gopeptideguide-com",
+      "rank": 34,
+      "domain": "gopeptideguide.com",
+      "average_position": 35.5,
+      "median_position": 35,
+      "visibility_rating": 129,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_pepdose-com",
+      "rank": 35,
+      "domain": "pepdose.com",
+      "average_position": 45,
+      "median_position": 44,
+      "visibility_rating": 110,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mypeptidematch-com",
+      "rank": 36,
+      "domain": "mypeptidematch.com",
+      "average_position": 46,
+      "median_position": 42,
+      "visibility_rating": 108,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thepeptidereport-com",
+      "rank": 37,
+      "domain": "thepeptidereport.com",
+      "average_position": 48,
+      "median_position": 43,
+      "visibility_rating": 104,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidesinsider-com",
+      "rank": 38,
+      "domain": "peptidesinsider.com",
+      "average_position": 51,
+      "median_position": 46,
+      "visibility_rating": 98,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptracker-app",
+      "rank": 39,
+      "domain": "peptracker.app",
+      "average_position": 6,
+      "median_position": 6,
+      "visibility_rating": 94,
+      "visibility_index": 0.5,
+      "estimated_traffic_from_analyzed_queries": 1.3519999999999999,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptidescheduler-com",
+      "rank": 40,
+      "domain": "peptidescheduler.com",
+      "average_position": 53,
+      "median_position": 48,
+      "visibility_rating": 94,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 1.3439999999999999,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            58
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_shotlee-app",
+      "rank": 41,
+      "domain": "shotlee.app",
+      "average_position": 7,
+      "median_position": 7,
+      "visibility_rating": 93,
+      "visibility_index": 0.4,
+      "estimated_traffic_from_analyzed_queries": 6.656000000000001,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_getmiora-com",
+      "rank": 42,
+      "domain": "getmiora.com",
+      "average_position": 9,
+      "median_position": 9,
+      "visibility_rating": 91,
+      "visibility_index": 0.2,
+      "estimated_traffic_from_analyzed_queries": 3.9,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "peptide tracker app",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_majesticaestheticswellness-com",
+      "rank": 43,
+      "domain": "majesticaestheticswellness.com",
+      "average_position": 10,
+      "median_position": 10,
+      "visibility_rating": 90,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 3.6159999999999997,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_solcarahealth-com",
+      "rank": 44,
+      "domain": "solcarahealth.com",
+      "average_position": 11,
+      "median_position": 11,
+      "visibility_rating": 89,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 2.912,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seekpeptides-com",
+      "rank": 45,
+      "domain": "seekpeptides.com",
+      "average_position": 12,
+      "median_position": 12,
+      "visibility_rating": 88,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 2.4,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_peptideprotocols-co-uk",
+      "rank": 46,
+      "domain": "peptideprotocols.co.uk",
+      "average_position": 13,
+      "median_position": 13,
+      "visibility_rating": 87,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 1.888,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_appbrain-com",
+      "rank": 47,
+      "domain": "appbrain.com",
+      "average_position": 14,
+      "median_position": 14,
+      "visibility_rating": 86,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.224,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_cellgenic-com",
+      "rank": 48,
+      "domain": "cellgenic.com",
+      "average_position": 15,
+      "median_position": 15,
+      "visibility_rating": 85,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 1.6320000000000001,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_011",
+          "query": "peptide dosage protocol",
+          "positions": [
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mypeptidetracker-com",
+      "rank": 49,
+      "domain": "mypeptidetracker.com",
+      "average_position": 16,
+      "median_position": 16,
+      "visibility_rating": 84,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.172,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "peptide tracker app free",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_agewellatl-net",
+      "rank": 50,
+      "domain": "agewellatl.net",
+      "average_position": 16,
+      "median_position": 16,
+      "visibility_rating": 84,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 1.376,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 7.14,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "peptide dosing protocols",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    }
+  ]
+}

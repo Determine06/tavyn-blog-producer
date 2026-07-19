@@ -1,0 +1,7096 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "cd5eb447-0714-4e71-9bcb-56293e42231d",
+  "generated_at": "2026-07-19T21:15:08.418Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "2 duplicate confirmed query strings removed before provider submission."
+  ],
+  "website_url": "https://tavyn.dev/",
+  "target_domain": "tavyn.dev",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
+    "http_requests_made": 1,
+    "tasks_submitted": 1,
+    "task_id": "07200015-2045-0383-0000-914b64a262ae",
+    "task_status_code": 20000,
+    "task_status_message": "Ok.",
+    "total_cost_usd": 0.018
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "include_subdomains": true,
+    "item_types": [
+      "organic"
+    ],
+    "limit": 50,
+    "order_by": [
+      "rating,desc"
+    ],
+    "target_domain_exclusion_filter": "(^|\\.)tavyn\\.dev$"
+  },
+  "scope": {
+    "based_on": "all_validated_queries",
+    "confirmed_queries_received": 73,
+    "unique_queries_submitted": 71,
+    "duplicate_queries_removed": 2,
+    "provider_keyword_limit": 200,
+    "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+  },
+  "summary": {
+    "total_domains_found": 1475,
+    "domains_received": 50,
+    "competitors_included": 50,
+    "target_domain_excluded": true
+  },
+  "competitors": [
+    {
+      "competitor_id": "competitor_semrush-com",
+      "rank": 1,
+      "domain": "semrush.com",
+      "average_position": 11.902439024390244,
+      "median_position": 7,
+      "visibility_rating": 3612,
+      "visibility_index": 17.650000000000002,
+      "estimated_traffic_from_analyzed_queries": 1618.8560000000002,
+      "keywords_ranked_count": 41,
+      "query_coverage_percentage": 57.75,
+      "relevant_serp_items": 41,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_youtube-com",
+      "rank": 2,
+      "domain": "youtube.com",
+      "average_position": 19.8,
+      "median_position": 16,
+      "visibility_rating": 3609,
+      "visibility_index": 5.149999999999999,
+      "estimated_traffic_from_analyzed_queries": 802.8140000000001,
+      "keywords_ranked_count": 45,
+      "query_coverage_percentage": 63.38,
+      "relevant_serp_items": 45,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_zapier-com",
+      "rank": 3,
+      "domain": "zapier.com",
+      "average_position": 9.481481481481481,
+      "median_position": 6,
+      "visibility_rating": 2444,
+      "visibility_index": 10.75,
+      "estimated_traffic_from_analyzed_queries": 2163.1059999999998,
+      "keywords_ranked_count": 27,
+      "query_coverage_percentage": 38.03,
+      "relevant_serp_items": 27,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_reddit-com",
+      "rank": 4,
+      "domain": "reddit.com",
+      "average_position": 5.52,
+      "median_position": 4,
+      "visibility_rating": 2362,
+      "visibility_index": 17.099999999999998,
+      "estimated_traffic_from_analyzed_queries": 4775.339000000001,
+      "keywords_ranked_count": 25,
+      "query_coverage_percentage": 35.21,
+      "relevant_serp_items": 25,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_backlinko-com",
+      "rank": 5,
+      "domain": "backlinko.com",
+      "average_position": 33.4857142857143,
+      "median_position": 31,
+      "visibility_rating": 2328,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 211.39,
+      "keywords_ranked_count": 35,
+      "query_coverage_percentage": 49.3,
+      "relevant_serp_items": 35,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            83
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            96
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seoreviewtools-com",
+      "rank": 6,
+      "domain": "seoreviewtools.com",
+      "average_position": 15.115384615384615,
+      "median_position": 9,
+      "visibility_rating": 2207,
+      "visibility_index": 8.95,
+      "estimated_traffic_from_analyzed_queries": 1293.6609999999998,
+      "keywords_ranked_count": 26,
+      "query_coverage_percentage": 36.62,
+      "relevant_serp_items": 26,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            62
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_ahrefs-com",
+      "rank": 7,
+      "domain": "ahrefs.com",
+      "average_position": 27.366666666666664,
+      "median_position": 21,
+      "visibility_rating": 2179,
+      "visibility_index": 6.5,
+      "estimated_traffic_from_analyzed_queries": 957.6750000000002,
+      "keywords_ranked_count": 30,
+      "query_coverage_percentage": 42.25,
+      "relevant_serp_items": 30,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            75
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            59
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_surferseo-com",
+      "rank": 8,
+      "domain": "surferseo.com",
+      "average_position": 28.700000000000006,
+      "median_position": 20,
+      "visibility_rating": 2139,
+      "visibility_index": 1.75,
+      "estimated_traffic_from_analyzed_queries": 148.688,
+      "keywords_ranked_count": 30,
+      "query_coverage_percentage": 42.25,
+      "relevant_serp_items": 30,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            93
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            89
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_marketermilk-com",
+      "rank": 9,
+      "domain": "marketermilk.com",
+      "average_position": 7.391304347826087,
+      "median_position": 2,
+      "visibility_rating": 2130,
+      "visibility_index": 15.55,
+      "estimated_traffic_from_analyzed_queries": 11063.207000000002,
+      "keywords_ranked_count": 23,
+      "query_coverage_percentage": 32.39,
+      "relevant_serp_items": 23,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_siteimprove-com",
+      "rank": 10,
+      "domain": "siteimprove.com",
+      "average_position": 5.7894736842105265,
+      "median_position": 3,
+      "visibility_rating": 1790,
+      "visibility_index": 13.050000000000002,
+      "estimated_traffic_from_analyzed_queries": 290.191,
+      "keywords_ranked_count": 19,
+      "query_coverage_percentage": 26.76,
+      "relevant_serp_items": 19,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_yoast-com",
+      "rank": 11,
+      "domain": "yoast.com",
+      "average_position": 20.772727272727273,
+      "median_position": 13,
+      "visibility_rating": 1743,
+      "visibility_index": 4.999999999999999,
+      "estimated_traffic_from_analyzed_queries": 220.562,
+      "keywords_ranked_count": 22,
+      "query_coverage_percentage": 30.99,
+      "relevant_serp_items": 22,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_searchatlas-com",
+      "rank": 12,
+      "domain": "searchatlas.com",
+      "average_position": 31.36,
+      "median_position": 28,
+      "visibility_rating": 1716,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 146.22199999999992,
+      "keywords_ranked_count": 25,
+      "query_coverage_percentage": 35.21,
+      "relevant_serp_items": 25,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            74
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_morningscore-io",
+      "rank": 13,
+      "domain": "morningscore.io",
+      "average_position": 14.8,
+      "median_position": 5,
+      "visibility_rating": 1704,
+      "visibility_index": 9.700000000000001,
+      "estimated_traffic_from_analyzed_queries": 4408.308,
+      "keywords_ranked_count": 20,
+      "query_coverage_percentage": 28.17,
+      "relevant_serp_items": 20,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            59
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_blog-hubspot-com",
+      "rank": 14,
+      "domain": "blog.hubspot.com",
+      "average_position": 24.619047619047624,
+      "median_position": 16,
+      "visibility_rating": 1583,
+      "visibility_index": 0.9000000000000001,
+      "estimated_traffic_from_analyzed_queries": 272.132,
+      "keywords_ranked_count": 21,
+      "query_coverage_percentage": 29.58,
+      "relevant_serp_items": 21,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_searchengineland-com",
+      "rank": 15,
+      "domain": "searchengineland.com",
+      "average_position": 23.9,
+      "median_position": 21,
+      "visibility_rating": 1522,
+      "visibility_index": 1.5000000000000002,
+      "estimated_traffic_from_analyzed_queries": 25.578000000000003,
+      "keywords_ranked_count": 20,
+      "query_coverage_percentage": 28.17,
+      "relevant_serp_items": 20,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_aioseo-com",
+      "rank": 16,
+      "domain": "aioseo.com",
+      "average_position": 29.857142857142858,
+      "median_position": 22,
+      "visibility_rating": 1473,
+      "visibility_index": 3.9000000000000004,
+      "estimated_traffic_from_analyzed_queries": 327.836,
+      "keywords_ranked_count": 21,
+      "query_coverage_percentage": 29.58,
+      "relevant_serp_items": 21,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            62
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            95
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            78
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seranking-com",
+      "rank": 17,
+      "domain": "seranking.com",
+      "average_position": 22.166666666666668,
+      "median_position": 19,
+      "visibility_rating": 1401,
+      "visibility_index": 1.4000000000000004,
+      "estimated_traffic_from_analyzed_queries": 142.21399999999997,
+      "keywords_ranked_count": 18,
+      "query_coverage_percentage": 25.35,
+      "relevant_serp_items": 18,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_quora-com",
+      "rank": 18,
+      "domain": "quora.com",
+      "average_position": 23.823529411764707,
+      "median_position": 19,
+      "visibility_rating": 1295,
+      "visibility_index": 0.9500000000000002,
+      "estimated_traffic_from_analyzed_queries": 27.216,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 23.94,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            96
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seobility-net",
+      "rank": 19,
+      "domain": "seobility.net",
+      "average_position": 14.8,
+      "median_position": 13,
+      "visibility_rating": 1278,
+      "visibility_index": 3.049999999999999,
+      "estimated_traffic_from_analyzed_queries": 332.12199999999996,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 21.13,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_neilpatel-com",
+      "rank": 20,
+      "domain": "neilpatel.com",
+      "average_position": 33.10526315789474,
+      "median_position": 29,
+      "visibility_rating": 1271,
+      "visibility_index": 0.5,
+      "estimated_traffic_from_analyzed_queries": 143.905,
+      "keywords_ranked_count": 19,
+      "query_coverage_percentage": 26.76,
+      "relevant_serp_items": 19,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            68
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            80
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_wordstream-com",
+      "rank": 21,
+      "domain": "wordstream.com",
+      "average_position": 24.266666666666666,
+      "median_position": 15,
+      "visibility_rating": 1136,
+      "visibility_index": 2,
+      "estimated_traffic_from_analyzed_queries": 168.86499999999998,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 21.13,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            70
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            86
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_rankmath-com",
+      "rank": 22,
+      "domain": "rankmath.com",
+      "average_position": 19.928571428571427,
+      "median_position": 12,
+      "visibility_rating": 1121,
+      "visibility_index": 1.9000000000000004,
+      "estimated_traffic_from_analyzed_queries": 267.435,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 19.72,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seoptimer-com",
+      "rank": 23,
+      "domain": "seoptimer.com",
+      "average_position": 22.714285714285715,
+      "median_position": 5,
+      "visibility_rating": 1082,
+      "visibility_index": 5.8999999999999995,
+      "estimated_traffic_from_analyzed_queries": 2166.923,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 19.72,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            96
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_techradar-com",
+      "rank": 24,
+      "domain": "techradar.com",
+      "average_position": 33.1875,
+      "median_position": 35,
+      "visibility_rating": 1069,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 166.99799999999996,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 22.54,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_moz-com",
+      "rank": 25,
+      "domain": "moz.com",
+      "average_position": 25.428571428571427,
+      "median_position": 11,
+      "visibility_rating": 1044,
+      "visibility_index": 3.95,
+      "estimated_traffic_from_analyzed_queries": 1075.0400000000002,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 19.72,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            91
+          ]
+        },
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seo-com",
+      "rank": 26,
+      "domain": "seo.com",
+      "average_position": 48.6,
+      "median_position": 49,
+      "visibility_rating": 1028,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 34.28999999999999,
+      "keywords_ranked_count": 20,
+      "query_coverage_percentage": 28.17,
+      "relevant_serp_items": 20,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            98
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            75
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seoclarity-net",
+      "rank": 27,
+      "domain": "seoclarity.net",
+      "average_position": 14.416666666666666,
+      "median_position": 9,
+      "visibility_rating": 1027,
+      "visibility_index": 3.1499999999999995,
+      "estimated_traffic_from_analyzed_queries": 30.946000000000005,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 16.9,
+      "relevant_serp_items": 12,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seo-ai",
+      "rank": 28,
+      "domain": "seo.ai",
+      "average_position": 41.05882352941177,
+      "median_position": 39,
+      "visibility_rating": 1002,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 141.81699999999998,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 23.94,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            75
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            90
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_searchenginejournal-com",
+      "rank": 29,
+      "domain": "searchenginejournal.com",
+      "average_position": 41.411764705882355,
+      "median_position": 37,
+      "visibility_rating": 996,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 11.096999999999998,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 23.94,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            82
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            80
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_landingi-com",
+      "rank": 30,
+      "domain": "landingi.com",
+      "average_position": 38.25,
+      "median_position": 38,
+      "visibility_rating": 988,
+      "visibility_index": 0.2,
+      "estimated_traffic_from_analyzed_queries": 22.769,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 22.54,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_pcmag-com",
+      "rank": 31,
+      "domain": "pcmag.com",
+      "average_position": 43.294117647058826,
+      "median_position": 31,
+      "visibility_rating": 964,
+      "visibility_index": 0.25,
+      "estimated_traffic_from_analyzed_queries": 150.67699999999996,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 23.94,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            70
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            83
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            77
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_rankability-com",
+      "rank": 32,
+      "domain": "rankability.com",
+      "average_position": 5.1,
+      "median_position": 2,
+      "visibility_rating": 949,
+      "visibility_index": 6.999999999999999,
+      "estimated_traffic_from_analyzed_queries": 238.378,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.08,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seoboost-com",
+      "rank": 33,
+      "domain": "seoboost.com",
+      "average_position": 51.421052631578945,
+      "median_position": 55,
+      "visibility_rating": 923,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 20.154,
+      "keywords_ranked_count": 19,
+      "query_coverage_percentage": 26.76,
+      "relevant_serp_items": 19,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_015",
+          "query": "seo content brief",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            62
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_014",
+          "query": "seo content brief",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            74
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            73
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            70
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            62
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_linkedin-com",
+      "rank": 34,
+      "domain": "linkedin.com",
+      "average_position": 40.266666666666666,
+      "median_position": 38,
+      "visibility_rating": 896,
+      "visibility_index": 0.5,
+      "estimated_traffic_from_analyzed_queries": 4.2010000000000005,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 21.13,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_017",
+          "query": "seo content plan",
+          "positions": [
+            73
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "seo content checklist",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            98
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_eesel-ai",
+      "rank": 35,
+      "domain": "eesel.ai",
+      "average_position": 21.181818181818183,
+      "median_position": 7,
+      "visibility_rating": 867,
+      "visibility_index": 3.45,
+      "estimated_traffic_from_analyzed_queries": 145.25099999999998,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 15.49,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_medium-com",
+      "rank": 36,
+      "domain": "medium.com",
+      "average_position": 48.0625,
+      "median_position": 47,
+      "visibility_rating": 831,
+      "visibility_index": 0.9500000000000001,
+      "estimated_traffic_from_analyzed_queries": 19.098000000000003,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 22.54,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "saas seo mistakes",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            86
+          ]
+        },
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            78
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            91
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            85
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_g2-com",
+      "rank": 37,
+      "domain": "g2.com",
+      "average_position": 26.454545454545453,
+      "median_position": 22,
+      "visibility_rating": 809,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 151.861,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 15.49,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "seo automation platform",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            68
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_scalenut-com",
+      "rank": 38,
+      "domain": "scalenut.com",
+      "average_position": 52.64705882352941,
+      "median_position": 52,
+      "visibility_rating": 805,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 22.994999999999997,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 23.94,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_057",
+          "query": "on page seo content",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "problem_demand_058",
+          "query": "on-page seo content",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_059",
+          "query": "seo on page content",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            82
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            93
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            53
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_oberlo-com",
+      "rank": 39,
+      "domain": "oberlo.com",
+      "average_position": 42.857142857142854,
+      "median_position": 40,
+      "visibility_rating": 800,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 134.88299999999998,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 19.72,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_whatagraph-com",
+      "rank": 40,
+      "domain": "whatagraph.com",
+      "average_position": 5.5,
+      "median_position": 3,
+      "visibility_rating": 756,
+      "visibility_index": 4.6499999999999995,
+      "estimated_traffic_from_analyzed_queries": 4868.602999999999,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.27,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seositecheckup-com",
+      "rank": 41,
+      "domain": "seositecheckup.com",
+      "average_position": 6.625,
+      "median_position": 4,
+      "visibility_rating": 747,
+      "visibility_index": 4.5,
+      "estimated_traffic_from_analyzed_queries": 640.5310000000001,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.27,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_developers-google-com",
+      "rank": 42,
+      "domain": "developers.google.com",
+      "average_position": 7.25,
+      "median_position": 4,
+      "visibility_rating": 742,
+      "visibility_index": 4.249999999999999,
+      "estimated_traffic_from_analyzed_queries": 422.072,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.27,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_022",
+          "query": "writing web content for seo",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_082",
+          "query": "seo review tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_growthmarketingpro-com",
+      "rank": 43,
+      "domain": "growthmarketingpro.com",
+      "average_position": 30.3,
+      "median_position": 24,
+      "visibility_rating": 697,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 28.548000000000002,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.08,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            95
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_trysight-ai",
+      "rank": 44,
+      "domain": "trysight.ai",
+      "average_position": 30.6,
+      "median_position": 24,
+      "visibility_rating": 694,
+      "visibility_index": 0.35000000000000003,
+      "estimated_traffic_from_analyzed_queries": 7.924,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.08,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "seo workflow management",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "scalable seo platform",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seomator-com",
+      "rank": 45,
+      "domain": "seomator.com",
+      "average_position": 31.5,
+      "median_position": 26,
+      "visibility_rating": 685,
+      "visibility_index": 0.55,
+      "estimated_traffic_from_analyzed_queries": 140.17199999999997,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.08,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_019",
+          "query": "seo tools",
+          "positions": [
+            87
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_051",
+          "query": "paid tools for seo",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "cheap seo tools",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thehoth-com",
+      "rank": 46,
+      "domain": "thehoth.com",
+      "average_position": 25,
+      "median_position": 23,
+      "visibility_rating": 675,
+      "visibility_index": 1.5499999999999998,
+      "estimated_traffic_from_analyzed_queries": 154.426,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 12.68,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "problem_demand_098",
+          "query": "seo for homepage",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "seo review tools content analysis",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "seo content audit",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "seo analysis tools",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_saffronedge-com",
+      "rank": 47,
+      "domain": "saffronedge.com",
+      "average_position": 25.88888888888889,
+      "median_position": 21,
+      "visibility_rating": 667,
+      "visibility_index": 0.2,
+      "estimated_traffic_from_analyzed_queries": 30.555000000000003,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 12.68,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_013",
+          "query": "content hub seo",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "seo content platform",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "seo audit tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_webfx-com",
+      "rank": 48,
+      "domain": "webfx.com",
+      "average_position": 49.23076923076923,
+      "median_position": 63,
+      "visibility_rating": 660,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 21.311999999999998,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 18.31,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_012",
+          "query": "seo thin content",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "on page content seo",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_086",
+          "query": "seo requirements of online content",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "seo software tools list",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            77
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "tools for seo audit",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_078",
+          "query": "best seo tools",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_088",
+          "query": "content seo checklist",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_089",
+          "query": "top seo tools",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "content seo analysis",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            68
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_behindrankings-com",
+      "rank": 49,
+      "domain": "behindrankings.com",
+      "average_position": 27.555555555555557,
+      "median_position": 21,
+      "visibility_rating": 652,
+      "visibility_index": 0.6000000000000001,
+      "estimated_traffic_from_analyzed_queries": 20.708999999999996,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 12.68,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_002",
+          "query": "seo automation tools",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_007",
+          "query": "best seo automation tools",
+          "positions": [
+            73
+          ]
+        },
+        {
+          "query_id": "solution_demand_010",
+          "query": "seo content optimization tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "seo ai tools analysis",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "seo software",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_060",
+          "query": "tools used for seo",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "seo tools list",
+          "positions": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_onelittleweb-com",
+      "rank": 50,
+      "domain": "onelittleweb.com",
+      "average_position": 7.857142857142857,
+      "median_position": 4,
+      "visibility_rating": 645,
+      "visibility_index": 4.15,
+      "estimated_traffic_from_analyzed_queries": 128.56100000000004,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 9.86,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "seo software tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "seo tools for content optimization",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "seo content analysis tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_017",
+          "query": "ai seo optimization tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "content writing tools for seo",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "seo tools for content marketing",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "seo tools for content creation",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

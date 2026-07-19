@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_example",
+  "generated_at": "ISO-8601",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://example.com/",
+  "target_domain": "example.com",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
+    "http_requests_made": 1,
+    "tasks_submitted": 1,
+    "task_id": "provider-task-id",
+    "task_status_code": 20000,
+    "task_status_message": "Ok.",
+    "total_cost_usd": 0.11
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "include_subdomains": true,
+    "item_types": [
+      "organic"
+    ],
+    "limit": 50,
+    "order_by": [
+      "rating,desc"
+    ],
+    "target_domain_exclusion_filter": "(^|\\.)example\\.com$"
+  },
+  "scope": {
+    "based_on": "all_validated_queries",
+    "confirmed_queries_received": 34,
+    "unique_queries_submitted": 32,
+    "duplicate_queries_removed": 2,
+    "provider_keyword_limit": 200,
+    "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+  },
+  "summary": {
+    "total_domains_found": 25,
+    "domains_received": 50,
+    "competitors_included": 50,
+    "target_domain_excluded": true
+  },
+  "competitors": [
+    {
+      "competitor_id": "competitor_competitor-com",
+      "rank": 1,
+      "domain": "competitor.com",
+      "average_position": 7.4,
+      "median_position": 5,
+      "visibility_rating": 1834,
+      "visibility_index": 0.61,
+      "estimated_traffic_from_analyzed_queries": 1350.4,
+      "keywords_ranked_count": 19,
+      "query_coverage_percentage": 59.38,
+      "relevant_serp_items": 23,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_001",
+          "query": "example search query",
+          "positions": [
+            2,
+            7
+          ]
+        }
+      ]
+    }
+  ]
+}
