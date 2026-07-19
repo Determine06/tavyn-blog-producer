@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
+  "generated_at": "2026-07-19T18:46:14.516Z",
+  "source_artifacts": [
+    "query-validations.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://www.zaviagent.com/",
+  "source_profile": {
+    "company_name": "Zavi",
+    "product_category": "marketplace operations automation platform",
+    "primary_icp": "marketplace founders and operators"
+  },
+  "confirmed_queries": [
+    {
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "query": "marketplace listings",
+      "validation_reasoning": "This reflects the core marketplace workflow of managing listings, which is part of the company’s marketplace operations scope.",
+      "source_seed_keywords": [
+        "marketplace operations",
+        "marketplace growth strategy",
+        "marketplace seller onboarding",
+        "marketplace trust and safety",
+        "marketplace management",
+        "marketplace support operations"
+      ],
+      "discovery_rank": 30,
+      "core_keyword": "marketplace list",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 390,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 320
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 85,
+          "quarterly": 85,
+          "yearly": 125
+        },
+        "cpc": 3.48,
+        "paid_competition": 0.04,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 15,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 2528.8,
+          "referring_domains": 914.8,
+          "main_domain_rank": 818.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "marketplace alerts",
+      "validation_reasoning": "This reflects an operator workflow around marketplace monitoring and notifications, which fits the company’s marketplace operations scope.",
+      "source_seed_keywords": [
+        "marketplace operations",
+        "marketplace growth strategy",
+        "marketplace seller onboarding",
+        "marketplace trust and safety",
+        "marketplace management",
+        "marketplace support operations"
+      ],
+      "discovery_rank": 52,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 110,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -36,
+          "quarterly": -36,
+          "yearly": 0
+        },
+        "cpc": 8.9,
+        "paid_competition": 0.26,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 9,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 201.4,
+          "referring_domains": 18.7,
+          "main_domain_rank": 662
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_queries_evaluated": 200,
+    "total_queries_confirmed": 2,
+    "total_queries_rejected": 198,
+    "problem_queries_confirmed": 2,
+    "solution_queries_confirmed": 0
+  }
+}

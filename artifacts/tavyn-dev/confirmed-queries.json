@@ -1,0 +1,7276 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "4839a55c-4303-4162-9bff-714002621089",
+  "generated_at": "2026-07-19T18:46:04.205Z",
+  "source_artifacts": [
+    "query-validations.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://tavyn.dev/",
+  "source_profile": {
+    "company_name": "Tavyn",
+    "product_category": "SEO content workflow automation platform",
+    "primary_icp": "founder-led SaaS teams"
+  },
+  "confirmed_queries": [
+    {
+      "query_id": "problem_demand_003",
+      "territory": "problem_demand",
+      "query": "saas seo mistakes",
+      "validation_reasoning": "This asks about common SEO errors in the SaaS content workflow, which fits the problem space Tavyn helps founder-led SaaS teams improve.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 3,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 40,
+          "quarterly": 0,
+          "yearly": 133
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 10,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 10.9,
+          "referring_domains": 5.4,
+          "main_domain_rank": 440.7
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_007",
+      "territory": "problem_demand",
+      "query": "content for seo website",
+      "validation_reasoning": "This reflects the practical problem of producing website content that supports SEO, which is within Tavyn’s content workflow.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 7,
+      "core_keyword": "website content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -100,
+          "yearly": -100
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 58,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "query": "content brief seo",
+      "validation_reasoning": "This refers to the SEO content briefing workflow, a concrete part of Tavyn’s supported SEO process.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 10,
+      "core_keyword": "seo content briefs",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.17,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_012",
+      "territory": "problem_demand",
+      "query": "seo thin content",
+      "validation_reasoning": "This targets the concrete SEO content-quality problem of thin content, which is part of the content optimization workflow Tavyn supports.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 12,
+      "core_keyword": "thin content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -40,
+          "quarterly": -25,
+          "yearly": -73
+        },
+        "cpc": null,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 10,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 61.6,
+          "referring_domains": 33.4,
+          "main_domain_rank": 478.2
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_013",
+      "territory": "problem_demand",
+      "query": "content hub seo",
+      "validation_reasoning": "This concerns the SEO content-hub planning workflow, which is a concrete content structure Tavyn can help plan.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 13,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -71,
+          "quarterly": -50,
+          "yearly": -71
+        },
+        "cpc": null,
+        "paid_competition": 0.04,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 52.3,
+          "referring_domains": 22.9,
+          "main_domain_rank": 484.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "query": "seo content brief",
+      "validation_reasoning": "This is a concrete SEO briefing workflow that directly matches Tavyn’s brief-writing process.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 15,
+      "core_keyword": "seo content briefs",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 140,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 29,
+          "quarterly": -36,
+          "yearly": -65
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 17.7,
+          "referring_domains": 10.3,
+          "main_domain_rank": 355
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "query": "seo content plan",
+      "validation_reasoning": "This refers to the content-planning workflow for SEO, which Tavyn explicitly supports for founder-led SaaS teams.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 17,
+      "core_keyword": "seo content planning",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -60,
+          "quarterly": -71,
+          "yearly": -90
+        },
+        "cpc": null,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 107.7,
+          "referring_domains": 39.5,
+          "main_domain_rank": 385.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_022",
+      "territory": "problem_demand",
+      "query": "writing web content for seo",
+      "validation_reasoning": "This reflects the concrete workflow of writing web content for SEO, which aligns with Tavyn’s content creation process.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 22,
+      "core_keyword": "seo web content writing",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -86,
+          "quarterly": -67,
+          "yearly": -89
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 36,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 8353.7,
+          "referring_domains": 1415.9,
+          "main_domain_rank": 615.9
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_026",
+      "territory": "problem_demand",
+      "query": "seo old content",
+      "validation_reasoning": "This points to the concrete SEO problem of updating or improving existing content, which fits Tavyn’s content workflow.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 26,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -100,
+          "yearly": -100
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_032",
+      "territory": "problem_demand",
+      "query": "seo content rules",
+      "validation_reasoning": "This seeks guidance on SEO content rules, a concrete content-creation and optimization problem.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 32,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 0
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_033",
+      "territory": "problem_demand",
+      "query": "seo content hub",
+      "validation_reasoning": "This represents the content-hub planning workflow, which is a concrete SEO structure Tavyn can help organize.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 33,
+      "core_keyword": "content hub seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -50,
+          "quarterly": -50,
+          "yearly": -50
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_035",
+      "territory": "problem_demand",
+      "query": "seo blog content",
+      "validation_reasoning": "This refers to SEO blog content, a concrete workflow within Tavyn’s blog-ops positioning.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 35,
+      "core_keyword": "seo content blog",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": 6.18,
+        "paid_competition": 0.33,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 87,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 9387.7,
+          "referring_domains": 1054.1,
+          "main_domain_rank": 543.8
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_037",
+      "territory": "problem_demand",
+      "query": "seo content blog",
+      "validation_reasoning": "This concerns blog content for SEO, which is a concrete content workflow Tavyn is built to support.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 37,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": 6.18,
+        "paid_competition": 0.33,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 87,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "query": "website seo content",
+      "validation_reasoning": "This refers to website content used for SEO, a concrete content workflow relevant to Tavyn.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 40,
+      "core_keyword": "website content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -100,
+          "yearly": -100
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 58,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "query": "seo content articles",
+      "validation_reasoning": "This reflects the article-writing workflow for SEO content, which fits Tavyn’s publish-ready content process.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 41,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_042",
+      "territory": "problem_demand",
+      "query": "seo content hubs",
+      "validation_reasoning": "This asks about planning SEO content hubs, a concrete content-structure workflow Tavyn supports.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 42,
+      "core_keyword": "content hub seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -50,
+          "quarterly": -50,
+          "yearly": -50
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "query": "organic seo blog",
+      "validation_reasoning": "This points to organic SEO blog work, a concrete content workflow aligned with Tavyn’s blog ops focus.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 48,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 0
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -100,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "query": "seo content writing for website",
+      "validation_reasoning": "This asks about the concrete workflow of writing website content for SEO, which fits Tavyn’s scope.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 51,
+      "core_keyword": "website content writing for seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 0
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -100,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 29,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_057",
+      "territory": "problem_demand",
+      "query": "on page seo content",
+      "validation_reasoning": "This refers to on-page SEO content work, a concrete content optimization workflow relevant to Tavyn.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 57,
+      "core_keyword": "page content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 210
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -64,
+          "quarterly": -64,
+          "yearly": -76
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 63,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 900.9,
+          "referring_domains": 314,
+          "main_domain_rank": 568.1
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_058",
+      "territory": "problem_demand",
+      "query": "on-page seo content",
+      "validation_reasoning": "This refers to on-page SEO content work, a concrete content optimization workflow relevant to Tavyn.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 58,
+      "core_keyword": "on page seo content",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 210
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -64,
+          "quarterly": -64,
+          "yearly": -76
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 63,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 820.9,
+          "referring_domains": 294.3,
+          "main_domain_rank": 550.4
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "query": "seo on page content",
+      "validation_reasoning": "This refers to on-page SEO content work, a concrete content optimization workflow relevant to Tavyn.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 59,
+      "core_keyword": "page content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 210
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -64,
+          "quarterly": -64,
+          "yearly": -76
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 63,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 873.2,
+          "referring_domains": 306.2,
+          "main_domain_rank": 567.8
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_064",
+      "territory": "problem_demand",
+      "query": "writing seo content for the web",
+      "validation_reasoning": "This concerns the concrete workflow of writing web content for SEO, which fits Tavyn’s content creation process.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 64,
+      "core_keyword": "seo web content writing",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 0
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 89,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_065",
+      "territory": "problem_demand",
+      "query": "on page content seo",
+      "validation_reasoning": "This refers to on-page SEO content optimization, a concrete workflow within Tavyn’s scope.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 65,
+      "core_keyword": "page content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -86,
+          "quarterly": -75,
+          "yearly": -86
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 40,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 565.4,
+          "referring_domains": 210,
+          "main_domain_rank": 599.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_067",
+      "territory": "problem_demand",
+      "query": "on-site seo strategy",
+      "validation_reasoning": "This refers to a concrete on-site SEO workflow and decision area relevant to content planning and optimization.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 67,
+      "core_keyword": "on site seo strategies",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.05,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 62,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 6755.8,
+          "referring_domains": 1523.1,
+          "main_domain_rank": 531.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_069",
+      "territory": "problem_demand",
+      "query": "on site seo strategy",
+      "validation_reasoning": "This refers to a concrete on-site SEO workflow and decision area relevant to content planning and optimization.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 69,
+      "core_keyword": "on site seo strategies",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.05,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 33,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 6509.7,
+          "referring_domains": 1458.1,
+          "main_domain_rank": 556.3
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_076",
+      "territory": "problem_demand",
+      "query": "web content writing seo",
+      "validation_reasoning": "This refers to web content writing for SEO, a concrete content workflow aligned with Tavyn.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 76,
+      "core_keyword": "seo web content writing",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 0
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 89,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_078",
+      "territory": "problem_demand",
+      "query": "seo content on page",
+      "validation_reasoning": "This refers to on-page SEO content work, a concrete workflow relevant to Tavyn’s content optimization process.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 78,
+      "core_keyword": "page content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -100
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 54,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_086",
+      "territory": "problem_demand",
+      "query": "seo requirements of online content",
+      "validation_reasoning": "This asks about the requirements for SEO-friendly online content, a concrete content optimization problem.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 86,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -80,
+          "quarterly": -50,
+          "yearly": -80
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 25,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 7869.4,
+          "referring_domains": 1336.4,
+          "main_domain_rank": 448.9
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_087",
+      "territory": "problem_demand",
+      "query": "duplicate content on website seo",
+      "validation_reasoning": "This targets the concrete SEO problem of duplicate content on a website, which is within the content-quality workflow Tavyn supports.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 87,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -100,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_090",
+      "territory": "problem_demand",
+      "query": "on-page seo content writing",
+      "validation_reasoning": "This refers to on-page SEO content writing, a concrete workflow aligned with Tavyn’s content operations.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 90,
+      "core_keyword": "on page seo content writing",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -75
+        },
+        "cpc": null,
+        "paid_competition": 0.17,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_092",
+      "territory": "problem_demand",
+      "query": "how to seo website content",
+      "validation_reasoning": "This asks how to optimize website content for SEO, a concrete workflow Tavyn is built to support.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 92,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -50,
+          "yearly": -67
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 83,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_098",
+      "territory": "problem_demand",
+      "query": "seo for homepage",
+      "validation_reasoning": "This is a concrete on-page SEO optimization problem for a homepage, which fits Tavyn’s content workflow.",
+      "source_seed_keywords": [
+        "SaaS SEO",
+        "SEO for SaaS",
+        "SaaS SEO strategy",
+        "SaaS organic growth",
+        "SaaS keyword research",
+        "SaaS content marketing"
+      ],
+      "discovery_rank": 98,
+      "core_keyword": "homepage seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 140,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -59,
+          "yearly": -78
+        },
+        "cpc": null,
+        "paid_competition": 0.03,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 16,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 9328.9,
+          "referring_domains": 1454.7,
+          "main_domain_rank": 576.3
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "seo automation platform",
+      "validation_reasoning": "This is the exact product category Tavyn sells as an SEO content workflow automation platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 1,
+      "core_keyword": "automated seo platform",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 390,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 480
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -19,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1217.7,
+          "referring_domains": 191,
+          "main_domain_rank": 326.8
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "seo automation tools",
+      "validation_reasoning": "This is an immediate parent solution category for Tavyn’s SEO workflow automation offering.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 2,
+      "core_keyword": "automated seo tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 480,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 1000
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 22,
+          "quarterly": 0,
+          "yearly": -70
+        },
+        "cpc": 14.26,
+        "paid_competition": 0.04,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 28,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 2672.8,
+          "referring_domains": 647.3,
+          "main_domain_rank": 432.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_006",
+      "territory": "solution_demand",
+      "query": "seo software tools",
+      "validation_reasoning": "This is a commercial SEO software category that reasonably includes Tavyn’s workflow automation platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 6,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 880,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 880
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 22,
+          "quarterly": 85,
+          "yearly": -55
+        },
+        "cpc": 16.64,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 39,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 564.7,
+          "referring_domains": 151.1,
+          "main_domain_rank": 527
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_007",
+      "territory": "solution_demand",
+      "query": "best seo automation tools",
+      "validation_reasoning": "This is commercial demand for SEO automation tools, which matches Tavyn’s product category.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 7,
+      "core_keyword": "best automated seo tool",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 260,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 21,
+          "quarterly": 21,
+          "yearly": 21
+        },
+        "cpc": 13.58,
+        "paid_competition": 0.08,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 7,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 80.3,
+          "referring_domains": 26.3,
+          "main_domain_rank": 453.2
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_008",
+      "territory": "solution_demand",
+      "query": "seo automation platform reviews",
+      "validation_reasoning": "This seeks reviews of SEO automation platforms, a commercial category Tavyn fits.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 8,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 1,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 45.6,
+          "referring_domains": 22.1,
+          "main_domain_rank": 387.3
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_009",
+      "territory": "solution_demand",
+      "query": "seo tools for content optimization",
+      "validation_reasoning": "This is commercial demand for SEO tools in the content-optimization workflow Tavyn supports.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 9,
+      "core_keyword": "seo content optimization tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 150,
+          "quarterly": 150,
+          "yearly": -81
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 26,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 4532.8,
+          "referring_domains": 565.1,
+          "main_domain_rank": 388.8
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_010",
+      "territory": "solution_demand",
+      "query": "seo content optimization tools",
+      "validation_reasoning": "This is a commercial category for tools that optimize SEO content, which aligns with Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 10,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 260,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 390
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 23,
+          "quarterly": 52,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 28,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 389.9,
+          "referring_domains": 91.2,
+          "main_domain_rank": 419.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "query": "seo content analysis tools",
+      "validation_reasoning": "This is a commercial tool category for SEO content analysis, adjacent to Tavyn’s workflow platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 11,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 110,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -57,
+          "quarterly": -57,
+          "yearly": -86
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 61,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 5965.4,
+          "referring_domains": 780.7,
+          "main_domain_rank": 525.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_013",
+      "territory": "solution_demand",
+      "query": "content brief seo",
+      "validation_reasoning": "This is commercial demand for SEO content briefing workflows, which Tavyn directly provides.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 13,
+      "core_keyword": "seo content briefs",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.17,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "solution_demand_014",
+      "territory": "solution_demand",
+      "query": "seo content brief",
+      "validation_reasoning": "This is commercial demand for SEO content briefing, a core Tavyn workflow.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 14,
+      "core_keyword": "seo content briefs",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 140,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 29,
+          "quarterly": -36,
+          "yearly": -65
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 17.7,
+          "referring_domains": 10.3,
+          "main_domain_rank": 355
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_015",
+      "territory": "solution_demand",
+      "query": "seo optimized keyword content brief",
+      "validation_reasoning": "This is commercial demand for a keyword-informed SEO content brief, which fits Tavyn’s brief generation workflow.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 15,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -100,
+          "yearly": -100
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "solution_demand_017",
+      "territory": "solution_demand",
+      "query": "ai seo optimization tools",
+      "validation_reasoning": "This is commercial demand for AI SEO optimization tools, an adjacent solution category for Tavyn’s workflow automation.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 17,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 210,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 110
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 53,
+          "quarterly": 136,
+          "yearly": 136
+        },
+        "cpc": 24.92,
+        "paid_competition": 0.07,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 15,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 907,
+          "referring_domains": 237,
+          "main_domain_rank": 401.2
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_019",
+      "territory": "solution_demand",
+      "query": "seo tools",
+      "validation_reasoning": "This is a broad but legitimate commercial SEO software category that can include Tavyn’s workflow automation platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 19,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 110000,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 201000
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 550000
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 90500
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 49500
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 33100
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 33100
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 27100
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40500
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 33100
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 49500
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40500
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 74000
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -63,
+          "quarterly": 122,
+          "yearly": 172
+        },
+        "cpc": 23.74,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 50,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 3542.2,
+          "referring_domains": 614.2,
+          "main_domain_rank": 509
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_020",
+      "territory": "solution_demand",
+      "query": "seo ai tools analysis",
+      "validation_reasoning": "This is commercial demand for AI SEO analysis tools, an adjacent solution category to Tavyn’s product.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 20,
+      "core_keyword": "seo analysis ai tool",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 67,
+          "quarterly": 25,
+          "yearly": 25
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 53,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1639.8,
+          "referring_domains": 415.2,
+          "main_domain_rank": 390.2
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_021",
+      "territory": "solution_demand",
+      "query": "seo software tools list",
+      "validation_reasoning": "This is commercial evaluation of SEO software tools, a category that can include Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 21,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 200,
+          "quarterly": 0,
+          "yearly": -25
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 35,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 269.5,
+          "referring_domains": 101.9,
+          "main_domain_rank": 467.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_029",
+      "territory": "solution_demand",
+      "query": "seo review tools content analysis",
+      "validation_reasoning": "This is commercial demand for SEO review and content-analysis tools, an adjacent category to Tavyn’s workflow platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 29,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -25,
+          "quarterly": 0,
+          "yearly": -73
+        },
+        "cpc": 30.68,
+        "paid_competition": 0.03,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 61,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 7747.3,
+          "referring_domains": 801.1,
+          "main_domain_rank": 491
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_033",
+      "territory": "solution_demand",
+      "query": "seo content platform",
+      "validation_reasoning": "This is a commercial category for SEO content platforms, which aligns with Tavyn’s product positioning.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 33,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 110
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -75,
+          "yearly": -94
+        },
+        "cpc": null,
+        "paid_competition": 0.11,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 37,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 7579.9,
+          "referring_domains": 1628,
+          "main_domain_rank": 424.2
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_034",
+      "territory": "solution_demand",
+      "query": "content analysis seo review tools",
+      "validation_reasoning": "This is commercial demand for content-analysis and review tools in the SEO workflow Tavyn supports.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 34,
+      "core_keyword": "seo review tools content analysis",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -100,
+          "quarterly": -100,
+          "yearly": -100
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": 61,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "solution_demand_036",
+      "territory": "solution_demand",
+      "query": "seo workflow management",
+      "validation_reasoning": "This is a commercial workflow-management category closely aligned with Tavyn’s SEO operations platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 36,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -86,
+          "yearly": -89
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 18.3,
+          "referring_domains": 8,
+          "main_domain_rank": 433.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_038",
+      "territory": "solution_demand",
+      "query": "seo software",
+      "validation_reasoning": "This is a direct commercial software category that reasonably includes Tavyn’s SEO workflow automation platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 38,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 3600,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 2400
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 2900
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 2400
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 3600
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 2900
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 8100
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 2900
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -17,
+          "quarterly": 0,
+          "yearly": -45
+        },
+        "cpc": 27.66,
+        "paid_competition": 0.08,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 39,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 734.2,
+          "referring_domains": 227.5,
+          "main_domain_rank": 465.7
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_051",
+      "territory": "solution_demand",
+      "query": "paid tools for seo",
+      "validation_reasoning": "This is commercial demand for paid SEO tools, a category that can include Tavyn’s software offering.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 51,
+      "core_keyword": "paid seo tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 480,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 390
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -33,
+          "yearly": -71
+        },
+        "cpc": 19.67,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 41,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 728.9,
+          "referring_domains": 223.2,
+          "main_domain_rank": 440.4
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_054",
+      "territory": "solution_demand",
+      "query": "content writing tools for seo",
+      "validation_reasoning": "This is commercial demand for content-writing tools for SEO, which is adjacent to Tavyn’s workflow platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 54,
+      "core_keyword": "seo content writing tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 480,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -33,
+          "yearly": -46
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 31,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1408.5,
+          "referring_domains": 405.8,
+          "main_domain_rank": 456.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_057",
+      "territory": "solution_demand",
+      "query": "seo review tools content analysis tool",
+      "validation_reasoning": "This is commercial demand for SEO review and content-analysis tools, an adjacent category for Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 57,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "solution_demand_059",
+      "territory": "solution_demand",
+      "query": "seo review tools content idea generator",
+      "validation_reasoning": "This is commercial demand for SEO review and content-idea generation tools, which overlaps Tavyn’s content planning workflow.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 59,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 0
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 0
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 0
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": null,
+        "paid_competition_level": null,
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "solution_demand_060",
+      "territory": "solution_demand",
+      "query": "tools used for seo",
+      "validation_reasoning": "This is commercial demand for SEO tools in general, a category that can include Tavyn’s platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 60,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 110,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 110
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -73,
+          "quarterly": -40,
+          "yearly": -79
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 60,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 928.6,
+          "referring_domains": 307.5,
+          "main_domain_rank": 512.2
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "query": "seo tools for content marketing",
+      "validation_reasoning": "This is commercial demand for SEO tools used in content marketing, which fits Tavyn’s content workflow platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 62,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 210,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 1000
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 14,
+          "quarterly": 3233,
+          "yearly": 1329
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 28,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1041,
+          "referring_domains": 170,
+          "main_domain_rank": 446.1
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_065",
+      "territory": "solution_demand",
+      "query": "tools for seo audit",
+      "validation_reasoning": "This is commercial demand for SEO audit tools, an adjacent SEO software category that can include Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 65,
+      "core_keyword": "seo audit tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -73,
+          "quarterly": -57,
+          "yearly": -86
+        },
+        "cpc": 7.48,
+        "paid_competition": 0.04,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 73,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 6265.4,
+          "referring_domains": 764.7,
+          "main_domain_rank": 494.7
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_078",
+      "territory": "solution_demand",
+      "query": "best seo tools",
+      "validation_reasoning": "This is commercial evaluation of SEO tools, a category that can include Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 78,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 2900,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 2900
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 2400
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 1600
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 8100
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 1300
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 6600
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 2900
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 21,
+          "quarterly": 81,
+          "yearly": -19
+        },
+        "cpc": 30.47,
+        "paid_competition": 0.11,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 42,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 794.2,
+          "referring_domains": 248.1,
+          "main_domain_rank": 553.7
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_080",
+      "territory": "solution_demand",
+      "query": "seo tools for content creation",
+      "validation_reasoning": "This is commercial demand for SEO tools supporting content creation, which aligns with Tavyn’s workflow platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 80,
+      "core_keyword": "seo content creation tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 100,
+          "quarterly": 100,
+          "yearly": -82
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 24,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1253.6,
+          "referring_domains": 177.7,
+          "main_domain_rank": 535.6
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_081",
+      "territory": "solution_demand",
+      "query": "seo audit tools",
+      "validation_reasoning": "This is a commercial SEO software category adjacent to Tavyn’s opportunity-identification workflow.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 81,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 2900,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 1600
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 2400
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 1900
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 2400
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 1600
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 5400
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 3600
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 5400
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -16,
+          "yearly": -64
+        },
+        "cpc": 19.07,
+        "paid_competition": 0.11,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 77,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 5769.8,
+          "referring_domains": 919.7,
+          "main_domain_rank": 495.7
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_082",
+      "territory": "solution_demand",
+      "query": "seo review tools",
+      "validation_reasoning": "This is commercial demand for SEO review tools, which fits the evaluation and review side of Tavyn’s workflow.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 82,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 3600,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 6600
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 22200
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 1300
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 1600
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -91,
+          "quarterly": -97,
+          "yearly": -63
+        },
+        "cpc": 21.68,
+        "paid_competition": 0.14,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 87,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 22049.9,
+          "referring_domains": 1589.3,
+          "main_domain_rank": 589.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_086",
+      "territory": "solution_demand",
+      "query": "scalable seo platform",
+      "validation_reasoning": "This is commercial demand for an SEO platform, which is an immediate parent category of Tavyn’s product.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 86,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -40,
+          "quarterly": -40,
+          "yearly": -57
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 15.5,
+          "referring_domains": 6.7,
+          "main_domain_rank": 326.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_087",
+      "territory": "solution_demand",
+      "query": "seo content checklist",
+      "validation_reasoning": "This is commercial demand for an SEO content workflow artifact, which fits Tavyn’s briefing and planning process.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 87,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 70,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -64,
+          "quarterly": -44,
+          "yearly": -64
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 127.5,
+          "referring_domains": 56.1,
+          "main_domain_rank": 478.1
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_088",
+      "territory": "solution_demand",
+      "query": "content seo checklist",
+      "validation_reasoning": "This is commercial demand for an SEO content checklist, a workflow artifact aligned with Tavyn’s process.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 88,
+      "core_keyword": "seo content checklist",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 70,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -64,
+          "quarterly": -44,
+          "yearly": -64
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 22,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 7698.4,
+          "referring_domains": 1296.6,
+          "main_domain_rank": 514.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_089",
+      "territory": "solution_demand",
+      "query": "top seo tools",
+      "validation_reasoning": "This is commercial evaluation of SEO tools, a category that can reasonably include Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 89,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 590,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 720
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 50,
+          "yearly": -45
+        },
+        "cpc": 22.39,
+        "paid_competition": 0.09,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 39,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 802,
+          "referring_domains": 242.8,
+          "main_domain_rank": 543.7
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_090",
+      "territory": "solution_demand",
+      "query": "seo content audit",
+      "validation_reasoning": "This is commercial demand for SEO content audit workflows and tools, which aligns with Tavyn’s content analysis and planning.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 90,
+      "core_keyword": "seo content audits",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 170,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 320
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -46,
+          "quarterly": -46,
+          "yearly": -76
+        },
+        "cpc": null,
+        "paid_competition": 0.03,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 9,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 148.5,
+          "referring_domains": 66,
+          "main_domain_rank": 423.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_092",
+      "territory": "solution_demand",
+      "query": "seo cornerstone content",
+      "validation_reasoning": "This is commercial demand for cornerstone-content planning within SEO, a workflow Tavyn can support.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 92,
+      "core_keyword": "cornerstone content seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 10,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -50
+        },
+        "cpc": 0.68,
+        "paid_competition": 0.19,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "solution_demand_093",
+      "territory": "solution_demand",
+      "query": "content seo analysis",
+      "validation_reasoning": "This is commercial demand for SEO content analysis, an adjacent solution category for Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 93,
+      "core_keyword": "content analysis seo",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 210,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 590
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -82,
+          "quarterly": -67,
+          "yearly": -92
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 53,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 4462,
+          "referring_domains": 734,
+          "main_domain_rank": 463.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_095",
+      "territory": "solution_demand",
+      "query": "seo analysis tools",
+      "validation_reasoning": "This is commercial demand for SEO analysis tools, a category adjacent to Tavyn’s workflow platform.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 95,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 1600,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 1600
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 1000
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 1300
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 1000
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 2900
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -45,
+          "quarterly": -12,
+          "yearly": -80
+        },
+        "cpc": 32.07,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 73,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 8028.3,
+          "referring_domains": 896.1,
+          "main_domain_rank": 513.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_096",
+      "territory": "solution_demand",
+      "query": "cheap seo tools",
+      "validation_reasoning": "This is commercial price-conscious demand for SEO tools, a category that can include Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 96,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 720,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 590
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 390
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 22,
+          "quarterly": 50,
+          "yearly": 22
+        },
+        "cpc": 17.49,
+        "paid_competition": 0.07,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 330.8,
+          "referring_domains": 52.9,
+          "main_domain_rank": 394.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_098",
+      "territory": "solution_demand",
+      "query": "seo tools list",
+      "validation_reasoning": "This is commercial evaluation of SEO tools, a category that can include Tavyn.",
+      "source_seed_keywords": [
+        "AI SEO tools",
+        "SEO tools for SaaS",
+        "SEO automation",
+        "SEO workflow automation",
+        "content brief software",
+        "SEO operations platform"
+      ],
+      "discovery_rank": 98,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 320,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 390
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -47,
+          "quarterly": 0,
+          "yearly": -71
+        },
+        "cpc": 12.44,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 40,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 785,
+          "referring_domains": 241.7,
+          "main_domain_rank": 510.5
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_queries_evaluated": 200,
+    "total_queries_confirmed": 73,
+    "total_queries_rejected": 127,
+    "problem_queries_confirmed": 32,
+    "solution_queries_confirmed": 41
+  }
+}

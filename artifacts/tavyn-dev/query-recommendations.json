@@ -1,0 +1,412 @@
+{
+  "schema_version": "1.1.0",
+  "run_id": "4839a55c-4303-4162-9bff-714002621089",
+  "generated_at": "2026-07-19T18:47:18.629Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-opportunities.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "solution_demand produced 1 recommendation instead of target 2: One recommendation is appropriate because \"seo automation platform\" is the exact category Tavyn claims, while the other solution candidates are broader tool variants or price-led queries that would dilute the page's dominant commercial intent."
+  ],
+  "website_url": "https://tavyn.dev/",
+  "source_profile": {
+    "company_name": "Tavyn",
+    "product_category": "SEO content workflow automation platform",
+    "primary_icp": "founder-led SaaS teams"
+  },
+  "selection_policy": {
+    "maximum_total_recommendations": 4,
+    "target_per_territory": 2,
+    "minimum_per_nonempty_territory": 1,
+    "maximum_per_territory": 2,
+    "allow_fewer_than_target": true
+  },
+  "territory_recommendations": [
+    {
+      "territory": "problem_demand",
+      "candidates_available": 10,
+      "target_recommendations": 2,
+      "recommendations_selected": 2,
+      "selection_status": "fulfilled",
+      "assessment": "Two recommendations are appropriate because the strongest problem-demand candidates map to distinct Tavyn workflows, with one focused on briefing and one focused on planning, while the remaining options either overlap more closely or drift toward weaker on-page SEO angles.",
+      "recommendations": [
+        {
+          "recommendation_id": "problem_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "problem_demand_015",
+          "territory": "problem_demand",
+          "query": "seo content brief",
+          "selection_reasoning": "This is the strongest problem-demand opportunity because it matches Tavyn's brief-writing workflow, has clear commercial intent, and is distinct from the planning-oriented alternatives.",
+          "content_angle": "Show founder-led SaaS teams how to create an SEO content brief that turns SERP research and product context into publish-ready direction.",
+          "product_connection": "Tavyn can appear as the workflow that learns the product, asks the founder the right questions, and writes the brief without forcing a heavy blog process.",
+          "confidence": "high",
+          "opportunity_rank": 1,
+          "validation_reasoning": "This is a concrete SEO briefing workflow that directly matches Tavyn’s brief-writing process.",
+          "source_seed_keywords": [
+            "SaaS SEO",
+            "SEO for SaaS",
+            "SaaS SEO strategy",
+            "SaaS organic growth",
+            "SaaS keyword research",
+            "SaaS content marketing"
+          ],
+          "discovery_rank": 15,
+          "core_keyword": "seo content briefs",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 140,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 29,
+              "quarterly": -36,
+              "yearly": -65
+            },
+            "cpc": null,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 2,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 17.7,
+              "referring_domains": 10.3,
+              "main_domain_rank": 355
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 140,
+            "maximum_territory_search_volume": 140,
+            "volume_score": 1,
+            "keyword_difficulty_original": 2,
+            "keyword_difficulty_used": 2,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.98,
+            "opportunity_score": 98
+          }
+        },
+        {
+          "recommendation_id": "problem_demand_recommendation_02",
+          "recommendation_rank": 2,
+          "query_id": "problem_demand_017",
+          "territory": "problem_demand",
+          "query": "seo content plan",
+          "selection_reasoning": "This is the best second problem-demand opportunity because it targets the distinct planning stage of SEO content operations, fits Tavyn's structured content-plan capability, and does not overlap materially with the brief query.",
+          "content_angle": "Explain how to build an SEO content plan that prioritizes realistic opportunities and organizes pillar and supporting pages for a lean SaaS team.",
+          "product_connection": "Tavyn can appear as the agent that turns search opportunities into a structured content plan and keeps founder input in the loop.",
+          "confidence": "high",
+          "opportunity_rank": 2,
+          "validation_reasoning": "This refers to the content-planning workflow for SEO, which Tavyn explicitly supports for founder-led SaaS teams.",
+          "source_seed_keywords": [
+            "SaaS SEO",
+            "SEO for SaaS",
+            "SaaS SEO strategy",
+            "SaaS organic growth",
+            "SaaS keyword research",
+            "SaaS content marketing"
+          ],
+          "discovery_rank": 17,
+          "core_keyword": "seo content planning",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 90,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -60,
+              "quarterly": -71,
+              "yearly": -90
+            },
+            "cpc": null,
+            "paid_competition": 0.06,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 107.7,
+              "referring_domains": 39.5,
+              "main_domain_rank": 385.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 90,
+            "maximum_territory_search_volume": 140,
+            "volume_score": 0.9115,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 91.2
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "candidates_available": 10,
+      "target_recommendations": 2,
+      "recommendations_selected": 1,
+      "selection_status": "limited",
+      "assessment": "One recommendation is appropriate because \"seo automation platform\" is the exact category Tavyn claims, while the other solution candidates are broader tool variants or price-led queries that would dilute the page's dominant commercial intent.",
+      "recommendations": [
+        {
+          "recommendation_id": "solution_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "solution_demand_001",
+          "territory": "solution_demand",
+          "query": "seo automation platform",
+          "selection_reasoning": "This is the strongest solution-demand opportunity because it matches Tavyn's exact product category, aligns with commercial evaluation intent, and is more precise than broader or price-led SEO tool queries.",
+          "content_angle": "Present the page as a category explainer and buying guide for an SEO automation platform, emphasizing the workflow from opportunity discovery to publish-ready content.",
+          "product_connection": "Tavyn can appear as an example of an SEO automation platform that learns product context, writes briefs, and ships content through GitHub or a CMS workflow.",
+          "confidence": "high",
+          "opportunity_rank": 3,
+          "validation_reasoning": "This is the exact product category Tavyn sells as an SEO content workflow automation platform.",
+          "source_seed_keywords": [
+            "AI SEO tools",
+            "SEO tools for SaaS",
+            "SEO automation",
+            "SEO workflow automation",
+            "content brief software",
+            "SEO operations platform"
+          ],
+          "discovery_rank": 1,
+          "core_keyword": "automated seo platform",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 480
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -19,
+              "quarterly": 0,
+              "yearly": 0
+            },
+            "cpc": null,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 13,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 1217.7,
+              "referring_domains": 191,
+              "main_domain_rank": 326.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 110000,
+            "volume_score": 0.5142,
+            "keyword_difficulty_original": 13,
+            "keyword_difficulty_used": 13,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.87,
+            "opportunity_score": 44.7
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_candidates_considered": 20,
+    "problem_candidates_considered": 10,
+    "solution_candidates_considered": 10,
+    "target_recommendations": 4,
+    "problem_recommendations_selected": 2,
+    "solution_recommendations_selected": 1,
+    "total_recommendations_selected": 3,
+    "target_fulfilled": false,
+    "insufficient_opportunity_territories": [
+      "solution_demand"
+    ]
+  }
+}

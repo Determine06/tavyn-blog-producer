@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://tavyn.dev/",
+  "generated_at": "2026-07-17T00:19:01.184Z",
+  "source_pages": [
+    {
+      "url": "https://tavyn.dev/",
+      "title": "Tavyn | One agent. Five steps."
+    },
+    {
+      "url": "https://www.tavyn.dev/waitlist",
+      "title": "Tavyn | One agent. Five steps."
+    },
+    {
+      "url": "https://www.tavyn.dev/faq",
+      "title": "Tavyn | One agent. Five steps."
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "Tavyn",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title and repeated brand name \"Tavyn\"",
+        "FAQ page and waitlist page both branded Tavyn"
+      ]
+    },
+    "domain": "tavyn.dev",
+    "one_sentence_description": {
+      "value": "Tavyn is an email-first SEO blog workflow agent for founder-led SaaS teams.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"We find organic visibility gaps, write the briefs, asks the right founder questions, and ships publish-ready content through your GitHub.\"",
+        "FAQ: \"built for founder-led SaaS teams\" and \"email-first workflow\""
+      ]
+    },
+    "product_category": {
+      "value": "SEO content workflow automation platform",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"One agent. Five steps.\" and workflow sections for Learn, Target, Plan, Create, Ship",
+        "FAQ: \"built around blog ops: planning, drafting, revisions, approval, and publishing readiness\""
+      ]
+    },
+    "business_model": {
+      "value": "waitlist-led SaaS",
+      "confidence": "medium",
+      "evidence": [
+        "Waitlist page: \"Join the Waitlist\" with email capture",
+        "Homepage CTA: \"Join Waitlist\"",
+        "No pricing page or paid plans visible in crawl"
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "pre-launch or early access",
+      "confidence": "medium",
+      "evidence": [
+        "Primary CTA is a waitlist signup",
+        "Crawl shows workflow mockups and product framing, but no live pricing or customer proof"
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "founder-led SaaS teams",
+      "description": "Lean SaaS teams led by founders who want to manage SEO content without a heavy blog workflow.",
+      "confidence": "high",
+      "evidence": [
+        "FAQ: \"Tavyn is built for founder-led SaaS teams\"",
+        "FAQ: \"not large editorial organizations\""
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "founders",
+        "description": "Founders who answer product and positioning questions to shape briefs and content.",
+        "confidence": "medium",
+        "evidence": [
+          "Homepage: \"asks the right founder questions\"",
+          "Homepage: email thread shows \"Tavyn has founder questions!\""
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The site consistently emphasizes lean, founder-led SaaS teams and excludes large editorial organizations. Other audience segments are not clearly supported in the crawl.",
+      "confidence": "high",
+      "evidence": [
+        "FAQ: \"Probably not\" a fit for large content teams",
+        "FAQ: \"optimized for lean, founder-led teams\""
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "SEO content workflow is too heavy for lean teams",
+      "description": "Teams know content matters but do not want to manage a heavy blog workflow themselves.",
+      "audience_segment": "founder-led SaaS teams",
+      "confidence": "high",
+      "evidence": [
+        "FAQ: \"know content matters but do not want to manage a heavy blog workflow themselves\""
+      ]
+    },
+    {
+      "pain": "Organic visibility gaps are hard to identify and prioritize",
+      "description": "SaaS teams need help finding search opportunities they can realistically win.",
+      "audience_segment": "founder-led SaaS teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"We find organic visibility gaps\"",
+        "Homepage: \"prioritizes the opportunities your SaaS can realistically win\""
+      ]
+    },
+    {
+      "pain": "Content execution gets stuck between planning and publishing",
+      "description": "Teams need briefs, founder input, revision handling, and publishing readiness in one flow.",
+      "audience_segment": "founder-led SaaS teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"write the briefs... and ships publish-ready content through your GitHub\"",
+        "FAQ: \"planning, drafting, revisions, approval, and publishing readiness\""
+      ]
+    },
+    {
+      "pain": "Generic SEO advice misses SaaS positioning and intent",
+      "description": "SaaS teams need content aligned to product expertise, search intent, and the buyer journey.",
+      "audience_segment": "founder-led SaaS teams",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: \"learns your product, customers, positioning, competitors, and current search visibility\"",
+        "Homepage: \"Every article is shaped around search intent, funnel, and your product\""
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "finds organic visibility gaps",
+      "description": "Identifies search opportunities around the product and market.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"We find organic visibility gaps\"",
+        "Homepage: \"maps the search landscape around your product\""
+      ]
+    },
+    {
+      "capability": "writes SEO briefs",
+      "description": "Creates structured briefs from SERP research and founder input.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"write the briefs\"",
+        "Homepage: \"Tavyn turns live SERP research into a detailed SEO brief\""
+      ]
+    },
+    {
+      "capability": "asks founder questions to gather product context",
+      "description": "Collects product expertise and point of view through email.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"asks the right founder questions\"",
+        "Homepage: email thread asking product-language and differentiation questions"
+      ]
+    },
+    {
+      "capability": "ships publish-ready content through GitHub",
+      "description": "Prepares content and opens a GitHub pull request for review.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"ships publish-ready content through your GitHub\"",
+        "Homepage: \"opens a GitHub pull request ready to review and merge\""
+      ]
+    },
+    {
+      "capability": "plans content around pillar and supporting pages",
+      "description": "Turns opportunities into a structured content plan.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"turns the best search opportunities into a structured content plan\"",
+        "Homepage: pillar page and sub-page examples"
+      ]
+    },
+    {
+      "capability": "supports email-first review and revisions",
+      "description": "Approvals, edits, and updates can happen from email.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Approve plans, answer focused questions, and revise drafts from your inbox\"",
+        "FAQ: \"Can I request revisions by email? Yes.\""
+      ]
+    },
+    {
+      "capability": "supports publishing through GitHub or CMS workflow",
+      "description": "Content can be prepared for GitHub or a CMS depending on setup.",
+      "capability_type": "integration",
+      "confidence": "medium",
+      "evidence": [
+        "FAQ: \"Approved content is prepared for publishing through GitHub or your CMS workflow, depending on your setup\""
+      ]
+    },
+    {
+      "capability": "learns product, customer, positioning, competitors, and search visibility",
+      "description": "Uses company context to tailor decisions.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Tavyn learns your product, customers, positioning, competitors, and current search visibility\""
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "Tavyn positions itself as an email-first SEO operations agent for founder-led SaaS teams, handling planning, briefs, drafting, and publishing with minimal workflow overhead.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"One agent. Five steps. Start to finish.\"",
+        "FAQ: \"built around blog ops\" and \"email-first workflow\""
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "Email-first workflow",
+        "description": "Users can approve, revise, and review content from inbox instead of managing a heavy dashboard workflow.",
+        "confidence": "high",
+        "evidence": [
+          "FAQ: \"Do I have to use a dashboard? No. The workflow is email-first\"",
+          "Homepage: \"Approve plans, answer focused questions, and revise drafts from your inbox\""
+        ]
+      },
+      {
+        "differentiator": "Founder-context-driven content creation",
+        "description": "The product explicitly learns product, customer, positioning, competitors, and search visibility before deciding.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"Tavyn learns your product, customers, positioning, competitors, and current search visibility\""
+        ]
+      },
+      {
+        "differentiator": "GitHub-based publishing readiness",
+        "description": "Content is delivered as publish-ready and pushed through GitHub pull requests.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"ships publish-ready content through your GitHub\"",
+          "Homepage: \"opens a GitHub pull request ready to review and merge\""
+        ]
+      },
+      {
+        "differentiator": "Built for lean founder-led SaaS teams",
+        "description": "The product explicitly rejects large editorial workflows and is optimized for smaller teams.",
+        "confidence": "high",
+        "evidence": [
+          "FAQ: \"built for founder-led SaaS teams\"",
+          "FAQ: \"Probably not\" a fit for large content teams"
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "SaaS SEO should be run as an end-to-end workflow that combines search research, founder expertise, and publish-ready execution rather than isolated writing tasks.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"One agent. Five steps. Start to finish.\"",
+        "Homepage: \"Close the execution gap. Only step in when needed.\""
+      ]
+    },
+    "positioning_notes": {
+      "value": "The site repeatedly contrasts Tavyn with generic AI writers and heavy blog workflows, emphasizing operational support over content generation alone.",
+      "confidence": "high",
+      "evidence": [
+        "FAQ: \"Is Tavyn just another AI writer? No.\"",
+        "FAQ: \"built around blog ops\""
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "direct",
+        "practical",
+        "founder-friendly",
+        "workflow-oriented"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"One agent. Five steps. Start to finish.\"",
+        "FAQ answers are plainspoken and concise"
+      ]
+    },
+    "writing_style": {
+      "value": "Concise, product-led, and process-oriented, with short sentences and step-by-step framing.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage uses numbered steps and short headline-copy structure",
+        "FAQ uses direct Q&A format"
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "One agent. Five steps.",
+        "context": "Core homepage framing of the workflow.",
+        "evidence": [
+          "Homepage hero headline"
+        ]
+      },
+      {
+        "phrase": "Close the execution gap.",
+        "context": "Describes the product's role in moving from planning to shipped content.",
+        "evidence": [
+          "Homepage section heading"
+        ]
+      },
+      {
+        "phrase": "Only step in when needed.",
+        "context": "Positions Tavyn as low-friction and founder-friendly.",
+        "evidence": [
+          "Homepage section heading"
+        ]
+      },
+      {
+        "phrase": "email-first workflow",
+        "context": "Repeated description of how users interact with the product.",
+        "evidence": [
+          "FAQ and homepage"
+        ]
+      },
+      {
+        "phrase": "publish-ready content",
+        "context": "Describes the output after Tavyn's process.",
+        "evidence": [
+          "Homepage"
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "Frames SEO as an end-to-end operating workflow rather than a writing tool.",
+        "description": "The site repeatedly covers learn, target, plan, create, and ship.",
+        "evidence": [
+          "Homepage step labels and section names"
+        ]
+      },
+      {
+        "pattern": "Emphasizes founder input and product context.",
+        "description": "Questions and brief generation are tailored to the product and founder perspective.",
+        "evidence": [
+          "Homepage founder questions email example"
+        ]
+      },
+      {
+        "pattern": "Uses SaaS-specific language and examples.",
+        "description": "Examples focus on SaaS SEO, SaaS keywords, and SaaS content planning.",
+        "evidence": [
+          "Homepage opportunity examples and content topics"
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Pricing is not stated in the crawled content.",
+      "Customer logos or named customers are not present.",
+      "Integrations beyond GitHub/CMS are not stated.",
+      "Company stage is not explicitly stated beyond waitlist/launch-style messaging."
+    ],
+    "potential_risks": [
+      "The crawl contains illustrative dashboard and SERP examples that should not be mistaken for separate product claims.",
+      "Only three pages were crawled, so positioning and audience details may be incomplete.",
+      "Some repeated homepage sections could overemphasize certain messages."
+    ],
+    "notes": "The crawl is strong for product positioning, ICP, workflow, and brand voice. Evidence is consistent across homepage and FAQ, with limited uncertainty around business model and maturity."
+  }
+}

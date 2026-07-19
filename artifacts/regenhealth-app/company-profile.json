@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://regenhealth.app/",
+  "generated_at": "2026-07-17T00:52:21.913Z",
+  "source_pages": [
+    {
+      "url": "https://regenhealth.app/",
+      "title": "REGEN — The world's trusted peptide health layer"
+    },
+    {
+      "url": "https://www.regenhealth.app/blog",
+      "title": "Blog — REGEN"
+    },
+    {
+      "url": "https://www.regenhealth.app/blog/pharmacokinetic-profiles-cjc-1295-vs-sermorelin",
+      "title": "Pharmacokinetic Profiles: CJC-1295 vs. Sermorelin — REGEN"
+    },
+    {
+      "url": "https://www.regenhealth.app/blog/tesamorelin-pharmacokinetics-and-clinical-utility",
+      "title": "Tesamorelin Pharmacokinetics and Clinical Utility — REGEN"
+    },
+    {
+      "url": "https://www.regenhealth.app/blog/retatrutide-vs-tirzepatide",
+      "title": "Retatrutide vs Tirzepatide: a practical comparison. — REGEN"
+    },
+    {
+      "url": "https://www.regenhealth.app/blog/reading-free-testosterone",
+      "title": "How to read a free testosterone trend line. — REGEN"
+    },
+    {
+      "url": "https://www.regenhealth.app/disclaimer",
+      "title": "Non-Medical Disclaimer — REGEN"
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "REGEN",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title: \"REGEN — The world's trusted peptide health layer\"",
+        "Disclaimer: \"REGEN Health Inc.\""
+      ]
+    },
+    "domain": "regenhealth.app",
+    "one_sentence_description": {
+      "value": "REGEN is a peptide tracking and reference app with AI guidance, biomarker trends, and dosing/inventory tools.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"tracks every vial, every dose, every biomarker — and gives you an AI second opinion before you draw\"",
+        "Homepage: \"Five tools that replace a binder full of spreadsheets\""
+      ]
+    },
+    "product_category": {
+      "value": "peptide health tracking and reference app",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"The world's trusted peptide health layer\"",
+        "Homepage sections: schedule, inventory, REGEN AI, biomarkers, nutrition"
+      ]
+    },
+    "business_model": {
+      "value": "freemium mobile app with paid Pro subscription",
+      "confidence": "high",
+      "evidence": [
+        "Homepage FAQ: \"Free for the basic tracker. REGEN Pro ($14/mo or $120/yr) unlocks the AI, biomarker trends, photo meal scan, and unlimited shared protocols.\"",
+        "Homepage: App Store download link"
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "launched consumer app with paid tier",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage shows App Store rating: \"4.9\" and \"From 2,400+ App Store reviews\"",
+        "Homepage FAQ lists pricing and features available at launch: \"50+ at launch\""
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "adults running their own peptide protocols",
+      "description": "People self-managing peptide or pharmacological protocols and tracking dosing, inventory, biomarkers, and nutrition.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Built for the people who run their own protocols.\"",
+        "Disclaimer: \"REGEN is a personal tracking and reference tool for adults who have already... decided to run a peptide or pharmacological protocol.\""
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "coaches and clinicians managing client protocols",
+        "description": "Practitioners who share or oversee multiple protocols and biomarker views.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage testimonials: \"I've moved every one of my clients onto REGEN.\"",
+          "Homepage FAQ: \"Coaches on REGEN Pro can manage multiple shared protocols from one dashboard.\"",
+          "Homepage FAQ: \"Can I share my protocol with a coach or clinician? Yes.\""
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The site speaks primarily to self-directed protocol users, but also clearly supports coaches and clinicians through shared protocols and team pricing. The disclaimer frames the tool as non-medical and not a substitute for clinician guidance.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Built for the people who run their own protocols.\"",
+        "Disclaimer: \"consult a licensed healthcare provider\""
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "managing peptide protocols with spreadsheets is cumbersome",
+      "description": "Users are replacing a binder or spreadsheet stack with a single system.",
+      "audience_segment": "self-directed protocol users",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Five tools that replace a binder full of spreadsheets.\"",
+        "Homepage testimonial: \"Switched from a Google Sheet I'd been maintaining for 14 months.\""
+      ]
+    },
+    {
+      "pain": "reconstitution and dose math are confusing or error-prone",
+      "description": "Users need help calculating BAC water, IU conversions, and units-per-click correctly.",
+      "audience_segment": "self-directed protocol users",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"REGEN does the BAC water math, the IU conversion, the units-per-click\"",
+        "Homepage testimonial: \"Reconstitution math used to make me anxious.\""
+      ]
+    },
+    {
+      "pain": "keeping track of vial inventory, expiry, and potency is difficult",
+      "description": "Users need a way to avoid expired or unaccounted-for vials.",
+      "audience_segment": "self-directed protocol users",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Every vial, accounted for.\"",
+        "Homepage: \"Expiry & potency alerts\"",
+        "Homepage testimonial: \"Inventory + expiry alerts saved me from injecting an expired BPC vial\""
+      ]
+    },
+    {
+      "pain": "hard to understand whether a protocol is working from isolated biomarker values",
+      "description": "Users need trend-based biomarker interpretation rather than single lab readings.",
+      "audience_segment": "self-directed protocol users",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Numbers in, trends out.\"",
+        "Blog free testosterone article: \"never make a protocol change off a single data point. Always wait for the trend.\""
+      ]
+    },
+    {
+      "pain": "finding reliable, cited answers about peptides and lab interpretation is difficult",
+      "description": "Users want literature-backed guidance instead of forum anecdotes.",
+      "audience_segment": "self-directed protocol users and clinicians",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Trained on peer-reviewed literature — never on forum threads pretending to be science.\"",
+        "Homepage FAQ: \"Every response is cited and traceable to the source paper.\""
+      ]
+    },
+    {
+      "pain": "meal tracking and protein estimation can be guesswork during GLP-1 or nutrition protocols",
+      "description": "Users want nutrition logging that fits their dosing window and reduces manual effort.",
+      "audience_segment": "self-directed protocol users",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: \"Snap a plate. REGEN breaks down calories, protein, carbs, fat\"",
+        "Homepage: \"Because GLP-1 outcomes start at the table.\""
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "tracks doses and schedules",
+      "description": "Maintains a protocol timeline and sequence of dosing windows and reminders.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Your day, dosed. Down to the minute.\"",
+        "Homepage: \"Time-of-day windows\" and \"Cycle-aware reminders\""
+      ]
+    },
+    {
+      "capability": "manages vial inventory",
+      "description": "Tracks reconstituted vs lyophilized vials, remaining mg, expiry, and stack-level inventory.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Track reconstituted vs lyophilized, mg remaining, expiry.\"",
+        "Homepage: \"Stack-level inventory\""
+      ]
+    },
+    {
+      "capability": "performs reconstitution and dose calculations",
+      "description": "Calculates BAC water math, IU conversion, and units-per-click; supports multi-peptide blends.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"REGEN does the BAC water math, the IU conversion, the units-per-click\"",
+        "Homepage FAQ: \"Does the reconstitution calculator handle multi-peptide blends? Yes.\""
+      ]
+    },
+    {
+      "capability": "provides AI guidance with citations",
+      "description": "Answers questions about interactions, half-lives, blood panels, and stack analysis using cited literature.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"A second opinion, before you draw.\"",
+        "Homepage: \"Every response is cited and traceable to the source paper.\""
+      ]
+    },
+    {
+      "capability": "tracks biomarker trends",
+      "description": "Logs biomarkers such as free testosterone, lipid panels, glucose, and sleep; flags drift and recommends retesting timing.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Log free testosterone, lipid panels, glucose, sleep\"",
+        "Homepage: \"Auto-flagged drift\" and \"tell you when it's time to retest\""
+      ]
+    },
+    {
+      "capability": "scans meals and estimates macros",
+      "description": "Uses photo scanning to estimate calories and macros and ties logs to dose windows.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Snap a plate. REGEN breaks down calories, protein, carbs, fat\"",
+        "Homepage: \"Photo macro scan\" and \"Window-aware logging\""
+      ]
+    },
+    {
+      "capability": "shares protocols with coaches or clinicians",
+      "description": "Generates read-only links including active stack, dose schedule, biomarkers, and notes; supports revocation.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage FAQ: \"Generate a read-only link that includes your active stack, dose schedule, recent biomarkers, and notes.\"",
+        "Homepage FAQ: \"Revoke access at any time.\""
+      ]
+    },
+    {
+      "capability": "imports protocols from CSV",
+      "description": "Reconstructs dose history from spreadsheet uploads and fills gaps with defaults for confirmation.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage FAQ: \"Drop in a CSV with dose, peptide, date and REGEN reconstructs your history\"",
+        "Homepage FAQ: \"Most people migrate in under 20 minutes.\""
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "REGEN positions itself as a cited, protocol-aware peptide health layer that replaces spreadsheets with scheduling, inventory, AI guidance, biomarker trends, and shared protocol workflows.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"the world's trusted peptide health layer\"",
+        "Homepage: \"Five tools that replace a binder full of spreadsheets.\"",
+        "Homepage: \"an AI second opinion before you draw\""
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "protocol-aware workflow design",
+        "description": "Built around peptide timelines, dosing windows, inventory, and biomarkers rather than a generic checklist.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"REGEN sequences your day around the molecules — not a generic checklist.\"",
+          "Homepage: \"Every screen pulls from the same protocol.\""
+        ]
+      },
+      {
+        "differentiator": "cited AI grounded in peer-reviewed literature",
+        "description": "AI responses are positioned as literature-backed and traceable, not forum-based.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"Trained on peer-reviewed literature — never on forum threads pretending to be science.\"",
+          "Homepage FAQ: \"Every response is cited and traceable to the source paper.\""
+        ]
+      },
+      {
+        "differentiator": "all-in-one replacement for spreadsheets and ops tools",
+        "description": "The app claims to replace multiple tools used for protocol management.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage testimonial: \"replaced my entire ops stack. Notion, Sheets, all gone.\"",
+          "Homepage: \"Five tools that replace a binder full of spreadsheets.\""
+        ]
+      },
+      {
+        "differentiator": "shared protocol management for professionals",
+        "description": "Supports coaches and clinicians managing multiple client protocols from one dashboard.",
+        "confidence": "medium",
+        "evidence": [
+          "Homepage FAQ: \"Coaches on REGEN Pro can manage multiple shared protocols from one dashboard.\"",
+          "Homepage testimonials from coaches and clinicians"
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "Peptide and pharmacological protocols should be managed with cited reference data, protocol-specific scheduling, and biomarker trend tracking rather than manual spreadsheets or generic health apps.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Five tools that replace a binder full of spreadsheets.\"",
+        "Disclaimer: \"personal tracking and reference tool\"",
+        "Homepage: \"Numbers in, trends out.\""
+      ]
+    },
+    "positioning_notes": {
+      "value": "The brand emphasizes precision, calmness, and evidence. It repeatedly contrasts itself with vague advice, forum anecdotes, and manual spreadsheet workflows while avoiding any claim to prescribe or treat.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"We don't give them\" vague answers",
+        "Disclaimer: \"We do not prescribe, recommend, diagnose, or treat anything.\""
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "confident",
+        "clinical",
+        "calm",
+        "evidence-driven",
+        "slightly provocative"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"the world's trusted peptide health layer\"",
+        "Homepage: \"We don't give them\"",
+        "Homepage UI copy like \"A second opinion, before you draw.\""
+      ]
+    },
+    "writing_style": {
+      "value": "Concise, product-led, and jargon-aware, with strong use of short declarative headings and explanatory subcopy grounded in science.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage sections like \"Every vial, accounted for.\" and \"Numbers in, trends out.\"",
+        "Blog articles use structured sections and cited studies"
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "before you draw",
+        "context": "Used to frame AI guidance before dosing actions.",
+        "evidence": [
+          "Homepage: \"A second opinion, before you draw.\""
+        ]
+      },
+      {
+        "phrase": "Numbers in, trends out",
+        "context": "Describes the biomarker tracking philosophy.",
+        "evidence": [
+          "Homepage biomarker section heading"
+        ]
+      },
+      {
+        "phrase": "replace a binder full of spreadsheets",
+        "context": "Frames the app as a workflow replacement.",
+        "evidence": [
+          "Homepage: \"Five tools that replace a binder full of spreadsheets.\""
+        ]
+      },
+      {
+        "phrase": "the world's trusted peptide health layer",
+        "context": "Topline positioning claim on the homepage.",
+        "evidence": [
+          "Homepage title and hero copy"
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "frequent contrast between manual chaos and organized protocol workflows",
+        "description": "The site contrasts spreadsheets, anxiety, and vague answers with calm timelines, calculators, and cited outputs.",
+        "evidence": [
+          "Homepage: \"replace a binder full of spreadsheets\"",
+          "Homepage testimonial: \"No red badges screaming at me. Just 'this is what's next.'\""
+        ]
+      },
+      {
+        "pattern": "science and citation as trust signals",
+        "description": "Marketing repeatedly emphasizes peer-reviewed literature, cited responses, and source traceability.",
+        "evidence": [
+          "Homepage: \"Trained on peer-reviewed literature\"",
+          "Homepage FAQ: \"Every response is cited and traceable to the source paper.\""
+        ]
+      },
+      {
+        "pattern": "protocol specificity over generic wellness",
+        "description": "Copy repeatedly references molecules, dosing windows, half-lives, biomarkers, and protocol timing.",
+        "evidence": [
+          "Homepage schedule and AI sections",
+          "Blog articles on pharmacokinetics and biomarker interpretation"
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Legal entity details beyond the disclaimer's mention of REGEN Health Inc.",
+      "Whether the app is iOS-only or available on other platforms",
+      "Full pricing structure beyond the basic tracker and Pro plan",
+      "Specific integrations are not mentioned",
+      "Exact company stage beyond app launch and review signals"
+    ],
+    "potential_risks": [
+      "The crawl includes scientific blog content that could be mistaken for core product features; product claims were weighted more heavily from the homepage and FAQ.",
+      "Some testimonials and quoted experiences are user-generated and may reflect usage patterns rather than guaranteed outcomes.",
+      "The disclaimer is prominent and may cause ambiguity about whether some informational content should be interpreted as product capability versus educational content."
+    ],
+    "notes": "The crawl is strong on homepage positioning, product modules, pricing, and FAQ coverage. Confidence is highest for identity, ICP, and core capabilities. Maturity and platform scope are somewhat less certain because the crawl does not include a dedicated about or platform page."
+  }
+}

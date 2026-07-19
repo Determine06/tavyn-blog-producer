@@ -1,0 +1,1419 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "24776b42-33d7-4953-b3fb-6066439cc305",
+  "generated_at": "2026-07-19T18:46:10.029Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://regenhealth.app/",
+  "source_profile": {
+    "company_name": "REGEN",
+    "product_category": "peptide health tracking and reference app",
+    "primary_icp": "adults running their own peptide protocols"
+  },
+  "query_validations": [
+    {
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "query": "peptide dosing protocols",
+      "verdict": "valid",
+      "reasoning": "This is informational demand about dosing protocols, a core workflow for adults managing peptide protocols."
+    },
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "query": "peptide inventory",
+      "verdict": "valid",
+      "reasoning": "This is informational demand about tracking peptide inventory, which matches a central protocol-management workflow."
+    },
+    {
+      "query_id": "problem_demand_003",
+      "territory": "problem_demand",
+      "query": "peptide protocols bible",
+      "verdict": "invalid",
+      "reasoning": "This is a broad reference-book style query for peptide protocols, not a concrete workflow or problem the app covers."
+    },
+    {
+      "query_id": "problem_demand_004",
+      "territory": "problem_demand",
+      "query": "peptide protocols list",
+      "verdict": "invalid",
+      "reasoning": "This is a generic list query about peptide protocols, which is industry education rather than a specific protocol-management problem."
+    },
+    {
+      "query_id": "problem_demand_005",
+      "territory": "problem_demand",
+      "query": "peptide synthesis protocols",
+      "verdict": "invalid",
+      "reasoning": "This searches for lab synthesis procedures, which is a different subject from self-managed peptide protocol tracking."
+    },
+    {
+      "query_id": "problem_demand_006",
+      "territory": "problem_demand",
+      "query": "peptide research protocols",
+      "verdict": "invalid",
+      "reasoning": "This is about research workflows rather than the self-managed dosing and tracking workflow REGEN supports."
+    },
+    {
+      "query_id": "problem_demand_007",
+      "territory": "problem_demand",
+      "query": "peptide analysis protocols",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous technical analysis topic and does not clearly represent the app’s protocol-management problem space."
+    },
+    {
+      "query_id": "problem_demand_008",
+      "territory": "problem_demand",
+      "query": "klow peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity peptide query, and the dominant need is not identifiable as a supported protocol-management problem."
+    },
+    {
+      "query_id": "problem_demand_009",
+      "territory": "problem_demand",
+      "query": "kpv peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a peptide-specific protocol query that lacks a clearly supported self-management workflow beyond a named compound."
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "query": "epitalon peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that is too compound-specific and not clearly about a core tracked workflow."
+    },
+    {
+      "query_id": "problem_demand_011",
+      "territory": "problem_demand",
+      "query": "peptide dosage protocol",
+      "verdict": "valid",
+      "reasoning": "This is informational demand about dosage protocol work, which directly matches dose calculation and schedule management."
+    },
+    {
+      "query_id": "problem_demand_012",
+      "territory": "problem_demand",
+      "query": "selank peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query without enough evidence of a supported core workflow beyond the compound name."
+    },
+    {
+      "query_id": "problem_demand_013",
+      "territory": "problem_demand",
+      "query": "mt1 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly represent a general protocol-management need."
+    },
+    {
+      "query_id": "problem_demand_014",
+      "territory": "problem_demand",
+      "query": "dihexa peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query, but the query itself does not clearly map to the app’s core tracking workflow."
+    },
+    {
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "query": "peptide glow protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an अस्पष्ट branded or nickname-style protocol query that does not clearly express a supported problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_016",
+      "territory": "problem_demand",
+      "query": "p21 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query, but it is too specific and not clearly tied to a broadly supported tracking problem."
+    },
+    {
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "query": "adamax peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a branded or named protocol query, and the dominant need is not clearly supported by the product profile."
+    },
+    {
+      "query_id": "problem_demand_018",
+      "territory": "problem_demand",
+      "query": "khavinson peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named protocol query that reads like niche compound research rather than a core self-management workflow."
+    },
+    {
+      "query_id": "problem_demand_019",
+      "territory": "problem_demand",
+      "query": "peptide biotinylation protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab modification procedure, not an adult self-managed peptide protocol or tracking workflow."
+    },
+    {
+      "query_id": "problem_demand_020",
+      "territory": "problem_demand",
+      "query": "apex peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity protocol query without enough evidence of the supported problem space."
+    },
+    {
+      "query_id": "problem_demand_021",
+      "territory": "problem_demand",
+      "query": "ss31 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that is too compound-specific to qualify on the evidence provided."
+    },
+    {
+      "query_id": "problem_demand_022",
+      "territory": "problem_demand",
+      "query": "dsip peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly express a general protocol-management problem."
+    },
+    {
+      "query_id": "problem_demand_023",
+      "territory": "problem_demand",
+      "query": "cartalax peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query, and the search need is not clearly within the supported tracking workflow."
+    },
+    {
+      "query_id": "problem_demand_024",
+      "territory": "problem_demand",
+      "query": "aicar peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query that is too specific and not clearly a core use case for the app."
+    },
+    {
+      "query_id": "problem_demand_025",
+      "territory": "problem_demand",
+      "query": "thymalin peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly represent a broadly supported protocol-management problem."
+    },
+    {
+      "query_id": "problem_demand_026",
+      "territory": "problem_demand",
+      "query": "kisspeptin peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query, but the dominant ordinary meaning is too specific and unsupported."
+    },
+    {
+      "query_id": "problem_demand_027",
+      "territory": "problem_demand",
+      "query": "peptide synthesis protocol",
+      "verdict": "invalid",
+      "reasoning": "This seeks a synthesis procedure, which is lab production work rather than the protocol tracking the app is built for."
+    },
+    {
+      "query_id": "problem_demand_028",
+      "territory": "problem_demand",
+      "query": "epithalon peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly map to a core tracked workflow."
+    },
+    {
+      "query_id": "problem_demand_029",
+      "territory": "problem_demand",
+      "query": "vilon peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query, but it is too narrow and unsupported as general problem demand."
+    },
+    {
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "query": "ta1 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query and not clearly a general workflow or decision demand."
+    },
+    {
+      "query_id": "problem_demand_031",
+      "territory": "problem_demand",
+      "query": "peptide mapping protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical mapping procedure, not a self-managed peptide dosing or tracking problem."
+    },
+    {
+      "query_id": "problem_demand_032",
+      "territory": "problem_demand",
+      "query": "pda peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity peptide query without a clearly supported consumer workflow."
+    },
+    {
+      "query_id": "problem_demand_033",
+      "territory": "problem_demand",
+      "query": "tb4 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that is too specific to validate as general protocol-management demand."
+    },
+    {
+      "query_id": "problem_demand_034",
+      "territory": "problem_demand",
+      "query": "cerebrolysin peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named protocol query for a specific compound, but the standalone search need is too narrow and unsupported."
+    },
+    {
+      "query_id": "problem_demand_035",
+      "territory": "problem_demand",
+      "query": "peptide elisa protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab assay protocol query, not the adult self-management problem space REGEN addresses."
+    },
+    {
+      "query_id": "problem_demand_036",
+      "territory": "problem_demand",
+      "query": "peptide protocol calculator",
+      "verdict": "valid",
+      "reasoning": "This is informational demand for calculating peptide protocols, which aligns with dose math and reconstitution workflows."
+    },
+    {
+      "query_id": "problem_demand_037",
+      "territory": "problem_demand",
+      "query": "peptide conjugation protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a laboratory chemistry protocol, not a protocol-tracking or dosing workflow."
+    },
+    {
+      "query_id": "problem_demand_038",
+      "territory": "problem_demand",
+      "query": "peptide extraction protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab extraction procedure and not part of the supported self-directed protocol workflow."
+    },
+    {
+      "query_id": "problem_demand_039",
+      "territory": "problem_demand",
+      "query": "peptide lyophilization protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing and preparation procedure, not a core problem the app is positioned to solve."
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "query": "peptide protocol guide",
+      "verdict": "invalid",
+      "reasoning": "This is a broad guide query without a concrete workflow or outcome tied to the app’s core problem space."
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "query": "peptide pulsing protocol",
+      "verdict": "valid",
+      "reasoning": "This is informational demand about protocol timing and cycling, which fits a concrete self-managed peptide workflow."
+    },
+    {
+      "query_id": "problem_demand_042",
+      "territory": "problem_demand",
+      "query": "blocking peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical assay-related protocol query, not a self-directed peptide management need."
+    },
+    {
+      "query_id": "problem_demand_043",
+      "territory": "problem_demand",
+      "query": "peptide purification protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab purification procedure and not a supported adult protocol-management workflow."
+    },
+    {
+      "query_id": "problem_demand_044",
+      "territory": "problem_demand",
+      "query": "hgh peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named protocol query that does not clearly express a general tracking or dosing workflow."
+    },
+    {
+      "query_id": "problem_demand_045",
+      "territory": "problem_demand",
+      "query": "peptide labeling protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a laboratory labeling procedure rather than a self-managed dosing or inventory problem."
+    },
+    {
+      "query_id": "problem_demand_046",
+      "territory": "problem_demand",
+      "query": "adipotide peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query that is too specific to qualify without clearer supported workflow evidence."
+    },
+    {
+      "query_id": "problem_demand_047",
+      "territory": "problem_demand",
+      "query": "peptide precipitation protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a chemistry procedure, not a protocol-tracking or dosing workflow."
+    },
+    {
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "query": "peptide array protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical research protocol query, not the core self-management problem the app solves."
+    },
+    {
+      "query_id": "problem_demand_049",
+      "territory": "problem_demand",
+      "query": "peptide acetylation protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a laboratory modification protocol, not a supported self-directed peptide workflow."
+    },
+    {
+      "query_id": "problem_demand_050",
+      "territory": "problem_demand",
+      "query": "klow 80 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity protocol query, and the dominant search need is not identifiable as supported demand."
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "query": "peptide synthesis: methods and protocols",
+      "verdict": "invalid",
+      "reasoning": "This is a synthesis methods query for peptide production, which is outside the product’s tracking and reference scope."
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "ss-31 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that is too specific and not clearly a general protocol-management problem."
+    },
+    {
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "query": "ara 290 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query without enough evidence that it represents a broadly supported workflow."
+    },
+    {
+      "query_id": "problem_demand_054",
+      "territory": "problem_demand",
+      "query": "mots-c peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly map to a core operational problem."
+    },
+    {
+      "query_id": "problem_demand_055",
+      "territory": "problem_demand",
+      "query": "wolverine stack peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a branded stack name, but the query does not clearly specify a supported protocol-management need."
+    },
+    {
+      "query_id": "problem_demand_056",
+      "territory": "problem_demand",
+      "query": "protocol for glow peptide",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear branded or nickname-style protocol query that lacks a clearly supported ordinary meaning."
+    },
+    {
+      "query_id": "problem_demand_057",
+      "territory": "problem_demand",
+      "query": "the peptide protocols master bible",
+      "verdict": "invalid",
+      "reasoning": "This is a broad reference-book query rather than a concrete workflow or decision demand."
+    },
+    {
+      "query_id": "problem_demand_058",
+      "territory": "problem_demand",
+      "query": "foxo4-dri peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query, but it is too specific and not clearly part of the app’s core problem space."
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "query": "peptide synthesis methods and protocols",
+      "verdict": "invalid",
+      "reasoning": "This is a methods query about peptide production, not a self-managed protocol tracking problem."
+    },
+    {
+      "query_id": "problem_demand_060",
+      "territory": "problem_demand",
+      "query": "the ultimate peptide protocols bible",
+      "verdict": "invalid",
+      "reasoning": "This is a generic reference query for peptide protocols, not a concrete workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_061",
+      "territory": "problem_demand",
+      "query": "basic protein and peptide protocols",
+      "verdict": "invalid",
+      "reasoning": "This is a broad technical protocol query that is outside the app’s specific dosing and tracking workflow."
+    },
+    {
+      "query_id": "problem_demand_062",
+      "territory": "problem_demand",
+      "query": "ll 37 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that is too compound-specific to validate here."
+    },
+    {
+      "query_id": "problem_demand_063",
+      "territory": "problem_demand",
+      "query": "5 amino peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named compound query and not a clearly supported protocol-management need."
+    },
+    {
+      "query_id": "problem_demand_064",
+      "territory": "problem_demand",
+      "query": "5-amino peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named compound query, so the dominant search need is not clear enough to qualify."
+    },
+    {
+      "query_id": "problem_demand_065",
+      "territory": "problem_demand",
+      "query": "lemon bottle peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a branded or named protocol query that does not clearly map to the supported self-management workflow."
+    },
+    {
+      "query_id": "problem_demand_066",
+      "territory": "problem_demand",
+      "query": "flag peptide elution protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab elution protocol query, not a self-managed peptide dosing or tracking problem."
+    },
+    {
+      "query_id": "problem_demand_067",
+      "territory": "problem_demand",
+      "query": "klow blend peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named blend query, and the ordinary search need is not clearly supported."
+    },
+    {
+      "query_id": "problem_demand_068",
+      "territory": "problem_demand",
+      "query": "ta 1 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that is too specific and not clearly a core workflow demand."
+    },
+    {
+      "query_id": "problem_demand_069",
+      "territory": "problem_demand",
+      "query": "ta-1 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly represent a broader supported problem space."
+    },
+    {
+      "query_id": "problem_demand_070",
+      "territory": "problem_demand",
+      "query": "chris duffin peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a person-linked named query, and the search need is not clearly a supported protocol workflow."
+    },
+    {
+      "query_id": "problem_demand_071",
+      "territory": "problem_demand",
+      "query": "peptide mass fingerprinting protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical proteomics protocol, not the adult self-managed peptide workflow the product serves."
+    },
+    {
+      "query_id": "problem_demand_072",
+      "territory": "problem_demand",
+      "query": "ace 031 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query that is too specific to validate as core demand."
+    },
+    {
+      "query_id": "problem_demand_073",
+      "territory": "problem_demand",
+      "query": "ace-031 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query, but the dominant search need remains too narrow and unsupported."
+    },
+    {
+      "query_id": "problem_demand_074",
+      "territory": "problem_demand",
+      "query": "vip peptide protocol subq",
+      "verdict": "invalid",
+      "reasoning": "This is a niche named protocol query with unclear wording, so the dominant search need is not reliably supported."
+    },
+    {
+      "query_id": "problem_demand_075",
+      "territory": "problem_demand",
+      "query": "fitc peptide labeling protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical labeling procedure, not a self-directed peptide dosing or tracking workflow."
+    },
+    {
+      "query_id": "problem_demand_076",
+      "territory": "problem_demand",
+      "query": "fmoc peptide synthesis protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a peptide synthesis chemistry query, which is outside the product’s problem space."
+    },
+    {
+      "query_id": "problem_demand_077",
+      "territory": "problem_demand",
+      "query": "peptide binding assay protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an assay workflow query, not a protocol tracking or dosing workflow."
+    },
+    {
+      "query_id": "problem_demand_078",
+      "territory": "problem_demand",
+      "query": "superhuman blend peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a branded stack query, but it is too undefined to establish a supported ordinary search need."
+    },
+    {
+      "query_id": "problem_demand_079",
+      "territory": "problem_demand",
+      "query": "peptide dot blot protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a laboratory assay protocol, not the self-management problem REGEN addresses."
+    },
+    {
+      "query_id": "problem_demand_080",
+      "territory": "problem_demand",
+      "query": "ha peptide elution protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical lab elution query, not a consumer protocol-management workflow."
+    },
+    {
+      "query_id": "problem_demand_081",
+      "territory": "problem_demand",
+      "query": "peptide competition assay protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a research assay query and does not match the app’s self-managed protocol workflow."
+    },
+    {
+      "query_id": "problem_demand_082",
+      "territory": "problem_demand",
+      "query": "glow 70 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear branded protocol query that does not clearly express a supported problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_083",
+      "territory": "problem_demand",
+      "query": "super shred peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a branded stack query without enough evidence of a clear, supported protocol-management need."
+    },
+    {
+      "query_id": "problem_demand_084",
+      "territory": "problem_demand",
+      "query": "blocking peptide protocol immunohistochemistry",
+      "verdict": "invalid",
+      "reasoning": "This is a technical immunohistochemistry protocol, not the self-directed dosing and inventory workflow the app supports."
+    },
+    {
+      "query_id": "problem_demand_085",
+      "territory": "problem_demand",
+      "query": "ahk-cu peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound protocol query that is too specific and unsupported as general demand."
+    },
+    {
+      "query_id": "problem_demand_086",
+      "territory": "problem_demand",
+      "query": "snap-8 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query that does not clearly represent a core supported workflow."
+    },
+    {
+      "query_id": "problem_demand_087",
+      "territory": "problem_demand",
+      "query": "peptide dosage and protocol",
+      "verdict": "valid",
+      "reasoning": "This is informational demand about dosage and protocol management, a central workflow for self-directed peptide users."
+    },
+    {
+      "query_id": "problem_demand_088",
+      "territory": "problem_demand",
+      "query": "mots-c peptide dosage protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named compound dosage query, but it is too specific to qualify as general supported problem demand."
+    },
+    {
+      "query_id": "problem_demand_089",
+      "territory": "problem_demand",
+      "query": "solid phase peptide synthesis protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab synthesis procedure, not a peptide self-management workflow."
+    },
+    {
+      "query_id": "problem_demand_090",
+      "territory": "problem_demand",
+      "query": "solution phase peptide synthesis protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a chemistry production query and not the type of protocol the app is positioned to help manage."
+    },
+    {
+      "query_id": "problem_demand_091",
+      "territory": "problem_demand",
+      "query": "peptide n-terminal acetylation protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical modification protocol, not a self-managed peptide protocol or tracking task."
+    },
+    {
+      "query_id": "problem_demand_092",
+      "territory": "problem_demand",
+      "query": "pe-22-28 peptide protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named peptide protocol query, but the standalone meaning is too specific and unsupported."
+    },
+    {
+      "query_id": "problem_demand_093",
+      "territory": "problem_demand",
+      "query": "solid-phase peptide synthesis protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a peptide synthesis chemistry query, which falls outside the product’s core use case."
+    },
+    {
+      "query_id": "problem_demand_094",
+      "territory": "problem_demand",
+      "query": "ahk-cu peptide injection protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a named injection protocol query that is too specific and not clearly a general tracking workflow."
+    },
+    {
+      "query_id": "problem_demand_095",
+      "territory": "problem_demand",
+      "query": "ss-31 peptide reconstitution protocol",
+      "verdict": "valid",
+      "reasoning": "This is informational demand about reconstitution, a concrete dosing workflow the app directly supports."
+    },
+    {
+      "query_id": "problem_demand_096",
+      "territory": "problem_demand",
+      "query": "circadia firming peptide mask protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a cosmetic product routine query, not a self-managed peptide protocol workflow."
+    },
+    {
+      "query_id": "problem_demand_097",
+      "territory": "problem_demand",
+      "query": "peptide n terminal acetylation protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a technical lab modification query and not a supported consumer protocol workflow."
+    },
+    {
+      "query_id": "problem_demand_098",
+      "territory": "problem_demand",
+      "query": "blocking peptide western blot protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a western blot lab protocol, not a protocol-management problem for adults running peptide protocols."
+    },
+    {
+      "query_id": "problem_demand_099",
+      "territory": "problem_demand",
+      "query": "3x flag peptide elution protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a lab elution protocol query and does not match the app’s core workflow."
+    },
+    {
+      "query_id": "problem_demand_100",
+      "territory": "problem_demand",
+      "query": "solution-phase peptide synthesis protocol",
+      "verdict": "invalid",
+      "reasoning": "This is a peptide synthesis chemistry query, not a self-managed peptide tracking or dosing problem."
+    },
+    {
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "peptide tracker app",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for a peptide tracking app, which matches the company’s primary product category."
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "best peptide tracker app",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation demand for a peptide tracker app, an exact fit for the product category."
+    },
+    {
+      "query_id": "solution_demand_003",
+      "territory": "solution_demand",
+      "query": "peptide tracker app free",
+      "verdict": "valid",
+      "reasoning": "This is transactional demand for a free peptide tracker app, and the company offers a free basic tracker."
+    },
+    {
+      "query_id": "solution_demand_004",
+      "territory": "solution_demand",
+      "query": "free peptide tracker app",
+      "verdict": "valid",
+      "reasoning": "This is transactional demand for a free peptide tracker app, which matches the freemium product offering."
+    },
+    {
+      "query_id": "solution_demand_005",
+      "territory": "solution_demand",
+      "query": "best peptide tracking app",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation demand for a peptide tracking app, which falls inside the company’s exact category."
+    },
+    {
+      "query_id": "solution_demand_006",
+      "territory": "solution_demand",
+      "query": "free peptide tracking app",
+      "verdict": "valid",
+      "reasoning": "This is transactional demand for a free peptide tracking app, aligning with the free basic tracker."
+    },
+    {
+      "query_id": "solution_demand_007",
+      "territory": "solution_demand",
+      "query": "peptide app",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and ambiguous as a software category, so it does not clearly indicate qualified solution demand."
+    },
+    {
+      "query_id": "solution_demand_008",
+      "territory": "solution_demand",
+      "query": "mobile app tracking software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic remote software category, not a market-qualified peptide tracking solution."
+    },
+    {
+      "query_id": "solution_demand_009",
+      "territory": "solution_demand",
+      "query": "mobile app management software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic software category unrelated to the company’s exact product category."
+    },
+    {
+      "query_id": "solution_demand_010",
+      "territory": "solution_demand",
+      "query": "dose app",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not clearly indicate peptide-tracking solution demand."
+    },
+    {
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "query": "app dose",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrase with no clear peptide product-selection intent."
+    },
+    {
+      "query_id": "solution_demand_012",
+      "territory": "solution_demand",
+      "query": "tracking software for android",
+      "verdict": "invalid",
+      "reasoning": "This is a generic platform-specific tracking category, not a peptide health app search."
+    },
+    {
+      "query_id": "solution_demand_013",
+      "territory": "solution_demand",
+      "query": "peptide finder app",
+      "verdict": "invalid",
+      "reasoning": "This is not a clear commercial category for the company’s actual product and reads as a different tool type."
+    },
+    {
+      "query_id": "solution_demand_014",
+      "territory": "solution_demand",
+      "query": "free peptide app",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to establish a clear peptide tracking product category or purchase intent."
+    },
+    {
+      "query_id": "solution_demand_015",
+      "territory": "solution_demand",
+      "query": "app for tracking emotions",
+      "verdict": "invalid",
+      "reasoning": "This is a separate consumer wellness category unrelated to the company’s product category."
+    },
+    {
+      "query_id": "solution_demand_016",
+      "territory": "solution_demand",
+      "query": "best peptide app for iphone",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation demand for a peptide app on iPhone, which matches the product category and app-store context."
+    },
+    {
+      "query_id": "solution_demand_017",
+      "territory": "solution_demand",
+      "query": "the peptide app",
+      "verdict": "invalid",
+      "reasoning": "This is a navigational branded phrase without explicit evaluation intent, so it is not qualified solution demand."
+    },
+    {
+      "query_id": "solution_demand_018",
+      "territory": "solution_demand",
+      "query": "app for management",
+      "verdict": "invalid",
+      "reasoning": "This is a generic management-software query with no clear peptide or health-tracking qualification."
+    },
+    {
+      "query_id": "solution_demand_019",
+      "territory": "solution_demand",
+      "query": "app for macro tracking",
+      "verdict": "invalid",
+      "reasoning": "This is a separate nutrition app category and not the company’s exact product category."
+    },
+    {
+      "query_id": "solution_demand_020",
+      "territory": "solution_demand",
+      "query": "app for meal tracking",
+      "verdict": "invalid",
+      "reasoning": "This is a generic meal-tracking app search and does not clearly indicate peptide-health solution demand."
+    },
+    {
+      "query_id": "solution_demand_021",
+      "territory": "solution_demand",
+      "query": "app for task tracking",
+      "verdict": "invalid",
+      "reasoning": "This is a generic productivity category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_022",
+      "territory": "solution_demand",
+      "query": "app for tracking tasks",
+      "verdict": "invalid",
+      "reasoning": "This is a generic task-management query and not a qualified peptide solution search."
+    },
+    {
+      "query_id": "solution_demand_023",
+      "territory": "solution_demand",
+      "query": "calorie tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a broad nutrition app category, which is a separate product space from peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_024",
+      "territory": "solution_demand",
+      "query": "app for symptom tracking",
+      "verdict": "invalid",
+      "reasoning": "This is a generic health app category and not the company’s actual product category."
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "query": "app for tracking friends",
+      "verdict": "invalid",
+      "reasoning": "This is a consumer social-tracking query unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "query": "tracking app for pc",
+      "verdict": "invalid",
+      "reasoning": "This is a platform-specific generic tracking app query without clear peptide-market qualification."
+    },
+    {
+      "query_id": "solution_demand_027",
+      "territory": "solution_demand",
+      "query": "app for health tracking",
+      "verdict": "invalid",
+      "reasoning": "This is too broad an umbrella health-app category to qualify as a peptide-specific solution search."
+    },
+    {
+      "query_id": "solution_demand_028",
+      "territory": "solution_demand",
+      "query": "app for tracking wildfires",
+      "verdict": "invalid",
+      "reasoning": "This is an unrelated environmental monitoring category, not a peptide health product search."
+    },
+    {
+      "query_id": "solution_demand_029",
+      "territory": "solution_demand",
+      "query": "app for star tracker",
+      "verdict": "invalid",
+      "reasoning": "This is an unrelated astronomy-related query, not solution demand for the company."
+    },
+    {
+      "query_id": "solution_demand_030",
+      "territory": "solution_demand",
+      "query": "for honor tracker app",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a game-specific tracker search and is unrelated to the company’s product category."
+    },
+    {
+      "query_id": "solution_demand_031",
+      "territory": "solution_demand",
+      "query": "tracker app for parents",
+      "verdict": "invalid",
+      "reasoning": "This is a family/monitoring category that is unrelated to peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_032",
+      "territory": "solution_demand",
+      "query": "habit tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a separate habit/productivity software category and not a peptide health app search."
+    },
+    {
+      "query_id": "solution_demand_033",
+      "territory": "solution_demand",
+      "query": "best app for tracking macros",
+      "verdict": "invalid",
+      "reasoning": "This is a nutrition macro-tracking category, which is separate from the product’s primary category."
+    },
+    {
+      "query_id": "solution_demand_034",
+      "territory": "solution_demand",
+      "query": "app for vaccine tracking",
+      "verdict": "invalid",
+      "reasoning": "This is a medical-record tracking category unrelated to the company’s peptide app."
+    },
+    {
+      "query_id": "solution_demand_035",
+      "territory": "solution_demand",
+      "query": "app for tracking vaccinations",
+      "verdict": "invalid",
+      "reasoning": "This is a vaccination-record category, not the company’s product category."
+    },
+    {
+      "query_id": "solution_demand_036",
+      "territory": "solution_demand",
+      "query": "app for tracking medicine",
+      "verdict": "invalid",
+      "reasoning": "This is a general medication-management category and not a qualified peptide-tracking product search."
+    },
+    {
+      "query_id": "solution_demand_037",
+      "territory": "solution_demand",
+      "query": "app for tracking savings",
+      "verdict": "invalid",
+      "reasoning": "This is a financial tracking category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_038",
+      "territory": "solution_demand",
+      "query": "food tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a broad food-tracking category and not specifically a peptide tracking solution search."
+    },
+    {
+      "query_id": "solution_demand_039",
+      "territory": "solution_demand",
+      "query": "food tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a generic food-tracking app query, which is not the company’s primary category."
+    },
+    {
+      "query_id": "solution_demand_040",
+      "territory": "solution_demand",
+      "query": "workout tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a fitness-app category and not a peptide health tracking app query."
+    },
+    {
+      "query_id": "solution_demand_041",
+      "territory": "solution_demand",
+      "query": "mood tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a separate mental-health tracking category unrelated to the product."
+    },
+    {
+      "query_id": "solution_demand_042",
+      "territory": "solution_demand",
+      "query": "fitness tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a broad fitness-app category that is not the company’s exact product category."
+    },
+    {
+      "query_id": "solution_demand_043",
+      "territory": "solution_demand",
+      "query": "pregnancy tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a distinct consumer health category unrelated to the company’s peptide app."
+    },
+    {
+      "query_id": "solution_demand_044",
+      "territory": "solution_demand",
+      "query": "tile tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a hardware-tracker category, not a peptide health app search."
+    },
+    {
+      "query_id": "solution_demand_045",
+      "territory": "solution_demand",
+      "query": "habit tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a generic habit-tracking category and not qualified peptide solution demand."
+    },
+    {
+      "query_id": "solution_demand_046",
+      "territory": "solution_demand",
+      "query": "tracking software for android phones",
+      "verdict": "invalid",
+      "reasoning": "This is a generic Android tracking-software category, not a peptide-specific product search."
+    },
+    {
+      "query_id": "solution_demand_047",
+      "territory": "solution_demand",
+      "query": "tracking software for android phone",
+      "verdict": "invalid",
+      "reasoning": "This is a broad Android software category without peptide-market qualification."
+    },
+    {
+      "query_id": "solution_demand_048",
+      "territory": "solution_demand",
+      "query": "fitness tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a broad fitness app category and not the company’s product category."
+    },
+    {
+      "query_id": "solution_demand_049",
+      "territory": "solution_demand",
+      "query": "step tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a consumer fitness subcategory unrelated to the company’s core product."
+    },
+    {
+      "query_id": "solution_demand_050",
+      "territory": "solution_demand",
+      "query": "macro tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a nutrition macro-tracking category, which is separate from peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_051",
+      "territory": "solution_demand",
+      "query": "phone tracker app for android",
+      "verdict": "invalid",
+      "reasoning": "This is a phone-location tracking category, not a peptide health app."
+    },
+    {
+      "query_id": "solution_demand_052",
+      "territory": "solution_demand",
+      "query": "ice tracker app for android",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear and unrelated tracker query, not qualified demand for the company’s product."
+    },
+    {
+      "query_id": "solution_demand_053",
+      "territory": "solution_demand",
+      "query": "app for tracking hours worked",
+      "verdict": "invalid",
+      "reasoning": "This is a time-tracking/workforce category unrelated to peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_054",
+      "territory": "solution_demand",
+      "query": "workout tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a fitness product category and not the company’s exact product category."
+    },
+    {
+      "query_id": "solution_demand_055",
+      "territory": "solution_demand",
+      "query": "symptom tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a general health tracking category and does not specifically fit the peptide app’s market."
+    },
+    {
+      "query_id": "solution_demand_056",
+      "territory": "solution_demand",
+      "query": "phone tracker software for android",
+      "verdict": "invalid",
+      "reasoning": "This is device tracking software and not a qualified peptide solution query."
+    },
+    {
+      "query_id": "solution_demand_057",
+      "territory": "solution_demand",
+      "query": "tracker software android",
+      "verdict": "invalid",
+      "reasoning": "This is a generic Android tracking-software query with no peptide qualification."
+    },
+    {
+      "query_id": "solution_demand_058",
+      "territory": "solution_demand",
+      "query": "android tracker software",
+      "verdict": "invalid",
+      "reasoning": "This is a broad Android software search and not a peptide product category."
+    },
+    {
+      "query_id": "solution_demand_059",
+      "territory": "solution_demand",
+      "query": "app for tracking food intake",
+      "verdict": "invalid",
+      "reasoning": "This is a food-intake tracking category, not a peptide health tracking app search."
+    },
+    {
+      "query_id": "solution_demand_060",
+      "territory": "solution_demand",
+      "query": "best app for newborn tracking",
+      "verdict": "invalid",
+      "reasoning": "This is a baby-care tracking category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_061",
+      "territory": "solution_demand",
+      "query": "iphone tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a device-tracking query and not a peptide health app search."
+    },
+    {
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "query": "free tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is too generic to qualify as demand for a peptide tracking solution."
+    },
+    {
+      "query_id": "solution_demand_063",
+      "territory": "solution_demand",
+      "query": "best tracking app for iphone",
+      "verdict": "invalid",
+      "reasoning": "This is a generic tracking-app query with no peptide-specific qualification."
+    },
+    {
+      "query_id": "solution_demand_064",
+      "territory": "solution_demand",
+      "query": "best app for health tracking",
+      "verdict": "invalid",
+      "reasoning": "This is an umbrella health-app query broader than the company’s exact category."
+    },
+    {
+      "query_id": "solution_demand_065",
+      "territory": "solution_demand",
+      "query": "best app for tracking health",
+      "verdict": "invalid",
+      "reasoning": "This is a generic health-tracking app query and not a qualified peptide solution search."
+    },
+    {
+      "query_id": "solution_demand_066",
+      "territory": "solution_demand",
+      "query": "app store tracker",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrase that does not clearly indicate peptide product-selection intent."
+    },
+    {
+      "query_id": "solution_demand_067",
+      "territory": "solution_demand",
+      "query": "eye tracking software for android",
+      "verdict": "invalid",
+      "reasoning": "This is a separate technical category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_068",
+      "territory": "solution_demand",
+      "query": "best tracking software for iphone",
+      "verdict": "invalid",
+      "reasoning": "This is a generic software category without peptide-market qualification."
+    },
+    {
+      "query_id": "solution_demand_069",
+      "territory": "solution_demand",
+      "query": "best tracking app for android",
+      "verdict": "invalid",
+      "reasoning": "This is a broad Android tracking-app query and not specific to the product category."
+    },
+    {
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "query": "health tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a broad health-tracking app category that is too remote from the company’s exact product."
+    },
+    {
+      "query_id": "solution_demand_071",
+      "territory": "solution_demand",
+      "query": "goal tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a generic goal-tracking product category unrelated to peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_072",
+      "territory": "solution_demand",
+      "query": "android tracking software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic Android software category with no peptide-specific solution intent."
+    },
+    {
+      "query_id": "solution_demand_073",
+      "territory": "solution_demand",
+      "query": "tracking software android",
+      "verdict": "invalid",
+      "reasoning": "This is an umbrella software query and not a peptide product search."
+    },
+    {
+      "query_id": "solution_demand_074",
+      "territory": "solution_demand",
+      "query": "free app for attendance tracking",
+      "verdict": "invalid",
+      "reasoning": "This is an employee attendance category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_075",
+      "territory": "solution_demand",
+      "query": "medication tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a medication-management category, which is adjacent but not the company’s actual peptide tracking product."
+    },
+    {
+      "query_id": "solution_demand_076",
+      "territory": "solution_demand",
+      "query": "tql tracking app for ios",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity tracker query and does not clearly indicate a supported product category."
+    },
+    {
+      "query_id": "solution_demand_077",
+      "territory": "solution_demand",
+      "query": "free tracker app for iphone",
+      "verdict": "invalid",
+      "reasoning": "This is too generic to qualify as peptide-tracker solution demand."
+    },
+    {
+      "query_id": "solution_demand_078",
+      "territory": "solution_demand",
+      "query": "period tracker app for teens",
+      "verdict": "invalid",
+      "reasoning": "This is a distinct consumer health category unrelated to peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_079",
+      "territory": "solution_demand",
+      "query": "sleep tracker app for iphone",
+      "verdict": "invalid",
+      "reasoning": "This is a sleep-tracking category, not a peptide health app category."
+    },
+    {
+      "query_id": "solution_demand_080",
+      "territory": "solution_demand",
+      "query": "assignment tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a student productivity category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_081",
+      "territory": "solution_demand",
+      "query": "best tracking app for phones",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and ambiguous to qualify as peptide solution demand."
+    },
+    {
+      "query_id": "solution_demand_082",
+      "territory": "solution_demand",
+      "query": "goal tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a generic goal-tracking app category unrelated to the product."
+    },
+    {
+      "query_id": "solution_demand_083",
+      "territory": "solution_demand",
+      "query": "pill tracker app for iphone",
+      "verdict": "invalid",
+      "reasoning": "This is medication adherence software, which is adjacent but not the company’s actual product category."
+    },
+    {
+      "query_id": "solution_demand_084",
+      "territory": "solution_demand",
+      "query": "habit tracker app for pc",
+      "verdict": "invalid",
+      "reasoning": "This is a generic habit-tracking category and a platform mismatch for the app-led product."
+    },
+    {
+      "query_id": "solution_demand_085",
+      "territory": "solution_demand",
+      "query": "step tracker app for android",
+      "verdict": "invalid",
+      "reasoning": "This is a fitness subcategory unrelated to peptide tracking."
+    },
+    {
+      "query_id": "solution_demand_086",
+      "territory": "solution_demand",
+      "query": "weight tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a weight-management app category, not the company’s exact product category."
+    },
+    {
+      "query_id": "solution_demand_087",
+      "territory": "solution_demand",
+      "query": "free tracking app for iphone",
+      "verdict": "invalid",
+      "reasoning": "This is too generic to qualify as demand for a peptide tracking app."
+    },
+    {
+      "query_id": "solution_demand_088",
+      "territory": "solution_demand",
+      "query": "activity tracker app for android",
+      "verdict": "invalid",
+      "reasoning": "This is a general fitness/activity category, not a peptide health app search."
+    },
+    {
+      "query_id": "solution_demand_089",
+      "territory": "solution_demand",
+      "query": "fitness tracker app for android",
+      "verdict": "invalid",
+      "reasoning": "This is a broad fitness category unrelated to the company’s exact product."
+    },
+    {
+      "query_id": "solution_demand_090",
+      "territory": "solution_demand",
+      "query": "tracker tools app",
+      "verdict": "invalid",
+      "reasoning": "This phrase is too vague and does not clearly indicate peptide product-selection intent."
+    },
+    {
+      "query_id": "solution_demand_091",
+      "territory": "solution_demand",
+      "query": "fasting tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a fasting/nutrition category and not the company’s primary product category."
+    },
+    {
+      "query_id": "solution_demand_092",
+      "territory": "solution_demand",
+      "query": "mobile software tracker",
+      "verdict": "invalid",
+      "reasoning": "This is a generic software-tracking phrase without peptide-market qualification."
+    },
+    {
+      "query_id": "solution_demand_093",
+      "territory": "solution_demand",
+      "query": "poop tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a consumer health niche unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_094",
+      "territory": "solution_demand",
+      "query": "period tracker app for android",
+      "verdict": "invalid",
+      "reasoning": "This is a distinct consumer health category unrelated to the peptide tracking app."
+    },
+    {
+      "query_id": "solution_demand_095",
+      "territory": "solution_demand",
+      "query": "iss tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is an unrelated named-entity tracker query and not a peptide solution search."
+    },
+    {
+      "query_id": "solution_demand_096",
+      "territory": "solution_demand",
+      "query": "weight tracking app",
+      "verdict": "invalid",
+      "reasoning": "This is a weight-tracking category, which is separate from the company’s primary product."
+    },
+    {
+      "query_id": "solution_demand_097",
+      "territory": "solution_demand",
+      "query": "macro tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a nutrition macro-tracking category rather than a peptide tracking app search."
+    },
+    {
+      "query_id": "solution_demand_098",
+      "territory": "solution_demand",
+      "query": "keto tracker app",
+      "verdict": "invalid",
+      "reasoning": "This is a keto-nutrition category and not the company’s actual product category."
+    },
+    {
+      "query_id": "solution_demand_099",
+      "territory": "solution_demand",
+      "query": "period tracker app for tweens",
+      "verdict": "invalid",
+      "reasoning": "This is a consumer menstrual-health category unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_100",
+      "territory": "solution_demand",
+      "query": "calorie tracking app for bulking",
+      "verdict": "invalid",
+      "reasoning": "This is a nutrition and fitness category, not a peptide-tracking solution search."
+    }
+  ]
+}

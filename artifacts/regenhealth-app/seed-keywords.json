@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "98740497-641e-41a8-8406-f73bc81d0fd0",
+  "generated_at": "2026-07-18T01:04:34.742Z",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://regenhealth.app/",
+  "source_profile": {
+    "company_name": "REGEN",
+    "product_category": "peptide health tracking and reference app",
+    "primary_icp": "adults running their own peptide protocols"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "peptide protocol management",
+      "territory_summary": "Search demand around managing self-directed peptide and pharmacological protocols, including dosing, inventory, biomarker tracking, and reference guidance.",
+      "market_topic": "peptide protocol management",
+      "primary_icp": "adults running their own peptide protocols",
+      "product_connection": "REGEN addresses the manual work of running peptide protocols by organizing dose schedules, inventory, biomarker trends, and cited reference guidance in one system.",
+      "evidence": [
+        {
+          "source_field": "icp_and_audience.primary_icp.value",
+          "evidence_text": "adults running their own peptide protocols",
+          "reasoning": "This is the clearest statement of the target search market and supports protocol-management language."
+        },
+        {
+          "source_field": "buyer_pains[0].pain",
+          "evidence_text": "managing peptide protocols with spreadsheets is cumbersome",
+          "reasoning": "Confirms the core problem is protocol management and workflow organization, not a generic wellness use case."
+        },
+        {
+          "source_field": "buyer_pains[3].pain",
+          "evidence_text": "hard to understand whether a protocol is working from isolated biomarker values",
+          "reasoning": "Supports biomarker trend tracking as a major part of the problem territory."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "pd1",
+          "keyword": "peptide protocols",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Shortest, most direct expression of the underlying problem space while remaining inside the peptide market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd2",
+          "keyword": "peptide protocol tracking",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Keeps the topic anchored to protocol users and reflects the main organizing job they need to do.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd3",
+          "keyword": "peptide dose calculation",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures a concrete and important protocol task supported by the product's dose-math capabilities.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd4",
+          "keyword": "peptide inventory tracking",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents the recurring operational pain of managing vials, expiry, and remaining supply.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd5",
+          "keyword": "peptide biomarker tracking",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Anchors the territory in trend-based lab monitoring, a clear search area implied by the product and pains.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd6",
+          "keyword": "peptide protocol management",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A natural synonym that broadens discovery beyond tracking into the broader management job.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "peptide tracking app category",
+      "territory_summary": "Search demand around software and automation categories that help people manage peptide protocols, doses, inventory, biomarkers, and shared protocol workflows.",
+      "market_topic": "peptide tracking apps",
+      "primary_icp": "adults running their own peptide protocols",
+      "product_connection": "REGEN fits the solution category of a peptide tracking and reference app with dosing, inventory, AI guidance, biomarker trends, and shared protocol features.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "peptide health tracking and reference app",
+          "reasoning": "Directly names the solution category and strongly supports solution-demand keyword seeds."
+        },
+        {
+          "source_field": "product_capabilities[0].capability",
+          "evidence_text": "tracks doses and schedules",
+          "reasoning": "Supports the core app category around protocol tracking and schedule management."
+        },
+        {
+          "source_field": "product_capabilities[1].capability",
+          "evidence_text": "manages vial inventory",
+          "reasoning": "Supports adjacent category language around tracking and management software."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "sd1",
+          "keyword": "peptide tracking app",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Most direct established category phrase for the product's primary solution type.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd2",
+          "keyword": "peptide app for tracking",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Keeps the market context explicit while remaining a natural buyer search phrase.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "sd3",
+          "keyword": "peptide protocol app",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "A concise category term that stays tied to the protocol-management use case.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd4",
+          "keyword": "peptide dose calculator",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Represents a recognizable tool approach centered on dosing math, which is a core capability.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd5",
+          "keyword": "peptide protocol tracker",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A commercial discovery term that naturally fits software buyers looking for a protocol-tracking product.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd6",
+          "keyword": "peptide management software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A broader software-category phrase that can surface adjacent buyer language without drifting outside the market.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "The profile does not specify whether the app is iOS-only or available on other platforms, so seeds stay platform-neutral.",
+      "The core positioning is strong, but some educational blog content could be mistaken for the product's category language; homepage and FAQ evidence were weighted more heavily."
+    ],
+    "potential_risks": [
+      "The product uses 'peptide health layer' branding, which is proprietary; the solution territory was translated into established app and tracking language.",
+      "Some generic capability terms such as tracking and management could drift outside the intended market without peptide qualifiers, so qualifiers were added where needed."
+    ],
+    "notes": "The company profile clearly supports one core problem territory around peptide protocol management and one core solution territory around peptide tracking apps/software. Seeds were kept conservative, natural, and market-specific while avoiding overfitting to proprietary phrasing or secondary audience language."
+  }
+}

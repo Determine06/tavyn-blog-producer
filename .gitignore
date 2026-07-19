@@ -3,5 +3,3 @@ dist
 .env
 .env.bak
 .DS_Store
-artifacts/*.json
-artifacts/

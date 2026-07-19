@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "db6315d6-db21-4577-88c4-ffa2cf40dd74",
+  "generated_at": "2026-07-18T01:04:20.587Z",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://tavyn.dev/",
+  "source_profile": {
+    "company_name": "Tavyn",
+    "product_category": "SEO content workflow automation platform",
+    "primary_icp": "founder-led SaaS teams"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "SaaS SEO and organic growth",
+      "territory_summary": "Search demand around improving organic visibility and content-led growth for SaaS companies, especially lean founder-led teams.",
+      "market_topic": "SaaS SEO and organic growth",
+      "primary_icp": "founder-led SaaS teams",
+      "product_connection": "Tavyn is built to find organic visibility gaps, prioritize realistic opportunities, and move SaaS content from planning to publish-ready execution.",
+      "evidence": [
+        {
+          "source_field": "buyer_pains[1].pain",
+          "evidence_text": "Organic visibility gaps are hard to identify and prioritize",
+          "reasoning": "This directly supports a problem territory centered on SaaS SEO opportunity discovery and prioritization."
+        },
+        {
+          "source_field": "icp_and_audience.primary_icp.value",
+          "evidence_text": "founder-led SaaS teams",
+          "reasoning": "This qualifies the market around SaaS buyers, keeping the territory out of generic SEO demand."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "problem_1",
+          "keyword": "SaaS SEO",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Shortest natural expression of the core market problem the product addresses.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "problem_2",
+          "keyword": "SEO for SaaS",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Adds the supported SaaS qualifier to keep discovery inside the intended market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "problem_3",
+          "keyword": "SaaS SEO strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures the strategic planning aspect of SaaS search growth.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "problem_4",
+          "keyword": "SaaS organic growth",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Provides a broader but still relevant synonym for the same market topic.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "problem_5",
+          "keyword": "SaaS keyword research",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Matches the company’s search-opportunity and prioritization workflow in buyer language.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "problem_6",
+          "keyword": "SaaS content marketing",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A related discovery angle for content-led growth that remains within SaaS.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "AI SEO tools and automation",
+      "territory_summary": "Search demand around software that automates SEO content workflows, briefs, and execution for SaaS teams.",
+      "market_topic": "AI SEO tools and automation",
+      "primary_icp": "founder-led SaaS teams",
+      "product_connection": "Tavyn fits the established solution category of SEO automation software by turning search research into briefs and publish-ready content workflows.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "SEO content workflow automation platform",
+          "reasoning": "This supports a solution territory centered on SEO software and automation."
+        },
+        {
+          "source_field": "product_capabilities[1].capability",
+          "evidence_text": "writes SEO briefs",
+          "reasoning": "Brief generation is a recognizable software capability within SEO tools and automation categories."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "solution_1",
+          "keyword": "AI SEO tools",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Strongest broad solution-category seed for the product’s automation-led SEO positioning.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_2",
+          "keyword": "SEO tools for SaaS",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Qualifies the solution by the supported SaaS market to reduce category drift.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_3",
+          "keyword": "SEO automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Directly reflects the product’s automation-first approach to SEO workflows.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_4",
+          "keyword": "SEO workflow automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Distinct from generic SEO automation by emphasizing end-to-end workflow handling.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "solution_5",
+          "keyword": "content brief software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Captures a concrete commercial tool category tied to the product’s brief-writing capability.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "solution_6",
+          "keyword": "SEO operations platform",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Represents the broader commercial category of tools that manage SEO work operationally.",
+          "confidence": "medium"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "The crawl does not state pricing.",
+      "The crawl does not provide named customers or logos.",
+      "The company stage is only implied by waitlist-style messaging."
+    ],
+    "potential_risks": [
+      "The product uses workflow-heavy language, so solution seeds were kept in established SEO software and automation categories rather than proprietary phrasing.",
+      "Some SEO-related capabilities are broad, so SaaS qualifiers were used to keep problem seeds inside the intended market."
+    ],
+    "notes": "The company profile clearly supports a SaaS SEO problem territory and an SEO automation solution territory. Seed choices favor conservative, standalone market language that should remain interpretable by an external keyword-discovery provider without additional context."
+  }
+}

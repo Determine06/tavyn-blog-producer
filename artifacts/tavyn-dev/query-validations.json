@@ -1,0 +1,1419 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "4839a55c-4303-4162-9bff-714002621089",
+  "generated_at": "2026-07-19T18:46:04.205Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://tavyn.dev/",
+  "source_profile": {
+    "company_name": "Tavyn",
+    "product_category": "SEO content workflow automation platform",
+    "primary_icp": "founder-led SaaS teams"
+  },
+  "query_validations": [
+    {
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "query": "best seo for saas",
+      "verdict": "invalid",
+      "reasoning": "This is a broad best-practices SEO query for SaaS, not a concrete problem, workflow, or outcome tied to Tavyn’s SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "query": "seo strategy for website",
+      "verdict": "invalid",
+      "reasoning": "This is a generic website SEO strategy query and does not clearly indicate the SaaS content workflow Tavyn supports."
+    },
+    {
+      "query_id": "problem_demand_003",
+      "territory": "problem_demand",
+      "query": "saas seo mistakes",
+      "verdict": "valid",
+      "reasoning": "This asks about common SEO errors in the SaaS content workflow, which fits the problem space Tavyn helps founder-led SaaS teams improve."
+    },
+    {
+      "query_id": "problem_demand_004",
+      "territory": "problem_demand",
+      "query": "saas in seo",
+      "verdict": "invalid",
+      "reasoning": "This phrase is too ambiguous to express a concrete SEO problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_005",
+      "territory": "problem_demand",
+      "query": "saas based seo",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous market phrase, not a clear informational need about a specific SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_006",
+      "territory": "problem_demand",
+      "query": "saas seo copywriter",
+      "verdict": "invalid",
+      "reasoning": "This is primarily a service-role query, not informational demand about a supported SEO problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_007",
+      "territory": "problem_demand",
+      "query": "content for seo website",
+      "verdict": "valid",
+      "reasoning": "This reflects the practical problem of producing website content that supports SEO, which is within Tavyn’s content workflow."
+    },
+    {
+      "query_id": "problem_demand_008",
+      "territory": "problem_demand",
+      "query": "seo content tool",
+      "verdict": "invalid",
+      "reasoning": "This is solution-seeking tool demand rather than informational problem demand."
+    },
+    {
+      "query_id": "problem_demand_009",
+      "territory": "problem_demand",
+      "query": "seo content website",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to identify a concrete SEO workflow or problem beyond general website content."
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "query": "content brief seo",
+      "verdict": "valid",
+      "reasoning": "This refers to the SEO content briefing workflow, a concrete part of Tavyn’s supported SEO process."
+    },
+    {
+      "query_id": "problem_demand_011",
+      "territory": "problem_demand",
+      "query": "seo strategy for new website",
+      "verdict": "invalid",
+      "reasoning": "This is a broad website-launch SEO query and not specifically tied to Tavyn’s founder-led SaaS content workflow."
+    },
+    {
+      "query_id": "problem_demand_012",
+      "territory": "problem_demand",
+      "query": "seo thin content",
+      "verdict": "valid",
+      "reasoning": "This targets the concrete SEO content-quality problem of thin content, which is part of the content optimization workflow Tavyn supports."
+    },
+    {
+      "query_id": "problem_demand_013",
+      "territory": "problem_demand",
+      "query": "content hub seo",
+      "verdict": "valid",
+      "reasoning": "This concerns the SEO content-hub planning workflow, which is a concrete content structure Tavyn can help plan."
+    },
+    {
+      "query_id": "problem_demand_014",
+      "territory": "problem_demand",
+      "query": "seo quality content",
+      "verdict": "invalid",
+      "reasoning": "This is too generic and does not specify a concrete workflow, decision, or actionable SEO problem."
+    },
+    {
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "query": "seo content brief",
+      "verdict": "valid",
+      "reasoning": "This is a concrete SEO briefing workflow that directly matches Tavyn’s brief-writing process."
+    },
+    {
+      "query_id": "problem_demand_016",
+      "territory": "problem_demand",
+      "query": "page content seo",
+      "verdict": "invalid",
+      "reasoning": "This phrase is too ambiguous to clearly express a specific SEO content workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "query": "seo content plan",
+      "verdict": "valid",
+      "reasoning": "This refers to the content-planning workflow for SEO, which Tavyn explicitly supports for founder-led SaaS teams."
+    },
+    {
+      "query_id": "problem_demand_018",
+      "territory": "problem_demand",
+      "query": "seo page content",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrasing of general page content and does not clearly indicate a specific SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_019",
+      "territory": "problem_demand",
+      "query": "best seo content",
+      "verdict": "invalid",
+      "reasoning": "This is a generic quality-comparison query rather than a concrete SEO workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_020",
+      "territory": "problem_demand",
+      "query": "mpo strategy seo",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear and ambiguous phrase that does not establish a recognizable SEO problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_021",
+      "territory": "problem_demand",
+      "query": "seo content-length",
+      "verdict": "invalid",
+      "reasoning": "This is a narrow content-length question and not a substantive SEO workflow or decision Tavyn is positioned around."
+    },
+    {
+      "query_id": "problem_demand_022",
+      "territory": "problem_demand",
+      "query": "writing web content for seo",
+      "verdict": "valid",
+      "reasoning": "This reflects the concrete workflow of writing web content for SEO, which aligns with Tavyn’s content creation process."
+    },
+    {
+      "query_id": "problem_demand_023",
+      "territory": "problem_demand",
+      "query": "yoast seo content",
+      "verdict": "invalid",
+      "reasoning": "This is a named product-plus-content phrase without a clear informational problem or workflow need."
+    },
+    {
+      "query_id": "problem_demand_024",
+      "territory": "problem_demand",
+      "query": "organic local seo",
+      "verdict": "invalid",
+      "reasoning": "This is a broad local SEO topic and not a concrete content workflow for founder-led SaaS teams."
+    },
+    {
+      "query_id": "problem_demand_025",
+      "territory": "problem_demand",
+      "query": "seo tabbed content",
+      "verdict": "invalid",
+      "reasoning": "This is a narrow page-format query that does not clearly map to Tavyn’s core SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_026",
+      "territory": "problem_demand",
+      "query": "seo old content",
+      "verdict": "valid",
+      "reasoning": "This points to the concrete SEO problem of updating or improving existing content, which fits Tavyn’s content workflow."
+    },
+    {
+      "query_id": "problem_demand_027",
+      "territory": "problem_demand",
+      "query": "seo content online",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to express a concrete SEO problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_028",
+      "territory": "problem_demand",
+      "query": "seo rock content",
+      "verdict": "invalid",
+      "reasoning": "This phrase is ambiguous and does not clearly express a recognizable SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_029",
+      "territory": "problem_demand",
+      "query": "rock content seo",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly represent a concrete SEO content workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "query": "content seo website",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to show a specific SEO workflow or problem beyond generic website content."
+    },
+    {
+      "query_id": "problem_demand_031",
+      "territory": "problem_demand",
+      "query": "content spinner seo",
+      "verdict": "invalid",
+      "reasoning": "This is about content spinning, which is not a supported SEO workflow for Tavyn’s founder-led SaaS use case."
+    },
+    {
+      "query_id": "problem_demand_032",
+      "territory": "problem_demand",
+      "query": "seo content rules",
+      "verdict": "valid",
+      "reasoning": "This seeks guidance on SEO content rules, a concrete content-creation and optimization problem."
+    },
+    {
+      "query_id": "problem_demand_033",
+      "territory": "problem_demand",
+      "query": "seo content hub",
+      "verdict": "valid",
+      "reasoning": "This represents the content-hub planning workflow, which is a concrete SEO structure Tavyn can help organize."
+    },
+    {
+      "query_id": "problem_demand_034",
+      "territory": "problem_demand",
+      "query": "seo content format",
+      "verdict": "invalid",
+      "reasoning": "This is too generic and does not identify a concrete SEO workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_035",
+      "territory": "problem_demand",
+      "query": "seo blog content",
+      "verdict": "valid",
+      "reasoning": "This refers to SEO blog content, a concrete workflow within Tavyn’s blog-ops positioning."
+    },
+    {
+      "query_id": "problem_demand_036",
+      "territory": "problem_demand",
+      "query": "seo content lab",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrase that does not clearly identify a real SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_037",
+      "territory": "problem_demand",
+      "query": "seo content blog",
+      "verdict": "valid",
+      "reasoning": "This concerns blog content for SEO, which is a concrete content workflow Tavyn is built to support."
+    },
+    {
+      "query_id": "problem_demand_038",
+      "territory": "problem_demand",
+      "query": "with seo content",
+      "verdict": "invalid",
+      "reasoning": "This phrase is incomplete and does not express a clear informational need or workflow."
+    },
+    {
+      "query_id": "problem_demand_039",
+      "territory": "problem_demand",
+      "query": "seo content friendly",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to indicate a concrete SEO problem, workflow, or decision."
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "query": "website seo content",
+      "verdict": "valid",
+      "reasoning": "This refers to website content used for SEO, a concrete content workflow relevant to Tavyn."
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "query": "seo content articles",
+      "verdict": "valid",
+      "reasoning": "This reflects the article-writing workflow for SEO content, which fits Tavyn’s publish-ready content process."
+    },
+    {
+      "query_id": "problem_demand_042",
+      "territory": "problem_demand",
+      "query": "seo content hubs",
+      "verdict": "valid",
+      "reasoning": "This asks about planning SEO content hubs, a concrete content-structure workflow Tavyn supports."
+    },
+    {
+      "query_id": "problem_demand_043",
+      "territory": "problem_demand",
+      "query": "yoast content seo",
+      "verdict": "invalid",
+      "reasoning": "This is a named-product phrase without a clear informational workflow need tied to Tavyn’s core problem space."
+    },
+    {
+      "query_id": "problem_demand_044",
+      "territory": "problem_demand",
+      "query": "seo footer content",
+      "verdict": "invalid",
+      "reasoning": "This is a narrow page-element query that does not clearly match Tavyn’s core SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_045",
+      "territory": "problem_demand",
+      "query": "seo paywall content",
+      "verdict": "invalid",
+      "reasoning": "This is a specific publishing model query and not a core SEO content workflow for founder-led SaaS teams."
+    },
+    {
+      "query_id": "problem_demand_046",
+      "territory": "problem_demand",
+      "query": "organic seo website",
+      "verdict": "invalid",
+      "reasoning": "This is a broad website SEO phrase without a concrete workflow, decision, or outcome."
+    },
+    {
+      "query_id": "problem_demand_047",
+      "territory": "problem_demand",
+      "query": "organic seo uk",
+      "verdict": "invalid",
+      "reasoning": "This is geographic SEO demand and not a specific problem or workflow Tavyn serves."
+    },
+    {
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "query": "organic seo blog",
+      "verdict": "valid",
+      "reasoning": "This points to organic SEO blog work, a concrete content workflow aligned with Tavyn’s blog ops focus."
+    },
+    {
+      "query_id": "problem_demand_049",
+      "territory": "problem_demand",
+      "query": "best organic seo",
+      "verdict": "invalid",
+      "reasoning": "This is a generic best-practices query and not a concrete SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_050",
+      "territory": "problem_demand",
+      "query": "for seo site content contains",
+      "verdict": "invalid",
+      "reasoning": "This is incomplete and does not clearly express a searchable SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "query": "seo content writing for website",
+      "verdict": "valid",
+      "reasoning": "This asks about the concrete workflow of writing website content for SEO, which fits Tavyn’s scope."
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "web content research",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and does not clearly specify an SEO-related problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "query": "website seo content checker",
+      "verdict": "invalid",
+      "reasoning": "This is primarily a tool-seeking query rather than informational demand about an SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_054",
+      "territory": "problem_demand",
+      "query": "content editor surfer seo",
+      "verdict": "invalid",
+      "reasoning": "This is a named-tool query without explicit comparison or commercial evaluation intent."
+    },
+    {
+      "query_id": "problem_demand_055",
+      "territory": "problem_demand",
+      "query": "seo strategy for a new website",
+      "verdict": "invalid",
+      "reasoning": "This is a broad launch-stage website SEO query and not specifically the SaaS content workflow Tavyn supports."
+    },
+    {
+      "query_id": "problem_demand_056",
+      "territory": "problem_demand",
+      "query": "new website seo strategy",
+      "verdict": "invalid",
+      "reasoning": "This is a generic new-site SEO query and does not clearly fit Tavyn’s founder-led SaaS content workflow."
+    },
+    {
+      "query_id": "problem_demand_057",
+      "territory": "problem_demand",
+      "query": "on page seo content",
+      "verdict": "valid",
+      "reasoning": "This refers to on-page SEO content work, a concrete content optimization workflow relevant to Tavyn."
+    },
+    {
+      "query_id": "problem_demand_058",
+      "territory": "problem_demand",
+      "query": "on-page seo content",
+      "verdict": "valid",
+      "reasoning": "This refers to on-page SEO content work, a concrete content optimization workflow relevant to Tavyn."
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "query": "seo on page content",
+      "verdict": "valid",
+      "reasoning": "This refers to on-page SEO content work, a concrete content optimization workflow relevant to Tavyn."
+    },
+    {
+      "query_id": "problem_demand_060",
+      "territory": "problem_demand",
+      "query": "best seo strategy for new website",
+      "verdict": "invalid",
+      "reasoning": "This is a broad website SEO strategy query and not a concrete workflow tied to Tavyn’s SaaS content operations."
+    },
+    {
+      "query_id": "problem_demand_061",
+      "territory": "problem_demand",
+      "query": "seo strategy plan for new website",
+      "verdict": "invalid",
+      "reasoning": "This is a generic website planning query and not clearly within Tavyn’s core content workflow."
+    },
+    {
+      "query_id": "problem_demand_062",
+      "territory": "problem_demand",
+      "query": "website seo content services",
+      "verdict": "invalid",
+      "reasoning": "This primarily seeks services, which falls outside Tavyn’s software solution demand and problem-demand lane."
+    },
+    {
+      "query_id": "problem_demand_063",
+      "territory": "problem_demand",
+      "query": "for seo site content should have",
+      "verdict": "invalid",
+      "reasoning": "This is an incomplete query that does not clearly specify a concrete SEO workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_064",
+      "territory": "problem_demand",
+      "query": "writing seo content for the web",
+      "verdict": "valid",
+      "reasoning": "This concerns the concrete workflow of writing web content for SEO, which fits Tavyn’s content creation process."
+    },
+    {
+      "query_id": "problem_demand_065",
+      "territory": "problem_demand",
+      "query": "on page content seo",
+      "verdict": "valid",
+      "reasoning": "This refers to on-page SEO content optimization, a concrete workflow within Tavyn’s scope."
+    },
+    {
+      "query_id": "problem_demand_066",
+      "territory": "problem_demand",
+      "query": "organic seo services london",
+      "verdict": "invalid",
+      "reasoning": "This is a local services query, which is outside Tavyn’s software product and problem-demand scope."
+    },
+    {
+      "query_id": "problem_demand_067",
+      "territory": "problem_demand",
+      "query": "on-site seo strategy",
+      "verdict": "valid",
+      "reasoning": "This refers to a concrete on-site SEO workflow and decision area relevant to content planning and optimization."
+    },
+    {
+      "query_id": "problem_demand_068",
+      "territory": "problem_demand",
+      "query": "seo external link strategy",
+      "verdict": "invalid",
+      "reasoning": "This is a link-building topic, which is outside Tavyn’s core SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_069",
+      "territory": "problem_demand",
+      "query": "on site seo strategy",
+      "verdict": "valid",
+      "reasoning": "This refers to a concrete on-site SEO workflow and decision area relevant to content planning and optimization."
+    },
+    {
+      "query_id": "problem_demand_070",
+      "territory": "problem_demand",
+      "query": "local seo strategy nap",
+      "verdict": "invalid",
+      "reasoning": "This is a local SEO topic and does not match Tavyn’s founder-led SaaS content workflow."
+    },
+    {
+      "query_id": "problem_demand_071",
+      "territory": "problem_demand",
+      "query": "google seo ai content",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous and does not clearly express a concrete SEO workflow or problem Tavyn is positioned to solve."
+    },
+    {
+      "query_id": "problem_demand_072",
+      "territory": "problem_demand",
+      "query": "seo content machine lifetime",
+      "verdict": "invalid",
+      "reasoning": "This looks like a product or offer query rather than informational demand about an SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_073",
+      "territory": "problem_demand",
+      "query": "seo content writing uk",
+      "verdict": "invalid",
+      "reasoning": "This is geographic content-writing demand and not a specific SEO workflow for Tavyn’s SaaS ICP."
+    },
+    {
+      "query_id": "problem_demand_074",
+      "territory": "problem_demand",
+      "query": "seo high-quality content",
+      "verdict": "invalid",
+      "reasoning": "This is too generic and does not identify a concrete SEO workflow, decision, or outcome."
+    },
+    {
+      "query_id": "problem_demand_075",
+      "territory": "problem_demand",
+      "query": "seo post content links",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear phrase that does not clearly map to a concrete SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_076",
+      "territory": "problem_demand",
+      "query": "web content writing seo",
+      "verdict": "valid",
+      "reasoning": "This refers to web content writing for SEO, a concrete content workflow aligned with Tavyn."
+    },
+    {
+      "query_id": "problem_demand_077",
+      "territory": "problem_demand",
+      "query": "international seo duplicate content",
+      "verdict": "invalid",
+      "reasoning": "This is an international SEO technical issue that is broader than Tavyn’s core SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_078",
+      "territory": "problem_demand",
+      "query": "seo content on page",
+      "verdict": "valid",
+      "reasoning": "This refers to on-page SEO content work, a concrete workflow relevant to Tavyn’s content optimization process."
+    },
+    {
+      "query_id": "problem_demand_079",
+      "territory": "problem_demand",
+      "query": "seo high quality content",
+      "verdict": "invalid",
+      "reasoning": "This is too generic to identify a concrete SEO workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_080",
+      "territory": "problem_demand",
+      "query": "seo content machine 4",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a named product or version query, not informational demand about an SEO workflow."
+    },
+    {
+      "query_id": "problem_demand_081",
+      "territory": "problem_demand",
+      "query": "seo content writing online",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not clearly express a concrete SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_082",
+      "territory": "problem_demand",
+      "query": "seo content writing wikipedia",
+      "verdict": "invalid",
+      "reasoning": "This is a navigational query about Wikipedia rather than a concrete SEO workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_083",
+      "territory": "problem_demand",
+      "query": "atu marketing research",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity phrase and does not express a recognizable SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_084",
+      "territory": "problem_demand",
+      "query": "ku marketing research",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear named-entity phrase and does not express a recognizable SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_085",
+      "territory": "problem_demand",
+      "query": "website content analysis research",
+      "verdict": "invalid",
+      "reasoning": "This is too broad to be a specific SEO content workflow or problem Tavyn is positioned around."
+    },
+    {
+      "query_id": "problem_demand_086",
+      "territory": "problem_demand",
+      "query": "seo requirements of online content",
+      "verdict": "valid",
+      "reasoning": "This asks about the requirements for SEO-friendly online content, a concrete content optimization problem."
+    },
+    {
+      "query_id": "problem_demand_087",
+      "territory": "problem_demand",
+      "query": "duplicate content on website seo",
+      "verdict": "valid",
+      "reasoning": "This targets the concrete SEO problem of duplicate content on a website, which is within the content-quality workflow Tavyn supports."
+    },
+    {
+      "query_id": "problem_demand_088",
+      "territory": "problem_demand",
+      "query": "seo friendly content management system",
+      "verdict": "invalid",
+      "reasoning": "This is a CMS-category query, not an informational SEO content workflow question."
+    },
+    {
+      "query_id": "problem_demand_089",
+      "territory": "problem_demand",
+      "query": "seo site content should have",
+      "verdict": "invalid",
+      "reasoning": "This is incomplete and does not clearly express a concrete SEO workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_090",
+      "territory": "problem_demand",
+      "query": "on-page seo content writing",
+      "verdict": "valid",
+      "reasoning": "This refers to on-page SEO content writing, a concrete workflow aligned with Tavyn’s content operations."
+    },
+    {
+      "query_id": "problem_demand_091",
+      "territory": "problem_demand",
+      "query": "seo content writing services online",
+      "verdict": "invalid",
+      "reasoning": "This primarily seeks services, which is outside Tavyn’s software product relevance."
+    },
+    {
+      "query_id": "problem_demand_092",
+      "territory": "problem_demand",
+      "query": "how to seo website content",
+      "verdict": "valid",
+      "reasoning": "This asks how to optimize website content for SEO, a concrete workflow Tavyn is built to support."
+    },
+    {
+      "query_id": "problem_demand_093",
+      "territory": "problem_demand",
+      "query": "outranking ai seo content platform",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand or product phrase and does not clearly express an informational SEO problem."
+    },
+    {
+      "query_id": "problem_demand_094",
+      "territory": "problem_demand",
+      "query": "seo for beginners",
+      "verdict": "invalid",
+      "reasoning": "This is generic educational SEO demand without a concrete workflow or SaaS-specific problem."
+    },
+    {
+      "query_id": "problem_demand_095",
+      "territory": "problem_demand",
+      "query": "best keyword for website",
+      "verdict": "invalid",
+      "reasoning": "This is a generic keyword-selection query and not a specific SEO content workflow Tavyn is positioned to solve."
+    },
+    {
+      "query_id": "problem_demand_096",
+      "territory": "problem_demand",
+      "query": "weebly for seo",
+      "verdict": "invalid",
+      "reasoning": "This is a named-platform query and not an informational SEO content workflow relevant to Tavyn."
+    },
+    {
+      "query_id": "problem_demand_097",
+      "territory": "problem_demand",
+      "query": "seo for all",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and vague to indicate a concrete SEO workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_098",
+      "territory": "problem_demand",
+      "query": "seo for homepage",
+      "verdict": "valid",
+      "reasoning": "This is a concrete on-page SEO optimization problem for a homepage, which fits Tavyn’s content workflow."
+    },
+    {
+      "query_id": "problem_demand_099",
+      "territory": "problem_demand",
+      "query": "cdn for seo",
+      "verdict": "invalid",
+      "reasoning": "This is a technical infrastructure query outside Tavyn’s SEO content workflow."
+    },
+    {
+      "query_id": "problem_demand_100",
+      "territory": "problem_demand",
+      "query": "best practices for optimizing your website and content for seo",
+      "verdict": "invalid",
+      "reasoning": "This is a broad best-practices query and not a concrete, founder-led SaaS content workflow."
+    },
+    {
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "seo automation platform",
+      "verdict": "valid",
+      "reasoning": "This is the exact product category Tavyn sells as an SEO content workflow automation platform."
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "seo automation tools",
+      "verdict": "valid",
+      "reasoning": "This is an immediate parent solution category for Tavyn’s SEO workflow automation offering."
+    },
+    {
+      "query_id": "solution_demand_003",
+      "territory": "solution_demand",
+      "query": "seo platform tools",
+      "verdict": "invalid",
+      "reasoning": "This is a vague umbrella category and does not clearly match Tavyn’s specific SEO content workflow product."
+    },
+    {
+      "query_id": "solution_demand_004",
+      "territory": "solution_demand",
+      "query": "seo tools content",
+      "verdict": "invalid",
+      "reasoning": "This is a generic tool query without clear commercial intent for Tavyn’s specific category."
+    },
+    {
+      "query_id": "solution_demand_005",
+      "territory": "solution_demand",
+      "query": "small seo tools ai content detector",
+      "verdict": "invalid",
+      "reasoning": "This is a separate AI-content-detection tool category that does not match Tavyn’s SEO workflow platform."
+    },
+    {
+      "query_id": "solution_demand_006",
+      "territory": "solution_demand",
+      "query": "seo software tools",
+      "verdict": "valid",
+      "reasoning": "This is a commercial SEO software category that reasonably includes Tavyn’s workflow automation platform."
+    },
+    {
+      "query_id": "solution_demand_007",
+      "territory": "solution_demand",
+      "query": "best seo automation tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO automation tools, which matches Tavyn’s product category."
+    },
+    {
+      "query_id": "solution_demand_008",
+      "territory": "solution_demand",
+      "query": "seo automation platform reviews",
+      "verdict": "valid",
+      "reasoning": "This seeks reviews of SEO automation platforms, a commercial category Tavyn fits."
+    },
+    {
+      "query_id": "solution_demand_009",
+      "territory": "solution_demand",
+      "query": "seo tools for content optimization",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO tools in the content-optimization workflow Tavyn supports."
+    },
+    {
+      "query_id": "solution_demand_010",
+      "territory": "solution_demand",
+      "query": "seo content optimization tools",
+      "verdict": "valid",
+      "reasoning": "This is a commercial category for tools that optimize SEO content, which aligns with Tavyn."
+    },
+    {
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "query": "seo content analysis tools",
+      "verdict": "valid",
+      "reasoning": "This is a commercial tool category for SEO content analysis, adjacent to Tavyn’s workflow platform."
+    },
+    {
+      "query_id": "solution_demand_012",
+      "territory": "solution_demand",
+      "query": "seo content for saas",
+      "verdict": "invalid",
+      "reasoning": "This is informational content demand about SaaS SEO, not a solution-selection query."
+    },
+    {
+      "query_id": "solution_demand_013",
+      "territory": "solution_demand",
+      "query": "content brief seo",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO content briefing workflows, which Tavyn directly provides."
+    },
+    {
+      "query_id": "solution_demand_014",
+      "territory": "solution_demand",
+      "query": "seo content brief",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO content briefing, a core Tavyn workflow."
+    },
+    {
+      "query_id": "solution_demand_015",
+      "territory": "solution_demand",
+      "query": "seo optimized keyword content brief",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for a keyword-informed SEO content brief, which fits Tavyn’s brief generation workflow."
+    },
+    {
+      "query_id": "solution_demand_016",
+      "territory": "solution_demand",
+      "query": "workflow seo",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not clearly indicate a purchasable SEO software category."
+    },
+    {
+      "query_id": "solution_demand_017",
+      "territory": "solution_demand",
+      "query": "ai seo optimization tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for AI SEO optimization tools, an adjacent solution category for Tavyn’s workflow automation."
+    },
+    {
+      "query_id": "solution_demand_018",
+      "territory": "solution_demand",
+      "query": "google ai content seo",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly represent a software category Tavyn competes in."
+    },
+    {
+      "query_id": "solution_demand_019",
+      "territory": "solution_demand",
+      "query": "seo tools",
+      "verdict": "valid",
+      "reasoning": "This is a broad but legitimate commercial SEO software category that can include Tavyn’s workflow automation platform."
+    },
+    {
+      "query_id": "solution_demand_020",
+      "territory": "solution_demand",
+      "query": "seo ai tools analysis",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for AI SEO analysis tools, an adjacent solution category to Tavyn’s product."
+    },
+    {
+      "query_id": "solution_demand_021",
+      "territory": "solution_demand",
+      "query": "seo software tools list",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation of SEO software tools, a category that can include Tavyn."
+    },
+    {
+      "query_id": "solution_demand_022",
+      "territory": "solution_demand",
+      "query": "outranking ai seo content platform",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without explicit comparison or alternative intent."
+    },
+    {
+      "query_id": "solution_demand_023",
+      "territory": "solution_demand",
+      "query": "seo ai tools reporting",
+      "verdict": "invalid",
+      "reasoning": "This is an unclear tool-function query rather than a clear commercial category Tavyn sells."
+    },
+    {
+      "query_id": "solution_demand_024",
+      "territory": "solution_demand",
+      "query": "seo ai tools help",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and reads like informational help rather than solution selection."
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "query": "small seo tools ai",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous fragment and does not clearly express commercial demand for a supported category."
+    },
+    {
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "query": "seo ai tools used",
+      "verdict": "invalid",
+      "reasoning": "This is informational rather than commercial or transactional solution demand."
+    },
+    {
+      "query_id": "solution_demand_027",
+      "territory": "solution_demand",
+      "query": "seo ai tools needed",
+      "verdict": "invalid",
+      "reasoning": "This is informational and speculative, not a clear solution-selection query."
+    },
+    {
+      "query_id": "solution_demand_028",
+      "territory": "solution_demand",
+      "query": "seo ai tools access",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not clearly indicate commercial evaluation of a supported category."
+    },
+    {
+      "query_id": "solution_demand_029",
+      "territory": "solution_demand",
+      "query": "seo review tools content analysis",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO review and content-analysis tools, an adjacent category to Tavyn’s workflow platform."
+    },
+    {
+      "query_id": "solution_demand_030",
+      "territory": "solution_demand",
+      "query": "ai tools for seo keyword research",
+      "verdict": "invalid",
+      "reasoning": "This is a keyword-research tool category, which is broader and not directly supported by Tavyn’s content workflow product."
+    },
+    {
+      "query_id": "solution_demand_031",
+      "territory": "solution_demand",
+      "query": "seo keywords for saas",
+      "verdict": "invalid",
+      "reasoning": "This is keyword research information demand, not solution selection."
+    },
+    {
+      "query_id": "solution_demand_032",
+      "territory": "solution_demand",
+      "query": "phprank seo reports & tools platform",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand platform query without explicit comparison or alternative intent."
+    },
+    {
+      "query_id": "solution_demand_033",
+      "territory": "solution_demand",
+      "query": "seo content platform",
+      "verdict": "valid",
+      "reasoning": "This is a commercial category for SEO content platforms, which aligns with Tavyn’s product positioning."
+    },
+    {
+      "query_id": "solution_demand_034",
+      "territory": "solution_demand",
+      "query": "content analysis seo review tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for content-analysis and review tools in the SEO workflow Tavyn supports."
+    },
+    {
+      "query_id": "solution_demand_035",
+      "territory": "solution_demand",
+      "query": "seo for software",
+      "verdict": "invalid",
+      "reasoning": "This is an informational market topic, not a software-category purchase query."
+    },
+    {
+      "query_id": "solution_demand_036",
+      "territory": "solution_demand",
+      "query": "seo workflow management",
+      "verdict": "valid",
+      "reasoning": "This is a commercial workflow-management category closely aligned with Tavyn’s SEO operations platform."
+    },
+    {
+      "query_id": "solution_demand_037",
+      "territory": "solution_demand",
+      "query": "seo tools search engine software",
+      "verdict": "invalid",
+      "reasoning": "This is a vague and redundant software phrase that does not clearly indicate a valid commercial category."
+    },
+    {
+      "query_id": "solution_demand_038",
+      "territory": "solution_demand",
+      "query": "seo software",
+      "verdict": "valid",
+      "reasoning": "This is a direct commercial software category that reasonably includes Tavyn’s SEO workflow automation platform."
+    },
+    {
+      "query_id": "solution_demand_039",
+      "territory": "solution_demand",
+      "query": "seo workflow n8n",
+      "verdict": "invalid",
+      "reasoning": "This is a query about another automation platform and is not a direct fit for Tavyn’s category."
+    },
+    {
+      "query_id": "solution_demand_040",
+      "territory": "solution_demand",
+      "query": "seo powersuite workflow",
+      "verdict": "invalid",
+      "reasoning": "This is a named-product workflow query and not a clear commercial category Tavyn competes in."
+    },
+    {
+      "query_id": "solution_demand_041",
+      "territory": "solution_demand",
+      "query": "ai checker small seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is a separate AI-checker tool category, not Tavyn’s SEO workflow platform."
+    },
+    {
+      "query_id": "solution_demand_042",
+      "territory": "solution_demand",
+      "query": "seo ai tools ranking checker",
+      "verdict": "invalid",
+      "reasoning": "This is a ranking-checker tool category, which is separate from Tavyn’s content workflow product."
+    },
+    {
+      "query_id": "solution_demand_043",
+      "territory": "solution_demand",
+      "query": "seo small tools ai checker",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous tool fragment and does not clearly map to Tavyn’s supported solution category."
+    },
+    {
+      "query_id": "solution_demand_044",
+      "territory": "solution_demand",
+      "query": "seo ai tools or paperrater",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand comparison with an unrelated writing tool, not a valid SEO solution category for Tavyn."
+    },
+    {
+      "query_id": "solution_demand_045",
+      "territory": "solution_demand",
+      "query": "seo ai tools image search",
+      "verdict": "invalid",
+      "reasoning": "This is an unrelated tool-function query and does not clearly represent Tavyn’s solution category."
+    },
+    {
+      "query_id": "solution_demand_046",
+      "territory": "solution_demand",
+      "query": "seo ai tools and techniques",
+      "verdict": "invalid",
+      "reasoning": "This is informational education about SEO techniques, not commercial solution-selection intent."
+    },
+    {
+      "query_id": "solution_demand_047",
+      "territory": "solution_demand",
+      "query": "seo content brief role",
+      "verdict": "invalid",
+      "reasoning": "This is an informational role-definition query rather than commercial demand for a tool or platform."
+    },
+    {
+      "query_id": "solution_demand_048",
+      "territory": "solution_demand",
+      "query": "content clusters for seo",
+      "verdict": "invalid",
+      "reasoning": "This is informational demand about an SEO content strategy concept, not a software category purchase query."
+    },
+    {
+      "query_id": "solution_demand_049",
+      "territory": "solution_demand",
+      "query": "content curation for seo",
+      "verdict": "invalid",
+      "reasoning": "This is informational strategy demand rather than commercial intent for a supported product category."
+    },
+    {
+      "query_id": "solution_demand_050",
+      "territory": "solution_demand",
+      "query": "seo tools tools",
+      "verdict": "invalid",
+      "reasoning": "This is a malformed generic query and does not clearly indicate a valid commercial category."
+    },
+    {
+      "query_id": "solution_demand_051",
+      "territory": "solution_demand",
+      "query": "paid tools for seo",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for paid SEO tools, a category that can include Tavyn’s software offering."
+    },
+    {
+      "query_id": "solution_demand_052",
+      "territory": "solution_demand",
+      "query": "seo brief description",
+      "verdict": "invalid",
+      "reasoning": "This is informational, seeking a definition rather than a solution category."
+    },
+    {
+      "query_id": "solution_demand_053",
+      "territory": "solution_demand",
+      "query": "seo for aggregated content",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and reads like an informational topic rather than solution-selection intent."
+    },
+    {
+      "query_id": "solution_demand_054",
+      "territory": "solution_demand",
+      "query": "content writing tools for seo",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for content-writing tools for SEO, which is adjacent to Tavyn’s workflow platform."
+    },
+    {
+      "query_id": "solution_demand_055",
+      "territory": "solution_demand",
+      "query": "duplicate content checker small seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is a separate duplicate-content checker tool category, not Tavyn’s SEO workflow platform."
+    },
+    {
+      "query_id": "solution_demand_056",
+      "territory": "solution_demand",
+      "query": "seo tools to check duplicate content",
+      "verdict": "invalid",
+      "reasoning": "This is a narrow duplicate-content checking tool query, which is outside Tavyn’s core solution category."
+    },
+    {
+      "query_id": "solution_demand_057",
+      "territory": "solution_demand",
+      "query": "seo review tools content analysis tool",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO review and content-analysis tools, an adjacent category for Tavyn."
+    },
+    {
+      "query_id": "solution_demand_058",
+      "territory": "solution_demand",
+      "query": "small seo tools duplicate content checker",
+      "verdict": "invalid",
+      "reasoning": "This is a separate duplicate-content checker tool category and not Tavyn’s supported product category."
+    },
+    {
+      "query_id": "solution_demand_059",
+      "territory": "solution_demand",
+      "query": "seo review tools content idea generator",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO review and content-idea generation tools, which overlaps Tavyn’s content planning workflow."
+    },
+    {
+      "query_id": "solution_demand_060",
+      "territory": "solution_demand",
+      "query": "tools used for seo",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO tools in general, a category that can include Tavyn’s platform."
+    },
+    {
+      "query_id": "solution_demand_061",
+      "territory": "solution_demand",
+      "query": "small seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is a separate named tool brand/category and not a clear search for Tavyn’s solution category."
+    },
+    {
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "query": "seo tools for content marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO tools used in content marketing, which fits Tavyn’s content workflow platform."
+    },
+    {
+      "query_id": "solution_demand_063",
+      "territory": "solution_demand",
+      "query": "content marketing saas tools",
+      "verdict": "invalid",
+      "reasoning": "This is a broad content-marketing software query and not specifically an SEO solution category."
+    },
+    {
+      "query_id": "solution_demand_064",
+      "territory": "solution_demand",
+      "query": "local seo automation",
+      "verdict": "invalid",
+      "reasoning": "This is a local SEO automation category, which is outside Tavyn’s founder-led SaaS content focus."
+    },
+    {
+      "query_id": "solution_demand_065",
+      "territory": "solution_demand",
+      "query": "tools for seo audit",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO audit tools, an adjacent SEO software category that can include Tavyn."
+    },
+    {
+      "query_id": "solution_demand_066",
+      "territory": "solution_demand",
+      "query": "rank math seo with ai best seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is a named-product comparison phrase and not clear standalone commercial demand for Tavyn’s category."
+    },
+    {
+      "query_id": "solution_demand_067",
+      "territory": "solution_demand",
+      "query": "best keyword research tools for content and seo",
+      "verdict": "invalid",
+      "reasoning": "This is a keyword-research tool query, which is broader than Tavyn’s content workflow platform."
+    },
+    {
+      "query_id": "solution_demand_068",
+      "territory": "solution_demand",
+      "query": "crawling tools for seo",
+      "verdict": "invalid",
+      "reasoning": "This is a technical crawling-tool category that is separate from Tavyn’s SEO content workflow software."
+    },
+    {
+      "query_id": "solution_demand_069",
+      "territory": "solution_demand",
+      "query": "semrush seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without explicit comparison or evaluation intent."
+    },
+    {
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "query": "seo studio tools",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to identify a clear commercial SEO software category."
+    },
+    {
+      "query_id": "solution_demand_071",
+      "territory": "solution_demand",
+      "query": "tools for technical seo",
+      "verdict": "invalid",
+      "reasoning": "This is a technical SEO tool category, which is broader and different from Tavyn’s content workflow platform."
+    },
+    {
+      "query_id": "solution_demand_072",
+      "territory": "solution_demand",
+      "query": "seo tools for cpanel",
+      "verdict": "invalid",
+      "reasoning": "This is a hosting/admin-specific tooling query and not Tavyn’s product category."
+    },
+    {
+      "query_id": "solution_demand_073",
+      "territory": "solution_demand",
+      "query": "tools required for seo",
+      "verdict": "invalid",
+      "reasoning": "This is informational and generic rather than commercial solution-selection intent."
+    },
+    {
+      "query_id": "solution_demand_074",
+      "territory": "solution_demand",
+      "query": "seo tools for fiverr",
+      "verdict": "invalid",
+      "reasoning": "This is a freelancer-platform-specific query and not a valid search for Tavyn’s SaaS category."
+    },
+    {
+      "query_id": "solution_demand_075",
+      "territory": "solution_demand",
+      "query": "seo tools for laravel",
+      "verdict": "invalid",
+      "reasoning": "This is a developer-framework-specific tooling query outside Tavyn’s category."
+    },
+    {
+      "query_id": "solution_demand_076",
+      "territory": "solution_demand",
+      "query": "basic tools for seo",
+      "verdict": "invalid",
+      "reasoning": "This is generic informational demand, not commercial evaluation of Tavyn’s specific solution category."
+    },
+    {
+      "query_id": "solution_demand_077",
+      "territory": "solution_demand",
+      "query": "important tools for seo",
+      "verdict": "invalid",
+      "reasoning": "This is generic informational demand and does not show clear solution-selection intent."
+    },
+    {
+      "query_id": "solution_demand_078",
+      "territory": "solution_demand",
+      "query": "best seo tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation of SEO tools, a category that can include Tavyn."
+    },
+    {
+      "query_id": "solution_demand_079",
+      "territory": "solution_demand",
+      "query": "seo content checker",
+      "verdict": "invalid",
+      "reasoning": "This is a narrower content-checking tool category that is not clearly Tavyn’s core product category."
+    },
+    {
+      "query_id": "solution_demand_080",
+      "territory": "solution_demand",
+      "query": "seo tools for content creation",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO tools supporting content creation, which aligns with Tavyn’s workflow platform."
+    },
+    {
+      "query_id": "solution_demand_081",
+      "territory": "solution_demand",
+      "query": "seo audit tools",
+      "verdict": "valid",
+      "reasoning": "This is a commercial SEO software category adjacent to Tavyn’s opportunity-identification workflow."
+    },
+    {
+      "query_id": "solution_demand_082",
+      "territory": "solution_demand",
+      "query": "seo review tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO review tools, which fits the evaluation and review side of Tavyn’s workflow."
+    },
+    {
+      "query_id": "solution_demand_083",
+      "territory": "solution_demand",
+      "query": "wordpress seo automation",
+      "verdict": "invalid",
+      "reasoning": "This is a WordPress-specific automation category and does not clearly match Tavyn’s founder-led SaaS focus."
+    },
+    {
+      "query_id": "solution_demand_084",
+      "territory": "solution_demand",
+      "query": "seo tools for keyword research",
+      "verdict": "invalid",
+      "reasoning": "This is a keyword-research tool category, which is adjacent but not Tavyn’s core product category."
+    },
+    {
+      "query_id": "solution_demand_085",
+      "territory": "solution_demand",
+      "query": "google seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and ambiguous to represent a clear commercial category Tavyn would satisfy."
+    },
+    {
+      "query_id": "solution_demand_086",
+      "territory": "solution_demand",
+      "query": "scalable seo platform",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for an SEO platform, which is an immediate parent category of Tavyn’s product."
+    },
+    {
+      "query_id": "solution_demand_087",
+      "territory": "solution_demand",
+      "query": "seo content checklist",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for an SEO content workflow artifact, which fits Tavyn’s briefing and planning process."
+    },
+    {
+      "query_id": "solution_demand_088",
+      "territory": "solution_demand",
+      "query": "content seo checklist",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for an SEO content checklist, a workflow artifact aligned with Tavyn’s process."
+    },
+    {
+      "query_id": "solution_demand_089",
+      "territory": "solution_demand",
+      "query": "top seo tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation of SEO tools, a category that can reasonably include Tavyn."
+    },
+    {
+      "query_id": "solution_demand_090",
+      "territory": "solution_demand",
+      "query": "seo content audit",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO content audit workflows and tools, which aligns with Tavyn’s content analysis and planning."
+    },
+    {
+      "query_id": "solution_demand_091",
+      "territory": "solution_demand",
+      "query": "seo hidden content",
+      "verdict": "invalid",
+      "reasoning": "This is a technical page-visibility topic and not a clear software category search for Tavyn."
+    },
+    {
+      "query_id": "solution_demand_092",
+      "territory": "solution_demand",
+      "query": "seo cornerstone content",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for cornerstone-content planning within SEO, a workflow Tavyn can support."
+    },
+    {
+      "query_id": "solution_demand_093",
+      "territory": "solution_demand",
+      "query": "content seo analysis",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO content analysis, an adjacent solution category for Tavyn."
+    },
+    {
+      "query_id": "solution_demand_094",
+      "territory": "solution_demand",
+      "query": "seo score checker for content",
+      "verdict": "invalid",
+      "reasoning": "This is a narrow scoring/checker tool category that is not clearly Tavyn’s core solution."
+    },
+    {
+      "query_id": "solution_demand_095",
+      "territory": "solution_demand",
+      "query": "seo analysis tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial demand for SEO analysis tools, a category adjacent to Tavyn’s workflow platform."
+    },
+    {
+      "query_id": "solution_demand_096",
+      "territory": "solution_demand",
+      "query": "cheap seo tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial price-conscious demand for SEO tools, a category that can include Tavyn."
+    },
+    {
+      "query_id": "solution_demand_097",
+      "territory": "solution_demand",
+      "query": "wordpress seo tools",
+      "verdict": "invalid",
+      "reasoning": "This is a WordPress-specific tool category, which is not a direct fit for Tavyn’s founder-led SaaS positioning."
+    },
+    {
+      "query_id": "solution_demand_098",
+      "territory": "solution_demand",
+      "query": "seo tools list",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation of SEO tools, a category that can include Tavyn."
+    },
+    {
+      "query_id": "solution_demand_099",
+      "territory": "solution_demand",
+      "query": "seo small tools",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrase that does not clearly specify a valid commercial category."
+    },
+    {
+      "query_id": "solution_demand_100",
+      "territory": "solution_demand",
+      "query": "seo ai tools to find keywords",
+      "verdict": "invalid",
+      "reasoning": "This is a keyword-finding tool category, which is broader than Tavyn’s SEO content workflow platform."
+    }
+  ]
+}

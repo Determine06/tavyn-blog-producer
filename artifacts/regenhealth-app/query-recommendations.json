@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.1.0",
+  "run_id": "24776b42-33d7-4953-b3fb-6066439cc305",
+  "generated_at": "2026-07-19T18:47:24.174Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-opportunities.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand had 7 confirmed queries; selected all 7 instead of 10.",
+    "solution_demand had 7 confirmed queries; selected all 7 instead of 10.",
+    "solution_demand produced 1 recommendation instead of target 2: One recommendation is appropriate because the base app-category query is the clearest exact fit, and the remaining solution queries are overlapping best, free, and iPhone variants that one page could substantially satisfy."
+  ],
+  "website_url": "https://regenhealth.app/",
+  "source_profile": {
+    "company_name": "REGEN",
+    "product_category": "peptide health tracking and reference app",
+    "primary_icp": "adults running their own peptide protocols"
+  },
+  "selection_policy": {
+    "maximum_total_recommendations": 4,
+    "target_per_territory": 2,
+    "minimum_per_nonempty_territory": 1,
+    "maximum_per_territory": 2,
+    "allow_fewer_than_target": true
+  },
+  "territory_recommendations": [
+    {
+      "territory": "problem_demand",
+      "candidates_available": 7,
+      "target_recommendations": 2,
+      "recommendations_selected": 2,
+      "selection_status": "fulfilled",
+      "assessment": "Two recommendations are appropriate because dosing protocols and inventory management are distinct standalone needs, while the remaining problem queries either duplicate the dosing intent or are too narrow and specific to justify another page.",
+      "recommendations": [
+        {
+          "recommendation_id": "problem_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "problem_demand_001",
+          "territory": "problem_demand",
+          "query": "peptide dosing protocols",
+          "selection_reasoning": "This is the strongest problem-led fit because it matches a core protocol-management pain, carries top-tier demand in the territory, and can be addressed credibly through REGEN's dosing, scheduling, and cited-reference workflow.",
+          "content_angle": "Create an evidence-based guide to organizing peptide dosing protocols around calculations, timing, and record-keeping rather than prescriptive treatment decisions.",
+          "product_connection": "REGEN can appear as the tool that tracks doses and schedules, performs dose math, and provides cited reference guidance for adults managing their own protocols.",
+          "confidence": "medium",
+          "opportunity_rank": 1,
+          "validation_reasoning": "This is informational demand about dosing protocols, a core workflow for adults managing peptide protocols.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol tracking",
+            "peptide dose calculation",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide protocol management"
+          ],
+          "discovery_rank": 1,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 22,
+              "quarterly": 22,
+              "yearly": 7100
+            },
+            "cpc": 2.03,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 45.7,
+              "referring_domains": 28.8,
+              "main_domain_rank": 289.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 390,
+            "volume_score": 1,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 100
+          }
+        },
+        {
+          "recommendation_id": "problem_demand_recommendation_02",
+          "recommendation_rank": 2,
+          "query_id": "problem_demand_002",
+          "territory": "problem_demand",
+          "query": "peptide inventory",
+          "selection_reasoning": "This is a distinct operational pain with direct product fit, separate from dosing guidance, and it has enough demand to justify a standalone inventory page.",
+          "content_angle": "Build a practical guide to tracking peptide inventory, expiry, and remaining vial amount so users can avoid spreadsheet-style stock confusion.",
+          "product_connection": "REGEN can naturally show how it tracks reconstituted versus lyophilized vials, remaining mg, and expiry alerts in one inventory workflow.",
+          "confidence": "high",
+          "opportunity_rank": 5,
+          "validation_reasoning": "This is informational demand about tracking peptide inventory, which matches a central protocol-management workflow.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol tracking",
+            "peptide dose calculation",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide protocol management"
+          ],
+          "discovery_rank": 2,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 20,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 0
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": null
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": null,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": null
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 20,
+            "maximum_territory_search_volume": 390,
+            "volume_score": 0.5101,
+            "keyword_difficulty_original": null,
+            "keyword_difficulty_used": 50,
+            "keyword_difficulty_was_imputed": true,
+            "difficulty_score": 0.5,
+            "opportunity_score": 25.5
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "candidates_available": 7,
+      "target_recommendations": 2,
+      "recommendations_selected": 1,
+      "selection_status": "limited",
+      "assessment": "One recommendation is appropriate because the base app-category query is the clearest exact fit, and the remaining solution queries are overlapping best, free, and iPhone variants that one page could substantially satisfy.",
+      "recommendations": [
+        {
+          "recommendation_id": "solution_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "solution_demand_001",
+          "territory": "solution_demand",
+          "query": "peptide tracker app",
+          "selection_reasoning": "This is the strongest solution-led query because it names the exact product category, has the highest commercial demand, and cleanly matches REGEN's freemium peptide tracking app without forcing service or broader software positioning.",
+          "content_angle": "Build a product-led page that explains how a peptide tracker app organizes dosing, inventory, biomarker trends, and shared protocols in one workflow.",
+          "product_connection": "REGEN can appear as the app itself, with the free basic tracker and Pro features for cited AI guidance, biomarker trends, photo meal scan, and shared protocols.",
+          "confidence": "high",
+          "opportunity_rank": 1,
+          "validation_reasoning": "This is commercial demand for a peptide tracking app, which matches the company’s primary product category.",
+          "source_seed_keywords": [
+            "peptide tracking app",
+            "peptide app for tracking",
+            "peptide protocol app",
+            "peptide dose calculator",
+            "peptide protocol tracker",
+            "peptide management software"
+          ],
+          "discovery_rank": 1,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 210
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 22,
+              "quarterly": 83,
+              "yearly": 878
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": [
+                "navigational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 19,
+              "referring_domains": 1.5,
+              "main_domain_rank": 647.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "maximum_territory_search_volume": 320,
+            "volume_score": 1,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 93
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_candidates_considered": 14,
+    "problem_candidates_considered": 7,
+    "solution_candidates_considered": 7,
+    "target_recommendations": 4,
+    "problem_recommendations_selected": 2,
+    "solution_recommendations_selected": 1,
+    "total_recommendations_selected": 3,
+    "target_fulfilled": false,
+    "insufficient_opportunity_territories": [
+      "solution_demand"
+    ]
+  }
+}

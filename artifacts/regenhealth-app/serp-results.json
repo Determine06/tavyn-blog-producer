@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "24776b42-33d7-4953-b3fb-6066439cc305",
+  "generated_at": "2026-07-19T18:48:35.552Z",
+  "source_artifacts": [
+    "query-recommendations.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand_001 returned 9 organic results instead of 10.",
+    "problem_demand_002 returned 9 organic results instead of 10.",
+    "solution_demand_001 returned 9 organic results instead of 10."
+  ],
+  "website_url": "https://regenhealth.app/",
+  "provider": {
+    "name": "serper",
+    "endpoint": "https://google.serper.dev/search",
+    "search_engine": "google",
+    "country_code": "us",
+    "language_code": "en",
+    "requested_results_per_query": 10,
+    "http_requests_made": 3,
+    "total_credits_used": 3
+  },
+  "query_serps": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "query": "peptide dosing protocols",
+      "requested_at": "2026-07-19T18:48:34.068Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Peptide Dosing Protocols | Dosing Guides, Charts & ...",
+          "url": "https://www.peptidedosingprotocols.com/",
+          "domain": "peptidedosingprotocols.com",
+          "snippet": "Peptide Dosing Protocols is a complete research resource for dosing guides, titration schedules, dosage charts, and stack protocols across 50+ research ...",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "Practical Peptide Dosage Education & Dosing Charts",
+          "url": "https://peptidedosages.com/",
+          "domain": "peptidedosages.com",
+          "snippet": "Practical peptide dosage education: dosing charts, a reconstitution calculator, and step-by-step protocols for 100+ research peptides.",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "Peptide Dosing Guide",
+          "url": "https://thepeptideuniversity.com/products/peptide-dosing-guide?srsltid=AfmBOorOQgnH7BDI-ZMdE8CiUHDE4Ku6Nkb7k0vhQTS9gO2wou8GvLek",
+          "domain": "thepeptideuniversity.com",
+          "snippet": "Get the Ultimate Peptide Dosing Guide! Accurate dosing is essential for effective research. Call: (888) 123 4567. Providing research-based education on peptide ...",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "Peptide Protocols Guide",
+          "url": "https://bewelllifestylecenters.com/protocols/peptide-book",
+          "domain": "bewelllifestylecenters.com",
+          "snippet": "Dosing Protocols. A) Standard Daily Protocol. Typical Dose, mL (at 3.33 mg/mL), Frequency, Duration, Focus. 250–500 mcg, 0.075–0.15 mL, Once daily, 4–6 weeks, ...",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Peptide Dosage Chart & Guide",
+          "url": "https://peptidesinsider.com/how-to/peptide-dosage-guide",
+          "domain": "peptidesinsider.com",
+          "snippet": "Cycled 2-3x per year in 10-20 day protocols. For research peptides, most human protocols use fixed doses rather than weight-adjusted doses. 1-10 mcg/kg/day, ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "How To Prepare and Administer Peptides",
+          "url": "https://www.youtube.com/watch?v=KARFHZprtbQ",
+          "domain": "youtube.com",
+          "snippet": "If you're confused about how to prepare peptides for administration, this video should help you out. Doctor Explains How To CORRECTLY Prepare ...",
+          "date": "1 year ago"
+        },
+        {
+          "position": 7,
+          "title": "Peptide Dosing Guidelines | Clinical Protocols",
+          "url": "https://deltapeptides.com/dosing-guidelines.html",
+          "domain": "deltapeptides.com",
+          "snippet": "Standard titration protocols employ 25-50% dose increases at intervals of 3-7 days, allowing sufficient time to assess pharmacodynamic responses and identify ...",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "Peptide Dosage Protocols with Dr. Whatley",
+          "url": "https://www.youtube.com/shorts/jhff8_p1fh8",
+          "domain": "youtube.com",
+          "snippet": "Peptide Dosage Protocols with Dr. Whatley - YouTube. Learn more @JukePerformance Subscribe",
+          "date": "7 months ago"
+        },
+        {
+          "position": 9,
+          "title": "Peptide Dosing Guides: Browse All Research Protocols",
+          "url": "https://www.peptidedosingprotocols.com/protocols",
+          "domain": "peptidedosingprotocols.com",
+          "snippet": "Browse 39 published peptide dosing guides organized by goal: fat loss, tissue repair, GH optimization, nootropics, immune modulation, and more.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "query": "peptide inventory",
+      "requested_at": "2026-07-19T18:48:34.070Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Smart Peptide Tracker - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.smartpeptidetracker.app&hl=en_US",
+          "domain": "play.google.com",
+          "snippet": "Manage your full inventory: single compounds, blends, pre-mixed vials, oral capsules, nasal sprays, topicals, and more. Inventory actions, ...",
+          "date": "6 days ago"
+        },
+        {
+          "position": 2,
+          "title": "Peptide Tracker App with New Web Access",
+          "url": "https://peptiq.io/",
+          "domain": "peptiq.io",
+          "snippet": "PeptIQ combines peptide tracking, calculators, and research education in one platform. Use it on native iOS and Android apps, now with web app access",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "New App for Tracking Your Peptide Journey",
+          "url": "https://www.reddit.com/r/PeptideForum/comments/1n5uxkz/new_app_for_tracking_your_peptide_journey/",
+          "domain": "reddit.com",
+          "snippet": "Inventory: Track vials, bottles, concentrations, remaining doses, and estimated runout dates. Protocols: Build your own stacks with ...",
+          "date": "10 months ago"
+        },
+        {
+          "position": 4,
+          "title": "Peptide Research Platform Features",
+          "url": "https://thepeptidevolt.com/features",
+          "domain": "thepeptidevolt.com",
+          "snippet": "Track your peptide inventory with precision. Monitor vial status, reconstitution details, remaining doses, and expiration dates.",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Peptide Tracker Calculator - App Store - Apple",
+          "url": "https://apps.apple.com/na/app/peptide-tracker-calculator/id6739737107",
+          "domain": "apps.apple.com",
+          "snippet": "PeptideCalc.io is a private peptide, GLP-1, TRT, and medication protocol tracker with calculators for user-entered reconstitution values, syringe units, ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "The Essential Tools Every Peptide Entrepreneur ... | Your...",
+          "url": "https://yourpeptidebrand.com/the-essential-tools-every-peptide-entrepreneur-needs/",
+          "domain": "yourpeptidebrand.com",
+          "snippet": "An integrated inventory tracker monitors raw peptide quantities, expiration dates, and lot numbers in real time, preventing costly stock‐outs",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "PeptideJournal - Research Tracking Made Simple",
+          "url": "https://peptidejournal.net/",
+          "domain": "peptidejournal.net",
+          "snippet": "Personal peptide tracking and logging app for iOS. Secure, private data management for personal use only. Not for medical advice.",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "Peptide Tracker & Reconstitution Log | GLP-1, Injection ...",
+          "url": "https://www.etsy.com/listing/4355548624/peptide-tracker-reconstitution-log-glp-1",
+          "domain": "etsy.com",
+          "snippet": "Peptide Tracker & Reconstitution Log | GLP-1, Injection, Vial and Dosage Calculator | Inventory Log | Google Sheets | Instant Download. TechCoutureCo.",
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "Peptide Tracker and Library - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.peptidelibrary.app&hl=en_US",
+          "domain": "play.google.com",
+          "snippet": "This searchable Peptide Guide provides in-depth profiles, mechanisms, half-life data, references, and molecular details through a built-in Molecular Calculator.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "peptide tracker app",
+      "requested_at": "2026-07-19T18:48:34.070Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "PepTracker: Dose Log - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/peptracker-dose-log/id6747189889",
+          "domain": "apps.apple.com",
+          "snippet": "Track. Schedule. Never miss a dose. PepTracker is a dose log and protocol tracker built for peptides, GLP-1 medications, and testosterone.",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "Smart Peptide Tracker - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.smartpeptidetracker.app&hl=en_US",
+          "domain": "play.google.com",
+          "snippet": "Smart Peptide Tracker is the tool you actually want to open every day. Track what matters Log every dose with one tap from your daily schedule.",
+          "date": "6 days ago"
+        },
+        {
+          "position": 3,
+          "title": "What are you looking for in Peptide Tracker apps?",
+          "url": "https://www.reddit.com/r/Biohackers/comments/1qeotig/what_are_you_looking_for_in_peptide_tracker_apps/",
+          "domain": "reddit.com",
+          "snippet": "Those interested in apps that you track peptides/trt/glp etc what are you looking for to make it apart of your daily routine?\n\nI currently have ...",
+          "date": "6 months ago"
+        },
+        {
+          "position": 4,
+          "title": "Peptide Tracker App with New Web Access",
+          "url": "https://peptiq.io/",
+          "domain": "peptiq.io",
+          "snippet": "PeptIQ combines peptide tracking, calculators, and research education in one platform. Use it on native iOS and Android apps, now with web app access",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Peptide Tracker - PeptideKit - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/peptide-tracker-peptidekit/id6751918022",
+          "domain": "apps.apple.com",
+          "snippet": "The no-nonsense peptide therapy companion for tracking injections, monitoring progress, and managing your peptide journey with precision and ease.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "Free Peptide Tracker App — Log Doses, Cycles & Results",
+          "url": "https://www.shotlee.app/peptide-tracker",
+          "domain": "shotlee.app",
+          "snippet": "Shotlee is the free app to track your Peptide protocol — log every dose, injection site, side effect, and health metric in one place. Download on theApp Store",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Peptide Tracker & Calculator - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.peptidetrackercalculator.app&hl=en_US",
+          "domain": "play.google.com",
+          "snippet": "Peptide Tracker & Calculator is a modern peptide tracking and protocol management app designed to help users organize, calculate, and log their ...",
+          "date": "Jun 21, 2026"
+        },
+        {
+          "position": 8,
+          "title": "Best Peptide Tracker Apps 2026: 5 Free & Paid Apps Compared",
+          "url": "https://helloregimen.com/blog/best-peptide-tracker-apps-2026",
+          "domain": "helloregimen.com",
+          "snippet": "The 5 Apps Reviewed · 1. Regimen · 2. PeptIQ · 3. PepTracker · 4. Smart Peptide Tracker · 5. Shotsy. Shotsy is built specifically for GLP-1 ...",
+          "date": "2 days ago"
+        },
+        {
+          "position": 9,
+          "title": "Never Miss a Peptide Dose Again",
+          "url": "https://peptracker.app/",
+          "domain": "peptracker.app",
+          "snippet": "Download App. Never Miss a Peptide Dose Again. PepTracker schedules injections, sends discreet reminders, and calculates the exact syringe units—all in one app.",
+          "date": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "recommended_queries_received": 3,
+    "serp_requests_completed": 3,
+    "total_organic_results": 27,
+    "queries_with_fewer_than_ten_results": [
+      "problem_demand_001",
+      "problem_demand_002",
+      "solution_demand_001"
+    ]
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "4839a55c-4303-4162-9bff-714002621089",
+  "generated_at": "2026-07-19T18:47:56.293Z",
+  "source_artifacts": [
+    "query-recommendations.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand_017 returned 7 organic results instead of 10.",
+    "solution_demand_001 returned 8 organic results instead of 10."
+  ],
+  "website_url": "https://tavyn.dev/",
+  "provider": {
+    "name": "serper",
+    "endpoint": "https://google.serper.dev/search",
+    "search_engine": "google",
+    "country_code": "us",
+    "language_code": "en",
+    "requested_results_per_query": 10,
+    "http_requests_made": 3,
+    "total_credits_used": 3
+  },
+  "query_serps": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "query": "seo content brief",
+      "requested_at": "2026-07-19T18:47:55.531Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 10,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "SEO Content Brief Guide: Everything You Need to Know",
+          "url": "https://www.semrush.com/blog/seo-content-brief/",
+          "domain": "semrush.com",
+          "snippet": "An SEO content brief is a detailed document created by a content manager or strategist to help content writers understand the goals and objectives for a piece ...",
+          "date": "Nov 29, 2023"
+        },
+        {
+          "position": 2,
+          "title": "The Only SEO Content Brief Template You'll Ever Need",
+          "url": "https://www.flow-agency.com/blog/seo-content-brief-template/",
+          "domain": "flow-agency.com",
+          "snippet": "An SEO content brief is a document that provides a writer with specific instructions for how to write a piece of content while taking into account the goals ...",
+          "date": "Nov 6, 2023"
+        },
+        {
+          "position": 3,
+          "title": "How to Master SEO Content Brief Strategies",
+          "url": "https://www.siteimprove.com/blog/seo-content-brief-strategies/",
+          "domain": "siteimprove.com",
+          "snippet": "An effective SEO-focused content brief spells out exactly what to target: It ties business goals to search intent, and it's grounded in the actual questions ...",
+          "date": "Jun 9, 2025"
+        },
+        {
+          "position": 4,
+          "title": "What Is a Content Brief? Write One That Drives SEO Success",
+          "url": "https://searchengineland.com/guide/content-brief",
+          "domain": "searchengineland.com",
+          "snippet": "In search engine optimization (SEO), content briefs typically contain details about key marketing objectives and the on-page elements necessary ...",
+          "date": "Nov 27, 2025"
+        },
+        {
+          "position": 5,
+          "title": "How to Create the Perfect SEO Content Brief [Template]",
+          "url": "https://beomniscient.com/blog/seo-content-brief/",
+          "domain": "beomniscient.com",
+          "snippet": "A content brief is a document that outlines instructions for how and why to create a piece of content—a blog post, landing page, e-book, or any ...",
+          "date": "Mar 29, 2021"
+        },
+        {
+          "position": 6,
+          "title": "The Ultimate SEO Content Brief Template (+8 Experts Give ...",
+          "url": "https://www.spicymargarita.co/archive/seo-content-brief-template",
+          "domain": "spicymargarita.co",
+          "snippet": "A brief that only includes the title, audience, word count, primary keyword, Focus on the user's search intent.",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "What Is an SEO Content Brief & How to Create One",
+          "url": "https://similar.ai/guides/seo-content-brief/",
+          "domain": "similar.ai",
+          "snippet": "An SEO content brief is a structured document that outlines the target keywords, search intent, recommended headings, audience, and content structure",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "How to Write an SEO-focused Content Brief for Your Writers",
+          "url": "https://minuttia.com/content-brief/",
+          "domain": "minuttia.com",
+          "snippet": "A content brief is a document that aims to pass on useful information on the creation of a piece of content to the creator of the piece.",
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "How To Write an Effective SEO Content Brief (+ FREE ...",
+          "url": "https://agencyanalytics.com/blog/content-brief",
+          "domain": "agencyanalytics.com",
+          "snippet": "The key components of a content brief include the target keyword or topic, search intent, suggested title, meta description, word count, tone of ...",
+          "date": "Sep 4, 2025"
+        },
+        {
+          "position": 10,
+          "title": "How to Write an SEO Content Brief + Free Templates",
+          "url": "https://brandwell.ai/blog/seo-content-brief-template/",
+          "domain": "brandwell.ai",
+          "snippet": "How to Write an SEO Content Brief · 1. Establish Clear Goals · 2. Know Your Audience · 3. Set Timelines · 4. Assign Resources · 5. Create a ...",
+          "date": "Jun 2, 2023"
+        }
+      ]
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "query": "seo content plan",
+      "requested_at": "2026-07-19T18:47:55.532Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 7,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "A creator's guide to SEO content strategy",
+          "url": "https://www.siteimprove.com/blog/seo-content-strategies/",
+          "domain": "siteimprove.com",
+          "snippet": "SEO content strategy is the plan that guides how you create, structure, and optimize content so it supports your search goals and business ...",
+          "date": "Aug 25, 2025"
+        },
+        {
+          "position": 2,
+          "title": "How to Create An SEO Content Marketing Plan in Minutes ...",
+          "url": "https://www.youtube.com/watch?v=ZaXo4ERKCqQ",
+          "domain": "youtube.com",
+          "snippet": "Learn how to attract the right audience with an effective SEO content marketing plan tailored to the awareness, consideration, and decision ...",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "Search Engine Optimization (SEO) Starter Guide",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+          "domain": "developers.google.com",
+          "snippet": "SEO—short for search engine optimization—is about helping search engines understand your content, and helping users find your site and make a decision",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "A Guide To Modern SEO Planning For Scalable Organic Growth",
+          "url": "https://monday.com/blog/marketing/seo-planning/",
+          "domain": "monday.com",
+          "snippet": "SEO planning aligns teams, content, and technical efforts to drive growth. Learn how to build a scalable, results-driven SEO plan that works ...",
+          "date": "Jan 28, 2026"
+        },
+        {
+          "position": 5,
+          "title": "The 6 Stages of an SEO-Content Strategy",
+          "url": "https://solutions.technologyadvice.com/blog/stages-seo-content-strategy/",
+          "domain": "solutions.technologyadvice.com",
+          "snippet": "Step 1: Determine Your Business Objectives · Step 2: Identifying Keywords · Step 3: Prioritize Your Keywords · Step 4: Develop Your Content Plan.",
+          "date": "Aug 23, 2018"
+        },
+        {
+          "position": 6,
+          "title": "SEO Content Strategy: A Playbook To Win Search Engines",
+          "url": "https://www.columnfivemedia.com/seo-content-strategy/",
+          "domain": "columnfivemedia.com",
+          "snippet": "Discover a proven playbook for developing an SEO content strategy that drives traffic and wins top search rankings.",
+          "date": "Feb 6, 2026"
+        },
+        {
+          "position": 7,
+          "title": "SEO Content Strategy: The Complete Guide to Building Organic Growth ...",
+          "url": "https://www.intelegencia.com/blog/content-marketing/complete-seo-content-strategy",
+          "domain": "intelegencia.com",
+          "snippet": "An SEO strategy focuses on search visibility through technical optimization, link acquisition, and keyword targeting. A content strategy governs ...",
+          "date": "Apr 22, 2026"
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "seo automation platform",
+      "requested_at": "2026-07-19T18:47:55.533Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 8,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "SEO automation made simple with AI agents",
+          "url": "https://www.gumloop.com/use-cases/seo-automation",
+          "domain": "gumloop.com",
+          "snippet": "Automate your SEO with Gumloop's powerful AI agent builder. Create custom solutions that save time and improve rankings. Start building SEO AI agents.",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "13 best SEO automation tools I'm using in 2026",
+          "url": "https://www.marketermilk.com/blog/best-seo-automation-tools",
+          "domain": "marketermilk.com",
+          "snippet": "Here are the best SEO automation tools: Gumloop (for automating SEO workflows); AirOps (for automating content operations); Surfer AI (for ...",
+          "date": "May 14, 2025"
+        },
+        {
+          "position": 3,
+          "title": "Navigate the SEO Automation Tools Landscape: A Strategic Guide for ...",
+          "url": "https://www.siteimprove.com/blog/seo-automation-tools-landscape-matrix/",
+          "domain": "siteimprove.com",
+          "snippet": "This guide maps out the real differences in the SEO automation tools landscape and matrix. The market standards: Ahrefs, Semrush, Yoast SEO, ...",
+          "date": "Oct 16, 2025"
+        },
+        {
+          "position": 4,
+          "title": "What is SEO automation? Complete 2026 guide",
+          "url": "https://www.make.com/en/blog/seo-automation",
+          "domain": "make.com",
+          "snippet": "SEO automation is the practice of using software, APIs, and AI models to run repeatable search engine optimization tasks without manual effort,",
+          "date": "Jul 1, 2026"
+        },
+        {
+          "position": 5,
+          "title": "Search Atlas: AI SEO Automation for Agencies & Brands",
+          "url": "https://searchatlas.com/",
+          "domain": "searchatlas.com",
+          "snippet": "Boost organic traffic and sales with Search Atlas - the all-in-one SEO platform. Advanced tools for content, site audits, competitor analysis, and more.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "19 SEO Automation Tools for Better Rankings in 2026",
+          "url": "https://wpseoai.com/blog/top-automated-seo-tools-using-ai-for-better-rankings/",
+          "domain": "wpseoai.com",
+          "snippet": "SEO automation tools like WP SEO AI, Surfer SEO or Frase. Pricing begins at $99/month. Free trial offered. es rank tracking, competitor ...",
+          "date": "Feb 2, 2026"
+        },
+        {
+          "position": 7,
+          "title": "13 Best SEO Automation Tools in 2026 (Free + Paid)",
+          "url": "https://nextgrowth.ai/best-seo-automation-tools/",
+          "domain": "nextgrowth.ai",
+          "snippet": "The best SEO automation tools in 2026 are Semrush for all-in-one enterprise automation, SE Ranking for small business value, and n8n for custom AI-powered ...",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "SEO Automation Software",
+          "url": "https://www.linkedin.com/top-content/innovation/digital-innovation-tools/seo-automation-software/",
+          "domain": "linkedin.com",
+          "snippet": "SEO automation software simplifies tasks like scheduled crawls and rank alerts, maintaining human touch for content and links.",
+          "date": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "recommended_queries_received": 3,
+    "serp_requests_completed": 3,
+    "total_organic_results": 25,
+    "queries_with_fewer_than_ten_results": [
+      "problem_demand_017",
+      "solution_demand_001"
+    ]
+  }
+}

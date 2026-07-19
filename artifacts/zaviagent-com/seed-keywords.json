@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "842db52e-39b5-4fed-8114-251ff9378bf5",
+  "generated_at": "2026-07-18T01:04:47.856Z",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://www.zaviagent.com/",
+  "source_profile": {
+    "company_name": "Zavi",
+    "product_category": "marketplace operations automation platform",
+    "primary_icp": "marketplace founders and operators"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "Marketplace operations and growth",
+      "territory_summary": "Search demand around the core job of building, growing, and running a marketplace through seller onboarding, growth, support, and trust and safety work.",
+      "market_topic": "marketplace operations and growth",
+      "primary_icp": "marketplace founders and operators",
+      "product_connection": "Zavi is positioned as an AI super agent for marketplaces that handles marketplace operations across the full lifecycle, making marketplace operations and growth the central problem territory.",
+      "evidence": [
+        {
+          "source_field": "company_identity.one_sentence_description.value",
+          "evidence_text": "AI super agent for marketplaces that builds, grows, and runs marketplace operations.",
+          "reasoning": "Directly supports a marketplace operations and growth problem territory."
+        },
+        {
+          "source_field": "icp_and_audience.primary_icp.value",
+          "evidence_text": "marketplace founders and operators",
+          "reasoning": "Confirms the primary audience for marketplace operations search intent."
+        },
+        {
+          "source_field": "buyer_pains[2].pain",
+          "evidence_text": "Seller supply needs constant recruiting, verification, and activation to avoid empty listings.",
+          "reasoning": "Supports seller onboarding and supply growth as part of the core problem space."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "pd1",
+          "keyword": "marketplace operations",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Shortest, clearest description of the fundamental marketplace management problem.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd2",
+          "keyword": "marketplace growth strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures the recurring growth work tied to acquiring sellers and improving marketplace performance.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd3",
+          "keyword": "marketplace seller onboarding",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Adds marketplace context to a generic operational task that is central to this ICP.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd4",
+          "keyword": "marketplace trust and safety",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A distinct, established synonym for a major marketplace operations area involving fraud and disputes.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd5",
+          "keyword": "marketplace management",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A broad but still market-specific synonym that can surface adjacent marketplace operations demand.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd6",
+          "keyword": "marketplace support operations",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents the continuous support and escalation work marketplaces need to keep running.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "Marketplace operations software and automation",
+      "territory_summary": "Search demand for software and automation categories that help buyers evaluate tools for marketplace operations, support, trust and safety, and growth workflows.",
+      "market_topic": "marketplace operations software",
+      "primary_icp": "marketplace founders and operators",
+      "product_connection": "Zavi is marketed as a marketplace-specific AI agent that automates operations, so solution-seeking searches should center on software and automation categories for marketplaces.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "marketplace operations automation platform",
+          "reasoning": "Directly supports a software-and-automation solution category."
+        },
+        {
+          "source_field": "differentiation_and_positioning.positioning_summary.value",
+          "evidence_text": "AI super agent built specifically for marketplaces, replacing many fragmented tools with one autonomous system.",
+          "reasoning": "Supports solution-language around marketplace automation tools and platforms."
+        },
+        {
+          "source_field": "product_capabilities[3].capability",
+          "evidence_text": "manages fraud reviews and disputes",
+          "reasoning": "Confirms trust and safety operations as a meaningful solution area within the product category."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "sd1",
+          "keyword": "marketplace operations software",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Most direct established solution-category phrase for the product.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd2",
+          "keyword": "marketplace management software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A common commercial category buyers could use when evaluating marketplace tools.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd3",
+          "keyword": "marketplace automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Captures the central automation approach without overfitting to one workflow.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd4",
+          "keyword": "ai for marketplace operations",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Reflects the product’s AI-native positioning in a market-specific way.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd5",
+          "keyword": "marketplace support automation",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A distinct solution angle aligned with continuous support and escalation workflows.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd6",
+          "keyword": "marketplace trust and safety software",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Qualifies the solution category for a key marketplace operator workflow supported by the profile.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "The product is described with strong marketplace-specific positioning, but the exact boundaries between autonomous execution and human approval are not fully detailed."
+    ],
+    "potential_risks": [
+      "The company uses broad AI agent language, so solution seeds were kept anchored to marketplace operations to avoid drifting into generic AI software.",
+      "Marketplace operations spans several related workflows; seeds were diversified across growth, onboarding, support, and trust and safety to preserve market coverage without inventing new categories."
+    ],
+    "notes": "The profile provides clear evidence for a single coherent market: marketplace founders and operators seeking help with operations, growth, support, and trust and safety. Seed language was kept conservative and marketplace-specific so each seed can stand alone for external keyword discovery."
+  }
+}
