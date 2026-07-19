@@ -108,6 +108,8 @@ async function main(): Promise<void> {
       `artifacts/${safeHostname}/query-opportunities.json`;
     const queryRecommendationsArtifactPath =
       `artifacts/${safeHostname}/query-recommendations.json`;
+    const serpResultsArtifactPath =
+      `artifacts/${safeHostname}/serp-results.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -139,6 +141,7 @@ async function main(): Promise<void> {
     logInfo(
       `Query recommendations artifact path: ${queryRecommendationsArtifactPath}`,
     );
+    logInfo(`SERP results artifact path: ${serpResultsArtifactPath}`);
 
     const crawlResult = await runCachedStep({
       stepName: "company-profile-crawl",
@@ -438,8 +441,58 @@ async function main(): Promise<void> {
       `Query recommendations artifact path: ${queryRecommendationsArtifactPath}`,
     );
     logSuccess("Query recommendation selection stage completed");
+
+    const shouldForceSerpResults =
+      forceSerp || queryRecommendationsResult.didRun;
+
+    if (queryRecommendationsResult.didRun && !forceSerp) {
+      logInfo(
+        "SERP result regeneration required because query recommendations changed.",
+      );
+    }
+
+    const serpResultsResult = await runCachedStep({
+      stepName: "serper-organic-serp-collection",
+      artifactPath: serpResultsArtifactPath,
+      force: shouldForceSerpResults,
+      run: async () => {
+        const { generateSerpResults } = await import(
+          "./steps/generateSerpResults.js"
+        );
+
+        return generateSerpResults(
+          queryRecommendations,
+          runContext.runId,
+        );
+      },
+    });
+    const serpResults = serpResultsResult.data;
+
+    logInfo(`SERP results cache hit: ${serpResultsResult.cacheHit}`);
+    logInfo(`SERP results step ran: ${serpResultsResult.didRun}`);
     logInfo(
-      "Query recommendation selection is complete; stopping before live SERP analysis.",
+      `Recommended queries received: ${serpResults.summary.recommended_queries_received}`,
+    );
+    logInfo(
+      `SERP requests completed: ${serpResults.summary.serp_requests_completed}`,
+    );
+    logInfo(
+      `Total organic results: ${serpResults.summary.total_organic_results}`,
+    );
+    logInfo(
+      `Queries with fewer than ten results: ${serpResults.summary.queries_with_fewer_than_ten_results.length}`,
+    );
+
+    if (serpResults.provider.total_credits_used === null) {
+      logInfo("Serper credits: not reported");
+    } else {
+      logInfo(`Serper credits: ${serpResults.provider.total_credits_used}`);
+    }
+
+    logInfo(`SERP results artifact path: ${serpResultsArtifactPath}`);
+    logSuccess("SERP result collection stage completed");
+    logInfo(
+      "SERP result collection is complete; stopping before finalized content recommendation generation.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);
