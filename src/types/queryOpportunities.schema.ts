@@ -31,7 +31,7 @@ const OpportunityMetricsSchema = z
 
 const OpportunityQuerySchema = z
   .object({
-    rank: z.number().int().min(1).max(5),
+    rank: z.number().int().min(1).max(10),
     query_id: NonEmptyStringSchema,
     territory: TerritorySchema,
     query: NonEmptyStringSchema,
@@ -50,8 +50,8 @@ const TerritoryRankingSchema = z
     territory: TerritorySchema,
     confirmed_query_count: z.number().int().min(0),
     maximum_search_volume: z.number().int().min(0),
-    selected_query_count: z.number().int().min(0).max(5),
-    queries: z.array(OpportunityQuerySchema).max(5),
+    selected_query_count: z.number().int().min(0).max(10),
+    queries: z.array(OpportunityQuerySchema).max(10),
   })
   .strict();
 
@@ -69,7 +69,7 @@ const SummarySchema = z
 
 export const QueryOpportunitiesSchema = z
   .object({
-    schema_version: z.literal("1.1.0"),
+    schema_version: z.literal("1.2.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z.tuple([z.literal("confirmed-queries.json")]),
@@ -112,7 +112,7 @@ export const QueryOpportunitiesSchema = z
       }
 
       const expectedSelectedQueryCount = Math.min(
-        5,
+        10,
         ranking.confirmed_query_count,
       );
 
@@ -120,7 +120,7 @@ export const QueryOpportunitiesSchema = z
         context.addIssue({
           code: "custom",
           message:
-            "selected_query_count must equal Math.min(5, confirmed_query_count).",
+            "selected_query_count must equal Math.min(10, confirmed_query_count).",
           path: ["territory_rankings", rankingIndex, "selected_query_count"],
         });
       }

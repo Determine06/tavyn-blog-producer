@@ -9,7 +9,7 @@ import {
 } from "../types/queryOpportunities.schema.js";
 
 const MISSING_KEYWORD_DIFFICULTY_DEFAULT = 50;
-const SELECTED_QUERY_COUNT = 5;
+const SELECTED_QUERY_COUNT = 10;
 
 type Territory = "problem_demand" | "solution_demand";
 type ConfirmedQuery = ConfirmedQueries["confirmed_queries"][number];
@@ -54,7 +54,7 @@ export async function generateQueryOpportunities(
     (query) => query.opportunity_metrics.keyword_difficulty_was_imputed,
   ).length;
   const queryOpportunities = QueryOpportunitiesSchema.parse({
-    schema_version: "1.1.0",
+    schema_version: "1.2.0",
     run_id: runId,
     generated_at: new Date().toISOString(),
     source_artifacts: ["confirmed-queries.json"],

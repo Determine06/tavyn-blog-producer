@@ -14,6 +14,7 @@ type CliOptions = {
   forceQueryMetrics: boolean;
   forceQueryValidation: boolean;
   forceQueryOpportunities: boolean;
+  forceQueryRecommendations: boolean;
 };
 
 type RunContext = {
@@ -40,6 +41,9 @@ function parseCliOptions(argv: string[]): CliOptions {
   const forceQueryOpportunities = argv.includes(
     "--force-query-opportunities",
   );
+  const forceQueryRecommendations = argv.includes(
+    "--force-query-recommendations",
+  );
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
 
   return {
@@ -52,6 +56,7 @@ function parseCliOptions(argv: string[]): CliOptions {
     forceQueryMetrics,
     forceQueryValidation,
     forceQueryOpportunities,
+    forceQueryRecommendations,
   };
 }
 
@@ -89,6 +94,7 @@ async function main(): Promise<void> {
       forceQueryMetrics,
       forceQueryValidation,
       forceQueryOpportunities,
+      forceQueryRecommendations,
     } = parseCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
@@ -100,6 +106,8 @@ async function main(): Promise<void> {
     const confirmedQueriesArtifactPath = `artifacts/${safeHostname}/confirmed-queries.json`;
     const queryOpportunitiesArtifactPath =
       `artifacts/${safeHostname}/query-opportunities.json`;
+    const queryRecommendationsArtifactPath =
+      `artifacts/${safeHostname}/query-recommendations.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -118,6 +126,7 @@ async function main(): Promise<void> {
     logInfo(`forceQueryMetrics: ${forceQueryMetrics}`);
     logInfo(`forceQueryValidation: ${forceQueryValidation}`);
     logInfo(`forceQueryOpportunities: ${forceQueryOpportunities}`);
+    logInfo(`forceQueryRecommendations: ${forceQueryRecommendations}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
     logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
@@ -126,6 +135,9 @@ async function main(): Promise<void> {
     logInfo(`Confirmed queries artifact path: ${confirmedQueriesArtifactPath}`);
     logInfo(
       `Query opportunities artifact path: ${queryOpportunitiesArtifactPath}`,
+    );
+    logInfo(
+      `Query recommendations artifact path: ${queryRecommendationsArtifactPath}`,
     );
 
     const crawlResult = await runCachedStep({
@@ -380,8 +392,54 @@ async function main(): Promise<void> {
     );
     logInfo(`Query opportunities artifact path: ${queryOpportunitiesArtifactPath}`);
     logSuccess("Query opportunity scoring stage completed");
+
+    const shouldForceQueryRecommendations =
+      forceQueryRecommendations ||
+      companyProfileResult.didRun ||
+      queryOpportunitiesResult.didRun;
+
+    const queryRecommendationsResult = await runCachedStep({
+      stepName: "query-recommendation-selection",
+      artifactPath: queryRecommendationsArtifactPath,
+      force: shouldForceQueryRecommendations,
+      run: async () => {
+        const { generateQueryRecommendations } = await import(
+          "./steps/generateQueryRecommendations.js"
+        );
+
+        return generateQueryRecommendations(
+          companyProfile,
+          queryOpportunities,
+          runContext.runId,
+        );
+      },
+    });
+    const queryRecommendations = queryRecommendationsResult.data;
+
     logInfo(
-      "Opportunity scoring is complete; stopping before LLM recommendation selection.",
+      `Query recommendations cache hit: ${queryRecommendationsResult.cacheHit}`,
+    );
+    logInfo(
+      `Query recommendation step ran: ${queryRecommendationsResult.didRun}`,
+    );
+    logInfo(
+      `Problem recommendations selected: ${queryRecommendations.summary.problem_recommendations_selected}`,
+    );
+    logInfo(
+      `Solution recommendations selected: ${queryRecommendations.summary.solution_recommendations_selected}`,
+    );
+    logInfo(
+      `Total recommendations selected: ${queryRecommendations.summary.total_recommendations_selected}`,
+    );
+    logInfo(
+      `Recommendation target fulfilled: ${queryRecommendations.summary.target_fulfilled}`,
+    );
+    logInfo(
+      `Query recommendations artifact path: ${queryRecommendationsArtifactPath}`,
+    );
+    logSuccess("Query recommendation selection stage completed");
+    logInfo(
+      "Query recommendation selection is complete; stopping before live SERP analysis.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);
