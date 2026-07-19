@@ -7,7 +7,7 @@ schema_name: QueryRecommendationDecisionSchema
 model: gpt-5.4-mini
 reasoning_effort: high
 temperature: 0.1
-max_output_tokens: 10000
+max_output_tokens: 30000
 -----------------------
 
 # Developer Instructions

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_example",
+  "generated_at": "ISO-8601",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-recommendations.json",
+    "serp-results.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://example.com",
+  "source_profile": {
+    "company_name": "Example Company",
+    "product_category": "Product category",
+    "primary_icp": "Primary ICP"
+  },
+  "content_recommendations": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "primary_query": "example search query",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "high",
+        "summary": "The organic results consistently reward practical educational guides that explain the topic through a repeatable process.",
+        "recurring_concepts": [
+          "step-by-step process",
+          "templates",
+          "search intent",
+          "practical examples"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "How to Approach the Example Search Query",
+        "recommended_page_type": "guide",
+        "content_angle": "Create a practical guide that satisfies the demonstrated informational intent while applying the company’s differentiated approach for its primary ICP.",
+        "product_connection": "Introduce the product as the natural way to implement the workflow after explaining the problem and process independently.",
+        "confidence": "high",
+        "warnings": []
+      }
+    }
+  ],
+  "summary": {
+    "recommendations_received": 1,
+    "recommendations_analyzed": 1,
+    "problem_demand_count": 1,
+    "solution_demand_count": 0,
+    "high_confidence_count": 1,
+    "medium_confidence_count": 0,
+    "low_confidence_count": 0,
+    "mixed_intent_count": 0,
+    "insufficient_serp_count": 0
+  }
+}

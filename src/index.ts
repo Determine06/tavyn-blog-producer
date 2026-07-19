@@ -15,6 +15,7 @@ type CliOptions = {
   forceQueryValidation: boolean;
   forceQueryOpportunities: boolean;
   forceQueryRecommendations: boolean;
+  forceContentRecommendation: boolean;
 };
 
 type RunContext = {
@@ -44,6 +45,9 @@ function parseCliOptions(argv: string[]): CliOptions {
   const forceQueryRecommendations = argv.includes(
     "--force-query-recommendations",
   );
+  const forceContentRecommendation = argv.includes(
+    "--force-content-recommendation",
+  );
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
 
   return {
@@ -57,6 +61,7 @@ function parseCliOptions(argv: string[]): CliOptions {
     forceQueryValidation,
     forceQueryOpportunities,
     forceQueryRecommendations,
+    forceContentRecommendation,
   };
 }
 
@@ -95,6 +100,7 @@ async function main(): Promise<void> {
       forceQueryValidation,
       forceQueryOpportunities,
       forceQueryRecommendations,
+      forceContentRecommendation,
     } = parseCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
@@ -110,6 +116,8 @@ async function main(): Promise<void> {
       `artifacts/${safeHostname}/query-recommendations.json`;
     const serpResultsArtifactPath =
       `artifacts/${safeHostname}/serp-results.json`;
+    const contentRecommendationArtifactPath =
+      `artifacts/${safeHostname}/content-recommendation.json`;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -129,6 +137,7 @@ async function main(): Promise<void> {
     logInfo(`forceQueryValidation: ${forceQueryValidation}`);
     logInfo(`forceQueryOpportunities: ${forceQueryOpportunities}`);
     logInfo(`forceQueryRecommendations: ${forceQueryRecommendations}`);
+    logInfo(`forceContentRecommendation: ${forceContentRecommendation}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
     logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
@@ -142,6 +151,9 @@ async function main(): Promise<void> {
       `Query recommendations artifact path: ${queryRecommendationsArtifactPath}`,
     );
     logInfo(`SERP results artifact path: ${serpResultsArtifactPath}`);
+    logInfo(
+      `Content recommendation artifact path: ${contentRecommendationArtifactPath}`,
+    );
 
     const crawlResult = await runCachedStep({
       stepName: "company-profile-crawl",
@@ -491,8 +503,71 @@ async function main(): Promise<void> {
 
     logInfo(`SERP results artifact path: ${serpResultsArtifactPath}`);
     logSuccess("SERP result collection stage completed");
+
+    const shouldForceContentRecommendation =
+      forceContentRecommendation ||
+      companyProfileResult.didRun ||
+      queryRecommendationsResult.didRun ||
+      serpResultsResult.didRun;
+
+    const contentRecommendationResult = await runCachedStep({
+      stepName: "serp-informed-content-recommendation",
+      artifactPath: contentRecommendationArtifactPath,
+      force: shouldForceContentRecommendation,
+      run: async () => {
+        const { generateContentRecommendation } = await import(
+          "./steps/generateContentRecommendation.js"
+        );
+
+        return generateContentRecommendation(
+          companyProfile,
+          queryRecommendations,
+          serpResults,
+          runContext.runId,
+        );
+      },
+    });
+    const contentRecommendation = contentRecommendationResult.data;
+
     logInfo(
-      "SERP result collection is complete; stopping before finalized content recommendation generation.",
+      `Content recommendation cache hit: ${contentRecommendationResult.cacheHit}`,
+    );
+    logInfo(
+      `Content recommendation step ran: ${contentRecommendationResult.didRun}`,
+    );
+    logInfo(
+      `Recommendations received: ${contentRecommendation.summary.recommendations_received}`,
+    );
+    logInfo(
+      `Recommendations analyzed: ${contentRecommendation.summary.recommendations_analyzed}`,
+    );
+    logInfo(
+      `Problem-demand content recommendations: ${contentRecommendation.summary.problem_demand_count}`,
+    );
+    logInfo(
+      `Solution-demand content recommendations: ${contentRecommendation.summary.solution_demand_count}`,
+    );
+    logInfo(
+      `High-confidence recommendations: ${contentRecommendation.summary.high_confidence_count}`,
+    );
+    logInfo(
+      `Medium-confidence recommendations: ${contentRecommendation.summary.medium_confidence_count}`,
+    );
+    logInfo(
+      `Low-confidence recommendations: ${contentRecommendation.summary.low_confidence_count}`,
+    );
+    logInfo(
+      `Mixed-intent recommendations: ${contentRecommendation.summary.mixed_intent_count}`,
+    );
+    logInfo(
+      `Insufficient-SERP recommendations: ${contentRecommendation.summary.insufficient_serp_count}`,
+    );
+    logInfo(
+      `Content recommendation artifact path: ${contentRecommendationArtifactPath}`,
+    );
+    logSuccess("SERP-informed content recommendation stage completed");
+    logInfo(
+      "SERP-informed content recommendation generation is complete.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);

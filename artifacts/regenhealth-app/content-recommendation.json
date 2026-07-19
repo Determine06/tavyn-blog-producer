@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "7b52a626-e433-4e1e-8cbb-bc4703dec45d",
+  "generated_at": "2026-07-19T19:57:27.741Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-recommendations.json",
+    "serp-results.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand had 7 confirmed queries; selected all 7 instead of 10.",
+    "solution_demand had 7 confirmed queries; selected all 7 instead of 10.",
+    "solution_demand produced 1 recommendation instead of target 2: One recommendation is appropriate because the base app-category query is the clearest exact fit, and the remaining solution queries are overlapping best, free, and iPhone variants that one page could substantially satisfy.",
+    "problem_demand_001 returned 9 organic results instead of 10.",
+    "problem_demand_002 returned 9 organic results instead of 10.",
+    "solution_demand_001 returned 9 organic results instead of 10.",
+    "problem_demand_001: This is a high-stakes topic, so the page should stay educational and avoid prescriptive treatment recommendations or unsupported clinical claims.",
+    "problem_demand_002: The SERP is product-led and mixed, so a generic informational article would not match the dominant search need.",
+    "solution_demand_001: The SERP is heavily app-listing driven, so the page should function like a clear product landing page rather than a generic blog post."
+  ],
+  "website_url": "https://regenhealth.app/",
+  "source_profile": {
+    "company_name": "REGEN",
+    "product_category": "peptide health tracking and reference app",
+    "primary_icp": "adults running their own peptide protocols"
+  },
+  "content_recommendations": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "primary_query": "peptide dosing protocols",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "high",
+        "summary": "Searchers appear to want practical dosing-protocol guidance, and Google is rewarding educational guides, dosing charts, and protocol resources that emphasize calculations, schedules, and step-by-step organization.",
+        "recurring_concepts": [
+          "dosing charts",
+          "reconstitution calculators",
+          "step-by-step protocols",
+          "titration schedules",
+          "stack protocols"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Peptide Dosing Protocols: A Practical Guide to Calculations, Timing, and Tracking",
+        "recommended_page_type": "guide",
+        "content_angle": "Create an evidence-based guide that helps readers organize peptide dosing protocols around calculations, timing, and record-keeping without turning the page into prescriptive treatment advice.",
+        "product_connection": "REGEN can appear as the tool that tracks doses and schedules, performs dose math, and surfaces cited reference guidance for adults managing their own protocols.",
+        "confidence": "medium",
+        "warnings": [
+          "This is a high-stakes topic, so the page should stay educational and avoid prescriptive treatment recommendations or unsupported clinical claims."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "primary_query": "peptide inventory",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "mixed",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to want a way to manage peptide inventory, and Google is rewarding apps and product or feature pages that highlight vial status, remaining doses, and expiry tracking.",
+        "recurring_concepts": [
+          "inventory tracking",
+          "vial status",
+          "remaining doses",
+          "expiry dates",
+          "reconstitution details"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Peptide Inventory Tracking for Vials, Expiry, and Remaining Doses",
+        "recommended_page_type": "feature_page",
+        "content_angle": "Build a focused feature page that shows how peptide inventory tracking reduces stock confusion by organizing vials, expiry, remaining amounts, and protocol history for self-directed users.",
+        "product_connection": "REGEN can naturally show its inventory workflow for reconstituted versus lyophilized vials, remaining mg, and expiry alerts without drifting away from the query's solution intent.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP is product-led and mixed, so a generic informational article would not match the dominant search need."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "primary_query": "peptide tracker app",
+      "serp_analysis": {
+        "dominant_intent": "transactional",
+        "dominant_page_type": "app_listing",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to be looking for a peptide tracking app to download, and Google is rewarding app listings and product pages that emphasize dose logging, scheduling, calculators, and protocol tracking.",
+        "recurring_concepts": [
+          "dose logging",
+          "schedule reminders",
+          "protocol tracking",
+          "calculators",
+          "free and paid options"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Peptide Tracker App for Dosing, Inventory, and Biomarker Trends",
+        "recommended_page_type": "product_page",
+        "content_angle": "Create a product-led page that explains how a peptide tracker app centralizes dosing, inventory, biomarker trends, and shared protocols in one workflow for self-directed users and coaches.",
+        "product_connection": "REGEN can appear as the app itself, with the free basic tracker and Pro features such as cited AI guidance, biomarker trends, photo meal scan, and shared protocols.",
+        "confidence": "high",
+        "warnings": [
+          "The SERP is heavily app-listing driven, so the page should function like a clear product landing page rather than a generic blog post."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "recommendations_received": 3,
+    "recommendations_analyzed": 3,
+    "problem_demand_count": 2,
+    "solution_demand_count": 1,
+    "high_confidence_count": 1,
+    "medium_confidence_count": 2,
+    "low_confidence_count": 0,
+    "mixed_intent_count": 0,
+    "insufficient_serp_count": 0
+  }
+}

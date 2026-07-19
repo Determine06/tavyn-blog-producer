@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "c36b413b-b901-4722-95bd-74f39333bcc4",
+  "generated_at": "2026-07-19T19:55:08.712Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-recommendations.json",
+    "serp-results.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "solution_demand produced 1 recommendation instead of target 2: One recommendation is appropriate because \"seo automation platform\" is the exact category Tavyn claims, while the other solution candidates are broader tool variants or price-led queries that would dilute the page's dominant commercial intent.",
+    "problem_demand_017 returned 7 organic results instead of 10.",
+    "solution_demand_001 returned 8 organic results instead of 10.",
+    "solution_demand_001: The SERP mixes listicles, landscape guides, and product pages, so the page should balance category education with buyer evaluation rather than read like a generic informational post."
+  ],
+  "website_url": "https://tavyn.dev/",
+  "source_profile": {
+    "company_name": "Tavyn",
+    "product_category": "SEO content workflow automation platform",
+    "primary_icp": "founder-led SaaS teams"
+  },
+  "content_recommendations": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "primary_query": "seo content brief",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "mixed",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to want a practical explanation of what an SEO content brief is and how to build one, and Google rewards guide-style results that frequently include template language and step-by-step creation advice.",
+        "recurring_concepts": [
+          "template",
+          "how to create",
+          "search intent",
+          "goals and objectives",
+          "audience and key components"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "SEO Content Brief Template for Founder-Led SaaS Teams",
+        "recommended_page_type": "template_guide",
+        "content_angle": "Create a practical, template-led guide that shows founder-led SaaS teams how to turn SERP research and product context into a brief they can actually use, with Tavyn framed as the workflow that gathers context and drafts the brief without adding heavy ops.",
+        "product_connection": "Tavyn can appear as the workflow that learns the product, asks the founder the right questions, and turns live SERP research into a publish-ready brief through email and GitHub.",
+        "confidence": "high",
+        "warnings": []
+      }
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "primary_query": "seo content plan",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "high",
+        "summary": "Searchers appear to want guidance on building an SEO content plan, and Google rewards guide-style content about strategy, prioritization, and scalable planning rather than a narrow tool or template page.",
+        "recurring_concepts": [
+          "strategy",
+          "keywords",
+          "prioritization",
+          "content plan",
+          "scalable organic growth"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "How to Build an SEO Content Plan for Founder-Led SaaS",
+        "recommended_page_type": "guide",
+        "content_angle": "Explain how lean SaaS teams can turn search opportunities into a prioritized SEO content plan, emphasizing realistic wins, pillar-supporting structure, and founder input so the page feels built for operationally lean teams.",
+        "product_connection": "Tavyn can appear as the agent that maps opportunities, organizes pillar and supporting pages, and keeps planning moving from inbox to GitHub without a heavy dashboard.",
+        "confidence": "high",
+        "warnings": []
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "primary_query": "seo automation platform",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "mixed",
+        "serp_consistency": "low",
+        "summary": "Searchers appear to be evaluating SEO automation solutions, and Google is rewarding a mix of comparison-style listicles, category guides, and product pages rather than a single consistent format.",
+        "recurring_concepts": [
+          "AI agents",
+          "best tools",
+          "free and paid",
+          "workflow automation",
+          "content operations"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "SEO Automation Platform: A Buying Guide for Founder-Led SaaS Teams",
+        "recommended_page_type": "category_guide",
+        "content_angle": "Frame the page as a category guide that helps SaaS buyers understand what an SEO automation platform does, how the workflow runs from opportunity discovery to shipping, and what matters most when evaluating lean-team fit.",
+        "product_connection": "Tavyn can appear as a concrete example of the category because it learns product context, writes briefs, and ships publish-ready content through GitHub or CMS workflows.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP mixes listicles, landscape guides, and product pages, so the page should balance category education with buyer evaluation rather than read like a generic informational post."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "recommendations_received": 3,
+    "recommendations_analyzed": 3,
+    "problem_demand_count": 2,
+    "solution_demand_count": 1,
+    "high_confidence_count": 2,
+    "medium_confidence_count": 1,
+    "low_confidence_count": 0,
+    "mixed_intent_count": 0,
+    "insufficient_serp_count": 0
+  }
+}
