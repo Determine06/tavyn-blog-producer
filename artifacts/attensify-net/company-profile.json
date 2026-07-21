@@ -1,0 +1,424 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://attensify.net/",
+  "generated_at": "2026-07-20T00:22:15.111Z",
+  "source_pages": [
+    {
+      "url": "https://attensify.net/",
+      "title": "Attensify — AI-Powered Digital Marketing Platform for Businesses"
+    },
+    {
+      "url": "https://attensify.net/pricing",
+      "title": "Pricing — AI Marketing Platform Plans | Attensify"
+    },
+    {
+      "url": "https://attensify.net/creators",
+      "title": "Creator Programme — Earn While You Grow | Attensify"
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "Attensify",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title: \"Attensify — AI-Powered Digital Marketing Platform for Businesses\"",
+        "Pricing page and creator page both use Attensify branding"
+      ]
+    },
+    "domain": "attensify.net",
+    "one_sentence_description": {
+      "value": "AI marketing platform that plans, executes, and optimizes content, ads, SEO, blogs, and website updates autonomously.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"plans, executes, and optimizes your content, ads, SEO, blog, and website — autonomously\"",
+        "Homepage: \"Your AI marketing team. Always on.\""
+      ]
+    },
+    "product_category": {
+      "value": "AI marketing automation platform",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"AI marketing platform\"",
+        "Pricing page: \"AI Marketing Platform Pricing\""
+      ]
+    },
+    "business_model": {
+      "value": "Freemium SaaS subscription with tiered monthly plans and a creator referral program",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page: Starter is free forever; Growth is \"$49/mo\"; Scale is \"$129/mo\"",
+        "Pricing page: \"14-Day Free Trial\" and month-to-month language",
+        "Creator page: \"30% recurring commission\" for referrals"
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "early-growth SaaS with live pricing and claimed customer traction",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: \"Trusted by 67+ businesses across 5 countries\"",
+        "Pricing page with live plan tiers and FAQ",
+        "Homepage: \"Free plan, no expiry\" and \"Live in 15 minutes\""
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "SMBs and growing businesses that want to automate digital marketing",
+      "description": "Primary buyers appear to be solo founders, growing businesses, and SMB teams looking to manage content, ads, SEO, and website updates in one system.",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page: \"Plans for SMBs and Agencies\"",
+        "Pricing page: Starter is \"For solo founders getting started\" and Growth is \"For growing businesses scaling up\"",
+        "Homepage: repeated emphasis on running marketing for \"businesses\" and \"growing businesses\""
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "Marketing agencies",
+        "description": "Agencies needing multi-client management, white-label reporting, and collaboration features.",
+        "confidence": "high",
+        "evidence": [
+          "Pricing page: \"For agencies & enterprise teams\"",
+          "Pricing page: Scale includes \"White-label reports\", \"Multi-client dashboard\", and \"Dedicated account manager\""
+        ]
+      },
+      {
+        "value": "Creators / micro-influencers",
+        "description": "Creators who join the referral program to promote Attensify and earn recurring commission.",
+        "confidence": "high",
+        "evidence": [
+          "Creator page: \"Turn your audience into recurring income\"",
+          "Creator page: \"Any content creator, marketer, or digital professional with under 50K followers\""
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The product page also shows examples from e-commerce, SaaS, consulting, and agency contexts, but those appear to be illustrative rather than exclusive ICPs.",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: industry examples include E-commerce, SaaS, Agency, Consulting",
+        "Pricing page and homepage consistently emphasize SMBs, growing businesses, and agencies"
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "Managing content, ads, SEO, and website updates across separate tools is time-consuming and fragmented.",
+      "description": "The platform repeatedly frames itself as a single system to replace juggling multiple marketing tools.",
+      "audience_segment": "SMBs, founders, and marketing teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage testimonial: \"Our team used to juggle four separate tools.\"",
+        "Homepage: \"one platform\" and \"single source of truth\" messaging"
+      ]
+    },
+    {
+      "pain": "Teams spend too much time manually planning, scheduling, and publishing marketing content.",
+      "description": "Copy emphasizes saving hours and automating planning and posting.",
+      "audience_segment": "Content and marketing teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage testimonial: \"70% less planning time\"",
+        "Homepage: content module says it \"writes, schedules, and publishes\""
+      ]
+    },
+    {
+      "pain": "Businesses need better ad performance and budget efficiency.",
+      "description": "The ads module stresses autonomous budget optimization, A/B testing, and ROAS improvement.",
+      "audience_segment": "Growth and performance marketers",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"AI launches and optimizes campaigns\"",
+        "Homepage testimonial: \"Our Meta ad ROAS jumped from 1.2x to 1.8x\""
+      ]
+    },
+    {
+      "pain": "SEO work is hard to keep up with and difficult to translate into rankings.",
+      "description": "The site positions SEO as continuous monitoring, auditing, and gap-finding to reach page 1.",
+      "audience_segment": "Marketing teams and founders",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"AI finds gaps and fixes them automatically\"",
+        "Homepage testimonial: \"We went from page 4 to page 2\""
+      ]
+    },
+    {
+      "pain": "Agencies need easier multi-client management and reporting.",
+      "description": "Agency-specific plans highlight white-label reports and a multi-client dashboard.",
+      "audience_segment": "Marketing agencies",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page: Scale includes \"white-label reports\" and \"multi-client dashboard\"",
+        "Testimonial: \"Managing 6 client accounts was chaos before this\""
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "plans and orchestrates marketing work from a plain-English prompt",
+      "description": "Users describe goals in natural language and the system breaks them into parallel workstreams.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Tell it what you want. Watch it work.\"",
+        "Homepage: \"Type what you want in plain English\" and it \"breaks it into a full marketing plan\""
+      ]
+    },
+    {
+      "capability": "writes, schedules, and publishes content across multiple social platforms",
+      "description": "Content module generates on-brand posts and auto-publishes them.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"AI writes in your brand voice\" and \"Auto-schedules\"",
+        "Homepage: \"Publishes to 15+ platforms simultaneously\""
+      ]
+    },
+    {
+      "capability": "launches and optimizes ad campaigns",
+      "description": "Ads module creates campaigns, writes copy, allocates budget, and tunes performance.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"writes the copy, allocates spend across Google, Meta, and LinkedIn\"",
+        "Homepage: \"Automated A/B testing\" and \"Real-time ROAS dashboard\""
+      ]
+    },
+    {
+      "capability": "researches, writes, and publishes SEO blog articles",
+      "description": "Blog module generates SEO-optimized long-form content from a topic or keyword.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"researches the SERP, writes an SEO-optimized long-form article, and publishes\"",
+        "Homepage: \"Auto-generated content briefs\""
+      ]
+    },
+    {
+      "capability": "tracks rankings and runs technical SEO audits",
+      "description": "SEO module monitors keywords, audits technical issues, and analyzes competitors.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"500+ keyword rank tracking\"",
+        "Homepage: \"Automated technical site audits\" and \"AI competitor gap analysis\""
+      ]
+    },
+    {
+      "capability": "builds and updates website pages",
+      "description": "Website module generates layouts, copy, CTAs, and supports A/B testing and Core Web Vitals monitoring.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"AI generates the layout, copy, and CTAs\"",
+        "Homepage: \"Autonomous A/B testing\" and \"Core Web Vitals monitoring\""
+      ]
+    },
+    {
+      "capability": "integrates with common marketing tools and platforms",
+      "description": "The site lists support for multiple tools and ad/social destinations.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Works with the tools you already use\" followed by WordPress, HubSpot, Ahrefs, Google Ads, SEMrush, Webflow, Hootsuite, Mailchimp, Buffer, Canva",
+        "Pricing FAQ: publishes to Instagram, LinkedIn, Twitter/X, Facebook, TikTok, Pinterest, YouTube, Threads, plus Google Ads, Meta Ads, and LinkedIn Ads"
+      ]
+    },
+    {
+      "capability": "supports team collaboration and multi-client management",
+      "description": "Higher tiers include seats, collaboration, and multi-client dashboards.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page: Growth includes \"Team collaboration (5 seats)\"",
+        "Pricing page: Scale includes \"Multi-client dashboard\""
+      ]
+    },
+    {
+      "capability": "offers white-label reporting, API access, and custom integrations",
+      "description": "These appear as scale-tier capabilities for advanced customers.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page: Scale includes \"White-label reports\", \"API access\", and \"Custom integrations\""
+      ]
+    },
+    {
+      "capability": "runs a creator referral and commission program",
+      "description": "The creator page provides referral links, tracking, and monthly payouts.",
+      "capability_type": "other",
+      "confidence": "high",
+      "evidence": [
+        "Creator page: \"30% recurring commission\"",
+        "Creator page: \"real-time\" dashboard and monthly payouts via UPI/bank transfer"
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "Attensify positions itself as an autonomous, all-in-one AI marketing team that replaces fragmented marketing tools and manual execution for SMBs and agencies.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Your AI marketing team. Always on.\"",
+        "Homepage: \"one platform\" and \"no human hand-holding required\"",
+        "Pricing page: \"Plans for SMBs and Agencies\""
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "Autonomous execution across multiple channels",
+        "description": "The platform claims to plan and execute content, ads, SEO, blogs, and website work in parallel from one prompt.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"plans, executes, and optimizes\"",
+          "Homepage: \"5 parallel workstreams\""
+        ]
+      },
+      {
+        "differentiator": "All-in-one marketing operating system",
+        "description": "Attensify emphasizes unifying content, ads, SEO, blog, and website updates in one dashboard.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"AI-powered content, ads, SEO, blog & website — one platform\"",
+          "Homepage testimonial: \"single source of truth\""
+        ]
+      },
+      {
+        "differentiator": "Performance-based creator acquisition channel",
+        "description": "The creator program is framed as a no-upfront-cost, recurring-commission channel for acquiring customers.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage and creator page: creator program promises commission per sale and zero upfront cost",
+          "Creator page: \"30% recurring commission\""
+        ]
+      },
+      {
+        "differentiator": "Agency-ready packaging",
+        "description": "Higher tiers add white-label reports, multi-client management, API access, SSO, and account management.",
+        "confidence": "high",
+        "evidence": [
+          "Pricing page: Scale plan includes \"White-label reports\", \"API access\", \"SSO & RBAC\", \"Dedicated account manager\""
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "Marketing should be run by an always-on AI system that unifies strategy, execution, and optimization instead of separate tools and manual handoffs.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Your AI marketing team. Always on.\"",
+        "Homepage: \"no human hand-holding required\"",
+        "Homepage: \"one AI command\""
+      ]
+    },
+    "positioning_notes": {
+      "value": "The site uses strong automation language and a broad marketing scope; the core promise is speed, consolidation, and autonomous execution rather than a single-point marketing tool.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"autonomously\"",
+        "Homepage: \"Ship faster. Save hours.\"",
+        "Pricing and testimonials repeatedly stress time savings and consolidation"
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "direct",
+        "confident",
+        "results-oriented",
+        "authoritative",
+        "AI-forward"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Tell it what you want. Watch it work.\"",
+        "Brand voice labels on homepage: \"Direct\", \"Authoritative\"",
+        "Homepage agent example: \"On it\""
+      ]
+    },
+    "writing_style": {
+      "value": "Punchy, benefit-led, and operational, with short claims, outcome metrics, and product-demo style examples.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage and pricing pages use short headline statements and metric callouts like \"10 hrs saved/mo\" and \"1.8x ROAS\"",
+        "Frequent use of module labels and action-oriented language"
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "Always on",
+        "context": "Core homepage positioning for the AI marketing team",
+        "evidence": [
+          "Homepage headline: \"Your AI marketing team. Always on.\""
+        ]
+      },
+      {
+        "phrase": "Run marketing on autopilot",
+        "context": "Repeated promise on homepage and closing CTA",
+        "evidence": [
+          "Homepage: \"run marketing on autopilot\""
+        ]
+      },
+      {
+        "phrase": "No human hand-holding required",
+        "context": "Autonomous execution claim",
+        "evidence": [
+          "Homepage: \"no human hand-holding required\""
+        ]
+      },
+      {
+        "phrase": "Single source of truth",
+        "context": "Testimonial and consolidation message",
+        "evidence": [
+          "Homepage testimonial: \"single source of truth\""
+        ]
+      },
+      {
+        "phrase": "Start free",
+        "context": "Pricing and CTA language",
+        "evidence": [
+          "Homepage and pricing page CTAs: \"Start Free\" / \"Start for free\""
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "Combines capability claims with outcome metrics such as time saved, ROAS lift, and rank improvement.",
+        "description": "The site repeatedly pairs feature descriptions with quantified results.",
+        "evidence": [
+          "Homepage testimonials: \"10 hrs saved/mo\", \"1.8x ROAS\", \"Page 2 in 90 days\""
+        ]
+      },
+      {
+        "pattern": "Uses demo-like agent walkthroughs to show autonomous workflow execution.",
+        "description": "The homepage includes staged task execution and progress updates to illustrate the product experience.",
+        "evidence": [
+          "Homepage: \"5 parallel workstreams\" and task timeline / module completion"
+        ]
+      },
+      {
+        "pattern": "Frames the product as a replacement for multiple tools and manual coordination.",
+        "description": "Messaging stresses unification of content, ads, SEO, and website work in one place.",
+        "evidence": [
+          "Homepage: \"juggle four separate tools\" testimonial",
+          "Homepage: \"one platform\" and \"single source of truth\""
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Exact company size and founding date are not stated",
+      "Pricing details for annual billing discount are not specified",
+      "Customer logos and named case studies are limited",
+      "Some homepage content appears demo-like and may blur product capabilities with illustrative outputs"
+    ],
+    "potential_risks": [
+      "Repeated UI/demo sections may make the platform feel broader or more mature than the core evidence supports.",
+      "Some claims are presented as performance examples or testimonials and should not be treated as independently verified results.",
+      "The creator program page is a separate audience stream and should not be confused with the primary customer ICP."
+    ],
+    "notes": "The crawl provides strong direct evidence across homepage, pricing, and creator pages. Product scope, audience, and positioning are clear, but maturity should be treated as medium-confidence because evidence is limited to marketing pages and self-reported traction."
+  }
+}

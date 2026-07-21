@@ -2,7 +2,12 @@ import { randomUUID } from "node:crypto";
 
 import { env } from "./config/env.js";
 import { runCachedStep } from "./cache/runCachedStep.js";
-import { logError, logInfo, logSuccess } from "./lib/logger.js";
+import {
+  logError,
+  logInfo,
+  logRunSummary,
+  logSuccess,
+} from "./lib/logger.js";
 
 type CliOptions = {
   websiteUrl: string;
@@ -17,6 +22,7 @@ type CliOptions = {
   forceQueryRecommendations: boolean;
   forceContentRecommendation: boolean;
   forceCompetitorLandscape: boolean;
+  forceCompanyReport: boolean;
 };
 
 type RunContext = {
@@ -52,6 +58,7 @@ function parseCliOptions(argv: string[]): CliOptions {
   const forceCompetitorLandscape = argv.includes(
     "--force-competitor-landscape",
   );
+  const forceCompanyReport = argv.includes("--force-company-report");
   const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
 
   return {
@@ -67,11 +74,12 @@ function parseCliOptions(argv: string[]): CliOptions {
     forceQueryRecommendations,
     forceContentRecommendation,
     forceCompetitorLandscape,
+    forceCompanyReport,
   };
 }
 
 function createRunContext(websiteUrl: string): RunContext {
-  const normalizedUrl = new URL(websiteUrl);
+  const normalizedUrl = new URL(normalizeWebsiteUrlInput(websiteUrl));
 
   return {
     runId: randomUUID(),
@@ -85,11 +93,36 @@ function createRunContext(websiteUrl: string): RunContext {
   };
 }
 
+function normalizeWebsiteUrlInput(websiteUrl: string): string {
+  const trimmedWebsiteUrl = websiteUrl.trim();
+
+  if (/^[a-zA-Z][a-zA-Z\d+\-.]*:\/\//.test(trimmedWebsiteUrl)) {
+    return trimmedWebsiteUrl;
+  }
+
+  return `https://${trimmedWebsiteUrl}`;
+}
+
 function createSafeHostname(websiteUrl: string): string {
   return new URL(websiteUrl).hostname
     .replace(/^www\./, "")
     .replace(/[^a-zA-Z0-9-]/g, "-")
     .toLowerCase();
+}
+
+function slugify(value: string): string {
+  const slug = value
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+  if (slug.length === 0) {
+    throw new Error(`Cannot slugify empty value from "${value}".`);
+  }
+
+  return slug;
 }
 
 async function main(): Promise<void> {
@@ -107,6 +140,7 @@ async function main(): Promise<void> {
       forceQueryRecommendations,
       forceContentRecommendation,
       forceCompetitorLandscape,
+      forceCompanyReport,
     } = parseCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
@@ -147,6 +181,7 @@ async function main(): Promise<void> {
     logInfo(`forceQueryRecommendations: ${forceQueryRecommendations}`);
     logInfo(`forceContentRecommendation: ${forceContentRecommendation}`);
     logInfo(`forceCompetitorLandscape: ${forceCompetitorLandscape}`);
+    logInfo(`forceCompanyReport: ${forceCompanyReport}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
     logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
@@ -217,6 +252,14 @@ async function main(): Promise<void> {
     logInfo(
       `Overall confidence: ${companyProfile.profile_quality.overall_confidence}`,
     );
+
+    const companySlug = slugify(
+      companyProfile.company_identity.company_name.value,
+    );
+    const companyReportArtifactPath =
+      `artifacts/${safeHostname}/${companySlug}-report.json`;
+
+    logInfo(`Company report artifact path: ${companyReportArtifactPath}`);
 
     const shouldForceSeedKeywords =
       forceSeedKeywords || companyProfileResult.didRun;
@@ -624,12 +667,65 @@ async function main(): Promise<void> {
       `Competitor landscape artifact path: ${competitorLandscapeArtifactPath}`,
     );
     logSuccess("Competitor landscape collection stage completed");
+
+    const shouldForceCompanyReport =
+      forceCompanyReport ||
+      companyProfileResult.didRun ||
+      keywordMetricsResult.didRun ||
+      confirmedQueriesResult.didRun ||
+      queryOpportunitiesResult.didRun ||
+      queryRecommendationsResult.didRun ||
+      serpResultsResult.didRun ||
+      contentRecommendationResult.didRun ||
+      competitorLandscapeResult.didRun;
+
+    const companyReportResult = await runCachedStep({
+      stepName: "deterministic-company-report-assembly",
+      artifactPath: companyReportArtifactPath,
+      force: shouldForceCompanyReport,
+      run: async () => {
+        const { generateCompanyReport } = await import(
+          "./steps/generateCompanyReport.js"
+        );
+
+        return generateCompanyReport(
+          companyProfile,
+          keywordMetrics,
+          confirmedQueries,
+          queryOpportunities,
+          queryRecommendations,
+          serpResults,
+          contentRecommendation,
+          competitorLandscape,
+          runContext.runId,
+        );
+      },
+    });
+    const companyReport = companyReportResult.data;
+
+    logInfo(`Company report cache hit: ${companyReportResult.cacheHit}`);
+    logInfo(`Company report step ran: ${companyReportResult.didRun}`);
+    logInfo(`Report ID: ${companyReport.report_id}`);
+    logInfo(`Report slug: ${companyReport.report_slug}`);
     logInfo(
-      "Competitor landscape collection is complete.",
+      `Company report validated query count: ${companyReport.validated_queries.summary.total}`,
+    );
+    logInfo(
+      `Company report competitor count: ${companyReport.competitor_landscape.summary.competitors_included}`,
+    );
+    logInfo(
+      `Company report content-plan item count: ${companyReport.content_plan.summary.selected_count}`,
+    );
+    logInfo(`Company report artifact path: ${companyReportArtifactPath}`);
+    logSuccess("Deterministic company report assembly stage completed");
+    logInfo(
+      "Pipeline completed with deterministic company report assembly.",
     );
   } catch (error) {
     logError("Local pipeline run failed", error);
     process.exitCode = 1;
+  } finally {
+    logRunSummary();
   }
 }
 

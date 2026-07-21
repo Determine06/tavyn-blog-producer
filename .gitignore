@@ -3,3 +3,5 @@ dist
 .env
 .env.bak
 .DS_Store
+
+.env 2

@@ -1,0 +1,2268 @@
+{
+  "schema_version": "1.2.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:23:29.606Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://attensify.net/",
+  "scoring_method": {
+    "name": "search_demand_times_organic_attainability",
+    "version": "1.1.0",
+    "missing_keyword_difficulty_default": 50,
+    "volume_normalization": "log1p_relative_to_territory_max",
+    "combination_method": "multiplicative",
+    "formula": "100 * volume_score * difficulty_score"
+  },
+  "territory_rankings": [
+    {
+      "territory": "problem_demand",
+      "confirmed_query_count": 41,
+      "maximum_search_volume": 260,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "problem_demand_028",
+          "territory": "problem_demand",
+          "query": "marketing workflow",
+          "validation_reasoning": "This is a concrete operational workflow in the company’s core marketing automation problem space.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 28,
+          "core_keyword": "marketing workflows",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 210,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -48,
+              "quarterly": -58,
+              "yearly": -66
+            },
+            "cpc": 74.6,
+            "paid_competition": 0.14,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": [
+                "informational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 19,
+              "referring_domains": 6,
+              "main_domain_rank": 452.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 210,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.9618,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 96.2
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "problem_demand_097",
+          "territory": "problem_demand",
+          "query": "marketing automation workflows",
+          "validation_reasoning": "This directly describes marketing automation workflows, which are central to Attensify’s problem space.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 97,
+          "core_keyword": "workflow marketing automation",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 260,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -34,
+              "quarterly": 24,
+              "yearly": -64
+            },
+            "cpc": null,
+            "paid_competition": 0.05,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 171.3,
+              "referring_domains": 83,
+              "main_domain_rank": 484.2
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 260,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 1,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 93
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "problem_demand_054",
+          "territory": "problem_demand",
+          "query": "content marketing workflow",
+          "validation_reasoning": "This names a concrete content workflow that Attensify supports through planning, writing, scheduling, and publishing.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 54,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 110,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 110
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -64,
+              "quarterly": -44,
+              "yearly": -64
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 6,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 47.3,
+              "referring_domains": 14.6,
+              "main_domain_rank": 561.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 110,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.8463,
+            "keyword_difficulty_original": 6,
+            "keyword_difficulty_used": 6,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.94,
+            "opportunity_score": 79.6
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "problem_demand_003",
+          "territory": "problem_demand",
+          "query": "digital marketing workflow",
+          "validation_reasoning": "This asks about the workflow of digital marketing, which is a concrete operational process Attensify helps automate.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 3,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 70,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 70
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -64,
+              "quarterly": -71,
+              "yearly": -56
+            },
+            "cpc": null,
+            "paid_competition": 0.03,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 16.5,
+              "referring_domains": 4.4,
+              "main_domain_rank": 482.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 70,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.766,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 76.6
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "problem_demand_048",
+          "territory": "problem_demand",
+          "query": "automated marketing campaigns",
+          "validation_reasoning": "This is a concrete campaign automation workflow that matches Attensify’s ads and marketing execution scope.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 48,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 140,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 110
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 56,
+              "quarterly": 100,
+              "yearly": -46
+            },
+            "cpc": 78.21,
+            "paid_competition": 0.07,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 21,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 16223.5,
+              "referring_domains": 1531,
+              "main_domain_rank": 480.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 140,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.8893,
+            "keyword_difficulty_original": 21,
+            "keyword_difficulty_used": 21,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.79,
+            "opportunity_score": 70.3
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "problem_demand_057",
+          "territory": "problem_demand",
+          "query": "automated marketing reports",
+          "validation_reasoning": "This seeks automated reporting output from marketing workflows, a concrete supported outcome.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 57,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 50,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 40
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -82
+            },
+            "cpc": 48.43,
+            "paid_competition": 0.04,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 4,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 460.4,
+              "referring_domains": 119.5,
+              "main_domain_rank": 403.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 50,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.7066,
+            "keyword_difficulty_original": 4,
+            "keyword_difficulty_used": 4,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.96,
+            "opportunity_score": 67.8
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "problem_demand_047",
+          "territory": "problem_demand",
+          "query": "ai marketing workflow",
+          "validation_reasoning": "This clearly points to an AI-driven marketing workflow, which is central to Attensify’s product.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 47,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 40,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 50
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -64,
+              "quarterly": -20,
+              "yearly": -43
+            },
+            "cpc": 6.51,
+            "paid_competition": 0.16,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 6,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 25.8,
+              "referring_domains": 6.8,
+              "main_domain_rank": 520.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 40,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.6674,
+            "keyword_difficulty_original": 6,
+            "keyword_difficulty_used": 6,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.94,
+            "opportunity_score": 62.7
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "problem_demand_065",
+          "territory": "problem_demand",
+          "query": "marketing workflow examples",
+          "validation_reasoning": "This asks for examples of a marketing workflow, a concrete process Attensify helps automate.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 65,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 30,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -67,
+              "quarterly": 0,
+              "yearly": 0
+            },
+            "cpc": null,
+            "paid_competition": 0.29,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 21,
+              "referring_domains": 6,
+              "main_domain_rank": 381.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 30,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.6171,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 61.7
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "problem_demand_005",
+          "territory": "problem_demand",
+          "query": "digital marketing operations",
+          "validation_reasoning": "This refers to the operational work of running digital marketing, which matches Attensify’s automation focus.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 5,
+          "core_keyword": "digital operative marketing",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 30,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 50
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -33,
+              "yearly": -33
+            },
+            "cpc": null,
+            "paid_competition": 0.07,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 12.2,
+              "referring_domains": 6.5,
+              "main_domain_rank": 486.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 30,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.6171,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 61.7
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "problem_demand_064",
+          "territory": "problem_demand",
+          "query": "marketing workflow example",
+          "validation_reasoning": "This seeks an example of a marketing workflow, which is a concrete process in the company’s problem space.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 64,
+          "core_keyword": "marketing workflow examples",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 30,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -67,
+              "quarterly": 0,
+              "yearly": 0
+            },
+            "cpc": null,
+            "paid_competition": 0.29,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 1,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 21.5,
+              "referring_domains": 8.3,
+              "main_domain_rank": 408.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 30,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.6171,
+            "keyword_difficulty_original": 1,
+            "keyword_difficulty_used": 1,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.99,
+            "opportunity_score": 61.1
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "confirmed_query_count": 69,
+      "maximum_search_volume": 40500,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "solution_demand_062",
+          "territory": "solution_demand",
+          "query": "digital marketing platform for small businesses",
+          "validation_reasoning": "This is commercial intent for a digital marketing platform aimed at small businesses, matching the primary ICP.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 62,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 40500,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 33100
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 60500
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 90500
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 110000
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 33100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 18100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 74000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90500
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -91,
+              "quarterly": -95,
+              "yearly": 1015
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 42,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 158180.3,
+              "referring_domains": 5361,
+              "main_domain_rank": 653.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 40500,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 1,
+            "keyword_difficulty_original": 42,
+            "keyword_difficulty_used": 42,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.58,
+            "opportunity_score": 58
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "solution_demand_027",
+          "territory": "solution_demand",
+          "query": "digital marketing tools",
+          "validation_reasoning": "This is a commercial query for digital marketing tools, an immediate parent category of the product.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 27,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -33,
+              "yearly": -80
+            },
+            "cpc": 13.04,
+            "paid_competition": 0.15,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 18,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 255.1,
+              "referring_domains": 74.2,
+              "main_domain_rank": 450.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.6955,
+            "keyword_difficulty_original": 18,
+            "keyword_difficulty_used": 18,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.82,
+            "opportunity_score": 57
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "solution_demand_029",
+          "territory": "solution_demand",
+          "query": "marketing ai tools",
+          "validation_reasoning": "This is commercial intent for AI marketing tools, which fits the product’s category and positioning.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 29,
+          "core_keyword": "ai marketing tools",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 480,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 590
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 23,
+              "quarterly": 0,
+              "yearly": -33
+            },
+            "cpc": 59.8,
+            "paid_competition": 0.52,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 6,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 308.9,
+              "referring_domains": 140,
+              "main_domain_rank": 432.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 480,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.5821,
+            "keyword_difficulty_original": 6,
+            "keyword_difficulty_used": 6,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.94,
+            "opportunity_score": 54.7
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "solution_demand_020",
+          "territory": "solution_demand",
+          "query": "marketing automation software",
+          "validation_reasoning": "This is a direct commercial query for marketing automation software.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 20,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 2400
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -54
+            },
+            "cpc": 49.92,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 34,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 5974.7,
+              "referring_domains": 413.7,
+              "main_domain_rank": 483.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2400,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.7337,
+            "keyword_difficulty_original": 34,
+            "keyword_difficulty_used": 34,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.66,
+            "opportunity_score": 48.4
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "solution_demand_015",
+          "territory": "solution_demand",
+          "query": "marketing automation tools",
+          "validation_reasoning": "This is a direct solution-category query for marketing automation tools.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 15,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1300
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -18,
+              "yearly": -69
+            },
+            "cpc": 65.47,
+            "paid_competition": 0.23,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 26,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 234.6,
+              "referring_domains": 121.1,
+              "main_domain_rank": 540.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1000,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.6512,
+            "keyword_difficulty_original": 26,
+            "keyword_difficulty_used": 26,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.74,
+            "opportunity_score": 48.2
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "solution_demand_042",
+          "territory": "solution_demand",
+          "query": "ai digital marketing",
+          "validation_reasoning": "This is a direct solution-category query for AI applied to digital marketing.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 42,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1300,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -12,
+              "quarterly": -32,
+              "yearly": -70
+            },
+            "cpc": 39.07,
+            "paid_competition": 0.38,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 30,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 437.3,
+              "referring_domains": 235.9,
+              "main_domain_rank": 429.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1300,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.6759,
+            "keyword_difficulty_original": 30,
+            "keyword_difficulty_used": 30,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.7,
+            "opportunity_score": 47.3
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "solution_demand_056",
+          "territory": "solution_demand",
+          "query": "digital marketing software",
+          "validation_reasoning": "This is a broad but immediate parent software category for Attensify.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 56,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 260,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 390
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -19,
+              "quarterly": -19,
+              "yearly": -65
+            },
+            "cpc": 45.34,
+            "paid_competition": 0.17,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 16,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 86.5,
+              "referring_domains": 43.3,
+              "main_domain_rank": 551.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 260,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.5245,
+            "keyword_difficulty_original": 16,
+            "keyword_difficulty_used": 16,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.84,
+            "opportunity_score": 44.1
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "solution_demand_086",
+          "territory": "solution_demand",
+          "query": "ai powered marketing platform",
+          "validation_reasoning": "This is an immediate parent category query for an AI-powered marketing platform.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 86,
+          "core_keyword": "ai-powered marketing platform",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 4400
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 480
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -70,
+              "quarterly": -64,
+              "yearly": 120
+            },
+            "cpc": 17.91,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 47,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 7394.6,
+              "referring_domains": 828.1,
+              "main_domain_rank": 466.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2900,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.7515,
+            "keyword_difficulty_original": 47,
+            "keyword_difficulty_used": 47,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.53,
+            "opportunity_score": 39.8
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "solution_demand_006",
+          "territory": "solution_demand",
+          "query": "ai tools for digital marketing",
+          "validation_reasoning": "This is commercial intent for AI tools used in digital marketing, an immediate parent category of Attensify’s solution.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 6,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 260,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -19,
+              "quarterly": -35,
+              "yearly": -65
+            },
+            "cpc": 56.84,
+            "paid_competition": 0.18,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 25,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 464.1,
+              "referring_domains": 243.7,
+              "main_domain_rank": 498
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 260,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.5245,
+            "keyword_difficulty_original": 25,
+            "keyword_difficulty_used": 25,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.75,
+            "opportunity_score": 39.3
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "solution_demand_091",
+          "territory": "solution_demand",
+          "query": "tools for digital marketing agency",
+          "validation_reasoning": "This is commercial intent for tools used by digital marketing agencies, a supported secondary audience.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 91,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 110,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 140
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -57
+            },
+            "cpc": 104.47,
+            "paid_competition": 0.03,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 16,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 230.3,
+              "referring_domains": 67.7,
+              "main_domain_rank": 503.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 110,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.4439,
+            "keyword_difficulty_original": 16,
+            "keyword_difficulty_used": 16,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.84,
+            "opportunity_score": 37.3
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "confirmed_queries_considered": 110,
+    "problem_queries_considered": 41,
+    "solution_queries_considered": 69,
+    "problem_queries_selected": 10,
+    "solution_queries_selected": 10,
+    "total_queries_selected": 20,
+    "missing_keyword_difficulty_selected": 0
+  }
+}

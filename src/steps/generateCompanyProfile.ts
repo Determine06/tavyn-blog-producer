@@ -138,7 +138,7 @@ export async function generateCompanyProfileContext(
   logInfo(`Website URL: ${websiteUrl}`);
 
   const crawlResult = await firecrawl.crawl(websiteUrl, {
-    limit: 8,
+    limit: 3,
     maxDiscoveryDepth: 1,
     sitemap: "skip",
     excludePaths: BLOCKED_PROFILE_PATHS,

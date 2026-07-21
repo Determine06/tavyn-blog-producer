@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:25:00.337Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-recommendations.json",
+    "serp-results.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand_028 returned 8 organic results instead of 10.",
+    "problem_demand_048 returned 8 organic results instead of 10.",
+    "solution_demand_062 returned 9 organic results instead of 10.",
+    "solution_demand_091 returned 8 organic results instead of 10.",
+    "problem_demand_048: The SERP mixes definitions, examples, and product pages, so the page should stay educational rather than read like a feature pitch.",
+    "solution_demand_062: The SERP is comparison-heavy and competitive, so the page should clearly help readers evaluate options rather than act like a standalone product announcement.",
+    "solution_demand_091: The SERP is broad and tool-roundup driven, so the page should not overstate Attensify as a replacement for every agency software category."
+  ],
+  "website_url": "https://attensify.net/",
+  "source_profile": {
+    "company_name": "Attensify",
+    "product_category": "AI marketing automation platform",
+    "primary_icp": "SMBs and growing businesses that want to automate digital marketing"
+  },
+  "content_recommendations": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "problem_demand_028",
+      "territory": "problem_demand",
+      "primary_query": "marketing workflow",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "high",
+        "summary": "Searchers appear to want a plain-English explanation of marketing workflows and workflow automation, and Google is rewarding educational guides that define the process, explain the steps, and connect it to software.",
+        "recurring_concepts": [
+          "structured steps",
+          "approvals",
+          "automation",
+          "software and tools",
+          "workflow management"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Marketing Workflow: How to Automate Planning, Approvals, and Execution",
+        "recommended_page_type": "guide",
+        "content_angle": "The page should explain how teams can centralize and automate end-to-end marketing workflows across planning, content, SEO, ads, and website updates, with a practical SMB lens that turns a vague process query into an operational playbook.",
+        "product_connection": "Attensify can appear as the always-on system that turns a plain-English marketing goal into coordinated execution across content, ads, SEO, blogs, and website updates.",
+        "confidence": "high",
+        "warnings": []
+      }
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "primary_query": "automated marketing campaigns",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to want a definition of automated marketing campaigns plus practical examples, and Google is rewarding educational explainers that cover common campaign types, triggers, and setup basics.",
+        "recurring_concepts": [
+          "marketing automation",
+          "repetitive tasks",
+          "campaign examples",
+          "triggers and actions",
+          "automation software"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Automated Marketing Campaigns: What They Are and How to Build Them",
+        "recommended_page_type": "guide",
+        "content_angle": "The page should explain what automated marketing campaigns are, show the most common campaign patterns, and help SMB teams understand where automation reduces manual work without turning the article into a product pitch.",
+        "product_connection": "Attensify can fit naturally as the system that creates, launches, and optimizes campaigns across Google, Meta, and LinkedIn from one workflow.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP mixes definitions, examples, and product pages, so the page should stay educational rather than read like a feature pitch."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "primary_query": "digital marketing platform for small businesses",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "listicle",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to be comparing all-in-one digital marketing platforms for small businesses, and Google is rewarding comparison-style listicles that emphasize broad capability, affordability, and multi-function use.",
+        "recurring_concepts": [
+          "all-in-one platforms",
+          "small-business marketing",
+          "automation",
+          "budget-friendly options",
+          "multi-channel tools"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Digital Marketing Platform for Small Businesses: Comparing All-in-One Options",
+        "recommended_page_type": "comparison_page",
+        "content_angle": "The page should help small businesses evaluate what an effective digital marketing platform needs to cover, then compare the core capabilities that matter most for replacing fragmented tools with one system.",
+        "product_connection": "Attensify can be framed as the all-in-one AI marketing platform that consolidates content, ads, SEO, blogs, and website updates for SMB teams.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP is comparison-heavy and competitive, so the page should clearly help readers evaluate options rather than act like a standalone product announcement."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "solution_demand_091",
+      "territory": "solution_demand",
+      "primary_query": "tools for digital marketing agency",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "listicle",
+        "serp_consistency": "high",
+        "summary": "Searchers appear to be comparing tool stacks for agency work, and Google is rewarding list-style guides that group tools by reporting, automation, project management, and client operations.",
+        "recurring_concepts": [
+          "agency tool stacks",
+          "reporting and analytics",
+          "marketing automation",
+          "client management",
+          "project and workflow tools"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Tools for Digital Marketing Agency Teams: The Core Stack for Reporting and Automation",
+        "recommended_page_type": "listicle",
+        "content_angle": "The page should explain which tools agencies need across reporting, collaboration, automation, and client management, with a clear framework that helps agency buyers understand where each tool fits in the stack.",
+        "product_connection": "Attensify can be presented as an agency-ready marketing automation platform with multi-client dashboards, white-label reports, team collaboration, and API access.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP is broad and tool-roundup driven, so the page should not overstate Attensify as a replacement for every agency software category."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "recommendations_received": 4,
+    "recommendations_analyzed": 4,
+    "problem_demand_count": 2,
+    "solution_demand_count": 2,
+    "high_confidence_count": 1,
+    "medium_confidence_count": 3,
+    "low_confidence_count": 0,
+    "mixed_intent_count": 0,
+    "insufficient_serp_count": 0
+  }
+}

@@ -1,5 +1,10 @@
 import { getRequiredEnvVar } from "../config/env.js";
-import { logInfo, logStep, logSuccess } from "../lib/logger.js";
+import {
+  logInfo,
+  logStep,
+  logSuccess,
+  recordDataForSeoUsage,
+} from "../lib/logger.js";
 import {
   ConfirmedQueriesSchema,
   type ConfirmedQueries,
@@ -107,6 +112,7 @@ export async function generateCompetitorLandscape(
     queryPreparation.uniqueQueries.map((entry) => entry.normalizedQuery),
     targetDomainExclusionFilter,
   );
+  recordDataForSeoUsage("Competitor landscape", 1, 1, response.cost);
   const warnings: string[] = [];
 
   if (queryPreparation.duplicateQueriesRemoved > 0) {

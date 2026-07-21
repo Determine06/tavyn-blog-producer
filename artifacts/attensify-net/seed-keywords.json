@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:22:34.558Z",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://attensify.net/",
+  "source_profile": {
+    "company_name": "Attensify",
+    "product_category": "AI marketing automation platform",
+    "primary_icp": "SMBs and growing businesses that want to automate digital marketing"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "marketing automation for SMBs",
+      "territory_summary": "Search demand around automating fragmented digital marketing work for SMBs and growing businesses.",
+      "market_topic": "digital marketing automation",
+      "primary_icp": "SMBs and growing businesses that want to automate digital marketing",
+      "product_connection": "The product is positioned as an autonomous marketing system that replaces manual coordination across content, ads, SEO, blogs, and website updates.",
+      "evidence": [
+        {
+          "source_field": "buyer_pains[0].pain",
+          "evidence_text": "Managing content, ads, SEO, and website updates across separate tools is time-consuming and fragmented.",
+          "reasoning": "This is the core problem the territory should represent: fragmented marketing execution across channels and tools."
+        },
+        {
+          "source_field": "icp_and_audience.primary_icp.value",
+          "evidence_text": "SMBs and growing businesses that want to automate digital marketing",
+          "reasoning": "This supports qualifying the problem territory around SMB digital marketing automation rather than a generic enterprise workflow."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "pd1",
+          "keyword": "marketing automation",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Shortest natural expression of the central problem of automating marketing work.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd2",
+          "keyword": "SMB marketing automation",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Adds the supported ICP qualifier to keep the discovery market focused on smaller businesses.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd3",
+          "keyword": "digital marketing automation",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures the broader process of automating cross-channel marketing execution.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd4",
+          "keyword": "marketing workflow automation",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents the operational process pain of manually coordinating marketing tasks across tools.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd5",
+          "keyword": "automated marketing",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A common synonym that preserves the same market direction while varying the phrasing.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "pd6",
+          "keyword": "marketing operations",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A broader market synonym that can surface related demand around running marketing more efficiently.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "AI marketing automation software",
+      "territory_summary": "Search demand around software categories that use AI and automation to plan and execute marketing work.",
+      "market_topic": "AI marketing automation",
+      "primary_icp": "SMBs and growing businesses that want to automate digital marketing",
+      "product_connection": "The product is explicitly described as an AI marketing platform that plans, executes, and optimizes content, ads, SEO, blogs, and website updates autonomously.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "AI marketing automation platform",
+          "reasoning": "This is the clearest established solution-category language for the product."
+        },
+        {
+          "source_field": "differentiation_and_positioning.positioning_summary.value",
+          "evidence_text": "Autonomous, all-in-one AI marketing team that replaces fragmented marketing tools and manual execution",
+          "reasoning": "This supports solution seeds centered on AI-driven marketing software and automation rather than a single feature."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "sd1",
+          "keyword": "ai marketing automation platform",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Direct, natural category language for the product’s established solution type.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd2",
+          "keyword": "marketing automation software for smb",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Keeps the solution category tied to the supported SMB buyer segment.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd3",
+          "keyword": "autonomous marketing automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Reflects the product’s core approach of autonomous execution from a prompt.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "sd4",
+          "keyword": "ai marketing software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A recognizable commercial discovery category that remains aligned with the product’s scope.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd5",
+          "keyword": "ai marketing tools",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A standard buyer-facing category phrase that can surface tool-evaluation demand in the same market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd6",
+          "keyword": "digital marketing automation software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A broader software-category seed that stays within the product’s multi-channel marketing scope.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "The profile does not state a more precise priority between SMB and agency demand, so the primary ICP was used conservatively.",
+      "The product category is broad, so solution seeds were kept close to established marketing automation and AI marketing language."
+    ],
+    "potential_risks": [
+      "The product spans multiple marketing functions, so some seeds may attract adjacent demand across content, ads, SEO, and website workflows.",
+      "The solution category is broad and may overlap with general marketing software searches, so qualifiers were used selectively to reduce drift."
+    ],
+    "notes": "The company profile provides strong evidence for a broad AI marketing automation market aimed primarily at SMBs and growing businesses. Seeds were kept conservative and centered on established market language rather than product-specific workflow details."
+  }
+}

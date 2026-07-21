@@ -1,0 +1,527 @@
+{
+  "schema_version": "1.1.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:23:29.617Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-opportunities.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://attensify.net/",
+  "source_profile": {
+    "company_name": "Attensify",
+    "product_category": "AI marketing automation platform",
+    "primary_icp": "SMBs and growing businesses that want to automate digital marketing"
+  },
+  "selection_policy": {
+    "maximum_total_recommendations": 4,
+    "target_per_territory": 2,
+    "minimum_per_nonempty_territory": 1,
+    "maximum_per_territory": 2,
+    "allow_fewer_than_target": true
+  },
+  "territory_recommendations": [
+    {
+      "territory": "problem_demand",
+      "candidates_available": 10,
+      "target_recommendations": 2,
+      "recommendations_selected": 2,
+      "selection_status": "fulfilled",
+      "assessment": "Two problem-demand recommendations are appropriate because one captures the broad marketing workflow pain and the other captures a distinct campaign-automation need, while the remaining candidates are mostly narrower variants or lower-value overlaps.",
+      "recommendations": [
+        {
+          "recommendation_id": "problem_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "problem_demand_028",
+          "territory": "problem_demand",
+          "query": "marketing workflow",
+          "selection_reasoning": "This is the strongest problem-demand fit because it matches Attensify's core automation story, has the highest observed demand in the territory, and supports a clear standalone workflow page.",
+          "content_angle": "The page should explain how teams can centralize and automate end-to-end marketing workflows across planning, content, SEO, ads, and website updates.",
+          "product_connection": "Attensify can appear as the always-on system that turns a plain-English goal into coordinated marketing execution across channels.",
+          "confidence": "high",
+          "opportunity_rank": 1,
+          "validation_reasoning": "This is a concrete operational workflow in the company’s core marketing automation problem space.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 28,
+          "core_keyword": "marketing workflows",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 210,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -48,
+              "quarterly": -58,
+              "yearly": -66
+            },
+            "cpc": 74.6,
+            "paid_competition": 0.14,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": [
+                "informational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 19,
+              "referring_domains": 6,
+              "main_domain_rank": 452.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 210,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.9618,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 96.2
+          }
+        },
+        {
+          "recommendation_id": "problem_demand_recommendation_02",
+          "recommendation_rank": 2,
+          "query_id": "problem_demand_048",
+          "territory": "problem_demand",
+          "query": "automated marketing campaigns",
+          "selection_reasoning": "This is the best second problem-demand opportunity because campaign automation is a distinct search task from general workflow content, and the product has direct support for launching and optimizing campaigns.",
+          "content_angle": "The page should focus on how automated campaign setup, testing, spend allocation, and optimization reduce manual marketing operations.",
+          "product_connection": "Attensify can be introduced through its campaign-building and optimization workflow for Google, Meta, and LinkedIn ads.",
+          "confidence": "medium",
+          "opportunity_rank": 5,
+          "validation_reasoning": "This is a concrete campaign automation workflow that matches Attensify’s ads and marketing execution scope.",
+          "source_seed_keywords": [
+            "marketing automation",
+            "SMB marketing automation",
+            "digital marketing automation",
+            "marketing workflow automation",
+            "automated marketing",
+            "marketing operations"
+          ],
+          "discovery_rank": 48,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 140,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 110
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 56,
+              "quarterly": 100,
+              "yearly": -46
+            },
+            "cpc": 78.21,
+            "paid_competition": 0.07,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 21,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 16223.5,
+              "referring_domains": 1531,
+              "main_domain_rank": 480.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 140,
+            "maximum_territory_search_volume": 260,
+            "volume_score": 0.8893,
+            "keyword_difficulty_original": 21,
+            "keyword_difficulty_used": 21,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.79,
+            "opportunity_score": 70.3
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "candidates_available": 10,
+      "target_recommendations": 2,
+      "recommendations_selected": 2,
+      "selection_status": "fulfilled",
+      "assessment": "Two solution-demand recommendations are appropriate because one targets the primary SMB platform category and the other targets a distinct agency-tool use case, while the remaining candidates are close category variants or broader overlaps.",
+      "recommendations": [
+        {
+          "recommendation_id": "solution_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "solution_demand_062",
+          "territory": "solution_demand",
+          "query": "digital marketing platform for small businesses",
+          "selection_reasoning": "This is the strongest solution-demand fit because it directly matches the primary SMB audience, reflects the company's platform positioning, and offers clear commercial intent despite a competitive SERP.",
+          "content_angle": "The page should show how small businesses can replace fragmented tools with one platform for content, ads, SEO, blogs, and website updates.",
+          "product_connection": "Attensify can be framed as the all-in-one AI marketing platform that consolidates those jobs into one system for SMB teams.",
+          "confidence": "medium",
+          "opportunity_rank": 1,
+          "validation_reasoning": "This is commercial intent for a digital marketing platform aimed at small businesses, matching the primary ICP.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 62,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 40500,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 33100
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 60500
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 90500
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 110000
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 33100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 18100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 74000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90500
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -91,
+              "quarterly": -95,
+              "yearly": 1015
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 42,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 158180.3,
+              "referring_domains": 5361,
+              "main_domain_rank": 653.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 40500,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 1,
+            "keyword_difficulty_original": 42,
+            "keyword_difficulty_used": 42,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.58,
+            "opportunity_score": 58
+          }
+        },
+        {
+          "recommendation_id": "solution_demand_recommendation_02",
+          "recommendation_rank": 2,
+          "query_id": "solution_demand_091",
+          "territory": "solution_demand",
+          "query": "tools for digital marketing agency",
+          "selection_reasoning": "This is the best second solution-demand opportunity because agency tooling is a meaningfully different buyer need, and the company has explicit agency-ready capabilities to support that intent.",
+          "content_angle": "The page should explain which tools agencies need for multi-client management, collaboration, and white-label reporting when running client marketing operations.",
+          "product_connection": "Attensify can be presented as an agency-ready tool with multi-client dashboards, white-label reports, team collaboration, and API access.",
+          "confidence": "medium",
+          "opportunity_rank": 10,
+          "validation_reasoning": "This is commercial intent for tools used by digital marketing agencies, a supported secondary audience.",
+          "source_seed_keywords": [
+            "ai marketing automation platform",
+            "marketing automation software for smb",
+            "autonomous marketing automation",
+            "ai marketing software",
+            "ai marketing tools",
+            "digital marketing automation software"
+          ],
+          "discovery_rank": 91,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 110,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 140
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -57
+            },
+            "cpc": 104.47,
+            "paid_competition": 0.03,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 16,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 230.3,
+              "referring_domains": 67.7,
+              "main_domain_rank": 503.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 110,
+            "maximum_territory_search_volume": 40500,
+            "volume_score": 0.4439,
+            "keyword_difficulty_original": 16,
+            "keyword_difficulty_used": 16,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.84,
+            "opportunity_score": 37.3
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_candidates_considered": 20,
+    "problem_candidates_considered": 10,
+    "solution_candidates_considered": 10,
+    "target_recommendations": 4,
+    "problem_recommendations_selected": 2,
+    "solution_recommendations_selected": 2,
+    "total_recommendations_selected": 4,
+    "target_fulfilled": true,
+    "insufficient_opportunity_territories": []
+  }
+}

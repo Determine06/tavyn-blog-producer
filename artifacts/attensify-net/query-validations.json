@@ -1,0 +1,1419 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:22:46.427Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://attensify.net/",
+  "source_profile": {
+    "company_name": "Attensify",
+    "product_category": "AI marketing automation platform",
+    "primary_icp": "SMBs and growing businesses that want to automate digital marketing"
+  },
+  "query_validations": [
+    {
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "query": "automated marketing automation",
+      "verdict": "invalid",
+      "reasoning": "The phrase is redundant and vague, and it does not describe a concrete workflow or problem space."
+    },
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "query": "digital marketing smb",
+      "verdict": "invalid",
+      "reasoning": "This is a broad audience/industry phrase, not a specific marketing problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_003",
+      "territory": "problem_demand",
+      "query": "digital marketing workflow",
+      "verdict": "valid",
+      "reasoning": "This asks about the workflow of digital marketing, which is a concrete operational process Attensify helps automate."
+    },
+    {
+      "query_id": "problem_demand_004",
+      "territory": "problem_demand",
+      "query": "workflow digital marketing",
+      "verdict": "valid",
+      "reasoning": "The query points to the digital marketing workflow itself, a supported process in Attensify’s problem space."
+    },
+    {
+      "query_id": "problem_demand_005",
+      "territory": "problem_demand",
+      "query": "digital marketing operations",
+      "verdict": "valid",
+      "reasoning": "This refers to the operational work of running digital marketing, which matches Attensify’s automation focus."
+    },
+    {
+      "query_id": "problem_demand_006",
+      "territory": "problem_demand",
+      "query": "digital ad operations workflow",
+      "verdict": "valid",
+      "reasoning": "This targets the workflow for ad operations, a concrete process Attensify supports through campaign automation."
+    },
+    {
+      "query_id": "problem_demand_007",
+      "territory": "problem_demand",
+      "query": "marketing automation workflow template",
+      "verdict": "valid",
+      "reasoning": "This seeks a workflow template for marketing automation, which is a concrete process related to Attensify’s core problem space."
+    },
+    {
+      "query_id": "problem_demand_008",
+      "territory": "problem_demand",
+      "query": "marketing automation workflow templates",
+      "verdict": "valid",
+      "reasoning": "This is informational demand for marketing automation workflows, a supported operational process."
+    },
+    {
+      "query_id": "problem_demand_009",
+      "territory": "problem_demand",
+      "query": "digital marketing for smb",
+      "verdict": "invalid",
+      "reasoning": "This is a broad marketing-for-audience phrase rather than a specific workflow, problem, or solution need."
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "query": "marketing automation digital marketing",
+      "verdict": "valid",
+      "reasoning": "This expresses the problem space of applying automation within digital marketing, which fits Attensify’s core workflow focus."
+    },
+    {
+      "query_id": "problem_demand_011",
+      "territory": "problem_demand",
+      "query": "digital marketing & automation marketing",
+      "verdict": "invalid",
+      "reasoning": "The phrase is awkward and ambiguous, so its dominant search need is not a clear supported workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_012",
+      "territory": "problem_demand",
+      "query": "smb digital marketing strategies",
+      "verdict": "invalid",
+      "reasoning": "This is broad strategy education for SMBs, not a concrete operational problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_013",
+      "territory": "problem_demand",
+      "query": "smb digital marketing strategy",
+      "verdict": "invalid",
+      "reasoning": "This is a broad strategy topic for SMB marketing rather than a specific problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_014",
+      "territory": "problem_demand",
+      "query": "workflow digital marketing process",
+      "verdict": "valid",
+      "reasoning": "This explicitly asks about the digital marketing process, a concrete workflow Attensify helps automate."
+    },
+    {
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "query": "marketing automation in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is about using automation inside digital marketing, which is a core supported problem space."
+    },
+    {
+      "query_id": "problem_demand_016",
+      "territory": "problem_demand",
+      "query": "digital marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is solution-selection intent, not problem-demand informational intent."
+    },
+    {
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "query": "digital marketing automation tool",
+      "verdict": "invalid",
+      "reasoning": "This is commercial tool intent, which belongs in the solution-demand lane."
+    },
+    {
+      "query_id": "problem_demand_018",
+      "territory": "problem_demand",
+      "query": "digital marketing automation jobs",
+      "verdict": "invalid",
+      "reasoning": "This is a jobs query, not demand about a marketing workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_019",
+      "territory": "problem_demand",
+      "query": "ai automation digital marketing",
+      "verdict": "valid",
+      "reasoning": "This points to AI automation within digital marketing, a concrete operational problem area for Attensify."
+    },
+    {
+      "query_id": "problem_demand_020",
+      "territory": "problem_demand",
+      "query": "digital marketing automation courses",
+      "verdict": "invalid",
+      "reasoning": "This is course-seeking intent, not a problem/workflow query."
+    },
+    {
+      "query_id": "problem_demand_021",
+      "territory": "problem_demand",
+      "query": "digital marketing automation examples",
+      "verdict": "valid",
+      "reasoning": "This seeks examples of marketing automation in the supported digital marketing workflow."
+    },
+    {
+      "query_id": "problem_demand_022",
+      "territory": "problem_demand",
+      "query": "digital marketing automation course",
+      "verdict": "invalid",
+      "reasoning": "This is educational course intent rather than demand for a concrete supported workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_023",
+      "territory": "problem_demand",
+      "query": "digital marketing automation meaning",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query, which is too generic and not a concrete workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_024",
+      "territory": "problem_demand",
+      "query": "digital marketing agency automation",
+      "verdict": "valid",
+      "reasoning": "This refers to automating the operations of a digital marketing agency, a concrete workflow Attensify supports for agencies."
+    },
+    {
+      "query_id": "problem_demand_025",
+      "territory": "problem_demand",
+      "query": "digital marketing and automation",
+      "verdict": "invalid",
+      "reasoning": "This is a broad topical phrase without a clear problem, process, or outcome."
+    },
+    {
+      "query_id": "problem_demand_026",
+      "territory": "problem_demand",
+      "query": "digital marketing ai automation",
+      "verdict": "valid",
+      "reasoning": "This is the AI automation problem space inside digital marketing, which matches Attensify’s core workflow."
+    },
+    {
+      "query_id": "problem_demand_027",
+      "territory": "problem_demand",
+      "query": "digital marketing automation definition",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query, not a concrete workflow or decision problem."
+    },
+    {
+      "query_id": "problem_demand_028",
+      "territory": "problem_demand",
+      "query": "marketing workflow",
+      "verdict": "valid",
+      "reasoning": "This is a concrete operational workflow in the company’s core marketing automation problem space."
+    },
+    {
+      "query_id": "problem_demand_029",
+      "territory": "problem_demand",
+      "query": "can digital marketing be automated",
+      "verdict": "valid",
+      "reasoning": "This asks a concrete workflow question about automating digital marketing, which is directly aligned with Attensify’s purpose."
+    },
+    {
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "query": "optimizing your digital marketing workflow",
+      "verdict": "valid",
+      "reasoning": "This targets improving a digital marketing workflow, a concrete process Attensify is positioned to automate and optimize."
+    },
+    {
+      "query_id": "problem_demand_031",
+      "territory": "problem_demand",
+      "query": "ad operations in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is a specific operational workflow within digital marketing and fits Attensify’s ads automation scope."
+    },
+    {
+      "query_id": "problem_demand_032",
+      "territory": "problem_demand",
+      "query": "what is digital marketing operations",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query for an umbrella function rather than a concrete workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_033",
+      "territory": "problem_demand",
+      "query": "digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a broad industry term without a specific workflow, problem, decision, or outcome."
+    },
+    {
+      "query_id": "problem_demand_034",
+      "territory": "problem_demand",
+      "query": "smb full form in digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This asks for an acronym definition and not a supported problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_035",
+      "territory": "problem_demand",
+      "query": "what is marketing automation in digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query rather than demand for a concrete workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_036",
+      "territory": "problem_demand",
+      "query": "automation software for digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is solution-selection intent, not problem-demand informational intent."
+    },
+    {
+      "query_id": "problem_demand_037",
+      "territory": "problem_demand",
+      "query": "automation tools for digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is commercial tool intent and belongs in the solution-demand lane."
+    },
+    {
+      "query_id": "problem_demand_038",
+      "territory": "problem_demand",
+      "query": "ai automation in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This describes AI automation as a workflow inside digital marketing, which is a core supported problem space."
+    },
+    {
+      "query_id": "problem_demand_039",
+      "territory": "problem_demand",
+      "query": "automation tools in digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is solution-selection intent for tools, not problem-demand informational intent."
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "query": "marketing marketing automation",
+      "verdict": "invalid",
+      "reasoning": "The phrase is malformed and does not clearly express a concrete search need."
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "query": "smb marketing google",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and broad, with no clear workflow or problem statement."
+    },
+    {
+      "query_id": "problem_demand_042",
+      "territory": "problem_demand",
+      "query": "smb channel marketing",
+      "verdict": "invalid",
+      "reasoning": "This is broad marketing terminology rather than a concrete problem or process."
+    },
+    {
+      "query_id": "problem_demand_043",
+      "territory": "problem_demand",
+      "query": "smb online marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a broad market-topic phrase, not a specific operational workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_044",
+      "territory": "problem_demand",
+      "query": "smb internet marketing",
+      "verdict": "invalid",
+      "reasoning": "This is broad industry wording without a specific workflow, problem, or outcome."
+    },
+    {
+      "query_id": "problem_demand_045",
+      "territory": "problem_demand",
+      "query": "smb content marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a broad marketing topic rather than a concrete process or problem."
+    },
+    {
+      "query_id": "problem_demand_046",
+      "territory": "problem_demand",
+      "query": "google smb marketing",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly express a supported workflow or decision."
+    },
+    {
+      "query_id": "problem_demand_047",
+      "territory": "problem_demand",
+      "query": "ai marketing workflow",
+      "verdict": "valid",
+      "reasoning": "This clearly points to an AI-driven marketing workflow, which is central to Attensify’s product."
+    },
+    {
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "query": "automated marketing campaigns",
+      "verdict": "valid",
+      "reasoning": "This is a concrete campaign automation workflow that matches Attensify’s ads and marketing execution scope."
+    },
+    {
+      "query_id": "problem_demand_049",
+      "territory": "problem_demand",
+      "query": "marketing workflow tools",
+      "verdict": "invalid",
+      "reasoning": "This is solution-selection intent for tools, not informational demand about the workflow itself."
+    },
+    {
+      "query_id": "problem_demand_050",
+      "territory": "problem_demand",
+      "query": "automated affiliate marketing",
+      "verdict": "invalid",
+      "reasoning": "Affiliate marketing is a separate commercial model and not the company’s core marketing automation workflow."
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "query": "automated marketing funnels",
+      "verdict": "invalid",
+      "reasoning": "This is about funnel automation, which is broader and less directly supported than Attensify’s core marketing workflows."
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "automated marketing funnel",
+      "verdict": "invalid",
+      "reasoning": "This is a broader funnel-building concept that is not clearly the company’s core problem space."
+    },
+    {
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "query": "what is automation in digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query rather than a concrete workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_054",
+      "territory": "problem_demand",
+      "query": "content marketing workflow",
+      "verdict": "valid",
+      "reasoning": "This names a concrete content workflow that Attensify supports through planning, writing, scheduling, and publishing."
+    },
+    {
+      "query_id": "problem_demand_055",
+      "territory": "problem_demand",
+      "query": "digital marketing digital marketing",
+      "verdict": "invalid",
+      "reasoning": "The phrase is duplicated and does not express a clear search need."
+    },
+    {
+      "query_id": "problem_demand_056",
+      "territory": "problem_demand",
+      "query": "automated marketing reporting",
+      "verdict": "valid",
+      "reasoning": "This is a concrete reporting workflow in marketing automation, which aligns with Attensify’s operational focus."
+    },
+    {
+      "query_id": "problem_demand_057",
+      "territory": "problem_demand",
+      "query": "automated marketing reports",
+      "verdict": "valid",
+      "reasoning": "This seeks automated reporting output from marketing workflows, a concrete supported outcome."
+    },
+    {
+      "query_id": "problem_demand_058",
+      "territory": "problem_demand",
+      "query": "zoho marketing automation",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without evaluation intent, so it does not qualify as problem-demand."
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "query": "restaurant automated marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a restaurant-specific use case that is outside the company’s clearly supported SMB digital marketing scope."
+    },
+    {
+      "query_id": "problem_demand_060",
+      "territory": "problem_demand",
+      "query": "marketing automation software",
+      "verdict": "invalid",
+      "reasoning": "This is solution-selection intent, not informational problem-demand."
+    },
+    {
+      "query_id": "problem_demand_061",
+      "territory": "problem_demand",
+      "query": "automated marketing dashboard",
+      "verdict": "valid",
+      "reasoning": "This refers to a marketing automation dashboard, which is a concrete operational artifact in the company’s workflow."
+    },
+    {
+      "query_id": "problem_demand_062",
+      "territory": "problem_demand",
+      "query": "automated text marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a messaging/SMS-specific category that is not supported by the company profile."
+    },
+    {
+      "query_id": "problem_demand_063",
+      "territory": "problem_demand",
+      "query": "marketing automation platforms",
+      "verdict": "invalid",
+      "reasoning": "This is solution-category intent rather than a problem/workflow query."
+    },
+    {
+      "query_id": "problem_demand_064",
+      "territory": "problem_demand",
+      "query": "marketing workflow example",
+      "verdict": "valid",
+      "reasoning": "This seeks an example of a marketing workflow, which is a concrete process in the company’s problem space."
+    },
+    {
+      "query_id": "problem_demand_065",
+      "territory": "problem_demand",
+      "query": "marketing workflow examples",
+      "verdict": "valid",
+      "reasoning": "This asks for examples of a marketing workflow, a concrete process Attensify helps automate."
+    },
+    {
+      "query_id": "problem_demand_066",
+      "territory": "problem_demand",
+      "query": "marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is tool selection intent, which belongs in the solution-demand lane."
+    },
+    {
+      "query_id": "problem_demand_067",
+      "territory": "problem_demand",
+      "query": "automated marketing journey",
+      "verdict": "valid",
+      "reasoning": "This refers to an automated marketing journey, a concrete workflow and outcome in the supported problem space."
+    },
+    {
+      "query_id": "problem_demand_068",
+      "territory": "problem_demand",
+      "query": "automated marketing uk",
+      "verdict": "invalid",
+      "reasoning": "This is geographically qualified but still too broad and not a concrete workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_069",
+      "territory": "problem_demand",
+      "query": "automated marketing techniques",
+      "verdict": "valid",
+      "reasoning": "This is informational demand for techniques within marketing automation, a supported workflow area."
+    },
+    {
+      "query_id": "problem_demand_070",
+      "territory": "problem_demand",
+      "query": "automated online marketing",
+      "verdict": "valid",
+      "reasoning": "This describes automating online marketing work, which fits the company’s core problem space."
+    },
+    {
+      "query_id": "problem_demand_071",
+      "territory": "problem_demand",
+      "query": "instant automated marketing",
+      "verdict": "invalid",
+      "reasoning": "This is vague hype language rather than a concrete workflow or supported problem."
+    },
+    {
+      "query_id": "problem_demand_072",
+      "territory": "problem_demand",
+      "query": "automated marketing llc",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a named entity or business-name query, not a qualified workflow need."
+    },
+    {
+      "query_id": "problem_demand_073",
+      "territory": "problem_demand",
+      "query": "automated facebook marketing",
+      "verdict": "valid",
+      "reasoning": "This asks about automating Facebook marketing activity, a concrete campaign workflow related to Attensify’s ad automation scope."
+    },
+    {
+      "query_id": "problem_demand_074",
+      "territory": "problem_demand",
+      "query": "automated marketing insights",
+      "verdict": "valid",
+      "reasoning": "This seeks marketing automation insights, which is a concrete analytical outcome tied to the supported workflow."
+    },
+    {
+      "query_id": "problem_demand_075",
+      "territory": "problem_demand",
+      "query": "automated marketing business",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous business phrase and does not specify a concrete problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_076",
+      "territory": "problem_demand",
+      "query": "fully automated marketing",
+      "verdict": "valid",
+      "reasoning": "This refers to the desired outcome of fully automated marketing, which matches Attensify’s autonomous marketing positioning."
+    },
+    {
+      "query_id": "problem_demand_077",
+      "territory": "problem_demand",
+      "query": "automated behavioral marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a specialized marketing automation subfield not clearly supported by the company profile."
+    },
+    {
+      "query_id": "problem_demand_078",
+      "territory": "problem_demand",
+      "query": "free automated marketing",
+      "verdict": "invalid",
+      "reasoning": "This is price/offer intent without a concrete supported workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_079",
+      "territory": "problem_demand",
+      "query": "activecampaign automated marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without comparison or replacement intent."
+    },
+    {
+      "query_id": "problem_demand_080",
+      "territory": "problem_demand",
+      "query": "automated marketing management",
+      "verdict": "valid",
+      "reasoning": "This refers to managing marketing through automation, a concrete operational workflow in Attensify’s scope."
+    },
+    {
+      "query_id": "problem_demand_081",
+      "territory": "problem_demand",
+      "query": "automated marketing examples",
+      "verdict": "valid",
+      "reasoning": "This seeks examples of marketing automation in practice, which is a concrete workflow question."
+    },
+    {
+      "query_id": "problem_demand_082",
+      "territory": "problem_demand",
+      "query": "automated marketing inc",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a company-name or entity query, not a qualified workflow demand."
+    },
+    {
+      "query_id": "problem_demand_083",
+      "territory": "problem_demand",
+      "query": "inbound marketing workflow",
+      "verdict": "valid",
+      "reasoning": "This is a concrete inbound marketing process, which fits the company’s marketing workflow automation focus."
+    },
+    {
+      "query_id": "problem_demand_084",
+      "territory": "problem_demand",
+      "query": "workflow inbound marketing",
+      "verdict": "valid",
+      "reasoning": "This points to inbound marketing workflow, a concrete process related to Attensify’s supported use case."
+    },
+    {
+      "query_id": "problem_demand_085",
+      "territory": "problem_demand",
+      "query": "hubspot marketing automation",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without comparison or evaluation intent."
+    },
+    {
+      "query_id": "problem_demand_086",
+      "territory": "problem_demand",
+      "query": "digital advertising workflow",
+      "verdict": "valid",
+      "reasoning": "This is a concrete advertising process, and Attensify supports ad campaign planning and optimization."
+    },
+    {
+      "query_id": "problem_demand_087",
+      "territory": "problem_demand",
+      "query": "digital marketing agency ai automation support",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous support/services phrase rather than a concrete workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_088",
+      "territory": "problem_demand",
+      "query": "ai automation tools for digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is tool-selection intent, not problem-demand informational intent."
+    },
+    {
+      "query_id": "problem_demand_089",
+      "territory": "problem_demand",
+      "query": "top 10 digital marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is a list/comparison query for tools, which belongs in solution demand."
+    },
+    {
+      "query_id": "problem_demand_090",
+      "territory": "problem_demand",
+      "query": "salesforce marketing automation",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without explicit comparison or replacement intent."
+    },
+    {
+      "query_id": "problem_demand_091",
+      "territory": "problem_demand",
+      "query": "github marketing automation",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand or incompatible-entity query, not a qualified marketing workflow demand."
+    },
+    {
+      "query_id": "problem_demand_092",
+      "territory": "problem_demand",
+      "query": "marketing automation courses",
+      "verdict": "invalid",
+      "reasoning": "This is course-seeking intent rather than a concrete workflow or problem."
+    },
+    {
+      "query_id": "problem_demand_093",
+      "territory": "problem_demand",
+      "query": "linkedin marketing automation",
+      "verdict": "valid",
+      "reasoning": "This asks about automating LinkedIn marketing, a concrete workflow within Attensify’s ad and content automation scope."
+    },
+    {
+      "query_id": "problem_demand_094",
+      "territory": "problem_demand",
+      "query": "freelance marketing automation",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and leans toward a services/job context rather than a supported workflow problem."
+    },
+    {
+      "query_id": "problem_demand_095",
+      "territory": "problem_demand",
+      "query": "marketing automation freelance",
+      "verdict": "invalid",
+      "reasoning": "This is service/freelance intent rather than a concrete workflow or solution need."
+    },
+    {
+      "query_id": "problem_demand_096",
+      "territory": "problem_demand",
+      "query": "insightly marketing automation",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without comparison or evaluation intent."
+    },
+    {
+      "query_id": "problem_demand_097",
+      "territory": "problem_demand",
+      "query": "marketing automation workflows",
+      "verdict": "valid",
+      "reasoning": "This directly describes marketing automation workflows, which are central to Attensify’s problem space."
+    },
+    {
+      "query_id": "problem_demand_098",
+      "territory": "problem_demand",
+      "query": "marketing automation services",
+      "verdict": "invalid",
+      "reasoning": "This is service-provider intent, which is not a qualified software problem query."
+    },
+    {
+      "query_id": "problem_demand_099",
+      "territory": "problem_demand",
+      "query": "content marketing marketing automation",
+      "verdict": "valid",
+      "reasoning": "This points to automation within content marketing, a concrete workflow Attensify supports."
+    },
+    {
+      "query_id": "problem_demand_100",
+      "territory": "problem_demand",
+      "query": "inbound marketing marketing automation",
+      "verdict": "valid",
+      "reasoning": "This describes inbound marketing automation, a concrete workflow in the company’s supported marketing automation space."
+    },
+    {
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "ai automation tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI automation tools in digital marketing, a supported solution category."
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "automation tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is solution-selection intent for digital marketing automation tools, which fits the company’s product category."
+    },
+    {
+      "query_id": "solution_demand_003",
+      "territory": "solution_demand",
+      "query": "digital marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is a direct solution-category query for digital marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_004",
+      "territory": "solution_demand",
+      "query": "marketing automation software tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for marketing automation software and tools, a category Attensify belongs to."
+    },
+    {
+      "query_id": "solution_demand_005",
+      "territory": "solution_demand",
+      "query": "automation software for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is a direct software-category query for automating digital marketing, which matches the product category."
+    },
+    {
+      "query_id": "solution_demand_006",
+      "territory": "solution_demand",
+      "query": "ai tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI tools used in digital marketing, an immediate parent category of Attensify’s solution."
+    },
+    {
+      "query_id": "solution_demand_007",
+      "territory": "solution_demand",
+      "query": "ai automation digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is solution-oriented demand for AI automation applied to digital marketing, which fits the company’s category."
+    },
+    {
+      "query_id": "solution_demand_008",
+      "territory": "solution_demand",
+      "query": "digital marketing ai automation",
+      "verdict": "valid",
+      "reasoning": "This is solution-category intent for AI automation in digital marketing, which is aligned with Attensify."
+    },
+    {
+      "query_id": "solution_demand_009",
+      "territory": "solution_demand",
+      "query": "digital marketing ai tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI tools used in digital marketing, a supported solution space."
+    },
+    {
+      "query_id": "solution_demand_010",
+      "territory": "solution_demand",
+      "query": "digital marketing for smb",
+      "verdict": "invalid",
+      "reasoning": "This is a buyer-audience phrase, not a product or solution-category query."
+    },
+    {
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "query": "ai powered marketing automation platform",
+      "verdict": "valid",
+      "reasoning": "This is an exact-category query for an AI-powered marketing automation platform."
+    },
+    {
+      "query_id": "solution_demand_012",
+      "territory": "solution_demand",
+      "query": "ai digital marketing tools",
+      "verdict": "valid",
+      "reasoning": "This is a commercial query for AI digital marketing tools, which fits the product’s category and positioning."
+    },
+    {
+      "query_id": "solution_demand_013",
+      "territory": "solution_demand",
+      "query": "digital marketing tools software",
+      "verdict": "valid",
+      "reasoning": "This is a software-category query for digital marketing tools, an immediate parent category of the product."
+    },
+    {
+      "query_id": "solution_demand_014",
+      "territory": "solution_demand",
+      "query": "digital marketing smb",
+      "verdict": "invalid",
+      "reasoning": "This is an audience/industry phrase rather than a solution category or commercial software need."
+    },
+    {
+      "query_id": "solution_demand_015",
+      "territory": "solution_demand",
+      "query": "marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is a direct solution-category query for marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_016",
+      "territory": "solution_demand",
+      "query": "automation tools in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for automation tools in digital marketing, a supported solution category."
+    },
+    {
+      "query_id": "solution_demand_017",
+      "territory": "solution_demand",
+      "query": "marketing automation software and tools",
+      "verdict": "valid",
+      "reasoning": "This is solution-selection intent for marketing automation software and tools."
+    },
+    {
+      "query_id": "solution_demand_018",
+      "territory": "solution_demand",
+      "query": "best ai tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation intent for AI tools in digital marketing, a supported category."
+    },
+    {
+      "query_id": "solution_demand_019",
+      "territory": "solution_demand",
+      "query": "free ai tools for digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is free-tool intent, which is not supported by the company profile."
+    },
+    {
+      "query_id": "solution_demand_020",
+      "territory": "solution_demand",
+      "query": "marketing automation software",
+      "verdict": "valid",
+      "reasoning": "This is a direct commercial query for marketing automation software."
+    },
+    {
+      "query_id": "solution_demand_021",
+      "territory": "solution_demand",
+      "query": "ai powered tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI-powered digital marketing tools, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_022",
+      "territory": "solution_demand",
+      "query": "ai automation in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is solution-category demand for AI automation in digital marketing."
+    },
+    {
+      "query_id": "solution_demand_023",
+      "territory": "solution_demand",
+      "query": "digital marketing automation",
+      "verdict": "valid",
+      "reasoning": "This is a direct category query for digital marketing automation."
+    },
+    {
+      "query_id": "solution_demand_024",
+      "territory": "solution_demand",
+      "query": "digital platform for marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for a marketing platform, which is an immediate parent category of Attensify."
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "query": "marketing automation digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is solution-oriented demand for marketing automation within digital marketing."
+    },
+    {
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "query": "digital marketing & automation marketing",
+      "verdict": "invalid",
+      "reasoning": "The phrase is malformed and does not clearly express a commercial solution category."
+    },
+    {
+      "query_id": "solution_demand_027",
+      "territory": "solution_demand",
+      "query": "digital marketing tools",
+      "verdict": "valid",
+      "reasoning": "This is a commercial query for digital marketing tools, an immediate parent category of the product."
+    },
+    {
+      "query_id": "solution_demand_028",
+      "territory": "solution_demand",
+      "query": "top 10 digital marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for digital marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_029",
+      "territory": "solution_demand",
+      "query": "marketing ai tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI marketing tools, which fits the product’s category and positioning."
+    },
+    {
+      "query_id": "solution_demand_030",
+      "territory": "solution_demand",
+      "query": "smb digital marketing strategies",
+      "verdict": "invalid",
+      "reasoning": "This is strategy education for an audience segment, not a solution-category query."
+    },
+    {
+      "query_id": "solution_demand_031",
+      "territory": "solution_demand",
+      "query": "smb digital marketing strategy",
+      "verdict": "invalid",
+      "reasoning": "This is broad strategy intent, not commercial demand for a solution category."
+    },
+    {
+      "query_id": "solution_demand_032",
+      "territory": "solution_demand",
+      "query": "marketing automation tools for ecommerce",
+      "verdict": "invalid",
+      "reasoning": "This is a narrower vertical category not supported by the company profile as a distinct solution segment."
+    },
+    {
+      "query_id": "solution_demand_033",
+      "territory": "solution_demand",
+      "query": "marketing ai platform",
+      "verdict": "valid",
+      "reasoning": "This is an immediate parent category query for an AI marketing platform."
+    },
+    {
+      "query_id": "solution_demand_034",
+      "territory": "solution_demand",
+      "query": "marketing automation tools for b2b",
+      "verdict": "invalid",
+      "reasoning": "This is a verticalized tool query that is broader than the company’s evidence-supported category framing."
+    },
+    {
+      "query_id": "solution_demand_035",
+      "territory": "solution_demand",
+      "query": "digital marketing agency ai automation support",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and service/support-oriented rather than a clear software solution query."
+    },
+    {
+      "query_id": "solution_demand_036",
+      "territory": "solution_demand",
+      "query": "marketing digital platform",
+      "verdict": "valid",
+      "reasoning": "This is a commercial query for a marketing platform, an immediate parent category of Attensify."
+    },
+    {
+      "query_id": "solution_demand_037",
+      "territory": "solution_demand",
+      "query": "enterprise marketing automation platform",
+      "verdict": "valid",
+      "reasoning": "This is a commercial query for marketing automation platforms, and enterprise is a reasonable adjacent buyer segment."
+    },
+    {
+      "query_id": "solution_demand_038",
+      "territory": "solution_demand",
+      "query": "omnichannel marketing automation platform",
+      "verdict": "valid",
+      "reasoning": "This is a commercial query for a marketing automation platform with multi-channel execution, which matches Attensify’s category."
+    },
+    {
+      "query_id": "solution_demand_039",
+      "territory": "solution_demand",
+      "query": "marketing software tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for marketing software tools, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_040",
+      "territory": "solution_demand",
+      "query": "list of ai tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for AI tools in digital marketing."
+    },
+    {
+      "query_id": "solution_demand_041",
+      "territory": "solution_demand",
+      "query": "best ai tools for digital marketing agency",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation intent for AI tools used by agencies, a supported secondary audience."
+    },
+    {
+      "query_id": "solution_demand_042",
+      "territory": "solution_demand",
+      "query": "ai digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is a direct solution-category query for AI applied to digital marketing."
+    },
+    {
+      "query_id": "solution_demand_043",
+      "territory": "solution_demand",
+      "query": "hubspot marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without explicit comparison or replacement intent."
+    },
+    {
+      "query_id": "solution_demand_044",
+      "territory": "solution_demand",
+      "query": "map marketing automation platform",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly indicate a supported solution category."
+    },
+    {
+      "query_id": "solution_demand_045",
+      "territory": "solution_demand",
+      "query": "marketing automation platform requirements",
+      "verdict": "valid",
+      "reasoning": "This is commercial evaluation intent around marketing automation platforms, which matches the company’s category."
+    },
+    {
+      "query_id": "solution_demand_046",
+      "territory": "solution_demand",
+      "query": "drip marketing automation platform",
+      "verdict": "invalid",
+      "reasoning": "This is a narrower category focused on drip campaigns, which is not clearly the company’s primary solution category."
+    },
+    {
+      "query_id": "solution_demand_047",
+      "territory": "solution_demand",
+      "query": "marketing automation platform meaning",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query rather than commercial solution-selection intent."
+    },
+    {
+      "query_id": "solution_demand_048",
+      "territory": "solution_demand",
+      "query": "marketing automation platform map",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly express commercial evaluation intent."
+    },
+    {
+      "query_id": "solution_demand_049",
+      "territory": "solution_demand",
+      "query": "sharpspring marketing automation platform",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without comparison or evaluation language."
+    },
+    {
+      "query_id": "solution_demand_050",
+      "territory": "solution_demand",
+      "query": "marketing automation platform reviews",
+      "verdict": "valid",
+      "reasoning": "This is commercial review intent for marketing automation platforms."
+    },
+    {
+      "query_id": "solution_demand_051",
+      "territory": "solution_demand",
+      "query": "influencer marketing automation platform",
+      "verdict": "invalid",
+      "reasoning": "This is a separate specialization that is not clearly supported by the company profile."
+    },
+    {
+      "query_id": "solution_demand_052",
+      "territory": "solution_demand",
+      "query": "top marketing automation platform",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for marketing automation platforms."
+    },
+    {
+      "query_id": "solution_demand_053",
+      "territory": "solution_demand",
+      "query": "marketing automation tools examples",
+      "verdict": "valid",
+      "reasoning": "This is a commercial-looking query for examples of marketing automation tools, which fits the category."
+    },
+    {
+      "query_id": "solution_demand_054",
+      "territory": "solution_demand",
+      "query": "marketing automation tools list",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for a list of marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_055",
+      "territory": "solution_demand",
+      "query": "best marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is direct commercial evaluation intent for marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_056",
+      "territory": "solution_demand",
+      "query": "digital marketing software",
+      "verdict": "valid",
+      "reasoning": "This is a broad but immediate parent software category for Attensify."
+    },
+    {
+      "query_id": "solution_demand_057",
+      "territory": "solution_demand",
+      "query": "marketing tools digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for marketing tools used in digital marketing."
+    },
+    {
+      "query_id": "solution_demand_058",
+      "territory": "solution_demand",
+      "query": "tools marketing digital",
+      "verdict": "invalid",
+      "reasoning": "The phrase is awkward and ambiguous, so the commercial solution need is unclear."
+    },
+    {
+      "query_id": "solution_demand_059",
+      "territory": "solution_demand",
+      "query": "ai tools marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI marketing tools, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_060",
+      "territory": "solution_demand",
+      "query": "free marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is free-tool intent, which is not supported by the company profile."
+    },
+    {
+      "query_id": "solution_demand_061",
+      "territory": "solution_demand",
+      "query": "ai-powered marketing automation",
+      "verdict": "valid",
+      "reasoning": "This is direct solution-category demand for AI-powered marketing automation."
+    },
+    {
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "query": "digital marketing platform for small businesses",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for a digital marketing platform aimed at small businesses, matching the primary ICP."
+    },
+    {
+      "query_id": "solution_demand_063",
+      "territory": "solution_demand",
+      "query": "instagram marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is a channel-specific subset that is not clearly the company’s core solution category."
+    },
+    {
+      "query_id": "solution_demand_064",
+      "territory": "solution_demand",
+      "query": "compare marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_065",
+      "territory": "solution_demand",
+      "query": "marketing automation tools comparison",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_066",
+      "territory": "solution_demand",
+      "query": "facebook marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is a channel-specific subset that is not clearly supported as a standalone product category."
+    },
+    {
+      "query_id": "solution_demand_067",
+      "territory": "solution_demand",
+      "query": "best marketing automation software",
+      "verdict": "valid",
+      "reasoning": "This is direct commercial evaluation intent for marketing automation software."
+    },
+    {
+      "query_id": "solution_demand_068",
+      "territory": "solution_demand",
+      "query": "seo tools for digital marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a supporting-capability category and not the company’s primary solution category."
+    },
+    {
+      "query_id": "solution_demand_069",
+      "territory": "solution_demand",
+      "query": "top ai tools for marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for AI marketing tools, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "query": "ai tools for marketing agency",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI tools used by agencies, which is a supported secondary audience."
+    },
+    {
+      "query_id": "solution_demand_071",
+      "territory": "solution_demand",
+      "query": "marketing automation tools definition",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query, not commercial solution-selection intent."
+    },
+    {
+      "query_id": "solution_demand_072",
+      "territory": "solution_demand",
+      "query": "online marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for online marketing automation tools, which matches the product category."
+    },
+    {
+      "query_id": "solution_demand_073",
+      "territory": "solution_demand",
+      "query": "enterprise marketing automation tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for marketing automation tools in an enterprise context, which is an adjacent category."
+    },
+    {
+      "query_id": "solution_demand_074",
+      "territory": "solution_demand",
+      "query": "app marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is a specialized vertical category not clearly supported by the company profile."
+    },
+    {
+      "query_id": "solution_demand_075",
+      "territory": "solution_demand",
+      "query": "marketing automation tools marketo",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without explicit comparison or replacement intent."
+    },
+    {
+      "query_id": "solution_demand_076",
+      "territory": "solution_demand",
+      "query": "marketing automation tools 2018",
+      "verdict": "invalid",
+      "reasoning": "This is stale year-qualified intent that does not clearly indicate current solution evaluation."
+    },
+    {
+      "query_id": "solution_demand_077",
+      "territory": "solution_demand",
+      "query": "channel marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous subcategory that is not clearly the company’s core solution category."
+    },
+    {
+      "query_id": "solution_demand_078",
+      "territory": "solution_demand",
+      "query": "marketing automation best tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for marketing automation tools."
+    },
+    {
+      "query_id": "solution_demand_079",
+      "territory": "solution_demand",
+      "query": "marketing automation tools meaning",
+      "verdict": "invalid",
+      "reasoning": "This is a definition query rather than commercial evaluation intent."
+    },
+    {
+      "query_id": "solution_demand_080",
+      "territory": "solution_demand",
+      "query": "marketing automation tools india",
+      "verdict": "invalid",
+      "reasoning": "This is geographically qualified tool intent without evidence that geography is a supported market qualifier."
+    },
+    {
+      "query_id": "solution_demand_081",
+      "territory": "solution_demand",
+      "query": "mobile marketing automation tools",
+      "verdict": "invalid",
+      "reasoning": "This is a narrower channel-specific category not clearly supported by the company profile."
+    },
+    {
+      "query_id": "solution_demand_082",
+      "territory": "solution_demand",
+      "query": "ai tools for email marketing",
+      "verdict": "invalid",
+      "reasoning": "This is a supporting-capability category focused on email marketing, not the primary product category."
+    },
+    {
+      "query_id": "solution_demand_083",
+      "territory": "solution_demand",
+      "query": "digital advertising automation tools",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for ad automation tools, which matches Attensify’s campaign automation scope."
+    },
+    {
+      "query_id": "solution_demand_084",
+      "territory": "solution_demand",
+      "query": "marketing automation in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is direct solution-demand for marketing automation applied to digital marketing."
+    },
+    {
+      "query_id": "solution_demand_085",
+      "territory": "solution_demand",
+      "query": "online platform for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for a digital marketing platform, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_086",
+      "territory": "solution_demand",
+      "query": "ai powered marketing platform",
+      "verdict": "valid",
+      "reasoning": "This is an immediate parent category query for an AI-powered marketing platform."
+    },
+    {
+      "query_id": "solution_demand_087",
+      "territory": "solution_demand",
+      "query": "ai-powered marketing platform",
+      "verdict": "valid",
+      "reasoning": "This is an immediate parent category query for an AI-powered marketing platform."
+    },
+    {
+      "query_id": "solution_demand_088",
+      "territory": "solution_demand",
+      "query": "social media automation tools in digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for social media automation within digital marketing, which is a supported channel capability."
+    },
+    {
+      "query_id": "solution_demand_089",
+      "territory": "solution_demand",
+      "query": "marketing automation software hubspot",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand query without comparison or replacement intent."
+    },
+    {
+      "query_id": "solution_demand_090",
+      "territory": "solution_demand",
+      "query": "digital marketing automation tool",
+      "verdict": "valid",
+      "reasoning": "This is a direct commercial query for a digital marketing automation tool."
+    },
+    {
+      "query_id": "solution_demand_091",
+      "territory": "solution_demand",
+      "query": "tools for digital marketing agency",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for tools used by digital marketing agencies, a supported secondary audience."
+    },
+    {
+      "query_id": "solution_demand_092",
+      "territory": "solution_demand",
+      "query": "ai-driven marketing automation",
+      "verdict": "valid",
+      "reasoning": "This is direct commercial intent for AI-driven marketing automation, matching the product category."
+    },
+    {
+      "query_id": "solution_demand_093",
+      "territory": "solution_demand",
+      "query": "top tools for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for digital marketing tools, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_094",
+      "territory": "solution_demand",
+      "query": "ai tools for content marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for AI tools used in content marketing, a supported core workflow area."
+    },
+    {
+      "query_id": "solution_demand_095",
+      "territory": "solution_demand",
+      "query": "autonomous marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for an autonomous marketing solution approach, which is the company’s core positioning."
+    },
+    {
+      "query_id": "solution_demand_096",
+      "territory": "solution_demand",
+      "query": "top marketing automation software",
+      "verdict": "valid",
+      "reasoning": "This is commercial comparison intent for marketing automation software."
+    },
+    {
+      "query_id": "solution_demand_097",
+      "territory": "solution_demand",
+      "query": "tools used for digital marketing",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for digital marketing tools, an immediate parent category."
+    },
+    {
+      "query_id": "solution_demand_098",
+      "territory": "solution_demand",
+      "query": "marketing automation tools for small business",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for marketing automation tools aimed at small businesses, which matches the primary ICP."
+    },
+    {
+      "query_id": "solution_demand_099",
+      "territory": "solution_demand",
+      "query": "marketing automation software platforms",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for marketing automation software platforms."
+    },
+    {
+      "query_id": "solution_demand_100",
+      "territory": "solution_demand",
+      "query": "content marketing automation software",
+      "verdict": "valid",
+      "reasoning": "This is commercial intent for software that automates content marketing, a supported core workflow."
+    }
+  ]
+}

@@ -1,5 +1,10 @@
 import { getRequiredEnvVar } from "../config/env.js";
-import { logInfo, logStep, logSuccess } from "../lib/logger.js";
+import {
+  logInfo,
+  logStep,
+  logSuccess,
+  recordDataForSeoUsage,
+} from "../lib/logger.js";
 import {
   KeywordMetricsSchema,
   type KeywordMetrics,
@@ -163,6 +168,7 @@ export async function generateKeywordMetrics(
     (query) => query.metrics.average_top_10 === null,
   ).length;
   const totalCost = problemResponse.cost + solutionResponse.cost;
+  recordDataForSeoUsage("Keyword metrics", 2, 2, totalCost);
   const keywordMetrics = KeywordMetricsSchema.parse({
     schema_version: "1.0.0",
     run_id: runId,

@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:25:00.312Z",
+  "source_artifacts": [
+    "query-recommendations.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand_028 returned 8 organic results instead of 10.",
+    "problem_demand_048 returned 8 organic results instead of 10.",
+    "solution_demand_062 returned 9 organic results instead of 10.",
+    "solution_demand_091 returned 8 organic results instead of 10."
+  ],
+  "website_url": "https://attensify.net/",
+  "provider": {
+    "name": "serper",
+    "endpoint": "https://google.serper.dev/search",
+    "search_engine": "google",
+    "country_code": "us",
+    "language_code": "en",
+    "requested_results_per_query": 10,
+    "http_requests_made": 4,
+    "total_credits_used": 4
+  },
+  "query_serps": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "query_id": "problem_demand_028",
+      "territory": "problem_demand",
+      "query": "marketing workflow",
+      "requested_at": "2026-07-20T00:24:59.150Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 8,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Marketing Workflow Explained: How Modern Teams Work In 2026",
+          "url": "https://monday.com/blog/marketing/marketing-workflow/",
+          "domain": "monday.com",
+          "snippet": "A marketing workflow is a structured sequence of steps, approvals, and automated actions that move marketing work from initial concept through ...",
+          "date": "Dec 22, 2025"
+        },
+        {
+          "position": 2,
+          "title": "9 Marketing Automation Workflows & Templates for 2026",
+          "url": "https://insiderone.com/marketing-automation-workflows/",
+          "domain": "insiderone.com",
+          "snippet": "Explore 9 marketing automation workflows across email, SMS, WhatsApp, and web. Learn how AI and Insider One help boost ROI, CLTV, and conversions.",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "What is a Marketing Workflow? Steps + Software",
+          "url": "https://www.airtable.com/articles/marketing-workflow",
+          "domain": "airtable.com",
+          "snippet": "A marketing workflow is the repeatable sequence of tasks, approvals, and deliverables that move a marketing project from concept to completion.",
+          "date": "Nov 19, 2025"
+        },
+        {
+          "position": 4,
+          "title": "Marketing workflow automation for smarter, faster campaigns and ...",
+          "url": "https://www.moxo.com/blog/marketing-automation-workflow",
+          "domain": "moxo.com",
+          "snippet": "A marketing workflow is a sequence of tasks that guides how marketing campaigns are planned, executed with clients, and measured.",
+          "date": "Apr 24, 2025"
+        },
+        {
+          "position": 5,
+          "title": "What are the best tools to create automation workflows for marketing ...",
+          "url": "https://www.reddit.com/r/DigitalMarketing/comments/1o1kwe8/what_are_the_best_tools_to_create_automation/",
+          "domain": "reddit.com",
+          "snippet": "Today, founders are saying, Automate everything that takes up a lot of man-hours.\n\nI really need an honest answer. Since I’m in digital marketing, I’d ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "Understanding and implementing effective marketing workflows",
+          "url": "https://www.hellobonsai.com/blog/marketing-workflow",
+          "domain": "hellobonsai.com",
+          "snippet": "A marketing workflow primarily comprises task management, resource management, and automation. Task management involves the systematic ...",
+          "date": "Jan 8, 2026"
+        },
+        {
+          "position": 7,
+          "title": "What Is a Digital Marketing Workflow?",
+          "url": "https://www.wrike.com/digital-marketing-guide/faq/what-is-digital-marketing-workflow/",
+          "domain": "wrike.com",
+          "snippet": "A digital marketing workflow refers to how teams manage their work and the outcomes they wish to achieve with their projects.",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "The Ultimate Guide to Marketing Workflow Automation",
+          "url": "https://www.aprimo.com/blog/the-ultimate-guide-to-marketing-workflow-automation",
+          "domain": "aprimo.com",
+          "snippet": "Marketing workflow automation focuses on internal operational processes, including content creation, approval routing, asset management, and team collaboration.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "query": "automated marketing campaigns",
+      "requested_at": "2026-07-20T00:24:59.152Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 8,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "What is Marketing Automation?",
+          "url": "https://www.hubspot.com/products/marketing/marketing-automation-information",
+          "domain": "hubspot.com",
+          "snippet": "Marketing automation is software that automates repetitive marketing tasks like email campaigns, social media posting, and lead nurturing.",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "The Power of Automated Marketing Campaigns",
+          "url": "https://www.activecampaign.com/blog/automated-marketing-campaigns",
+          "domain": "activecampaign.com",
+          "snippet": "Automated marketing campaigns have emerged as a game-changer for content creation and distribution. These campaigns offer the convenience of automating routine ...",
+          "date": "Mar 22, 2024"
+        },
+        {
+          "position": 3,
+          "title": "7 Marketing Automation Campaigns to Inspire You",
+          "url": "https://www.moengage.com/learn/marketing-automation-campaigns/",
+          "domain": "moengage.com",
+          "snippet": "Let's look at the top 7 marketing automation campaigns every brand needs to embrace in 2023 and beyond!",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "What are Automated Marketing Campaigns?",
+          "url": "https://www.zinfi.com/glossary/what-are-automated-marketing-campaigns/",
+          "domain": "zinfi.com",
+          "snippet": "Automated marketing campaigns use software and technology to create, manage, and analyze marketing efforts automatically.",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Best Automated Marketing Campaigns",
+          "url": "https://www.pipedrive.com/en/blog/automated-marketing-campaign",
+          "domain": "pipedrive.com",
+          "snippet": "An automated marketing campaign uses technology to streamline or eliminate repetitive tasks. It involves setting up predefined triggers and actions.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "Automated Marketing Campaigns | Digital Marketing Tool",
+          "url": "https://www.commercengine.io/features/campaigns",
+          "domain": "commercengine.io",
+          "snippet": "Move beyond simple email sends. With Commerce Engine, create powerful automated marketing campaigns that respond to customer actions in real time.",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "The Ultimate Guide to Marketing Automation",
+          "url": "https://digitalmarketinginstitute.com/blog/the-ultimate-guide-to-marketing-automation",
+          "domain": "digitalmarketinginstitute.com",
+          "snippet": "Marketing automation is the use of software and technology to streamline, automate, scale, optimize, and measure marketing activities. It ...",
+          "date": "Sep 11, 2025"
+        },
+        {
+          "position": 8,
+          "title": "10 types of successful Marketing Automations",
+          "url": "https://www.dinmo.com/audience-strategies/retention/emailing/marketing-automation/",
+          "domain": "dinmo.com",
+          "snippet": "Marketing automation involves the adoption of software and technologies to automate recurring marketing tasks and refine communication with ...",
+          "date": "Feb 27, 2026"
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "query": "digital marketing platform for small businesses",
+      "requested_at": "2026-07-20T00:24:59.152Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "10 Simple All-in-One Marketing Platforms for Small Business",
+          "url": "https://www.thryv.com/blog/simple-all-in-one-marketing-platforms/",
+          "domain": "thryv.com",
+          "snippet": "EngageBay is an affordable, all-in-one marketing, sales, and customer service platform for small businesses. It provides robust CRM, marketing ...",
+          "date": "Apr 29, 2025"
+        },
+        {
+          "position": 2,
+          "title": "12 Best All-in-One Marketing Platforms (2026 Comparison)",
+          "url": "https://www.sender.net/blog/all-in-one-marketing-platforms/",
+          "domain": "sender.net",
+          "snippet": "Sender is an email and SMS marketing platform built for small and mid-sized businesses. It combines multichannel messaging, automation ...",
+          "date": "Jun 4, 2026"
+        },
+        {
+          "position": 3,
+          "title": "Best All-in-One Marketing Platforms for Small Businesses (2026)",
+          "url": "https://www.youtube.com/watch?v=dwIn4o6gAJI",
+          "domain": "youtube.com",
+          "snippet": "PosterMyWall is the best all-in-one marketing platform for small businesses. It includes over 3 million customizable templates, built-in email ...",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "15 marketing tools for small business in 2026",
+          "url": "https://monday.com/blog/marketing/marketing-tools-for-small-business/",
+          "domain": "monday.com",
+          "snippet": "Marketing tools for small business to automate tasks, manage campaigns and grow faster - top picks for email, SEO, and social media.",
+          "date": "Feb 5, 2026"
+        },
+        {
+          "position": 5,
+          "title": "28 Digital Marketing Tools for Small Businesses (+ Budget-Friendly and ...",
+          "url": "https://buffer.com/resources/digital-marketing-tools/",
+          "domain": "buffer.com",
+          "snippet": "Discover 28 essential digital marketing tools that help growing brands succeed without breaking the bank — including free and affordable ...",
+          "date": "Jan 5, 2026"
+        },
+        {
+          "position": 6,
+          "title": "10 Best Small Business Marketing Software In 2026",
+          "url": "https://thecmo.com/tools/small-business-marketing-software/",
+          "domain": "thecmo.com",
+          "snippet": "Elastic Email helps small businesses create campaigns, automate emails, manage contacts, and track performance.",
+          "date": "Jun 30, 2026"
+        },
+        {
+          "position": 7,
+          "title": "Best Digital Marketing Platforms for Small Businesses in 2025",
+          "url": "https://www.vendasta.com/blog/best-digital-marketing-platforms-for-small-businesses/",
+          "domain": "vendasta.com",
+          "snippet": "The best digital marketing platform for small businesses in 2025 is Vendasta. Wix, Shopify, and Vendasta are strong options. Vendasta, HubSpot, ...",
+          "date": "Oct 6, 2025"
+        },
+        {
+          "position": 8,
+          "title": "15 best marketing apps for small businesses in 2026",
+          "url": "https://www.dash.app/blog/top-marketing-apps-small-business",
+          "domain": "dash.app",
+          "snippet": "A lean starting stack might be Shopify, Dash, Google Analytics, ChatGPT and Canva. These five tools cover the basics across every category and ...",
+          "date": "Jun 30, 2026"
+        },
+        {
+          "position": 9,
+          "title": "10 Best Digital Marketing Tools for Small Business",
+          "url": "https://blog.whmcs.com/133777/10-best-digital-marketing-tools-for-small-business",
+          "domain": "blog.whmcs.com",
+          "snippet": "SocialBee; XOVI; Sitejet; MailChimp; HubSpot; Asana; BuzzSumo; Grammarly Business; Canva; SimpleTexting. 1. SocialBee - Social Media Management ...",
+          "date": "Jan 30, 2026"
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "query_id": "solution_demand_091",
+      "territory": "solution_demand",
+      "query": "tools for digital marketing agency",
+      "requested_at": "2026-07-20T00:24:59.153Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 8,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "The 20+ best digital marketing tools in 2026",
+          "url": "https://zapier.com/blog/best-digital-marketing-tools/",
+          "domain": "zapier.com",
+          "snippet": "Email marketing automation platforms · Email newsletter apps · Drip campaign software · SMS marketing tools · Help desk and customer support ...",
+          "date": "Apr 29, 2026"
+        },
+        {
+          "position": 2,
+          "title": "Top 16 marketing agency tools in 2026",
+          "url": "https://funnel.io/blog/marketing-agency-tools",
+          "domain": "funnel.io",
+          "snippet": "Modern agencies need tools across five core layers: data and reporting, project management, marketing automation, creative and AI, and ...",
+          "date": "Jan 28, 2025"
+        },
+        {
+          "position": 3,
+          "title": "Best Tools for Digital Agencies",
+          "url": "https://digitalagencynetwork.com/tools/",
+          "domain": "digitalagencynetwork.com",
+          "snippet": "We created a comprehensive library of the best agency software, from SEO and social media solutions to project management and design powerhouses.",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "The 10 Digital Marketing Tools Every Business Needs",
+          "url": "https://www.cpanel.net/blog/app-spotlight/digital-marketing-tools/",
+          "domain": "cpanel.net",
+          "snippet": "Discover 10 essential digital marketing tools help you improve SEO, manage social media, track campaigns, and drive real results.",
+          "date": "Apr 22, 2025"
+        },
+        {
+          "position": 5,
+          "title": "27 Must-have digital marketing tools to help your brand grow",
+          "url": "https://sproutsocial.com/insights/digital-marketing-tools/?amp",
+          "domain": "sproutsocial.com",
+          "snippet": "This guide covers 27 digital marketing tools across nine categories, including social media management, AI, email marketing, SEO, analytics, conversion ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "4 Best Marketing Agency Tools For More Sales in 2026",
+          "url": "https://famewall.io/blog/marketing-agency-tools/",
+          "domain": "famewall.io",
+          "snippet": "1. Famewall - Best For Text and Video Testimonials · 2. WiserReview - Best for Managing Client Reviews From One Dashboard · 3. HubSpot Marketing ...",
+          "date": "Mar 24, 2026"
+        },
+        {
+          "position": 7,
+          "title": "Top 11 Tools Every Digital Marketing Agency Needs | Seven Figure Agency",
+          "url": "https://www.youtube.com/watch?v=JdLwrH5Fttc",
+          "domain": "youtube.com",
+          "snippet": "Marketing automation · Client relationship management · Project management · SEO and PPC · Analytics and Reporting · & much more! Get a Free ...",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "The 60+ Best Marketing Agency Tools for 2026",
+          "url": "https://agencyanalytics.com/blog/marketing-agency-tools",
+          "domain": "agencyanalytics.com",
+          "snippet": "Discover essential marketing agency tools for optimizing strategy, client engagement, and operational efficiency in this concise guide.",
+          "date": "Nov 3, 2025"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "recommended_queries_received": 4,
+    "serp_requests_completed": 4,
+    "total_organic_results": 33,
+    "queries_with_fewer_than_ten_results": [
+      "problem_demand_028",
+      "problem_demand_048",
+      "solution_demand_062",
+      "solution_demand_091"
+    ]
+  }
+}

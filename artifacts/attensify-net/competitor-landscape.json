@@ -1,0 +1,7271 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "994d1356-d5b1-4279-9eea-29da81ef5d40",
+  "generated_at": "2026-07-20T00:25:31.497Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "5 duplicate confirmed query strings removed before provider submission."
+  ],
+  "website_url": "https://attensify.net/",
+  "target_domain": "attensify.net",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
+    "http_requests_made": 1,
+    "tasks_submitted": 1,
+    "task_id": "07200325-2045-0383-0000-71e879b09fe8",
+    "task_status_code": 20000,
+    "task_status_message": "Ok.",
+    "total_cost_usd": 0.018
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "include_subdomains": true,
+    "item_types": [
+      "organic"
+    ],
+    "limit": 50,
+    "order_by": [
+      "rating,desc"
+    ],
+    "target_domain_exclusion_filter": "(^|\\.)attensify\\.net$"
+  },
+  "scope": {
+    "based_on": "all_validated_queries",
+    "confirmed_queries_received": 110,
+    "unique_queries_submitted": 105,
+    "duplicate_queries_removed": 5,
+    "provider_keyword_limit": 200,
+    "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+  },
+  "summary": {
+    "total_domains_found": 1391,
+    "domains_received": 50,
+    "competitors_included": 50,
+    "target_domain_excluded": true
+  },
+  "competitors": [
+    {
+      "competitor_id": "competitor_reddit-com",
+      "rank": 1,
+      "domain": "reddit.com",
+      "average_position": 3.5813953488372094,
+      "median_position": 3,
+      "visibility_rating": 4146,
+      "visibility_index": 31.899999999999995,
+      "estimated_traffic_from_analyzed_queries": 2840.110999999999,
+      "keywords_ranked_count": 43,
+      "query_coverage_percentage": 40.95,
+      "relevant_serp_items": 43,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_047",
+          "query": "ai marketing workflow",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "linkedin marketing automation",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "autonomous marketing",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_youtube-com",
+      "rank": 2,
+      "domain": "youtube.com",
+      "average_position": 21.29411764705882,
+      "median_position": 16,
+      "visibility_rating": 4014,
+      "visibility_index": 6.849999999999996,
+      "estimated_traffic_from_analyzed_queries": 242.62999999999988,
+      "keywords_ranked_count": 51,
+      "query_coverage_percentage": 48.57,
+      "relevant_serp_items": 51,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_047",
+          "query": "ai marketing workflow",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "linkedin marketing automation",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            59
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "autonomous marketing",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_zapier-com",
+      "rank": 3,
+      "domain": "zapier.com",
+      "average_position": 11.69047619047619,
+      "median_position": 7,
+      "visibility_rating": 3709,
+      "visibility_index": 17.450000000000006,
+      "estimated_traffic_from_analyzed_queries": 868.0449999999998,
+      "keywords_ranked_count": 42,
+      "query_coverage_percentage": 40,
+      "relevant_serp_items": 42,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "marketing automation tools for small business",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_insiderone-com",
+      "rank": 4,
+      "domain": "insiderone.com",
+      "average_position": 8.321428571428571,
+      "median_position": 3,
+      "visibility_rating": 2567,
+      "visibility_index": 16.650000000000006,
+      "estimated_traffic_from_analyzed_queries": 894.9560000000001,
+      "keywords_ranked_count": 28,
+      "query_coverage_percentage": 26.67,
+      "relevant_serp_items": 28,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            77
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "autonomous marketing",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "marketing automation tools for small business",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_salesforce-com",
+      "rank": 5,
+      "domain": "salesforce.com",
+      "average_position": 15.862068965517242,
+      "median_position": 9,
+      "visibility_rating": 2440,
+      "visibility_index": 9.800000000000006,
+      "estimated_traffic_from_analyzed_queries": 2156.4079999999994,
+      "keywords_ranked_count": 29,
+      "query_coverage_percentage": 27.62,
+      "relevant_serp_items": 29,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            59
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_digitalmarketinginstitute-com",
+      "rank": 6,
+      "domain": "digitalmarketinginstitute.com",
+      "average_position": 16.53846153846154,
+      "median_position": 8,
+      "visibility_rating": 2170,
+      "visibility_index": 8.2,
+      "estimated_traffic_from_analyzed_queries": 424.66499999999996,
+      "keywords_ranked_count": 26,
+      "query_coverage_percentage": 24.76,
+      "relevant_serp_items": 26,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            90
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_blog-hubspot-com",
+      "rank": 7,
+      "domain": "blog.hubspot.com",
+      "average_position": 27.733333333333334,
+      "median_position": 23,
+      "visibility_rating": 2168,
+      "visibility_index": 1.6,
+      "estimated_traffic_from_analyzed_queries": 53.115999999999985,
+      "keywords_ranked_count": 30,
+      "query_coverage_percentage": 28.57,
+      "relevant_serp_items": 30,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_047",
+          "query": "ai marketing workflow",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            74
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            78
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_marketermilk-com",
+      "rank": 8,
+      "domain": "marketermilk.com",
+      "average_position": 4.05,
+      "median_position": 2,
+      "visibility_rating": 1919,
+      "visibility_index": 15.6,
+      "estimated_traffic_from_analyzed_queries": 1210.6819999999996,
+      "keywords_ranked_count": 20,
+      "query_coverage_percentage": 19.05,
+      "relevant_serp_items": 20,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_047",
+          "query": "ai marketing workflow",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_activecampaign-com",
+      "rank": 9,
+      "domain": "activecampaign.com",
+      "average_position": 23.72,
+      "median_position": 21,
+      "visibility_rating": 1907,
+      "visibility_index": 3.9999999999999996,
+      "estimated_traffic_from_analyzed_queries": 146.62399999999994,
+      "keywords_ranked_count": 25,
+      "query_coverage_percentage": 23.81,
+      "relevant_serp_items": 25,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            91
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "autonomous marketing",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_salesmate-io",
+      "rank": 10,
+      "domain": "salesmate.io",
+      "average_position": 29.962962962962962,
+      "median_position": 23,
+      "visibility_rating": 1891,
+      "visibility_index": 0.7500000000000002,
+      "estimated_traffic_from_analyzed_queries": 42.375,
+      "keywords_ranked_count": 27,
+      "query_coverage_percentage": 25.71,
+      "relevant_serp_items": 27,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thecmo-com",
+      "rank": 11,
+      "domain": "thecmo.com",
+      "average_position": 40.86666666666667,
+      "median_position": 31,
+      "visibility_rating": 1774,
+      "visibility_index": 0.35,
+      "estimated_traffic_from_analyzed_queries": 92.78300000000002,
+      "keywords_ranked_count": 30,
+      "query_coverage_percentage": 28.57,
+      "relevant_serp_items": 30,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            81
+          ]
+        },
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            91
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            75
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            70
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            59
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_gumloop-com",
+      "rank": 12,
+      "domain": "gumloop.com",
+      "average_position": 3.5555555555555554,
+      "median_position": 1,
+      "visibility_rating": 1736,
+      "visibility_index": 15.600000000000001,
+      "estimated_traffic_from_analyzed_queries": 1538.821,
+      "keywords_ranked_count": 18,
+      "query_coverage_percentage": 17.14,
+      "relevant_serp_items": 18,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_sproutsocial-com",
+      "rank": 13,
+      "domain": "sproutsocial.com",
+      "average_position": 31.695652173913043,
+      "median_position": 27,
+      "visibility_rating": 1571,
+      "visibility_index": 2.15,
+      "estimated_traffic_from_analyzed_queries": 485.3419999999999,
+      "keywords_ranked_count": 23,
+      "query_coverage_percentage": 21.9,
+      "relevant_serp_items": 23,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            85
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_digitalocean-com",
+      "rank": 14,
+      "domain": "digitalocean.com",
+      "average_position": 41,
+      "median_position": 42,
+      "visibility_rating": 1534,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 26.90899999999999,
+      "keywords_ranked_count": 26,
+      "query_coverage_percentage": 24.76,
+      "relevant_serp_items": 26,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            68
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_emailvendorselection-com",
+      "rank": 15,
+      "domain": "emailvendorselection.com",
+      "average_position": 11,
+      "median_position": 5,
+      "visibility_rating": 1513,
+      "visibility_index": 8.5,
+      "estimated_traffic_from_analyzed_queries": 484.73199999999997,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 16.19,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_hubspot-com",
+      "rank": 16,
+      "domain": "hubspot.com",
+      "average_position": 11.647058823529411,
+      "median_position": 7,
+      "visibility_rating": 1502,
+      "visibility_index": 7.000000000000001,
+      "estimated_traffic_from_analyzed_queries": 807.057,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 16.19,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_g2-com",
+      "rank": 17,
+      "domain": "g2.com",
+      "average_position": 13.5,
+      "median_position": 11,
+      "visibility_rating": 1384,
+      "visibility_index": 3.099999999999999,
+      "estimated_traffic_from_analyzed_queries": 220.28799999999998,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 15.24,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "marketing automation tools for small business",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_moengage-com",
+      "rank": 18,
+      "domain": "moengage.com",
+      "average_position": 31.15,
+      "median_position": 29,
+      "visibility_rating": 1377,
+      "visibility_index": 0.75,
+      "estimated_traffic_from_analyzed_queries": 18.015999999999995,
+      "keywords_ranked_count": 20,
+      "query_coverage_percentage": 19.05,
+      "relevant_serp_items": 20,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_ventureharbour-com",
+      "rank": 19,
+      "domain": "ventureharbour.com",
+      "average_position": 3.642857142857143,
+      "median_position": 4,
+      "visibility_rating": 1349,
+      "visibility_index": 10.299999999999999,
+      "estimated_traffic_from_analyzed_queries": 389.652,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 13.33,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_coursera-org",
+      "rank": 20,
+      "domain": "coursera.org",
+      "average_position": 15.875000000000002,
+      "median_position": 11,
+      "visibility_rating": 1346,
+      "visibility_index": 3.15,
+      "estimated_traffic_from_analyzed_queries": 95.367,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 15.24,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            72
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_capterra-com",
+      "rank": 21,
+      "domain": "capterra.com",
+      "average_position": 36.04761904761905,
+      "median_position": 34,
+      "visibility_rating": 1343,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 22.107999999999997,
+      "keywords_ranked_count": 21,
+      "query_coverage_percentage": 20,
+      "relevant_serp_items": 21,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            88
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_sitecore-com",
+      "rank": 22,
+      "domain": "sitecore.com",
+      "average_position": 17.3125,
+      "median_position": 12,
+      "visibility_rating": 1323,
+      "visibility_index": 2.8000000000000003,
+      "estimated_traffic_from_analyzed_queries": 43.032000000000004,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 15.24,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_activepieces-com",
+      "rank": 23,
+      "domain": "activepieces.com",
+      "average_position": 20.6875,
+      "median_position": 20,
+      "visibility_rating": 1269,
+      "visibility_index": 1.0500000000000003,
+      "estimated_traffic_from_analyzed_queries": 20.633,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 15.24,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_buffer-com",
+      "rank": 24,
+      "domain": "buffer.com",
+      "average_position": 34.26315789473684,
+      "median_position": 25,
+      "visibility_rating": 1249,
+      "visibility_index": 0.35,
+      "estimated_traffic_from_analyzed_queries": 276.4359999999999,
+      "keywords_ranked_count": 19,
+      "query_coverage_percentage": 18.1,
+      "relevant_serp_items": 19,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            97
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_gwi-com",
+      "rank": 25,
+      "domain": "gwi.com",
+      "average_position": 9.461538461538462,
+      "median_position": 7,
+      "visibility_rating": 1177,
+      "visibility_index": 4.6,
+      "estimated_traffic_from_analyzed_queries": 179.05599999999998,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 12.38,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_linkedin-com",
+      "rank": 26,
+      "domain": "linkedin.com",
+      "average_position": 27.25,
+      "median_position": 21,
+      "visibility_rating": 1164,
+      "visibility_index": 1.2500000000000002,
+      "estimated_traffic_from_analyzed_queries": 90.00600000000001,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 15.24,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_047",
+          "query": "ai marketing workflow",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "linkedin marketing automation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "autonomous marketing",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_crm-org",
+      "rank": 27,
+      "domain": "crm.org",
+      "average_position": 15.538461538461538,
+      "median_position": 13,
+      "visibility_rating": 1098,
+      "visibility_index": 1.4000000000000001,
+      "estimated_traffic_from_analyzed_queries": 45.618,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 12.38,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_quora-com",
+      "rank": 28,
+      "domain": "quora.com",
+      "average_position": 27.2,
+      "median_position": 21,
+      "visibility_rating": 1092,
+      "visibility_index": 0.65,
+      "estimated_traffic_from_analyzed_queries": 51.69899999999999,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            77
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "linkedin marketing automation",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            84
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_improvado-io",
+      "rank": 29,
+      "domain": "improvado.io",
+      "average_position": 17.384615384615383,
+      "median_position": 13,
+      "visibility_rating": 1074,
+      "visibility_index": 3.0999999999999996,
+      "estimated_traffic_from_analyzed_queries": 70.94200000000001,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 12.38,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_seedprod-com",
+      "rank": 30,
+      "domain": "seedprod.com",
+      "average_position": 29.333333333333332,
+      "median_position": 29,
+      "visibility_rating": 1060,
+      "visibility_index": 0.6,
+      "estimated_traffic_from_analyzed_queries": 12.537,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "marketing automation tools for small business",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_encharge-io",
+      "rank": 31,
+      "domain": "encharge.io",
+      "average_position": 21.692307692307693,
+      "median_position": 14,
+      "visibility_rating": 1018,
+      "visibility_index": 2.3,
+      "estimated_traffic_from_analyzed_queries": 24.927,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 12.38,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_canva-com",
+      "rank": 32,
+      "domain": "canva.com",
+      "average_position": 16.25,
+      "median_position": 12,
+      "visibility_rating": 1005,
+      "visibility_index": 1.7000000000000002,
+      "estimated_traffic_from_analyzed_queries": 30.334000000000003,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 11.43,
+      "relevant_serp_items": 12,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_wrike-com",
+      "rank": 33,
+      "domain": "wrike.com",
+      "average_position": 9.636363636363637,
+      "median_position": 8,
+      "visibility_rating": 994,
+      "visibility_index": 4.15,
+      "estimated_traffic_from_analyzed_queries": 53.589000000000006,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 10.48,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_054",
+          "query": "content marketing workflow",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_pipeline-zoominfo-com",
+      "rank": 34,
+      "domain": "pipeline.zoominfo.com",
+      "average_position": 31.357142857142858,
+      "median_position": 29,
+      "visibility_rating": 961,
+      "visibility_index": 0.35,
+      "estimated_traffic_from_analyzed_queries": 15.177000000000001,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 13.33,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_027",
+          "query": "digital marketing tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            62
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_avidlyagency-com",
+      "rank": 35,
+      "domain": "avidlyagency.com",
+      "average_position": 14.181818181818182,
+      "median_position": 13,
+      "visibility_rating": 944,
+      "visibility_index": 0.75,
+      "estimated_traffic_from_analyzed_queries": 25.358,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 10.48,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_munro-agency",
+      "rank": 36,
+      "domain": "munro.agency",
+      "average_position": 14.545454545454545,
+      "median_position": 14,
+      "visibility_rating": 940,
+      "visibility_index": 0.6000000000000001,
+      "estimated_traffic_from_analyzed_queries": 30.801000000000002,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 10.48,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_brevo-com",
+      "rank": 37,
+      "domain": "brevo.com",
+      "average_position": 32.92857142857143,
+      "median_position": 28,
+      "visibility_rating": 939,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 13.533000000000001,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 13.33,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_engagebay-com",
+      "rank": 38,
+      "domain": "engagebay.com",
+      "average_position": 49.333333333333336,
+      "median_position": 49,
+      "visibility_rating": 912,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 10.836000000000002,
+      "keywords_ranked_count": 18,
+      "query_coverage_percentage": 17.14,
+      "relevant_serp_items": 18,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "problem_demand_028",
+          "query": "marketing workflow",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_065",
+          "query": "marketing workflow examples",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_097",
+          "query": "marketing automation workflows",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_sprinklr-com",
+      "rank": 39,
+      "domain": "sprinklr.com",
+      "average_position": 35.285714285714285,
+      "median_position": 32,
+      "visibility_rating": 906,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 13.413000000000002,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 13.33,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            70
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mailsoftly-com",
+      "rank": 40,
+      "domain": "mailsoftly.com",
+      "average_position": 19.272727272727273,
+      "median_position": 18,
+      "visibility_rating": 888,
+      "visibility_index": 0.39999999999999997,
+      "estimated_traffic_from_analyzed_queries": 8.147,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 10.48,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_neilpatel-com",
+      "rank": 41,
+      "domain": "neilpatel.com",
+      "average_position": 37.142857142857146,
+      "median_position": 32,
+      "visibility_rating": 880,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 80.149,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 13.33,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            91
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            69
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_behindrankings-com",
+      "rank": 42,
+      "domain": "behindrankings.com",
+      "average_position": 13.4,
+      "median_position": 13,
+      "visibility_rating": 866,
+      "visibility_index": 1.1500000000000004,
+      "estimated_traffic_from_analyzed_queries": 32.147,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 9.52,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_technologyadvice-com",
+      "rank": 43,
+      "domain": "technologyadvice.com",
+      "average_position": 31.416666666666668,
+      "median_position": 31,
+      "visibility_rating": 823,
+      "visibility_index": 0.45,
+      "estimated_traffic_from_analyzed_queries": 118.84400000000001,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 11.43,
+      "relevant_serp_items": 12,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_064",
+          "query": "marketing workflow example",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "online marketing automation tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_martech-org",
+      "rank": 44,
+      "domain": "martech.org",
+      "average_position": 20.8,
+      "median_position": 15,
+      "visibility_rating": 792,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 22.951999999999998,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 9.52,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_005",
+          "query": "digital marketing operations",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_033",
+          "query": "marketing ai platform",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_059",
+          "query": "ai tools marketing",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "ai powered marketing platform",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_087",
+          "query": "ai-powered marketing platform",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_095",
+          "query": "autonomous marketing",
+          "positions": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_croclub-com",
+      "rank": 45,
+      "domain": "croclub.com",
+      "average_position": 39.69230769230769,
+      "median_position": 42,
+      "visibility_rating": 784,
+      "visibility_index": 0.5,
+      "estimated_traffic_from_analyzed_queries": 11.934999999999999,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 12.38,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_businesswith-com",
+      "rank": 46,
+      "domain": "businesswith.com",
+      "average_position": 39.84615384615385,
+      "median_position": 41,
+      "visibility_rating": 782,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 9.849,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 12.38,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            56
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_gartner-com",
+      "rank": 47,
+      "domain": "gartner.com",
+      "average_position": 13.222222222222221,
+      "median_position": 6,
+      "visibility_rating": 781,
+      "visibility_index": 3.5000000000000004,
+      "estimated_traffic_from_analyzed_queries": 39.763000000000005,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 8.57,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "omnichannel marketing automation platform",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "best marketing automation software",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_designrush-com",
+      "rank": 48,
+      "domain": "designrush.com",
+      "average_position": 48.13333333333333,
+      "median_position": 52,
+      "visibility_rating": 778,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 75.47999999999999,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 14.29,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_048",
+          "query": "automated marketing campaigns",
+          "positions": [
+            75
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai tools for digital marketing",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_009",
+          "query": "digital marketing ai tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_011",
+          "query": "ai powered marketing automation platform",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_012",
+          "query": "ai digital marketing tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "best ai tools for digital marketing",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_021",
+          "query": "ai powered tools for digital marketing",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_029",
+          "query": "marketing ai tools",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_061",
+          "query": "ai-powered marketing automation",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "solution_demand_069",
+          "query": "top ai tools for marketing",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            68
+          ]
+        },
+        {
+          "query_id": "solution_demand_092",
+          "query": "ai-driven marketing automation",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_094",
+          "query": "ai tools for content marketing",
+          "positions": [
+            72
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_digitalagencynetwork-com",
+      "rank": 49,
+      "domain": "digitalagencynetwork.com",
+      "average_position": 24.6,
+      "median_position": 18,
+      "visibility_rating": 754,
+      "visibility_index": 0.9500000000000002,
+      "estimated_traffic_from_analyzed_queries": 88.80799999999999,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 9.52,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_003",
+          "query": "digital marketing workflow",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_056",
+          "query": "automated marketing reporting",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_057",
+          "query": "automated marketing reports",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_042",
+          "query": "ai digital marketing",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "digital marketing software",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "digital marketing platform for small businesses",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_091",
+          "query": "tools for digital marketing agency",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_093",
+          "query": "top tools for digital marketing",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_097",
+          "query": "tools used for digital marketing",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_pcmag-com",
+      "rank": 50,
+      "domain": "pcmag.com",
+      "average_position": 46.214285714285715,
+      "median_position": 45,
+      "visibility_rating": 753,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 9.597000000000001,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 13.33,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "digital marketing automation tools",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_015",
+          "query": "marketing automation tools",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_020",
+          "query": "marketing automation software",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_023",
+          "query": "digital marketing automation",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_039",
+          "query": "marketing software tools",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_054",
+          "query": "marketing automation tools list",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_055",
+          "query": "best marketing automation tools",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_064",
+          "query": "compare marketing automation tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_065",
+          "query": "marketing automation tools comparison",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_083",
+          "query": "digital advertising automation tools",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_090",
+          "query": "digital marketing automation tool",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_096",
+          "query": "top marketing automation software",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "marketing automation software platforms",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "content marketing automation software",
+          "positions": [
+            40
+          ]
+        }
+      ]
+    }
+  ]
+}
