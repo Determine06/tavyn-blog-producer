@@ -5,8 +5,10 @@
   "source_artifacts": [
     "seed-keywords.json"
   ],
-  "status": "complete",
-  "warnings": [],
+  "status": "partial",
+  "warnings": [
+    "DataForSEO returned fewer keyword candidates than the expected maximum. Expected maximum: 1000; actual total received: 2; problem-demand count: 1; solution-demand count: 1."
+  ],
   "website_url": "https://example.com",
   "provider": {
     "name": "dataforseo",
@@ -18,11 +20,52 @@
   "request_config": {
     "location_code": 2840,
     "language_code": "en",
-    "limit_per_task": 100,
+    "limit_per_task": 500,
     "closely_variants": true,
     "ignore_synonyms": false,
-    "include_serp_info": false,
+    "include_serp_info": true,
     "include_clickstream_data": false,
+    "filters": [
+      [
+        "keyword_info.search_volume",
+        ">",
+        0
+      ],
+      "and",
+      [
+        "keyword_properties.is_another_language",
+        "=",
+        false
+      ],
+      "and",
+      [
+        "keyword_properties.words_count",
+        ">=",
+        2
+      ],
+      "and",
+      [
+        "serp_info.serp_item_types",
+        "has_not",
+        "local_pack"
+      ],
+      "and",
+      [
+        "keyword",
+        "not_regex",
+        "(^|\\s)(near me|nearby|in my area|open now|opening hours|directions)(\\s|$)"
+      ],
+      "and",
+      [
+        "search_intent_info.main_intent",
+        "<>",
+        "navigational"
+      ]
+    ],
+    "order_by": [
+      "relevance,desc",
+      "keyword_info.search_volume,desc"
+    ],
     "minimum_search_volume": 1
   },
   "query_sets": [
@@ -35,7 +78,16 @@
         "problem seed three",
         "problem seed four",
         "problem seed five",
-        "problem seed six"
+        "problem seed six",
+        "problem seed seven",
+        "problem seed eight",
+        "problem seed nine",
+        "problem seed ten",
+        "problem seed eleven",
+        "problem seed twelve",
+        "problem seed thirteen",
+        "problem seed fourteen",
+        "problem seed fifteen"
       ],
       "task_result": {
         "task_id": "dataforseo-problem-task-id",
@@ -93,7 +145,16 @@
         "solution seed three",
         "solution seed four",
         "solution seed five",
-        "solution seed six"
+        "solution seed six",
+        "solution seed seven",
+        "solution seed eight",
+        "solution seed nine",
+        "solution seed ten",
+        "solution seed eleven",
+        "solution seed twelve",
+        "solution seed thirteen",
+        "solution seed fourteen",
+        "solution seed fifteen"
       ],
       "task_result": {
         "task_id": "dataforseo-solution-task-id",
@@ -144,10 +205,10 @@
     }
   ],
   "summary": {
-    "problem_queries_received": 0,
-    "solution_queries_received": 0,
-    "total_queries_received": 0,
-    "unique_queries_received": 0,
+    "problem_queries_received": 1,
+    "solution_queries_received": 1,
+    "total_queries_received": 2,
+    "unique_queries_received": 2,
     "queries_returned_in_both_sets": 0,
     "missing_search_volume_count": 0,
     "missing_keyword_difficulty_count": 0,

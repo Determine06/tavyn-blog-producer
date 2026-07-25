@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
+import { SEEDS_PER_TERRITORY } from "./seedKeywords.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
@@ -81,7 +82,9 @@ const ValidatedQuerySchema = z
     query: NonEmptyStringSchema,
     territory: TerritorySchema,
     validation_reasoning: NonEmptyStringSchema,
-    source_seed_keywords: z.array(NonEmptyStringSchema).length(6),
+    source_seed_keywords: z
+      .array(NonEmptyStringSchema)
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -177,7 +180,9 @@ const ContentPlanItemSchema = z
     query_id: NonEmptyStringSchema,
     territory: TerritorySchema,
     primary_query: NonEmptyStringSchema,
-    source_seed_keywords: z.array(NonEmptyStringSchema).length(6),
+    source_seed_keywords: z
+      .array(NonEmptyStringSchema)
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -207,6 +212,7 @@ const ContentPlanSchema = z
         selected_count: z.number().int().min(2).max(4),
         problem_demand_count: z.number().int().min(0).max(2),
         solution_demand_count: z.number().int().min(0).max(2),
+        average_opportunity_score: z.number().min(0).max(100),
       })
       .strict(),
     items: z.array(ContentPlanItemSchema).min(2).max(4),

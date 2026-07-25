@@ -1,4 +1,5 @@
 import { logInfo, logStep, logSuccess } from "../lib/logger.js";
+import { calculateOpportunityScore } from "../lib/opportunityScoring.js";
 import {
   CompanyProfileSchema,
   type CompanyProfile,
@@ -212,6 +213,18 @@ export function generateCompanyReport(
   logInfo(
     `Content-plan item count: ${report.content_plan.summary.selected_count}`,
   );
+  logInfo(
+    `Validated queries included in opportunity average: ${report.analysis_coverage.queries_validated}`,
+  );
+  logInfo(
+    `Problem-demand queries included in opportunity average: ${report.validated_queries.summary.problem_demand}`,
+  );
+  logInfo(
+    `Solution-demand queries included in opportunity average: ${report.validated_queries.summary.solution_demand}`,
+  );
+  logInfo(
+    `Average opportunity score: ${report.content_plan.summary.average_opportunity_score}`,
+  );
   logInfo(`Live SERP count: ${report.analysis_coverage.live_serps_analyzed}`);
   logInfo(
     `Ranking-page count: ${report.analysis_coverage.ranking_pages_analyzed}`,
@@ -360,6 +373,8 @@ function buildContentPlan(
   const recommendationsById =
     buildRecommendationsById(queryRecommendations);
   const serpsByRecommendationId = buildSerpsByRecommendationId(serpResults);
+  const averageOpportunityScore =
+    calculateAverageOpportunityScore(confirmedQueries);
   const items = contentRecommendation.content_recommendations.map(
     (contentItem) => {
       const confirmedQuery = requireMapValue(
@@ -443,9 +458,113 @@ function buildContentPlan(
       solution_demand_count: items.filter(
         (item) => item.territory === "solution_demand",
       ).length,
+      average_opportunity_score: averageOpportunityScore,
     },
     items,
   };
+}
+
+function calculateAverageOpportunityScore(
+  confirmedQueries: ConfirmedQueries,
+): number {
+  const confirmedQueryIds = new Set<string>();
+  const problemDemandQueries = getTerritoryConfirmedQueries(
+    confirmedQueries,
+    "problem_demand",
+  );
+  const solutionDemandQueries = getTerritoryConfirmedQueries(
+    confirmedQueries,
+    "solution_demand",
+  );
+  const maximumProblemDemandSearchVolume =
+    getMaximumSearchVolume(problemDemandQueries);
+  const maximumSolutionDemandSearchVolume =
+    getMaximumSearchVolume(solutionDemandQueries);
+
+  if (confirmedQueries.confirmed_queries.length === 0) {
+    throw new Error(
+      "Cannot generate company report because confirmed-queries.json contains no validated queries to score.",
+    );
+  }
+
+  if (
+    confirmedQueries.confirmed_queries.length !==
+    confirmedQueries.summary.total_queries_confirmed
+  ) {
+    throw new Error(
+      `Cannot generate company report because confirmed-queries.json has ${confirmedQueries.confirmed_queries.length} confirmed queries but summary.total_queries_confirmed is ${confirmedQueries.summary.total_queries_confirmed}.`,
+    );
+  }
+
+  if (
+    confirmedQueries.confirmed_queries.length !==
+    problemDemandQueries.length + solutionDemandQueries.length
+  ) {
+    throw new Error(
+      "Cannot generate company report because confirmed-queries.json contains queries outside the expected demand territories.",
+    );
+  }
+
+  const totalOpportunityScore = confirmedQueries.confirmed_queries.reduce(
+    (total, query) => {
+      if (confirmedQueryIds.has(query.query_id)) {
+        throw new Error(
+          `Cannot generate company report because confirmed query ${query.query_id} appears more than once.`,
+        );
+      }
+      confirmedQueryIds.add(query.query_id);
+
+      const maximumTerritorySearchVolume =
+        query.territory === "problem_demand"
+          ? maximumProblemDemandSearchVolume
+          : maximumSolutionDemandSearchVolume;
+      const score = calculateOpportunityScore(
+        query,
+        maximumTerritorySearchVolume,
+      ).opportunityScore;
+
+      if (!Number.isFinite(score)) {
+        throw new Error(
+          `Cannot generate company report because confirmed query ${query.query_id} produced a non-finite opportunity score.`,
+        );
+      }
+      if (score < 0 || score > 100) {
+        throw new Error(
+          `Cannot generate company report because confirmed query ${query.query_id} produced opportunity score ${score}, expected a value between 0 and 100.`,
+        );
+      }
+
+      return total + score;
+    },
+    0,
+  );
+
+  return roundToTwoDecimals(
+    totalOpportunityScore / confirmedQueries.confirmed_queries.length,
+  );
+}
+
+function getTerritoryConfirmedQueries(
+  confirmedQueries: ConfirmedQueries,
+  territory: ConfirmedQuery["territory"],
+): ConfirmedQuery[] {
+  const territoryQueries = confirmedQueries.confirmed_queries.filter(
+    (query) => query.territory === territory,
+  );
+
+  if (territoryQueries.some((query) => query.territory !== territory)) {
+    throw new Error(
+      `Cannot generate company report because the ${territory} benchmark includes a query from another territory.`,
+    );
+  }
+
+  return territoryQueries;
+}
+
+function getMaximumSearchVolume(queries: ConfirmedQuery[]): number {
+  return queries.length === 0
+    ? 0
+    : Math.max(...queries.map((query) => query.metrics.search_volume ?? 0));
 }
 
 function validateContentPlanJoins(

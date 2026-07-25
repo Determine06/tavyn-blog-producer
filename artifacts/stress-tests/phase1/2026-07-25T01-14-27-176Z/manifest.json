@@ -1,0 +1,67 @@
+{
+  "suite_name": "phase1-stress-test",
+  "git_branch": "testing-improvement",
+  "git_commit_sha": "8cce800991f4fa20d4f81b05f55abb52ff2f5cba",
+  "dirty_working_tree": true,
+  "started_at": "2026-07-25T01:14:27.176Z",
+  "completed_at": "2026-07-25T01:20:19.421Z",
+  "execution_order": [
+    "featurebase",
+    "trigger-dev",
+    "harpsen"
+  ],
+  "cache_mode": "cache",
+  "direct_force_selections": [
+    "seed-keywords"
+  ],
+  "effective_force_behavior": [
+    "seed-keywords"
+  ],
+  "stop_after": "seed-keywords",
+  "snapshot_directory": "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z",
+  "overall_status": "success",
+  "companies": [
+    {
+      "name": "Featurebase",
+      "slug": "featurebase",
+      "url": "https://www.featurebase.app/",
+      "status": "success",
+      "duration_ms": 316871,
+      "exit_code": 0,
+      "snapshot_directory": "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/featurebase",
+      "snapshotted_artifact_paths": [
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/featurebase/crawl-context.json",
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/featurebase/company-profile.json",
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/featurebase/seed-keywords.json"
+      ]
+    },
+    {
+      "name": "Trigger.dev",
+      "slug": "trigger-dev",
+      "url": "https://trigger.dev/",
+      "status": "success",
+      "duration_ms": 19759,
+      "exit_code": 0,
+      "snapshot_directory": "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/trigger-dev",
+      "snapshotted_artifact_paths": [
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/trigger-dev/crawl-context.json",
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/trigger-dev/company-profile.json",
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/trigger-dev/seed-keywords.json"
+      ]
+    },
+    {
+      "name": "Harpsen",
+      "slug": "harpsen",
+      "url": "https://www.harpsen.com/",
+      "status": "success",
+      "duration_ms": 15551,
+      "exit_code": 0,
+      "snapshot_directory": "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/harpsen",
+      "snapshotted_artifact_paths": [
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/harpsen/crawl-context.json",
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/harpsen/company-profile.json",
+        "artifacts/stress-tests/phase1/2026-07-25T01-14-27-176Z/harpsen/seed-keywords.json"
+      ]
+    }
+  ]
+}

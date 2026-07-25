@@ -1,0 +1,442 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://trigger.dev/",
+  "generated_at": "2026-07-24T20:32:40.914Z",
+  "source_pages": [
+    {
+      "url": "https://trigger.dev/",
+      "title": "Trigger.dev | Build and deploy fully-managed AI agents and workflows."
+    },
+    {
+      "url": "https://trigger.dev/product/ai-agents",
+      "title": "AI agents | Trigger.dev"
+    },
+    {
+      "url": "https://trigger.dev/product",
+      "title": "Product | Trigger.dev"
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "Trigger.dev",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title: \"Trigger.dev | Build and deploy fully-managed AI agents and workflows.\"",
+        "Repeated branding across crawled pages: Trigger.dev"
+      ]
+    },
+    "domain": "trigger.dev",
+    "one_sentence_description": {
+      "value": "A TypeScript platform for building and deploying fully managed AI agents and workflows with durable execution and observability.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"The platform for building AI workflows in TypeScript.\"",
+        "Homepage: \"Long-running tasks with retries, queues, observability, and elastic scaling.\""
+      ]
+    },
+    "product_category": {
+      "value": "AI workflow orchestration platform",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"platform for building AI workflows in TypeScript\"",
+        "Product page: \"Reliable background jobs without the headache of managing servers\"",
+        "AI agents page: \"Drop-in AI agent infrastructure\""
+      ]
+    },
+    "business_model": {
+      "value": "usage-based managed platform with self-host option",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Pay for what you use\"",
+        "Homepage: \"Simple pricing\"",
+        "Homepage: \"Self-host\" and \"open source and self-hostable\""
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "established product with GA feature release and public customer proof",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: \"v4.5.0 GA: AI Agents are GA\"",
+        "Homepage: customer testimonials and logos",
+        "Homepage: \"15.7k+ stars on GitHub\""
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "developers building AI apps, background jobs, and workflow automation in TypeScript",
+      "description": "Software developers and engineering teams shipping AI agents, async tasks, and durable workflows in modern web applications.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"The platform for building AI workflows in TypeScript\"",
+        "Homepage: \"Build durable AI agents\"",
+        "Product page: \"Write tasks in regular code\""
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "engineering teams at product companies",
+        "description": "Teams responsible for shipping production workflows, task orchestration, and observability in customer-facing applications.",
+        "confidence": "medium",
+        "evidence": [
+          "Homepage testimonials from product companies",
+          "Product page: observability, concurrency, retries, deployment, and scaling features"
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The site speaks primarily to developers and engineering teams. It also references use by product companies and teams operating production AI workflows, but no non-technical buyer segment is clearly named.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: repeated developer-focused language such as \"for developers\" and \"write tasks in regular code\"",
+        "AI agents page: \"Agents that live in your codebase\""
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "background jobs and AI workflows hit timeouts or fail under long-running execution",
+      "description": "Teams need to run long tasks, but serverless limits and crashes can break execution.",
+      "audience_segment": "developers / engineering teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Long-running tasks with retries, queues, observability, and elastic scaling\"",
+        "Product page: \"no timeouts\"",
+        "AI agents page: \"Long-running without timeouts\""
+      ]
+    },
+    {
+      "pain": "teams do not want to manage servers or infrastructure for workflows",
+      "description": "Managing workers, scaling, and deployment complexity creates operational overhead.",
+      "audience_segment": "developers / engineering teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"No servers to manage\"",
+        "Product page: \"without managing servers yourself\"",
+        "Testimonials: references to avoiding ECS, Lambda, and homegrown cron solutions"
+      ]
+    },
+    {
+      "pain": "AI agents need reliability, observability, and safe control in production",
+      "description": "Production agents require retries, logging, monitoring, versioning, and human approval to avoid broken outputs and risky actions.",
+      "audience_segment": "developers building AI agents",
+      "confidence": "high",
+      "evidence": [
+        "AI agents page: \"reliability, control, and observability\"",
+        "Homepage: human-in-the-loop, observability, retries, versioning"
+      ]
+    },
+    {
+      "pain": "teams need to debug, monitor, and replay failed runs quickly",
+      "description": "Users need to find errors, inspect runs, and recover from failures without manual guesswork.",
+      "audience_segment": "engineering teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Find and fix bugs fast\"",
+        "Product page: \"Observability & monitoring\" and \"Bulk replaying\"",
+        "Homepage: alerts for errors, advanced filtering, versioning"
+      ]
+    },
+    {
+      "pain": "concurrent or bursty workloads can overwhelm simpler job systems",
+      "description": "Teams need queues, concurrency controls, and elastic infrastructure to handle variable load.",
+      "audience_segment": "engineering teams",
+      "confidence": "high",
+      "evidence": [
+        "Product page: \"Concurrency & queues\"",
+        "Homepage testimonials mention bursty loads and scaling",
+        "AI agents page: \"Agent concurrency controls\" and \"Autoscaling\""
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "build AI agents in TypeScript",
+      "description": "Provides a TypeScript SDK for defining AI workflows and agents in regular code.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"building AI workflows in TypeScript\"",
+        "AI agents page: \"Write agents in regular code\""
+      ]
+    },
+    {
+      "capability": "run long-running tasks without timeouts",
+      "description": "Executes background tasks that can outlast serverless limits.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Long-running tasks\"",
+        "Product page: \"no timeouts\""
+      ]
+    },
+    {
+      "capability": "automatic retries",
+      "description": "Retries failed tasks with configurable retry behavior.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Retries\"",
+        "Product page: \"Automatic retries\""
+      ]
+    },
+    {
+      "capability": "queues and concurrency controls",
+      "description": "Manages task execution order and parallelism with custom queues and concurrency keys.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Concurrency\"",
+        "Product page: \"Concurrency & queues\""
+      ]
+    },
+    {
+      "capability": "observability and monitoring",
+      "description": "Provides logs, tracing, metrics, run pages, and advanced filtering for debugging and monitoring.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"observability\"",
+        "Product page: \"Logging & tracing\" and \"Advanced run filters\""
+      ]
+    },
+    {
+      "capability": "elastic autoscaling infrastructure",
+      "description": "Automatically scales task infrastructure up or down based on load.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"elastic scaling\"",
+        "AI agents page: \"Autoscaling\""
+      ]
+    },
+    {
+      "capability": "human-in-the-loop approvals",
+      "description": "Pauses runs for human approval, rejection, or feedback and resumes later.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Human in the loop\"",
+        "AI agents page: \"Human-in-the-loop\""
+      ]
+    },
+    {
+      "capability": "realtime run updates and LLM streaming",
+      "description": "Streams run status and model responses directly to frontend users.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Stream to your frontend\"",
+        "Product page: \"Realtime updates & streaming\""
+      ]
+    },
+    {
+      "capability": "durable cron schedules",
+      "description": "Supports recurring schedules that do not hit function timeouts.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Product page: \"Durable cron schedules\""
+      ]
+    },
+    {
+      "capability": "structured inputs and outputs",
+      "description": "Defines runtime-validated schemas for task payloads and outputs.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Product page: \"Structured inputs / outputs\"",
+        "Homepage: \"Structured inputs / outputs\""
+      ]
+    },
+    {
+      "capability": "build extensions for runtime customization",
+      "description": "Supports Python, browsers, FFmpeg, system packages, and custom build tooling.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: Python, Puppeteer, FFmpeg, apt-get, custom build extensions",
+        "Product page: \"Build extensions\""
+      ]
+    },
+    {
+      "capability": "versioned deployments without interrupting running tasks",
+      "description": "Uses atomic versioning so new deploys do not affect in-flight runs.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Versioning\"",
+        "Product page: \"Atomic versioning\""
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "Trigger.dev positions itself as developer-first infrastructure for durable AI agents and background jobs, emphasizing TypeScript, reliability, observability, and no-server management.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"platform for building AI workflows in TypeScript\"",
+        "Product page: \"Reliable background jobs without the headache of managing servers\"",
+        "AI agents page: \"Drop-in AI agent infrastructure\""
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "TypeScript-first developer experience",
+        "description": "The product is framed as code-native and built for TypeScript workflows rather than a no-code or UI-first system.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"building AI workflows in TypeScript\"",
+          "AI agents page: \"Agents that live in your codebase\""
+        ]
+      },
+      {
+        "differentiator": "durability and reliability for long-running work",
+        "description": "Repeated emphasis on no timeouts, retries, checkpoints, idempotency, and versioning suggests reliability as a core differentiator.",
+        "confidence": "high",
+        "evidence": [
+          "Product page: \"no timeouts\"",
+          "Product page: \"Durability, retries & queues\"",
+          "Product page: \"Checkpointing\" and \"Versioning\""
+        ]
+      },
+      {
+        "differentiator": "production AI agent infrastructure with HITL and observability",
+        "description": "The company highlights agent control, approval gates, tracing, logs, alerts, and live run views for production use.",
+        "confidence": "high",
+        "evidence": [
+          "AI agents page: \"reliability, control, and observability\"",
+          "Homepage: \"human-in-the-loop\" and \"full observability\""
+        ]
+      },
+      {
+        "differentiator": "managed infrastructure with runtime freedom",
+        "description": "It promises managed scaling while still allowing Python, browsers, FFmpeg, packages, and other runtime customization.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"No servers to manage\"",
+          "Homepage: \"True runtime freedom for developers\""
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "Background jobs and AI agents should be durable, observable, and code-native, not constrained by serverless limits or fragile hand-rolled infrastructure.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Reliable background jobs without the headache of managing servers\"",
+        "AI agents page: \"Focus on building intelligent AI agents, not wrestling with servers\""
+      ]
+    },
+    "positioning_notes": {
+      "value": "The messaging bridges background jobs and AI-agent infrastructure, with strong overlap around durability, orchestration, and production readiness. Public testimonials reinforce developer trust and practical use cases.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage and product pages repeatedly link AI agents, background jobs, observability, and retries",
+        "Homepage testimonials mention workflows, billing jobs, deployment pipelines, and agentic systems"
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "developer-first",
+        "technical",
+        "confident",
+        "pragmatic",
+        "reliability-focused"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Build and deploy\"",
+        "Product page: feature-led, technical copy",
+        "AI agents page: \"Break less things with totally type-safe agents\""
+      ]
+    },
+    "writing_style": {
+      "value": "Concise technical marketing copy with strong feature lists, code examples, and production-oriented claims.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage includes TypeScript code example",
+        "Product page uses short sections and capability bullets",
+        "AI agents page uses architecture-style explanations"
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "no timeouts",
+        "context": "Repeated promise for long-running tasks and agent workflows.",
+        "evidence": [
+          "Homepage and product pages"
+        ]
+      },
+      {
+        "phrase": "no servers to manage",
+        "context": "Positioning around managed infrastructure.",
+        "evidence": [
+          "Homepage and product pages"
+        ]
+      },
+      {
+        "phrase": "human-in-the-loop",
+        "context": "Approval and feedback pauses for workflows.",
+        "evidence": [
+          "Homepage and AI agents page"
+        ]
+      },
+      {
+        "phrase": "write tasks in regular code",
+        "context": "Developer-native workflow messaging.",
+        "evidence": [
+          "Product page: \"Write tasks in regular code\""
+        ]
+      },
+      {
+        "phrase": "reliable by default",
+        "context": "Reliability positioning for retries and durable execution.",
+        "evidence": [
+          "Homepage section heading"
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "Pairs a capability claim with an operational benefit, such as durability, scaling, or observability.",
+        "description": "Features are usually framed as solving real production pain rather than abstract platform value.",
+        "evidence": [
+          "\"Retries, queues, observability, and elastic scaling\"",
+          "\"Build invincible AI apps\""
+        ]
+      },
+      {
+        "pattern": "Uses code and architecture language to signal developer fit.",
+        "description": "The site repeatedly references TypeScript, SDKs, tasks, schemas, and runtime behavior.",
+        "evidence": [
+          "Homepage code snippet",
+          "Product page sections: \"Write tasks in regular code\", \"Structured inputs / outputs\""
+        ]
+      },
+      {
+        "pattern": "Reinforces trust with customer quotes and public social proof.",
+        "description": "Testimonials and logos are prominent and tied to concrete workloads.",
+        "evidence": [
+          "Homepage customer quotes from Supabase, MagicSchool AI, Cal.com, Resend, and others"
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Exact pricing tiers are not described in the crawled content.",
+      "Company age or founding date is not stated in the crawled content.",
+      "Specific customer segments beyond developers/engineering teams are not comprehensively named.",
+      "Some integrations are mentioned, but the full integration set is not fully enumerated in the crawl."
+    ],
+    "potential_risks": [
+      "The crawl contains many repeated UI sections and testimonial snippets, which may overstate the prominence of some features.",
+      "Customer quotes include varied use cases; some are testimonial examples rather than core product claims.",
+      "A few demo/example workflows appear on the AI agents page and should not be mistaken for separate product categories."
+    ],
+    "notes": "The crawl provides strong evidence for product category, ICP, capabilities, and positioning. Evidence is especially strong on the homepage and product pages, with additional support from customer quotes and feature sections."
+  }
+}

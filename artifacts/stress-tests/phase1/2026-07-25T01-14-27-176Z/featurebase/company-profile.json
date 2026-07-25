@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://www.featurebase.app/",
+  "generated_at": "2026-07-24T20:31:41.157Z",
+  "source_pages": [
+    {
+      "url": "https://www.featurebase.app/",
+      "title": "Featurebase – Modern Support & Feedback Platform"
+    },
+    {
+      "url": "https://www.featurebase.app/pricing",
+      "title": "Featurebase – Pricing"
+    },
+    {
+      "url": "https://www.featurebase.app/customers",
+      "title": "Application error: a client-side exception has occurred"
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "Featurebase",
+      "confidence": "high",
+      "evidence": [
+        "Homepage header and footer use the name 'Featurebase'.",
+        "Pricing page header: 'Featurebase – Pricing'"
+      ]
+    },
+    "domain": "featurebase.app",
+    "one_sentence_description": {
+      "value": "Featurebase is a modern customer support, feedback, help center, and changelog platform for product teams.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Modern customer support & feedback platform'.",
+        "Homepage: 'Support your customers with AI, collect feedback, and announce product updates — all with one tool'."
+      ]
+    },
+    "product_category": {
+      "value": "customer support and feedback platform",
+      "confidence": "high",
+      "evidence": [
+        "Homepage headline: 'Modern customer support & feedback platform'.",
+        "Homepage sections cover Support, Feedback, Help Center, and Changelog."
+      ]
+    },
+    "business_model": {
+      "value": "freemium SaaS with paid per-seat plans and enterprise tier",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page shows Free, Growth, Professional, and Enterprise plans.",
+        "Pricing page: '$29/seat/month', '$59/seat/month', '$99/seat/month', and 'Start for free, no credit card required'."
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "established SaaS with enterprise positioning",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: 'Powering the world's leading startups and enterprises' and '1,500+ Customers'.",
+        "Pricing page includes Enterprise plan, security/compliance details, and startup/enterprise solutions."
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "product, support, and GTM teams at startups and growing companies",
+      "description": "Teams that handle customer support, collect product feedback, and communicate updates from one platform.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Built for teams that want to move fast and automate more, while staying close to their customers'.",
+        "Homepage: audience cards for 'Support teams', 'Product teams', and 'GTM teams'.",
+        "Homepage: 'Join thousands of modern product, marketing & support teams'."
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "enterprise organizations",
+        "description": "Larger organizations needing advanced security, SSO, and multi-brand workspace support.",
+        "confidence": "medium",
+        "evidence": [
+          "Pricing page: Enterprise plan with 'Multi-brand workspace', 'SSO & identity management', and 'Custom admin roles'.",
+          "Homepage: 'Powering the world's leading startups and enterprises'."
+        ]
+      },
+      {
+        "value": "startups",
+        "description": "Early-stage startups using the product to centralize support and feedback.",
+        "confidence": "high",
+        "evidence": [
+          "Pricing page: 'Startup Program' and 'Startups get 86% off Featurebase'.",
+          "Solutions menu includes 'Startups'."
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The site repeatedly frames the product around support, product, and GTM workflows; the strongest named audience is these internal teams rather than a single external end-customer vertical.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage collaboration section explicitly lists Support teams, Product teams, and GTM teams."
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "Customer conversations are spread across too many channels",
+      "description": "Teams need a single place to manage in-app, email, Slack, Discord, and other support conversations.",
+      "audience_segment": "support teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Consolidate all your customer communication channels into a powerful inbox'.",
+        "Homepage: 'Support customers wherever they are: In-app, Slack, Discord, Emails, and more from a single powerful inbox'."
+      ]
+    },
+    {
+      "pain": "Support teams spend too much time on repetitive issues and manual queue work",
+      "description": "The site emphasizes faster resolution, spam filtering, bulk actions, automations, and AI handling of routine requests.",
+      "audience_segment": "support teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'automatically resolve customer issues and cut down support loads'.",
+        "Pricing page changelog snippets mention 'spam filtering, bulk actions & more' and 'work through Conversations faster'."
+      ]
+    },
+    {
+      "pain": "Product teams struggle to centralize and prioritize feedback",
+      "description": "Feedback is scattered, hard to synthesize, and difficult to turn into product decisions.",
+      "audience_segment": "product teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Centralize user feedback, identify impactful product opportunities'.",
+        "Homepage: 'One place for all your product feedback, connected to customer data'."
+      ]
+    },
+    {
+      "pain": "Teams need to communicate product updates across multiple channels without manual follow-up",
+      "description": "The company positions changelogs, in-app widgets, and emails as a way to keep users informed and reduce support burden.",
+      "audience_segment": "GTM teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'announce product updates'.",
+        "Homepage changelog section: 'No more manual follow-ups'.",
+        "Homepage collaboration section: GTM teams can 'Communicate product updates and see each account’s requests, tickets, and data in one place'."
+      ]
+    },
+    {
+      "pain": "Teams need self-serve documentation that reduces support load",
+      "description": "Help content should answer questions quickly and help users find information without relying on human support.",
+      "audience_segment": "support teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage help center section: 'Get customers the answers they need, fast, and cut down your support loads'.",
+        "Homepage: 'AI search answers' and 'Multi-brand & multilingual'."
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "omnichannel inbox and ticketing",
+      "description": "Consolidates support conversations from multiple channels into one inbox.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Omnichannel inbox' and 'single powerful inbox'.",
+        "Pricing page: 'Omnichannel inbox & ticketing' included across plans."
+      ]
+    },
+    {
+      "capability": "AI support agent",
+      "description": "Uses Fibi AI to automatically resolve customer issues and assist support teams.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'AI support agent'.",
+        "Pricing page: 'Fibi AI Agent' and 'Fibi AI resolutions'."
+      ]
+    },
+    {
+      "capability": "support workflows and automations",
+      "description": "Builds workflows for SLAs, trial extensions, discounts, and related support operations.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Workflows & automations'.",
+        "Homepage: 'Build workflows for SLAs, automatically extending trials, offering discounts, and much more.'"
+      ]
+    },
+    {
+      "capability": "feedback collection and centralization",
+      "description": "Collects, centralizes, and organizes user feedback in one source of truth.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Centralize user feedback'.",
+        "Homepage: 'Centralized feedback hub'."
+      ]
+    },
+    {
+      "capability": "feedback voting and public roadmap",
+      "description": "Lets users vote on ideas and shows a public roadmap.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Let users vote on each other's ideas & show a public roadmap.'"
+      ]
+    },
+    {
+      "capability": "AI feedback prioritization",
+      "description": "Uses AI to identify the most impactful feedback opportunities.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'AI feedback prioritization'.",
+        "Homepage: 'connected to customer data' and 'find the most impactful opportunities with AI'."
+      ]
+    },
+    {
+      "capability": "automatic feedback loop closing",
+      "description": "Automatically notifies users when their requests are shipped.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Featurebase automatically notifies all relevant users when their requests are shipped.'"
+      ]
+    },
+    {
+      "capability": "help center and knowledge base",
+      "description": "Provides a public help center and embeddable help widget for self-serve support.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Intelligent documentation for self-serve support'.",
+        "Pricing page: 'Public Help Center' and 'Embeddable help widget'."
+      ]
+    },
+    {
+      "capability": "AI search answers in help center",
+      "description": "Returns AI answers directly in the help center search bar.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'AI search answers'.",
+        "Pricing page: 'Ask AI search'."
+      ]
+    },
+    {
+      "capability": "changelog publishing",
+      "description": "Publishes product updates through standalone changelog pages, widgets, banners, chats, and emails.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Product Updates'.",
+        "Homepage: 'Public changelog page' and 'In-app changelog widgets'.",
+        "Pricing page: 'Updates (in-app & emails)' and 'Public changelog page'."
+      ]
+    },
+    {
+      "capability": "integrations and developer tooling",
+      "description": "Connects with external tools and provides API, webhooks, MCP, and embeds on higher tiers.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Connect with your favorite tools'.",
+        "Pricing page: 'Integrations', 'API', 'MCP', 'Webhooks', and 'iframe embeds'."
+      ]
+    },
+    {
+      "capability": "segmentation and customer data syncing",
+      "description": "Segments users and syncs customer data for targeted support, feedback, and release communication.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Pricing page: 'Customer data syncing', 'Custom attributes & tags', 'User & company segments'.",
+        "Pricing page: 'Release segmentation' and 'targeted release notes'."
+      ]
+    },
+    {
+      "capability": "security and enterprise controls",
+      "description": "Offers SSO, SCIM, custom roles, and compliance features on higher tiers.",
+      "capability_type": "other",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Scale with security' and 'SOC 2', 'GDPR', 'CCPA'.",
+        "Pricing page: 'SSO & identity management', 'Custom admin roles', 'SCIM provisioning'."
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "An all-in-one support and product communication suite that combines inbox, feedback, help center, and changelog tools with AI and automation.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: 'Support your customers with AI, collect feedback, and announce product updates — all with one tool'.",
+        "Homepage footer: 'The modern support & product suite for the next generation.'"
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "all core modules in one subscription",
+        "description": "Support, feedback, help center, roadmaps, and changelog are sold together rather than as separate products.",
+        "confidence": "high",
+        "evidence": [
+          "Pricing page: 'All core modules in one subscription'.",
+          "Pricing page and homepage list Support, Feedback, Help Center, Changelog, and Roadmaps."
+        ]
+      },
+      {
+        "differentiator": "AI-first support and feedback workflows",
+        "description": "AI is positioned as central to support resolution, help search, and feedback prioritization.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: 'AI-powered support everywhere'.",
+          "Homepage: 'AI search answers' and 'AI feedback prioritization'.",
+          "Pricing page: 'Fibi AI Agent'."
+        ]
+      },
+      {
+        "differentiator": "close the loop across teams",
+        "description": "The product connects support, product, and GTM teams around customer conversations and shipped updates.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage collaboration section: support teams share insights with product teams; GTM teams see requests, tickets, and data in one place.",
+          "Homepage: 'automatically notifies all relevant users when their requests are shipped'."
+        ]
+      },
+      {
+        "differentiator": "built for scale and enterprise readiness",
+        "description": "The site emphasizes latency, uptime, security certifications, and enterprise controls.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: 'built for scale', 'sub-150ms latency', '1,500+ Customers', '>99.9% Uptime'.",
+          "Pricing page: SOC 2 Type II, GDPR, SSO, SCIM, and custom invoicing."
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "Customer support, feedback, documentation, and product updates should live in one connected system instead of separate tools and manual follow-up processes.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: one tool for support, feedback, and updates.",
+        "Homepage and pricing page both emphasize shared customer data, workflows, and updates across modules."
+      ]
+    },
+    "positioning_notes": {
+      "value": "Featurebase frames itself as a modern, AI-enabled alternative to fragmented support and product feedback stacks, with explicit comparison pages against Intercom, Zendesk, Canny, Productboard, GitBook, and Chatbase.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage and pricing page emphasize a unified suite.",
+        "Footer compare links include Intercom, Zendesk, Canny, Productboard, GitBook, and Chatbase."
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "confident",
+        "modern",
+        "product-led",
+        "helpful",
+        "startup-friendly"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Homepage phrases like 'Modern customer support & feedback platform' and 'Start building products your users love'.",
+        "Pricing page: 'Flexible plans that grow with you'."
+      ]
+    },
+    "writing_style": {
+      "value": "Short, benefit-led headlines with concrete feature lists and outcome-focused subheads.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage sections use headline plus subhead structure such as 'Support your customers with AI' and 'Build better products with customer feedback'.",
+        "Pricing page lists features in tables with plan-by-plan comparisons."
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "all with one tool",
+        "context": "Used to describe the unified platform across support, feedback, and updates.",
+        "evidence": [
+          "Homepage hero copy."
+        ]
+      },
+      {
+        "phrase": "cut down your support loads",
+        "context": "Used in support and help center messaging to emphasize workload reduction.",
+        "evidence": [
+          "Homepage support and help center sections."
+        ]
+      },
+      {
+        "phrase": "close the loop",
+        "context": "Used to describe automatically notifying users when requests are shipped.",
+        "evidence": [
+          "Homepage feedback section."
+        ]
+      },
+      {
+        "phrase": "move fast",
+        "context": "Used in team collaboration messaging.",
+        "evidence": [
+          "Homepage: 'Built for teams that want to move fast and automate more'."
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "Pairs a feature with a business outcome, such as AI plus lower support load or feedback plus better product decisions.",
+        "description": "The copy consistently links product function to a concrete operational benefit.",
+        "evidence": [
+          "Homepage support section and feedback section subheads."
+        ]
+      },
+      {
+        "pattern": "Uses modular product sections to show breadth while still presenting one integrated suite.",
+        "description": "Support, Feedback, Help Center, Changelog, and integrations are all framed as parts of one system.",
+        "evidence": [
+          "Homepage navigation and section headings; pricing page 'All core modules in one subscription'."
+        ]
+      },
+      {
+        "pattern": "Leans on scale, security, and customer proof to support enterprise credibility.",
+        "description": "Claims like uptime, latency, certifications, customer count, and logos reinforce trust.",
+        "evidence": [
+          "Homepage scale section and security section; customer logos on homepage and pricing page."
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Exact company legal entity name is not stated in the crawl.",
+      "No clear public pricing for some add-ons beyond plan tables.",
+      "Customer list page failed to load, so customer examples are limited to homepage logos and testimonials.",
+      "No explicit founding date or company age beyond startup-program clues."
+    ],
+    "potential_risks": [
+      "The customer page errored, so some audience or proof points may be missing.",
+      "The crawl contains repeated pricing tables and footer sections, which may overemphasize certain features.",
+      "A few features are marked 'coming soon' in pricing and should not be treated as fully available across all plans.",
+      "Some demo-like support widget content appears in the crawl and should not be mistaken for separate product pages."
+    ],
+    "notes": "The crawl provides strong core marketing and pricing evidence across homepage and pricing page, enough for a high-confidence profile. Most uncertainty is around legal entity details and any information that would have come from the broken customers page."
+  }
+}

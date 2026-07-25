@@ -8,22 +8,13 @@ import {
   logRunSummary,
   logSuccess,
 } from "./lib/logger.js";
-
-type CliOptions = {
-  websiteUrl: string;
-  forceCrawl: boolean;
-  forceProfile: boolean;
-  forceSeedKeywords: boolean;
-  forceQueryCandidates: boolean;
-  forceSerp: boolean;
-  forceQueryMetrics: boolean;
-  forceQueryValidation: boolean;
-  forceQueryOpportunities: boolean;
-  forceQueryRecommendations: boolean;
-  forceContentRecommendation: boolean;
-  forceCompetitorLandscape: boolean;
-  forceCompanyReport: boolean;
-};
+import {
+  createPipelineArtifactPaths,
+  createSafeHostname,
+  slugify,
+} from "./pipeline/artifacts.js";
+import { parsePipelineCliOptions } from "./pipeline/options.js";
+import type { PipelineStageId } from "./pipeline/stages.js";
 
 type RunContext = {
   runId: string;
@@ -36,46 +27,17 @@ type RunContext = {
   generatedAt: string;
 };
 
-function parseCliOptions(argv: string[]): CliOptions {
-  const forceCrawl = argv.includes("--force-crawl");
-  const forceProfile = argv.includes("--force-profile");
-  const forceSeedKeywords = argv.includes("--force-seed-keywords");
-  const forceQueryCandidates =
-    argv.includes("--force-query-candidates") ||
-    argv.includes("--force-clusters");
-  const forceSerp = argv.includes("--force-serp");
-  const forceQueryMetrics = argv.includes("--force-query-metrics");
-  const forceQueryValidation = argv.includes("--force-query-validation");
-  const forceQueryOpportunities = argv.includes(
-    "--force-query-opportunities",
-  );
-  const forceQueryRecommendations = argv.includes(
-    "--force-query-recommendations",
-  );
-  const forceContentRecommendation = argv.includes(
-    "--force-content-recommendation",
-  );
-  const forceCompetitorLandscape = argv.includes(
-    "--force-competitor-landscape",
-  );
-  const forceCompanyReport = argv.includes("--force-company-report");
-  const urlArgs = argv.filter((arg) => !arg.startsWith("--"));
+function shouldStopAfter(
+  completedStage: PipelineStageId,
+  stopAfter: PipelineStageId | null,
+): boolean {
+  if (stopAfter !== completedStage) {
+    return false;
+  }
 
-  return {
-    websiteUrl: urlArgs[0] ?? "https://tavyn.dev/",
-    forceCrawl,
-    forceProfile,
-    forceSeedKeywords,
-    forceQueryCandidates,
-    forceSerp,
-    forceQueryMetrics,
-    forceQueryValidation,
-    forceQueryOpportunities,
-    forceQueryRecommendations,
-    forceContentRecommendation,
-    forceCompetitorLandscape,
-    forceCompanyReport,
-  };
+  logInfo(`Stopping after ${completedStage} as requested.`);
+
+  return true;
 }
 
 function createRunContext(websiteUrl: string): RunContext {
@@ -103,32 +65,13 @@ function normalizeWebsiteUrlInput(websiteUrl: string): string {
   return `https://${trimmedWebsiteUrl}`;
 }
 
-function createSafeHostname(websiteUrl: string): string {
-  return new URL(websiteUrl).hostname
-    .replace(/^www\./, "")
-    .replace(/[^a-zA-Z0-9-]/g, "-")
-    .toLowerCase();
-}
-
-function slugify(value: string): string {
-  const slug = value
-    .normalize("NFKD")
-    .toLowerCase()
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-
-  if (slug.length === 0) {
-    throw new Error(`Cannot slugify empty value from "${value}".`);
-  }
-
-  return slug;
-}
-
 async function main(): Promise<void> {
   try {
     const {
       websiteUrl,
+      cacheMode,
+      forceStages,
+      stopAfter,
       forceCrawl,
       forceProfile,
       forceSeedKeywords,
@@ -141,25 +84,26 @@ async function main(): Promise<void> {
       forceContentRecommendation,
       forceCompetitorLandscape,
       forceCompanyReport,
-    } = parseCliOptions(process.argv.slice(2));
+    } = parsePipelineCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
-    const crawlArtifactPath = `artifacts/${safeHostname}/crawl-context.json`;
-    const companyProfileArtifactPath = `artifacts/${safeHostname}/company-profile.json`;
-    const seedKeywordsArtifactPath = `artifacts/${safeHostname}/seed-keywords.json`;
-    const keywordMetricsArtifactPath = `artifacts/${safeHostname}/keyword_metrics.json`;
-    const queryValidationArtifactPath = `artifacts/${safeHostname}/query-validations.json`;
-    const confirmedQueriesArtifactPath = `artifacts/${safeHostname}/confirmed-queries.json`;
-    const queryOpportunitiesArtifactPath =
-      `artifacts/${safeHostname}/query-opportunities.json`;
+    const artifactPaths = createPipelineArtifactPaths(
+      runContext.websiteUrl,
+      null,
+    );
+    const crawlArtifactPath = artifactPaths.crawlContext;
+    const companyProfileArtifactPath = artifactPaths.companyProfile;
+    const seedKeywordsArtifactPath = artifactPaths.seedKeywords;
+    const keywordMetricsArtifactPath = artifactPaths.keywordMetrics;
+    const queryValidationArtifactPath = artifactPaths.queryValidation;
+    const confirmedQueriesArtifactPath = artifactPaths.confirmedQueries;
+    const queryOpportunitiesArtifactPath = artifactPaths.queryOpportunities;
     const queryRecommendationsArtifactPath =
-      `artifacts/${safeHostname}/query-recommendations.json`;
-    const serpResultsArtifactPath =
-      `artifacts/${safeHostname}/serp-results.json`;
+      artifactPaths.queryRecommendations;
+    const serpResultsArtifactPath = artifactPaths.serpResults;
     const contentRecommendationArtifactPath =
-      `artifacts/${safeHostname}/content-recommendation.json`;
-    const competitorLandscapeArtifactPath =
-      `artifacts/${safeHostname}/competitor-landscape.json`;
+      artifactPaths.contentRecommendation;
+    const competitorLandscapeArtifactPath = artifactPaths.competitorLandscape;
 
     logSuccess("Environment validation passed");
     logInfo(`Firecrawl API key loaded: ${env.FIRECRAWL_API_KEY.length > 0}`);
@@ -170,6 +114,9 @@ async function main(): Promise<void> {
     );
     logInfo(`Device: ${runContext.device}`);
     logInfo(`Company profile website URL: ${runContext.websiteUrl}`);
+    logInfo(`cacheMode: ${cacheMode}`);
+    logInfo(`forceStages: ${forceStages.join(", ") || "none"}`);
+    logInfo(`stopAfter: ${stopAfter ?? "none"}`);
     logInfo(`forceCrawl: ${forceCrawl}`);
     logInfo(`forceProfile: ${forceProfile}`);
     logInfo(`forceSeedKeywords: ${forceSeedKeywords}`);
@@ -225,6 +172,10 @@ async function main(): Promise<void> {
       `Crawl context combined markdown length: ${companyProfileContext.combinedMarkdown.length}`,
     );
 
+    if (shouldStopAfter("crawl-context", stopAfter)) {
+      return;
+    }
+
     const shouldForceProfile = forceProfile || crawlResult.didRun;
 
     if (crawlResult.didRun && !forceProfile) {
@@ -252,6 +203,10 @@ async function main(): Promise<void> {
     logInfo(
       `Overall confidence: ${companyProfile.profile_quality.overall_confidence}`,
     );
+
+    if (shouldStopAfter("company-profile", stopAfter)) {
+      return;
+    }
 
     const companySlug = slugify(
       companyProfile.company_identity.company_name.value,
@@ -307,10 +262,23 @@ async function main(): Promise<void> {
     );
     logSuccess("Seed keyword generation stage completed");
 
+    if (shouldStopAfter("seed-keywords", stopAfter)) {
+      return;
+    }
+
+    const shouldForceKeywordMetrics =
+      forceQueryMetrics || seedKeywordsResult.didRun;
+
+    if (seedKeywordsResult.didRun && !forceQueryMetrics) {
+      logInfo(
+        "Keyword metrics regeneration required because seed keywords changed.",
+      );
+    }
+
     const keywordMetricsResult = await runCachedStep({
       stepName: "keyword-metrics-generation",
       artifactPath: keywordMetricsArtifactPath,
-      force: forceQueryMetrics,
+      force: shouldForceKeywordMetrics,
       run: async () => {
         const { generateKeywordMetrics } = await import(
           "./steps/generateKeywordMetrics.js"
@@ -342,6 +310,10 @@ async function main(): Promise<void> {
       `Keyword metrics provider cost: ${keywordMetrics.provider.total_cost_usd}`,
     );
     logSuccess("Keyword metrics generation stage completed");
+
+    if (shouldStopAfter("keyword-metrics", stopAfter)) {
+      return;
+    }
 
     const shouldForceQueryValidation =
       forceQueryValidation ||
@@ -392,6 +364,10 @@ async function main(): Promise<void> {
     logInfo(`Invalid query count: ${invalidQueryCount}`);
     logSuccess("Query validation stage completed");
 
+    if (shouldStopAfter("query-validation", stopAfter)) {
+      return;
+    }
+
     const confirmedQueriesResult = await runCachedStep({
       stepName: "confirmed-query-generation",
       artifactPath: confirmedQueriesArtifactPath,
@@ -424,6 +400,10 @@ async function main(): Promise<void> {
       `Solution-demand confirmed: ${confirmedQueries.summary.solution_queries_confirmed}`,
     );
     logSuccess("Confirmed query generation stage completed");
+
+    if (shouldStopAfter("confirmed-queries", stopAfter)) {
+      return;
+    }
 
     const shouldForceQueryOpportunities =
       forceQueryOpportunities || confirmedQueriesResult.didRun;
@@ -462,6 +442,10 @@ async function main(): Promise<void> {
     );
     logInfo(`Query opportunities artifact path: ${queryOpportunitiesArtifactPath}`);
     logSuccess("Query opportunity scoring stage completed");
+
+    if (shouldStopAfter("query-opportunities", stopAfter)) {
+      return;
+    }
 
     const shouldForceQueryRecommendations =
       forceQueryRecommendations ||
@@ -508,6 +492,10 @@ async function main(): Promise<void> {
       `Query recommendations artifact path: ${queryRecommendationsArtifactPath}`,
     );
     logSuccess("Query recommendation selection stage completed");
+
+    if (shouldStopAfter("query-recommendations", stopAfter)) {
+      return;
+    }
 
     const shouldForceSerpResults =
       forceSerp || queryRecommendationsResult.didRun;
@@ -558,6 +546,10 @@ async function main(): Promise<void> {
 
     logInfo(`SERP results artifact path: ${serpResultsArtifactPath}`);
     logSuccess("SERP result collection stage completed");
+
+    if (shouldStopAfter("serp-results", stopAfter)) {
+      return;
+    }
 
     const shouldForceContentRecommendation =
       forceContentRecommendation ||
@@ -622,6 +614,10 @@ async function main(): Promise<void> {
     );
     logSuccess("SERP-informed content recommendation stage completed");
 
+    if (shouldStopAfter("content-recommendation", stopAfter)) {
+      return;
+    }
+
     const shouldForceCompetitorLandscape =
       forceCompetitorLandscape || confirmedQueriesResult.didRun;
 
@@ -667,6 +663,10 @@ async function main(): Promise<void> {
       `Competitor landscape artifact path: ${competitorLandscapeArtifactPath}`,
     );
     logSuccess("Competitor landscape collection stage completed");
+
+    if (shouldStopAfter("competitor-landscape", stopAfter)) {
+      return;
+    }
 
     const shouldForceCompanyReport =
       forceCompanyReport ||
@@ -718,6 +718,11 @@ async function main(): Promise<void> {
     );
     logInfo(`Company report artifact path: ${companyReportArtifactPath}`);
     logSuccess("Deterministic company report assembly stage completed");
+
+    if (shouldStopAfter("company-report", stopAfter)) {
+      return;
+    }
+
     logInfo(
       "Pipeline completed with deterministic company report assembly.",
     );

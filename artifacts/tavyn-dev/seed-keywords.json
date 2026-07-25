@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "run_id": "db6315d6-db21-4577-88c4-ffa2cf40dd74",
-  "generated_at": "2026-07-18T01:04:20.587Z",
+  "run_id": "dee39755-0ea1-4278-bb66-ab4d9e2d19f6",
+  "generated_at": "2026-07-24T19:37:54.009Z",
   "source_artifacts": [
     "company-profile.json"
   ],
@@ -17,127 +17,263 @@
     {
       "territory_id": "problem_demand",
       "territory_name": "SaaS SEO and organic growth",
-      "territory_summary": "Search demand around improving organic visibility and content-led growth for SaaS companies, especially lean founder-led teams.",
+      "territory_summary": "Search demand around improving organic visibility, prioritizing opportunities, and running SEO content workflows for founder-led SaaS teams.",
       "market_topic": "SaaS SEO and organic growth",
       "primary_icp": "founder-led SaaS teams",
-      "product_connection": "Tavyn is built to find organic visibility gaps, prioritize realistic opportunities, and move SaaS content from planning to publish-ready execution.",
+      "product_connection": "Tavyn supports this territory by finding organic visibility gaps, turning search opportunities into briefs and plans, and helping lean SaaS teams move from research to publish-ready content with low workflow overhead.",
       "evidence": [
+        {
+          "source_field": "company_identity.one_sentence_description.value",
+          "evidence_text": "Tavyn is an email-first SEO blog workflow agent for founder-led SaaS teams.",
+          "reasoning": "This directly identifies the ICP and the SEO workflow problem area."
+        },
         {
           "source_field": "buyer_pains[1].pain",
           "evidence_text": "Organic visibility gaps are hard to identify and prioritize",
-          "reasoning": "This directly supports a problem territory centered on SaaS SEO opportunity discovery and prioritization."
+          "reasoning": "This supports the core problem territory around SaaS SEO opportunity discovery and prioritization."
         },
         {
-          "source_field": "icp_and_audience.primary_icp.value",
-          "evidence_text": "founder-led SaaS teams",
-          "reasoning": "This qualifies the market around SaaS buyers, keeping the territory out of generic SEO demand."
+          "source_field": "differentiation_and_positioning.category_point_of_view.value",
+          "evidence_text": "SaaS SEO should be run as an end-to-end workflow that combines search research, founder expertise, and publish-ready execution rather than isolated writing tasks.",
+          "reasoning": "This supports the broader problem framing around SEO operations and organic growth workflow."
         }
       ],
       "seed_keywords": [
         {
-          "seed_id": "problem_1",
-          "keyword": "SaaS SEO",
+          "seed_id": "pd-01",
+          "keyword": "saas seo",
           "seed_role": "core_problem",
-          "selection_reasoning": "Shortest natural expression of the core market problem the product addresses.",
+          "selection_reasoning": "Shortest direct expression of the core market problem and search area.",
           "confidence": "high"
         },
         {
-          "seed_id": "problem_2",
-          "keyword": "SEO for SaaS",
+          "seed_id": "pd-02",
+          "keyword": "seo for saas",
           "seed_role": "icp_qualified_problem",
-          "selection_reasoning": "Adds the supported SaaS qualifier to keep discovery inside the intended market.",
+          "selection_reasoning": "Qualifies the problem by the supported ICP while preserving natural search language.",
           "confidence": "high"
         },
         {
-          "seed_id": "problem_3",
-          "keyword": "SaaS SEO strategy",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Captures the strategic planning aspect of SaaS search growth.",
-          "confidence": "high"
-        },
-        {
-          "seed_id": "problem_4",
-          "keyword": "SaaS organic growth",
+          "seed_id": "pd-03",
+          "keyword": "saas organic growth",
           "seed_role": "market_synonym",
-          "selection_reasoning": "Provides a broader but still relevant synonym for the same market topic.",
+          "selection_reasoning": "A recognized synonym for the broader problem space of gaining traffic and demand through organic channels.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-04",
+          "keyword": "saas content marketing",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Broadly captures the content-led growth work that Tavyn is meant to support for SaaS teams.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-05",
+          "keyword": "saas keyword research",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents a core pre-content process tied to finding search opportunities for SaaS.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-06",
+          "keyword": "saas seo strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Natural strategy-level phrase that stays within the SaaS SEO market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-07",
+          "keyword": "organic visibility gaps",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Directly reflects the company-stated pain of finding search opportunities.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-08",
+          "keyword": "search opportunity prioritization",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures the decision process around which opportunities are realistic to pursue, without becoming a product feature.",
           "confidence": "medium"
         },
         {
-          "seed_id": "problem_5",
-          "keyword": "SaaS keyword research",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Matches the company’s search-opportunity and prioritization workflow in buyer language.",
+          "seed_id": "pd-09",
+          "keyword": "saas search visibility",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A concise market synonym aligned to organic visibility and SEO performance for SaaS.",
           "confidence": "high"
         },
         {
-          "seed_id": "problem_6",
-          "keyword": "SaaS content marketing",
+          "seed_id": "pd-10",
+          "keyword": "content gap analysis",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "A recognized SEO process related to identifying missing or under-served search topics.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "pd-11",
+          "keyword": "saas blog strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Fits the blog-led SEO workflow the product is built around while remaining market-level language.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-12",
+          "keyword": "founder-led saas marketing",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning":  "Keeps the search market anchored to the supported ICP and broader organic growth problem.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "pd-13",
+          "keyword": "saas audience research",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Useful for the audience and intent research work that informs SEO content planning.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "pd-14",
+          "keyword": "saaS seo planning",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents planning work directly tied to SEO execution for SaaS teams.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "pd-15",
+          "keyword": "organic content strategy",
           "seed_role": "market_synonym",
-          "selection_reasoning": "A related discovery angle for content-led growth that remains within SaaS.",
+          "selection_reasoning": "A broader but still relevant synonym for the strategic problem of generating organic demand through content.",
           "confidence": "medium"
         }
       ]
     },
     {
       "territory_id": "solution_demand",
-      "territory_name": "AI SEO tools and automation",
-      "territory_summary": "Search demand around software that automates SEO content workflows, briefs, and execution for SaaS teams.",
-      "market_topic": "AI SEO tools and automation",
+      "territory_name": "SEO content workflow automation",
+      "territory_summary": "Search demand around software and automation that help SaaS teams research, brief, draft, and prepare SEO content for publishing.",
+      "market_topic": "AI SEO automation",
       "primary_icp": "founder-led SaaS teams",
-      "product_connection": "Tavyn fits the established solution category of SEO automation software by turning search research into briefs and publish-ready content workflows.",
+      "product_connection": "Tavyn fits this solution space as an SEO content workflow automation platform that turns search research and founder input into briefs, drafting support, and publish-ready output.",
       "evidence": [
         {
           "source_field": "company_identity.product_category.value",
           "evidence_text": "SEO content workflow automation platform",
-          "reasoning": "This supports a solution territory centered on SEO software and automation."
+          "reasoning": "This directly supports the solution-category framing for the product."
         },
         {
           "source_field": "product_capabilities[1].capability",
           "evidence_text": "writes SEO briefs",
-          "reasoning": "Brief generation is a recognizable software capability within SEO tools and automation categories."
+          "reasoning": "Brief generation is a recognizable part of SEO workflow automation and tool evaluation."
+        },
+        {
+          "source_field": "product_capabilities[4].capability",
+          "evidence_text": "plans content around pillar and supporting pages",
+          "reasoning": "This supports the broader solution category of SEO planning and workflow software."
         }
       ],
       "seed_keywords": [
         {
-          "seed_id": "solution_1",
-          "keyword": "AI SEO tools",
+          "seed_id": "sd-01",
+          "keyword": "ai seo tools",
           "seed_role": "core_solution_category",
-          "selection_reasoning": "Strongest broad solution-category seed for the product’s automation-led SEO positioning.",
+          "selection_reasoning": "A strong, established solution-category seed for software buyers exploring SEO automation.",
           "confidence": "high"
         },
         {
-          "seed_id": "solution_2",
-          "keyword": "SEO tools for SaaS",
+          "seed_id": "sd-02",
+          "keyword": "seo tools for saas",
           "seed_role": "icp_qualified_solution",
-          "selection_reasoning": "Qualifies the solution by the supported SaaS market to reduce category drift.",
+          "selection_reasoning": "Keeps the solution category tied to the supported ICP without over-specifying product details.",
           "confidence": "high"
         },
         {
-          "seed_id": "solution_3",
-          "keyword": "SEO automation",
+          "seed_id": "sd-03",
+          "keyword": "seo automation",
           "seed_role": "solution_approach",
-          "selection_reasoning": "Directly reflects the product’s automation-first approach to SEO workflows.",
+          "selection_reasoning": "A core recognized approach that matches the product's workflow automation framing.",
           "confidence": "high"
         },
         {
-          "seed_id": "solution_4",
-          "keyword": "SEO workflow automation",
-          "seed_role": "solution_approach",
-          "selection_reasoning": "Distinct from generic SEO automation by emphasizing end-to-end workflow handling.",
-          "confidence": "high"
-        },
-        {
-          "seed_id": "solution_5",
-          "keyword": "content brief software",
+          "seed_id": "sd-04",
+          "keyword": "ai seo software",
           "seed_role": "commercial_category",
-          "selection_reasoning": "Captures a concrete commercial tool category tied to the product’s brief-writing capability.",
+          "selection_reasoning": "A clear commercial-discovery category phrase that buyers could compare directly.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-05",
+          "keyword": "seo content workflow software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Concisely reflects the product category as workflow software for SEO content operations.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-06",
+          "keyword": "seo brief software",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Captures a recognizable software use case supported by the product's brief-writing capability.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-07",
+          "keyword": "content brief generator",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "A common solution phrase for software that creates structured SEO briefs.",
           "confidence": "medium"
         },
         {
-          "seed_id": "solution_6",
-          "keyword": "SEO operations platform",
+          "seed_id": "sd-08",
+          "keyword": "saas seo tools",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Keeps the solution market explicitly within SaaS SEO without becoming proprietary.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-09",
+          "keyword": "blog workflow software",
           "seed_role": "commercial_category",
-          "selection_reasoning": "Represents the broader commercial category of tools that manage SEO work operationally.",
+          "selection_reasoning": "Reflects the blog-ops positioning in standard tool-category language.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-10",
+          "keyword": "ai content planning tools",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "A recognizable commercial category for software that helps plan content around search demand.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "sd-11",
+          "keyword": "seo planning software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Broad but relevant category language for planning search-led content work.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-12",
+          "keyword": "content strategy automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Represents the automation approach behind turning opportunities into structured plans.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "sd-13",
+          "keyword": "publish ready content software",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Captures the product's output-oriented workflow in established market language.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "sd-14",
+          "keyword": "seo workflow automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Strong category phrase for automating the end-to-end SEO content process.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-15",
+          "keyword": "ai blog writing software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Commercial category language that remains tied to SEO/blog content creation workflows.",
           "confidence": "medium"
         }
       ]
@@ -146,14 +282,15 @@
   "generation_quality": {
     "overall_confidence": "high",
     "missing_information": [
-      "The crawl does not state pricing.",
-      "The crawl does not provide named customers or logos.",
-      "The company stage is only implied by waitlist-style messaging."
+      "Pricing is not stated in the crawled content.",
+      "Customer logos or named customers are not present.",
+      "Integrations beyond GitHub/CMS are not stated."
     ],
     "potential_risks": [
-      "The product uses workflow-heavy language, so solution seeds were kept in established SEO software and automation categories rather than proprietary phrasing.",
-      "Some SEO-related capabilities are broad, so SaaS qualifiers were used to keep problem seeds inside the intended market."
+      "The product is positioned with workflow language that could overlap with general content operations, so market qualifiers were used to keep seeds inside SaaS SEO.",
+      "Some solution-category phrases are inferred from the product's workflow framing rather than named verbatim on the site.",
+      "A few problem-side seeds translate the company language into broader market terms to preserve standalone search utility."
     ],
-    "notes": "The company profile clearly supports a SaaS SEO problem territory and an SEO automation solution territory. Seed choices favor conservative, standalone market language that should remain interpretable by an external keyword-discovery provider without additional context."
+    "notes": "The profile provides strong evidence for founder-led SaaS, SEO workflow automation, and organic visibility pain. The seeds are conservative, market-aware, and intentionally avoid overfitting to GitHub, email, or other implementation details."
   }
 }

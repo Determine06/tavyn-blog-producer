@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { SEEDS_PER_TERRITORY } from "./seedKeywords.schema.js";
+
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const SearchIntentSchema = z.enum([
@@ -123,7 +125,7 @@ const QuerySetSchema = z
   .object({
     territory: TerritorySchema,
     task_tag: TerritorySchema,
-    seeds_used: z.array(NonEmptyStringSchema).length(6),
+    seeds_used: z.array(NonEmptyStringSchema).length(SEEDS_PER_TERRITORY),
     task_result: TaskResultSchema,
     queries: z.array(KeywordQuerySchema),
   })

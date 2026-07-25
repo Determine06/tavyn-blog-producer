@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "86802d02-ee13-4745-8b34-e564c60b34c5",
+  "generated_at": "2026-07-24T20:32:03.276Z",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://www.featurebase.app/",
+  "source_profile": {
+    "company_name": "Featurebase",
+    "product_category": "customer support and feedback platform",
+    "primary_icp": "product, support, and GTM teams at startups and growing companies"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "customer support and feedback operations",
+      "territory_summary": "Search demand around centralizing customer support, managing feedback, and improving how product teams respond to customers across channels.",
+      "market_topic": "customer support and feedback operations",
+      "primary_icp": "product, support, and GTM teams at startups and growing companies",
+      "product_connection": "The product is positioned as a unified system for support, feedback, help center, and changelog workflows, so the problem territory should capture the underlying work these teams need to manage.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "customer support and feedback platform",
+          "reasoning": "This directly names the core market problem space the product serves."
+        },
+        {
+          "source_field": "buyer_pains[0].pain",
+          "evidence_text": "Customer conversations are spread across too many channels",
+          "reasoning": "Supports a problem territory centered on consolidating support work across channels."
+        },
+        {
+          "source_field": "buyer_pains[2].pain",
+          "evidence_text": "Product teams struggle to centralize and prioritize feedback",
+          "reasoning": "Supports including feedback management as part of the core problem market."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "pd-01",
+          "keyword": "customer support",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Shortest direct description of the core support job the product helps teams manage.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-02",
+          "keyword": "customer service",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Established market synonym that broadens discovery while staying in the same support market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-03",
+          "keyword": "support tickets",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Common buyer language for the operational support workload the platform helps organize.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-04",
+          "keyword": "support inbox",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Natural phrase for the central place teams need to manage incoming customer conversations.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-05",
+          "keyword": "omnichannel support",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures the cross-channel support process highlighted in the company profile.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-06",
+          "keyword": "support automation",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Reflects the need to reduce repetitive support work and manual queue handling.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-07",
+          "keyword": "support workflow",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Broad enough for discovery while still anchored in support operations rather than software.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-08",
+          "keyword": "customer communication",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Captures the broader communication problem across support channels and follow-up.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "pd-09",
+          "keyword": "customer feedback",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Directly matches the product's feedback-management use case and buyer need.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-10",
+          "keyword": "feedback management",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Recognized market wording for centralizing and organizing user feedback.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-11",
+          "keyword": "product feedback",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Qualifies the problem toward product teams and aligns with the stated feedback workflow.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-12",
+          "keyword": "feedback prioritization",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Captures the decision-making problem around identifying what to build next.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-13",
+          "keyword": "help center",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Represents self-serve support content as a core support job and information source.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-14",
+          "keyword": "knowledge base",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Common synonym for self-serve documentation that reduces support load.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "pd-15",
+          "keyword": "product updates",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Matches the need to communicate shipped changes and reduce manual follow-up.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "customer support software and feedback platform",
+      "territory_summary": "Search demand around established software categories buyers would evaluate to run support, collect feedback, publish help content, and share product updates.",
+      "market_topic": "customer support software and feedback platforms",
+      "primary_icp": "product, support, and GTM teams at startups and growing companies",
+      "product_connection": "The product bundles support inbox, AI agent, feedback hub, help center, and changelog capabilities, so the solution territory should reflect the software categories buyers would compare for that stack.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "customer support and feedback platform",
+          "reasoning": "This is the closest direct solution-category language in the profile."
+        },
+        {
+          "source_field": "product_capabilities[0].capability",
+          "evidence_text": "omnichannel inbox and ticketing",
+          "reasoning": "Supports solution-category seeds around support desk, ticketing, and inbox software."
+        },
+        {
+          "source_field": "differentiation_and_positioning.positioning_summary.value",
+          "evidence_text": "An all-in-one support and product communication suite",
+          "reasoning": "Supports solution-demand seeds spanning support, feedback, help center, and changelog software categories."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "sd-01",
+          "keyword": "customer support software",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Direct, established category language for the core product area.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-02",
+          "keyword": "support software for startups",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Adds the supported startup ICP while staying in a recognizable category.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-03",
+          "keyword": "help desk software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Common commercial category buyers use when evaluating support tools.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-04",
+          "keyword": "customer service platform",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Established category synonym that stays squarely within support software discovery.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-05",
+          "keyword": "ticketing system",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Recognizable software category tied to the omnichannel inbox and ticketing core.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-06",
+          "keyword": "support ticket software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Natural buyer phrase for evaluating software that manages support requests.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-07",
+          "keyword": "omnichannel inbox software",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Captures the multi-channel inbox approach described in the product profile.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-08",
+          "keyword": "support automation software",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Reflects the automation-heavy support workflow supported by the product.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-09",
+          "keyword": "ai support agent",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Directly matches the AI support-agent capability and established market language.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-10",
+          "keyword": "ai customer support software",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Qualifies the category with the product's AI-first positioning without overfitting to features.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-11",
+          "keyword": "feedback management software",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Established category for centralizing and prioritizing product feedback.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-12",
+          "keyword": "product feedback tool",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Common commercial-discovery phrase for the feedback and roadmap portion of the suite.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-13",
+          "keyword": "help center software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Recognizable category for self-serve documentation and search-based support.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-14",
+          "keyword": "changelog software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Established product-update category that fits the published changelog capability.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "sd-15",
+          "keyword": "public roadmap software",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Naturally connected to feedback voting and roadmap publishing as a known product approach.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "The profile does not state a single external industry vertical, so the seeds stay focused on support, feedback, and product teams rather than a niche industry.",
+      "The customer page failed to load, limiting use of customer examples for further ICP qualification."
+    ],
+    "potential_risks": [
+      "The product spans several connected modules, so some solution seeds necessarily cover adjacent categories such as help desk, feedback, and changelog software.",
+      "A few support-related terms can overlap with general customer service language, so qualifiers were used sparingly to preserve market clarity."
+    ],
+    "notes": "The profile strongly supports a unified support-and-feedback market. Problem seeds focus on the operational jobs buyers need to solve, while solution seeds use established software categories buyers are likely to evaluate."
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "252b1ded-f924-4674-9fd5-1df04e25085f",
+  "generated_at": "2026-07-24T20:56:19.921Z",
+  "source_artifacts": [
+    "company-profile.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://trigger.dev/",
+  "source_profile": {
+    "company_name": "Trigger.dev",
+    "product_category": "AI workflow orchestration platform",
+    "primary_icp": "developers building AI apps, background jobs, and workflow automation in TypeScript"
+  },
+  "demand_territories": [
+    {
+      "territory_id": "problem_demand",
+      "territory_name": "AI workflow and background job problems",
+      "territory_summary": "Search demand around building reliable AI workflows, background jobs, and async execution in TypeScript, especially where teams need durability, observability, retries, queues, and approval controls.",
+      "market_topic": "AI workflow and background job orchestration",
+      "primary_icp": "developers building AI apps, background jobs, and workflow automation in TypeScript",
+      "product_connection": "The product is positioned as developer-first infrastructure for durable AI agents and background jobs, so the problem territory centers on the execution, reliability, and operations pain those teams are trying to solve.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "AI workflow orchestration platform",
+          "reasoning": "Directly supports a problem market around workflow orchestration and execution reliability."
+        },
+        {
+          "source_field": "buyer_pains[0].pain",
+          "evidence_text": "background jobs and AI workflows hit timeouts or fail under long-running execution",
+          "reasoning": "Shows the core customer pain behind durable workflow and job search demand."
+        },
+        {
+          "source_field": "buyer_pains[4].pain",
+          "evidence_text": "concurrent or bursty workloads can overwhelm simpler job systems",
+          "reasoning": "Supports adjacent workflow problems around queueing, scaling, and job management."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "P01",
+          "keyword": "AI workflows",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Core problem anchor for the central job of building and running AI workflows; broad enough for discovery while staying inside the product’s market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P02",
+          "keyword": "background jobs",
+          "seed_role": "core_problem",
+          "selection_reasoning": "Core problem anchor for the operational workload the platform helps run; opens a distinct discovery direction from AI workflows.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P03",
+          "keyword": "TypeScript workflow automation",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Qualified problem for the developer ICP and the TypeScript environment; distinct from the broader AI workflow root.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P04",
+          "keyword": "AI agent reliability",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Qualified problem tied to production AI agents needing reliability, control, and observability; distinct from generic workflow execution.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P05",
+          "keyword": "long-running TypeScript tasks",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Qualified problem for the long-running execution pain in the TypeScript developer market; different from the agent and workflow roots.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P06",
+          "keyword": "retriable workflows",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Recurring workflow around handling failures with retries; supported by the product’s automatic retry capability and distinct from monitoring or queueing.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P07",
+          "keyword": "workflow monitoring",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Recurring workflow around watching and inspecting runs; supported by observability and advanced filtering capabilities.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P08",
+          "keyword": "job queue management",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Recurring workflow around controlling execution order and parallelism; supported by queues and concurrency controls.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P09",
+          "keyword": "human-in-the-loop approvals",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Recurring workflow around pausing runs for review and resuming them; directly supported by approval and feedback gates.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P10",
+          "keyword": "workflow timeouts",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Concrete failure state in long-running execution; directly supported by the no-timeouts positioning.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P11",
+          "keyword": "serverless job failures",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Concrete operational failure state tied to infrastructure limits and broken execution; supported by the no-servers and no-timeouts pain.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P12",
+          "keyword": "durable execution",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Desired outcome for buyers needing resilient long-running work; directly connected to the platform’s durability positioning.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P13",
+          "keyword": "workflow orchestration strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Strategy and implementation decision topic for teams deciding how to structure production workflows and orchestration; relevant to the core problem market.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "P14",
+          "keyword": "async job orchestration",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Adjacent market frame for the same buyer and problem, expressed in established async execution language rather than a direct product category.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "P15",
+          "keyword": "production workflow reliability",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "Adjacent market frame that captures the same operational concern from a production-systems angle, opening a different but related discovery direction.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "territory_id": "solution_demand",
+      "territory_name": "AI workflow and background job software categories",
+      "territory_summary": "Search demand around recognized software categories and solution approaches for durable AI agents, background jobs, retries, queues, observability, scheduling, and managed execution infrastructure.",
+      "market_topic": "AI workflow orchestration software",
+      "primary_icp": "developers building AI apps, background jobs, and workflow automation in TypeScript",
+      "product_connection": "The product is a managed, code-first platform with agent infrastructure, retries, queues, observability, scheduling, and deployment safety, so the solution territory should capture established buyer-facing categories around those needs.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "AI workflow orchestration platform",
+          "reasoning": "Directly supports the primary solution category and related software-market language."
+        },
+        {
+          "source_field": "product_capabilities[4].capability",
+          "evidence_text": "observability and monitoring",
+          "reasoning": "Supports a distinct solution category around monitoring and debugging workflow infrastructure."
+        },
+        {
+          "source_field": "product_capabilities[6].capability",
+          "evidence_text": "human-in-the-loop approvals",
+          "reasoning": "Supports an independently recognizable solution category around approval workflows for AI agents."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "S01",
+          "keyword": "workflow orchestration platform",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Primary established solution category for buyers evaluating orchestration infrastructure; directly matches the product’s core market.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S02",
+          "keyword": "background job platform",
+          "seed_role": "core_solution_category",
+          "selection_reasoning": "Secondary established solution category for the async execution side of the product; distinct from the broader orchestration category.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S03",
+          "keyword": "TypeScript workflow orchestration platform",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Qualified solution for the TypeScript developer ICP; narrows the category to the product’s code-native environment.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S04",
+          "keyword": "AI agent infrastructure",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Qualified solution for developers building AI agents; distinct from generic workflow tooling and strongly supported by the profile.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S05",
+          "keyword": "TypeScript background job infrastructure",
+          "seed_role": "icp_qualified_solution",
+          "selection_reasoning": "Qualified solution for background jobs in the supported language environment; separate from the agent and orchestration categories.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S06",
+          "keyword": "workflow automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Recognized solution approach for automating recurring workflows; supported by the platform’s workflow execution focus.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "S07",
+          "keyword": "retry automation",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Recognized approach centered on automatic retries for failed runs; distinct from orchestration and monitoring.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S08",
+          "keyword": "workflow observability",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Recognized approach for inspecting, tracing, and debugging runs; directly supported by logging, tracing, and monitoring features.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S09",
+          "keyword": "job queue software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Workflow-specific commercial category for queue-based execution management; supported by queues and concurrency controls.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S10",
+          "keyword": "cron scheduling software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Workflow-specific commercial category for recurring execution and durable schedules; directly supported by durable cron schedules.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S11",
+          "keyword": "workflow monitoring software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Workflow-specific commercial category for observing and debugging runs; grounded in the observability and monitoring capability set.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S12",
+          "keyword": "approval workflow software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Workflow-specific commercial category for human review gates; supported by human-in-the-loop approvals and feedback.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S13",
+          "keyword": "AI agent platform",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Capability-specific commercial category for building and deploying agents; directly supported by the product’s AI agent positioning.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S14",
+          "keyword": "workflow observability platform",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Capability-specific commercial category for tracing and monitoring workflow execution; distinct from the broader orchestration category.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "S15",
+          "keyword": "durable execution engine",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Capability-specific commercial category for resilient long-running execution; supported by the durability and no-timeouts positioning.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "generation_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "The crawl does not fully enumerate every possible integration or runtime extension, so some solution-category breadth had to stay conservative.",
+      "Specific customer segment prioritization beyond developers and engineering teams is not fully detailed, so qualifiers were retained to prevent drift."
+    ],
+    "potential_risks": [
+      "The profile bridges AI agents and background jobs, so some seeds intentionally cover both execution infrastructure and agent infrastructure without overcommitting to a single submarket.",
+      "Several capabilities are related to the same durability theme; the seed set separates them into distinct discovery directions to avoid over-repetition."
+    ],
+    "notes": "The profile strongly supports both the problem and solution territories. Most seeds are direct market-language translations of clearly stated product category, ICP, pain points, and capabilities, with a few medium-confidence strategic or adjacent-frame translations where the wording is more inferential."
+  }
+}

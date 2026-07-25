@@ -1,5 +1,9 @@
 import { logInfo, logStep, logSuccess } from "../lib/logger.js";
 import {
+  MISSING_KEYWORD_DIFFICULTY_DEFAULT,
+  calculateOpportunityScore,
+} from "../lib/opportunityScoring.js";
+import {
   ConfirmedQueriesSchema,
   type ConfirmedQueries,
 } from "../types/confirmedQueries.schema.js";
@@ -8,7 +12,6 @@ import {
   type QueryOpportunities,
 } from "../types/queryOpportunities.schema.js";
 
-const MISSING_KEYWORD_DIFFICULTY_DEFAULT = 50;
 const SELECTED_QUERY_COUNT = 10;
 
 type Territory = "problem_demand" | "solution_demand";
@@ -186,28 +189,21 @@ function scoreQuery(
   query: ConfirmedQuery,
   maximumTerritorySearchVolume: number,
 ): ScoredQuery {
-  const searchVolumeUsed = query.metrics.search_volume ?? 0;
-  const volumeScore =
-    maximumTerritorySearchVolume > 0
-      ? Math.log1p(searchVolumeUsed) / Math.log1p(maximumTerritorySearchVolume)
-      : 0;
-  const keywordDifficultyOriginal = query.metrics.keyword_difficulty;
-  const keywordDifficultyUsed =
-    keywordDifficultyOriginal ?? MISSING_KEYWORD_DIFFICULTY_DEFAULT;
-  const keywordDifficultyWasImputed = keywordDifficultyOriginal === null;
-  const difficultyScore = 1 - keywordDifficultyUsed / 100;
-  const opportunityScore = 100 * volumeScore * difficultyScore;
+  const score = calculateOpportunityScore(
+    query,
+    maximumTerritorySearchVolume,
+  );
 
   return {
     query,
-    searchVolumeUsed,
-    maximumTerritorySearchVolume,
-    volumeScore,
-    keywordDifficultyOriginal,
-    keywordDifficultyUsed,
-    keywordDifficultyWasImputed,
-    difficultyScore,
-    opportunityScore,
+    searchVolumeUsed: score.searchVolumeUsed,
+    maximumTerritorySearchVolume: score.maximumTerritorySearchVolume,
+    volumeScore: score.volumeScore,
+    keywordDifficultyOriginal: score.keywordDifficultyOriginal,
+    keywordDifficultyUsed: score.keywordDifficultyUsed,
+    keywordDifficultyWasImputed: score.keywordDifficultyWasImputed,
+    difficultyScore: score.difficultyScore,
+    opportunityScore: score.opportunityScore,
   };
 }
 

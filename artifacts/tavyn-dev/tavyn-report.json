@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "report_id": "report_41442384-c4e2-4f63-80d1-044dab9fcc3c",
+  "report_id": "report_0f25fe5e-3794-4ec6-a7f6-5994bcb1393e",
   "report_slug": "tavyn-seo-analysis",
-  "run_id": "41442384-c4e2-4f63-80d1-044dab9fcc3c",
-  "generated_at": "2026-07-20T22:54:58.037Z",
+  "run_id": "0f25fe5e-3794-4ec6-a7f6-5994bcb1393e",
+  "generated_at": "2026-07-23T00:56:17.116Z",
   "status": "complete",
   "warnings": [
     "solution_demand produced 1 recommendation instead of target 2: One recommendation is appropriate because \"seo automation platform\" is the exact category Tavyn claims, while the other solution candidates are broader tool variants or price-led queries that would dilute the page's dominant commercial intent.",
@@ -9873,7 +9873,8 @@
     "summary": {
       "selected_count": 3,
       "problem_demand_count": 2,
-      "solution_demand_count": 1
+      "solution_demand_count": 1,
+      "average_opportunity_score": 31.2
     },
     "items": [
       {

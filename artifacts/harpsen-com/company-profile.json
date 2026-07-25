@@ -1,0 +1,471 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://www.harpsen.com/",
+  "generated_at": "2026-07-24T20:33:25.985Z",
+  "source_pages": [
+    {
+      "url": "https://www.harpsen.com/",
+      "title": "Harpsen | Wedding Planner CRM & Wedding Planning Software"
+    },
+    {
+      "url": "https://www.harpsen.com/honeybook-alternative",
+      "title": "HoneyBook Alternative for Wedding & Event Pros | Harpsen"
+    },
+    {
+      "url": "https://www.harpsen.com/blog",
+      "title": "Harpsen Blog | Wedding Planning CRM, Workflows, Proposals & Payments"
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "Harpsen",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title: \"Harpsen | Wedding Planner CRM & Wedding Planning Software\"",
+        "Homepage copy: \"Harpsen is an all-in-one wedding planner CRM\""
+      ]
+    },
+    "domain": "harpsen.com",
+    "one_sentence_description": {
+      "value": "All-in-one CRM and planning software for wedding and event professionals to book clients, manage events, and collect payments.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"book clients, manage projects, and get paid—faster\"",
+        "Alternative page: \"Manage leads, projects, proposals, contracts, invoices... from one connected workspace.\""
+      ]
+    },
+    "product_category": {
+      "value": "wedding planner CRM and event planning software",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title and H1: \"Wedding Planner CRM & Wedding Planning Software\"",
+        "Alternative page: \"A HoneyBook alternative built for the details behind every event\""
+      ]
+    },
+    "business_model": {
+      "value": "paid SaaS with free trial",
+      "confidence": "high",
+      "evidence": [
+        "Pricing section lists monthly and yearly plans",
+        "FAQ: \"We offer a free 7-day trial, no credit card required\"",
+        "Pricing: \"$19 / mo\" and \"$39 / mo\""
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "established early-growth SaaS",
+      "confidence": "medium",
+      "evidence": [
+        "Pricing page is live with paid tiers",
+        "Homepage: \"Trusted by 1,000+ event professionals\"",
+        "Homepage: \"$10M+ earned by wedding planners using Harpsen\""
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "wedding planners",
+      "description": "Primary users and buyers appear to be independent or small wedding planning businesses that need CRM, workflow, and payment tools.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"built for wedding planners\"",
+        "FAQ: founder created it for her wedding planning business",
+        "Testimonials from wedding planners and planner/owners"
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "event professionals",
+        "description": "Broader event-service businesses that manage bookings, proposals, payments, and client coordination.",
+        "confidence": "high",
+        "evidence": [
+          "Alternative page: \"Built for wedding planners, venues, photographers, DJs, caterers, rental companies, and mobile bars\"",
+          "Blog: \"wedding planners and event professionals\""
+        ]
+      },
+      {
+        "value": "venues and other event vendors",
+        "description": "Adjacent event businesses that run client workflows and event coordination.",
+        "confidence": "high",
+        "evidence": [
+          "Alternative page lists venues, photographers, DJs, caterers, rental companies, mobile bars"
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The homepage is wedding-planner-first, while the HoneyBook alternative page broadens the audience to other event professionals.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage centers on wedding planning business language",
+        "Alternative page explicitly names additional event-professional segments"
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "Managing client booking, planning, documents, and payments across disconnected tools",
+      "description": "The site repeatedly positions Harpsen as a single workspace to replace multiple systems.",
+      "audience_segment": "wedding planners and event professionals",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"one place where she could serve her clients from beginning to end\"",
+        "Alternative page: \"Stop rebuilding the same information across disconnected tools\""
+      ]
+    },
+    {
+      "pain": "Re-entering the same event information across proposals, contracts, invoices, timelines, and workflows",
+      "description": "The alternative page emphasizes duplication and disconnected workflows as a problem.",
+      "audience_segment": "event professionals",
+      "confidence": "high",
+      "evidence": [
+        "Alternative page: \"Stop rebuilding the same information across disconnected tools\"",
+        "Alternative page: \"from first inquiry through final payment\""
+      ]
+    },
+    {
+      "pain": "Losing consistency and accountability across team members and clients",
+      "description": "The site highlights standardization, assignment, and shared visibility as a fix.",
+      "audience_segment": "wedding planners and teams",
+      "confidence": "medium",
+      "evidence": [
+        "Homepage: \"Stay consistent across your team\"",
+        "Testimonial: templates, workflows, and task lists help with \"accountability and organization\""
+      ]
+    },
+    {
+      "pain": "Spending too much time creating templates and communication from scratch",
+      "description": "Harpsen Assistant is framed as a way to quickly draft business content.",
+      "audience_segment": "wedding planners",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"create business templates and draft emails in seconds\"",
+        "Assistant section: \"without starting from scratch\""
+      ]
+    },
+    {
+      "pain": "Keeping timelines and vendors aligned during live event execution",
+      "description": "The Timeline product addresses day-of schedule changes and shared updates.",
+      "audience_segment": "wedding planners and event teams",
+      "confidence": "high",
+      "evidence": [
+        "Timeline section: \"live day-of command center\"",
+        "Timeline section: \"keep planners, teams, and vendors perfectly in sync\""
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "client relationship management",
+      "description": "Manages leads, client communication, and project records in one system.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"wedding planner CRM\"",
+        "Alternative page: \"Manage leads, projects... from one connected workspace.\""
+      ]
+    },
+    {
+      "capability": "proposal creation and electronic acceptance",
+      "description": "Creates client-facing proposals and supports acceptance/signing.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Proposals, contracts, invoices\"",
+        "Alternative page: \"Turn inquiries into booked events with reusable client-facing documents and electronic acceptance.\""
+      ]
+    },
+    {
+      "capability": "contract and invoice management",
+      "description": "Generates contracts and invoices tied to the project workflow.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"contracts, invoices\"",
+        "Alternative page: \"proposals, contracts, invoices, payment schedules\""
+      ]
+    },
+    {
+      "capability": "payment plans and secure payment processing",
+      "description": "Supports payment schedules, payment plans, Stripe payments, AutoPay, reminders, and tracking.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"accept payments through Stripe\"",
+        "Homepage pricing: \"Set up payment plans\"",
+        "Homepage: \"Secure payment processing\""
+      ]
+    },
+    {
+      "capability": "workflow automation",
+      "description": "Automates follow-up emails, questionnaires, brochures, tasks, and other recurring processes.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"automatic workflows\"",
+        "Homepage: example of inquiry-triggered follow-up sequence"
+      ]
+    },
+    {
+      "capability": "template and content drafting with AI",
+      "description": "Generates templates and drafts emails, proposals, contracts, workflows, and other content using AI.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Harpsen Assistant\"",
+        "Homepage: \"AI templates and workflows for wedding planners\""
+      ]
+    },
+    {
+      "capability": "timeline and schedule management",
+      "description": "Builds event timelines and keeps schedules updated live.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"The Harpsen Timeline\"",
+        "Timeline section: \"live shared updates\""
+      ]
+    },
+    {
+      "capability": "guest list and questionnaire management",
+      "description": "Collects and organizes guest information and planning questionnaires.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"guest lists\"",
+        "Alternative page: \"questionnaires, guest lists\""
+      ]
+    },
+    {
+      "capability": "vendor coordination and collaboration",
+      "description": "Tracks vendors, outreach, status, pricing, and shared communication.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"vendor outreach, status, and pricing\"",
+        "Homepage: \"stores all conversations with your clients, vendors, and team\""
+      ]
+    },
+    {
+      "capability": "client and vendor portals",
+      "description": "Provides separate logins so clients and vendors only see relevant information.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Separate client and vendor portals\"",
+        "Homepage: \"separate login details\""
+      ]
+    },
+    {
+      "capability": "project and task management",
+      "description": "Includes task lists, checklists, activities, reminders, and assignments.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"todo lists, check lists... tasks, activities\"",
+        "Homepage: tasks can be assigned to clients, vendors, and team members"
+      ]
+    },
+    {
+      "capability": "budget and expense tracking",
+      "description": "Tracks estimated and actual budgets, client payments, vendor payments, and expenses.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"time tracking and expense tracking tools\"",
+        "Homepage: \"estimated and actual budgets\""
+      ]
+    },
+    {
+      "capability": "file storage and organization",
+      "description": "Stores project files with folders and subfolders.",
+      "capability_type": "supporting",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Unlimited file storage\"",
+        "Homepage: \"create folders and sub-folders for each project\""
+      ]
+    },
+    {
+      "capability": "calendar sync",
+      "description": "Syncs with Google Calendar.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Pricing checklist: \"Sync with Google Calendar\""
+      ]
+    },
+    {
+      "capability": "floor plan creation",
+      "description": "Supports visual floor plans alongside event planning.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Alternative page: \"Floor plans\"",
+        "Pricing: \"Floor plan module\""
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "Harpsen positions itself as an affordable, all-in-one event workspace built by an event planner for wedding and event professionals, with workflow, payment, and timeline tools tied together.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"built by event pros\"",
+        "FAQ: \"created by an event planner\"",
+        "Homepage FAQ: \"at the most affordable rate\""
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "Built by an event planner",
+        "description": "The founder story and FAQs emphasize product design from real wedding-planning experience.",
+        "confidence": "high",
+        "evidence": [
+          "Founder section: Danielle was a wedding planner who needed the platform",
+          "FAQ: \"one of the founders is a wedding planner\""
+        ]
+      },
+      {
+        "differentiator": "All-in-one event workflow",
+        "description": "The product combines CRM, documents, payments, timelines, vendors, guests, and portals in one workspace.",
+        "confidence": "high",
+        "evidence": [
+          "Alternative page: \"one connected workspace\"",
+          "Homepage lists proposals, contracts, invoices, workflows, portals, timelines, and guest lists"
+        ]
+      },
+      {
+        "differentiator": "Affordable pricing",
+        "description": "The site repeatedly frames the product as lower-cost and flat-rate compared with competitors.",
+        "confidence": "high",
+        "evidence": [
+          "FAQ: \"most affordable rate\"",
+          "FAQ: \"completely flat rate with no caps\""
+        ]
+      },
+      {
+        "differentiator": "Wedding-specific AI and timeline tools",
+        "description": "Harpsen Assistant and Harpsen Timeline are tailored to wedding workflows rather than generic business use.",
+        "confidence": "high",
+        "evidence": [
+          "Assistant section: \"Not generic AI—built around real planning workflows\"",
+          "Timeline section: \"designed for real wedding flow\""
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "Event businesses need one connected system that keeps booking, planning, communication, and payment execution tied to the same project.",
+      "confidence": "high",
+      "evidence": [
+        "Alternative page: \"A booking is only the beginning\"",
+        "Homepage: \"serve her clients from beginning to end\""
+      ]
+    },
+    "positioning_notes": {
+      "value": "Harpsen contrasts itself with HoneyBook, Dubsado, and Aisle Planner, and repeatedly emphasizes simplicity, affordability, and wedding-specific workflows.",
+      "confidence": "high",
+      "evidence": [
+        "Alternative page compares with HoneyBook, Dubsado, and Aisle Planner",
+        "FAQ and founder story emphasize user-friendly and affordable positioning"
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "practical",
+        "supportive",
+        "customer-centric",
+        "confident",
+        "warm"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Copy focuses on outcomes like saving time, staying consistent, and serving clients well",
+        "Founder story uses personal, family-oriented language"
+      ]
+    },
+    "writing_style": {
+      "value": "Clear, benefit-led, and workflow-oriented, with short sections, feature lists, and direct calls to action.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage uses concise feature blocks such as \"Workflow automation\" and \"Seamless proposals and invoices\"",
+        "Alternative page uses direct problem/solution framing like \"Stop rebuilding the same information\""
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "one connected workspace",
+        "context": "Describes the product as a unified event system.",
+        "evidence": [
+          "Alternative page hero section"
+        ]
+      },
+      {
+        "phrase": "from first inquiry through final payment",
+        "context": "Frames full lifecycle management.",
+        "evidence": [
+          "Alternative page hero copy"
+        ]
+      },
+      {
+        "phrase": "built by event pros",
+        "context": "Signals founder credibility and domain-specific design.",
+        "evidence": [
+          "Homepage hero copy"
+        ]
+      },
+      {
+        "phrase": "not generic AI",
+        "context": "Positions Assistant as specialized for wedding workflows.",
+        "evidence": [
+          "Assistant section"
+        ]
+      },
+      {
+        "phrase": "affordable rate",
+        "context": "Repeated pricing/value message.",
+        "evidence": [
+          "FAQ: \"at the most affordable rate\""
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "Problem-to-platform framing: disconnected tools are the problem; one workspace is the answer.",
+        "description": "Repeated across homepage and alternative page.",
+        "evidence": [
+          "Homepage and alternative page copy"
+        ]
+      },
+      {
+        "pattern": "Workflow outcome messaging: save time, stay consistent, keep everyone aligned.",
+        "description": "Benefits are tied to operational outcomes rather than abstract features.",
+        "evidence": [
+          "Assistant and Timeline sections"
+        ]
+      },
+      {
+        "pattern": "Proof through testimonials and named customer logos.",
+        "description": "Uses social proof from wedding planners and event businesses.",
+        "evidence": [
+          "Homepage testimonials and client logos"
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Exact company size is not stated.",
+      "Customer segments outside event professionals are not supported beyond general small-business language.",
+      "Pricing details beyond listed plans and trial terms are limited.",
+      "Integration set is only partially visible in the crawl."
+    ],
+    "potential_risks": [
+      "Some pricing content appears duplicated across monthly and yearly tabs, which may overemphasize certain plans.",
+      "Blog posts and comparison pages could be mistaken for product breadth if read without the homepage context.",
+      "The crawl includes FAQ and testimonial content that may repeat the same claims in different forms."
+    ],
+    "notes": "The crawl provides strong direct evidence for a wedding/event CRM, its core workflows, audience, and pricing. Confidence is highest for product category, ICP, and positioning."
+  }
+}
