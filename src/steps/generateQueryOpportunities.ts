@@ -2,6 +2,7 @@ import { logInfo, logStep, logSuccess } from "../lib/logger.js";
 import {
   MISSING_KEYWORD_DIFFICULTY_DEFAULT,
   calculateOpportunityScore,
+  calculateTerritoryP95SearchVolume,
 } from "../lib/opportunityScoring.js";
 import {
   ConfirmedQueriesSchema,
@@ -104,14 +105,10 @@ function buildTerritoryRanking(
     (query) => query.territory === territory,
   );
   const selectedCount = Math.min(SELECTED_QUERY_COUNT, territoryQueries.length);
-  const maximumSearchVolume =
-    territoryQueries.length > 0
-      ? Math.max(
-          ...territoryQueries.map((query) => query.metrics.search_volume ?? 0),
-        )
-      : 0;
+  const territoryP95SearchVolume =
+    calculateTerritoryP95SearchVolume(territoryQueries);
   const scoredQueries = territoryQueries
-    .map((query) => scoreQuery(query, maximumSearchVolume))
+    .map((query) => scoreQuery(query, territoryP95SearchVolume))
     .sort(compareScoredQueries);
   const selectedQueries = scoredQueries
     .slice(0, selectedCount)
@@ -142,7 +139,7 @@ function buildTerritoryRanking(
     }));
 
   logInfo(`${territory} confirmed queries considered: ${territoryQueries.length}`);
-  logInfo(`${territory} maximum search volume: ${maximumSearchVolume}`);
+  logInfo(`${territory} P95 search volume benchmark: ${territoryP95SearchVolume}`);
   logInfo(
     `${territory} selected query IDs and scores: ${selectedQueries
       .map(
@@ -155,7 +152,7 @@ function buildTerritoryRanking(
   return {
     territory,
     confirmed_query_count: territoryQueries.length,
-    maximum_search_volume: maximumSearchVolume,
+    maximum_search_volume: territoryP95SearchVolume,
     selected_query_count: selectedCount,
     queries: selectedQueries,
   };

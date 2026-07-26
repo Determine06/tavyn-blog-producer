@@ -20,23 +20,27 @@ export type OpportunityScoreComponents = {
 
 export function calculateOpportunityScore(
   query: ScorableQuery,
-  maximumTerritorySearchVolume: number,
+  territoryP95SearchVolume: number,
 ): OpportunityScoreComponents {
   const searchVolumeUsed = query.metrics.search_volume ?? 0;
   const volumeScore =
-    maximumTerritorySearchVolume > 0
-      ? Math.log1p(searchVolumeUsed) / Math.log1p(maximumTerritorySearchVolume)
+    territoryP95SearchVolume > 0
+      ? Math.min(
+          1,
+          Math.log1p(searchVolumeUsed) / Math.log1p(territoryP95SearchVolume),
+        )
       : 0;
   const keywordDifficultyOriginal = query.metrics.keyword_difficulty;
   const keywordDifficultyUsed =
     keywordDifficultyOriginal ?? MISSING_KEYWORD_DIFFICULTY_DEFAULT;
   const keywordDifficultyWasImputed = keywordDifficultyOriginal === null;
   const difficultyScore = 1 - keywordDifficultyUsed / 100;
-  const opportunityScore = 100 * volumeScore * difficultyScore;
+  const opportunityScore =
+    Math.round(100 * (0.7 * volumeScore + 0.3 * difficultyScore) * 10) / 10;
 
   return {
     searchVolumeUsed,
-    maximumTerritorySearchVolume,
+    maximumTerritorySearchVolume: territoryP95SearchVolume,
     volumeScore,
     keywordDifficultyOriginal,
     keywordDifficultyUsed,
@@ -44,4 +48,17 @@ export function calculateOpportunityScore(
     difficultyScore,
     opportunityScore,
   };
+}
+
+export function calculateTerritoryP95SearchVolume(
+  queries: ScorableQuery[],
+): number {
+  const observedVolumes = queries
+    .map((query) => query.metrics.search_volume)
+    .filter((volume): volume is number => volume !== null)
+    .sort((a, b) => a - b);
+
+  return observedVolumes.length === 0
+    ? 0
+    : observedVolumes[Math.ceil(0.95 * observedVolumes.length) - 1];
 }

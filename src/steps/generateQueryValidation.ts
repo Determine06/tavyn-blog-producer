@@ -1,5 +1,4 @@
 import { logInfo, logStep, logSuccess } from "../lib/logger.js";
-import { runStructuredPromptFile } from "../llm/runStructuredPromptFile.js";
 import type { CompanyProfile } from "../types/companyProfile.schema.js";
 import {
   KeywordMetricsSchema,
@@ -143,6 +142,10 @@ async function runQueryValidationBatch(input: {
   totalBatches: number;
   queries: QueryValidationInputQuery[];
 }): Promise<QueryValidationBatch> {
+  const { runStructuredPromptFile } = await import(
+    "../llm/runStructuredPromptFile.js"
+  );
+
   return runStructuredPromptFile<QueryValidationBatch>({
     promptFileName: "generate-query-validation.md",
     runtimeInput: input.runtimeInput,

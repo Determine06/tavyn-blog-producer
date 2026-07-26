@@ -81,3 +81,16 @@ test("legacy force flags normalize into typed force configuration", () => {
   assert.equal(options.forceSeedKeywords, true);
   assert.equal(options.stopAfter, "query-validation");
 });
+
+test("artifact root parses without becoming the website URL", () => {
+  const options = parsePipelineCliOptions([
+    "https://example.com",
+    "--artifact-root",
+    "artifacts/stress-tests/phase1",
+    "--stop-after",
+    "query-validation",
+  ]);
+
+  assert.equal(options.websiteUrl, "https://example.com");
+  assert.equal(options.artifactRoot, "artifacts/stress-tests/phase1");
+});

@@ -1,5 +1,8 @@
 import { logInfo, logStep, logSuccess } from "../lib/logger.js";
-import { calculateOpportunityScore } from "../lib/opportunityScoring.js";
+import {
+  calculateOpportunityScore,
+  calculateTerritoryP95SearchVolume,
+} from "../lib/opportunityScoring.js";
 import {
   CompanyProfileSchema,
   type CompanyProfile,
@@ -476,10 +479,10 @@ function calculateAverageOpportunityScore(
     confirmedQueries,
     "solution_demand",
   );
-  const maximumProblemDemandSearchVolume =
-    getMaximumSearchVolume(problemDemandQueries);
-  const maximumSolutionDemandSearchVolume =
-    getMaximumSearchVolume(solutionDemandQueries);
+  const problemDemandP95SearchVolume =
+    calculateTerritoryP95SearchVolume(problemDemandQueries);
+  const solutionDemandP95SearchVolume =
+    calculateTerritoryP95SearchVolume(solutionDemandQueries);
 
   if (confirmedQueries.confirmed_queries.length === 0) {
     throw new Error(
@@ -514,13 +517,13 @@ function calculateAverageOpportunityScore(
       }
       confirmedQueryIds.add(query.query_id);
 
-      const maximumTerritorySearchVolume =
+      const territoryP95SearchVolume =
         query.territory === "problem_demand"
-          ? maximumProblemDemandSearchVolume
-          : maximumSolutionDemandSearchVolume;
+          ? problemDemandP95SearchVolume
+          : solutionDemandP95SearchVolume;
       const score = calculateOpportunityScore(
         query,
-        maximumTerritorySearchVolume,
+        territoryP95SearchVolume,
       ).opportunityScore;
 
       if (!Number.isFinite(score)) {
@@ -559,12 +562,6 @@ function getTerritoryConfirmedQueries(
   }
 
   return territoryQueries;
-}
-
-function getMaximumSearchVolume(queries: ConfirmedQuery[]): number {
-  return queries.length === 0
-    ? 0
-    : Math.max(...queries.map((query) => query.metrics.search_volume ?? 0));
 }
 
 function validateContentPlanJoins(

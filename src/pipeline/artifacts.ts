@@ -52,51 +52,55 @@ export function slugify(value: string): string {
 
 export function createStaticArtifactPaths(
   websiteUrl: string,
+  artifactRoot = "artifacts",
 ): Omit<PipelineArtifactPaths, "companyReport"> {
   const safeHostname = createSafeHostname(websiteUrl);
+  const companyArtifactRoot = `${artifactRoot}/${safeHostname}`;
 
   return {
     safeHostname,
-    crawlContext: `artifacts/${safeHostname}/crawl-context.json`,
-    companyProfile: `artifacts/${safeHostname}/company-profile.json`,
-    seedKeywords: `artifacts/${safeHostname}/seed-keywords.json`,
-    keywordMetrics: `artifacts/${safeHostname}/keyword_metrics.json`,
-    queryValidation: `artifacts/${safeHostname}/query-validations.json`,
-    confirmedQueries: `artifacts/${safeHostname}/confirmed-queries.json`,
-    queryOpportunities: `artifacts/${safeHostname}/query-opportunities.json`,
-    queryRecommendations: `artifacts/${safeHostname}/query-recommendations.json`,
-    serpResults: `artifacts/${safeHostname}/serp-results.json`,
-    contentRecommendation: `artifacts/${safeHostname}/content-recommendation.json`,
-    competitorLandscape: `artifacts/${safeHostname}/competitor-landscape.json`,
+    crawlContext: `${companyArtifactRoot}/crawl-context.json`,
+    companyProfile: `${companyArtifactRoot}/company-profile.json`,
+    seedKeywords: `${companyArtifactRoot}/seed-keywords.json`,
+    keywordMetrics: `${companyArtifactRoot}/keyword_metrics.json`,
+    queryValidation: `${companyArtifactRoot}/query-validations.json`,
+    confirmedQueries: `${companyArtifactRoot}/confirmed-queries.json`,
+    queryOpportunities: `${companyArtifactRoot}/query-opportunities.json`,
+    queryRecommendations: `${companyArtifactRoot}/query-recommendations.json`,
+    serpResults: `${companyArtifactRoot}/serp-results.json`,
+    contentRecommendation: `${companyArtifactRoot}/content-recommendation.json`,
+    competitorLandscape: `${companyArtifactRoot}/competitor-landscape.json`,
   };
 }
 
 export function createPipelineArtifactPaths(
   websiteUrl: string,
   companyName: string | null,
+  artifactRoot = "artifacts",
 ): PipelineArtifactPaths {
-  const staticPaths = createStaticArtifactPaths(websiteUrl);
+  const staticPaths = createStaticArtifactPaths(websiteUrl, artifactRoot);
 
   return {
     ...staticPaths,
     companyReport:
       companyName === null
         ? null
-        : `artifacts/${staticPaths.safeHostname}/${slugify(companyName)}-report.json`,
+        : `${artifactRoot}/${staticPaths.safeHostname}/${slugify(companyName)}-report.json`,
   };
 }
 
 export async function resolveArtifactPathsForStop(
   websiteUrl: string,
   stopAfter: PipelineStageId,
+  artifactRoot = "artifacts",
 ): Promise<string[]> {
-  const staticPaths = createStaticArtifactPaths(websiteUrl);
+  const staticPaths = createStaticArtifactPaths(websiteUrl, artifactRoot);
   const stages = getStagesThrough(stopAfter);
   const paths: string[] = [];
 
   for (const stage of stages) {
     if (stage === "company-report") {
-      paths.push(await resolveCompanyReportPath(websiteUrl));
+      paths.push(await resolveCompanyReportPath(websiteUrl, artifactRoot));
     } else {
       paths.push(getStaticArtifactPath(staticPaths, stage));
     }
@@ -105,7 +109,7 @@ export async function resolveArtifactPathsForStop(
   return paths;
 }
 
-function getStaticArtifactPath(
+export function getStaticArtifactPath(
   paths: Omit<PipelineArtifactPaths, "companyReport">,
   stage: Exclude<PipelineStageId, "company-report">,
 ): string {
@@ -135,8 +139,11 @@ function getStaticArtifactPath(
   }
 }
 
-async function resolveCompanyReportPath(websiteUrl: string): Promise<string> {
-  const staticPaths = createStaticArtifactPaths(websiteUrl);
+async function resolveCompanyReportPath(
+  websiteUrl: string,
+  artifactRoot = "artifacts",
+): Promise<string> {
+  const staticPaths = createStaticArtifactPaths(websiteUrl, artifactRoot);
   const companyProfile = JSON.parse(
     await readFile(staticPaths.companyProfile, "utf8"),
   ) as {
@@ -154,5 +161,5 @@ async function resolveCompanyReportPath(websiteUrl: string): Promise<string> {
     );
   }
 
-  return `artifacts/${staticPaths.safeHostname}/${slugify(companyName)}-report.json`;
+  return `${artifactRoot}/${staticPaths.safeHostname}/${slugify(companyName)}-report.json`;
 }

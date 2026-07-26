@@ -1,10 +1,10 @@
 {
   "suite_name": "phase1-stress-test",
   "git_branch": "testing-improvement",
-  "git_commit_sha": "4ff2308595322ec7d85a9ba3c9d9dd40642623ab",
+  "git_commit_sha": "9e50cd7a651072d818e6547317a8188d3ffae8ee",
   "dirty_working_tree": true,
-  "started_at": "2026-07-25T23:16:02.033Z",
-  "completed_at": null,
+  "started_at": "2026-07-26T02:19:06.835Z",
+  "completed_at": "2026-07-26T02:25:09.678Z",
   "execution_order": [
     "featurebase-app",
     "trigger-dev",
@@ -12,21 +12,25 @@
   ],
   "cache_mode": "cache",
   "direct_force_selections": [
-    "query-validation"
+    "query-validation",
+    "confirmed-queries",
+    "query-opportunities"
   ],
   "effective_force_behavior": [
-    "query-validation"
+    "query-validation",
+    "confirmed-queries",
+    "query-opportunities"
   ],
-  "stop_after": "query-validation",
+  "stop_after": "query-opportunities",
   "snapshot_directory": "artifacts/stress-tests/phase1",
-  "overall_status": "running",
+  "overall_status": "success",
   "companies": [
     {
       "name": "Featurebase",
       "slug": "featurebase-app",
       "url": "https://www.featurebase.app/",
       "status": "success",
-      "duration_ms": 229013,
+      "duration_ms": 128300,
       "exit_code": 0,
       "snapshot_directory": "artifacts/stress-tests/phase1/featurebase-app",
       "snapshotted_artifact_paths": [
@@ -34,7 +38,9 @@
         "artifacts/stress-tests/phase1/featurebase-app/company-profile.json",
         "artifacts/stress-tests/phase1/featurebase-app/seed-keywords.json",
         "artifacts/stress-tests/phase1/featurebase-app/keyword_metrics.json",
-        "artifacts/stress-tests/phase1/featurebase-app/query-validations.json"
+        "artifacts/stress-tests/phase1/featurebase-app/query-validations.json",
+        "artifacts/stress-tests/phase1/featurebase-app/confirmed-queries.json",
+        "artifacts/stress-tests/phase1/featurebase-app/query-opportunities.json"
       ]
     },
     {
@@ -42,7 +48,7 @@
       "slug": "trigger-dev",
       "url": "https://trigger.dev/",
       "status": "success",
-      "duration_ms": 273353,
+      "duration_ms": 110778,
       "exit_code": 0,
       "snapshot_directory": "artifacts/stress-tests/phase1/trigger-dev",
       "snapshotted_artifact_paths": [
@@ -50,18 +56,28 @@
         "artifacts/stress-tests/phase1/trigger-dev/company-profile.json",
         "artifacts/stress-tests/phase1/trigger-dev/seed-keywords.json",
         "artifacts/stress-tests/phase1/trigger-dev/keyword_metrics.json",
-        "artifacts/stress-tests/phase1/trigger-dev/query-validations.json"
+        "artifacts/stress-tests/phase1/trigger-dev/query-validations.json",
+        "artifacts/stress-tests/phase1/trigger-dev/confirmed-queries.json",
+        "artifacts/stress-tests/phase1/trigger-dev/query-opportunities.json"
       ]
     },
     {
       "name": "Harpsen",
       "slug": "harpsen-com",
       "url": "https://www.harpsen.com/",
-      "status": "pending",
-      "duration_ms": null,
-      "exit_code": null,
-      "snapshot_directory": null,
-      "snapshotted_artifact_paths": []
+      "status": "success",
+      "duration_ms": 123668,
+      "exit_code": 0,
+      "snapshot_directory": "artifacts/stress-tests/phase1/harpsen-com",
+      "snapshotted_artifact_paths": [
+        "artifacts/stress-tests/phase1/harpsen-com/crawl-context.json",
+        "artifacts/stress-tests/phase1/harpsen-com/company-profile.json",
+        "artifacts/stress-tests/phase1/harpsen-com/seed-keywords.json",
+        "artifacts/stress-tests/phase1/harpsen-com/keyword_metrics.json",
+        "artifacts/stress-tests/phase1/harpsen-com/query-validations.json",
+        "artifacts/stress-tests/phase1/harpsen-com/confirmed-queries.json",
+        "artifacts/stress-tests/phase1/harpsen-com/query-opportunities.json"
+      ]
     }
   ]
 }

@@ -11,6 +11,7 @@ export type CacheMode = "cache" | "no-cache";
 
 export type PipelineCliOptions = {
   websiteUrl: string;
+  artifactRoot: string;
   cacheMode: CacheMode;
   forceStages: PipelineStageId[];
   stopAfter: PipelineStageId | null;
@@ -90,6 +91,7 @@ export function parsePipelineCliOptions(argv: string[]): PipelineCliOptions {
 
   return {
     websiteUrl: parseUrlArgs(argv)[0] ?? "https://tavyn.dev/",
+    artifactRoot: parseArtifactRoot(argv),
     cacheMode,
     forceStages,
     stopAfter,
@@ -114,6 +116,28 @@ export function parsePipelineCliOptions(argv: string[]): PipelineCliOptions {
   ): boolean {
     return argvValue.includes(legacyFlag) || forceStages.includes(stageId);
   }
+}
+
+export function parseArtifactRoot(argv: string[]): string {
+  const equalsArg = argv.find((arg) => arg.startsWith("--artifact-root="));
+
+  if (equalsArg !== undefined) {
+    return requireArtifactRoot(equalsArg.slice("--artifact-root=".length));
+  }
+
+  const flagIndex = argv.indexOf("--artifact-root");
+
+  if (flagIndex === -1) {
+    return "artifacts";
+  }
+
+  const value = argv[flagIndex + 1];
+
+  if (value === undefined || value.startsWith("--")) {
+    throw new Error("--artifact-root requires a path value.");
+  }
+
+  return requireArtifactRoot(value);
 }
 
 function parseLegacyForceStages(argv: string[]): PipelineStageId[] {
@@ -273,7 +297,8 @@ export function parseUrlArgs(argv: string[]): string[] {
 
     if (
       arg === "--stop-after" ||
-      arg === "--force"
+      arg === "--force" ||
+      arg === "--artifact-root"
     ) {
       index += 1;
       continue;
@@ -282,6 +307,7 @@ export function parseUrlArgs(argv: string[]): string[] {
     if (
       arg.startsWith("--stop-after=") ||
       arg.startsWith("--force=") ||
+      arg.startsWith("--artifact-root=") ||
       arg === "--cache" ||
       arg === "--no-cache"
     ) {
@@ -294,6 +320,16 @@ export function parseUrlArgs(argv: string[]): string[] {
   }
 
   return urlArgs;
+}
+
+function requireArtifactRoot(value: string): string {
+  const trimmedValue = value.trim().replace(/\/+$/g, "");
+
+  if (trimmedValue.length === 0) {
+    throw new Error("--artifact-root requires a non-empty path value.");
+  }
+
+  return trimmedValue;
 }
 
 function addForceValue(

@@ -4,7 +4,11 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { performance } from "node:perf_hooks";
 
-import { resolveArtifactPathsForStop } from "../pipeline/artifacts.js";
+import {
+  createStaticArtifactPaths,
+  getStaticArtifactPath,
+  resolveArtifactPathsForStop,
+} from "../pipeline/artifacts.js";
 import {
   parseCacheMode,
   parseForceStages,
@@ -13,6 +17,7 @@ import {
 } from "../pipeline/options.js";
 import {
   formatStageList,
+  getStageIndex,
   pipelineStageIds,
   type PipelineStageId,
 } from "../pipeline/stages.js";
@@ -109,20 +114,6 @@ async function main(): Promise<void> {
       const companyManifest = manifest.companies[index];
       const startedAt = performance.now();
 
-      if (options.cacheMode === "cache") {
-        const restoredPaths = await hydrateCompanyArtifactsFromSnapshot(
-          company,
-          options.stopAfter,
-          suiteDir,
-        );
-
-        if (restoredPaths.length > 0) {
-          console.log(
-            `Restored ${restoredPaths.length} cached artifact(s) from ${getCompanySnapshotDirectory(company, suiteDir)}`,
-          );
-        }
-      }
-
       const exitCode = await runCompany(company, options);
       const durationMs = Math.round(performance.now() - startedAt);
 
@@ -197,6 +188,7 @@ export function buildCompanyArgs(
   const args = [company.url];
 
   args.push(options.cacheMode === "cache" ? "--cache" : "--no-cache");
+  args.push("--artifact-root", phase1SuiteDirectory);
 
   if (options.cacheMode === "cache") {
     for (const stage of options.forceStages) {
@@ -269,7 +261,28 @@ async function snapshotCompanyArtifacts(
   const artifactPaths = await resolveArtifactPathsForStop(
     company.url,
     stopAfter,
+    suiteDir,
   );
+
+  if (
+    artifactPaths.every(
+      (artifactPath) => path.dirname(artifactPath) === snapshotDirectory,
+    )
+  ) {
+    await removeSnapshotArtifactsAfterStop(company.url, stopAfter, suiteDir);
+    const existingArtifactPaths: string[] = [];
+
+    for (const artifactPath of artifactPaths) {
+      if (await fileExists(artifactPath)) {
+        existingArtifactPaths.push(artifactPath);
+      }
+    }
+
+    return {
+      snapshotDirectory,
+      snapshottedArtifactPaths: existingArtifactPaths,
+    };
+  }
 
   const snapshottedArtifactPaths = await copySnapshotArtifacts(
     snapshotDirectory,
@@ -301,31 +314,27 @@ export async function copySnapshotArtifacts(
   return snapshottedArtifactPaths;
 }
 
-export async function hydrateCompanyArtifactsFromSnapshot(
-  company: SnapshotCompany,
+async function removeSnapshotArtifactsAfterStop(
+  websiteUrl: string,
   stopAfter: PipelineStageId,
-  suiteDir = phase1SuiteDirectory,
-): Promise<string[]> {
-  const snapshotDirectory = getCompanySnapshotDirectory(company, suiteDir);
-  const artifactPaths = await resolveArtifactPathsForStop(
-    company.url,
-    stopAfter,
-  );
-  const restoredArtifactPaths: string[] = [];
+  suiteDir: string,
+): Promise<void> {
+  const staticPaths = createStaticArtifactPaths(websiteUrl, suiteDir);
+  const stopIndex = getStageIndex(stopAfter);
+  const downstreamStages = pipelineStageIds
+    .slice(stopIndex + 1)
+    .filter(
+      (
+        stage,
+      ): stage is Exclude<PipelineStageId, "company-report"> =>
+        stage !== "company-report",
+    );
 
-  for (const artifactPath of artifactPaths) {
-    const source = path.join(snapshotDirectory, path.basename(artifactPath));
-
-    if (!(await fileExists(source))) {
-      continue;
-    }
-
-    await mkdir(path.dirname(artifactPath), { recursive: true });
-    await copyFile(source, artifactPath);
-    restoredArtifactPaths.push(artifactPath);
+  for (const stage of downstreamStages) {
+    await rm(getStaticArtifactPath(staticPaths, stage), {
+      force: true,
+    });
   }
-
-  return restoredArtifactPaths;
 }
 
 async function fileExists(filePath: string): Promise<boolean> {

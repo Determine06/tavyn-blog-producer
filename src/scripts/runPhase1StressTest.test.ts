@@ -9,7 +9,6 @@ import {
   copySnapshotArtifacts,
   createDryRunPlan,
   getCompanySnapshotDirectory,
-  hydrateCompanyArtifactsFromSnapshot,
   parsePhase1Options,
   phase1Companies,
   phase1SuiteDirectory,
@@ -43,79 +42,6 @@ test("Phase 1 suite contains exactly the three expected companies in order", () 
   );
 });
 
-test("cached Phase 1 runs can hydrate regular artifacts from permanent snapshots", async () => {
-  const fixtureRoot = await mkdtemp(path.join(tmpdir(), "phase1-hydrate-"));
-
-  try {
-    const company = {
-      name: "Example",
-      slug: "example-com",
-      url: "https://www.example.com/",
-    } as const;
-    const suiteDirectory = path.join(fixtureRoot, "stress-tests", "phase1");
-    const snapshotDirectory = getCompanySnapshotDirectory(
-      company,
-      suiteDirectory,
-    );
-    const cwd = process.cwd();
-
-    process.chdir(fixtureRoot);
-
-    try {
-      await mkdir(snapshotDirectory, { recursive: true });
-      await writeFile(
-        path.join(snapshotDirectory, "crawl-context.json"),
-        "snapshot crawl",
-        "utf8",
-      );
-      await writeFile(
-        path.join(snapshotDirectory, "company-profile.json"),
-        "snapshot profile",
-        "utf8",
-      );
-      await writeFile(
-        path.join(snapshotDirectory, "seed-keywords.json"),
-        "snapshot seeds",
-        "utf8",
-      );
-      await writeFile(
-        path.join(snapshotDirectory, "keyword_metrics.json"),
-        "snapshot metrics",
-        "utf8",
-      );
-
-      const restoredPaths = await hydrateCompanyArtifactsFromSnapshot(
-        company,
-        "query-validation",
-        suiteDirectory,
-      );
-
-      assert.deepEqual(restoredPaths.sort(), [
-        "artifacts/example-com/company-profile.json",
-        "artifacts/example-com/crawl-context.json",
-        "artifacts/example-com/keyword_metrics.json",
-        "artifacts/example-com/seed-keywords.json",
-      ]);
-      assert.equal(
-        await readFile("artifacts/example-com/crawl-context.json", "utf8"),
-        "snapshot crawl",
-      );
-      assert.equal(
-        await readFile("artifacts/example-com/keyword_metrics.json", "utf8"),
-        "snapshot metrics",
-      );
-      await assert.rejects(
-        () => readFile("artifacts/example-com/query-validations.json", "utf8"),
-        { code: "ENOENT" },
-      );
-    } finally {
-      process.chdir(cwd);
-    }
-  } finally {
-    await rm(fixtureRoot, { recursive: true, force: true });
-  }
-});
-
 test("default Phase 1 behavior uses cache and stops at query validation", () => {
   const options = parsePhase1Options([]);
 
@@ -137,9 +63,33 @@ test("all companies receive the same resolved CLI configuration", () => {
   );
 
   assert.deepEqual(companyArgs, [
-    ["--cache", "--force", "seed-keywords", "--stop-after", "query-validation"],
-    ["--cache", "--force", "seed-keywords", "--stop-after", "query-validation"],
-    ["--cache", "--force", "seed-keywords", "--stop-after", "query-validation"],
+    [
+      "--cache",
+      "--artifact-root",
+      phase1SuiteDirectory,
+      "--force",
+      "seed-keywords",
+      "--stop-after",
+      "query-validation",
+    ],
+    [
+      "--cache",
+      "--artifact-root",
+      phase1SuiteDirectory,
+      "--force",
+      "seed-keywords",
+      "--stop-after",
+      "query-validation",
+    ],
+    [
+      "--cache",
+      "--artifact-root",
+      phase1SuiteDirectory,
+      "--force",
+      "seed-keywords",
+      "--stop-after",
+      "query-validation",
+    ],
   ]);
 });
 

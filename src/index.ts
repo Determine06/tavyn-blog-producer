@@ -69,6 +69,7 @@ async function main(): Promise<void> {
   try {
     const {
       websiteUrl,
+      artifactRoot,
       cacheMode,
       forceStages,
       stopAfter,
@@ -90,6 +91,7 @@ async function main(): Promise<void> {
     const artifactPaths = createPipelineArtifactPaths(
       runContext.websiteUrl,
       null,
+      artifactRoot,
     );
     const crawlArtifactPath = artifactPaths.crawlContext;
     const companyProfileArtifactPath = artifactPaths.companyProfile;
@@ -114,6 +116,7 @@ async function main(): Promise<void> {
     );
     logInfo(`Device: ${runContext.device}`);
     logInfo(`Company profile website URL: ${runContext.websiteUrl}`);
+    logInfo(`Artifact root: ${artifactRoot}`);
     logInfo(`cacheMode: ${cacheMode}`);
     logInfo(`forceStages: ${forceStages.join(", ") || "none"}`);
     logInfo(`stopAfter: ${stopAfter ?? "none"}`);
@@ -212,7 +215,7 @@ async function main(): Promise<void> {
       companyProfile.company_identity.company_name.value,
     );
     const companyReportArtifactPath =
-      `artifacts/${safeHostname}/${companySlug}-report.json`;
+      `${artifactRoot}/${safeHostname}/${companySlug}-report.json`;
 
     logInfo(`Company report artifact path: ${companyReportArtifactPath}`);
 

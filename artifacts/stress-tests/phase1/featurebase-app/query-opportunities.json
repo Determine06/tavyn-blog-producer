@@ -1,0 +1,2273 @@
+{
+  "schema_version": "1.2.0",
+  "run_id": "fef11e78-1032-4121-b0e7-99cc3550e429",
+  "generated_at": "2026-07-26T02:21:15.195Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://www.featurebase.app/",
+  "scoring_method": {
+    "name": "search_demand_times_organic_attainability",
+    "version": "1.1.0",
+    "missing_keyword_difficulty_default": 50,
+    "volume_normalization": "log1p_relative_to_territory_max",
+    "combination_method": "multiplicative",
+    "formula": "100 * volume_score * difficulty_score"
+  },
+  "territory_rankings": [
+    {
+      "territory": "problem_demand",
+      "confirmed_query_count": 100,
+      "maximum_search_volume": 1900,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "problem_demand_360",
+          "territory": "problem_demand",
+          "query": "product research surveys",
+          "validation_reasoning": "The query asks about product research surveys, which are directly related to Featurebase's feedback collection capabilities.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 360,
+          "core_keyword": "product research survey",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 50
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -55,
+              "quarterly": -64,
+              "yearly": 829
+            },
+            "cpc": 32.08,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 10.4,
+              "referring_domains": 4.5,
+              "main_domain_rank": 497.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 0.9773,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 98.4
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "problem_demand_494",
+          "territory": "problem_demand",
+          "query": "customer survey questions",
+          "validation_reasoning": "The query asks about customer survey questions, which are directly related to Featurebase's feedback collection workflows.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 494,
+          "core_keyword": "questions for a customer survey",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 590
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -46,
+              "quarterly": -46,
+              "yearly": 48
+            },
+            "cpc": 11.11,
+            "paid_competition": 0.04,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 5.7,
+              "referring_domains": 2.7,
+              "main_domain_rank": 556.2
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 0.9773,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 96.3
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "problem_demand_359",
+          "territory": "problem_demand",
+          "query": "product survey questions",
+          "validation_reasoning": "The query asks about product survey questions, which fit Featurebase's feedback collection and product research workflows.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 359,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -66,
+              "quarterly": -58,
+              "yearly": 212
+            },
+            "cpc": 13.22,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 9,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 31.6,
+              "referring_domains": 17,
+              "main_domain_rank": 583
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 0.9773,
+            "keyword_difficulty_original": 9,
+            "keyword_difficulty_used": 9,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.91,
+            "opportunity_score": 95.7
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "problem_demand_493",
+          "territory": "problem_demand",
+          "query": "customer communication platform",
+          "validation_reasoning": "The query asks about a customer communication platform, which is directly aligned with Featurebase's omnichannel support product.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 493,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 18100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -59,
+              "quarterly": -50,
+              "yearly": -97
+            },
+            "cpc": 85.4,
+            "paid_competition": 0.17,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 17,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial",
+                "navigational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 2961.9,
+              "referring_domains": 272.7,
+              "main_domain_rank": 508.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1900,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 1,
+            "keyword_difficulty_original": 17,
+            "keyword_difficulty_used": 17,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.83,
+            "opportunity_score": 94.9
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "problem_demand_499",
+          "territory": "problem_demand",
+          "query": "automate customer service",
+          "validation_reasoning": "The query asks about automating customer service, which Featurebase directly supports through workflows and AI assistance.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 499,
+          "core_keyword": "automated customer service",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -41,
+              "quarterly": -41,
+              "yearly": -41
+            },
+            "cpc": 101.16,
+            "paid_competition": 0.17,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 1.7,
+              "referring_domains": 1.4,
+              "main_domain_rank": 440.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1000,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 0.9151,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 94.1
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "problem_demand_351",
+          "territory": "problem_demand",
+          "query": "customer satisfaction survey software",
+          "validation_reasoning": "The query asks about customer satisfaction survey software, which is directly adjacent to Featurebase's feedback collection capabilities.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 351,
+          "core_keyword": "software customer satisfaction survey",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 49500,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 18100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 450000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 165000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -64,
+              "quarterly": -64,
+              "yearly": -100
+            },
+            "cpc": null,
+            "paid_competition": 0.07,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 21,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 1231.9,
+              "referring_domains": 170.8,
+              "main_domain_rank": 426.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 49500,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 1,
+            "keyword_difficulty_original": 21,
+            "keyword_difficulty_used": 21,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.79,
+            "opportunity_score": 93.7
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "problem_demand_417",
+          "territory": "problem_demand",
+          "query": "customer retention strategies",
+          "validation_reasoning": "The query asks about customer retention strategies, which Featurebase can materially influence through support, feedback, and self-serve documentation.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 417,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 4400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 3600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -33,
+              "yearly": -56
+            },
+            "cpc": 16.48,
+            "paid_competition": 0.06,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 26,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 250.2,
+              "referring_domains": 130.2,
+              "main_domain_rank": 516.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2900,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 1,
+            "keyword_difficulty_original": 26,
+            "keyword_difficulty_used": 26,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.74,
+            "opportunity_score": 92.2
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "problem_demand_497",
+          "territory": "problem_demand",
+          "query": "marketplace customer service",
+          "validation_reasoning": "The query asks about marketplace customer service, which is a plausible support use case for Featurebase's platform.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 497,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1300,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 880
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -55,
+              "yearly": -18
+            },
+            "cpc": 17.47,
+            "paid_competition": 0.32,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 17,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "navigational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 2475.2,
+              "referring_domains": 162.3,
+              "main_domain_rank": 587.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1300,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 0.9498,
+            "keyword_difficulty_original": 17,
+            "keyword_difficulty_used": 17,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.83,
+            "opportunity_score": 91.4
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "problem_demand_148",
+          "territory": "problem_demand",
+          "query": "customer retention",
+          "validation_reasoning": "The query is about customer retention, which Featurebase’s support and feedback workflows can materially influence.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 148,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 3600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 4400
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 4400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 3600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -17,
+              "quarterly": -45,
+              "yearly": -45
+            },
+            "cpc": 23.39,
+            "paid_competition": 0.12,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 30,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 241.8,
+              "referring_domains": 65.8,
+              "main_domain_rank": 638.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 3600,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 1,
+            "keyword_difficulty_original": 30,
+            "keyword_difficulty_used": 30,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.7,
+            "opportunity_score": 91
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "problem_demand_290",
+          "territory": "problem_demand",
+          "query": "boost customer service",
+          "validation_reasoning": "The query asks about boosting customer service, which Featurebase can materially influence through support workflows and automation.",
+          "source_seed_keywords": [
+            "customer support and feedback management",
+            "customer inbox management",
+            "product feedback prioritization",
+            "scattered customer conversations",
+            "reduce support workload",
+            "product team feedback triage"
+          ],
+          "discovery_rank": 290,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 12100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 12100
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 12100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 12100
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 22,
+              "quarterly": 22,
+              "yearly": 0
+            },
+            "cpc": 7.68,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 31,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 4391,
+              "referring_domains": 231.1,
+              "main_domain_rank": 422.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 12100,
+            "maximum_territory_search_volume": 1900,
+            "volume_score": 1,
+            "keyword_difficulty_original": 31,
+            "keyword_difficulty_used": 31,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.69,
+            "opportunity_score": 90.7
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "confirmed_query_count": 33,
+      "maximum_search_volume": 1000,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "solution_demand_012",
+          "territory": "solution_demand",
+          "query": "cloud based help desk software",
+          "validation_reasoning": "The query asks for cloud based help desk software, which matches Featurebase's cloud SaaS help desk product.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 12,
+          "core_keyword": "cloud-based help desk software",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 590
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": 23,
+              "yearly": -33
+            },
+            "cpc": 165.25,
+            "paid_competition": 0.04,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 5,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 104.1,
+              "referring_domains": 16.2,
+              "main_domain_rank": 516.1
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1000,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 1,
+            "keyword_difficulty_original": 5,
+            "keyword_difficulty_used": 5,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.95,
+            "opportunity_score": 98.5
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "solution_demand_011",
+          "territory": "solution_demand",
+          "query": "cloud-based help desk software",
+          "validation_reasoning": "The query asks for cloud-based help desk software, which is the same SaaS category Featurebase occupies.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 11,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 590
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": 23,
+              "yearly": -33
+            },
+            "cpc": 165.25,
+            "paid_competition": 0.04,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 6,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 177.8,
+              "referring_domains": 22.5,
+              "main_domain_rank": 545.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1000,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 1,
+            "keyword_difficulty_original": 6,
+            "keyword_difficulty_used": 6,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.94,
+            "opportunity_score": 98.2
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "solution_demand_152",
+          "territory": "solution_demand",
+          "query": "idea management software",
+          "validation_reasoning": "The query targets idea management software, which is directly adjacent to Featurebase's feedback collection and voting features.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 152,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -47,
+              "yearly": -72
+            },
+            "cpc": 132.63,
+            "paid_competition": 0.17,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 39.9,
+              "referring_domains": 9.6,
+              "main_domain_rank": 429.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1900,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 1,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 97.9
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "solution_demand_004",
+          "territory": "solution_demand",
+          "query": "best help desk software",
+          "validation_reasoning": "The query seeks the best help desk software, which falls squarely within Featurebase's help desk and ticketing category.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 4,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 720,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 390
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -33,
+              "yearly": -56
+            },
+            "cpc": 111.46,
+            "paid_competition": 0.17,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 11,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 155.3,
+              "referring_domains": 30.4,
+              "main_domain_rank": 695.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 720,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.9525,
+            "keyword_difficulty_original": 11,
+            "keyword_difficulty_used": 11,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.89,
+            "opportunity_score": 93.4
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "solution_demand_053",
+          "territory": "solution_demand",
+          "query": "service desk software",
+          "validation_reasoning": "The query seeks service desk software, which is a direct adjacent category to Featurebase's help desk and ticketing product.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 53,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 880,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 2900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -33,
+              "yearly": -33
+            },
+            "cpc": 112.54,
+            "paid_competition": 0.27,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 30,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 15657.9,
+              "referring_domains": 84.3,
+              "main_domain_rank": 562.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 880,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.9815,
+            "keyword_difficulty_original": 30,
+            "keyword_difficulty_used": 30,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.7,
+            "opportunity_score": 89.7
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "solution_demand_017",
+          "territory": "solution_demand",
+          "query": "small business help desk software",
+          "validation_reasoning": "The query targets small business help desk software, which is a credible fit for Featurebase's help desk product.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 17,
+          "core_keyword": "help desk software for small business",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -19,
+              "quarterly": -35,
+              "yearly": -56
+            },
+            "cpc": 72.17,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 158.7,
+              "referring_domains": 31.9,
+              "main_domain_rank": 597.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.8639,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 88.4
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "solution_demand_146",
+          "territory": "solution_demand",
+          "query": "ticket management software",
+          "validation_reasoning": "The query targets ticket management software, which directly matches Featurebase's ticketing and omnichannel inbox capability.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 146,
+          "core_keyword": "tickets management software",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 210
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -78,
+              "quarterly": -67,
+              "yearly": -78
+            },
+            "cpc": 151.67,
+            "paid_competition": 0.37,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 9,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 101.3,
+              "referring_domains": 21.7,
+              "main_domain_rank": 573.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.8354,
+            "keyword_difficulty_original": 9,
+            "keyword_difficulty_used": 9,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.91,
+            "opportunity_score": 85.8
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "solution_demand_214",
+          "territory": "solution_demand",
+          "query": "complaint management software",
+          "validation_reasoning": "The query targets complaint management software, which is directly adjacent to Featurebase's support ticketing and customer issue handling.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 214,
+          "core_keyword": "complaints management software",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 210,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": 0,
+              "yearly": -33
+            },
+            "cpc": 31.49,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 43.2,
+              "referring_domains": 7.6,
+              "main_domain_rank": 425.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 210,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.7746,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 84.2
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "solution_demand_066",
+          "territory": "solution_demand",
+          "query": "product roadmap software",
+          "validation_reasoning": "The query targets product roadmap software, which matches Featurebase's roadmap and feedback publishing capability.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 66,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 480
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -71,
+              "quarterly": -47,
+              "yearly": -71
+            },
+            "cpc": 127.45,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 29,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 1991.8,
+              "referring_domains": 384.9,
+              "main_domain_rank": 570.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.8639,
+            "keyword_difficulty_original": 29,
+            "keyword_difficulty_used": 29,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.71,
+            "opportunity_score": 81.8
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "solution_demand_090",
+          "territory": "solution_demand",
+          "query": "support ticket software",
+          "validation_reasoning": "The query targets support ticket software, which directly matches Featurebase's omnichannel inbox and ticketing product.",
+          "source_seed_keywords": [
+            "customer support and feedback platform",
+            "customer support and feedback software for product teams",
+            "omnichannel inbox software",
+            "product feedback management software",
+            "AI support automation",
+            "help desk software"
+          ],
+          "discovery_rank": 90,
+          "core_keyword": "ticket support software",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -33,
+              "yearly": -46
+            },
+            "cpc": 178.9,
+            "paid_competition": 0.52,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 28,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 8604.3,
+              "referring_domains": 516.5,
+              "main_domain_rank": 578.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "maximum_territory_search_volume": 1000,
+            "volume_score": 0.8354,
+            "keyword_difficulty_original": 28,
+            "keyword_difficulty_used": 28,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.72,
+            "opportunity_score": 80.1
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "confirmed_queries_considered": 133,
+    "problem_queries_considered": 100,
+    "solution_queries_considered": 33,
+    "problem_queries_selected": 10,
+    "solution_queries_selected": 10,
+    "total_queries_selected": 20,
+    "missing_keyword_difficulty_selected": 0
+  }
+}
