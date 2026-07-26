@@ -17,11 +17,13 @@ import {
 
 export const QUERY_VALIDATION_BATCH_SIZE = 250;
 export const QUERY_VALIDATION_MAX_CONCURRENCY = 4;
+const QUERY_VALIDATION_BATCH_MAX_ATTEMPTS = 2;
 
 type QueryValidationInputQuery = {
   query_id: string;
   territory: "problem_demand" | "solution_demand";
   query: string;
+  core_keyword: string | null;
 };
 type QueryValidationTerritory = QueryValidationInputQuery["territory"];
 
@@ -63,11 +65,21 @@ export async function generateQueryValidation(
 
   const generatedAt = dependencies.generatedAt ?? new Date().toISOString();
   const queries = buildInputQueries(keywordMetrics);
-  const batches = chunkQueries(queries, QUERY_VALIDATION_BATCH_SIZE);
+  const deduplicationResult = deduplicateInputQueries(queries);
+  const batches = chunkQueries(
+    deduplicationResult.representativeQueries,
+    QUERY_VALIDATION_BATCH_SIZE,
+  );
   const totalBatches = batches.length;
   const batchRunner = dependencies.batchRunner ?? runQueryValidationBatch;
 
-  logInfo(`Total query validation input queries: ${queries.length}`);
+  logInfo(`Original query validation input queries: ${queries.length}`);
+  logInfo(
+    `Representative queries sent to validation LLM: ${deduplicationResult.representativeQueries.length}`,
+  );
+  logInfo(
+    `Normalized duplicate queries skipped before validation LLM: ${deduplicationResult.duplicateValidations.size}`,
+  );
   logInfo(`Query validation batch size: ${QUERY_VALIDATION_BATCH_SIZE}`);
   logInfo(`Query validation batch count: ${totalBatches}`);
   logInfo(
@@ -95,18 +107,10 @@ export async function generateQueryValidation(
         `Query validation batch ${batch.batchNumber} input count: ${batch.queries.length}`,
       );
 
-      const batchResult = QueryValidationBatchSchema.parse(
-        await batchRunner(batch),
+      const batchResult = await runValidatedQueryValidationBatch(
+        batch,
+        batchRunner,
       );
-
-      logSuccess(
-        `Query validation batch ${batch.batchNumber}/${batch.totalBatches} completed`,
-      );
-      logInfo(
-        `Query validation batch ${batch.batchNumber} returned validation count: ${batchResult.query_validations.length}`,
-      );
-
-      validateBatchResultShape(batchResult, batch.queries, batch.batchNumber);
 
       return batchResult;
     },
@@ -118,6 +122,7 @@ export async function generateQueryValidation(
     generatedAt,
     inputQueries: queries,
     batchResults,
+    duplicateValidations: deduplicationResult.duplicateValidations,
   });
 
   validateBatchResultOrder(batchResults, batches);
@@ -129,7 +134,9 @@ export async function generateQueryValidation(
   const invalidCount = queryValidation.query_validations.length - validCount;
 
   logSuccess("Query validation completed");
-  logInfo(`Query validation count: ${queryValidation.query_validations.length}`);
+  logInfo(
+    `Final query validation artifact count: ${queryValidation.query_validations.length}`,
+  );
   logInfo(`Valid query count: ${validCount}`);
   logInfo(`Invalid query count: ${invalidCount}`);
 
@@ -152,6 +159,56 @@ async function runQueryValidationBatch(input: {
     schema: QueryValidationBatchSchema,
     fallbackSchemaName: "QueryValidationBatchSchema",
   });
+}
+
+async function runValidatedQueryValidationBatch(
+  batch: {
+    runtimeInput: string;
+    batchNumber: number;
+    totalBatches: number;
+    queries: QueryValidationInputQuery[];
+  },
+  batchRunner: QueryValidationBatchRunner,
+): Promise<QueryValidationBatch> {
+  let lastError: unknown;
+
+  for (
+    let attemptNumber = 1;
+    attemptNumber <= QUERY_VALIDATION_BATCH_MAX_ATTEMPTS;
+    attemptNumber += 1
+  ) {
+    try {
+      if (attemptNumber > 1) {
+        logInfo(
+          `Retrying query validation batch ${batch.batchNumber}/${batch.totalBatches} after incomplete or invalid response.`,
+        );
+      }
+
+      const batchResult = QueryValidationBatchSchema.parse(
+        await batchRunner(batch),
+      );
+
+      logInfo(
+        `Query validation batch ${batch.batchNumber} returned validation count: ${batchResult.query_validations.length}`,
+      );
+
+      validateBatchResultShape(batchResult, batch.queries, batch.batchNumber);
+
+      logSuccess(
+        `Query validation batch ${batch.batchNumber}/${batch.totalBatches} completed`,
+      );
+
+      return batchResult;
+    } catch (error) {
+      lastError = error;
+
+      if (attemptNumber === QUERY_VALIDATION_BATCH_MAX_ATTEMPTS) {
+        throw error;
+      }
+    }
+  }
+
+  throw lastError;
 }
 
 function buildBatchRuntimeInput(
@@ -177,9 +234,93 @@ function buildBatchRuntimeInput(
   </batch_metadata>
 
   <queries>
-    ${JSON.stringify(queries, null, 2)}
+    ${JSON.stringify(
+      queries.map((query) => ({
+        query_id: query.query_id,
+        territory: query.territory,
+        query: query.query,
+      })),
+      null,
+      2,
+    )}
   </queries>
 </query_validation_input>`;
+}
+
+function deduplicateInputQueries(queries: QueryValidationInputQuery[]): {
+  representativeQueries: QueryValidationInputQuery[];
+  duplicateValidations: Map<
+    string,
+    {
+      query_id: string;
+      territory: QueryValidationTerritory;
+      query: string;
+      verdict: "invalid";
+      reasoning: string;
+    }
+  >;
+} {
+  const seenByTerritory = new Map<
+    QueryValidationTerritory,
+    Map<string, QueryValidationInputQuery>
+  >();
+  const representativeQueries: QueryValidationInputQuery[] = [];
+  const duplicateValidations = new Map<
+    string,
+    {
+      query_id: string;
+      territory: QueryValidationTerritory;
+      query: string;
+      verdict: "invalid";
+      reasoning: string;
+    }
+  >();
+
+  for (const territory of QUERY_VALIDATION_TERRITORY_ORDER) {
+    seenByTerritory.set(territory, new Map());
+  }
+
+  for (const query of queries) {
+    const normalizedKey = createQueryNormalizationKey(query);
+    const territorySeen = seenByTerritory.get(query.territory);
+
+    if (territorySeen === undefined) {
+      throw new Error(`Unexpected query territory ${query.territory}.`);
+    }
+
+    const representative = territorySeen.get(normalizedKey);
+
+    if (representative === undefined) {
+      territorySeen.set(normalizedKey, query);
+      representativeQueries.push(query);
+      continue;
+    }
+
+    duplicateValidations.set(query.query_id, {
+      query_id: query.query_id,
+      territory: query.territory,
+      query: query.query,
+      verdict: "invalid",
+      reasoning: `This query is a normalized duplicate of "${representative.query}" and is excluded to prevent redundant SEO opportunities.`,
+    });
+  }
+
+  return {
+    representativeQueries,
+    duplicateValidations,
+  };
+}
+
+function createQueryNormalizationKey(query: QueryValidationInputQuery): string {
+  return query.query
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/['’‘]/g, "")
+    .replace(/[-\u2010-\u2015\u2212]/g, " ")
+    .replace(/[^\p{L}\p{N}+#\s]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function chunkQueries(
@@ -275,6 +416,16 @@ function reconstructQueryValidationArtifact(input: {
   generatedAt: string;
   inputQueries: QueryValidationInputQuery[];
   batchResults: QueryValidationBatch[];
+  duplicateValidations: Map<
+    string,
+    {
+      query_id: string;
+      territory: QueryValidationTerritory;
+      query: string;
+      verdict: "invalid";
+      reasoning: string;
+    }
+  >;
 }): QueryValidation {
   const decisionsById = new Map<
     string,
@@ -303,6 +454,14 @@ function reconstructQueryValidationArtifact(input: {
   }
 
   const reconstructedValidations = input.inputQueries.map((inputQuery) => {
+    const duplicateValidation = input.duplicateValidations.get(
+      inputQuery.query_id,
+    );
+
+    if (duplicateValidation !== undefined) {
+      return duplicateValidation;
+    }
+
     const decision = decisionsById.get(inputQuery.query_id);
 
     if (decision === undefined) {
@@ -500,6 +659,7 @@ function buildInputQueries(
       query_id: createStableQueryId(territory, index),
       territory,
       query: query.query,
+      core_keyword: query.core_keyword,
     }));
   });
 }

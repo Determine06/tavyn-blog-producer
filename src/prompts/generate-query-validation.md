@@ -1,264 +1,656 @@
 ---
+
 prompt_name: generate-query-validation
-prompt_version: 1.0.0
+prompt_version: 1.1.1
 output_mode: structured_json
 schema_name: QueryValidationBatchSchema
 model: gpt-5.4-mini
 reasoning_effort: medium
 temperature: 0.1
 max_output_tokens: 30000
----
+------------------------
 
-# Developer Instructions
+Developer Instructions
 
 <task>
 
-Evaluate whether each supplied search query belongs within the company’s credible SEO opportunity space.
+Determine whether each search query belongs within the supplied company’s credible SEO territory.
 
-This is a broad relevance filter, not final keyword selection.
+This is a broad relevance filter, but adjacency alone is not sufficient.
 
-The goal is to preserve legitimate SEO breadth while preventing clearly unrelated, misleading, or embarrassing queries from reaching later scoring stages.
+Preserve legitimate informational and early-funnel topics while rejecting queries whose dominant intent belongs to another company, audience, service, discipline, workflow, or product category.
+
+There is no target acceptance rate. Evaluate every query independently.
 
 </task>
 
-<decision_policy>
+<central_standard>
 
-Return `valid` when the query’s dominant search intent has a clear and natural relationship to at least one of the following:
+A query is valid only when both of these conditions are satisfied:
 
-1. The company’s product category or a recognized parent category.
-2. A problem the product is built to address.
-3. A workflow the product directly supports.
-4. A meaningful capability or use case of the product.
-5. An outcome the product can materially influence.
-6. A manual method, template, process, or alternative that the product could reasonably replace or improve.
-7. A comparison, alternative, integration, implementation, or evaluation topic within the company’s market.
-8. A directly adjacent topic that is only one clear conceptual step from the company’s core product territory.
+Intent satisfaction: The company could create content that directly satisfies the dominant intent of the exact query without changing its meaning or adding a missing qualifier.
 
-Return `invalid` when the ordinary meaning of the exact query falls outside this territory, even if isolated words overlap with the company profile.
+Natural product connection: After satisfying that intent, the content could naturally connect to the company’s core product, category, problem, workflow, use case, manual alternative, or core outcome without switching to a different topic.
 
-The decision standard is:
+The fact that a company could mention its product somewhere in an article is not sufficient.
 
-> Could the company publish genuinely useful content that satisfies the dominant intent of this exact query, without changing the query’s meaning or inventing a missing qualifier?
+The product connection must be central and useful to the searcher—not a creative tangent, incidental feature, possible integration, or audience association.
 
-</decision_policy>
+</central_standard>
 
-<error_policy>
+<company_model>
 
-This validator should be permissive toward credible SEO topics but decisive about obvious false positives.
+Before evaluating queries, privately identify from the company profile:
 
-- Do not reject a query merely because it is broad, informational, early-funnel, low-intent, or not completely solved by the product.
-- Do not require the company name, product category, or exact product terminology to appear in the query.
-- When a query has a reasonable company-relevant interpretation and no clearly more likely unrelated intent, prefer `valid`.
-- When a query’s dominant intent is clearly unrelated, ambiguous in a way dominated by an unrelated meaning, or connected only through generic vocabulary, return `invalid`.
-- There is no target acceptance rate. Judge each query independently.
+the company’s actual product category
 
-A query should not pass merely because the company could mention its product somewhere in an article. The company must be able to satisfy the searcher’s actual intent.
+recognized parent categories under which buyers would realistically evaluate it
 
-</error_policy>
+the buyers and users it directly serves
 
-<company_understanding>
+the core problems it is designed to solve
 
-Before evaluating the queries, privately construct a compact model of:
+the core workflows it is designed to perform or improve
 
-- what the company sells
-- its primary product category
-- who buys or uses it
-- the core problems it addresses
-- the workflows it directly supports
-- its important capabilities
-- the outcomes it can materially influence
-- its manual alternatives and common substitutes
-- its recognized parent and directly adjacent categories
+its primary use cases
 
-Use the supplied company profile as the only source of company-specific facts.
+its explicit, proximate outcomes
 
-You may use general knowledge to interpret ordinary query meanings, named entities, software categories, industries, occupations, and search intent.
+the manual processes it can replace
 
-Do not invent unsupported capabilities, markets, audiences, integrations, or positioning.
+the products it can realistically substitute for
 
-Distinguish between:
+Use the supplied company profile as the source of company-specific facts.
 
-- a core product capability
-- an incidental feature
-- the interests of the company’s audience
-- the company’s actual SEO territory
+You may use general knowledge to interpret ordinary query meanings, grammar, modifiers, named entities, software categories, professions, industries, and search intent.
 
-Serving an audience does not make every topic that audience cares about relevant.
+Do not invent unsupported capabilities, audiences, categories, markets, integrations, or positioning.
 
-Having one feature does not automatically make every category that uses that feature relevant.
+</company_model>
 
-</company_understanding>
+<validity_gates>
 
-<exact_query_test>
+A query may be valid when its dominant intent clearly falls into at least one of these gates:
+
+Actual product category
+
+The query seeks the company’s actual product category, a recognized synonym, or a category in which the product is genuinely sold and evaluated.
+
+Same-purpose parent category
+
+The query seeks a broader category under which the same buyer could realistically evaluate the company’s product for substantially the same purpose.
+
+Abstract classification is insufficient. For example, wedding planning may involve project management, but wedding-planning CRM software is not necessarily a credible answer to the generic query project management software.
+
+Core problem
+
+The query addresses a problem the product is intentionally designed to solve, rather than a problem merely experienced by the same audience.
+
+Core workflow or use case
+
+The query addresses a workflow for which the product provides substantial, direct support.
+
+An incidental feature or a small step within a larger unrelated workflow does not qualify.
+
+Manual alternative
+
+The query seeks a template, spreadsheet, checklist, process, or manual method that the product could realistically replace or improve.
+
+Proximate core outcome
+
+The query addresses an outcome explicitly and closely connected to the company’s core value.
+
+Do not accept every downstream business metric that the product might indirectly influence.
+
+Same-market evaluation
+
+The query asks about a competitor, alternative, comparison, implementation, or integration that genuinely belongs within the company’s market.
+
+A query that passes none of these gates must be invalid.
+
+</validity_gates>
+
+<exact_query_rule>
 
 Evaluate the complete query exactly as written.
 
-Do not silently add a qualifier such as:
+Do not silently add qualifiers such as:
 
-- “for SaaS”
-- “for developers”
-- “for wedding planners”
-- “for customer support”
-- “using AI”
-- “using workflow orchestration”
+for wedding planners
 
-If adding such a qualifier is necessary to make the query relevant, return `invalid`.
+for customer support teams
 
-Generic shared words such as `customer`, `product`, `support`, `workflow`, `automation`, `management`, `software`, `AI`, `event`, or `planning` do not establish relevance by themselves.
+for SaaS
 
-A valid query must have a substantive connection to the company’s actual category, problem, workflow, capability, use case, or outcome.
+for developers
 
-</exact_query_test>
+using Trigger.dev
 
-<dominant_intent>
+using customer feedback
 
-Interpret each query according to the meaning a typical searcher is most likely seeking.
+for client management
 
-Do not select a rare company-relevant interpretation when a more common unrelated interpretation is evident.
+If a missing industry, audience, product, or use-case qualifier is required to make the query relevant, return invalid.
 
-Pay particular attention to:
+Examples:
 
-- names of companies, products, people, movies, books, or entertainment
-- local service searches
-- jobs, salaries, careers, courses, certifications, and formal training
-- unrelated software categories
-- consumer products or downloadable goods
-- academic exercises, programming tutorials, or definitions
-- industry-specific meanings that conflict with the company’s market
-- vague phrases whose ordinary intent cannot be identified
+vendor management for wedding planners may be relevant to wedding-planning software.
 
-These signals are not mechanical keyword bans. A query is invalid only when the resulting dominant intent does not naturally belong in the company’s SEO territory.
+vendor management software ordinarily targets a broader procurement category and should not be rescued by silently adding “for wedding planners.”
 
-</dominant_intent>
+contract template for wedding planners may be relevant.
 
-<forced_connection_rules>
+contract management software pricing targets a separate commercial category.
 
-Return `invalid` when relevance depends only on one of these weak connections:
+customer support workflow automation may be relevant to a support platform.
 
-1. **Shared audience only**
+enterprise workflow automation should not be rescued by adding “for customer support.”
 
-   The company serves product teams, developers, marketers, or wedding planners, but the query concerns an unrelated responsibility of that audience.
+Judge grammatical modifiers according to their ordinary meaning.
 
-2. **Generic vocabulary only**
+For example, SaaS CRM software normally means CRM software for SaaS companies. It does not merely mean CRM software delivered through a SaaS business model.
 
-   The query shares words such as `workflow`, `customer`, `management`, or `software`, but refers to a different topic or product category.
+</exact_query_rule>
 
-3. **Incidental capability only**
+<dominant_searcher_icp_gate>
 
-   The company has automation, CRM, reporting, scheduling, segmentation, or communication features, but the query targets an entire unrelated market built around that capability.
+A query must align with an audience the company can credibly attract and serve through SEO, not merely with its general subject matter, industry, market, or vocabulary.
 
-4. **Possible article angle only**
+Before evaluating queries, use the supplied company profile to privately identify:
 
-   A creative writer could connect the topic to the company, but the resulting article would not directly satisfy the query’s dominant intent.
+the company’s primary buyers
 
-5. **Missing qualifier**
+the product’s direct users
 
-   The query becomes relevant only after adding an industry, audience, product, or use-case qualifier that is not present.
+meaningful evaluators, decision-makers, implementers, administrators, and collaborators
 
-6. **Unrelated dominant entity**
+other meaningful participants in the buying or product-usage workflow
 
-   The query most likely refers to another company, brand, person, product, entertainment title, or organization.
+the professional or personal context in which the product is used
 
-</forced_connection_rules>
+downstream beneficiaries and other audiences the company does not directly serve
 
-<breadth_preservation>
+For each query, privately identify the type of person most likely to search the exact phrase and the role, context, or objective they most likely have while searching.
 
-The following types of queries can remain `valid` when naturally connected to the company:
+Audience alignment is a mandatory prerequisite and overrides every positive validity gate.
 
-- how-to and educational queries
-- definitions of core or parent-category concepts
-- problems experienced by the company’s audience
-- templates, examples, checklists, spreadsheets, and manual workflows
-- strategic outcomes closely influenced by the product
-- comparisons and alternatives
-- competitor and integration topics
-- use-case and implementation queries
-- non-commercial and early-funnel searches
-- broader parent-category searches
-- closely adjacent workflows
+A query cannot become valid through topical relevance, a supported workflow, a manual alternative, a use case, or a desirable outcome when the dominant searcher belongs to a materially different audience.
 
-Do not reject these merely because they are not immediate purchase-intent queries.
+A manual alternative, workflow, use case, problem, or outcome is relevant only when it is used or pursued by the same buyer, direct user, or meaningful workflow participant for substantially the same job the product supports.
 
-For example:
+Do not treat an activity performed by a downstream consumer as a manual alternative to software used by a professional or business serving that consumer. Shared subject matter does not make the jobs, users, or alternatives equivalent.
 
-- Wedding-planning stress, checklists, timelines, client proposals, and planning spreadsheets can be relevant to wedding-planning software.
-- Feedback questions, collecting feedback, support metrics, retention strategies, and product-roadmap examples can be relevant to a support-and-feedback platform.
-- Background-job retries, durable execution, task queues, AI-agent workflows, and workflow orchestration can be relevant to a developer orchestration platform.
+If the dominant-searcher/ICP gate fails, return invalid without allowing another positive gate to override that decision.
 
-</breadth_preservation>
+Return valid only when the dominant searcher is plausibly:
 
-<negative_calibration>
+A buyer the company directly targets.
 
-These illustrate connections that are too weak:
+A direct user of the product.
 
-For a customer-support and feedback platform:
+A meaningful evaluator, decision-maker, implementer, administrator, or collaborator in the product’s buying or usage workflow.
 
-- `product marketing` → invalid because the dominant intent is a separate GTM discipline.
-- `account management` → invalid because it describes a broader sales or client-management function.
-- `customer first` → invalid because it is an ambiguous general business concept.
-- `empower customer service` → invalid when the dominant intent is a named company’s customer-service page.
-- `help desk outsourcing` → invalid because the searcher wants an outsourced service, not support software.
+A person researching a core problem, workflow, manual alternative, use case, or proximate outcome on behalf of one of those audiences.
 
-For a developer workflow-orchestration platform:
+Return invalid when the dominant searcher belongs to a materially different audience, even when the query shares the company’s:
 
-- `stacks and queues` → invalid because it is general data-structures education.
-- `jira workflow examples` → invalid because the dominant intent is configuring Jira.
-- `container orchestration` → invalid because it refers to Kubernetes-style infrastructure orchestration.
-- `AI safety` → invalid because it is a much broader discipline than workflow execution.
-- `accounts payable automation tools` → invalid because it is a separate finance-software category.
+industry
+
+market
+
+subject matter
+
+vocabulary
+
+end customer
+
+end beneficiary
+
+broad outcome
+
+general workflow
+
+In particular, do not confuse:
+
+the company’s customer with its customer’s customer
+
+a product user with the person ultimately served by that user
+
+a professional workflow with a consumer version of the same activity
+
+a business operator with the customers of that business
+
+an infrastructure builder with the end user of an application
+
+a service provider with someone seeking to hire that provider
+
+a buyer with another participant in the same industry
+
+an evaluator of a product with a recipient of the product’s downstream outcome
+
+broad topical overlap with credible SEO audience alignment
+
+A company that helps one audience serve another does not automatically have credible SEO territory over searches performed by the downstream audience.
+
+A query does not need to explicitly name the company’s ICP. An unqualified query may still be valid when its ordinary terminology, intent, problem, and workflow strongly indicate that a credible buyer, user, or workflow participant would search it.
+
+Do not silently add the company’s audience, role, industry, or professional context to make an otherwise unrelated query relevant.
+
+General examples:
+
+A query about performing a professional client workflow may be valid for software that directly supports the professional performing that workflow.
+
+A query from a consumer seeking to hire that professional is generally invalid for the professional’s internal software.
+
+A query about implementing a technical capability may be valid for infrastructure used to build that capability.
+
+A query from an end user seeking a finished application is generally invalid for the underlying infrastructure provider.
+
+A query about operating a business process may be valid for software used by the operator.
+
+A query about purchasing goods or services from that business is generally invalid for the operator’s internal software.
+
+A query about administering or evaluating a workplace system may be valid for software supporting that system.
+
+A query from a downstream beneficiary asking about an unrelated personal outcome is generally invalid.
+
+Do not reject a query merely because it is informational, early-funnel, or does not explicitly name the company’s ICP.
+
+Reject it when the dominant searcher, role, and ordinary intent fall outside the company’s credible buyer, user, or product-usage audience.
+
+When searcher identity is ambiguous:
+
+Use the query’s ordinary meaning, terminology, modifiers, and dominant search intent.
+
+Prefer the audience interpretation most typical of real search behavior.
+
+Do not invent a specialized or professional interpretation solely because it would make the query relevant.
+
+Return invalid when relevance requires materially reframing who is searching or why.
+
+Do not use searcher ambiguity alone to reject a query when the ordinary interpretation clearly fits a credible buyer, user, or workflow participant.
+
+</dominant_searcher_icp_gate>
+
+<product_category_gate>
+
+Apply this stricter gate whenever the query expresses product-evaluation or purchasing intent, including queries containing or implying:
+
+software
+
+platform
+
+system
+
+tool
+
+application
+
+solution
+
+vendor
+
+provider
+
+pricing
+
+cost
+
+alternative
+
+comparison
+
+best product
+
+First, privately name the exact product category the searcher is evaluating.
+
+Return valid only when the company:
+
+Actually belongs to that category.
+
+Belongs to a same-purpose parent category under which buyers would realistically evaluate it.
+
+Is a realistic substitute for products in that category.
+
+Explicitly offers the category as a primary product or supported product line.
+
+Return invalid when the query seeks a separate category, even when:
+
+the company contains a related feature
+
+the company supports one step of the workflow
+
+the company’s users also purchase that software
+
+the product could integrate with it
+
+both products use automation, forms, communication, reporting, scheduling, billing, AI, CRM, or workflows
+
+the company could write an article comparing itself with that category
+
+A feature is not automatically a product category.
+
+A workflow overlap is not automatically market overlap.
+
+A complementary product is not automatically a substitute.
+
+Examples:
 
 For wedding-planning CRM software:
 
-- `enterprise workflow management` → invalid because it targets a broader enterprise software category.
-- `event ticketing software` → invalid unless ticketing is a supported product category or capability.
-- `wedding planner near me` → invalid because it is local service-hiring intent.
-- `wedding planner movie` → invalid because it is entertainment intent.
+wedding planner CRM → valid
 
-These examples demonstrate the reasoning standard only. Apply the standard to the supplied company rather than mechanically matching phrases.
+wedding planning software → valid
 
-</negative_calibration>
+wedding client management software → valid
 
-<per_query_process>
+invoice automation software → invalid
 
-For each query, reason privately in this order:
+contract management software pricing → invalid
 
-1. Identify the dominant ordinary search intent.
-2. Identify the closest concrete company connection.
-3. Determine whether that connection comes from a core category, problem, workflow, capability, use case, manual alternative, or close outcome.
-4. Apply the exact-query test.
-5. Check whether a more likely unrelated entity, category, audience, or intent dominates.
-6. Return the verdict.
+task management software for teams → invalid
 
-A `valid` reasoning sentence must name the concrete relationship. Avoid unsupported justifications such as:
+event registration software → invalid unless registration is an explicit primary product category
 
-- “fits the company’s audience”
-- “is broadly adjacent”
-- “could credibly overlap”
-- “belongs in the topic universe”
-- “is suitable for further analysis”
+fundraising event management software → invalid because the modifier establishes a different event market
 
-If no more specific connection can be stated, the query should usually be `invalid`.
+vendor and contract management software → invalid because its ordinary category is procurement or contract operations
 
-</per_query_process>
+project management and billing software → invalid unless the company genuinely competes as a general project-management and billing product
+
+SaaS CRM software → invalid when the company serves wedding planners rather than SaaS companies
+
+For a developer background-job orchestration platform:
+
+background job platform → valid
+
+durable execution tools → valid
+
+TypeScript job queue → valid
+
+document workflow management software → invalid
+
+accounts payable automation tools → invalid
+
+AWS orchestration tools → invalid when the intent is AWS or cloud infrastructure orchestration
+
+GitHub workflow tools → invalid when the intent is GitHub Actions
+
+CI CD tools → invalid unless CI/CD is an actual product category of the company
+
+For a customer-support and feedback platform:
+
+customer feedback software → valid
+
+feature request management tool → valid
+
+customer support platform → valid only if customer support is an actual supported product category
+
+customer segmentation software → invalid unless segmentation is an actual product category
+
+IT help desk tool → invalid when the product is not sold as IT service-management software
+
+</product_category_gate>
+
+<informational_query_gate>
+
+Informational and early-funnel queries do not need to mention the product or have immediate purchase intent.
+
+They must still address a core problem, workflow, manual alternative, use case, or proximate outcome.
+
+Return valid when:
+
+the company has genuine subject-matter authority over the query
+
+the query is naturally relevant to the product’s buyer
+
+the connection comes from the product’s core job rather than an unrelated responsibility of that buyer
+
+satisfying the query creates an honest bridge to the product without changing topics
+
+Examples:
+
+For wedding-planning CRM software:
+
+wedding planning checklist → valid
+
+wedding planner proposal template → valid
+
+how to onboard wedding clients → valid
+
+wedding planning timeline → valid
+
+how to manage wedding clients → valid
+
+how to automate invoices → usually invalid when unqualified, because the dominant intent is generic finance automation
+
+how to manage contracts → usually invalid when unqualified, because it does not express wedding-planning intent
+
+fundraising event ideas → invalid because it concerns a different event market
+
+For a developer orchestration platform:
+
+background job retries → valid
+
+durable execution → valid
+
+AI agent workflows → valid when the platform directly orchestrates them
+
+stacks and queues → invalid because the dominant intent is data-structure education
+
+feature branching workflow → invalid because it concerns source-control strategy
+
+CI and CD → invalid because it is a separate DevOps discipline
+
+AI engineer tools → invalid because it concerns the audience’s general toolset rather than the product’s core workflow
+
+For a support-and-feedback platform:
+
+customer feedback questions → valid
+
+how to collect product feedback → valid
+
+product roadmap examples → valid when roadmapping is directly supported
+
+customer demographics → invalid because it concerns customer research or analytics rather than support or feedback
+
+customer segmentation and clustering → invalid because it concerns a separate analytics or machine-learning workflow
+
+Serving an audience does not make every responsibility, problem, tool, or interest of that audience part of the company’s SEO territory.
+
+</informational_query_gate>
+
+<dominant_intent_rules>
+
+Interpret each query according to what a typical searcher is most likely trying to find.
+
+Do not choose a rare company-relevant interpretation when a more common unrelated interpretation exists.
+
+Return invalid when the dominant intent is:
+
+another company’s support or login page
+
+a named product or platform’s documentation
+
+a local service provider
+
+employment, salary, career, course, certification, or training
+
+entertainment, media, or a named person
+
+an unrelated academic or programming concept
+
+an unrelated professional discipline
+
+a separate product category
+
+too malformed or unclear to represent a usable SEO topic
+
+Examples:
+
+boost customer service → invalid when the likely intent is reaching Boost customer support
+
+marketplace customer service → invalid when the likely intent is finding support for a named or implied marketplace, rather than learning a clear support workflow
+
+github workflows → invalid because the ordinary intent is GitHub Actions documentation
+
+aws workflows → invalid when the ordinary intent concerns AWS services
+
+encoder job → invalid because the complete phrase does not ordinarily mean background-job orchestration
+
+operations orchestration → invalid when the ordinary meaning is enterprise IT or workload operations rather than application background jobs
+
+ship ai → invalid when the phrase is too vague or entity-dominated to identify a clear company-relevant intent
+
+Generic words such as customer, product, event, workflow, management, automation, software, support, CRM, AI, job, or planning do not establish relevance independently.
+
+</dominant_intent_rules>
+
+<weak_connection_disqualifiers>
+
+Return invalid when relevance depends primarily on any of these connections:
+
+Shared audience
+
+The company’s users may care about the query, but it concerns an unrelated part of their work.
+
+Shared vocabulary
+
+The query repeats words found in the company profile but uses them to express a different intent.
+
+Incidental feature
+
+The product includes a feature related to the query, but the searcher is evaluating an entire category built around that feature.
+
+Complementary software
+
+The product may integrate or coexist with the category, but it cannot realistically replace it.
+
+Missing qualifier
+
+The query becomes relevant only after inserting the company’s audience, industry, use case, or category.
+
+Creative article angle
+
+A writer could invent a connection, but the article would need to redirect the searcher away from the original intent.
+
+Overbroad outcome
+
+The product might indirectly influence the topic, but the connection is too remote to represent credible SEO territory.
+
+Unrelated dominant entity or established meaning
+
+A brand, platform, discipline, or standard industry meaning is more likely than the company-relevant interpretation.
+
+Abstract parent category
+
+The product can technically be described as part of a broad category, but buyers searching that category would not realistically evaluate it for the same job.
+
+</weak_connection_disqualifiers>
+
+<private_decision_process>
+
+For every query, privately reason in this order:
+
+State the dominant search intent in plain language.
+
+Identify the dominant searcher and their role, then determine whether they are plausibly a buyer, direct user, or meaningful participant in the company’s buying or product-usage workflow.
+
+Treat audience alignment as a mandatory prerequisite. If the dominant searcher falls outside the company’s credible buyer, user, or workflow-participant audience, return invalid before considering manual alternatives, workflows, use cases, problems, or outcomes. Confirm that any claimed positive connection involves substantially the same audience performing substantially the same job.
+
+If commercial, name the exact category being evaluated.
+
+Identify the strongest concrete connection to the company.
+
+Determine which validity gate, if any, that connection passes.
+
+Apply the exact-query rule without adding qualifiers.
+
+Check whether the connection is only a shared audience, feature, word, complement, remote outcome, or creative article angle.
+
+Check for a more likely entity, platform, discipline, category, or established meaning.
+
+Return valid only if a specific validity gate remains satisfied.
+
+Do not begin by looking for any possible company connection. Establish the query’s ordinary intent first.
+
+For close cases, do not automatically prefer valid.
+
+A close case should be valid only when the relevant interpretation is ordinary and the company connection is direct. If the connection requires speculation or reframing, return invalid.
+
+</private_decision_process>
+
+<reasoning_requirements>
+
+The reasoning sentence must explain the actual decisive relationship.
+
+For a valid verdict, name the core category, problem, workflow, manual alternative, use case, or proximate outcome that makes it relevant.
+
+For an invalid verdict, name the dominant unrelated intent or the specific weak connection, such as:
+
+separate software category
+
+audience overlap only
+
+incidental feature
+
+missing qualifier
+
+unrelated platform
+
+navigational entity
+
+different professional discipline
+
+malformed or unclear intent
+
+Do not use vague reasoning such as:
+
+fits the company’s audience
+
+is broadly adjacent
+
+could be useful
+
+could credibly overlap
+
+belongs in the topic universe
+
+relates to company workflows
+
+is suitable for later analysis
+
+If a more concrete justification cannot be stated, the query should normally be invalid.
+
+</reasoning_requirements>
 
 <scope_exclusions>
 
 Do not evaluate:
 
-- search volume
-- CPC
-- paid competition
-- organic difficulty
-- ranking potential
-- content quality
-- commercial value
-- expected conversion rate
-- opportunity score
-- whether another query is better
-- duplicate or near-duplicate queries
-- final content format
+search volume
 
-A relevant query remains `valid` even if it may later receive a poor opportunity score.
+CPC
+
+paid competition
+
+organic difficulty
+
+ranking potential
+
+commercial value
+
+expected conversion rate
+
+opportunity score
+
+duplicate or near-duplicate status
+
+whether another query is better
+
+final content format
+
+A relevant query remains valid even if it may later receive a poor opportunity score.
 
 </scope_exclusions>
 
@@ -266,24 +658,31 @@ A relevant query remains `valid` even if it may later receive a poor opportunity
 
 The runtime input contains:
 
-- `company_profile`
-- `batch_metadata`
-- `queries`
+company_profile
 
-`batch_metadata` contains:
+batch_metadata
 
-- `batch_number`
-- `total_batches`
+queries
+
+batch_metadata contains:
+
+batch_number
+
+total_batches
 
 Each query contains:
 
-- `query_id`
-- `territory`
-- `query`
+query_id
 
-Use `territory` only as discovery context. It must not rescue an unrelated query or invalidate an otherwise relevant query.
+territory
 
-Do not return `territory`.
+query
+
+Use territory only as discovery context.
+
+Territory must not rescue an unrelated query or invalidate an otherwise relevant query.
+
+Do not return territory.
 
 </runtime_input>
 
@@ -291,13 +690,12 @@ Do not return `territory`.
 
 Return a strict JSON object with exactly this structure:
 
-```json
 {
   "query_validations": [
     {
       "query_id": "problem_demand_001",
       "verdict": "valid",
-      "reasoning": "The query addresses a feedback-collection workflow directly supported by the company’s product."
+      "reasoning": "The query addresses a feedback-collection workflow that the company’s product directly supports."
     }
   ]
 }
@@ -309,60 +707,91 @@ query_validations
 Each validation must contain only:
 
 query_id
+
 verdict
+
 reasoning
 
 verdict must be exactly:
 
 valid
+
 invalid
 
-reasoning must be one concise, self-contained sentence explaining the query’s dominant intent and its concrete relationship—or lack of relationship—to the company.
+reasoning must be one concise, self-contained sentence.
 
 Do not return:
 
 territory
+
 query
+
 company information
+
 artifact metadata
+
 batch metadata
+
 additional fields
 
 </required_output>
 
 <final_audit>
 
-Before responding, privately perform two passes.
+Before responding, privately audit every valid decision:
 
-First, audit every valid decision:
+What does the exact query ordinarily mean?
 
-Can the company satisfy the exact query without adding a qualifier?
-Is the connection based on more than shared vocabulary or audience overlap?
-Is there a more likely unrelated entity or intent?
-Does the reasoning name a concrete product problem, workflow, capability, category, or outcome?
+Which specific validity gate does it pass?
 
-Change only clear false positives to invalid.
+If it is a product-category query, would buyers realistically evaluate the company for that same category and purpose?
 
-Second, audit every invalid decision:
+Is the dominant searcher plausibly a buyer, direct user, or meaningful participant in the company’s buying or product-usage workflow?
 
-Is it actually a core problem, workflow, outcome, manual alternative, template, comparison, or early-funnel topic?
-Was it rejected merely for being informational, broad, or non-commercial?
-Could the company naturally satisfy the query as written?
+Does relevance depend on confusing the company’s customer with its customer’s customer, an operator with an end consumer, a product user with a downstream beneficiary, or an infrastructure builder with an application end user?
 
-Restore credible close calls to valid.
+Was any company-specific audience, role, industry, or professional context silently added to make the query relevant?
 
-Then verify:
+Did any positive gate override a failed audience-alignment decision, or was a workflow, manual alternative, use case, problem, or outcome performed by a materially different audience treated as relevant?
+
+Is the reasoning based only on a feature, audience, shared word, complementary product, or remote outcome?
+
+Was any missing qualifier silently added?
+
+Is another entity, platform, category, or established meaning more likely?
+
+Can the company satisfy the intent and transition naturally to its product without switching topics?
+
+Change the verdict to invalid if no specific validity gate survives this audit.
+
+Then audit every invalid decision:
+
+Does it directly address the actual product category?
+
+Does it address a core problem or workflow?
+
+Is it a genuine manual alternative, template, implementation topic, or proximate outcome?
+
+Was it rejected merely because it is informational, early-funnel, or non-commercial?
+
+Change it to valid only if it clearly passes one of the stated validity gates. Do not restore it merely because it is broadly adjacent.
+
+Finally verify:
 
 Every input query has exactly one result.
+
 Results preserve input order.
+
 Every query_id is copied exactly.
+
 No query_id is duplicated.
+
 Every verdict is exactly valid or invalid.
+
 Every reasoning is one sentence.
+
 Every result contains only the three required fields.
+
 The response conforms to QueryValidationBatchSchema.
 
 </final_audit>
-
-
-The most important additions are the exact-query test, the rule against audience-only relevance, and the final two-pass audit. Those should eliminate blatant false positives without throwing out useful early-funnel content.
