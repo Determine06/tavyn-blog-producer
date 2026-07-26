@@ -11,7 +11,6 @@ import {
 } from "../types/keywordMetrics.schema.js";
 import {
   SeedKeywordsSchema,
-  SEEDS_PER_TERRITORY,
   type SeedKeywords,
 } from "../types/seedKeywords.schema.js";
 
@@ -22,10 +21,9 @@ const DATAFORSEO_KEYWORD_IDEAS_ENDPOINT =
 const LOCATION_CODE = 2840;
 const LANGUAGE_CODE = "en";
 export const CANDIDATES_PER_TERRITORY = 500;
-export const TOTAL_CANDIDATE_TARGET = CANDIDATES_PER_TERRITORY * 2;
-const MINIMUM_SEARCH_VOLUME = 1;
+export const MINIMUM_SEARCH_VOLUME = 50;
 const DATAFORSEO_KEYWORD_IDEAS_FILTERS = [
-  ["keyword_info.search_volume", ">", 0],
+  ["keyword_info.search_volume", ">", MINIMUM_SEARCH_VOLUME],
   "and",
   ["keyword_properties.is_another_language", "=", false],
   "and",
@@ -170,18 +168,14 @@ export async function generateKeywordMetrics(
     (query) => query.metrics.average_top_10 === null,
   ).length;
   const totalCost = problemResponse.cost + solutionResponse.cost;
-  const shortfallWarning =
-    allQueries.length < TOTAL_CANDIDATE_TARGET
-      ? `DataForSEO returned fewer keyword candidates than the expected maximum. Expected maximum: ${TOTAL_CANDIDATE_TARGET}; actual total received: ${allQueries.length}; problem-demand count: ${problemQuerySet.queries.length}; solution-demand count: ${solutionQuerySet.queries.length}.`
-      : null;
   recordDataForSeoUsage("Keyword metrics", 2, 2, totalCost);
   const keywordMetrics = KeywordMetricsSchema.parse({
     schema_version: "1.0.0",
     run_id: runId,
     generated_at: new Date().toISOString(),
     source_artifacts: ["seed-keywords.json"],
-    status: shortfallWarning === null ? "complete" : "partial",
-    warnings: shortfallWarning === null ? [] : [shortfallWarning],
+    status: "complete",
+    warnings: [],
     website_url: validatedSeedKeywords.website_url,
     provider: {
       name: "dataforseo",
@@ -248,9 +242,9 @@ function getTerritorySeeds(
     throw new Error(`Seed keywords artifact is missing ${territory}.`);
   }
 
-  if (demandTerritory.seed_keywords.length !== SEEDS_PER_TERRITORY) {
+  if (demandTerritory.seed_keywords.length !== 6) {
     throw new Error(
-      `${territory} must contain exactly ${SEEDS_PER_TERRITORY} seed keywords; found ${demandTerritory.seed_keywords.length}.`,
+      `${territory} must contain exactly six seed keywords; found ${demandTerritory.seed_keywords.length}.`,
     );
   }
 
@@ -261,9 +255,9 @@ async function fetchKeywordIdeasForTerritory(
   territory: Territory,
   seeds: string[],
 ): Promise<DataForSeoResponse> {
-  if (seeds.length !== SEEDS_PER_TERRITORY) {
+  if (seeds.length !== 6) {
     throw new Error(
-      `${territory} keyword ideas request requires exactly ${SEEDS_PER_TERRITORY} seeds; found ${seeds.length}.`,
+      `${territory} keyword ideas request requires exactly six seeds; found ${seeds.length}.`,
     );
   }
 
@@ -385,8 +379,20 @@ function parseResult(value: unknown): DataForSeoResult {
 
   return {
     total_count: getNumberOrNull(result.total_count),
-    items: getArrayOrEmpty(result.items).map((item) => parseItem(item)),
+    items: getArrayOrEmpty(result.items)
+      .map((item) => parseItem(item))
+      .filter(hasSearchVolumeAboveMinimum),
   };
+}
+
+function hasSearchVolumeAboveMinimum(item: DataForSeoItem): boolean {
+  const searchVolume = item.keyword_info?.search_volume;
+
+  return (
+    typeof searchVolume === "number" &&
+    Number.isFinite(searchVolume) &&
+    searchVolume > MINIMUM_SEARCH_VOLUME
+  );
 }
 
 function parseItem(value: unknown): DataForSeoItem {
@@ -453,7 +459,7 @@ function parseMonthlySearch(value: unknown) {
   };
 }
 
-export function buildQuerySet(
+function buildQuerySet(
   territory: Territory,
   seeds: string[],
   task: DataForSeoTask,

@@ -33,84 +33,42 @@
           "seed_id": "problem_seed_01",
           "keyword": "core problem term",
           "seed_role": "core_problem",
-          "selection_reasoning": "Primary customer problem or job.",
+          "selection_reasoning": "Broad, established term representing the fundamental customer problem.",
           "confidence": "high"
         },
         {
           "seed_id": "problem_seed_02",
-          "keyword": "functional area term",
-          "seed_role": "core_problem",
-          "selection_reasoning": "Central functional area connected to the problem.",
+          "keyword": "problem term for icp",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Connects the core problem to the company’s primary ICP.",
           "confidence": "high"
         },
         {
           "seed_id": "problem_seed_03",
-          "keyword": "icp problem term",
-          "seed_role": "icp_qualified_problem",
-          "selection_reasoning": "ICP-qualified problem entry point.",
-          "confidence": "high"
+          "keyword": "problem strategy",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents how the ICP may search for a process or strategy.",
+          "confidence": "medium"
         },
         {
           "seed_id": "problem_seed_04",
-          "keyword": "qualified job phrase",
-          "seed_role": "icp_qualified_problem",
-          "selection_reasoning": "A second qualified customer job.",
+          "keyword": "desired customer outcome",
+          "seed_role": "process_or_outcome",
+          "selection_reasoning": "Represents the outcome the customer is trying to achieve.",
           "confidence": "medium"
         },
         {
           "seed_id": "problem_seed_05",
-          "keyword": "workflow one phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "First recurring customer workflow.",
+          "keyword": "alternative problem phrase",
+          "seed_role": "market_synonym",
+          "selection_reasoning": "A distinct market-language expression of the same underlying problem.",
           "confidence": "medium"
         },
         {
           "seed_id": "problem_seed_06",
-          "keyword": "workflow two phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Second recurring customer workflow.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "problem_seed_07",
-          "keyword": "workflow three phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Third recurring customer workflow.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "problem_seed_08",
-          "keyword": "workflow four phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Fourth recurring customer workflow.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "problem_seed_09",
-          "keyword": "failure state phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "A distinct pain or failure state.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "problem_seed_10",
-          "keyword": "bottleneck phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "A second distinct pain or failure state.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "problem_seed_11",
-          "keyword": "planning topic phrase",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "A supported outcome, strategy, planning, or decision topic.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "problem_seed_12",
-          "keyword": "market frame phrase",
-          "seed_role": "market_synonym",
-          "selection_reasoning": "An adjacent established market frame.",
+          "keyword": "icp outcome strategy",
+          "seed_role": "icp_qualified_problem",
+          "selection_reasoning": "Combines the customer segment with the outcome without describing a specific product.",
           "confidence": "medium"
         }
       ]
@@ -134,84 +92,42 @@
           "seed_id": "solution_seed_01",
           "keyword": "core solution category",
           "seed_role": "core_solution_category",
-          "selection_reasoning": "Primary established solution category.",
+          "selection_reasoning": "Broad, established term for the product’s fundamental solution category.",
           "confidence": "high"
         },
         {
           "seed_id": "solution_seed_02",
-          "keyword": "secondary solution category",
-          "seed_role": "core_solution_category",
-          "selection_reasoning": "Second established solution category.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_03",
-          "keyword": "icp solution need",
+          "keyword": "solution category for icp",
           "seed_role": "icp_qualified_solution",
-          "selection_reasoning": "ICP-qualified solution need.",
+          "selection_reasoning": "Connects the solution category to the company’s primary ICP.",
           "confidence": "high"
         },
         {
-          "seed_id": "solution_seed_04",
-          "keyword": "qualified solution category",
-          "seed_role": "icp_qualified_solution",
-          "selection_reasoning": "Second qualified solution need.",
+          "seed_id": "solution_seed_03",
+          "keyword": "automated solution category",
+          "seed_role": "solution_approach",
+          "selection_reasoning": "Represents the product’s approach without using proprietary product language.",
           "confidence": "medium"
         },
         {
+          "seed_id": "solution_seed_04",
+          "keyword": "solution software",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Commercial category phrasing likely to surface software-selection queries.",
+          "confidence": "high"
+        },
+        {
           "seed_id": "solution_seed_05",
-          "keyword": "solution approach one",
-          "seed_role": "solution_approach",
-          "selection_reasoning": "First recognized solution approach.",
+          "keyword": "best solution tools",
+          "seed_role": "commercial_category",
+          "selection_reasoning": "Commercial discovery seed intended to surface tool and comparison opportunities.",
           "confidence": "medium"
         },
         {
           "seed_id": "solution_seed_06",
-          "keyword": "solution approach two",
+          "keyword": "alternative solution approach",
           "seed_role": "solution_approach",
-          "selection_reasoning": "Second recognized solution approach.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_07",
-          "keyword": "solution approach three",
-          "seed_role": "solution_approach",
-          "selection_reasoning": "Third recognized solution approach.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_08",
-          "keyword": "workflow tool category",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "Commercial category for a major workflow.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_09",
-          "keyword": "workflow software category",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "Commercial category for a second major workflow.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_10",
-          "keyword": "workflow platform category",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "Commercial category for a third major workflow.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_11",
-          "keyword": "capability tool category",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "Capability-specific commercial category.",
-          "confidence": "medium"
-        },
-        {
-          "seed_id": "solution_seed_12",
-          "keyword": "commercial need category",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "Second capability-specific commercial category.",
+          "selection_reasoning": "A distinct established description of the product’s solution approach.",
           "confidence": "medium"
         }
       ]
@@ -221,6 +137,6 @@
     "overall_confidence": "medium",
     "missing_information": [],
     "potential_risks": [],
-    "notes": "Exactly two demand territories and 12 globally unique seed keywords per territory are required."
+    "notes": "Exactly two demand territories and six globally unique seed keywords per territory are required."
   }
 }

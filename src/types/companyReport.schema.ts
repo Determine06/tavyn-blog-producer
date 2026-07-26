@@ -1,7 +1,6 @@
 import { z } from "zod";
 
 import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
-import { SEEDS_PER_TERRITORY } from "./seedKeywords.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
@@ -84,7 +83,7 @@ const ValidatedQuerySchema = z
     validation_reasoning: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(SEEDS_PER_TERRITORY),
+      .length(6),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -182,7 +181,7 @@ const ContentPlanItemSchema = z
     primary_query: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(SEEDS_PER_TERRITORY),
+      .length(6),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),

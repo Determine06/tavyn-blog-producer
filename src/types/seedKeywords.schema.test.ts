@@ -2,63 +2,54 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import {
-  PROBLEM_SEED_ROLE_SEQUENCE,
-  SEEDS_PER_TERRITORY,
-  SeedKeywordsSchema,
-  SOLUTION_SEED_ROLE_SEQUENCE,
-  TOTAL_SEED_COUNT,
-} from "./seedKeywords.schema.js";
+import { SeedKeywordsSchema } from "./seedKeywords.schema.js";
 
-test("SeedKeywordsSchema accepts 12 problem seeds and 12 solution seeds", () => {
-  const artifact = buildSeedArtifact();
+const problemRoles = [
+  "core_problem",
+  "icp_qualified_problem",
+  "process_or_outcome",
+  "market_synonym",
+] as const;
+const solutionRoles = [
+  "core_solution_category",
+  "icp_qualified_solution",
+  "solution_approach",
+  "commercial_category",
+] as const;
 
-  const parsed = SeedKeywordsSchema.parse(artifact);
+test("SeedKeywordsSchema accepts six problem seeds and six solution seeds", () => {
+  const parsed = SeedKeywordsSchema.parse(buildSeedArtifact());
 
-  assert.equal(
-    parsed.demand_territories[0].seed_keywords.length,
-    SEEDS_PER_TERRITORY,
-  );
-  assert.equal(
-    parsed.demand_territories[1].seed_keywords.length,
-    SEEDS_PER_TERRITORY,
-  );
+  assert.equal(parsed.demand_territories[0].seed_keywords.length, 6);
+  assert.equal(parsed.demand_territories[1].seed_keywords.length, 6);
   assert.equal(
     parsed.demand_territories.flatMap((territory) => territory.seed_keywords)
       .length,
-    TOTAL_SEED_COUNT,
+    12,
   );
 });
 
-test("SeedKeywordsSchema rejects 11 or 13 seeds in either territory", () => {
-  const tooFewProblem = buildSeedArtifact({ problemCount: 11 });
-  const tooManySolution = buildSeedArtifact({ solutionCount: 13 });
+test("SeedKeywordsSchema rejects five or seven seeds in either territory", () => {
+  assert.throws(() =>
+    SeedKeywordsSchema.parse(buildSeedArtifact({ problemCount: 5 })),
+  );
+  assert.throws(() =>
+    SeedKeywordsSchema.parse(buildSeedArtifact({ solutionCount: 7 })),
+  );
+});
 
-  assert.throws(() => SeedKeywordsSchema.parse(tooFewProblem));
-  assert.throws(() => SeedKeywordsSchema.parse(tooManySolution));
+test("SeedKeywordsSchema rejects artifacts containing anything other than 12 total seeds", () => {
+  assert.throws(() =>
+    SeedKeywordsSchema.parse(
+      buildSeedArtifact({ problemCount: 6, solutionCount: 5 }),
+    ),
+  );
 });
 
 test("SeedKeywordsSchema rejects duplicate normalized seed strings", () => {
   const artifact = buildSeedArtifact();
   artifact.demand_territories[1].seed_keywords[0].keyword =
     " Problem Keyword 01 ";
-
-  assert.throws(() => SeedKeywordsSchema.parse(artifact));
-});
-
-test("SeedKeywordsSchema rejects artifacts containing anything other than 24 total seeds", () => {
-  const artifact = buildSeedArtifact({
-    problemCount: SEEDS_PER_TERRITORY,
-    solutionCount: SEEDS_PER_TERRITORY - 1,
-  });
-
-  assert.throws(() => SeedKeywordsSchema.parse(artifact));
-});
-
-test("SeedKeywordsSchema rejects incorrect role counts", () => {
-  const artifact = buildSeedArtifact();
-  artifact.demand_territories[0].seed_keywords[11].seed_role =
-    "process_or_outcome";
 
   assert.throws(() => SeedKeywordsSchema.parse(artifact));
 });
@@ -70,38 +61,40 @@ test("SeedKeywordsSchema rejects incorrect territory order", () => {
   assert.throws(() => SeedKeywordsSchema.parse(artifact));
 });
 
-test("SeedKeywordsSchema preserves territory order and output structure", () => {
-  const parsed = SeedKeywordsSchema.parse(buildSeedArtifact());
+test("SeedKeywordsSchema requires main's allowed role coverage per territory", () => {
+  const missingProblemRole = buildSeedArtifact();
+  missingProblemRole.demand_territories[0].seed_keywords =
+    missingProblemRole.demand_territories[0].seed_keywords.map((seed) => ({
+      ...seed,
+      seed_role: "core_problem",
+    }));
 
-  assert.deepEqual(
-    parsed.demand_territories.map((territory) => territory.territory_id),
-    ["problem_demand", "solution_demand"],
-  );
-  assert.deepEqual(
-    parsed.demand_territories[0].seed_keywords.map((seed) => seed.seed_role),
-    [...PROBLEM_SEED_ROLE_SEQUENCE],
-  );
-  assert.deepEqual(
-    parsed.demand_territories[1].seed_keywords.map((seed) => seed.seed_role),
-    [...SOLUTION_SEED_ROLE_SEQUENCE],
-  );
+  const missingSolutionRole = buildSeedArtifact();
+  missingSolutionRole.demand_territories[1].seed_keywords =
+    missingSolutionRole.demand_territories[1].seed_keywords.map((seed) => ({
+      ...seed,
+      seed_role: "commercial_category",
+    }));
+
+  assert.throws(() => SeedKeywordsSchema.parse(missingProblemRole));
+  assert.throws(() => SeedKeywordsSchema.parse(missingSolutionRole));
 });
 
-test("generate-seed-keywords prompt contains no active 15-per-territory or 30-total requirements", () => {
+test("generate-seed-keywords prompt requires six per territory and no active 12-per-territory or 24-total contract", () => {
   const prompt = readFileSync(
     new URL("../prompts/generate-seed-keywords.md", import.meta.url),
     "utf8",
   );
 
-  assert.doesNotMatch(prompt, /15 seed keywords/i);
-  assert.doesNotMatch(prompt, /30 seed keywords/i);
-  assert.doesNotMatch(prompt, /P1[3-5]/);
-  assert.doesNotMatch(prompt, /S1[3-5]/);
+  assert.match(prompt, /exactly six seed keywords for each territory/i);
+  assert.match(prompt, /exactly twelve seed keywords in total/i);
+  assert.doesNotMatch(prompt, /12 seed keywords for each territory/i);
+  assert.doesNotMatch(prompt, /24 seed keywords in total/i);
 });
 
 function buildSeedArtifact({
-  problemCount = SEEDS_PER_TERRITORY,
-  solutionCount = SEEDS_PER_TERRITORY,
+  problemCount = 6,
+  solutionCount = 6,
 }: {
   problemCount?: number;
   solutionCount?: number;
@@ -137,10 +130,7 @@ function buildSeedArtifact({
         seed_keywords: Array.from({ length: problemCount }, (_, index) => ({
           seed_id: `problem_seed_${String(index + 1).padStart(2, "0")}`,
           keyword: `problem keyword ${String(index + 1).padStart(2, "0")}`,
-          seed_role:
-            PROBLEM_SEED_ROLE_SEQUENCE[
-              index % PROBLEM_SEED_ROLE_SEQUENCE.length
-            ],
+          seed_role: problemRoles[index % problemRoles.length],
           selection_reasoning: "Distinct problem discovery angle.",
           confidence: "medium",
         })),
@@ -162,10 +152,7 @@ function buildSeedArtifact({
         seed_keywords: Array.from({ length: solutionCount }, (_, index) => ({
           seed_id: `solution_seed_${String(index + 1).padStart(2, "0")}`,
           keyword: `solution keyword ${String(index + 1).padStart(2, "0")}`,
-          seed_role:
-            SOLUTION_SEED_ROLE_SEQUENCE[
-              index % SOLUTION_SEED_ROLE_SEQUENCE.length
-            ],
+          seed_role: solutionRoles[index % solutionRoles.length],
           selection_reasoning: "Distinct solution discovery angle.",
           confidence: "medium",
         })),

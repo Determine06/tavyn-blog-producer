@@ -1,5 +1,5 @@
 import { spawn, spawnSync } from "node:child_process";
-import { copyFile, mkdir, writeFile } from "node:fs/promises";
+import { access, copyFile, mkdir, rm, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { performance } from "node:perf_hooks";
@@ -20,7 +20,7 @@ import {
 export const phase1Companies = [
   {
     name: "Featurebase",
-    slug: "featurebase",
+    slug: "featurebase-app",
     url: "https://www.featurebase.app/",
   },
   {
@@ -30,12 +30,22 @@ export const phase1Companies = [
   },
   {
     name: "Harpsen",
-    slug: "harpsen",
+    slug: "harpsen-com",
     url: "https://www.harpsen.com/",
   },
 ] as const;
 
-type Phase1Company = (typeof phase1Companies)[number];
+export const phase1SuiteDirectory = path.join(
+  "artifacts",
+  "stress-tests",
+  "phase1",
+);
+
+export type Phase1Company = (typeof phase1Companies)[number];
+type SnapshotCompany = {
+  slug: string;
+  url: string;
+};
 
 type Phase1Options = {
   cacheMode: CacheMode;
@@ -85,13 +95,7 @@ async function main(): Promise<void> {
     }
 
     const suiteStart = new Date();
-    const timestamp = toTimestamp(suiteStart);
-    const suiteDir = path.join(
-      "artifacts",
-      "stress-tests",
-      "phase1",
-      timestamp,
-    );
+    const suiteDir = phase1SuiteDirectory;
     const manifestPath = path.join(suiteDir, "manifest.json");
     const manifest = createInitialManifest(options, suiteStart, suiteDir);
 
@@ -104,6 +108,21 @@ async function main(): Promise<void> {
 
       const companyManifest = manifest.companies[index];
       const startedAt = performance.now();
+
+      if (options.cacheMode === "cache") {
+        const restoredPaths = await hydrateCompanyArtifactsFromSnapshot(
+          company,
+          options.stopAfter,
+          suiteDir,
+        );
+
+        if (restoredPaths.length > 0) {
+          console.log(
+            `Restored ${restoredPaths.length} cached artifact(s) from ${getCompanySnapshotDirectory(company, suiteDir)}`,
+          );
+        }
+      }
+
       const exitCode = await runCompany(company, options);
       const durationMs = Math.round(performance.now() - startedAt);
 
@@ -231,6 +250,13 @@ async function runCompany(
   });
 }
 
+export function getCompanySnapshotDirectory(
+  company: Pick<SnapshotCompany, "slug">,
+  suiteDir = phase1SuiteDirectory,
+): string {
+  return path.join(suiteDir, company.slug);
+}
+
 async function snapshotCompanyArtifacts(
   company: Phase1Company,
   stopAfter: PipelineStageId,
@@ -239,13 +265,30 @@ async function snapshotCompanyArtifacts(
   snapshotDirectory: string;
   snapshottedArtifactPaths: string[];
 }> {
-  const snapshotDirectory = path.join(suiteDir, company.slug);
+  const snapshotDirectory = getCompanySnapshotDirectory(company, suiteDir);
   const artifactPaths = await resolveArtifactPathsForStop(
     company.url,
     stopAfter,
   );
+
+  const snapshottedArtifactPaths = await copySnapshotArtifacts(
+    snapshotDirectory,
+    artifactPaths,
+  );
+
+  return {
+    snapshotDirectory,
+    snapshottedArtifactPaths,
+  };
+}
+
+export async function copySnapshotArtifacts(
+  snapshotDirectory: string,
+  artifactPaths: string[],
+): Promise<string[]> {
   const snapshottedArtifactPaths: string[] = [];
 
+  await rm(snapshotDirectory, { recursive: true, force: true });
   await mkdir(snapshotDirectory, { recursive: true });
 
   for (const artifactPath of artifactPaths) {
@@ -255,10 +298,43 @@ async function snapshotCompanyArtifacts(
     snapshottedArtifactPaths.push(destination);
   }
 
-  return {
-    snapshotDirectory,
-    snapshottedArtifactPaths,
-  };
+  return snapshottedArtifactPaths;
+}
+
+export async function hydrateCompanyArtifactsFromSnapshot(
+  company: SnapshotCompany,
+  stopAfter: PipelineStageId,
+  suiteDir = phase1SuiteDirectory,
+): Promise<string[]> {
+  const snapshotDirectory = getCompanySnapshotDirectory(company, suiteDir);
+  const artifactPaths = await resolveArtifactPathsForStop(
+    company.url,
+    stopAfter,
+  );
+  const restoredArtifactPaths: string[] = [];
+
+  for (const artifactPath of artifactPaths) {
+    const source = path.join(snapshotDirectory, path.basename(artifactPath));
+
+    if (!(await fileExists(source))) {
+      continue;
+    }
+
+    await mkdir(path.dirname(artifactPath), { recursive: true });
+    await copyFile(source, artifactPath);
+    restoredArtifactPaths.push(artifactPath);
+  }
+
+  return restoredArtifactPaths;
+}
+
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 function createInitialManifest(
@@ -403,10 +479,6 @@ function printSummary(
 
   console.log(`Overall result: ${manifest.overall_status}`);
   console.log(`Manifest: ${manifestPath}`);
-}
-
-function toTimestamp(date: Date): string {
-  return date.toISOString().replace(/[:.]/g, "-");
 }
 
 function formatError(error: unknown): string {

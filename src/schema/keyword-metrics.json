@@ -5,10 +5,8 @@
   "source_artifacts": [
     "seed-keywords.json"
   ],
-  "status": "partial",
-  "warnings": [
-    "DataForSEO returned fewer keyword candidates than the expected maximum. Expected maximum: 1000; actual total received: 2; problem-demand count: 1; solution-demand count: 1."
-  ],
+  "status": "complete",
+  "warnings": [],
   "website_url": "https://example.com",
   "provider": {
     "name": "dataforseo",
@@ -29,7 +27,7 @@
       [
         "keyword_info.search_volume",
         ">",
-        0
+        50
       ],
       "and",
       [
@@ -66,7 +64,7 @@
       "relevance,desc",
       "keyword_info.search_volume,desc"
     ],
-    "minimum_search_volume": 1
+    "minimum_search_volume": 50
   },
   "query_sets": [
     {
@@ -78,16 +76,7 @@
         "problem seed three",
         "problem seed four",
         "problem seed five",
-        "problem seed six",
-        "problem seed seven",
-        "problem seed eight",
-        "problem seed nine",
-        "problem seed ten",
-        "problem seed eleven",
-        "problem seed twelve",
-        "problem seed thirteen",
-        "problem seed fourteen",
-        "problem seed fifteen"
+        "problem seed six"
       ],
       "task_result": {
         "task_id": "dataforseo-problem-task-id",
@@ -145,16 +134,7 @@
         "solution seed three",
         "solution seed four",
         "solution seed five",
-        "solution seed six",
-        "solution seed seven",
-        "solution seed eight",
-        "solution seed nine",
-        "solution seed ten",
-        "solution seed eleven",
-        "solution seed twelve",
-        "solution seed thirteen",
-        "solution seed fourteen",
-        "solution seed fifteen"
+        "solution seed six"
       ],
       "task_result": {
         "task_id": "dataforseo-solution-task-id",
@@ -205,10 +185,10 @@
     }
   ],
   "summary": {
-    "problem_queries_received": 1,
-    "solution_queries_received": 1,
-    "total_queries_received": 2,
-    "unique_queries_received": 2,
+    "problem_queries_received": 0,
+    "solution_queries_received": 0,
+    "total_queries_received": 0,
+    "unique_queries_received": 0,
     "queries_returned_in_both_sets": 0,
     "missing_search_volume_count": 0,
     "missing_keyword_difficulty_count": 0,
