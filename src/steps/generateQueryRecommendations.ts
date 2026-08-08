@@ -19,8 +19,10 @@ type Territory = "problem_demand" | "solution_demand";
 type OpportunityQuery =
   QueryOpportunities["territory_rankings"][number]["queries"][number];
 
-const TARGET_PER_TERRITORY = 2;
-const MAXIMUM_TOTAL_RECOMMENDATIONS = 4;
+const PROBLEM_DEMAND_TARGET = 1;
+const SOLUTION_DEMAND_TARGET = 2;
+const TOTAL_RECOMMENDATION_TARGET =
+  PROBLEM_DEMAND_TARGET + SOLUTION_DEMAND_TARGET;
 
 export async function generateQueryRecommendations(
   companyProfile: CompanyProfile,
@@ -43,8 +45,9 @@ export async function generateQueryRecommendations(
   }
 
   const generatedAt = new Date().toISOString();
+  validateCandidateAvailability(validatedQueryOpportunities);
   const input = `<query_recommendation_input>
-  <schema_version>1.0.0</schema_version>
+  <schema_version>1.2.0</schema_version>
   <run_id>${runId}</run_id>
   <generated_at>${generatedAt}</generated_at>
 
@@ -113,9 +116,11 @@ export async function generateQueryRecommendations(
       return {
         territory: territoryDecision.territory,
         candidates_available: candidatesAvailable,
-        target_recommendations: TARGET_PER_TERRITORY,
+        target_recommendations:
+          territoryDecision.territory === "problem_demand"
+            ? PROBLEM_DEMAND_TARGET
+            : SOLUTION_DEMAND_TARGET,
         recommendations_selected: recommendations.length,
-        selection_status: getSelectionStatus(recommendations.length),
         assessment: territoryDecision.assessment,
         recommendations,
       };
@@ -126,28 +131,11 @@ export async function generateQueryRecommendations(
   const totalRecommendationsSelected =
     (problemRecommendations?.recommendations.length ?? 0) +
     (solutionRecommendations?.recommendations.length ?? 0);
-  const insufficientOpportunityTerritories = territoryRecommendations
-    .filter(
-      (territoryRecommendation) =>
-        territoryRecommendation.recommendations.length < TARGET_PER_TERRITORY,
-    )
-    .map((territoryRecommendation) => territoryRecommendation.territory);
   const warnings = uniqueOrdered([
     ...validatedQueryOpportunities.warnings,
-    ...territoryRecommendations.flatMap((territoryRecommendation) => {
-      if (
-        territoryRecommendation.recommendations.length >= TARGET_PER_TERRITORY
-      ) {
-        return [];
-      }
-
-      return [
-        `${territoryRecommendation.territory} produced ${territoryRecommendation.recommendations.length} recommendation${territoryRecommendation.recommendations.length === 1 ? "" : "s"} instead of target ${TARGET_PER_TERRITORY}: ${territoryRecommendation.assessment}`,
-      ];
-    }),
   ]);
   const queryRecommendations = QueryRecommendationsSchema.parse({
-    schema_version: "1.1.0",
+    schema_version: "1.2.0",
     run_id: runId,
     generated_at: generatedAt,
     source_artifacts: [
@@ -166,11 +154,12 @@ export async function generateQueryRecommendations(
         validatedCompanyProfile.icp_and_audience.primary_icp.value,
     },
     selection_policy: {
-      maximum_total_recommendations: MAXIMUM_TOTAL_RECOMMENDATIONS,
-      target_per_territory: TARGET_PER_TERRITORY,
-      minimum_per_nonempty_territory: 1,
-      maximum_per_territory: TARGET_PER_TERRITORY,
-      allow_fewer_than_target: true,
+      problem_demand_target: PROBLEM_DEMAND_TARGET,
+      solution_demand_target: SOLUTION_DEMAND_TARGET,
+      total_target: TOTAL_RECOMMENDATION_TARGET,
+      require_exact_total: true,
+      prefer_product_specific_solution: true,
+      product_specific_fallback: "best_distinct_solution_demand",
     },
     territory_recommendations: territoryRecommendations,
     summary: {
@@ -181,16 +170,13 @@ export async function generateQueryRecommendations(
         problemRecommendations?.candidates_available ?? 0,
       solution_candidates_considered:
         solutionRecommendations?.candidates_available ?? 0,
-      target_recommendations: MAXIMUM_TOTAL_RECOMMENDATIONS,
+      target_recommendations: TOTAL_RECOMMENDATION_TARGET,
       problem_recommendations_selected:
         problemRecommendations?.recommendations.length ?? 0,
       solution_recommendations_selected:
         solutionRecommendations?.recommendations.length ?? 0,
       total_recommendations_selected: totalRecommendationsSelected,
-      target_fulfilled:
-        totalRecommendationsSelected === MAXIMUM_TOTAL_RECOMMENDATIONS,
-      insufficient_opportunity_territories:
-        insufficientOpportunityTerritories,
+      target_fulfilled: true,
     },
   });
 
@@ -220,9 +206,6 @@ export async function generateQueryRecommendations(
     `Total recommendations selected: ${queryRecommendations.summary.total_recommendations_selected}`,
   );
   logInfo(`Target fulfilled: ${queryRecommendations.summary.target_fulfilled}`);
-  logInfo(
-    `Insufficient recommendation territories: ${queryRecommendations.summary.insufficient_opportunity_territories.join(", ") || "none"}`,
-  );
 
   return queryRecommendations;
 }
@@ -239,28 +222,20 @@ function validateDecisionIntegrity(
   for (const territoryDecision of decision.territory_decisions) {
     const candidatesAvailable =
       candidatesByTerritory.get(territoryDecision.territory) ?? 0;
+    const requiredSelections =
+      territoryDecision.territory === "problem_demand"
+        ? PROBLEM_DEMAND_TARGET
+        : SOLUTION_DEMAND_TARGET;
 
-    if (territoryDecision.selected_queries.length > TARGET_PER_TERRITORY) {
+    if (territoryDecision.selected_queries.length !== requiredSelections) {
       throw new Error(
-        `${territoryDecision.territory} selected ${territoryDecision.selected_queries.length} queries; maximum is ${TARGET_PER_TERRITORY}.`,
+        `${territoryDecision.territory} selected ${territoryDecision.selected_queries.length} queries; required exactly ${requiredSelections}.`,
       );
     }
 
-    if (
-      candidatesAvailable > 0 &&
-      territoryDecision.selected_queries.length === 0
-    ) {
+    if (candidatesAvailable < requiredSelections) {
       throw new Error(
-        `${territoryDecision.territory} must select at least one recommendation because candidates are available.`,
-      );
-    }
-
-    if (
-      candidatesAvailable === 0 &&
-      territoryDecision.selected_queries.length !== 0
-    ) {
-      throw new Error(
-        `${territoryDecision.territory} cannot select a recommendation because no candidates are available.`,
+        `${territoryDecision.territory} supplied ${candidatesAvailable} candidates; required at least ${requiredSelections}.`,
       );
     }
 
@@ -302,9 +277,29 @@ function validateDecisionIntegrity(
     }
   }
 
-  if (totalSelected > MAXIMUM_TOTAL_RECOMMENDATIONS) {
+  if (totalSelected !== TOTAL_RECOMMENDATION_TARGET) {
     throw new Error(
-      `Query recommendation selection returned ${totalSelected} recommendations; maximum is ${MAXIMUM_TOTAL_RECOMMENDATIONS}.`,
+      `Query recommendation selection returned ${totalSelected} recommendations; required exactly ${TOTAL_RECOMMENDATION_TARGET}.`,
+    );
+  }
+}
+
+function validateCandidateAvailability(
+  queryOpportunities: QueryOpportunities,
+): void {
+  const candidatesByTerritory = buildCandidatesByTerritory(queryOpportunities);
+  const problemCandidates = candidatesByTerritory.get("problem_demand") ?? 0;
+  const solutionCandidates = candidatesByTerritory.get("solution_demand") ?? 0;
+
+  if (problemCandidates < PROBLEM_DEMAND_TARGET) {
+    throw new Error(
+      `Cannot generate query recommendations because problem_demand supplied ${problemCandidates} candidates; required at least ${PROBLEM_DEMAND_TARGET}.`,
+    );
+  }
+
+  if (solutionCandidates < SOLUTION_DEMAND_TARGET) {
+    throw new Error(
+      `Cannot generate query recommendations because solution_demand supplied ${solutionCandidates} candidates; required at least ${SOLUTION_DEMAND_TARGET}.`,
     );
   }
 }
@@ -338,16 +333,6 @@ function buildOpportunitiesById(
   }
 
   return opportunitiesById;
-}
-
-function getSelectionStatus(
-  selectedCount: number,
-): "fulfilled" | "limited" | "none" {
-  return selectedCount === 2
-    ? "fulfilled"
-    : selectedCount === 1
-      ? "limited"
-      : "none";
 }
 
 function uniqueOrdered(values: string[]): string[] {

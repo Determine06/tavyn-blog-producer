@@ -78,7 +78,7 @@ const ContentRecommendationDecisionAnalysisSchema = z
 
 export const ContentRecommendationDecisionSchema = z
   .object({
-    analyses: z.array(ContentRecommendationDecisionAnalysisSchema).max(4),
+    analyses: z.array(ContentRecommendationDecisionAnalysisSchema).length(3),
   })
   .strict()
   .superRefine((decision, context) => {
@@ -130,21 +130,21 @@ const ContentRecommendationItemSchema = z
 
 const SummarySchema = z
   .object({
-    recommendations_received: z.number().int().min(0).max(4),
-    recommendations_analyzed: z.number().int().min(0).max(4),
-    problem_demand_count: z.number().int().min(0).max(2),
-    solution_demand_count: z.number().int().min(0).max(2),
-    high_confidence_count: z.number().int().min(0).max(4),
-    medium_confidence_count: z.number().int().min(0).max(4),
-    low_confidence_count: z.number().int().min(0).max(4),
-    mixed_intent_count: z.number().int().min(0).max(4),
-    insufficient_serp_count: z.number().int().min(0).max(4),
+    recommendations_received: z.literal(3),
+    recommendations_analyzed: z.literal(3),
+    problem_demand_count: z.literal(1),
+    solution_demand_count: z.literal(2),
+    high_confidence_count: z.number().int().min(0).max(3),
+    medium_confidence_count: z.number().int().min(0).max(3),
+    low_confidence_count: z.number().int().min(0).max(3),
+    mixed_intent_count: z.number().int().min(0).max(3),
+    insufficient_serp_count: z.number().int().min(0).max(3),
   })
   .strict();
 
 export const ContentRecommendationSchema = z
   .object({
-    schema_version: z.literal("1.0.0"),
+    schema_version: z.literal("1.1.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z
@@ -160,7 +160,7 @@ export const ContentRecommendationSchema = z
     warnings: z.array(NonEmptyStringSchema),
     website_url: NonEmptyStringSchema,
     source_profile: SourceProfileSchema,
-    content_recommendations: z.array(ContentRecommendationItemSchema).max(4),
+    content_recommendations: z.array(ContentRecommendationItemSchema).length(3),
     summary: SummarySchema,
   })
   .strict()
@@ -251,6 +251,28 @@ export const ContentRecommendationSchema = z
       (recommendation) =>
         recommendation.serp_analysis.serp_consistency === "insufficient",
     ).length;
+
+    if (artifact.content_recommendations[0]?.territory !== "problem_demand") {
+      context.addIssue({
+        code: "custom",
+        message: "The first content recommendation must be problem_demand.",
+        path: ["content_recommendations", 0, "territory"],
+      });
+    }
+
+    for (const index of [1, 2]) {
+      if (
+        artifact.content_recommendations[index]?.territory !==
+        "solution_demand"
+      ) {
+        context.addIssue({
+          code: "custom",
+          message: "The second and third content recommendations must be solution_demand.",
+          path: ["content_recommendations", index, "territory"],
+        });
+      }
+    }
+
     const expectedSummary = {
       recommendations_received: artifact.content_recommendations.length,
       recommendations_analyzed: artifact.content_recommendations.length,

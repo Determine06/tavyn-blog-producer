@@ -57,6 +57,7 @@ type Phase1Options = {
   forceStages: PipelineStageId[];
   directForceStages: string[];
   stopAfter: PipelineStageId;
+  saveToSupabase: boolean;
   dryRun: boolean;
 };
 
@@ -177,6 +178,7 @@ export function parsePhase1Options(argv: string[]): Phase1Options {
     forceStages,
     directForceStages: parseDirectForceValues(argv),
     stopAfter,
+    saveToSupabase: argv.includes("--save-to-supabase"),
     dryRun: argv.includes("--dry-run"),
   };
 }
@@ -197,6 +199,10 @@ export function buildCompanyArgs(
   }
 
   args.push("--stop-after", options.stopAfter);
+
+  if (options.saveToSupabase) {
+    args.push("--save-to-supabase");
+  }
 
   return args;
 }
@@ -363,6 +369,7 @@ function createInitialManifest(
     direct_force_selections: options.directForceStages,
     effective_force_behavior: options.forceStages,
     stop_after: options.stopAfter,
+    save_to_supabase: options.saveToSupabase,
     snapshot_directory: suiteDir,
     overall_status: "running" as "running" | "success" | "failed",
     companies: phase1Companies.map(
@@ -434,6 +441,7 @@ Options:
   --force <stage>          Force a stage. Repeatable.
   --force all              Force every executed stage through the stop point.
   --stop-after <stage>     Stop after the selected stage resolves.
+  --save-to-supabase       Save completed company reports to Supabase.
   --dry-run                Print resolved execution without child processes.
   --list-stages            Print canonical stages in execution order.
   --help                   Show this help.
@@ -470,6 +478,7 @@ function printHeader(options: Phase1Options): void {
   console.log(`Cache mode: ${options.cacheMode}`);
   console.log(`Force: ${options.forceStages.join(", ") || "none"}`);
   console.log(`Stop after: ${options.stopAfter}`);
+  console.log(`Save to Supabase: ${options.saveToSupabase}`);
 }
 
 function printSummary(

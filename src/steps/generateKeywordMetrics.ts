@@ -21,6 +21,7 @@ const DATAFORSEO_KEYWORD_IDEAS_ENDPOINT =
 const LOCATION_CODE = 2840;
 const LANGUAGE_CODE = "en";
 export const CANDIDATES_PER_TERRITORY = 500;
+export const SEEDS_PER_TERRITORY = 15;
 export const MINIMUM_SEARCH_VOLUME = 50;
 const DATAFORSEO_KEYWORD_IDEAS_FILTERS = [
   ["keyword_info.search_volume", ">", MINIMUM_SEARCH_VOLUME],
@@ -242,9 +243,9 @@ function getTerritorySeeds(
     throw new Error(`Seed keywords artifact is missing ${territory}.`);
   }
 
-  if (demandTerritory.seed_keywords.length !== 6) {
+  if (demandTerritory.seed_keywords.length !== SEEDS_PER_TERRITORY) {
     throw new Error(
-      `${territory} must contain exactly six seed keywords; found ${demandTerritory.seed_keywords.length}.`,
+      `${territory} must contain exactly ${SEEDS_PER_TERRITORY} seed keywords; found ${demandTerritory.seed_keywords.length}.`,
     );
   }
 
@@ -255,9 +256,9 @@ async function fetchKeywordIdeasForTerritory(
   territory: Territory,
   seeds: string[],
 ): Promise<DataForSeoResponse> {
-  if (seeds.length !== 6) {
+  if (seeds.length !== SEEDS_PER_TERRITORY) {
     throw new Error(
-      `${territory} keyword ideas request requires exactly six seeds; found ${seeds.length}.`,
+      `${territory} keyword ideas request requires exactly ${SEEDS_PER_TERRITORY} seeds; found ${seeds.length}.`,
     );
   }
 

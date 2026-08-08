@@ -4,6 +4,7 @@ import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
+const SEEDS_PER_TERRITORY = 15;
 
 const SourceProfileSchema = z
   .object({
@@ -21,7 +22,7 @@ const ConfirmedQuerySchema = z
     validation_reasoning: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(6),
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),

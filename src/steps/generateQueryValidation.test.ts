@@ -882,14 +882,10 @@ function buildQuerySet(
   return {
     territory,
     task_tag: territory,
-    seeds_used: [
-      `${territory} seed 1`,
-      `${territory} seed 2`,
-      `${territory} seed 3`,
-      `${territory} seed 4`,
-      `${territory} seed 5`,
-      `${territory} seed 6`,
-    ],
+    seeds_used: Array.from(
+      { length: 15 },
+      (_, index) => `${territory} seed ${index + 1}`,
+    ),
     task_result: {
       task_id: `${territory}_task`,
       status_code: 20000,

@@ -13,7 +13,7 @@ type MockKeywordItem =
     };
 type MockResponseConfig = Record<Territory, MockKeywordItem[]>;
 
-test("DataForSEO request construction uses six seeds, limit 500, search volume > 50, and relevance-first ordering", async () => {
+test("DataForSEO request construction uses fifteen seeds, limit 500, search volume > 50, and relevance-first ordering", async () => {
   const { buildKeywordIdeasTask } = await importKeywordMetricsModule();
   const seeds = buildSeeds("problem");
 
@@ -390,7 +390,7 @@ function buildTerritory(
     seed_keywords: seeds.map((keyword, index) => ({
       seed_id: `${territory}_seed_${String(index + 1).padStart(2, "0")}`,
       keyword,
-      seed_role: roles[index],
+      seed_role: roles[index % roles.length],
       selection_reasoning: "Distinct discovery angle.",
       confidence: "medium",
     })),
@@ -398,5 +398,5 @@ function buildTerritory(
 }
 
 function buildSeeds(prefix: string): string[] {
-  return Array.from({ length: 6 }, (_, index) => `${prefix} seed ${index + 1}`);
+  return Array.from({ length: 15 }, (_, index) => `${prefix} seed ${index + 1}`);
 }

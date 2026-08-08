@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "029b85f9-7922-4409-9850-ecc65eec1a59",
+  "generated_at": "2026-07-26T07:51:28.546Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-recommendations.json",
+    "serp-results.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "solution_demand_152 returned 9 organic results instead of 10.",
+    "problem_demand_499: The live SERP is dominated by Auto/Mate contact and support pages, so Google appears to interpret this query as a brand-specific support request rather than a clean automation keyword.",
+    "problem_demand_499: This mismatch materially lowers confidence that a standard feature page will align with the current search results.",
+    "solution_demand_011: The SERP mixes customer-support help desk pages with IT help desk software and community threads, so the page should stay focused on customer support rather than internal IT service desks.",
+    "solution_demand_152: The SERP spans broad innovation-management vendors, reviews, and Reddit threads, so the page should avoid implying a full enterprise innovation suite if the product is being positioned primarily as feedback and roadmap software."
+  ],
+  "website_url": "https://www.featurebase.app/",
+  "source_profile": {
+    "company_name": "Featurebase",
+    "product_category": "customer support and feedback platform",
+    "primary_icp": "product, support, and GTM teams at startups and growing companies"
+  },
+  "content_recommendations": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "problem_demand_499",
+      "territory": "problem_demand",
+      "primary_query": "automate customer service",
+      "serp_analysis": {
+        "dominant_intent": "transactional",
+        "dominant_page_type": "mixed",
+        "serp_consistency": "low",
+        "summary": "Google is currently surfacing mostly Auto/Mate contact and support pages, so the query is being read more like a brand-specific support request than a generic customer-service automation topic.",
+        "recurring_concepts": [
+          "contact support",
+          "support phone numbers",
+          "remote support",
+          "dealership software"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Automate Customer Service with AI Support and Workflow Automation",
+        "recommended_page_type": "feature_page",
+        "content_angle": "The page should position Featurebase as a practical way for support teams to automate repetitive customer-service work with AI, inbox automation, and workflows, while making the solution unmistakably about support operations rather than a generic definition piece.",
+        "product_connection": "Featurebase can fit naturally as the AI support agent and workflow platform that centralizes customer conversations and handles repetitive support tasks faster.",
+        "confidence": "low",
+        "warnings": [
+          "The live SERP is dominated by Auto/Mate contact and support pages, so Google appears to interpret this query as a brand-specific support request rather than a clean automation keyword.",
+          "This mismatch materially lowers confidence that a standard feature page will align with the current search results."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "problem_demand_362",
+      "territory": "problem_demand",
+      "primary_query": "voice of customer",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "high",
+        "summary": "The SERP is dominated by definition-led guides that explain what voice of the customer means, how to collect feedback, and how to turn it into action.",
+        "recurring_concepts": [
+          "definition",
+          "customer feedback collection",
+          "analyzing and acting on feedback",
+          "benefits and strategies",
+          "examples"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Voice of Customer: A Practical Guide to Turning Feedback into Product Decisions",
+        "recommended_page_type": "guide",
+        "content_angle": "The page should explain what VoC is and show product and support teams how to centralize feedback, analyze patterns, and close the loop with customers in a practical, implementation-focused way.",
+        "product_connection": "Featurebase can appear as the feedback hub that centralizes customer input, adds voting, surfaces priorities with AI, and notifies teams when requests are shipped.",
+        "confidence": "high",
+        "warnings": []
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "primary_query": "cloud-based help desk software",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "listicle",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to want comparisons of cloud-based help desk software, and Google is rewarding list-style reviews and comparisons with some product pages and community discussion mixed in.",
+        "recurring_concepts": [
+          "cloud-based help desk software",
+          "ticket tracking and prioritization",
+          "AI and automation",
+          "free or free trial offers",
+          "support teams and small teams"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Cloud-Based Help Desk Software: Compare Features for Modern Support Teams",
+        "recommended_page_type": "comparison_page",
+        "content_angle": "The page should compare cloud help desk options around omnichannel inboxes, AI support, automation, and self-serve help, with a clear customer-support framing that fits Featurebase’s ICP.",
+        "product_connection": "Featurebase can be positioned naturally as the cloud-based help desk that unifies inbox, ticketing, AI support, and help center workflows for product and support teams.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP mixes customer-support help desk pages with IT help desk software and community threads, so the page should stay focused on customer support rather than internal IT service desks."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "solution_demand_152",
+      "territory": "solution_demand",
+      "primary_query": "idea management software",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "listicle",
+        "serp_consistency": "medium",
+        "summary": "The SERP is commercially oriented and mixes comparison lists, vendor use-case pages, reviews, and discussion threads around idea management and innovation software.",
+        "recurring_concepts": [
+          "comparison lists",
+          "idea collection",
+          "voting and prioritization",
+          "innovation management",
+          "platforms and tools"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Idea Management Software for Product Teams: Collect, Prioritize, and Ship Ideas",
+        "recommended_page_type": "comparison_page",
+        "content_angle": "The page should explain how idea management software helps teams gather suggestions, let users vote, prioritize requests, and communicate progress, using a product-team framing that matches Featurebase’s strengths.",
+        "product_connection": "Featurebase can be presented as the system that centralizes ideas, supports voting, uses AI to surface priorities, and publishes a public roadmap without feeling like a detached sales pitch.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP spans broad innovation-management vendors, reviews, and Reddit threads, so the page should avoid implying a full enterprise innovation suite if the product is being positioned primarily as feedback and roadmap software."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "recommendations_received": 4,
+    "recommendations_analyzed": 4,
+    "problem_demand_count": 2,
+    "solution_demand_count": 2,
+    "high_confidence_count": 1,
+    "medium_confidence_count": 2,
+    "low_confidence_count": 1,
+    "mixed_intent_count": 0,
+    "insufficient_serp_count": 0
+  }
+}

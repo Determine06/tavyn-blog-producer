@@ -27,6 +27,7 @@ export type PipelineCliOptions = {
   forceContentRecommendation: boolean;
   forceCompetitorLandscape: boolean;
   forceCompanyReport: boolean;
+  saveToSupabase: boolean;
 };
 
 export function parsePipelineCliOptions(argv: string[]): PipelineCliOptions {
@@ -107,6 +108,7 @@ export function parsePipelineCliOptions(argv: string[]): PipelineCliOptions {
     forceContentRecommendation,
     forceCompetitorLandscape,
     forceCompanyReport,
+    saveToSupabase: argv.includes("--save-to-supabase"),
   };
 
   function hasLegacyForce(
@@ -309,7 +311,8 @@ export function parseUrlArgs(argv: string[]): string[] {
       arg.startsWith("--force=") ||
       arg.startsWith("--artifact-root=") ||
       arg === "--cache" ||
-      arg === "--no-cache"
+      arg === "--no-cache" ||
+      arg === "--save-to-supabase"
     ) {
       continue;
     }

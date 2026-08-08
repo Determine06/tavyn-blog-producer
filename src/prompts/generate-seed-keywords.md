@@ -31,10 +31,10 @@ Your job is to identify:
 
 * one primary problem-demand territory
 * one primary solution-demand territory
-* exactly six problem-demand seed keywords
-* exactly six solution-demand seed keywords
-* exactly one seed for every required bucket
-* exactly twelve seed keywords in total
+* exactly fifteen problem-demand seed keywords
+* exactly fifteen solution-demand seed keywords
+* coverage across every required bucket
+* exactly thirty seed keywords in total
 
 Required problem-demand buckets:
 
@@ -152,7 +152,7 @@ Copy the following values directly from the runtime input:
 Set:
 
 * `source_artifacts` to exactly `["company-profile.json"]`
-* `status` to `complete` when both territories and all twelve buckets can be generated with sufficient evidence
+* `status` to `complete` when both territories and all thirty seeds can be generated with sufficient evidence
 * `status` to `partial` when the profile is materially unclear but a conservative portfolio can still be produced
 * `warnings` to an empty array unless a material seed-generation limitation exists
 * `website_url` from `company_profile.website_url`
@@ -172,7 +172,7 @@ Return them in this order:
 
 Do not generate additional territories.
 
-The `problem_demand` territory must contain exactly these buckets in this order:
+The `problem_demand` territory must cover these buckets, grouped in this order:
 
 1. `P1_core_customer_job`
 2. `P2_primary_workflow`
@@ -181,7 +181,7 @@ The `problem_demand` territory must contain exactly these buckets in this order:
 5. `P5_desired_outcome`
 6. `P6_icp_specific_responsibility`
 
-The `solution_demand` territory must contain exactly these buckets in this order:
+The `solution_demand` territory must cover these buckets, grouped in this order:
 
 1. `S1_core_product_category`
 2. `S2_qualified_product_category`
@@ -190,11 +190,11 @@ The `solution_demand` territory must contain exactly these buckets in this order
 5. `S5_mechanism_or_approach`
 6. `S6_alternative_commercial_category`
 
-Every bucket must appear exactly once.
+Every bucket must appear at least twice. Use the three remaining seeds in each territory for the strongest evidence-backed buckets.
 
 # Seed Strategy Goal
 
-Do not brainstorm twelve generally relevant phrases.
+Do not brainstorm thirty generally relevant phrases.
 
 Construct a deliberate portfolio in which every seed:
 
@@ -203,9 +203,9 @@ Construct a deliberate portfolio in which every seed:
 * is directly supported by the company profile
 * independently identifies the company’s intended market
 * is broad enough to generate multiple relevant ideas
-* is distinct from the other eleven seeds
+* is distinct from the other twenty-nine seeds
 
-The twelve buckets are intended to cover the primary ways customers discover SaaS markets.
+The twelve bucket groups are intended to cover the primary ways customers discover SaaS markets.
 
 Problem-demand seeds cover:
 
@@ -393,7 +393,7 @@ Do not use:
 
 Each territory must include one `market_topic`.
 
-The market topic is a concise description of the search area collectively represented by the six seeds.
+The market topic is a concise description of the search area collectively represented by the fifteen seeds.
 
 Good market topics:
 
@@ -895,7 +895,7 @@ The seed must be:
 
 ## 6. Portfolio Distinction
 
-The seed must open a meaningfully different discovery direction from the other eleven seeds.
+The seed must open a meaningfully different discovery direction from the other twenty-nine seeds.
 
 Reject any candidate that:
 
@@ -945,11 +945,13 @@ Do not output scores or scoring reasoning.
 
 # Seed Keyword Requirements
 
-Generate exactly six seeds for `problem_demand`.
+Generate exactly fifteen seed keywords for each territory.
 
-Generate exactly six seeds for `solution_demand`.
+Generate exactly fifteen seeds for `problem_demand`.
 
-Generate exactly twelve seeds in total.
+Generate exactly fifteen seeds for `solution_demand`.
+
+Generate exactly thirty seed keywords in total.
 
 Every seed must:
 
@@ -1091,7 +1093,7 @@ Better:
 
 # Seed Diversity Rules
 
-The twelve seeds must cover multiple discovery directions without leaving the company’s central market.
+The thirty seeds must cover multiple discovery directions without leaving the company’s central market.
 
 Do not create artificial diversity by introducing:
 
@@ -1215,7 +1217,7 @@ Normalize every seed by:
 1. trimming leading and trailing whitespace
 2. converting it to lowercase
 
-All twelve normalized strings must be unique.
+All thirty normalized strings must be unique.
 
 Textual uniqueness is necessary but not sufficient.
 
@@ -1289,16 +1291,16 @@ Bad risks:
 
 # Portfolio-Level Review
 
-After selecting all twelve provisional seeds, review the portfolio as a whole.
+After selecting all thirty provisional seeds, review the portfolio as a whole.
 
 Confirm:
 
 1. Exactly two demand territories exist.
 2. `problem_demand` appears first.
 3. `solution_demand` appears second.
-4. Each territory contains exactly six seeds.
-5. Exactly twelve seeds exist in total.
-6. Every required bucket appears exactly once.
+4. Each territory contains exactly fifteen seeds.
+5. Exactly thirty seeds exist in total.
+6. Every required bucket appears at least twice.
 7. Buckets appear in canonical order.
 8. Every P bucket belongs to `problem_demand`.
 9. Every S bucket belongs to `solution_demand`.
@@ -1337,15 +1339,15 @@ Before returning the structured output, verify:
 * `problem_demand` appears exactly once
 * `solution_demand` appears exactly once
 * `problem_demand` appears first
-* each territory contains exactly six seeds
-* exactly twelve seeds exist
-* every required bucket appears once
+* each territory contains exactly fifteen seeds
+* exactly thirty seeds exist
+* every required bucket appears at least twice
 * bucket ordering is correct
 * output matches `SeedKeywordsSchema`
 
 ## Uniqueness
 
-* all twelve normalized keywords are globally unique
+* all thirty normalized keywords are globally unique
 * no two seeds differ only by singular or plural
 * no two seeds differ only by word order
 * no two seeds differ only by a commercial modifier

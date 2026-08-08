@@ -85,6 +85,7 @@ async function main(): Promise<void> {
       forceContentRecommendation,
       forceCompetitorLandscape,
       forceCompanyReport,
+      saveToSupabase,
     } = parsePipelineCliOptions(process.argv.slice(2));
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
@@ -132,6 +133,7 @@ async function main(): Promise<void> {
     logInfo(`forceContentRecommendation: ${forceContentRecommendation}`);
     logInfo(`forceCompetitorLandscape: ${forceCompetitorLandscape}`);
     logInfo(`forceCompanyReport: ${forceCompanyReport}`);
+    logInfo(`saveToSupabase: ${saveToSupabase}`);
     logInfo(`Crawl artifact path: ${crawlArtifactPath}`);
     logInfo(`Company profile artifact path: ${companyProfileArtifactPath}`);
     logInfo(`Seed keywords artifact path: ${seedKeywordsArtifactPath}`);
@@ -705,6 +707,18 @@ async function main(): Promise<void> {
       },
     });
     const companyReport = companyReportResult.data;
+
+    if (saveToSupabase) {
+      const { saveCompanyReportToSupabase } = await import(
+        "./output/saveCompanyReportToSupabase.js"
+      );
+      const savedReport = await saveCompanyReportToSupabase(companyReport);
+
+      logSuccess("Company report saved to Supabase");
+      logInfo(`Saved database row ID: ${savedReport.id}`);
+      logInfo(`Saved report ID: ${savedReport.report_id ?? "null"}`);
+      logInfo(`Saved report slug: ${savedReport.slug ?? "null"}`);
+    }
 
     logInfo(`Company report cache hit: ${companyReportResult.cacheHit}`);
     logInfo(`Company report step ran: ${companyReportResult.didRun}`);

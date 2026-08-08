@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "029b85f9-7922-4409-9850-ecc65eec1a59",
+  "generated_at": "2026-07-26T07:51:28.529Z",
+  "source_artifacts": [
+    "query-recommendations.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "solution_demand_152 returned 9 organic results instead of 10."
+  ],
+  "website_url": "https://www.featurebase.app/",
+  "provider": {
+    "name": "serper",
+    "endpoint": "https://google.serper.dev/search",
+    "search_engine": "google",
+    "country_code": "us",
+    "language_code": "en",
+    "requested_results_per_query": 10,
+    "http_requests_made": 4,
+    "total_credits_used": 4
+  },
+  "query_serps": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "query_id": "problem_demand_499",
+      "territory": "problem_demand",
+      "query": "automate customer service",
+      "requested_at": "2026-07-26T07:51:27.090Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 10,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Contact Support",
+          "url": "https://automate.com/dms/contact-us/contact-support/",
+          "domain": "automate.com",
+          "snippet": "Need support? Call us at 800.371.3970 … calls are answered annually. Sales: 888-655-1435 Support: 800.371.3970 [email protected]",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "Contact Us - Auto/Mate DMS Remote Support",
+          "url": "http://amwebsupport.com/contact-support/",
+          "domain": "amwebsupport.com",
+          "snippet": "Need some help? We've got your back. Call us today! Support Phone 800-371-3970 Fax 518-371-2186 Department Accounting, F&I, Service, Parts and Tech.",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "Contact Us",
+          "url": "https://automate.com/dms/contact-us/",
+          "domain": "automate.com",
+          "snippet": "Auto/Mate Support: 800.371.3970 Sales: 888-655-1435. Please complete the form below and someone. Sales: 888-655-1435 Support: 800.371.3970 [email protected]",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "HOME - Auto/Mate | Auto/Mate",
+          "url": "https://automate.com/",
+          "domain": "automate.com",
+          "snippet": "award-winning customer service. Sales: 888-655-1435 Support: 800.371.3970 [email protected]",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "CONTACT - Auto/Mate DMS Remote Support",
+          "url": "http://amwebsupport.com/contact/",
+          "domain": "amwebsupport.com",
+          "snippet": "Support: 800.371.3970 Sales: 877.340.2677 For non-support related issues, contact us by email: General: info@automate.com. Open/Mate: openmate-info@automate. ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "Contact",
+          "url": "https://www.autommate.com/contact/",
+          "domain": "autommate.com",
+          "snippet": "Autom Mate Corp. Suite 210 #391 Wilmington Delaware, 19801 * Company name Message We would love to be able to contact you about all things Autom Mate.",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Auto/Mate 2026 Holiday Support Hours.",
+          "url": "https://am-landing.i2.automate-webservices.com/posts/support-hours",
+          "domain": "am-landing.i2.automate-webservices.com",
+          "snippet": "If you have an emergency, please call our regular support telephone number 800.371.3970 and follow the prompt. Copyright 2026 Auto/Mate. Privacy Statement.",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "Helpful Support Features",
+          "url": "https://automate.com/support-features/",
+          "domain": "automate.com",
+          "snippet": "Call our Accounting Support Department at 800-371-3970 today! you can contact us at [email protected] for customer service? Sales: 888-655-1435 Support: 800. ...",
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "Auto/Mate DMS Remote Support",
+          "url": "http://amwebsupport.com/",
+          "domain": "amwebsupport.com",
+          "snippet": "Support: 800.371.3970. info@automate.com. Sign Up for the Latest News. Subscribe →. © 2018 Auto/Mate, Inc. All Rights Reserved. CAREERS CONTACT ABOUT.",
+          "date": null
+        },
+        {
+          "position": 10,
+          "title": "DMS",
+          "url": "https://automate.com/dms/",
+          "domain": "automate.com",
+          "snippet": "Auto/Mate AMPS features easy-to-use, fully integrated modules to suit your dealership needs in accounting, sales, F&I, parts, service, and more.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "query_id": "problem_demand_362",
+      "territory": "problem_demand",
+      "query": "voice of customer",
+      "requested_at": "2026-07-26T07:51:27.091Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 10,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "What is the Voice of the Customer (VoC)?",
+          "url": "https://www.qualtrics.com/articles/customer-experience/what-is-voice-of-customer/",
+          "domain": "qualtrics.com",
+          "snippet": "Voice of the Customer (VoC) refers to strategic customer experience programs designed to capture what customers are saying, thinking, and ...",
+          "date": "Dec 20, 2025"
+        },
+        {
+          "position": 2,
+          "title": "Voice of the customer",
+          "url": "https://en.wikipedia.org/wiki/Voice_of_the_customer",
+          "domain": "en.wikipedia.org",
+          "snippet": "In marketing and quality management, the voice of the customer (VoC) summarizes customers' expectations, preferences and dislikes.",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "The Essential Guide to Voice of the Customer",
+          "url": "https://www.gainsight.com/essential-guide/voice-of-the-customer/",
+          "domain": "gainsight.com",
+          "snippet": "Voice of the Customer (VoC) is the structured practice of listening to customers, analyzing their feedback, and turning it into action that improves the product",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "Voice of the Customer: What Is It & Examples",
+          "url": "https://inmoment.com/blog/voice-of-the-customer-voc/",
+          "domain": "inmoment.com",
+          "snippet": "Voice of the Customer (VoC) is the process of gathering information regarding what customers think and feel about their experiences with a business.",
+          "date": "Sep 5, 2024"
+        },
+        {
+          "position": 5,
+          "title": "What is Voice of the Customer (VoC)? A Complete Guide",
+          "url": "https://www.salesforce.com/service/customer-service-operations/voice-of-customer-program/",
+          "domain": "salesforce.com",
+          "snippet": "Voice of the Customer (VoC) is the practice of listening to and interpreting the needs, wants, and expectations of customers. The goal of VoC is to inform ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "What Is Voice of the Customer? A 2026 Guide",
+          "url": "https://customergauge.com/voice-of-customer",
+          "domain": "customergauge.com",
+          "snippet": "VoC is the process by which you gather customer feedback—from all of your accounts and at every touchpoint—and dig into their experience, preferences, and ...",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Voice of the Customer: Strategies to Listen & Act Effectively",
+          "url": "https://online.hbs.edu/blog/post/voice-of-customer",
+          "domain": "online.hbs.edu",
+          "snippet": "Voice of the customer is a persona that represents your understanding of your target customer's goals and pain points.",
+          "date": "Oct 1, 2025"
+        },
+        {
+          "position": 8,
+          "title": "What is Voice of the Customer (VoC)? Definition, Benefits & Strategies",
+          "url": "https://www.sprinklr.com/blog/voice-of-the-customer/",
+          "domain": "sprinklr.com",
+          "snippet": "Voice of the customer (VoC) is to understand the needs, expectations, and pain points of your existing and potential customers. Whereas customer satisfaction ( ...",
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "What Is Voice Of The Customer (VoC)?",
+          "url": "https://www.zoom.com/en/blog/voice-of-the-customer/",
+          "domain": "zoom.com",
+          "snippet": "The voice of the customer (VoC) is a strategic approach that focuses on capturing, analyzing, and acting upon customer feedback, both negative and positive.",
+          "date": "Oct 2, 2024"
+        },
+        {
+          "position": 10,
+          "title": "What is Voice of the Customer (VOC)? - Decagon",
+          "url": "https://decagon.ai/glossary/what-is-voice-of-the-customer-voc",
+          "domain": "decagon.ai",
+          "snippet": "Voice of the Customer (VOC) is about listening to what customers want, need, and expect. It involves collecting feedback, both from what people say directly ...",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "query": "cloud-based help desk software",
+      "requested_at": "2026-07-26T07:51:27.091Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 10,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Spiceworks Cloud Based Help Desk Software – The free ticketing tool for ...",
+          "url": "https://www.spiceworks.com/free-cloud-help-desk-software/",
+          "domain": "spiceworks.com",
+          "snippet": "It makes it easy to track, prioritize, and manage user requests in one place–all without the hassle of setup, maintenance, or hidden costs.",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "The Best IT Help Desk Software We've Tested for 2026",
+          "url": "https://www.pcmag.com/picks/the-best-it-help-desk-software",
+          "domain": "pcmag.com",
+          "snippet": "Cloud Help Desk provides simple and affordable tools for managing internal IT in small businesses,",
+          "date": "Apr 9, 2026"
+        },
+        {
+          "position": 3,
+          "title": "10 Best Help Desk Software of 2026: Reviewed & Compared",
+          "url": "https://thecxlead.com/tools/best-help-desk-software/",
+          "domain": "thecxlead.com",
+          "snippet": "Freshdesk is a cloud-based help desk platform built for support teams in businesses of all sizes who need to manage customer inquiries across ...",
+          "date": "5 days ago"
+        },
+        {
+          "position": 4,
+          "title": "What are some great options for helpdesk ticketing systems for a 2-person IT team?",
+          "url": "https://community.spiceworks.com/t/what-are-some-great-options-for-helpdesk-ticketing-systems-for-a-2-person-it-team/1166123",
+          "domain": "community.spiceworks.com",
+          "snippet": null,
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "What is the best helpdesk software for a small team?",
+          "url": "https://www.reddit.com/r/sysadmin/comments/1f39z7g/what_is_the_best_helpdesk_software_for_a_small/",
+          "domain": "reddit.com",
+          "snippet": null,
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "100% free IT Help Desk software - IT & Tech Careers",
+          "url": "https://community.spiceworks.com/t/100-free-it-help-desk-software/962637",
+          "domain": "community.spiceworks.com",
+          "snippet": null,
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Recommendations for helpdesk software - cloud : r/sysadmin",
+          "url": "https://www.reddit.com/r/sysadmin/comments/1ufb3uv/recommendations_for_helpdesk_software_cloud/",
+          "domain": "reddit.com",
+          "snippet": "Freshservice and Jira Service Management are the obvious cloud ITSM ones to look at. HaloITSM is worth a look if you want more process/custom ...",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "Cloud Help Desk Software | Cloud-Based Help Desk System",
+          "url": "https://www.helpdesk.com/cloud/",
+          "domain": "helpdesk.com",
+          "snippet": "Run your support in the cloud with HelpDesk by Text. Browser-based cloud help desk software with AI, automation, and nothing to install. Free 14-day trial.",
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "What is a Cloud Help Desk",
+          "url": "https://www.sysaid.com/glossary/cloud-help-desk",
+          "domain": "sysaid.com",
+          "snippet": "Cloud based help desk software is a web-based service desk solution hosted on cloud servers, enabling organizations to manage IT support and service requests ...",
+          "date": null
+        },
+        {
+          "position": 10,
+          "title": "Cloud based Ticketing: Top 5 Systems for 2025 Success",
+          "url": "https://devrev.ai/blog/cloud-based-ticketing",
+          "domain": "devrev.ai",
+          "snippet": "A cloud-based ticketing system is a help desk software that runs on a cloud platform, accessible via any web browser.",
+          "date": "Feb 13, 2025"
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "query_id": "solution_demand_152",
+      "territory": "solution_demand",
+      "query": "idea management software",
+      "requested_at": "2026-07-26T07:51:27.092Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "6 Innovation & Idea Management Software (2026 Comparison)",
+          "url": "https://innovationcast.com/blog/innovation-management-software",
+          "domain": "innovationcast.com",
+          "snippet": "6 Innovation & Idea Management Software (2026 Comparison) · 1. InnovationCast · 2. HYPE · 3. Wazoku · 4. Brightidea · 5. Planbox · 6. Qmarkets · 12 alternative ...",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "What tools do you use for Idea Management?",
+          "url": "https://www.reddit.com/r/ProductManagement/comments/t5n5lf/what_tools_do_you_use_for_idea_management/",
+          "domain": "reddit.com",
+          "snippet": "I use Notion for executive communication and documentation. As well as handling the executive version of the roadmap.",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "Innovation Management Software, Tools & Platform",
+          "url": "https://www.sideways6.com/solution/idea-and-innovation-management-software",
+          "domain": "sideways6.com",
+          "snippet": "Innovation management software allows you to collect ideas by leveraging tools your employees already use such as Microsoft Teams, Viva Engage and Workplace",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "Idea Management Software",
+          "url": "https://canny.io/use-cases/idea-management",
+          "domain": "canny.io",
+          "snippet": "Canny's idea management software gathers ideas from customer conversations, your team, and your CRM, so you can prioritize and ship what drives revenue.",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Best Innovation Management Tools Reviews 2026 | Gartner Peer Insights",
+          "url": "https://www.gartner.com/reviews/market/innovation-management-tools",
+          "domain": "gartner.com",
+          "snippet": "Braineet Workflow is a software designed to assist organizations in managing innovation processes by automating idea collection, evaluation, and implementation.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "Top 10 Idea Management & Innovation Platforms",
+          "url": "https://www.herox.com/blog/1074-top-10-idea-management-innovation-platforms",
+          "domain": "herox.com",
+          "snippet": "HeroX, OpenIDEO, Innocentive, and IdeaConnection are all open innovation platforms that connect organizations with a community of problem-solvers to drive ...",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Idea Management Software",
+          "url": "https://www.viima.com/idea-management-software",
+          "domain": "viima.com",
+          "snippet": "Viima makes it easy for you to collect more, and better ideas by giving you the tools to create and manage your own ideation process, from start to finish.",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "The Best Idea Management Software and Its 8 Essentials",
+          "url": "https://www.itonics-innovation.com/guides/idea-management-software",
+          "domain": "itonics-innovation.com",
+          "snippet": "Top 7 idea management software list · 1. ITONICS · 2. Brightidea · 3. Wazoku · 4. Miro · 5. Innosabi · 6. IdeaScale · 7. Hype Innovation. HYPE ...",
+          "date": "Jan 9, 2026"
+        },
+        {
+          "position": 9,
+          "title": "Boost Innovation with Open-Source Management Software",
+          "url": "https://leantime.io/open-source-idea-management-software-the-best-for-innovation/",
+          "domain": "leantime.io",
+          "snippet": "Go for open source idea management software. Two open source idea management systems that are worth looking at include Leantime and OpenIdeal.",
+          "date": "May 8, 2023"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "recommended_queries_received": 4,
+    "serp_requests_completed": 4,
+    "total_organic_results": 39,
+    "queries_with_fewer_than_ten_results": [
+      "solution_demand_152"
+    ]
+  }
+}

@@ -45,6 +45,11 @@ export async function generateContentRecommendation(
   const sourceRecommendations = flattenRecommendations(
     validatedQueryRecommendations,
   );
+  if (sourceRecommendations.length !== 3) {
+    throw new Error(
+      `Cannot generate content recommendation because query recommendations supplied ${sourceRecommendations.length} recommendations; required exactly 3.`,
+    );
+  }
   validateRecommendationAndSerpIntegrity(
     sourceRecommendations,
     validatedSerpResults.query_serps,
@@ -52,7 +57,7 @@ export async function generateContentRecommendation(
 
   const generatedAt = new Date().toISOString();
   const input = `<content_recommendation_input>
-  <schema_version>1.0.0</schema_version>
+  <schema_version>1.1.0</schema_version>
   <run_id>${runId}</run_id>
   <generated_at>${generatedAt}</generated_at>
 
@@ -116,7 +121,7 @@ export async function generateContentRecommendation(
   ]);
 
   const contentRecommendation = ContentRecommendationSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     run_id: runId,
     generated_at: generatedAt,
     source_artifacts: [

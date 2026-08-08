@@ -17,84 +17,53 @@ const solutionRoles = [
   "commercial_category",
 ] as const;
 
-test("SeedKeywordsSchema accepts six problem seeds and six solution seeds", () => {
+test("SeedKeywordsSchema accepts fifteen problem seeds and fifteen solution seeds", () => {
   const parsed = SeedKeywordsSchema.parse(buildSeedArtifact());
 
-  assert.equal(parsed.demand_territories[0].seed_keywords.length, 6);
-  assert.equal(parsed.demand_territories[1].seed_keywords.length, 6);
+  assert.equal(parsed.demand_territories[0].seed_keywords.length, 15);
+  assert.equal(parsed.demand_territories[1].seed_keywords.length, 15);
   assert.equal(
     parsed.demand_territories.flatMap((territory) => territory.seed_keywords)
       .length,
-    12,
+    30,
   );
 });
 
-test("SeedKeywordsSchema rejects five or seven seeds in either territory", () => {
+test("SeedKeywordsSchema rejects fewer or more than fifteen seeds in either territory", () => {
   assert.throws(() =>
-    SeedKeywordsSchema.parse(buildSeedArtifact({ problemCount: 5 })),
+    SeedKeywordsSchema.parse(buildSeedArtifact({ problemCount: 14 })),
   );
   assert.throws(() =>
-    SeedKeywordsSchema.parse(buildSeedArtifact({ solutionCount: 7 })),
-  );
-});
-
-test("SeedKeywordsSchema rejects artifacts containing anything other than 12 total seeds", () => {
-  assert.throws(() =>
-    SeedKeywordsSchema.parse(
-      buildSeedArtifact({ problemCount: 6, solutionCount: 5 }),
-    ),
+    SeedKeywordsSchema.parse(buildSeedArtifact({ solutionCount: 16 })),
   );
 });
 
-test("SeedKeywordsSchema rejects duplicate normalized seed strings", () => {
+test("SeedKeywordsSchema allows duplicate keywords territory order and arbitrary non-empty roles", () => {
   const artifact = buildSeedArtifact();
   artifact.demand_territories[1].seed_keywords[0].keyword =
     " Problem Keyword 01 ";
-
-  assert.throws(() => SeedKeywordsSchema.parse(artifact));
-});
-
-test("SeedKeywordsSchema rejects incorrect territory order", () => {
-  const artifact = buildSeedArtifact();
+  artifact.demand_territories[0].seed_keywords[0].seed_role =
+    "model_generated_problem_role";
+  artifact.demand_territories[1].seed_keywords[0].seed_role =
+    "model_generated_solution_role";
   artifact.demand_territories.reverse();
 
-  assert.throws(() => SeedKeywordsSchema.parse(artifact));
+  assert.deepEqual(SeedKeywordsSchema.parse(artifact), artifact);
 });
 
-test("SeedKeywordsSchema requires main's allowed role coverage per territory", () => {
-  const missingProblemRole = buildSeedArtifact();
-  missingProblemRole.demand_territories[0].seed_keywords =
-    missingProblemRole.demand_territories[0].seed_keywords.map((seed) => ({
-      ...seed,
-      seed_role: "core_problem",
-    }));
-
-  const missingSolutionRole = buildSeedArtifact();
-  missingSolutionRole.demand_territories[1].seed_keywords =
-    missingSolutionRole.demand_territories[1].seed_keywords.map((seed) => ({
-      ...seed,
-      seed_role: "commercial_category",
-    }));
-
-  assert.throws(() => SeedKeywordsSchema.parse(missingProblemRole));
-  assert.throws(() => SeedKeywordsSchema.parse(missingSolutionRole));
-});
-
-test("generate-seed-keywords prompt requires six per territory and no active 12-per-territory or 24-total contract", () => {
+test("generate-seed-keywords prompt requires thirty total seeds", () => {
   const prompt = readFileSync(
     new URL("../prompts/generate-seed-keywords.md", import.meta.url),
     "utf8",
   );
 
-  assert.match(prompt, /exactly six seed keywords for each territory/i);
-  assert.match(prompt, /exactly twelve seed keywords in total/i);
-  assert.doesNotMatch(prompt, /12 seed keywords for each territory/i);
-  assert.doesNotMatch(prompt, /24 seed keywords in total/i);
+  assert.match(prompt, /exactly fifteen seed keywords for each territory/i);
+  assert.match(prompt, /exactly thirty seed keywords in total/i);
 });
 
 function buildSeedArtifact({
-  problemCount = 6,
-  solutionCount = 6,
+  problemCount = 15,
+  solutionCount = 15,
 }: {
   problemCount?: number;
   solutionCount?: number;

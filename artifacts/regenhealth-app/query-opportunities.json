@@ -1,15 +1,12 @@
 {
   "schema_version": "1.2.0",
-  "run_id": "24776b42-33d7-4953-b3fb-6066439cc305",
-  "generated_at": "2026-07-19T18:47:24.161Z",
+  "run_id": "888dcf82-ee13-4750-9aa8-4ffd5e064a94",
+  "generated_at": "2026-07-27T20:06:25.171Z",
   "source_artifacts": [
     "confirmed-queries.json"
   ],
   "status": "complete",
-  "warnings": [
-    "problem_demand had 7 confirmed queries; selected all 7 instead of 10.",
-    "solution_demand had 7 confirmed queries; selected all 7 instead of 10."
-  ],
+  "warnings": [],
   "website_url": "https://regenhealth.app/",
   "scoring_method": {
     "name": "search_demand_times_organic_attainability",
@@ -22,100 +19,1563 @@
   "territory_rankings": [
     {
       "territory": "problem_demand",
-      "confirmed_query_count": 7,
-      "maximum_search_volume": 390,
-      "selected_query_count": 7,
+      "confirmed_query_count": 71,
+      "maximum_search_volume": 12100,
+      "selected_query_count": 10,
       "queries": [
         {
           "rank": 1,
-          "query_id": "problem_demand_001",
+          "query_id": "problem_demand_144",
           "territory": "problem_demand",
-          "query": "peptide dosing protocols",
-          "validation_reasoning": "This is informational demand about dosing protocols, a core workflow for adults managing peptide protocols.",
+          "query": "aod 9604 peptide",
+          "validation_reasoning": "This query targets a specific peptide protocol, which fits the app's protocol-tracking and reference workflow.",
           "source_seed_keywords": [
             "peptide protocols",
+            "peptide protocol management",
             "peptide protocol tracking",
+            "peptide dosing",
             "peptide dose calculation",
+            "peptide reconstitution",
             "peptide inventory tracking",
             "peptide biomarker tracking",
-            "peptide protocol management"
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
           ],
-          "discovery_rank": 1,
+          "discovery_rank": 144,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 390,
+            "search_volume": 22200,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 720
+                "search_volume": 27100
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 590
+                "search_volume": 27100
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 590
+                "search_volume": 33100
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 720
+                "search_volume": 33100
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 590
+                "search_volume": 22200
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 320
+                "search_volume": 22200
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 320
+                "search_volume": 18100
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 170
+                "search_volume": 18100
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 70
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 50
+                "search_volume": 9900
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 30
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 10
+                "search_volume": 14800
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -18,
+              "yearly": 83
+            },
+            "cpc": 9.05,
+            "paid_competition": 0.3,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 4,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": [
+                "informational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 167.6,
+              "referring_domains": 32.5,
+              "main_domain_rank": 442.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 22200,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 4,
+            "keyword_difficulty_used": 4,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.96,
+            "opportunity_score": 98.8
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "problem_demand_130",
+          "territory": "problem_demand",
+          "query": "ss-31 peptide",
+          "validation_reasoning": "This query targets a specific peptide protocol, which fits the app's protocol-tracking and reference workflow.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 130,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 22200,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 40500
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 40500
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 33100
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 33100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 22200
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 14800
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 14800
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 9900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 22,
+              "yearly": 400
+            },
+            "cpc": 6.96,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 8,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 52.4,
+              "referring_domains": 16.1,
+              "main_domain_rank": 510.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 22200,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 8,
+            "keyword_difficulty_used": 8,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.92,
+            "opportunity_score": 97.6
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "problem_demand_034",
+          "territory": "problem_demand",
+          "query": "peptide calculator",
+          "validation_reasoning": "This query targets a peptide calculator, which is a core workflow the app provides.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 34,
+          "core_keyword": "peptides calculator",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 301000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 368000
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 450000
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 450000
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 450000
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 301000
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 301000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 246000
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 201000
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 165000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 165000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 165000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 135000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -18,
+              "yearly": 173
+            },
+            "cpc": 0.25,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 14,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 346.6,
+              "referring_domains": 51.9,
+              "main_domain_rank": 452.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 301000,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 14,
+            "keyword_difficulty_used": 14,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.86,
+            "opportunity_score": 95.8
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "problem_demand_038",
+          "territory": "problem_demand",
+          "query": "ghk peptide",
+          "validation_reasoning": "This query targets a specific peptide protocol, which fits the app's protocol-tracking and reference workflow.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 38,
+          "core_keyword": "peptide ghk",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 12100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 14800
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 14800
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 14800
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 14800
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 14800
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 3600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": 410
+            },
+            "cpc": 3.4,
+            "paid_competition": 0.55,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 26,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 330.7,
+              "referring_domains": 69.5,
+              "main_domain_rank": 600.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 12100,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 26,
+            "keyword_difficulty_used": 26,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.74,
+            "opportunity_score": 92.2
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "problem_demand_302",
+          "territory": "problem_demand",
+          "query": "ll 37 peptide",
+          "validation_reasoning": "The query names a specific peptide that a self-directed protocol user could research through the app's cited peptide reference workflow.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 302,
+          "core_keyword": "ll-37 peptide",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 5400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 3600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -18,
+              "yearly": 179
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 9,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": [
+                "informational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 90.6,
+              "referring_domains": 28,
+              "main_domain_rank": 558.2
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 5400,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 0.9142,
+            "keyword_difficulty_original": 9,
+            "keyword_difficulty_used": 9,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.91,
+            "opportunity_score": 91.3
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "problem_demand_047",
+          "territory": "problem_demand",
+          "query": "peptide shots",
+          "validation_reasoning": "This query targets peptide injection workflow guidance, which naturally connects to dosing and draw tracking.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 47,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 6600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 2400
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -18,
+              "yearly": 326
+            },
+            "cpc": 9.1,
+            "paid_competition": 0.71,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 16,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 583.5,
+              "referring_domains": 100,
+              "main_domain_rank": 515.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 6600,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 0.9355,
+            "keyword_difficulty_original": 16,
+            "keyword_difficulty_used": 16,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.84,
+            "opportunity_score": 90.7
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "problem_demand_045",
+          "territory": "problem_demand",
+          "query": "peptide fridge",
+          "validation_reasoning": "This query targets peptide storage and potency handling, which is part of the app's inventory workflow.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 45,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 4400
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 390
               }
             ],
             "search_volume_trend": {
               "monthly": 22,
-              "quarterly": 22,
-              "yearly": 7100
+              "quarterly": 52,
+              "yearly": 2488
             },
-            "cpc": 2.03,
-            "paid_competition": 0.01,
+            "cpc": 0.37,
+            "paid_competition": 0.17,
             "paid_competition_level": "LOW",
             "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 0.3,
+              "referring_domains": 0.2,
+              "main_domain_rank": 790.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2400,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 0.828,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 88
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "problem_demand_057",
+          "territory": "problem_demand",
+          "query": "peptide stack",
+          "validation_reasoning": "This query targets peptide stack management, which is a core protocol workflow for the app.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 57,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -19,
+              "quarterly": -19,
+              "yearly": 230
+            },
+            "cpc": 9.9,
+            "paid_competition": 0.81,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 5.3,
+              "referring_domains": 5,
+              "main_domain_rank": 275.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2400,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 0.828,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 88
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "problem_demand_303",
+          "territory": "problem_demand",
+          "query": "mt 2 peptide",
+          "validation_reasoning": "The query names a common peptide used in self-managed protocols, which fits the app's reference and tracking workflow.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 303,
+          "core_keyword": "mt-2 peptide",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 4400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -18,
+              "yearly": 315
+            },
+            "cpc": 5.38,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 20,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 188.8,
+              "referring_domains": 107.1,
+              "main_domain_rank": 534.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 4400,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 0.8924,
+            "keyword_difficulty_original": 20,
+            "keyword_difficulty_used": 20,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.8,
+            "opportunity_score": 86.5
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "problem_demand_317",
+          "territory": "problem_demand",
+          "query": "glp 2 peptide",
+          "validation_reasoning": "The query names a specific peptide that a protocol user could research through the app's cited reference layer.",
+          "source_seed_keywords": [
+            "peptide protocols",
+            "peptide protocol management",
+            "peptide protocol tracking",
+            "peptide dosing",
+            "peptide dose calculation",
+            "peptide reconstitution",
+            "peptide inventory tracking",
+            "peptide biomarker tracking",
+            "peptide lab interpretation",
+            "peptide schedule planning",
+            "peptide inventory management",
+            "self-directed peptide use",
+            "peptide trend monitoring",
+            "protocol spreadsheet replacement",
+            "peptide health tracking"
+          ],
+          "discovery_rank": 317,
+          "core_keyword": "glp-2 peptide",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 880
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -19,
+              "quarterly": 0,
+              "yearly": 230
+            },
+            "cpc": 11.4,
+            "paid_competition": 0.34,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "transactional"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 13.4,
+              "referring_domains": 3,
+              "main_domain_rank": 557
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1900,
+            "maximum_territory_search_volume": 12100,
+            "volume_score": 0.8031,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 86.2
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "confirmed_query_count": 30,
+      "maximum_search_volume": 33100,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "solution_demand_235",
+          "territory": "solution_demand",
+          "query": "best macro tracking app",
+          "validation_reasoning": "The query asks for the best macro tracking app, and macro tracking is directly supported by REGEN’s nutrition workflow.",
+          "source_seed_keywords": [
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
+          ],
+          "discovery_rank": 235,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 5400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 4400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 6600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -18,
+              "yearly": 0
+            },
+            "cpc": 5.08,
+            "paid_competition": 0.65,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 11,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 381.5,
+              "referring_domains": 64.1,
+              "main_domain_rank": 662.2
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 5400,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.8258,
+            "keyword_difficulty_original": 11,
+            "keyword_difficulty_used": 11,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.89,
+            "opportunity_score": 84.5
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "solution_demand_213",
+          "territory": "solution_demand",
+          "query": "best food tracking app",
+          "validation_reasoning": "The query asks for the best food tracking app, and REGEN directly supports food logging and macro estimation.",
+          "source_seed_keywords": [
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
+          ],
+          "discovery_rank": 213,
+          "core_keyword": "best food tracking apps",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 9900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 9900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 9900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -18,
+              "yearly": -18
+            },
+            "cpc": 4.38,
+            "paid_competition": 0.67,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 34,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 9152.3,
+              "referring_domains": 1674.7,
+              "main_domain_rank": 552.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 9900,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.884,
+            "keyword_difficulty_original": 34,
+            "keyword_difficulty_used": 34,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.66,
+            "opportunity_score": 81.7
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "solution_demand_018",
+          "territory": "solution_demand",
+          "query": "calorie tracking apps",
+          "validation_reasoning": "The query seeks calorie tracking apps, and REGEN directly supports meal logging and macro estimation.",
+          "source_seed_keywords": [
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
+          ],
+          "discovery_rank": 18,
+          "core_keyword": "calories track app",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 33100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 2900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 12100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90500
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 201000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -33
+            },
+            "cpc": 4.01,
+            "paid_competition": 0.2,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 68,
             "search_intent": {
               "main": "informational",
               "secondary": [
@@ -123,883 +1583,489 @@
               ]
             },
             "average_top_10": {
-              "backlinks": 45.7,
-              "referring_domains": 28.8,
-              "main_domain_rank": 289.5
+              "backlinks": 9714,
+              "referring_domains": 1824.5,
+              "main_domain_rank": 548
             }
           },
           "opportunity_metrics": {
-            "search_volume_used": 390,
-            "maximum_territory_search_volume": 390,
+            "search_volume_used": 33100,
+            "maximum_territory_search_volume": 33100,
             "volume_score": 1,
-            "keyword_difficulty_original": 0,
-            "keyword_difficulty_used": 0,
+            "keyword_difficulty_original": 68,
+            "keyword_difficulty_used": 68,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
-            "opportunity_score": 100
-          }
-        },
-        {
-          "rank": 2,
-          "query_id": "problem_demand_011",
-          "territory": "problem_demand",
-          "query": "peptide dosage protocol",
-          "validation_reasoning": "This is informational demand about dosage protocol work, which directly matches dose calculation and schedule management.",
-          "source_seed_keywords": [
-            "peptide protocols",
-            "peptide protocol tracking",
-            "peptide dose calculation",
-            "peptide inventory tracking",
-            "peptide biomarker tracking",
-            "peptide protocol management"
-          ],
-          "discovery_rank": 11,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 390,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 720
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 590
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 590
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 720
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 590
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 320
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 320
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 170
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 70
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 50
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 30
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 10
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 22,
-              "quarterly": 22,
-              "yearly": 7100
-            },
-            "cpc": 2.03,
-            "paid_competition": 0.01,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 0,
-            "search_intent": {
-              "main": "transactional",
-              "secondary": []
-            },
-            "average_top_10": {
-              "backlinks": 55.2,
-              "referring_domains": 37.8,
-              "main_domain_rank": 367.3
-            }
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 390,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 1,
-            "keyword_difficulty_original": 0,
-            "keyword_difficulty_used": 0,
-            "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
-            "opportunity_score": 100
-          }
-        },
-        {
-          "rank": 3,
-          "query_id": "problem_demand_041",
-          "territory": "problem_demand",
-          "query": "peptide pulsing protocol",
-          "validation_reasoning": "This is informational demand about protocol timing and cycling, which fits a concrete self-managed peptide workflow.",
-          "source_seed_keywords": [
-            "peptide protocols",
-            "peptide protocol tracking",
-            "peptide dose calculation",
-            "peptide inventory tracking",
-            "peptide biomarker tracking",
-            "peptide protocol management"
-          ],
-          "discovery_rank": 41,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 10,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 10
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 10
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 20
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 10
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 10
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 10
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 10
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 10
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 10
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 10
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 10
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 10
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 0,
-              "quarterly": -50,
-              "yearly": 0
-            },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 16,
-            "search_intent": {
-              "main": "informational",
-              "secondary": []
-            },
-            "average_top_10": {
-              "backlinks": 1.2,
-              "referring_domains": 0.5,
-              "main_domain_rank": 542.9
-            }
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 10,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.4017,
-            "keyword_difficulty_original": 16,
-            "keyword_difficulty_used": 16,
-            "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.84,
-            "opportunity_score": 33.7
+            "difficulty_score": 0.32,
+            "opportunity_score": 79.6
           }
         },
         {
           "rank": 4,
-          "query_id": "problem_demand_095",
-          "territory": "problem_demand",
-          "query": "ss-31 peptide reconstitution protocol",
-          "validation_reasoning": "This is informational demand about reconstitution, a concrete dosing workflow the app directly supports.",
+          "query_id": "solution_demand_053",
+          "territory": "solution_demand",
+          "query": "sleep tracker app",
+          "validation_reasoning": "The query asks for a sleep tracker app, and REGEN explicitly tracks sleep as part of its biomarker workflow.",
           "source_seed_keywords": [
-            "peptide protocols",
-            "peptide protocol tracking",
-            "peptide dose calculation",
-            "peptide inventory tracking",
-            "peptide biomarker tracking",
-            "peptide protocol management"
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
           ],
-          "discovery_rank": 95,
-          "core_keyword": null,
+          "discovery_rank": 53,
+          "core_keyword": "sleep trackers app",
           "detected_language": "en",
           "metrics": {
-            "search_volume": 30,
+            "search_volume": 12100,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 30
+                "search_volume": 8100
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 30
+                "search_volume": 8100
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 50
+                "search_volume": 9900
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 70
+                "search_volume": 12100
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 40
+                "search_volume": 9900
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 50
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 50
+                "search_volume": 9900
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 0
+                "search_volume": 9900
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 0
+                "search_volume": 14800
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 0
+                "search_volume": 14800
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 0
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 0
+                "search_volume": 12100
               }
             ],
             "search_volume_trend": {
               "monthly": 0,
-              "quarterly": -40,
-              "yearly": null
+              "quarterly": -18,
+              "yearly": -33
             },
-            "cpc": null,
-            "paid_competition": 0,
+            "cpc": 2.83,
+            "paid_competition": 0.12,
             "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
+            "keyword_difficulty": 51,
             "search_intent": {
               "main": "transactional",
-              "secondary": []
+              "secondary": [
+                "informational"
+              ]
             },
-            "average_top_10": null
+            "average_top_10": {
+              "backlinks": 714.6,
+              "referring_domains": 249.7,
+              "main_domain_rank": 694.1
+            }
           },
           "opportunity_metrics": {
-            "search_volume_used": 30,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.5753,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 28.8
+            "search_volume_used": 12100,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.9033,
+            "keyword_difficulty_original": 51,
+            "keyword_difficulty_used": 51,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.49,
+            "opportunity_score": 77.9
           }
         },
         {
           "rank": 5,
-          "query_id": "problem_demand_002",
-          "territory": "problem_demand",
-          "query": "peptide inventory",
-          "validation_reasoning": "This is informational demand about tracking peptide inventory, which matches a central protocol-management workflow.",
+          "query_id": "solution_demand_049",
+          "territory": "solution_demand",
+          "query": "calorie tracking app",
+          "validation_reasoning": "The query asks for a calorie tracking app, and calorie and macro logging are core REGEN features.",
           "source_seed_keywords": [
-            "peptide protocols",
-            "peptide protocol tracking",
-            "peptide dose calculation",
-            "peptide inventory tracking",
-            "peptide biomarker tracking",
-            "peptide protocol management"
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
           ],
-          "discovery_rank": 2,
-          "core_keyword": null,
+          "discovery_rank": 49,
+          "core_keyword": "calories track app",
           "detected_language": "en",
           "metrics": {
-            "search_volume": 20,
+            "search_volume": 33100,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 10
+                "search_volume": 22200
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 10
+                "search_volume": 27100
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 10
+                "search_volume": 22200
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 30
+                "search_volume": 33100
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 20
+                "search_volume": 27100
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 20
+                "search_volume": 33100
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 20
+                "search_volume": 18100
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 20
+                "search_volume": 40500
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 30
+                "search_volume": 49500
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 20
+                "search_volume": 49500
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 30
+                "search_volume": 49500
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 0
+                "search_volume": 40500
               }
             ],
             "search_volume_trend": {
-              "monthly": 0,
+              "monthly": -18,
               "quarterly": 0,
-              "yearly": null
+              "yearly": -45
             },
-            "cpc": null,
-            "paid_competition": 0,
+            "cpc": 3.88,
+            "paid_competition": 0.11,
             "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
+            "keyword_difficulty": 89,
             "search_intent": {
-              "main": "transactional",
-              "secondary": []
+              "main": "informational",
+              "secondary": [
+                "transactional",
+                "commercial"
+              ]
             },
-            "average_top_10": null
+            "average_top_10": {
+              "backlinks": 9321.6,
+              "referring_domains": 1707.2,
+              "main_domain_rank": 659.7
+            }
           },
           "opportunity_metrics": {
-            "search_volume_used": 20,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.5101,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 25.5
+            "search_volume_used": 33100,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 89,
+            "keyword_difficulty_used": 89,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.11,
+            "opportunity_score": 73.3
           }
         },
         {
           "rank": 6,
-          "query_id": "problem_demand_036",
-          "territory": "problem_demand",
-          "query": "peptide protocol calculator",
-          "validation_reasoning": "This is informational demand for calculating peptide protocols, which aligns with dose math and reconstitution workflows.",
+          "query_id": "solution_demand_054",
+          "territory": "solution_demand",
+          "query": "food tracking app",
+          "validation_reasoning": "The query asks for a food tracking app, and REGEN directly supports meal logging and macro estimation.",
           "source_seed_keywords": [
-            "peptide protocols",
-            "peptide protocol tracking",
-            "peptide dose calculation",
-            "peptide inventory tracking",
-            "peptide biomarker tracking",
-            "peptide protocol management"
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
           ],
-          "discovery_rank": 36,
+          "discovery_rank": 54,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 10,
+            "search_volume": 12100,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 50
+                "search_volume": 6600
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 30
+                "search_volume": 9900
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 40
+                "search_volume": 14800
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 30
+                "search_volume": 12100
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 20
+                "search_volume": 8100
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 0
+                "search_volume": 14800
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 0
+                "search_volume": 9900
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 0
+                "search_volume": 8100
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 0
+                "search_volume": 8100
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 0
+                "search_volume": 18100
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 0
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 0
+                "search_volume": 18100
               }
             ],
             "search_volume_trend": {
-              "monthly": 67,
-              "quarterly": 25,
-              "yearly": null
+              "monthly": -33,
+              "quarterly": -55,
+              "yearly": -45
             },
-            "cpc": null,
-            "paid_competition": 0.01,
+            "cpc": 4.81,
+            "paid_competition": 0.29,
             "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
+            "keyword_difficulty": 72,
             "search_intent": {
-              "main": "transactional",
-              "secondary": []
+              "main": "informational",
+              "secondary": [
+                "commercial",
+                "transactional"
+              ]
             },
-            "average_top_10": null
+            "average_top_10": {
+              "backlinks": 9634.9,
+              "referring_domains": 1806.6,
+              "main_domain_rank": 550.2
+            }
           },
           "opportunity_metrics": {
-            "search_volume_used": 10,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.4017,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 20.1
+            "search_volume_used": 12100,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.9033,
+            "keyword_difficulty_original": 72,
+            "keyword_difficulty_used": 72,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.28,
+            "opportunity_score": 71.6
           }
         },
         {
           "rank": 7,
-          "query_id": "problem_demand_087",
-          "territory": "problem_demand",
-          "query": "peptide dosage and protocol",
-          "validation_reasoning": "This is informational demand about dosage and protocol management, a central workflow for self-directed peptide users.",
-          "source_seed_keywords": [
-            "peptide protocols",
-            "peptide protocol tracking",
-            "peptide dose calculation",
-            "peptide inventory tracking",
-            "peptide biomarker tracking",
-            "peptide protocol management"
-          ],
-          "discovery_rank": 87,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 10,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 30
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 20
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 30
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 50
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 0
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 0
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 50,
-              "quarterly": 0,
-              "yearly": null
-            },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
-            "search_intent": {
-              "main": "transactional",
-              "secondary": []
-            },
-            "average_top_10": null
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 10,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.4017,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 20.1
-          }
-        }
-      ]
-    },
-    {
-      "territory": "solution_demand",
-      "confirmed_query_count": 7,
-      "maximum_search_volume": 320,
-      "selected_query_count": 7,
-      "queries": [
-        {
-          "rank": 1,
-          "query_id": "solution_demand_001",
+          "query_id": "solution_demand_253",
           "territory": "solution_demand",
-          "query": "peptide tracker app",
-          "validation_reasoning": "This is commercial demand for a peptide tracking app, which matches the company’s primary product category.",
+          "query": "best sleep tracker app",
+          "validation_reasoning": "The query asks for the best sleep tracker app, and sleep tracking is explicitly part of REGEN’s biomarker workflow.",
           "source_seed_keywords": [
             "peptide tracking app",
-            "peptide app for tracking",
+            "peptide tracking apps",
             "peptide protocol app",
-            "peptide dose calculator",
             "peptide protocol tracker",
-            "peptide management software"
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
           ],
-          "discovery_rank": 1,
+          "discovery_rank": 253,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 320,
+            "search_volume": 1600,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 880
+                "search_volume": 1000
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 720
+                "search_volume": 1300
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 480
+                "search_volume": 1900
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 320
+                "search_volume": 1600
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 260
+                "search_volume": 1600
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 260
+                "search_volume": 1900
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 210
+                "search_volume": 1600
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 170
+                "search_volume": 1600
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 110
+                "search_volume": 1600
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 110
+                "search_volume": 1900
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 170
+                "search_volume": 1900
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 210
+                "search_volume": 2400
               }
             ],
             "search_volume_trend": {
-              "monthly": 22,
-              "quarterly": 83,
-              "yearly": 878
+              "monthly": -23,
+              "quarterly": -47,
+              "yearly": -47
             },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 7,
-            "search_intent": {
-              "main": "transactional",
-              "secondary": [
-                "navigational"
-              ]
-            },
-            "average_top_10": {
-              "backlinks": 19,
-              "referring_domains": 1.5,
-              "main_domain_rank": 647.4
-            }
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 320,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 1,
-            "keyword_difficulty_original": 7,
-            "keyword_difficulty_used": 7,
-            "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.93,
-            "opportunity_score": 93
-          }
-        },
-        {
-          "rank": 2,
-          "query_id": "solution_demand_003",
-          "territory": "solution_demand",
-          "query": "peptide tracker app free",
-          "validation_reasoning": "This is transactional demand for a free peptide tracker app, and the company offers a free basic tracker.",
-          "source_seed_keywords": [
-            "peptide tracking app",
-            "peptide app for tracking",
-            "peptide protocol app",
-            "peptide dose calculator",
-            "peptide protocol tracker",
-            "peptide management software"
-          ],
-          "discovery_rank": 3,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 70,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 260
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 140
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 90
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 50
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 40
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 50
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 50
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 20
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 0
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 86,
-              "quarterly": 189,
-              "yearly": null
-            },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 0,
+            "cpc": 2.8,
+            "paid_competition": 0.37,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 31,
             "search_intent": {
               "main": "commercial",
               "secondary": [
@@ -1007,571 +2073,392 @@
               ]
             },
             "average_top_10": {
-              "backlinks": 19.6,
-              "referring_domains": 3.6,
-              "main_domain_rank": 457.3
+              "backlinks": 335.6,
+              "referring_domains": 111.5,
+              "main_domain_rank": 529.4
             }
           },
           "opportunity_metrics": {
-            "search_volume_used": 70,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 0.7386,
-            "keyword_difficulty_original": 0,
-            "keyword_difficulty_used": 0,
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.709,
+            "keyword_difficulty_original": 31,
+            "keyword_difficulty_used": 31,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
-            "opportunity_score": 73.9
+            "difficulty_score": 0.69,
+            "opportunity_score": 70.3
           }
         },
         {
-          "rank": 3,
-          "query_id": "solution_demand_002",
+          "rank": 8,
+          "query_id": "solution_demand_076",
           "territory": "solution_demand",
-          "query": "best peptide tracker app",
-          "validation_reasoning": "This is commercial evaluation demand for a peptide tracker app, an exact fit for the product category.",
+          "query": "macro tracking app",
+          "validation_reasoning": "The query asks for a macro tracking app, and macro logging is directly supported by REGEN’s meal scan workflow.",
           "source_seed_keywords": [
             "peptide tracking app",
-            "peptide app for tracking",
+            "peptide tracking apps",
             "peptide protocol app",
-            "peptide dose calculator",
             "peptide protocol tracker",
-            "peptide management software"
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
           ],
-          "discovery_rank": 2,
+          "discovery_rank": 76,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 90,
+            "search_volume": 5400,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 390
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 260
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 110
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 110
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 70
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 70
+                "search_volume": 8100
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 40
+                "search_volume": 6600
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 40
+                "search_volume": 4400
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 20
+                "search_volume": 5400
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 20
+                "search_volume": 6600
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 20
+                "search_volume": 6600
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 0
+                "search_volume": 5400
               }
             ],
             "search_volume_trend": {
-              "monthly": 50,
-              "quarterly": 255,
-              "yearly": null
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -33
             },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 6,
+            "cpc": 4.45,
+            "paid_competition": 0.34,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 60,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 9392.3,
+              "referring_domains": 1638.5,
+              "main_domain_rank": 633.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 5400,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.8258,
+            "keyword_difficulty_original": 60,
+            "keyword_difficulty_used": 60,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.4,
+            "opportunity_score": 69.8
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "solution_demand_240",
+          "territory": "solution_demand",
+          "query": "best nutrition tracker app",
+          "validation_reasoning": "The query asks for the best nutrition tracker app, and nutrition and macro tracking are core REGEN workflows.",
+          "source_seed_keywords": [
+            "peptide tracking app",
+            "peptide tracking apps",
+            "peptide protocol app",
+            "peptide protocol tracker",
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
+          ],
+          "discovery_rank": 240,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 19,
+              "quarterly": 0,
+              "yearly": 0
+            },
+            "cpc": 4.22,
+            "paid_competition": 0.58,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 34,
             "search_intent": {
               "main": "commercial",
               "secondary": []
             },
             "average_top_10": {
-              "backlinks": 21,
-              "referring_domains": 1.8,
-              "main_domain_rank": 650.3
+              "backlinks": 9063.6,
+              "referring_domains": 1607.9,
+              "main_domain_rank": 572.4
             }
           },
           "opportunity_metrics": {
-            "search_volume_used": 90,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 0.7816,
-            "keyword_difficulty_original": 6,
-            "keyword_difficulty_used": 6,
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.709,
+            "keyword_difficulty_original": 34,
+            "keyword_difficulty_used": 34,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.94,
-            "opportunity_score": 73.5
+            "difficulty_score": 0.66,
+            "opportunity_score": 69.4
           }
         },
         {
-          "rank": 4,
-          "query_id": "solution_demand_004",
+          "rank": 10,
+          "query_id": "solution_demand_181",
           "territory": "solution_demand",
-          "query": "free peptide tracker app",
-          "validation_reasoning": "This is transactional demand for a free peptide tracker app, which matches the freemium product offering.",
+          "query": "best calorie tracking app",
+          "validation_reasoning": "The query asks for the best calorie tracking app, and calorie logging is a core REGEN workflow.",
           "source_seed_keywords": [
             "peptide tracking app",
-            "peptide app for tracking",
+            "peptide tracking apps",
             "peptide protocol app",
-            "peptide dose calculator",
             "peptide protocol tracker",
-            "peptide management software"
+            "peptide management software",
+            "peptide health app",
+            "peptide dose calculator",
+            "peptide reconstitution calculator",
+            "peptide inventory app",
+            "peptide biomarker tracker",
+            "peptide schedule app",
+            "protocol tracking software",
+            "shared protocol software",
+            "biomarker trend app",
+            "peptide reference app"
           ],
-          "discovery_rank": 4,
-          "core_keyword": "peptide tracker app free",
+          "discovery_rank": 181,
+          "core_keyword": "best app to track calories",
           "detected_language": "en",
           "metrics": {
-            "search_volume": 50,
+            "search_volume": 3600,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 320
+                "search_volume": 4400
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 90
+                "search_volume": 4400
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 50
+                "search_volume": 4400
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 50
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 20
+                "search_volume": 5400
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 20
+                "search_volume": 4400
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 20
+                "search_volume": 2400
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 0
+                "search_volume": 1900
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 0
+                "search_volume": 2400
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 0
+                "search_volume": 2900
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 0
+                "search_volume": 2400
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 0
+                "search_volume": 2400
               }
             ],
             "search_volume_trend": {
-              "monthly": 256,
-              "quarterly": 540,
-              "yearly": null
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": 83
             },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 0,
+            "cpc": 4.85,
+            "paid_competition": 0.5,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 60,
             "search_intent": {
               "main": "commercial",
               "secondary": []
             },
-            "average_top_10": null
+            "average_top_10": {
+              "backlinks": 24836.6,
+              "referring_domains": 1745.1,
+              "main_domain_rank": 641.5
+            }
           },
           "opportunity_metrics": {
-            "search_volume_used": 50,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 0.6813,
-            "keyword_difficulty_original": 0,
-            "keyword_difficulty_used": 0,
+            "search_volume_used": 3600,
+            "maximum_territory_search_volume": 33100,
+            "volume_score": 0.7868,
+            "keyword_difficulty_original": 60,
+            "keyword_difficulty_used": 60,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
-            "opportunity_score": 68.1
-          }
-        },
-        {
-          "rank": 5,
-          "query_id": "solution_demand_005",
-          "territory": "solution_demand",
-          "query": "best peptide tracking app",
-          "validation_reasoning": "This is commercial evaluation demand for a peptide tracking app, which falls inside the company’s exact category.",
-          "source_seed_keywords": [
-            "peptide tracking app",
-            "peptide app for tracking",
-            "peptide protocol app",
-            "peptide dose calculator",
-            "peptide protocol tracker",
-            "peptide management software"
-          ],
-          "discovery_rank": 5,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 40,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 170
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 110
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 70
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 40
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 40
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 20
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 0
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 55,
-              "quarterly": 143,
-              "yearly": null
-            },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
-            "search_intent": {
-              "main": "commercial",
-              "secondary": []
-            },
-            "average_top_10": null
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 40,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 0.6434,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 32.2
-          }
-        },
-        {
-          "rank": 6,
-          "query_id": "solution_demand_006",
-          "territory": "solution_demand",
-          "query": "free peptide tracking app",
-          "validation_reasoning": "This is transactional demand for a free peptide tracking app, aligning with the free basic tracker.",
-          "source_seed_keywords": [
-            "peptide tracking app",
-            "peptide app for tracking",
-            "peptide protocol app",
-            "peptide dose calculator",
-            "peptide protocol tracker",
-            "peptide management software"
-          ],
-          "discovery_rank": 6,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 10,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 50
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 30
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 20
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 0
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 0
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 0
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 67,
-              "quarterly": 150,
-              "yearly": null
-            },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
-            "search_intent": {
-              "main": "commercial",
-              "secondary": []
-            },
-            "average_top_10": null
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 10,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 0.4155,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 20.8
-          }
-        },
-        {
-          "rank": 7,
-          "query_id": "solution_demand_016",
-          "territory": "solution_demand",
-          "query": "best peptide app for iphone",
-          "validation_reasoning": "This is commercial evaluation demand for a peptide app on iPhone, which matches the product category and app-store context.",
-          "source_seed_keywords": [
-            "peptide tracking app",
-            "peptide app for tracking",
-            "peptide protocol app",
-            "peptide dose calculator",
-            "peptide protocol tracker",
-            "peptide management software"
-          ],
-          "discovery_rank": 16,
-          "core_keyword": null,
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 10,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 70
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 50
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 0
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 0
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 0
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 0
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 0
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 40,
-              "quarterly": null,
-              "yearly": null
-            },
-            "cpc": null,
-            "paid_competition": 0,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": null,
-            "search_intent": {
-              "main": "commercial",
-              "secondary": []
-            },
-            "average_top_10": null
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 10,
-            "maximum_territory_search_volume": 320,
-            "volume_score": 0.4155,
-            "keyword_difficulty_original": null,
-            "keyword_difficulty_used": 50,
-            "keyword_difficulty_was_imputed": true,
-            "difficulty_score": 0.5,
-            "opportunity_score": 20.8
+            "difficulty_score": 0.4,
+            "opportunity_score": 67.1
           }
         }
       ]
     }
   ],
   "summary": {
-    "confirmed_queries_considered": 14,
-    "problem_queries_considered": 7,
-    "solution_queries_considered": 7,
-    "problem_queries_selected": 7,
-    "solution_queries_selected": 7,
-    "total_queries_selected": 14,
-    "missing_keyword_difficulty_selected": 7
+    "confirmed_queries_considered": 101,
+    "problem_queries_considered": 71,
+    "solution_queries_considered": 30,
+    "problem_queries_selected": 10,
+    "solution_queries_selected": 10,
+    "total_queries_selected": 20,
+    "missing_keyword_difficulty_selected": 0
   }
 }

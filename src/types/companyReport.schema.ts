@@ -5,6 +5,7 @@ import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const ConfidenceSchema = z.enum(["high", "medium", "low"]);
+const SEEDS_PER_TERRITORY = 15;
 const FinalQueryMetricsSchema = QueryMetricsSchema.omit({
   monthly_searches: true,
 });
@@ -69,7 +70,7 @@ const AnalysisCoverageSchema = z
     competitor_queries_analyzed: z.number().int().positive(),
     competitor_domains_found: z.number().int().min(0),
     content_opportunities_scored: z.number().int().min(0),
-    content_recommendations_selected: z.number().int().min(0).max(4),
+    content_recommendations_selected: z.literal(3),
     live_serps_analyzed: z.number().int().min(0),
     ranking_pages_analyzed: z.number().int().min(0),
   })
@@ -83,7 +84,7 @@ const ValidatedQuerySchema = z
     validation_reasoning: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(6),
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -181,7 +182,7 @@ const ContentPlanItemSchema = z
     primary_query: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(6),
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -208,19 +209,19 @@ const ContentPlanSchema = z
   .object({
     summary: z
       .object({
-        selected_count: z.number().int().min(2).max(4),
-        problem_demand_count: z.number().int().min(0).max(2),
-        solution_demand_count: z.number().int().min(0).max(2),
+        selected_count: z.literal(3),
+        problem_demand_count: z.literal(1),
+        solution_demand_count: z.literal(2),
         average_opportunity_score: z.number().min(0).max(100),
       })
       .strict(),
-    items: z.array(ContentPlanItemSchema).min(2).max(4),
+    items: z.array(ContentPlanItemSchema).length(3),
   })
   .strict();
 
 const CompanyReportBaseSchema = z
   .object({
-    schema_version: z.literal("1.0.0"),
+    schema_version: z.literal("1.1.0"),
     report_id: NonEmptyStringSchema,
     report_slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     run_id: NonEmptyStringSchema,
@@ -440,6 +441,24 @@ function validateContentPlan(
         "content_plan.solution_demand_count must match actual item territories.",
       path: ["content_plan", "summary", "solution_demand_count"],
     });
+  }
+
+  if (items[0]?.territory !== "problem_demand") {
+    context.addIssue({
+      code: "custom",
+      message: "content_plan.items[0] must be problem_demand.",
+      path: ["content_plan", "items", 0, "territory"],
+    });
+  }
+
+  for (const index of [1, 2]) {
+    if (items[index]?.territory !== "solution_demand") {
+      context.addIssue({
+        code: "custom",
+        message: "content_plan.items[1] and content_plan.items[2] must be solution_demand.",
+        path: ["content_plan", "items", index, "territory"],
+      });
+    }
   }
 
   const recommendationIds = new Set<string>();

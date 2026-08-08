@@ -11,7 +11,7 @@ const ProviderSchema = z
     country_code: z.literal("us"),
     language_code: z.literal("en"),
     requested_results_per_query: z.literal(10),
-    http_requests_made: z.number().int().min(0),
+    http_requests_made: z.literal(3),
     total_credits_used: z.number().min(0).nullable(),
   })
   .strict();
@@ -42,8 +42,8 @@ const QuerySerpSchema = z
 
 const SummarySchema = z
   .object({
-    recommended_queries_received: z.number().int().min(0),
-    serp_requests_completed: z.number().int().min(0),
+    recommended_queries_received: z.literal(3),
+    serp_requests_completed: z.literal(3),
     total_organic_results: z.number().int().min(0),
     queries_with_fewer_than_ten_results: z.array(NonEmptyStringSchema),
   })
@@ -51,7 +51,7 @@ const SummarySchema = z
 
 export const SerpResultsSchema = z
   .object({
-    schema_version: z.literal("1.0.0"),
+    schema_version: z.literal("1.1.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z.array(z.literal("query-recommendations.json")).length(1),
@@ -59,7 +59,7 @@ export const SerpResultsSchema = z
     warnings: z.array(NonEmptyStringSchema),
     website_url: NonEmptyStringSchema,
     provider: ProviderSchema,
-    query_serps: z.array(QuerySerpSchema).max(4),
+    query_serps: z.array(QuerySerpSchema).length(3),
     summary: SummarySchema,
   })
   .strict()

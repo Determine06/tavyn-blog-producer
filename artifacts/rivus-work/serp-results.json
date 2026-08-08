@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.1.0",
+  "run_id": "4a84aafa-0bc9-4238-983d-ebba92f04512",
+  "generated_at": "2026-08-06T14:37:18.460Z",
+  "source_artifacts": [
+    "query-recommendations.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand_053 returned 8 organic results instead of 10.",
+    "solution_demand_002 returned 8 organic results instead of 10."
+  ],
+  "website_url": "https://rivus.work/a/en/",
+  "provider": {
+    "name": "serper",
+    "endpoint": "https://google.serper.dev/search",
+    "search_engine": "google",
+    "country_code": "us",
+    "language_code": "en",
+    "requested_results_per_query": 10,
+    "http_requests_made": 3,
+    "total_credits_used": 3
+  },
+  "query_serps": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "query": "memo writing examples",
+      "requested_at": "2026-08-06T14:37:17.199Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 8,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Sample Memo - Purdue OWL",
+          "url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/memos/sample_memo.html",
+          "domain": "owl.purdue.edu",
+          "snippet": "This document is a sample memo excerpt provided to illustrate the tone, concision, and types of content you might include in a memo (purpose, audience, key ...",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "Memo Examples",
+          "url": "https://www.scribendi.com/academy/articles/memo_examples.en.html",
+          "domain": "scribendi.com",
+          "snippet": "Use these memo examples to make sure your next memo is clear, consistent, and targeted at the right audience.",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "Writing Professional Memos",
+          "url": "https://www.sjsu.edu/writingcenter/docs/handouts/Memos.pdf",
+          "domain": "sjsu.edu",
+          "snippet": "Examples of Closing Statements 1. “I will be glad to discuss this recommendation with you during our Wednesday meeting. 2. “I look forward to our staff's ...",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "What are some memorandum letter examples for students?",
+          "url": "https://www.quora.com/What-are-some-memorandum-letter-examples-for-students",
+          "domain": "quora.com",
+          "snippet": "What are some memorandum letter examples for students?",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "SAMPLE MEMO",
+          "url": "https://www.oregon.gov/deq/FilterDocs/ECOSampleMemo.pdf",
+          "domain": "oregon.gov",
+          "snippet": "SAMPLE MEMO. Date: To: All Staff. From: Company Executive. Subject: Employee Commute Options Survey. We are conducting a commuting survey this week among all ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "How to Write The Perfect Business Memo (FREE TEMPLATE)",
+          "url": "https://www.youtube.com/watch?v=lr8pNp3WxBs",
+          "domain": "youtube.com",
+          "snippet": "In this video we're sharing our 4 memo templates and walking you through exactly how to write a great memo! How to Write a Memo [Template & ...",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Memo Guide - Writing Center",
+          "url": "https://www.boisestate.edu/writingcenter/memo-guide/",
+          "domain": "boisestate.edu",
+          "snippet": "The following depicts a sample memo and a quick guide to writing an effective memo. It includes a specific subject line followed by two short ...",
+          "date": "Oct 7, 2023"
+        },
+        {
+          "position": 8,
+          "title": "3 memo examples for your business | Acrobat for business",
+          "url": "https://www.adobe.com/acrobat/business/hub/memo-examples-for-business.html",
+          "domain": "adobe.com",
+          "snippet": "here are a few professional memo template examples. Memo example 1: Schedule change. Memo example 2: Policy change. Memo example 3: New hire annoucement.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_01",
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "ai workspace",
+      "requested_at": "2026-08-06T14:37:17.201Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 8,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "AI Tools for Business",
+          "url": "https://workspace.google.com/solutions/ai/",
+          "domain": "workspace.google.com",
+          "snippet": "Google Workspace with Gemini weaves AI into apps you use every day like Gmail, Docs, Sheets, Meet, Chat, Vids, and more. It also provides powerful ...",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "AI Workspaces: We Tested the Best 5 Apps in 2026",
+          "url": "https://www.saner.ai/blogs/best-ai-workspaces",
+          "domain": "saner.ai",
+          "snippet": "An AI workspace is a assistants that can search, summarize, plan, and even remind you proactively. Popular AI workspaces include Saner.AI, ...",
+          "date": "Aug 27, 2025"
+        },
+        {
+          "position": 3,
+          "title": "Build with AI for Google Workspace",
+          "url": "https://developers.google.com/workspace/guides/ai-overview",
+          "domain": "developers.google.com",
+          "snippet": "Plan travels with an AI agent accessible across Google Workspace · Google Slides · Google Chat · Gemini · Google Docs · Vertex AI Agent Engine · Google Calendar ...",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "Google Workspace Studio: Automate work with AI agents",
+          "url": "https://www.youtube.com/watch?v=Xy0r5fKwlVo",
+          "domain": "youtube.com",
+          "snippet": "Studio is the place to create, manage, and share AI agents in Google Workspace. Build agents in minutes to automate everyday work, from simple ...",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "AI Workspace | Leading Service Provider for Data Annotation and ...",
+          "url": "https://www.ai-workspace.com/",
+          "domain": "ai-workspace.com",
+          "snippet": "AI Workspace is leading service provider for Data Annotation or Data Labeling and Generative AI solutions to top Artificial Intelligence and Machine ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "I Replaced 6 Productivity Apps With One AI Workspace",
+          "url": "https://analystuttam.substack.com/p/i-replaced-6-productivity-apps-with-one-ai-workspace",
+          "domain": "analystuttam.substack.com",
+          "snippet": "Tired of Notion, Google Docs, Evernote, and endless tabs? Here's how one AI workspace replaced all my tools—and changed how I work forever.",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "9 Best AI Workspaces in 2026: Unifying Work, Knowledge, and AI",
+          "url": "https://www.kapture.cx/blog/ai-workspace/",
+          "domain": "kapture.cx",
+          "snippet": "An AI Workspace is a unified digital environment that merges notes, tasks, and communications into a single, context-aware hub.",
+          "date": "Jun 3, 2026"
+        },
+        {
+          "position": 8,
+          "title": "Google Workspace Studio for Employee-Built AI Automation",
+          "url": "https://futurumgroup.com/insights/is-google-workspace-studio-the-turning-point-for-employee-built-ai-automation/",
+          "domain": "futurumgroup.com",
+          "snippet": "Google Workspace Studio AI agents let employees automate everyday and multi-step workflows using Gemini 3's reasoning and no-code design.",
+          "date": "Dec 8, 2025"
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "query_id": "solution_demand_036",
+      "territory": "solution_demand",
+      "query": "ai tools for research",
+      "requested_at": "2026-08-06T14:37:17.201Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 10,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Best AI Tools for Academic Research in 2026: Workflow Guide",
+          "url": "https://www.thesify.ai/blog/best-ai-tools-academic-research",
+          "domain": "thesify.ai",
+          "snippet": "Best Free AI Tools for Finding Research Papers · 1. Consensus · 2. Elicit · 3. Semantic Scholar · 4. Perplexity (Use with Caution). Perplexity ...",
+          "date": "Jul 9, 2026"
+        },
+        {
+          "position": 2,
+          "title": "Artificial Intelligence (Generative) Resources: AI Tools for Research",
+          "url": "https://guides.library.georgetown.edu/ai/tools",
+          "domain": "guides.library.georgetown.edu",
+          "snippet": "AI tools for research can help you to discover new sources for your literature review or research assignment. These tools will synthesize ...",
+          "date": "Jul 17, 2026"
+        },
+        {
+          "position": 3,
+          "title": "What AI tools (besides ChatGPT) do you actually use in your PhD research?",
+          "url": "https://www.reddit.com/r/PhdProductivity/comments/1kvepen/what_ai_tools_besides_chatgpt_do_you_actually_use/",
+          "domain": "reddit.com",
+          "snippet": "Hey fellow PhD scientists,\n\nI'm a PhD student in chemical/biomedical engineering, and like many of you, I’ve been using ChatGPT quite a bit (for brainstorming ...",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "Top 10 AI Tools for Researchers in 2026",
+          "url": "https://answerthis.io/blog/best-ai-research-assistant-tools",
+          "domain": "answerthis.io",
+          "snippet": "This article discusses the 10 most popular AI-based research tools such as AnswerThis, ChatGPT, Claude, Perplexity, and so on.",
+          "date": "Apr 2, 2026"
+        },
+        {
+          "position": 5,
+          "title": "Best AI Research Tools for Academics and Researchers",
+          "url": "https://www.litmaps.com/learn/best-ai-research-tools",
+          "domain": "litmaps.com",
+          "snippet": "AI research tools are software applications that assist with various research stages, such as literature reviews, data analysis, writing, and collaboration.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "The Best Free AI Tools for Research (2026)",
+          "url": "https://www.youtube.com/watch?v=ujjt29zqMbQ&vl=en",
+          "domain": "youtube.com",
+          "snippet": "Really interesting breakdown. AI productivity is becoming the biggest competitive advantage for teams. I've been experimenting with structured ...",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "What is the best AI tool for research?",
+          "url": "https://www.reddit.com/r/PhD/comments/1qdpgwf/what_is_the_best_ai_tool_for_research/",
+          "domain": "reddit.com",
+          "snippet": null,
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "What is the best AI for scholarly research and writing?",
+          "url": "https://www.quora.com/What-is-the-best-AI-for-scholarly-research-and-writing",
+          "domain": "quora.com",
+          "snippet": null,
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "What are AI tools for populating writing with scientific research?",
+          "url": "https://www.researchgate.net/post/What_are_AI_tools_for_populating_writing_with_scientific_research",
+          "domain": "researchgate.net",
+          "snippet": null,
+          "date": null
+        },
+        {
+          "position": 10,
+          "title": "Artificial Intelligence (AI): AI Tools for Research",
+          "url": "https://guides.lib.purdue.edu/c.php?g=1371380&p=10592801",
+          "domain": "guides.lib.purdue.edu",
+          "snippet": "AI-powered research assistant from Google Labs designed to help users understand and synthesize information from their own uploaded documents ...",
+          "date": "Apr 27, 2026"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "recommended_queries_received": 3,
+    "serp_requests_completed": 3,
+    "total_organic_results": 26,
+    "queries_with_fewer_than_ten_results": [
+      "problem_demand_053",
+      "solution_demand_002"
+    ]
+  }
+}

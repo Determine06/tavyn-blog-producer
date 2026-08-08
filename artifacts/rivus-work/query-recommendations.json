@@ -1,0 +1,438 @@
+{
+  "schema_version": "1.2.0",
+  "run_id": "4a84aafa-0bc9-4238-983d-ebba92f04512",
+  "generated_at": "2026-08-06T14:35:32.341Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-opportunities.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://rivus.work/a/en/",
+  "source_profile": {
+    "company_name": "Rivus",
+    "product_category": "personalized AI workspace",
+    "primary_icp": "people who make their living on their own judgment and write or decide in their own voice"
+  },
+  "selection_policy": {
+    "problem_demand_target": 1,
+    "solution_demand_target": 2,
+    "total_target": 3,
+    "require_exact_total": true,
+    "prefer_product_specific_solution": true,
+    "product_specific_fallback": "best_distinct_solution_demand"
+  },
+  "territory_recommendations": [
+    {
+      "territory": "problem_demand",
+      "candidates_available": 10,
+      "target_recommendations": 1,
+      "recommendations_selected": 1,
+      "assessment": "The selected problem-demand query is the strongest standalone fit because memo-style examples align closely with Rivus’s voice-preserving drafting and judgment-heavy work positioning, while still offering a useful informational page.",
+      "recommendations": [
+        {
+          "recommendation_id": "problem_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "problem_demand_053",
+          "territory": "problem_demand",
+          "query": "memo writing examples",
+          "selection_reasoning": "It offers strong demand, low difficulty, and a direct fit with Rivus’s memo-voice and decision-support positioning, making it the most credible problem-led page among the candidates.",
+          "content_angle": "Use memo examples to teach structure, decision framing, and voice, then show how a context-aware workspace helps refine the draft without making it generic.",
+          "product_connection": "Rivus can appear as the workspace that remembers prior decisions, holds the user's standards, and helps rewrite memo drafts in place without flattening their voice.",
+          "confidence": "high",
+          "opportunity_rank": 2,
+          "validation_reasoning": "The query asks for memo writing examples, which is a core workplace writing workflow Rivus is designed to help draft in the user's voice.",
+          "source_seed_keywords": [
+            "decision memo writing",
+            "strategic memo drafting",
+            "judgment-driven writing",
+            "decision write-up workflow",
+            "memo drafting workflow",
+            "trade-off analysis workflow",
+            "meeting prep documents",
+            "decision review process",
+            "generic ai writing",
+            "context loss in ai work",
+            "write in your own voice",
+            "sharper decision making",
+            "founder decision writing",
+            "knowledge worker memo ownership",
+            "operator judgment work"
+          ],
+          "discovery_rank": 53,
+          "core_keyword": "example of memo writing",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -34,
+              "quarterly": -34,
+              "yearly": -19
+            },
+            "cpc": 2.41,
+            "paid_competition": 0.01,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 8,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 38.9,
+              "referring_domains": 11.2,
+              "main_domain_rank": 609.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "maximum_territory_search_volume": 320,
+            "volume_score": 1,
+            "keyword_difficulty_original": 8,
+            "keyword_difficulty_used": 8,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.92,
+            "opportunity_score": 97.6
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "candidates_available": 10,
+      "target_recommendations": 2,
+      "recommendations_selected": 2,
+      "assessment": "The selected solution-demand queries combine Rivus’s exact category match with a distinct research-tools query, so the page set covers both direct product evaluation and a separate commercial workflow without collapsing into one broad AI-tools article.",
+      "recommendations": [
+        {
+          "recommendation_id": "solution_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "solution_demand_002",
+          "territory": "solution_demand",
+          "query": "ai workspace",
+          "selection_reasoning": "It is the clearest product-specific opportunity because it names Rivus’s exact category, matches commercial evaluation intent, and has enough demand to justify a dedicated page.",
+          "content_angle": "Explain what an AI workspace is, how a personalized one differs from a blank chat, and why persistent context matters for judgment-heavy work.",
+          "product_connection": "Rivus can be introduced as an early-access AI workspace that stores context, learns from repeated use, and rewrites work in place.",
+          "confidence": "high",
+          "opportunity_rank": 1,
+          "validation_reasoning": "It directly names an AI workspace, which is Rivus's product category.",
+          "source_seed_keywords": [
+            "personalized ai workspace",
+            "context aware ai workspace",
+            "judgment support workspace",
+            "personalized ai workspace for knowledge workers",
+            "context aware ai workspace for decision makers",
+            "memo writing workspace for operators",
+            "decision memo software",
+            "memo drafting software",
+            "trade off analysis software",
+            "meeting prep software",
+            "decision review software",
+            "persistent context ai",
+            "multi angle ai analysis",
+            "voice preserving ai writing",
+            "ai writing assistant"
+          ],
+          "discovery_rank": 2,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -45,
+              "quarterly": -80,
+              "yearly": 400
+            },
+            "cpc": 11.39,
+            "paid_competition": 0.16,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 13,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": [
+                "navigational",
+                "informational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 1043.4,
+              "referring_domains": 165.7,
+              "main_domain_rank": 568.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2400,
+            "maximum_territory_search_volume": 2400,
+            "volume_score": 1,
+            "keyword_difficulty_original": 13,
+            "keyword_difficulty_used": 13,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.87,
+            "opportunity_score": 96.1
+          }
+        },
+        {
+          "recommendation_id": "solution_demand_recommendation_02",
+          "recommendation_rank": 2,
+          "query_id": "solution_demand_036",
+          "territory": "solution_demand",
+          "query": "ai tools for research",
+          "selection_reasoning": "It is the strongest remaining distinct solution opportunity because it fits Rivus’s multi-angle analysis and context retention positioning, has meaningful search demand, and stays separate from the core category page.",
+          "content_angle": "Frame the page around AI research tools that help people compare options, synthesize background, and pressure-test decisions, with Rivus positioned as a context-rich workspace for that work.",
+          "product_connection": "Rivus can fit naturally as a research-support tool for people who need persistent context, multiple perspectives, and memo-ready output in their own voice.",
+          "confidence": "medium",
+          "opportunity_rank": 5,
+          "validation_reasoning": "The query targets AI tools for research, a core work-research workflow Rivus can naturally support.",
+          "source_seed_keywords": [
+            "personalized ai workspace",
+            "context aware ai workspace",
+            "judgment support workspace",
+            "personalized ai workspace for knowledge workers",
+            "context aware ai workspace for decision makers",
+            "memo writing workspace for operators",
+            "decision memo software",
+            "memo drafting software",
+            "trade off analysis software",
+            "meeting prep software",
+            "decision review software",
+            "persistent context ai",
+            "multi angle ai analysis",
+            "voice preserving ai writing",
+            "ai writing assistant"
+          ],
+          "discovery_rank": 36,
+          "core_keyword": "ai research tools",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 880,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1600
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 22,
+              "quarterly": 0,
+              "yearly": 0
+            },
+            "cpc": 8.54,
+            "paid_competition": 0.27,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 10,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": [
+                "informational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 1493.5,
+              "referring_domains": 172.6,
+              "main_domain_rank": 562.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 880,
+            "maximum_territory_search_volume": 2400,
+            "volume_score": 0.8712,
+            "keyword_difficulty_original": 10,
+            "keyword_difficulty_used": 10,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.9,
+            "opportunity_score": 88
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_candidates_considered": 20,
+    "problem_candidates_considered": 10,
+    "solution_candidates_considered": 10,
+    "target_recommendations": 3,
+    "problem_recommendations_selected": 1,
+    "solution_recommendations_selected": 2,
+    "total_recommendations_selected": 3,
+    "target_fulfilled": true
+  }
+}

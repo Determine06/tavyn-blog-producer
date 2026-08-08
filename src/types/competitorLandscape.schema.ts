@@ -33,8 +33,10 @@ const ScopeSchema = z
   .object({
     based_on: z.literal("all_validated_queries"),
     confirmed_queries_received: z.number().int().min(1),
+    unique_queries_available: z.number().int().min(1),
     unique_queries_submitted: z.number().int().min(1).max(200),
     duplicate_queries_removed: z.number().int().min(0),
+    provider_limit_queries_omitted: z.number().int().min(0),
     provider_keyword_limit: z.literal(200),
     estimated_traffic_definition: z.literal(
       "Estimated traffic from the analyzed query set, not total domain-wide organic traffic.",
@@ -138,19 +140,19 @@ export const CompetitorLandscapeSchema = z
 
     if (
       artifact.scope.confirmed_queries_received <
-      artifact.scope.unique_queries_submitted
+      artifact.scope.unique_queries_available
     ) {
       context.addIssue({
         code: "custom",
         message:
-          "scope.confirmed_queries_received must be greater than or equal to scope.unique_queries_submitted.",
+          "scope.confirmed_queries_received must be greater than or equal to scope.unique_queries_available.",
         path: ["scope", "confirmed_queries_received"],
       });
     }
 
     const expectedDuplicateQueriesRemoved =
       artifact.scope.confirmed_queries_received -
-      artifact.scope.unique_queries_submitted;
+      artifact.scope.unique_queries_available;
 
     if (
       artifact.scope.duplicate_queries_removed !==
@@ -159,8 +161,24 @@ export const CompetitorLandscapeSchema = z
       context.addIssue({
         code: "custom",
         message:
-          "scope.duplicate_queries_removed must equal confirmed_queries_received minus unique_queries_submitted.",
+          "scope.duplicate_queries_removed must equal confirmed_queries_received minus unique_queries_available.",
         path: ["scope", "duplicate_queries_removed"],
+      });
+    }
+
+    const expectedProviderLimitQueriesOmitted =
+      artifact.scope.unique_queries_available -
+      artifact.scope.unique_queries_submitted;
+
+    if (
+      artifact.scope.provider_limit_queries_omitted !==
+      expectedProviderLimitQueriesOmitted
+    ) {
+      context.addIssue({
+        code: "custom",
+        message:
+          "scope.provider_limit_queries_omitted must equal unique_queries_available minus unique_queries_submitted.",
+        path: ["scope", "provider_limit_queries_omitted"],
       });
     }
 

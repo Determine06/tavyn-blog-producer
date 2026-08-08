@@ -1,0 +1,5451 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "4a84aafa-0bc9-4238-983d-ebba92f04512",
+  "generated_at": "2026-08-06T14:37:46.746Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://rivus.work/a/en/",
+  "target_domain": "rivus.work",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
+    "http_requests_made": 1,
+    "tasks_submitted": 1,
+    "task_id": "08061437-2045-0383-0000-8a8cf69fb027",
+    "task_status_code": 20000,
+    "task_status_message": "Ok.",
+    "total_cost_usd": 0.018
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "include_subdomains": true,
+    "item_types": [
+      "organic"
+    ],
+    "limit": 50,
+    "order_by": [
+      "rating,desc"
+    ],
+    "target_domain_exclusion_filter": "(^|\\.)rivus\\.work$"
+  },
+  "scope": {
+    "based_on": "all_validated_queries",
+    "confirmed_queries_received": 67,
+    "unique_queries_available": 67,
+    "unique_queries_submitted": 67,
+    "duplicate_queries_removed": 0,
+    "provider_limit_queries_omitted": 0,
+    "provider_keyword_limit": 200,
+    "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+  },
+  "summary": {
+    "total_domains_found": 2276,
+    "domains_received": 50,
+    "competitors_included": 50,
+    "target_domain_excluded": true
+  },
+  "competitors": [
+    {
+      "competitor_id": "competitor_youtube-com",
+      "rank": 1,
+      "domain": "youtube.com",
+      "average_position": 14.723076923076922,
+      "median_position": 11,
+      "visibility_rating": 5543,
+      "visibility_index": 10.950000000000001,
+      "estimated_traffic_from_analyzed_queries": 311.1769999999999,
+      "keywords_ranked_count": 65,
+      "query_coverage_percentage": 97.01,
+      "relevant_serp_items": 65,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_153",
+          "query": "write a brief",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_236",
+          "query": "write me a report",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_308",
+          "query": "successful writing at work",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_314",
+          "query": "writing bio for work",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_367",
+          "query": "work review examples",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "context aware ai",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "ai workspace",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "workspace ai",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_008",
+          "query": "ai decision making",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "ai in decision making",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_035",
+          "query": "ai for cfo",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_043",
+          "query": "ai for business leaders",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_184",
+          "query": "productivity ai tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_reddit-com",
+      "rank": 2,
+      "domain": "reddit.com",
+      "average_position": 6.203703703703703,
+      "median_position": 3,
+      "visibility_rating": 5065,
+      "visibility_index": 36.74999999999999,
+      "estimated_traffic_from_analyzed_queries": 2583.7810000000004,
+      "keywords_ranked_count": 54,
+      "query_coverage_percentage": 80.6,
+      "relevant_serp_items": 54,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_153",
+          "query": "write a brief",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "problem_demand_236",
+          "query": "write me a report",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "context aware ai",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "ai workspace",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "workspace ai",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_035",
+          "query": "ai for cfo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_043",
+          "query": "ai for business leaders",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_184",
+          "query": "productivity ai tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_linkedin-com",
+      "rank": 3,
+      "domain": "linkedin.com",
+      "average_position": 16.037037037037038,
+      "median_position": 10,
+      "visibility_rating": 2267,
+      "visibility_index": 8.699999999999998,
+      "estimated_traffic_from_analyzed_queries": 169.553,
+      "keywords_ranked_count": 27,
+      "query_coverage_percentage": 40.3,
+      "relevant_serp_items": 27,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            70
+          ]
+        },
+        {
+          "query_id": "problem_demand_153",
+          "query": "write a brief",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "context aware ai",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_002",
+          "query": "ai workspace",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_035",
+          "query": "ai for cfo",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_043",
+          "query": "ai for business leaders",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_zapier-com",
+      "rank": 4,
+      "domain": "zapier.com",
+      "average_position": 13.454545454545451,
+      "median_position": 4,
+      "visibility_rating": 1904,
+      "visibility_index": 11.8,
+      "estimated_traffic_from_analyzed_queries": 1430.6299999999999,
+      "keywords_ranked_count": 22,
+      "query_coverage_percentage": 32.84,
+      "relevant_serp_items": 22,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_184",
+          "query": "productivity ai tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_medium-com",
+      "rank": 5,
+      "domain": "medium.com",
+      "average_position": 27.166666666666668,
+      "median_position": 16,
+      "visibility_rating": 1748,
+      "visibility_index": 2.0000000000000004,
+      "estimated_traffic_from_analyzed_queries": 51.473000000000006,
+      "keywords_ranked_count": 24,
+      "query_coverage_percentage": 35.82,
+      "relevant_serp_items": 24,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_236",
+          "query": "write me a report",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_001",
+          "query": "context aware ai",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "workspace ai",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_008",
+          "query": "ai decision making",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "ai in decision making",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            95
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_indeed-com",
+      "rank": 6,
+      "domain": "indeed.com",
+      "average_position": 25.049999999999997,
+      "median_position": 13,
+      "visibility_rating": 1499,
+      "visibility_index": 4.3,
+      "estimated_traffic_from_analyzed_queries": 164.46599999999998,
+      "keywords_ranked_count": 20,
+      "query_coverage_percentage": 29.85,
+      "relevant_serp_items": 20,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_153",
+          "query": "write a brief",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_314",
+          "query": "writing bio for work",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "problem_demand_367",
+          "query": "work review examples",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            62
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_ibm-com",
+      "rank": 7,
+      "domain": "ibm.com",
+      "average_position": 11,
+      "median_position": 7,
+      "visibility_rating": 1424,
+      "visibility_index": 6.450000000000001,
+      "estimated_traffic_from_analyzed_queries": 432.8049999999999,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 23.88,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_008",
+          "query": "ai decision making",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_018",
+          "query": "ai in decision making",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_035",
+          "query": "ai for cfo",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_043",
+          "query": "ai for business leaders",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_usemotion-com",
+      "rank": 8,
+      "domain": "usemotion.com",
+      "average_position": 25.94736842105263,
+      "median_position": 21,
+      "visibility_rating": 1407,
+      "visibility_index": 1.4000000000000004,
+      "estimated_traffic_from_analyzed_queries": 32.414,
+      "keywords_ranked_count": 19,
+      "query_coverage_percentage": 28.36,
+      "relevant_serp_items": 19,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_184",
+          "query": "productivity ai tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_lindy-ai",
+      "rank": 9,
+      "domain": "lindy.ai",
+      "average_position": 13.8125,
+      "median_position": 8,
+      "visibility_rating": 1379,
+      "visibility_index": 6.699999999999999,
+      "estimated_traffic_from_analyzed_queries": 739.7719999999999,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 23.88,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_184",
+          "query": "productivity ai tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_quora-com",
+      "rank": 10,
+      "domain": "quora.com",
+      "average_position": 27.41176470588235,
+      "median_position": 23,
+      "visibility_rating": 1234,
+      "visibility_index": 1.7500000000000002,
+      "estimated_traffic_from_analyzed_queries": 51.374,
+      "keywords_ranked_count": 17,
+      "query_coverage_percentage": 25.37,
+      "relevant_serp_items": 17,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_153",
+          "query": "write a brief",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_236",
+          "query": "write me a report",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_blog-hubspot-com",
+      "rank": 11,
+      "domain": "blog.hubspot.com",
+      "average_position": 24.125,
+      "median_position": 21,
+      "visibility_rating": 1214,
+      "visibility_index": 1.1500000000000001,
+      "estimated_traffic_from_analyzed_queries": 27.354,
+      "keywords_ranked_count": 16,
+      "query_coverage_percentage": 23.88,
+      "relevant_serp_items": 16,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "problem_demand_314",
+          "query": "writing bio for work",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_coursera-org",
+      "rank": 12,
+      "domain": "coursera.org",
+      "average_position": 17.857142857142858,
+      "median_position": 12,
+      "visibility_rating": 1150,
+      "visibility_index": 3.4999999999999996,
+      "estimated_traffic_from_analyzed_queries": 137.68699999999998,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 20.9,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_043",
+          "query": "ai for business leaders",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_184",
+          "query": "productivity ai tools",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_grammarly-com",
+      "rank": 13,
+      "domain": "grammarly.com",
+      "average_position": 23.214285714285715,
+      "median_position": 17,
+      "visibility_rating": 1075,
+      "visibility_index": 3.1,
+      "estimated_traffic_from_analyzed_queries": 82.07200000000002,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 20.9,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_236",
+          "query": "write me a report",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_308",
+          "query": "successful writing at work",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_314",
+          "query": "writing bio for work",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_workspace-google-com",
+      "rank": 14,
+      "domain": "workspace.google.com",
+      "average_position": 4.181818181818182,
+      "median_position": 4,
+      "visibility_rating": 1054,
+      "visibility_index": 7.5,
+      "estimated_traffic_from_analyzed_queries": 830.557,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 16.42,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_002",
+          "query": "ai workspace",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_003",
+          "query": "workspace ai",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_salesforce-com",
+      "rank": 15,
+      "domain": "salesforce.com",
+      "average_position": 7.909090909090909,
+      "median_position": 8,
+      "visibility_rating": 1013,
+      "visibility_index": 4.85,
+      "estimated_traffic_from_analyzed_queries": 383.318,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 16.42,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_monday-com",
+      "rank": 16,
+      "domain": "monday.com",
+      "average_position": 27.714285714285715,
+      "median_position": 28,
+      "visibility_rating": 1012,
+      "visibility_index": 0.25,
+      "estimated_traffic_from_analyzed_queries": 30.820999999999998,
+      "keywords_ranked_count": 14,
+      "query_coverage_percentage": 20.9,
+      "relevant_serp_items": 14,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_367",
+          "query": "work review examples",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_digitalocean-com",
+      "rank": 17,
+      "domain": "digitalocean.com",
+      "average_position": 30.384615384615383,
+      "median_position": 27,
+      "visibility_rating": 905,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 15.521,
+      "keywords_ranked_count": 13,
+      "query_coverage_percentage": 19.4,
+      "relevant_serp_items": 13,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_facebook-com",
+      "rank": 18,
+      "domain": "facebook.com",
+      "average_position": 24.75,
+      "median_position": 22,
+      "visibility_rating": 903,
+      "visibility_index": 0.7000000000000002,
+      "estimated_traffic_from_analyzed_queries": 15.616,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 17.91,
+      "relevant_serp_items": 12,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "problem_demand_236",
+          "query": "write me a report",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_367",
+          "query": "work review examples",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_forbes-com",
+      "rank": 19,
+      "domain": "forbes.com",
+      "average_position": 26.416666666666668,
+      "median_position": 23,
+      "visibility_rating": 883,
+      "visibility_index": 1.5999999999999999,
+      "estimated_traffic_from_analyzed_queries": 99.625,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 17.91,
+      "relevant_serp_items": 12,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_367",
+          "query": "work review examples",
+          "positions": [
+            55
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_saner-ai",
+      "rank": 20,
+      "domain": "saner.ai",
+      "average_position": 26.636363636363637,
+      "median_position": 27,
+      "visibility_rating": 807,
+      "visibility_index": 0.9500000000000001,
+      "estimated_traffic_from_analyzed_queries": 247.08199999999997,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 16.42,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_002",
+          "query": "ai workspace",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_adobe-com",
+      "rank": 21,
+      "domain": "adobe.com",
+      "average_position": 30.181818181818183,
+      "median_position": 34,
+      "visibility_rating": 768,
+      "visibility_index": 1.4999999999999998,
+      "estimated_traffic_from_analyzed_queries": 31.331999999999997,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 16.42,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            79
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_techradar-com",
+      "rank": 22,
+      "domain": "techradar.com",
+      "average_position": 24.3,
+      "median_position": 21,
+      "visibility_rating": 757,
+      "visibility_index": 0.2,
+      "estimated_traffic_from_analyzed_queries": 11.819999999999999,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.93,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "workspace ai",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_302",
+          "query": "using ai at work",
+          "positions": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_guides-library-georgetown-edu",
+      "rank": 23,
+      "domain": "guides.library.georgetown.edu",
+      "average_position": 5.625,
+      "median_position": 1,
+      "visibility_rating": 755,
+      "visibility_index": 6.2,
+      "estimated_traffic_from_analyzed_queries": 1015.4809999999999,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_guides-lib-purdue-edu",
+      "rank": 24,
+      "domain": "guides.lib.purdue.edu",
+      "average_position": 5.875,
+      "median_position": 4,
+      "visibility_rating": 753,
+      "visibility_index": 4.45,
+      "estimated_traffic_from_analyzed_queries": 403.03499999999997,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_atlassian-com",
+      "rank": 25,
+      "domain": "atlassian.com",
+      "average_position": 6.5,
+      "median_position": 4,
+      "visibility_rating": 748,
+      "visibility_index": 4.1,
+      "estimated_traffic_from_analyzed_queries": 244.01500000000001,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mindstudio-ai",
+      "rank": 26,
+      "domain": "mindstudio.ai",
+      "average_position": 25.8,
+      "median_position": 20,
+      "visibility_rating": 742,
+      "visibility_index": 1.2,
+      "estimated_traffic_from_analyzed_queries": 42.263999999999996,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.93,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            65
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_owl-purdue-edu",
+      "rank": 27,
+      "domain": "owl.purdue.edu",
+      "average_position": 10.375,
+      "median_position": 1,
+      "visibility_rating": 717,
+      "visibility_index": 4.449999999999999,
+      "estimated_traffic_from_analyzed_queries": 193.065,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "problem_demand_308",
+          "query": "successful writing at work",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_357",
+          "query": "narrative memo",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thoughtspot-com",
+      "rank": 28,
+      "domain": "thoughtspot.com",
+      "average_position": 22.11111111111111,
+      "median_position": 11,
+      "visibility_rating": 701,
+      "visibility_index": 1.7000000000000002,
+      "estimated_traffic_from_analyzed_queries": 63.082999999999984,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 13.43,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_001",
+          "query": "context aware ai",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "solution_demand_008",
+          "query": "ai decision making",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_simplilearn-com",
+      "rank": 29,
+      "domain": "simplilearn.com",
+      "average_position": 42.75,
+      "median_position": 40,
+      "visibility_rating": 687,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 17.325,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 17.91,
+      "relevant_serp_items": 12,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_008",
+          "query": "ai decision making",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_499",
+          "query": "ai-driven decision-making",
+          "positions": [
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_gumloop-com",
+      "rank": 30,
+      "domain": "gumloop.com",
+      "average_position": 3.142857142857143,
+      "median_position": 2,
+      "visibility_rating": 678,
+      "visibility_index": 5.5,
+      "estimated_traffic_from_analyzed_queries": 1080.8870000000002,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 10.45,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_nature-com",
+      "rank": 31,
+      "domain": "nature.com",
+      "average_position": 17,
+      "median_position": 15,
+      "visibility_rating": 664,
+      "visibility_index": 0.3,
+      "estimated_traffic_from_analyzed_queries": 22.055999999999997,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_trellus-ai",
+      "rank": 32,
+      "domain": "trellus.ai",
+      "average_position": 26.333333333333332,
+      "median_position": 18,
+      "visibility_rating": 663,
+      "visibility_index": 0.25,
+      "estimated_traffic_from_analyzed_queries": 21.723,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 13.43,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_canva-com",
+      "rank": 33,
+      "domain": "canva.com",
+      "average_position": 18.25,
+      "median_position": 17,
+      "visibility_rating": 654,
+      "visibility_index": 1.5500000000000003,
+      "estimated_traffic_from_analyzed_queries": 25.636999999999997,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_123",
+          "query": "writing meeting minutes",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_153",
+          "query": "write a brief",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_169",
+          "query": "write a sop",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_495",
+          "query": "intro memo example",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_answerthis-io",
+      "rank": 34,
+      "domain": "answerthis.io",
+      "average_position": 10,
+      "median_position": 8,
+      "visibility_rating": 630,
+      "visibility_index": 1.5500000000000003,
+      "estimated_traffic_from_analyzed_queries": 63.336,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 10.45,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_visme-co",
+      "rank": 35,
+      "domain": "visme.co",
+      "average_position": 31.11111111111111,
+      "median_position": 31,
+      "visibility_rating": 620,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 10.553,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 13.43,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_litmaps-com",
+      "rank": 36,
+      "domain": "litmaps.com",
+      "average_position": 15.428571428571429,
+      "median_position": 16,
+      "visibility_rating": 592,
+      "visibility_index": 0.44999999999999996,
+      "estimated_traffic_from_analyzed_queries": 31.193,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 10.45,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_clickup-com",
+      "rank": 37,
+      "domain": "clickup.com",
+      "average_position": 60.86666666666667,
+      "median_position": 61,
+      "visibility_rating": 587,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 7.476000000000001,
+      "keywords_ranked_count": 15,
+      "query_coverage_percentage": 22.39,
+      "relevant_serp_items": 15,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            68
+          ]
+        },
+        {
+          "query_id": "solution_demand_006",
+          "query": "ai for decision making",
+          "positions": [
+            85
+          ]
+        },
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "solution_demand_046",
+          "query": "ai for program managers",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_057",
+          "query": "ai tools for managers",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_058",
+          "query": "ai tools for consultants",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            90
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            93
+          ]
+        },
+        {
+          "query_id": "solution_demand_081",
+          "query": "best ai tools for product managers",
+          "positions": [
+            67
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            75
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_ringcentral-com",
+      "rank": 38,
+      "domain": "ringcentral.com",
+      "average_position": 18.285714285714285,
+      "median_position": 14,
+      "visibility_rating": 572,
+      "visibility_index": 1.9,
+      "estimated_traffic_from_analyzed_queries": 184.30700000000002,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 10.45,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_232",
+          "query": "write a case study",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_038",
+          "query": "ai for small business",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_cybernews-com",
+      "rank": 39,
+      "domain": "cybernews.com",
+      "average_position": 43.1,
+      "median_position": 41,
+      "visibility_rating": 569,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 10.962,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.93,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            78
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "solution_demand_201",
+          "query": "ai assistant tools",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_perplexity-ai",
+      "rank": 40,
+      "domain": "perplexity.ai",
+      "average_position": 5.833333333333333,
+      "median_position": 5,
+      "visibility_rating": 565,
+      "visibility_index": 3.1,
+      "estimated_traffic_from_analyzed_queries": 190.90699999999998,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 8.96,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thesify-ai",
+      "rank": 41,
+      "domain": "thesify.ai",
+      "average_position": 7.666666666666667,
+      "median_position": 2,
+      "visibility_rating": 554,
+      "visibility_index": 3.8,
+      "estimated_traffic_from_analyzed_queries": 386.919,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 8.96,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_otio-ai",
+      "rank": 42,
+      "domain": "otio.ai",
+      "average_position": 50.36363636363637,
+      "median_position": 49,
+      "visibility_rating": 546,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 14.322,
+      "keywords_ranked_count": 11,
+      "query_coverage_percentage": 16.42,
+      "relevant_serp_items": 11,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_146",
+          "query": "write a report",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            45
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            69
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_099",
+          "query": "ai research assistant",
+          "positions": [
+            56
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_info-library-okstate-edu",
+      "rank": 43,
+      "domain": "info.library.okstate.edu",
+      "average_position": 10,
+      "median_position": 6,
+      "visibility_rating": 540,
+      "visibility_index": 2.1999999999999997,
+      "estimated_traffic_from_analyzed_queries": 64.89100000000002,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 8.96,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_julius-ai",
+      "rank": 44,
+      "domain": "julius.ai",
+      "average_position": 40,
+      "median_position": 31,
+      "visibility_rating": 540,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 9.817,
+      "keywords_ranked_count": 9,
+      "query_coverage_percentage": 13.43,
+      "relevant_serp_items": 9,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_045",
+          "query": "ai tools for work",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            81
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            68
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_makeuseof-com",
+      "rank": 45,
+      "domain": "makeuseof.com",
+      "average_position": 46.6,
+      "median_position": 39,
+      "visibility_rating": 534,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 9.072,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.93,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_003",
+          "query": "workspace ai",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_044",
+          "query": "using ai for research",
+          "positions": [
+            66
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            63
+          ]
+        },
+        {
+          "query_id": "solution_demand_072",
+          "query": "best ai tool for work",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_236",
+          "query": "ai organization tools",
+          "positions": [
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_activepieces-com",
+      "rank": 46,
+      "domain": "activepieces.com",
+      "average_position": 24.571428571428573,
+      "median_position": 25,
+      "visibility_rating": 528,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 26.733999999999998,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 10.45,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_028",
+          "query": "ai for operations",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_030",
+          "query": "ai for workflows",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "solution_demand_048",
+          "query": "best ai tools for businesses",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "solution_demand_066",
+          "query": "ai workflows",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_133",
+          "query": "ai workflow tools",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "solution_demand_196",
+          "query": "generative ai workflows",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_210",
+          "query": "make ai workflow",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_researchpal-co",
+      "rank": 47,
+      "domain": "researchpal.co",
+      "average_position": 12.333333333333334,
+      "median_position": 12,
+      "visibility_rating": 526,
+      "visibility_index": 0.7500000000000002,
+      "estimated_traffic_from_analyzed_queries": 26.124000000000002,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 8.96,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_036",
+          "query": "ai tools for research",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "solution_demand_098",
+          "query": "ai research tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_100",
+          "query": "research ai tools",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "solution_demand_208",
+          "query": "best ai research tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_229",
+          "query": "best research ai tools",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_rippling-com",
+      "rank": 48,
+      "domain": "rippling.com",
+      "average_position": 12.5,
+      "median_position": 11,
+      "visibility_rating": 525,
+      "visibility_index": 0.6500000000000001,
+      "estimated_traffic_from_analyzed_queries": 14.824,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 8.96,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_367",
+          "query": "work review examples",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_063",
+          "query": "ai tools for small businesses",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_086",
+          "query": "best ai tools for small business",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_114",
+          "query": "ai powered tools for small businesses",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_jotform-com",
+      "rank": 49,
+      "domain": "jotform.com",
+      "average_position": 48.9,
+      "median_position": 50,
+      "visibility_rating": 511,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 10.899,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 14.93,
+      "relevant_serp_items": 10,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_102",
+          "query": "write recommendation",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "problem_demand_459",
+          "query": "writing a statement for work incident",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_037",
+          "query": "ai tools for business",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_056",
+          "query": "best ai tools for research",
+          "positions": [
+            61
+          ]
+        },
+        {
+          "query_id": "solution_demand_062",
+          "query": "ai tools for product managers",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "solution_demand_067",
+          "query": "top ai tools for business",
+          "positions": [
+            59
+          ]
+        },
+        {
+          "query_id": "solution_demand_071",
+          "query": "ai tools for finance professionals",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "solution_demand_080",
+          "query": "ai powered tools for business",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "solution_demand_112",
+          "query": "ai productivity tools",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "solution_demand_156",
+          "query": "business ai tools",
+          "positions": [
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_scribd-com",
+      "rank": 50,
+      "domain": "scribd.com",
+      "average_position": 36.5,
+      "median_position": 17,
+      "visibility_rating": 508,
+      "visibility_index": 0.8,
+      "estimated_traffic_from_analyzed_queries": 9.118,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 11.94,
+      "relevant_serp_items": 8,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_053",
+          "query": "memo writing examples",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_077",
+          "query": "write a statement of work",
+          "positions": [
+            90
+          ]
+        },
+        {
+          "query_id": "problem_demand_093",
+          "query": "analysis memo example",
+          "positions": [
+            44
+          ]
+        },
+        {
+          "query_id": "problem_demand_308",
+          "query": "successful writing at work",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "scope of work writing",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_387",
+          "query": "writing a statement of work",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_446",
+          "query": "research memo example",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_490",
+          "query": "research memo examples",
+          "positions": [
+            15
+          ]
+        }
+      ]
+    }
+  ]
+}

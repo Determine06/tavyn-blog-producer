@@ -91,25 +91,33 @@ export async function generateCompetitorLandscape(
     validatedConfirmedQueries.confirmed_queries,
   );
 
-  if (queryPreparation.uniqueQueries.length > PROVIDER_KEYWORD_LIMIT) {
-    throw new Error(
-      `Cannot generate competitor landscape because ${queryPreparation.uniqueQueries.length} unique confirmed queries exceeds the DataForSEO limit of ${PROVIDER_KEYWORD_LIMIT}.`,
-    );
-  }
+  const providerSubmittedQueries = queryPreparation.uniqueQueries.slice(
+    0,
+    PROVIDER_KEYWORD_LIMIT,
+  );
+  const providerSubmittedQueryEntries = new Map(
+    providerSubmittedQueries.map((entry) => [entry.normalizedQuery, entry]),
+  );
+  const providerLimitQueriesOmitted =
+    queryPreparation.uniqueQueries.length - providerSubmittedQueries.length;
 
   logInfo(
     `Confirmed queries received: ${validatedConfirmedQueries.confirmed_queries.length}`,
   );
-  logInfo(`Unique queries submitted: ${queryPreparation.uniqueQueries.length}`);
+  logInfo(
+    `Unique confirmed query strings available: ${queryPreparation.uniqueQueries.length}`,
+  );
+  logInfo(`Unique queries submitted: ${providerSubmittedQueries.length}`);
   logInfo(
     `Duplicate query strings removed: ${queryPreparation.duplicateQueriesRemoved}`,
   );
+  logInfo(`Provider-limit queries omitted: ${providerLimitQueriesOmitted}`);
   logInfo("DataForSEO HTTP requests made: 1");
   logInfo("DataForSEO tasks submitted: 1");
 
   const targetDomainExclusionFilter = buildTargetDomainRegex(targetDomain);
   const response = await fetchCompetitorLandscape(
-    queryPreparation.uniqueQueries.map((entry) => entry.normalizedQuery),
+    providerSubmittedQueries.map((entry) => entry.normalizedQuery),
     targetDomainExclusionFilter,
   );
   recordDataForSeoUsage("Competitor landscape", 1, 1, response.cost);
@@ -118,6 +126,12 @@ export async function generateCompetitorLandscape(
   if (queryPreparation.duplicateQueriesRemoved > 0) {
     warnings.push(
       `${queryPreparation.duplicateQueriesRemoved} duplicate confirmed query string${queryPreparation.duplicateQueriesRemoved === 1 ? "" : "s"} removed before provider submission.`,
+    );
+  }
+
+  if (providerLimitQueriesOmitted > 0) {
+    warnings.push(
+      `${providerLimitQueriesOmitted} unique confirmed query string${providerLimitQueriesOmitted === 1 ? "" : "s"} omitted from competitor landscape provider submission because DataForSEO accepts at most ${PROVIDER_KEYWORD_LIMIT} keywords.`,
     );
   }
 
@@ -131,7 +145,7 @@ export async function generateCompetitorLandscape(
   const competitors = normalizeCompetitors(
     response.task.result.items,
     targetDomain,
-    queryPreparation.normalizedQueryEntries,
+    providerSubmittedQueryEntries,
     validatedConfirmedQueries.confirmed_queries,
     unmatchedProviderKeys,
   );
@@ -180,8 +194,10 @@ export async function generateCompetitorLandscape(
       based_on: "all_validated_queries",
       confirmed_queries_received:
         validatedConfirmedQueries.confirmed_queries.length,
-      unique_queries_submitted: queryPreparation.uniqueQueries.length,
+      unique_queries_available: queryPreparation.uniqueQueries.length,
+      unique_queries_submitted: providerSubmittedQueries.length,
       duplicate_queries_removed: queryPreparation.duplicateQueriesRemoved,
+      provider_limit_queries_omitted: providerLimitQueriesOmitted,
       provider_keyword_limit: PROVIDER_KEYWORD_LIMIT,
       estimated_traffic_definition: ESTIMATED_TRAFFIC_DEFINITION,
     },

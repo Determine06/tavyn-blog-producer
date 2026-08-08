@@ -49,6 +49,11 @@ type QuerySerp = SerpResults["query_serps"][number];
 type ContentRecommendationItem =
   ContentRecommendation["content_recommendations"][number];
 type QueryMetrics = ConfirmedQuery["metrics"];
+type SearchIntent =
+  | "informational"
+  | "navigational"
+  | "commercial"
+  | "transactional";
 
 export function generateCompanyReport(
   companyProfile: CompanyProfile,
@@ -92,7 +97,7 @@ export function generateCompanyReport(
   const companyName =
     validatedCompanyProfile.company_identity.company_name.value;
   const report = CompanyReportSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     report_id: `report_${runId}`,
     report_slug: `${slugify(companyName)}-seo-analysis`,
     run_id: runId,
@@ -609,9 +614,33 @@ function mapFinalQueryMetrics(metrics: QueryMetrics) {
     paid_competition: metrics.paid_competition,
     paid_competition_level: metrics.paid_competition_level,
     keyword_difficulty: metrics.keyword_difficulty,
-    search_intent: metrics.search_intent,
+    search_intent: normalizeSearchIntentInfo(metrics.search_intent),
     average_top_10: metrics.average_top_10,
   };
+}
+
+function normalizeSearchIntentInfo(
+  searchIntent: QueryMetrics["search_intent"],
+) {
+  return {
+    main: toSearchIntentOrNull(searchIntent.main),
+    secondary: searchIntent.secondary
+      .map((intent) => toSearchIntentOrNull(intent))
+      .filter((intent): intent is SearchIntent => intent !== null),
+  };
+}
+
+function toSearchIntentOrNull(value: unknown): SearchIntent | null {
+  if (
+    value === "informational" ||
+    value === "navigational" ||
+    value === "commercial" ||
+    value === "transactional"
+  ) {
+    return value;
+  }
+
+  return null;
 }
 
 function requireContentRecommendationField(

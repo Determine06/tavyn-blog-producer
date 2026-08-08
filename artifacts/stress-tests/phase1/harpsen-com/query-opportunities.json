@@ -1,0 +1,2268 @@
+{
+  "schema_version": "1.2.0",
+  "run_id": "db8d9dbb-d341-4537-8515-66c47a414de3",
+  "generated_at": "2026-07-26T07:38:51.693Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://www.harpsen.com/",
+  "scoring_method": {
+    "name": "search_demand_times_organic_attainability",
+    "version": "1.1.0",
+    "missing_keyword_difficulty_default": 50,
+    "volume_normalization": "log1p_relative_to_territory_max",
+    "combination_method": "multiplicative",
+    "formula": "100 * volume_score * difficulty_score"
+  },
+  "territory_rankings": [
+    {
+      "territory": "problem_demand",
+      "confirmed_query_count": 98,
+      "maximum_search_volume": 6600,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "problem_demand_004",
+          "territory": "problem_demand",
+          "query": "wedding planning checklist",
+          "validation_reasoning": "The query asks for a wedding planning checklist, a manual planning workflow that Harpsen’s software and templates can directly support.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 4,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 60500,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 27100
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 18100
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 14800
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 18100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 368000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 246000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -55
+            },
+            "cpc": 1.89,
+            "paid_competition": 1,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 4,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 190.5,
+              "referring_domains": 92.8,
+              "main_domain_rank": 429
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 60500,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 1,
+            "keyword_difficulty_original": 4,
+            "keyword_difficulty_used": 4,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.96,
+            "opportunity_score": 98.8
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "problem_demand_014",
+          "territory": "problem_demand",
+          "query": "wedding planning resources",
+          "validation_reasoning": "The query seeks wedding planning resources, which can naturally include the checklists, templates, and workflows Harpsen supports.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 14,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 9900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 14800
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 14800
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 40500
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 880
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 177,
+              "yearly": 50
+            },
+            "cpc": 3.2,
+            "paid_competition": 0.12,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 5,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 209.9,
+              "referring_domains": 85.2,
+              "main_domain_rank": 382.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 9900,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 1,
+            "keyword_difficulty_original": 5,
+            "keyword_difficulty_used": 5,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.95,
+            "opportunity_score": 98.5
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "problem_demand_011",
+          "territory": "problem_demand",
+          "query": "wedding planning timeline",
+          "validation_reasoning": "The query asks for a wedding planning timeline, a core planning workflow directly supported by Harpsen’s timeline tools.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 11,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 6600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 8100
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 23,
+              "quarterly": 23,
+              "yearly": 0
+            },
+            "cpc": 1.45,
+            "paid_competition": 1,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 6,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 233.6,
+              "referring_domains": 98.5,
+              "main_domain_rank": 370.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 6600,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 1,
+            "keyword_difficulty_original": 6,
+            "keyword_difficulty_used": 6,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.94,
+            "opportunity_score": 98.2
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "problem_demand_013",
+          "territory": "problem_demand",
+          "query": "wedding planning spreadsheet",
+          "validation_reasoning": "The query asks for a wedding planning spreadsheet, a manual planning alternative that Harpsen can realistically replace or improve.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 13,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2400,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 3600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 2900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": 0
+            },
+            "cpc": 4.59,
+            "paid_competition": 1,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 20.1,
+              "referring_domains": 15.4,
+              "main_domain_rank": 560.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2400,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 0.885,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 92
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "problem_demand_002",
+          "territory": "problem_demand",
+          "query": "wedding planning platforms",
+          "validation_reasoning": "The query seeks wedding planning platforms, which is the same product category Harpsen sells to wedding and event professionals.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 2,
+          "core_keyword": "wedding planning platform",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 165000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 368000
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 301000
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 450000
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 246000
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 22200
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 246000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 60500
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 33100
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 14800
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 110000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 90500
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 18100
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 22,
+              "quarterly": -18,
+              "yearly": 114900
+            },
+            "cpc": 11.49,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 31,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 330901.6,
+              "referring_domains": 1517.6,
+              "main_domain_rank": 416.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 165000,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 1,
+            "keyword_difficulty_original": 31,
+            "keyword_difficulty_used": 31,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.69,
+            "opportunity_score": 90.7
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "problem_demand_006",
+          "territory": "problem_demand",
+          "query": "wedding budget planner",
+          "validation_reasoning": "The query targets a wedding budget planner, a budgeting workflow that aligns with Harpsen’s budget and expense tracking tools.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 6,
+          "core_keyword": "wedding planners on a budget",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 40500,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 4400
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 5400
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 8100
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 368000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -46,
+              "yearly": -80
+            },
+            "cpc": 3.51,
+            "paid_competition": 0.19,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 34,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 246.7,
+              "referring_domains": 54.4,
+              "main_domain_rank": 479.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 40500,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 1,
+            "keyword_difficulty_original": 34,
+            "keyword_difficulty_used": 34,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.66,
+            "opportunity_score": 89.8
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "problem_demand_024",
+          "territory": "problem_demand",
+          "query": "wedding planning software",
+          "validation_reasoning": "The query directly seeks wedding planning software, which is Harpsen’s core product category.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 24,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 5400
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 8100
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 480
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -81,
+              "quarterly": -88,
+              "yearly": 108
+            },
+            "cpc": 23.84,
+            "paid_competition": 0.21,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 12,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 391.4,
+              "referring_domains": 135.3,
+              "main_domain_rank": 353.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1600,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 0.8389,
+            "keyword_difficulty_original": 12,
+            "keyword_difficulty_used": 12,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.88,
+            "opportunity_score": 85.1
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "problem_demand_033",
+          "territory": "problem_demand",
+          "query": "wedding planning binder",
+          "validation_reasoning": "The query asks for a wedding planning binder, which is a manual organization method that Harpsen’s software can replace.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 33,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 2900
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -28
+            },
+            "cpc": 1.07,
+            "paid_competition": 1,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "transactional",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 5.2,
+              "referring_domains": 3,
+              "main_domain_rank": 496.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1000,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 0.7855,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 85
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "problem_demand_046",
+          "territory": "problem_demand",
+          "query": "wedding planning notebook",
+          "validation_reasoning": "The query asks for a wedding planning notebook, a manual planning alternative that Harpsen’s software can replace.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 46,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 880,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1000
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 0,
+              "yearly": -18
+            },
+            "cpc": 0.86,
+            "paid_competition": 1,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 0.7,
+              "referring_domains": 0.7,
+              "main_domain_rank": 512.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 880,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 0.771,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 84
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "problem_demand_134",
+          "territory": "problem_demand",
+          "query": "wedding planning checklist pdf",
+          "validation_reasoning": "The query asks for a wedding planning checklist PDF, which is a manual planning alternative aligned with Harpsen’s workflows.",
+          "source_seed_keywords": [
+            "wedding planning",
+            "wedding planner workflow",
+            "wedding client management",
+            "wedding planning operations",
+            "event planning workflow",
+            "event coordination"
+          ],
+          "discovery_rank": 134,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1000,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 880
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1300
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -12,
+              "yearly": -32
+            },
+            "cpc": 1.37,
+            "paid_competition": 1,
+            "paid_competition_level": "HIGH",
+            "keyword_difficulty": 4,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 115.7,
+              "referring_domains": 33,
+              "main_domain_rank": 484.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1000,
+            "maximum_territory_search_volume": 6600,
+            "volume_score": 0.7855,
+            "keyword_difficulty_original": 4,
+            "keyword_difficulty_used": 4,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.96,
+            "opportunity_score": 83.8
+          }
+        }
+      ]
+    },
+    {
+      "territory": "solution_demand",
+      "confirmed_query_count": 35,
+      "maximum_search_volume": 18100,
+      "selected_query_count": 10,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "solution_demand_192",
+          "territory": "solution_demand",
+          "query": "crm software cloud",
+          "validation_reasoning": "The query seeks cloud CRM software, which matches Harpsen’s cloud-based wedding and event CRM.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 192,
+          "core_keyword": "software crm cloud",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 18100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 12100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 33100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 27100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 22200
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -76,
+              "quarterly": -87,
+              "yearly": -91
+            },
+            "cpc": 15.9,
+            "paid_competition": 0.05,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 18,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 221.5,
+              "referring_domains": 77,
+              "main_domain_rank": 573.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 18100,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 18,
+            "keyword_difficulty_used": 18,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.82,
+            "opportunity_score": 94.6
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "solution_demand_041",
+          "territory": "solution_demand",
+          "query": "cloud crm software",
+          "validation_reasoning": "The query seeks cloud CRM software, and Harpsen is a cloud-based wedding and event CRM product.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 41,
+          "core_keyword": "software crm cloud",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 18100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 12100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 33100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 27100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 22200
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -76,
+              "quarterly": -87,
+              "yearly": 319
+            },
+            "cpc": 15.9,
+            "paid_competition": 0.05,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 21,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 142.9,
+              "referring_domains": 30.4,
+              "main_domain_rank": 552.3
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 18100,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 21,
+            "keyword_difficulty_used": 21,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.79,
+            "opportunity_score": 93.7
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "solution_demand_094",
+          "territory": "solution_demand",
+          "query": "cloud-based crm software",
+          "validation_reasoning": "The query seeks cloud-based CRM software, which fits Harpsen’s cloud SaaS CRM product.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 94,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 18100,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 3600
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 6600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 12100
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 18100
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 33100
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 27100
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 22200
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 22200
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -76,
+              "quarterly": -87,
+              "yearly": -91
+            },
+            "cpc": 15.9,
+            "paid_competition": 0.05,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 21,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 217.3,
+              "referring_domains": 76.3,
+              "main_domain_rank": 537.1
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 18100,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 1,
+            "keyword_difficulty_original": 21,
+            "keyword_difficulty_used": 21,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.79,
+            "opportunity_score": 93.7
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "solution_demand_020",
+          "territory": "solution_demand",
+          "query": "project management software with crm",
+          "validation_reasoning": "The query asks for project management software with CRM, which matches Harpsen’s combined CRM and project workflow.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 20,
+          "core_keyword": "crm project management software",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 243,
+              "quarterly": 129,
+              "yearly": -19
+            },
+            "cpc": 59.15,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 32.7,
+              "referring_domains": 8.7,
+              "main_domain_rank": 565.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.6088,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 70.5
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "solution_demand_021",
+          "territory": "solution_demand",
+          "query": "crm and project management software",
+          "validation_reasoning": "The query is for CRM and project management software, a category Harpsen directly serves.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 21,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 590
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 243,
+              "quarterly": 129,
+              "yearly": -19
+            },
+            "cpc": 59.15,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 35.1,
+              "referring_domains": 11.9,
+              "main_domain_rank": 546.2
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.6088,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.93,
+            "opportunity_score": 70.5
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "solution_demand_099",
+          "territory": "solution_demand",
+          "query": "event management platform",
+          "validation_reasoning": "The query seeks an event management platform, which is within Harpsen’s event planning software territory.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 99,
+          "core_keyword": "event management platforms",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 2900,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 2900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 2400
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 2400
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 9900
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 5400
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -16,
+              "quarterly": -33,
+              "yearly": -33
+            },
+            "cpc": 103.65,
+            "paid_competition": 0.17,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 58,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 544.7,
+              "referring_domains": 205.2,
+              "main_domain_rank": 523
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 2900,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.8132,
+            "keyword_difficulty_original": 58,
+            "keyword_difficulty_used": 58,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.42,
+            "opportunity_score": 69.5
+          }
+        },
+        {
+          "rank": 7,
+          "query_id": "solution_demand_141",
+          "territory": "solution_demand",
+          "query": "crm document management system",
+          "validation_reasoning": "The query seeks a CRM document management system, which matches Harpsen’s CRM plus contracts, invoices, and file workflow.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 141,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 140,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 110
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -20,
+              "yearly": -20
+            },
+            "cpc": 17.36,
+            "paid_competition": 0.14,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 6.3,
+              "referring_domains": 3.7,
+              "main_domain_rank": 505.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 140,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.5048,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 1,
+            "opportunity_score": 65.3
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "solution_demand_092",
+          "territory": "solution_demand",
+          "query": "online event management software",
+          "validation_reasoning": "The query seeks online event management software, which matches Harpsen’s event planning software category.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 92,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 590,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 6600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -29,
+              "quarterly": -55,
+              "yearly": -87
+            },
+            "cpc": 94.36,
+            "paid_competition": 0.19,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 37,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 446.3,
+              "referring_domains": 158.2,
+              "main_domain_rank": 476.1
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 590,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.651,
+            "keyword_difficulty_original": 37,
+            "keyword_difficulty_used": 37,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.63,
+            "opportunity_score": 64.5
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "solution_demand_084",
+          "territory": "solution_demand",
+          "query": "best event management software",
+          "validation_reasoning": "The query seeks best event management software, which fits Harpsen’s event planning software category.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 84,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 260,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": 50,
+              "yearly": -34
+            },
+            "cpc": 61.14,
+            "paid_competition": 0.27,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 20,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 136.5,
+              "referring_domains": 74.2,
+              "main_domain_rank": 670
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 260,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.5676,
+            "keyword_difficulty_original": 20,
+            "keyword_difficulty_used": 20,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.8,
+            "opportunity_score": 63.7
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "solution_demand_461",
+          "territory": "solution_demand",
+          "query": "event booking software",
+          "validation_reasoning": "The query seeks event booking software, and Harpsen directly supports booking clients through its proposal, contract, and payment workflow for event professionals.",
+          "source_seed_keywords": [
+            "wedding planner CRM",
+            "wedding planning software",
+            "event planning software",
+            "CRM for wedding planners",
+            "event workflow automation",
+            "event management software"
+          ],
+          "discovery_rank": 461,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 390,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 320
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 243,
+              "quarterly": 50,
+              "yearly": 23
+            },
+            "cpc": 63.56,
+            "paid_competition": 0.11,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 31,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 4404,
+              "referring_domains": 191.8,
+              "main_domain_rank": 526.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 390,
+            "maximum_territory_search_volume": 18100,
+            "volume_score": 0.6088,
+            "keyword_difficulty_original": 31,
+            "keyword_difficulty_used": 31,
+            "keyword_difficulty_was_imputed": false,
+            "difficulty_score": 0.69,
+            "opportunity_score": 63.3
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "confirmed_queries_considered": 133,
+    "problem_queries_considered": 98,
+    "solution_queries_considered": 35,
+    "problem_queries_selected": 10,
+    "solution_queries_selected": 10,
+    "total_queries_selected": 20,
+    "missing_keyword_difficulty_selected": 0
+  }
+}
