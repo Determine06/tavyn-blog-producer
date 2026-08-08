@@ -187,7 +187,7 @@ export function buildCompanyArgs(
   company: Phase1Company,
   options: Phase1Options,
 ): string[] {
-  const args = [company.url];
+  const args: string[] = [company.url];
 
   args.push(options.cacheMode === "cache" ? "--cache" : "--no-cache");
   args.push("--artifact-root", phase1SuiteDirectory);

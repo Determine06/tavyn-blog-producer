@@ -4,18 +4,18 @@ import test from "node:test";
 
 import { SeedKeywordsSchema } from "./seedKeywords.schema.js";
 
-const problemRoles = [
+const problemRoles: readonly string[] = [
   "core_problem",
   "icp_qualified_problem",
   "process_or_outcome",
   "market_synonym",
-] as const;
-const solutionRoles = [
+];
+const solutionRoles: readonly string[] = [
   "core_solution_category",
   "icp_qualified_solution",
   "solution_approach",
   "commercial_category",
-] as const;
+];
 
 test("SeedKeywordsSchema accepts fifteen problem seeds and fifteen solution seeds", () => {
   const parsed = SeedKeywordsSchema.parse(buildSeedArtifact());

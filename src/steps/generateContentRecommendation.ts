@@ -390,15 +390,29 @@ function buildUniqueRecommendationsByRecommendationId(
 function buildSummary(
   recommendations: ContentRecommendation["content_recommendations"],
 ): ContentRecommendation["summary"] {
+  const recommendationCount = recommendations.length;
+  const problemDemandCount = recommendations.filter(
+    (recommendation) => recommendation.territory === "problem_demand",
+  ).length;
+  const solutionDemandCount = recommendations.filter(
+    (recommendation) => recommendation.territory === "solution_demand",
+  ).length;
+
+  if (
+    recommendationCount !== 3 ||
+    problemDemandCount !== 1 ||
+    solutionDemandCount !== 2
+  ) {
+    throw new Error(
+      `Cannot generate content recommendation summary because content recommendations supplied ${recommendationCount} recommendations (${problemDemandCount} problem_demand and ${solutionDemandCount} solution_demand); required exactly 3 with 1 problem_demand and 2 solution_demand.`,
+    );
+  }
+
   return {
-    recommendations_received: recommendations.length,
-    recommendations_analyzed: recommendations.length,
-    problem_demand_count: recommendations.filter(
-      (recommendation) => recommendation.territory === "problem_demand",
-    ).length,
-    solution_demand_count: recommendations.filter(
-      (recommendation) => recommendation.territory === "solution_demand",
-    ).length,
+    recommendations_received: 3,
+    recommendations_analyzed: 3,
+    problem_demand_count: 1,
+    solution_demand_count: 2,
     high_confidence_count: recommendations.filter(
       (recommendation) =>
         recommendation.editorial_recommendation.confidence === "high",

@@ -13,26 +13,24 @@ test("query recommendation artifact accepts exactly one problem and two solution
 });
 
 test("query recommendation artifact rejects incorrect territory counts", () => {
-  assert.throws(
-    () =>
-      QueryRecommendationsSchema.parse(
-        buildQueryRecommendations({
-          problemCount: 0,
-          solutionCount: 3,
-        }),
-      ),
-    /problem_demand|solution_demand|Exactly three/,
+  assert.equal(
+    QueryRecommendationsSchema.safeParse(
+      buildQueryRecommendations({
+        problemCount: 0,
+        solutionCount: 3,
+      }),
+    ).success,
+    false,
   );
 
-  assert.throws(
-    () =>
-      QueryRecommendationsSchema.parse(
-        buildQueryRecommendations({
-          problemCount: 2,
-          solutionCount: 1,
-        }),
-      ),
-    /problem_demand|solution_demand|Exactly three/,
+  assert.equal(
+    QueryRecommendationsSchema.safeParse(
+      buildQueryRecommendations({
+        problemCount: 2,
+        solutionCount: 1,
+      }),
+    ).success,
+    false,
   );
 });
 

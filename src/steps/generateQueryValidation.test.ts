@@ -793,7 +793,7 @@ function buildCompanyProfile(): CompanyProfile {
         evidence: [],
       },
     },
-  } as CompanyProfile;
+  } as unknown as CompanyProfile;
 }
 
 function buildKeywordMetrics(
