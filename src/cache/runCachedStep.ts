@@ -15,18 +15,29 @@ export type RunCachedStepOptions<T> = {
   stepName: string;
   artifactPath: string;
   force?: boolean;
+  parseCached?: (artifact: unknown) => T;
   run: () => Promise<T>;
 };
 
 export async function runCachedStep<T>(
   options: RunCachedStepOptions<T>,
 ): Promise<CachedStepResult<T>> {
-  const { stepName, artifactPath, force = false, run } = options;
+  const {
+    stepName,
+    artifactPath,
+    force = false,
+    parseCached,
+    run,
+  } = options;
 
   if (!force) {
     try {
       const cachedArtifact = await readFile(artifactPath, "utf8");
-      const data = JSON.parse(cachedArtifact) as T;
+      const parsedArtifact: unknown = JSON.parse(cachedArtifact);
+      const data =
+        parseCached === undefined
+          ? (parsedArtifact as T)
+          : parseCached(parsedArtifact);
 
       logInfo(`Using cached artifact for ${stepName}: ${artifactPath}`);
 

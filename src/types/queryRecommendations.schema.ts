@@ -1,24 +1,12 @@
 import { z } from "zod";
 
 import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
+import { OpportunityMetricsSchema } from "./opportunityScoring.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const ConfidenceSchema = z.enum(["high", "medium", "low"]);
 const SEEDS_PER_TERRITORY = 15;
-
-const OpportunityMetricsSchema = z
-  .object({
-    search_volume_used: z.number().int().min(0),
-    maximum_territory_search_volume: z.number().int().min(0),
-    volume_score: z.number().min(0).max(1),
-    keyword_difficulty_original: z.number().int().min(0).max(100).nullable(),
-    keyword_difficulty_used: z.number().int().min(0).max(100),
-    keyword_difficulty_was_imputed: z.boolean(),
-    difficulty_score: z.number().min(0).max(1),
-    opportunity_score: z.number().min(0).max(100),
-  })
-  .strict();
 
 const QueryRecommendationDecisionQuerySchema = z
   .object({
@@ -205,7 +193,7 @@ const SummarySchema = z
 
 export const QueryRecommendationsSchema = z
   .object({
-    schema_version: z.literal("1.2.0"),
+    schema_version: z.literal("2.0.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z

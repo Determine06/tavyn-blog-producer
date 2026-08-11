@@ -1,6 +1,6 @@
 import { logInfo, logStep, logSuccess } from "../lib/logger.js";
 import {
-  MISSING_KEYWORD_DIFFICULTY_DEFAULT,
+  OPPORTUNITY_SCORING_METHOD,
   calculateOpportunityScore,
   calculateTerritoryP95SearchVolume,
 } from "../lib/opportunityScoring.js";
@@ -21,12 +21,12 @@ type ConfirmedQuery = ConfirmedQueries["confirmed_queries"][number];
 type ScoredQuery = {
   query: ConfirmedQuery;
   searchVolumeUsed: number;
-  maximumTerritorySearchVolume: number;
-  volumeScore: number;
+  territoryP95SearchVolume: number;
+  demandScore: number;
   keywordDifficultyOriginal: number | null;
   keywordDifficultyUsed: number;
   keywordDifficultyWasImputed: boolean;
-  difficultyScore: number;
+  attainabilityScore: number;
   opportunityScore: number;
 };
 
@@ -38,14 +38,40 @@ export async function generateQueryOpportunities(
 
   const validatedConfirmedQueries =
     ConfirmedQueriesSchema.parse(confirmedQueries);
+  const problemQueries = validatedConfirmedQueries.confirmed_queries.filter(
+    (query) => query.territory === "problem_demand",
+  );
+  const solutionQueries = validatedConfirmedQueries.confirmed_queries.filter(
+    (query) => query.territory === "solution_demand",
+  );
+  const problemTerritoryP95SearchVolume =
+    calculateTerritoryP95SearchVolume(problemQueries);
+  const solutionTerritoryP95SearchVolume =
+    calculateTerritoryP95SearchVolume(solutionQueries);
+  const scoredQueries = validatedConfirmedQueries.confirmed_queries.map(
+    (query) =>
+      scoreQuery(
+        query,
+        query.territory === "problem_demand"
+          ? problemTerritoryP95SearchVolume
+          : solutionTerritoryP95SearchVolume,
+      ),
+  );
   const problemRanking = buildTerritoryRanking(
-    validatedConfirmedQueries.confirmed_queries,
+    scoredQueries,
     "problem_demand",
+    problemTerritoryP95SearchVolume,
   );
   const solutionRanking = buildTerritoryRanking(
-    validatedConfirmedQueries.confirmed_queries,
+    scoredQueries,
     "solution_demand",
+    solutionTerritoryP95SearchVolume,
   );
+  const allScoredQueries = scoredQueries.map((scoredQuery) => ({
+    query_id: scoredQuery.query.query_id,
+    territory: scoredQuery.query.territory,
+    opportunity_metrics: buildOpportunityMetrics(scoredQuery),
+  }));
   const selectedQueries = [
     ...problemRanking.queries,
     ...solutionRanking.queries,
@@ -57,22 +83,19 @@ export async function generateQueryOpportunities(
   const missingKeywordDifficultySelected = selectedQueries.filter(
     (query) => query.opportunity_metrics.keyword_difficulty_was_imputed,
   ).length;
+  const missingKeywordDifficultyScored = allScoredQueries.filter(
+    (query) => query.opportunity_metrics.keyword_difficulty_was_imputed,
+  ).length;
   const queryOpportunities = QueryOpportunitiesSchema.parse({
-    schema_version: "1.2.0",
+    schema_version: "2.1.0",
     run_id: runId,
     generated_at: new Date().toISOString(),
     source_artifacts: ["confirmed-queries.json"],
     status: "complete",
     warnings,
     website_url: validatedConfirmedQueries.website_url,
-    scoring_method: {
-      name: "search_demand_times_organic_attainability",
-      version: "1.1.0",
-      missing_keyword_difficulty_default: MISSING_KEYWORD_DIFFICULTY_DEFAULT,
-      volume_normalization: "log1p_relative_to_territory_max",
-      combination_method: "multiplicative",
-      formula: "100 * volume_score * difficulty_score",
-    },
+    scoring_method: OPPORTUNITY_SCORING_METHOD,
+    all_scored_queries: allScoredQueries,
     territory_rankings: [problemRanking, solutionRanking],
     summary: {
       confirmed_queries_considered:
@@ -82,6 +105,10 @@ export async function generateQueryOpportunities(
       problem_queries_selected: problemRanking.selected_query_count,
       solution_queries_selected: solutionRanking.selected_query_count,
       total_queries_selected: selectedQueries.length,
+      total_queries_scored: allScoredQueries.length,
+      problem_queries_scored: problemQueries.length,
+      solution_queries_scored: solutionQueries.length,
+      missing_keyword_difficulty_scored: missingKeywordDifficultyScored,
       missing_keyword_difficulty_selected: missingKeywordDifficultySelected,
     },
   });
@@ -91,6 +118,9 @@ export async function generateQueryOpportunities(
     `Total queries selected: ${queryOpportunities.summary.total_queries_selected}`,
   );
   logInfo(
+    `Total queries scored: ${queryOpportunities.summary.total_queries_scored}`,
+  );
+  logInfo(
     `Selected queries with imputed keyword difficulty: ${queryOpportunities.summary.missing_keyword_difficulty_selected}`,
   );
 
@@ -98,19 +128,19 @@ export async function generateQueryOpportunities(
 }
 
 function buildTerritoryRanking(
-  confirmedQueries: ConfirmedQuery[],
+  scoredQueries: ScoredQuery[],
   territory: Territory,
+  territoryP95SearchVolume: number,
 ) {
-  const territoryQueries = confirmedQueries.filter(
-    (query) => query.territory === territory,
+  const territoryScoredQueries = scoredQueries.filter(
+    (scoredQuery) => scoredQuery.query.territory === territory,
   );
-  const selectedCount = Math.min(SELECTED_QUERY_COUNT, territoryQueries.length);
-  const territoryP95SearchVolume =
-    calculateTerritoryP95SearchVolume(territoryQueries);
-  const scoredQueries = territoryQueries
-    .map((query) => scoreQuery(query, territoryP95SearchVolume))
-    .sort(compareScoredQueries);
-  const selectedQueries = scoredQueries
+  const selectedCount = Math.min(
+    SELECTED_QUERY_COUNT,
+    territoryScoredQueries.length,
+  );
+  const selectedQueries = [...territoryScoredQueries]
+    .sort(compareScoredQueries)
     .slice(0, selectedCount)
     .map((scoredQuery, index) => ({
       rank: index + 1,
@@ -123,22 +153,12 @@ function buildTerritoryRanking(
       core_keyword: scoredQuery.query.core_keyword,
       detected_language: scoredQuery.query.detected_language,
       metrics: scoredQuery.query.metrics,
-      opportunity_metrics: {
-        search_volume_used: scoredQuery.searchVolumeUsed,
-        maximum_territory_search_volume:
-          scoredQuery.maximumTerritorySearchVolume,
-        volume_score: roundTo(scoredQuery.volumeScore, 4),
-        keyword_difficulty_original:
-          scoredQuery.keywordDifficultyOriginal,
-        keyword_difficulty_used: scoredQuery.keywordDifficultyUsed,
-        keyword_difficulty_was_imputed:
-          scoredQuery.keywordDifficultyWasImputed,
-        difficulty_score: roundTo(scoredQuery.difficultyScore, 4),
-        opportunity_score: roundTo(scoredQuery.opportunityScore, 1),
-      },
+      opportunity_metrics: buildOpportunityMetrics(scoredQuery),
     }));
 
-  logInfo(`${territory} confirmed queries considered: ${territoryQueries.length}`);
+  logInfo(
+    `${territory} confirmed queries considered: ${territoryScoredQueries.length}`,
+  );
   logInfo(`${territory} P95 search volume benchmark: ${territoryP95SearchVolume}`);
   logInfo(
     `${territory} selected query IDs and scores: ${selectedQueries
@@ -151,10 +171,24 @@ function buildTerritoryRanking(
 
   return {
     territory,
-    confirmed_query_count: territoryQueries.length,
-    maximum_search_volume: territoryP95SearchVolume,
+    confirmed_query_count: territoryScoredQueries.length,
+    territory_p95_search_volume: territoryP95SearchVolume,
     selected_query_count: selectedCount,
     queries: selectedQueries,
+  };
+}
+
+function buildOpportunityMetrics(scoredQuery: ScoredQuery) {
+  return {
+    search_volume_used: scoredQuery.searchVolumeUsed,
+    territory_p95_search_volume: scoredQuery.territoryP95SearchVolume,
+    demand_score: roundTo(scoredQuery.demandScore, 4),
+    keyword_difficulty_original: scoredQuery.keywordDifficultyOriginal,
+    keyword_difficulty_used: scoredQuery.keywordDifficultyUsed,
+    keyword_difficulty_was_imputed:
+      scoredQuery.keywordDifficultyWasImputed,
+    attainability_score: roundTo(scoredQuery.attainabilityScore, 4),
+    opportunity_score: roundTo(scoredQuery.opportunityScore, 1),
   };
 }
 
@@ -184,22 +218,22 @@ function buildSelectionWarnings(
 
 function scoreQuery(
   query: ConfirmedQuery,
-  maximumTerritorySearchVolume: number,
+  territoryP95SearchVolume: number,
 ): ScoredQuery {
   const score = calculateOpportunityScore(
     query,
-    maximumTerritorySearchVolume,
+    territoryP95SearchVolume,
   );
 
   return {
     query,
     searchVolumeUsed: score.searchVolumeUsed,
-    maximumTerritorySearchVolume: score.maximumTerritorySearchVolume,
-    volumeScore: score.volumeScore,
+    territoryP95SearchVolume: score.territoryP95SearchVolume,
+    demandScore: score.demandScore,
     keywordDifficultyOriginal: score.keywordDifficultyOriginal,
     keywordDifficultyUsed: score.keywordDifficultyUsed,
     keywordDifficultyWasImputed: score.keywordDifficultyWasImputed,
-    difficultyScore: score.difficultyScore,
+    attainabilityScore: score.attainabilityScore,
     opportunityScore: score.opportunityScore,
   };
 }

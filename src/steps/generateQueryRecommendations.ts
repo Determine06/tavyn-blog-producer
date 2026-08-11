@@ -47,7 +47,7 @@ export async function generateQueryRecommendations(
   const generatedAt = new Date().toISOString();
   validateCandidateAvailability(validatedQueryOpportunities);
   const input = `<query_recommendation_input>
-  <schema_version>1.2.0</schema_version>
+  <schema_version>2.0.0</schema_version>
   <run_id>${runId}</run_id>
   <generated_at>${generatedAt}</generated_at>
 
@@ -135,7 +135,7 @@ export async function generateQueryRecommendations(
     ...validatedQueryOpportunities.warnings,
   ]);
   const queryRecommendations = QueryRecommendationsSchema.parse({
-    schema_version: "1.2.0",
+    schema_version: "2.0.0",
     run_id: runId,
     generated_at: generatedAt,
     source_artifacts: [

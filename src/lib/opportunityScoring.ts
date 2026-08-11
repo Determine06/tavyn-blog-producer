@@ -1,5 +1,24 @@
 export const MISSING_KEYWORD_DIFFICULTY_DEFAULT = 50;
 
+export const OPPORTUNITY_SCORING_METHOD = {
+  name: "relative_search_demand_plus_organic_attainability",
+  version: "2.0.0",
+  missing_keyword_difficulty_default: MISSING_KEYWORD_DIFFICULTY_DEFAULT,
+  combination_method: "weighted_additive",
+  formula:
+    "100 * (0.70 * demand_score + 0.30 * attainability_score)",
+  weights: {
+    demand_score: 0.7,
+    attainability_score: 0.3,
+  },
+  demand_normalization: {
+    method: "log1p_territory_p95_capped",
+    territory_specific: true,
+    cap: 1,
+  },
+  score_scope: "within_territory_relative_priority",
+} as const;
+
 type ScorableQuery = {
   metrics: {
     search_volume: number | null;
@@ -9,12 +28,12 @@ type ScorableQuery = {
 
 export type OpportunityScoreComponents = {
   searchVolumeUsed: number;
-  maximumTerritorySearchVolume: number;
-  volumeScore: number;
+  territoryP95SearchVolume: number;
+  demandScore: number;
   keywordDifficultyOriginal: number | null;
   keywordDifficultyUsed: number;
   keywordDifficultyWasImputed: boolean;
-  difficultyScore: number;
+  attainabilityScore: number;
   opportunityScore: number;
 };
 
@@ -23,7 +42,7 @@ export function calculateOpportunityScore(
   territoryP95SearchVolume: number,
 ): OpportunityScoreComponents {
   const searchVolumeUsed = query.metrics.search_volume ?? 0;
-  const volumeScore =
+  const demandScore =
     territoryP95SearchVolume > 0
       ? Math.min(
           1,
@@ -34,18 +53,24 @@ export function calculateOpportunityScore(
   const keywordDifficultyUsed =
     keywordDifficultyOriginal ?? MISSING_KEYWORD_DIFFICULTY_DEFAULT;
   const keywordDifficultyWasImputed = keywordDifficultyOriginal === null;
-  const difficultyScore = 1 - keywordDifficultyUsed / 100;
+  const attainabilityScore = 1 - keywordDifficultyUsed / 100;
   const opportunityScore =
-    Math.round(100 * (0.7 * volumeScore + 0.3 * difficultyScore) * 10) / 10;
+    Math.round(
+      100 *
+        (OPPORTUNITY_SCORING_METHOD.weights.demand_score * demandScore +
+          OPPORTUNITY_SCORING_METHOD.weights.attainability_score *
+            attainabilityScore) *
+        10,
+    ) / 10;
 
   return {
     searchVolumeUsed,
-    maximumTerritorySearchVolume: territoryP95SearchVolume,
-    volumeScore,
+    territoryP95SearchVolume,
+    demandScore,
     keywordDifficultyOriginal,
     keywordDifficultyUsed,
     keywordDifficultyWasImputed,
-    difficultyScore,
+    attainabilityScore,
     opportunityScore,
   };
 }

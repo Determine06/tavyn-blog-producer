@@ -1,13 +1,14 @@
 {
   "schema_version": "1.1.0",
-  "run_id": "888dcf82-ee13-4750-9aa8-4ffd5e064a94",
-  "generated_at": "2026-07-27T20:08:00.929Z",
+  "run_id": "da98c5f2-0848-4325-893c-aca971cd7d23",
+  "generated_at": "2026-08-10T03:25:34.533Z",
   "source_artifacts": [
     "query-recommendations.json"
   ],
   "status": "complete",
   "warnings": [
-    "problem_demand_034 returned 9 organic results instead of 10."
+    "problem_demand_144 returned 8 organic results instead of 10.",
+    "solution_demand_053 returned 9 organic results instead of 10."
   ],
   "website_url": "https://regenhealth.app/",
   "provider": {
@@ -23,110 +24,102 @@
   "query_serps": [
     {
       "recommendation_id": "problem_demand_recommendation_01",
-      "query_id": "problem_demand_034",
+      "query_id": "problem_demand_144",
       "territory": "problem_demand",
-      "query": "peptide calculator",
-      "requested_at": "2026-07-27T20:07:59.442Z",
+      "query": "aod 9604 peptide",
+      "requested_at": "2026-08-10T03:25:32.505Z",
       "provider_credits_used": 1,
-      "organic_results_received": 9,
+      "organic_results_received": 8,
       "organic_results": [
         {
           "position": 1,
-          "title": "Peptide Calculator: Reconstitution, Dosage & Syringe Units (Free)",
-          "url": "https://riteaid.com/tools/peptide-dosage-calculator",
-          "domain": "riteaid.com",
-          "snippet": "Free peptide calculator: enter vial size, bacteriostatic water, and dose to see the exact units to draw on an insulin syringe, ...",
-          "date": "Jul 9, 2026"
+          "title": "AOD-9604 Dosage Guide: Charts, Protocols & Reconstitution",
+          "url": "https://www.bhrcenter.com/aod-9604-dosage-guide-complete-protocol-for-safe-administration/?srsltid=AfmBOopRo06bgFN_EXyJ4bkZcO6dbacjHzkjI-8sG_rjbZ4JmSoFkpVe",
+          "domain": "bhrcenter.com",
+          "snippet": "AOD-9604 is a growth hormone fragment peptide administered via subcutaneous injection, typically dosed at 250-500 mcg daily in a fasted state.",
+          "date": null
         },
         {
           "position": 2,
-          "title": "Peptide Calculator",
-          "url": "https://cellgenic.com/peptide-calculator/",
-          "domain": "cellgenic.com",
-          "snippet": "Calculate peptide dosages, reconstitution volumes and injection amounts quickly with this easy-to-use peptide calculator.",
+          "title": "Metabolic studies of a synthetic lipolytic domain (AOD9604) of ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11146367/",
+          "domain": "pubmed.ncbi.nlm.nih.gov",
+          "snippet": "A synthetic analogue (AOD9604) of the lipolytic domain of human growth hormone (hGH) has been studied for its metabolic actions in obese Zucker rats.",
           "date": null
         },
         {
           "position": 3,
-          "title": "Peptide Calculator for Accurate Dosage",
-          "url": "https://primepeptides.co/peptide-calculator/",
-          "domain": "primepeptides.co",
-          "snippet": "Use our Peptide Calculator below to calculate accurate dosages for administering peptides using a syringe. Simply select your parameters, and our calculator ...",
-          "date": null
+          "title": "Why Choose an AOD-9604 Weight Loss Peptide Compounding ...",
+          "url": "https://www.prestonspharmacy.com/blog/why-choose-aod-9604-weight-loss-peptide-compounding-pharmacy-in-washington-dc-for-stubborn-fat",
+          "domain": "prestonspharmacy.com",
+          "snippet": "AOD-9604 is a modified fragment of human growth hormone. Unlike full growth hormone, it specifically targets fat cells without affecting blood ...",
+          "date": "Jan 29, 2026"
         },
         {
           "position": 4,
-          "title": "Peptide Calculator",
-          "url": "https://particlepeptides.com/en/content/48-peptide-calculator",
-          "domain": "particlepeptides.com",
-          "snippet": "Calculate the precise dosage of peptides with our easy-to-use calculator. A reliable tool for accurate research purposes.",
-          "date": null
+          "title": "You're Injecting AOD-9604 WRONG! Doctor Explains How to ... - YouTube",
+          "url": "https://www.youtube.com/watch?v=h1ml_GOgx3s",
+          "domain": "youtube.com",
+          "snippet": "AOD-9604 is a fat mobilizer, not a magic fat burner, so ... AOD-9604: The Truth About the 'Fat Burning' Peptide. Wright Lifestyle ...",
+          "date": "Jul 7, 2026"
         },
         {
           "position": 5,
-          "title": "How To Dose Peptides with Online Peptide Calculator (TB-500 & BPC ...",
-          "url": "https://www.youtube.com/watch?v=iyoiTOkhOCs",
-          "domain": "youtube.com",
-          "snippet": "How To Dose Peptides with Online Peptide Calculator Step by Step Guide (TB-500 & BPC 157) FREE Low Back Pain & Disc Injury Relief Guide",
+          "title": "AOD-9604 – Research Peptide",
+          "url": "https://www.americanpeptides.us/products/aod-9604",
+          "domain": "americanpeptides.us",
+          "snippet": "AOD-9604 is a synthetic peptide fragment (176–191) of human growth hormone used in laboratory research for receptor binding and metabolic signaling studies.",
           "date": null
         },
         {
           "position": 6,
-          "title": "Peptide Calculator | Solcara Health | Mt. Pleasant & Charleston, SC",
-          "url": "https://www.solcarahealth.com/peptide-calculator",
-          "domain": "solcarahealth.com",
-          "snippet": "Use Solcara Health's peptide calculator to find the right therapy for your goals. Expert functional & anti-aging medicine in Charleston, SC.",
-          "date": null
+          "title": "Safety and Tolerability of the Hexadecapeptide AOD9604 in ...",
+          "url": "https://www.jofem.org/index.php/jofem/article/view/157/194",
+          "domain": "jofem.org",
+          "snippet": "AOD9604 is a peptide fragment of the C-terminus of hGH (Tyr-hGH177-191), which harbors the fat reducing activity of hGH, without its negative ...",
+          "date": "Apr 4, 2013"
         },
         {
           "position": 7,
-          "title": "Free Peptide Dosage Calculator - Scientific Research Tool",
-          "url": "https://www.reddit.com/r/ScienceBioTechnology/comments/1sa1uu1/free_peptide_dosage_calculator_scientific/",
-          "domain": "reddit.com",
-          "snippet": "A peptide dosage calculator is a free tool that converts your vial size, bacteriostatic water volume, and target dose into an exact syringe draw ...",
+          "title": "Aod-9604 | C78H123N23O23S2 | CID 71300630 - PubChem - NIH",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Aod-9604",
+          "domain": "pubchem.ncbi.nlm.nih.gov",
+          "snippet": "AOD9604 is a synthetic analogue of the lipolytic domain of human growth hormone, being investigated for the treatment of obesity.",
           "date": null
         },
         {
           "position": 8,
-          "title": "PEPTIDE DILUTION CALCULATOR",
-          "url": "https://us.ukmedi.co.uk/pages/peptide-dilution-calculator",
-          "domain": "us.ukmedi.co.uk",
-          "snippet": "PEPTIDE DILUTION CALCULATOR Select Size of Syringe Syringe Size (mL) Enter amount of peptide to dilute Peptide (MG) Amount of Bacteriostatic/Sterile Water ...",
-          "date": null
-        },
-        {
-          "position": 9,
-          "title": "Peptide Calculator",
-          "url": "https://royalmedicalcenters.com/peptide-calculator/",
-          "domain": "royalmedicalcenters.com",
-          "snippet": "Royal Medical Centers provides peptides in a stabilized, lyophilized (freeze-dried) form. This ensures potency and stability during storage and transport.",
+          "title": "AOD9604: Uses, Interactions, Mechanism of Action - DrugBank",
+          "url": "https://go.drugbank.com/drugs/DB06388",
+          "domain": "go.drugbank.com",
+          "snippet": "AOD9604 is a synthetic analogue of the lipolytic domain of human growth hormone, being investigated for the treatment of obesity.",
           "date": null
         }
       ]
     },
     {
       "recommendation_id": "solution_demand_recommendation_01",
-      "query_id": "solution_demand_076",
+      "query_id": "solution_demand_235",
       "territory": "solution_demand",
-      "query": "macro tracking app",
-      "requested_at": "2026-07-27T20:07:59.446Z",
+      "query": "best macro tracking app",
+      "requested_at": "2026-08-10T03:25:32.506Z",
       "provider_credits_used": 1,
       "organic_results_received": 10,
       "organic_results": [
         {
           "position": 1,
-          "title": "Good (free) apps for calorie/macro tracking? : r/naturalbodybuilding",
-          "url": "https://www.reddit.com/r/naturalbodybuilding/comments/1391pgg/good_free_apps_for_caloriemacro_tracking/",
-          "domain": "reddit.com",
-          "snippet": "Summers coming around and I’m trying to cut, what are some good apps to track macros? thanks!",
+          "title": "Cronometer: The Most Accurate Nutrition Tracking App ...",
+          "url": "https://cronometer.com/index.html",
+          "domain": "cronometer.com",
+          "snippet": "Eat smarter and live better with the most accurate nutrition tracking app. Cronometer helps you count calories and track macro & micronutrients.",
           "date": null
         },
         {
           "position": 2,
-          "title": "MacrosFirst",
-          "url": "https://www.macrosfirst.com/",
-          "domain": "macrosfirst.com",
-          "snippet": "Reach your goals with the most intuitive and powerful macro tracker for all diet types and lifestyles. Start today for free! Appstore logo Googleplay Logo.",
+          "title": "MacroFactor – Smartest Macro Tracker and Diet Coach app",
+          "url": "https://macrofactor.com/",
+          "domain": "macrofactor.com",
+          "snippet": "MacroFactor is a science-backed diet coach and macro tracker app that empowers you to reach your goals without rigidity. focused on AI-driven food logging. ...",
           "date": null
         },
         {
@@ -134,16 +127,16 @@
           "title": "12 Best Macro Tracking Apps 2026",
           "url": "https://blog.eatthismuch.com/best-macro-tracking-apps/",
           "domain": "blog.eatthismuch.com",
-          "snippet": "MacroFactor: Best Overall Macro Tracking App. MacroFactor is widely regarded as one of the most intelligent macro tracking apps available. ...",
+          "snippet": "MacroFactor: Best Overall Macro Tracking App … is widely regarded as one of the most intelligent macro tracking apps available. Cronometer: ...",
           "date": "Apr 22, 2026"
         },
         {
           "position": 4,
-          "title": "Cronometer: The Most Accurate Nutrition Tracking App & Calorie ...",
-          "url": "https://cronometer.com/",
-          "domain": "cronometer.com",
-          "snippet": "Cronometer helps you count calories and track macro & micronutrients. From macros to micros, Cronometer gives you personalized insight into your diet, exercise ...",
-          "date": null
+          "title": "Good (free) apps for calorie/macro tracking?",
+          "url": "https://www.reddit.com/r/naturalbodybuilding/comments/1391pgg/good_free_apps_for_caloriemacro_tracking/",
+          "domain": "reddit.com",
+          "snippet": "Summers coming around and I’m trying to cut, what are some good apps to track macros? thanks!",
+          "date": "3 years ago"
         },
         {
           "position": 5,
@@ -155,43 +148,43 @@
         },
         {
           "position": 6,
-          "title": "What is the best macro tracker app for phone use?",
-          "url": "https://www.facebook.com/groups/238620256823178/posts/1734286160589906/",
+          "title": "What are good macro tracking apps for home gym use?",
+          "url": "https://www.facebook.com/groups/262681228448/posts/10161240944313449/",
           "domain": "facebook.com",
           "snippet": null,
           "date": null
         },
         {
           "position": 7,
-          "title": "The 5 Best Macro Tracking Apps, According To A Registered Dietitian",
-          "url": "https://www.nourish.com/blog/best-macro-tracking-app",
-          "domain": "nourish.com",
-          "snippet": "4. MyFitnessPal The. Some apps we recommended are: Cronometer. Macrofactor. Food Noms. MyFitnessPal. Lose It! ? MyFitness Pal is free to use,",
-          "date": "Sep 5, 2024"
+          "title": "What is the best free app for tracking macros?",
+          "url": "https://www.facebook.com/groups/healthyninjacreamirecipes/posts/3742412346004556/",
+          "domain": "facebook.com",
+          "snippet": null,
+          "date": null
         },
         {
           "position": 8,
-          "title": "The Best Macro Tracking Apps of 2026: Apps to Help You Hit Your Goals",
-          "url": "https://fortune.com/article/best-macro-tracking-apps/",
-          "domain": "fortune.com",
-          "snippet": "MacroFactor is our pick for the best macro and calorie tracking app because it checks in with you weekly, then adjusts the targets to suit your ...",
-          "date": "Jun 1, 2026"
+          "title": "MacrosFirst",
+          "url": "https://www.macrosfirst.com/",
+          "domain": "macrosfirst.com",
+          "snippet": "Reach your goals with the most intuitive and powerful macro tracker for all diet types and lifestyles. Start today for free! Appstore logo Googleplay Logo.",
+          "date": null
         },
         {
           "position": 9,
-          "title": "MacroFactor – Smartest Macro Tracker and Diet Coach app",
-          "url": "https://macrofactor.com/",
-          "domain": "macrofactor.com",
-          "snippet": "MacroFactor is a science-backed diet coach and macro tracker app that empowers you to reach your goals without rigidity.",
-          "date": null
+          "title": "BEST Free Macro Tracking App",
+          "url": "https://www.youtube.com/shorts/1D7l9gF_jwU",
+          "domain": "youtube.com",
+          "snippet": "In this video, we'll explore the Hint App to help you make an informed decision and find the best macro app for your needs.",
+          "date": "9 months ago"
         },
         {
           "position": 10,
-          "title": "Macros - Calorie Counter - Apps on Google Play",
-          "url": "https://play.google.com/store/apps/details?id=com.josmantek.macros&hl=en_US",
-          "domain": "play.google.com",
-          "snippet": "Track macros, calories & food diary. Macros makes tracking simple and effective. Manage your food diary, plan meals, and track macros, activities, and ...",
-          "date": null
+          "title": "Comparing the 3 Best Apps for Tracking Macros (2026 ...",
+          "url": "https://www.katelymannutrition.com/blog/best-tracking-app",
+          "domain": "katelymannutrition.com",
+          "snippet": "Which is the best macro tracking app? It depends on what you're looking for but, for now, MacrosFirst is our favorite! Featured.",
+          "date": "Apr 24, 2024"
         }
       ]
     },
@@ -200,25 +193,25 @@
       "query_id": "solution_demand_053",
       "territory": "solution_demand",
       "query": "sleep tracker app",
-      "requested_at": "2026-07-27T20:07:59.446Z",
+      "requested_at": "2026-08-10T03:25:32.506Z",
       "provider_credits_used": 1,
-      "organic_results_received": 10,
+      "organic_results_received": 9,
       "organic_results": [
         {
           "position": 1,
-          "title": "The Best Sleep-Tracking App | Reviews by Wirecutter",
-          "url": "https://www.nytimes.com/wirecutter/reviews/best-sleep-tracking-app/",
-          "domain": "nytimes.com",
-          "snippet": "We think SleepScore (iOS, Android) will do the best job of helping you improve your sleep. It allows you to set sleep goals and gives actionable advice for ...",
-          "date": "Mar 11, 2021"
+          "title": "Sleep Cycle - Tracker & Sounds - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/sleep-cycle-tracker-sounds/id320606217",
+          "domain": "apps.apple.com",
+          "snippet": "Built on science, Sleep Cycle uses sound analysis to track and improve sleep for over 3 million users worldwide. Our AI sleep coach, sleep tracker and Smart ...",
+          "date": null
         },
         {
           "position": 2,
-          "title": "Sleep Cycle: Sleep Tracker – Apps on ...",
-          "url": "https://play.google.com/store/apps/details/Sleep_Cycle_Sleep_Tracker?id=com.northcube.sleepcycle&hl=en_NZ",
-          "domain": "play.google.com",
-          "snippet": "Sleep Cycle is your personal sleep tracker and smart alarm clock with a range of features (including sleep recorder, sleep calculator and sleep aid)",
-          "date": null
+          "title": "The Best Sleep-Tracking App | Reviews by Wirecutter",
+          "url": "https://www.nytimes.com/wirecutter/reviews/best-sleep-tracking-app/",
+          "domain": "nytimes.com",
+          "snippet": "The free version provides general sleep advice and a record of your sleep for seven days at a time. For $50 a year (or $6 per month), SleepScore ...",
+          "date": "Mar 11, 2021"
         },
         {
           "position": 3,
@@ -233,56 +226,48 @@
           "title": "Sleep as Android - Sleep as Android",
           "url": "https://sleep.urbandroid.org/en/",
           "domain": "sleep.urbandroid.org",
-          "snippet": "Alarm clock and sleep cycle tracker that wakes you gently in the optimal moment for pleasant mornings.",
+          "snippet": "Sleep phase tracking Using phone or wearable sensors … sleep cycle tracker that wakes you gently in the optimal moment for pleasant mornings.",
           "date": null
         },
         {
           "position": 5,
-          "title": "A recommendation for sleep tracking app",
-          "url": "https://www.reddit.com/r/sleep/comments/1op5qs1/a_recommendation_for_sleep_tracking_app/",
-          "domain": "reddit.com",
-          "snippet": null,
-          "date": null
+          "title": "Sleep Cycle: Sleep Tracker – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details/Sleep_Cycle_Sleep_Tracker?id=com.northcube.sleepcycle&hl=en_NZ",
+          "domain": "play.google.com",
+          "snippet": "Sleep Cycle is your personal sleep tracker and smart alarm clock with a range of features (including sleep recorder, sleep calculator and sleep ...",
+          "date": "Jun 25, 2026"
         },
         {
           "position": 6,
-          "title": "Best sleep/health tracking apps?",
-          "url": "https://www.reddit.com/r/AppleWatch/comments/1qdrrlk/best_sleephealth_tracking_apps/",
+          "title": "What app is the best for sleep tracking? : r/AppleWatch - Reddit",
+          "url": "https://www.reddit.com/r/AppleWatch/comments/1cg30nc/what_app_is_the_best_for_sleep_tracking/",
           "domain": "reddit.com",
-          "snippet": null,
-          "date": null
+          "snippet": "AutoSleep is the best and has a widget. scores for your sleep quality. Sleep++ by _DavidSmith is great. Apple Auto sleep by far.",
+          "date": "Apr 29, 2024"
         },
         {
           "position": 7,
-          "title": "Sleep apps on iPhone and Watch",
-          "url": "https://talk.tidbits.com/t/sleep-apps-on-iphone-and-watch/30185",
-          "domain": "talk.tidbits.com",
-          "snippet": null,
+          "title": "Sleep Tracker: Recorder, Sound - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/sleep-tracker-recorder-sound/id1551928101",
+          "domain": "apps.apple.com",
+          "snippet": "SLEEP TRACKER is your intelligent sleep assistant, now available for FREE download. Our app combines a precise sleep recorder and sleep Events. Track your rest ...",
           "date": null
         },
         {
           "position": 8,
-          "title": "What app is the best for sleep tracking? : r/AppleWatch",
-          "url": "https://www.reddit.com/r/AppleWatch/comments/1cg30nc/what_app_is_the_best_for_sleep_tracking/",
-          "domain": "reddit.com",
-          "snippet": "AutoSleep is the best and has a widget. scores for your sleep quality. Sleep++ by _DavidSmith is great. Apple Auto sleep by far.",
-          "date": null
+          "title": "We tested 10 sleep apps. These 5 are worth it in 2026 - Yahoo Health",
+          "url": "https://health.yahoo.com/wellness/sleep/sleep-products/article/best-sleep-tracking-app-190303792.html",
+          "domain": "health.yahoo.com",
+          "snippet": "Best overall sleep tracking app Sleep Cycle $39.99 per year. PrimeNap offers most things you need, including tracking overall sleep quality and ...",
+          "date": "Mar 6, 2026"
         },
         {
           "position": 9,
-          "title": "The Best Sleep Apps - App Store",
-          "url": "https://apps.apple.com/us/iphone/story/id1675603070",
-          "domain": "apps.apple.com",
-          "snippet": "Endel: Focus & Sleep Sounds · RISE: Sleep Tracker · AutoSleep: Watch Sleep Tracker · Loóna: Sleep, reduce anxiety · Sleep Cycle - Tracker & Sounds · Moshi Kids: ...",
+          "title": "SleepScore App | Track & Improve Your Sleep",
+          "url": "https://www.sleep.ai/sleepscore/",
+          "domain": "sleep.ai",
+          "snippet": "SleepScore uses patented sonar tech & science-based coaching to help you fall asleep faster, sleep longer and wake up refreshed.",
           "date": null
-        },
-        {
-          "position": 10,
-          "title": "We tested 10 sleep apps. These 5 are worth it in 2026",
-          "url": "https://health.yahoo.com/wellness/sleep/sleep-products/article/best-sleep-tracking-app-190303792.html",
-          "domain": "health.yahoo.com",
-          "snippet": "Sleep Cycle proved to be the most comprehensive sleep tracking app we tested. It monitors every metric you need — sleep quality, time spent in ...",
-          "date": "Mar 6, 2026"
         }
       ]
     }
@@ -290,9 +275,10 @@
   "summary": {
     "recommended_queries_received": 3,
     "serp_requests_completed": 3,
-    "total_organic_results": 29,
+    "total_organic_results": 27,
     "queries_with_fewer_than_ten_results": [
-      "problem_demand_034"
+      "problem_demand_144",
+      "solution_demand_053"
     ]
   }
 }

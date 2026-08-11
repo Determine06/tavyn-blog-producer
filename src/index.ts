@@ -15,6 +15,9 @@ import {
 } from "./pipeline/artifacts.js";
 import { parsePipelineCliOptions } from "./pipeline/options.js";
 import type { PipelineStageId } from "./pipeline/stages.js";
+import { CompanyReportSchema } from "./types/companyReport.schema.js";
+import { QueryOpportunitiesSchema } from "./types/queryOpportunities.schema.js";
+import { QueryRecommendationsSchema } from "./types/queryRecommendations.schema.js";
 
 type RunContext = {
   runId: string;
@@ -417,6 +420,7 @@ async function main(): Promise<void> {
       stepName: "query-opportunity-scoring",
       artifactPath: queryOpportunitiesArtifactPath,
       force: shouldForceQueryOpportunities,
+      parseCached: (artifact) => QueryOpportunitiesSchema.parse(artifact),
       run: async () => {
         const { generateQueryOpportunities } = await import(
           "./steps/generateQueryOpportunities.js"
@@ -461,6 +465,7 @@ async function main(): Promise<void> {
       stepName: "query-recommendation-selection",
       artifactPath: queryRecommendationsArtifactPath,
       force: shouldForceQueryRecommendations,
+      parseCached: (artifact) => QueryRecommendationsSchema.parse(artifact),
       run: async () => {
         const { generateQueryRecommendations } = await import(
           "./steps/generateQueryRecommendations.js"
@@ -688,6 +693,7 @@ async function main(): Promise<void> {
       stepName: "deterministic-company-report-assembly",
       artifactPath: companyReportArtifactPath,
       force: shouldForceCompanyReport,
+      parseCached: (artifact) => CompanyReportSchema.parse(artifact),
       run: async () => {
         const { generateCompanyReport } = await import(
           "./steps/generateCompanyReport.js"

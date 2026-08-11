@@ -15,6 +15,40 @@ type SavedReportRow = {
   slug: string | null;
 };
 
+type CanonicalContentPlanItem =
+  CompanyReport["content_plan"]["items"][number];
+type CanonicalOpportunityMetrics =
+  CanonicalContentPlanItem["opportunity_metrics"];
+
+type SupabaseOpportunityMetrics = CanonicalOpportunityMetrics & {
+  /** @deprecated Supabase compatibility only; use territory_p95_search_volume. */
+  maximum_territory_search_volume: CanonicalOpportunityMetrics["territory_p95_search_volume"];
+  /** @deprecated Supabase compatibility only; use demand_score. */
+  volume_score: CanonicalOpportunityMetrics["demand_score"];
+  /** @deprecated Supabase compatibility only; use attainability_score. */
+  difficulty_score: CanonicalOpportunityMetrics["attainability_score"];
+};
+
+type SupabaseContentPlanItem = Omit<
+  CanonicalContentPlanItem,
+  "opportunity_metrics"
+> & {
+  opportunity_metrics: SupabaseOpportunityMetrics;
+};
+
+/**
+ * External serialization DTO. Its legacy aliases are intentionally outside the
+ * strict canonical CompanyReport contract and exist only for Supabase readers.
+ */
+type SupabaseCompanyReportArtifact = Omit<
+  CompanyReport,
+  "content_plan"
+> & {
+  content_plan: Omit<CompanyReport["content_plan"], "items"> & {
+    items: SupabaseContentPlanItem[];
+  };
+};
+
 type SerpReportsTable = {
   select: (columns: string) => {
     eq: (column: string, value: string) => {
@@ -51,7 +85,7 @@ type SerpReportPayload = {
   website_url: string;
   company_name: string;
   status: CompanyReport["status"];
-  artifact: CompanyReport;
+  artifact: SupabaseCompanyReportArtifact;
   updated_at: string;
 };
 
@@ -111,8 +145,29 @@ export function buildSerpReportPayload(
     website_url: companyReport.website_url,
     company_name: companyReport.company.name,
     status: companyReport.status,
-    artifact: companyReport,
+    artifact: buildSupabaseCompanyReportArtifact(companyReport),
     updated_at: updatedAt.toISOString(),
+  };
+}
+
+function buildSupabaseCompanyReportArtifact(
+  companyReport: CompanyReport,
+): SupabaseCompanyReportArtifact {
+  return {
+    ...companyReport,
+    content_plan: {
+      ...companyReport.content_plan,
+      items: companyReport.content_plan.items.map((item) => ({
+        ...item,
+        opportunity_metrics: {
+          ...item.opportunity_metrics,
+          maximum_territory_search_volume:
+            item.opportunity_metrics.territory_p95_search_volume,
+          volume_score: item.opportunity_metrics.demand_score,
+          difficulty_score: item.opportunity_metrics.attainability_score,
+        },
+      })),
+    },
   };
 }
 

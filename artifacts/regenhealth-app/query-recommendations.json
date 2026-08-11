@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.2.0",
-  "run_id": "888dcf82-ee13-4750-9aa8-4ffd5e064a94",
-  "generated_at": "2026-07-27T20:06:29.052Z",
+  "schema_version": "2.0.0",
+  "run_id": "da98c5f2-0848-4325-893c-aca971cd7d23",
+  "generated_at": "2026-08-10T03:24:38.733Z",
   "source_artifacts": [
     "company-profile.json",
     "query-opportunities.json"
@@ -28,20 +28,20 @@
       "candidates_available": 10,
       "target_recommendations": 1,
       "recommendations_selected": 1,
-      "assessment": "The selected problem-demand query is the strongest fit because it matches a core dosing-math pain point for REGEN's audience, has strong observed demand, and can support a standalone educational page without forcing the company outside its positioning.",
+      "assessment": "The selected problem query is the strongest standalone educational opportunity because a specific peptide topic lets REGEN use its cited reference positioning naturally while still matching meaningful demand and attainable rankings.",
       "recommendations": [
         {
           "recommendation_id": "problem_demand_recommendation_01",
           "recommendation_rank": 1,
-          "query_id": "problem_demand_034",
+          "query_id": "problem_demand_144",
           "territory": "problem_demand",
-          "query": "peptide calculator",
-          "selection_reasoning": "This is the strongest problem-demand opportunity because dose calculation is a core pain point for REGEN's users, the query has meaningful observed demand, and the page can introduce the calculator workflow naturally.",
-          "content_angle": "The page should teach readers how to think through peptide dose math, reconstitution inputs, and conversion checks before using a calculator.",
-          "product_connection": "REGEN can appear naturally as the cited calculator and reference layer that helps users verify BAC water math, IU conversion, and units-per-click without turning the page into a hard sell.",
+          "query": "aod 9604 peptide",
+          "selection_reasoning": "This is the strongest problem-demand opportunity because it targets a high-volume specific peptide query that REGEN can answer with cited literature while fitting its protocol-tracking and reference positioning.",
+          "content_angle": "The page should explain the peptide with cited literature, summarize what users need to track around it, and connect those notes to dose, inventory, and biomarker workflows.",
+          "product_connection": "REGEN can appear as the cited reference and tracking layer for adults already running peptide protocols, without claiming to prescribe or treat.",
           "confidence": "medium",
-          "opportunity_rank": 3,
-          "validation_reasoning": "This query targets a peptide calculator, which is a core workflow the app provides.",
+          "opportunity_rank": 1,
+          "validation_reasoning": "This query targets a specific peptide protocol, which fits the app's protocol-tracking and reference workflow.",
           "source_seed_keywords": [
             "peptide protocols",
             "peptide protocol management",
@@ -59,101 +59,103 @@
             "protocol spreadsheet replacement",
             "peptide health tracking"
           ],
-          "discovery_rank": 34,
-          "core_keyword": "peptides calculator",
+          "discovery_rank": 144,
+          "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 301000,
+            "search_volume": 22200,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 368000
+                "search_volume": 27100
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 450000
+                "search_volume": 27100
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 450000
+                "search_volume": 33100
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 450000
+                "search_volume": 33100
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 301000
+                "search_volume": 22200
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 301000
+                "search_volume": 22200
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 246000
+                "search_volume": 18100
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 201000
+                "search_volume": 18100
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 165000
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 165000
+                "search_volume": 9900
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 165000
+                "search_volume": 12100
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 135000
+                "search_volume": 14800
               }
             ],
             "search_volume_trend": {
-              "monthly": -18,
+              "monthly": 0,
               "quarterly": -18,
-              "yearly": 173
+              "yearly": 83
             },
-            "cpc": 0.25,
-            "paid_competition": 0.01,
+            "cpc": 9.05,
+            "paid_competition": 0.3,
             "paid_competition_level": "LOW",
-            "keyword_difficulty": 14,
+            "keyword_difficulty": 4,
             "search_intent": {
-              "main": "informational",
-              "secondary": []
+              "main": "transactional",
+              "secondary": [
+                "informational"
+              ]
             },
             "average_top_10": {
-              "backlinks": 346.6,
-              "referring_domains": 51.9,
-              "main_domain_rank": 452.8
+              "backlinks": 167.6,
+              "referring_domains": 32.5,
+              "main_domain_rank": 442.9
             }
           },
           "opportunity_metrics": {
-            "search_volume_used": 301000,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 1,
-            "keyword_difficulty_original": 14,
-            "keyword_difficulty_used": 14,
+            "search_volume_used": 22200,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 1,
+            "keyword_difficulty_original": 4,
+            "keyword_difficulty_used": 4,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.86,
-            "opportunity_score": 95.8
+            "attainability_score": 0.96,
+            "opportunity_score": 98.8
           }
         }
       ]
@@ -163,20 +165,20 @@
       "candidates_available": 10,
       "target_recommendations": 2,
       "recommendations_selected": 2,
-      "assessment": "No credible product-specific solution query was supplied, so the solution slot uses the strongest distinct supported categories as a fallback, with macro tracking as the closer fit and sleep tracking as the complementary second page.",
+      "assessment": "No supplied solution query is a true product-category match for REGEN, so the product-specific slot uses fallback and the two selected pages are the strongest distinct software queries the app can support through its nutrition and biomarker workflows.",
       "recommendations": [
         {
           "recommendation_id": "solution_demand_recommendation_01",
           "recommendation_rank": 1,
-          "query_id": "solution_demand_076",
+          "query_id": "solution_demand_235",
           "territory": "solution_demand",
-          "query": "macro tracking app",
-          "selection_reasoning": "This is the strongest solution-demand opportunity because it directly matches REGEN's macro logging feature set, has clear commercial intent, and remains distinct from the sleep tracking page.",
-          "content_angle": "The page should explain how a macro tracking app fits a protocol-aware nutrition workflow and why photo-based macro logging reduces manual effort.",
-          "product_connection": "REGEN can appear naturally by demonstrating its photo macro scan and window-aware logging instead of claiming to be a general nutrition platform.",
+          "query": "best macro tracking app",
+          "selection_reasoning": "This is the strongest solution-demand opportunity because macro logging is a direct REGEN feature, the commercial intent fits software evaluation, and it is distinct from sleep tracking.",
+          "content_angle": "The page should compare macro tracking apps from the standpoint of photo-based macro estimation, meal logging, and protocol-aware nutrition windows.",
+          "product_connection": "REGEN can naturally show its photo macro scan and window-aware logging as a niche fit for users who want nutrition tracking inside a broader protocol app.",
           "confidence": "medium",
-          "opportunity_rank": 8,
-          "validation_reasoning": "The query asks for a macro tracking app, and macro logging is directly supported by REGEN’s meal scan workflow.",
+          "opportunity_rank": 1,
+          "validation_reasoning": "The query asks for the best macro tracking app, and macro tracking is directly supported by REGEN’s nutrition workflow.",
           "source_seed_keywords": [
             "peptide tracking app",
             "peptide tracking apps",
@@ -194,7 +196,7 @@
             "biomarker trend app",
             "peptide reference app"
           ],
-          "discovery_rank": 76,
+          "discovery_rank": 235,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
@@ -213,12 +215,12 @@
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 5400
+                "search_volume": 6600
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 5400
+                "search_volume": 6600
               },
               {
                 "year": 2026,
@@ -233,7 +235,7 @@
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 6600
+                "search_volume": 4400
               },
               {
                 "year": 2025,
@@ -243,12 +245,12 @@
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 5400
+                "search_volume": 4400
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 6600
+                "search_volume": 5400
               },
               {
                 "year": 2025,
@@ -258,37 +260,37 @@
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 5400
+                "search_volume": 6600
               }
             ],
             "search_volume_trend": {
               "monthly": 0,
-              "quarterly": 0,
-              "yearly": -33
+              "quarterly": -18,
+              "yearly": 0
             },
-            "cpc": 4.45,
-            "paid_competition": 0.34,
+            "cpc": 5.08,
+            "paid_competition": 0.65,
             "paid_competition_level": "MEDIUM",
-            "keyword_difficulty": 60,
+            "keyword_difficulty": 11,
             "search_intent": {
-              "main": "transactional",
+              "main": "commercial",
               "secondary": []
             },
             "average_top_10": {
-              "backlinks": 9392.3,
-              "referring_domains": 1638.5,
-              "main_domain_rank": 633.4
+              "backlinks": 381.5,
+              "referring_domains": 64.1,
+              "main_domain_rank": 662.2
             }
           },
           "opportunity_metrics": {
             "search_volume_used": 5400,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.8258,
-            "keyword_difficulty_original": 60,
-            "keyword_difficulty_used": 60,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.8258,
+            "keyword_difficulty_original": 11,
+            "keyword_difficulty_used": 11,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.4,
-            "opportunity_score": 69.8
+            "attainability_score": 0.89,
+            "opportunity_score": 84.5
           }
         },
         {
@@ -297,10 +299,10 @@
           "query_id": "solution_demand_053",
           "territory": "solution_demand",
           "query": "sleep tracker app",
-          "selection_reasoning": "This is the strongest remaining distinct solution-demand query because sleep tracking is explicitly supported in REGEN's biomarker workflow and it represents a separate reader need from macro logging.",
-          "content_angle": "The page should present sleep as one biomarker inside a broader trend-tracking workflow, emphasizing logging, drift detection, and retest timing.",
-          "product_connection": "REGEN can fit naturally by showing its sleep biomarker tracking and trend analysis alongside the rest of the protocol dashboard.",
-          "confidence": "medium",
+          "selection_reasoning": "This is the strongest remaining distinct solution-demand opportunity because sleep tracking is explicitly supported in REGEN's biomarker workflow and the query addresses a separate software need from nutrition tracking.",
+          "content_angle": "The page should frame sleep as one biomarker to track over time and explain how app-based sleep logging supports trend review inside a broader protocol dashboard.",
+          "product_connection": "REGEN can naturally appear as a protocol app that logs sleep alongside other biomarkers, reminders, and trend analysis.",
+          "confidence": "low",
           "opportunity_rank": 4,
           "validation_reasoning": "The query asks for a sleep tracker app, and REGEN explicitly tracks sleep as part of its biomarker workflow.",
           "source_seed_keywords": [
@@ -410,12 +412,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 12100,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.9033,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.9033,
             "keyword_difficulty_original": 51,
             "keyword_difficulty_used": 51,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.49,
+            "attainability_score": 0.49,
             "opportunity_score": 77.9
           }
         }

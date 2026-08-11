@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.2.0",
-  "run_id": "888dcf82-ee13-4750-9aa8-4ffd5e064a94",
-  "generated_at": "2026-07-27T20:06:25.171Z",
+  "schema_version": "2.1.0",
+  "run_id": "da98c5f2-0848-4325-893c-aca971cd7d23",
+  "generated_at": "2026-08-10T21:11:28.361Z",
   "source_artifacts": [
     "confirmed-queries.json"
   ],
@@ -9,18 +9,1443 @@
   "warnings": [],
   "website_url": "https://regenhealth.app/",
   "scoring_method": {
-    "name": "search_demand_times_organic_attainability",
-    "version": "1.1.0",
+    "name": "relative_search_demand_plus_organic_attainability",
+    "version": "2.0.0",
     "missing_keyword_difficulty_default": 50,
-    "volume_normalization": "log1p_relative_to_territory_max",
-    "combination_method": "multiplicative",
-    "formula": "100 * volume_score * difficulty_score"
+    "combination_method": "weighted_additive",
+    "formula": "100 * (0.70 * demand_score + 0.30 * attainability_score)",
+    "weights": {
+      "demand_score": 0.7,
+      "attainability_score": 0.3
+    },
+    "demand_normalization": {
+      "method": "log1p_territory_p95_capped",
+      "territory_specific": true,
+      "cap": 1
+    },
+    "score_scope": "within_territory_relative_priority"
   },
+  "all_scored_queries": [
+    {
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 390,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6349,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 74.4
+      }
+    },
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 320,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6139,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 73
+      }
+    },
+    {
+      "query_id": "problem_demand_004",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 260,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5919,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 71.4
+      }
+    },
+    {
+      "query_id": "problem_demand_006",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 66.8
+      }
+    },
+    {
+      "query_id": "problem_demand_007",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_008",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 260,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5919,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 71.4
+      }
+    },
+    {
+      "query_id": "problem_demand_009",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4534,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 61.7
+      }
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_011",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 320,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6139,
+        "keyword_difficulty_original": 29,
+        "keyword_difficulty_used": 29,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.71,
+        "opportunity_score": 64.3
+      }
+    },
+    {
+      "query_id": "problem_demand_013",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.501,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 65.1
+      }
+    },
+    {
+      "query_id": "problem_demand_014",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 9,
+        "keyword_difficulty_used": 9,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.91,
+        "opportunity_score": 64.1
+      }
+    },
+    {
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_016",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.501,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 65.1
+      }
+    },
+    {
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4534,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 61.7
+      }
+    },
+    {
+      "query_id": "problem_demand_020",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 1,
+        "keyword_difficulty_used": 1,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.99,
+        "opportunity_score": 66.5
+      }
+    },
+    {
+      "query_id": "problem_demand_021",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_022",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_025",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 5,
+        "keyword_difficulty_used": 5,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.95,
+        "opportunity_score": 65.3
+      }
+    },
+    {
+      "query_id": "problem_demand_026",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 66.8
+      }
+    },
+    {
+      "query_id": "problem_demand_027",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_031",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4534,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 61.7
+      }
+    },
+    {
+      "query_id": "problem_demand_033",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 480,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6569,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 76
+      }
+    },
+    {
+      "query_id": "problem_demand_034",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 301000,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 1,
+        "keyword_difficulty_original": 14,
+        "keyword_difficulty_used": 14,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.86,
+        "opportunity_score": 95.8
+      }
+    },
+    {
+      "query_id": "problem_demand_038",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 12100,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 1,
+        "keyword_difficulty_original": 26,
+        "keyword_difficulty_used": 26,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.74,
+        "opportunity_score": 92.2
+      }
+    },
+    {
+      "query_id": "problem_demand_045",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 2400,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.828,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 88
+      }
+    },
+    {
+      "query_id": "problem_demand_047",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 6600,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.9355,
+        "keyword_difficulty_original": 16,
+        "keyword_difficulty_used": 16,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.84,
+        "opportunity_score": 90.7
+      }
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 2400,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.828,
+        "keyword_difficulty_original": 19,
+        "keyword_difficulty_used": 19,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.81,
+        "opportunity_score": 82.3
+      }
+    },
+    {
+      "query_id": "problem_demand_057",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 2400,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.828,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 88
+      }
+    },
+    {
+      "query_id": "problem_demand_062",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1900,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.8031,
+        "keyword_difficulty_original": 19,
+        "keyword_difficulty_used": 19,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.81,
+        "opportunity_score": 80.5
+      }
+    },
+    {
+      "query_id": "problem_demand_064",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 2400,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.828,
+        "keyword_difficulty_original": 59,
+        "keyword_difficulty_used": 59,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.41,
+        "opportunity_score": 70.3
+      }
+    },
+    {
+      "query_id": "problem_demand_065",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 390,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6349,
+        "keyword_difficulty_original": 5,
+        "keyword_difficulty_used": 5,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.95,
+        "opportunity_score": 72.9
+      }
+    },
+    {
+      "query_id": "problem_demand_091",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 260,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5919,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 71.4
+      }
+    },
+    {
+      "query_id": "problem_demand_092",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 880,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.7213,
+        "keyword_difficulty_original": 4,
+        "keyword_difficulty_used": 4,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.96,
+        "opportunity_score": 79.3
+      }
+    },
+    {
+      "query_id": "problem_demand_099",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 390,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6349,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 74.4
+      }
+    },
+    {
+      "query_id": "problem_demand_104",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5693,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 69.8
+      }
+    },
+    {
+      "query_id": "problem_demand_114",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 480,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6569,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 76
+      }
+    },
+    {
+      "query_id": "problem_demand_120",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 590,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6788,
+        "keyword_difficulty_original": 19,
+        "keyword_difficulty_used": 19,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.81,
+        "opportunity_score": 71.8
+      }
+    },
+    {
+      "query_id": "problem_demand_122",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.501,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 65.1
+      }
+    },
+    {
+      "query_id": "problem_demand_130",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 22200,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 1,
+        "keyword_difficulty_original": 8,
+        "keyword_difficulty_used": 8,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.92,
+        "opportunity_score": 97.6
+      }
+    },
+    {
+      "query_id": "problem_demand_133",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 480,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6569,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 76
+      }
+    },
+    {
+      "query_id": "problem_demand_141",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 66.8
+      }
+    },
+    {
+      "query_id": "problem_demand_142",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.501,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 65.1
+      }
+    },
+    {
+      "query_id": "problem_demand_144",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 22200,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 1,
+        "keyword_difficulty_original": 4,
+        "keyword_difficulty_used": 4,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.96,
+        "opportunity_score": 98.8
+      }
+    },
+    {
+      "query_id": "problem_demand_147",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 590,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6788,
+        "keyword_difficulty_original": 28,
+        "keyword_difficulty_used": 28,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.72,
+        "opportunity_score": 69.1
+      }
+    },
+    {
+      "query_id": "problem_demand_178",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 66.8
+      }
+    },
+    {
+      "query_id": "problem_demand_185",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 61.5
+      }
+    },
+    {
+      "query_id": "problem_demand_188",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4534,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 61.7
+      }
+    },
+    {
+      "query_id": "problem_demand_209",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 260,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5919,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 71.4
+      }
+    },
+    {
+      "query_id": "problem_demand_302",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 5400,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.9142,
+        "keyword_difficulty_original": 9,
+        "keyword_difficulty_used": 9,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.91,
+        "opportunity_score": 91.3
+      }
+    },
+    {
+      "query_id": "problem_demand_303",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 4400,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.8924,
+        "keyword_difficulty_original": 20,
+        "keyword_difficulty_used": 20,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.8,
+        "opportunity_score": 86.5
+      }
+    },
+    {
+      "query_id": "problem_demand_309",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1900,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.8031,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 86.2
+      }
+    },
+    {
+      "query_id": "problem_demand_311",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 480,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6569,
+        "keyword_difficulty_original": 20,
+        "keyword_difficulty_used": 20,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.8,
+        "opportunity_score": 70
+      }
+    },
+    {
+      "query_id": "problem_demand_312",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1900,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.8031,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 84.1
+      }
+    },
+    {
+      "query_id": "problem_demand_315",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 590,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6788,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 77.5
+      }
+    },
+    {
+      "query_id": "problem_demand_317",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1900,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.8031,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 86.2
+      }
+    },
+    {
+      "query_id": "problem_demand_318",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1300,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.7628,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 83.4
+      }
+    },
+    {
+      "query_id": "problem_demand_322",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 720,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.7,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 79
+      }
+    },
+    {
+      "query_id": "problem_demand_325",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1000,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.7349,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 79.3
+      }
+    },
+    {
+      "query_id": "problem_demand_338",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5693,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 69.8
+      }
+    },
+    {
+      "query_id": "problem_demand_364",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5469,
+        "keyword_difficulty_original": null,
+        "keyword_difficulty_used": 50,
+        "keyword_difficulty_was_imputed": true,
+        "attainability_score": 0.5,
+        "opportunity_score": 53.3
+      }
+    },
+    {
+      "query_id": "problem_demand_372",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5693,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 69.8
+      }
+    },
+    {
+      "query_id": "problem_demand_373",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 480,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6569,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 75.4
+      }
+    },
+    {
+      "query_id": "problem_demand_404",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 480,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.6569,
+        "keyword_difficulty_original": 20,
+        "keyword_difficulty_used": 20,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.8,
+        "opportunity_score": 70
+      }
+    },
+    {
+      "query_id": "problem_demand_434",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 5,
+        "keyword_difficulty_used": 5,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.95,
+        "opportunity_score": 62.1
+      }
+    },
+    {
+      "query_id": "problem_demand_436",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4798,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "problem_demand_441",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4534,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 61.7
+      }
+    },
+    {
+      "query_id": "problem_demand_447",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.4534,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 59.6
+      }
+    },
+    {
+      "query_id": "problem_demand_460",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5469,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 68.3
+      }
+    },
+    {
+      "query_id": "problem_demand_463",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5469,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 68.3
+      }
+    },
+    {
+      "query_id": "problem_demand_470",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 140,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.5264,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 66.8
+      }
+    },
+    {
+      "query_id": "problem_demand_494",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 12100,
+        "demand_score": 0.501,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 65.1
+      }
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 320,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5546,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 66.7
+      }
+    },
+    {
+      "query_id": "solution_demand_004",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.4334,
+        "keyword_difficulty_original": 6,
+        "keyword_difficulty_used": 6,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.94,
+        "opportunity_score": 58.5
+      }
+    },
+    {
+      "query_id": "solution_demand_005",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.4096,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 58.7
+      }
+    },
+    {
+      "query_id": "solution_demand_014",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 260,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5347,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 66.8
+      }
+    },
+    {
+      "query_id": "solution_demand_018",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 33100,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 1,
+        "keyword_difficulty_original": 68,
+        "keyword_difficulty_used": 68,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.32,
+        "opportunity_score": 79.6
+      }
+    },
+    {
+      "query_id": "solution_demand_024",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 390,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5735,
+        "keyword_difficulty_original": 33,
+        "keyword_difficulty_used": 33,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.67,
+        "opportunity_score": 60.2
+      }
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 390,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5735,
+        "keyword_difficulty_original": 52,
+        "keyword_difficulty_used": 52,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.48,
+        "opportunity_score": 54.5
+      }
+    },
+    {
+      "query_id": "solution_demand_049",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 33100,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 1,
+        "keyword_difficulty_original": 89,
+        "keyword_difficulty_used": 89,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.11,
+        "opportunity_score": 73.3
+      }
+    },
+    {
+      "query_id": "solution_demand_053",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 12100,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.9033,
+        "keyword_difficulty_original": 51,
+        "keyword_difficulty_used": 51,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.49,
+        "opportunity_score": 77.9
+      }
+    },
+    {
+      "query_id": "solution_demand_054",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 12100,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.9033,
+        "keyword_difficulty_original": 72,
+        "keyword_difficulty_used": 72,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.28,
+        "opportunity_score": 71.6
+      }
+    },
+    {
+      "query_id": "solution_demand_058",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 8100,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.8648,
+        "keyword_difficulty_original": 89,
+        "keyword_difficulty_used": 89,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.11,
+        "opportunity_score": 63.8
+      }
+    },
+    {
+      "query_id": "solution_demand_060",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1300,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.689,
+        "keyword_difficulty_original": 91,
+        "keyword_difficulty_used": 91,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.09,
+        "opportunity_score": 50.9
+      }
+    },
+    {
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1600,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.709,
+        "keyword_difficulty_original": 47,
+        "keyword_difficulty_used": 47,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.53,
+        "opportunity_score": 65.5
+      }
+    },
+    {
+      "query_id": "solution_demand_076",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 5400,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.8258,
+        "keyword_difficulty_original": 60,
+        "keyword_difficulty_used": 60,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.4,
+        "opportunity_score": 69.8
+      }
+    },
+    {
+      "query_id": "solution_demand_097",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 320,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5546,
+        "keyword_difficulty_original": 63,
+        "keyword_difficulty_used": 63,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.37,
+        "opportunity_score": 49.9
+      }
+    },
+    {
+      "query_id": "solution_demand_103",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5142,
+        "keyword_difficulty_original": 62,
+        "keyword_difficulty_used": 62,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.38,
+        "opportunity_score": 47.4
+      }
+    },
+    {
+      "query_id": "solution_demand_116",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1000,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.6638,
+        "keyword_difficulty_original": 58,
+        "keyword_difficulty_used": 58,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.42,
+        "opportunity_score": 59.1
+      }
+    },
+    {
+      "query_id": "solution_demand_117",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1000,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.6638,
+        "keyword_difficulty_original": 40,
+        "keyword_difficulty_used": 40,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.6,
+        "opportunity_score": 64.5
+      }
+    },
+    {
+      "query_id": "solution_demand_127",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 390,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5735,
+        "keyword_difficulty_original": 55,
+        "keyword_difficulty_used": 55,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.45,
+        "opportunity_score": 53.6
+      }
+    },
+    {
+      "query_id": "solution_demand_147",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.4334,
+        "keyword_difficulty_original": 43,
+        "keyword_difficulty_used": 43,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.57,
+        "opportunity_score": 47.4
+      }
+    },
+    {
+      "query_id": "solution_demand_181",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 3600,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.7868,
+        "keyword_difficulty_original": 60,
+        "keyword_difficulty_used": 60,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.4,
+        "opportunity_score": 67.1
+      }
+    },
+    {
+      "query_id": "solution_demand_186",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.5142,
+        "keyword_difficulty_original": 30,
+        "keyword_difficulty_used": 30,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.7,
+        "opportunity_score": 57
+      }
+    },
+    {
+      "query_id": "solution_demand_194",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1600,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.709,
+        "keyword_difficulty_original": 89,
+        "keyword_difficulty_used": 89,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.11,
+        "opportunity_score": 52.9
+      }
+    },
+    {
+      "query_id": "solution_demand_201",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 8100,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.8648,
+        "keyword_difficulty_original": 91,
+        "keyword_difficulty_used": 91,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.09,
+        "opportunity_score": 63.2
+      }
+    },
+    {
+      "query_id": "solution_demand_213",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 9900,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.884,
+        "keyword_difficulty_original": 34,
+        "keyword_difficulty_used": 34,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.66,
+        "opportunity_score": 81.7
+      }
+    },
+    {
+      "query_id": "solution_demand_233",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 6600,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.8451,
+        "keyword_difficulty_original": 89,
+        "keyword_difficulty_used": 89,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.11,
+        "opportunity_score": 62.5
+      }
+    },
+    {
+      "query_id": "solution_demand_235",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 5400,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.8258,
+        "keyword_difficulty_original": 11,
+        "keyword_difficulty_used": 11,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.89,
+        "opportunity_score": 84.5
+      }
+    },
+    {
+      "query_id": "solution_demand_240",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1600,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.709,
+        "keyword_difficulty_original": 34,
+        "keyword_difficulty_used": 34,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.66,
+        "opportunity_score": 69.4
+      }
+    },
+    {
+      "query_id": "solution_demand_251",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1900,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.7255,
+        "keyword_difficulty_original": 46,
+        "keyword_difficulty_used": 46,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.54,
+        "opportunity_score": 67
+      }
+    },
+    {
+      "query_id": "solution_demand_253",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1600,
+        "territory_p95_search_volume": 33100,
+        "demand_score": 0.709,
+        "keyword_difficulty_original": 31,
+        "keyword_difficulty_used": 31,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.69,
+        "opportunity_score": 70.3
+      }
+    }
+  ],
   "territory_rankings": [
     {
       "territory": "problem_demand",
       "confirmed_query_count": 71,
-      "maximum_search_volume": 12100,
+      "territory_p95_search_volume": 12100,
       "selected_query_count": 10,
       "queries": [
         {
@@ -136,12 +1561,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 22200,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 1,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 1,
             "keyword_difficulty_original": 4,
             "keyword_difficulty_used": 4,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.96,
+            "attainability_score": 0.96,
             "opportunity_score": 98.8
           }
         },
@@ -256,12 +1681,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 22200,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 1,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 1,
             "keyword_difficulty_original": 8,
             "keyword_difficulty_used": 8,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.92,
+            "attainability_score": 0.92,
             "opportunity_score": 97.6
           }
         },
@@ -376,12 +1801,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 301000,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 1,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 1,
             "keyword_difficulty_original": 14,
             "keyword_difficulty_used": 14,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.86,
+            "attainability_score": 0.86,
             "opportunity_score": 95.8
           }
         },
@@ -496,12 +1921,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 12100,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 1,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 1,
             "keyword_difficulty_original": 26,
             "keyword_difficulty_used": 26,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.74,
+            "attainability_score": 0.74,
             "opportunity_score": 92.2
           }
         },
@@ -618,12 +2043,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 5400,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 0.9142,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 0.9142,
             "keyword_difficulty_original": 9,
             "keyword_difficulty_used": 9,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.91,
+            "attainability_score": 0.91,
             "opportunity_score": 91.3
           }
         },
@@ -738,12 +2163,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 6600,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 0.9355,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 0.9355,
             "keyword_difficulty_original": 16,
             "keyword_difficulty_used": 16,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.84,
+            "attainability_score": 0.84,
             "opportunity_score": 90.7
           }
         },
@@ -858,12 +2283,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 2400,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 0.828,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 0.828,
             "keyword_difficulty_original": 0,
             "keyword_difficulty_used": 0,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
+            "attainability_score": 1,
             "opportunity_score": 88
           }
         },
@@ -978,12 +2403,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 2400,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 0.828,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 0.828,
             "keyword_difficulty_original": 0,
             "keyword_difficulty_used": 0,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
+            "attainability_score": 1,
             "opportunity_score": 88
           }
         },
@@ -1098,12 +2523,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 4400,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 0.8924,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 0.8924,
             "keyword_difficulty_original": 20,
             "keyword_difficulty_used": 20,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.8,
+            "attainability_score": 0.8,
             "opportunity_score": 86.5
           }
         },
@@ -1220,12 +2645,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 1900,
-            "maximum_territory_search_volume": 12100,
-            "volume_score": 0.8031,
+            "territory_p95_search_volume": 12100,
+            "demand_score": 0.8031,
             "keyword_difficulty_original": 0,
             "keyword_difficulty_used": 0,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 1,
+            "attainability_score": 1,
             "opportunity_score": 86.2
           }
         }
@@ -1234,7 +2659,7 @@
     {
       "territory": "solution_demand",
       "confirmed_query_count": 30,
-      "maximum_search_volume": 33100,
+      "territory_p95_search_volume": 33100,
       "selected_query_count": 10,
       "queries": [
         {
@@ -1348,12 +2773,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 5400,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.8258,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.8258,
             "keyword_difficulty_original": 11,
             "keyword_difficulty_used": 11,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.89,
+            "attainability_score": 0.89,
             "opportunity_score": 84.5
           }
         },
@@ -1468,12 +2893,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 9900,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.884,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.884,
             "keyword_difficulty_original": 34,
             "keyword_difficulty_used": 34,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.66,
+            "attainability_score": 0.66,
             "opportunity_score": 81.7
           }
         },
@@ -1590,12 +3015,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 33100,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 1,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 1,
             "keyword_difficulty_original": 68,
             "keyword_difficulty_used": 68,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.32,
+            "attainability_score": 0.32,
             "opportunity_score": 79.6
           }
         },
@@ -1712,12 +3137,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 12100,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.9033,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.9033,
             "keyword_difficulty_original": 51,
             "keyword_difficulty_used": 51,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.49,
+            "attainability_score": 0.49,
             "opportunity_score": 77.9
           }
         },
@@ -1835,12 +3260,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 33100,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 1,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 1,
             "keyword_difficulty_original": 89,
             "keyword_difficulty_used": 89,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.11,
+            "attainability_score": 0.11,
             "opportunity_score": 73.3
           }
         },
@@ -1958,12 +3383,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 12100,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.9033,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.9033,
             "keyword_difficulty_original": 72,
             "keyword_difficulty_used": 72,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.28,
+            "attainability_score": 0.28,
             "opportunity_score": 71.6
           }
         },
@@ -2080,12 +3505,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 1600,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.709,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.709,
             "keyword_difficulty_original": 31,
             "keyword_difficulty_used": 31,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.69,
+            "attainability_score": 0.69,
             "opportunity_score": 70.3
           }
         },
@@ -2200,12 +3625,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 5400,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.8258,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.8258,
             "keyword_difficulty_original": 60,
             "keyword_difficulty_used": 60,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.4,
+            "attainability_score": 0.4,
             "opportunity_score": 69.8
           }
         },
@@ -2320,12 +3745,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 1600,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.709,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.709,
             "keyword_difficulty_original": 34,
             "keyword_difficulty_used": 34,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.66,
+            "attainability_score": 0.66,
             "opportunity_score": 69.4
           }
         },
@@ -2440,12 +3865,12 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 3600,
-            "maximum_territory_search_volume": 33100,
-            "volume_score": 0.7868,
+            "territory_p95_search_volume": 33100,
+            "demand_score": 0.7868,
             "keyword_difficulty_original": 60,
             "keyword_difficulty_used": 60,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.4,
+            "attainability_score": 0.4,
             "opportunity_score": 67.1
           }
         }
@@ -2459,6 +3884,10 @@
     "problem_queries_selected": 10,
     "solution_queries_selected": 10,
     "total_queries_selected": 20,
+    "total_queries_scored": 101,
+    "problem_queries_scored": 71,
+    "solution_queries_scored": 30,
+    "missing_keyword_difficulty_scored": 1,
     "missing_keyword_difficulty_selected": 0
   }
 }

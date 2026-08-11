@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
+import { OPPORTUNITY_SCORING_METHOD } from "../lib/opportunityScoring.js";
 import type { CompanyReport } from "../types/companyReport.schema.js";
 import {
   buildSerpReportPayload,
@@ -25,23 +26,32 @@ type FakeClientOptions = {
   updateError?: SupabaseError | null;
 };
 
-test("payload maps company report fields and preserves artifact unchanged", () => {
+test("payload maps report fields and adds only Supabase compatibility aliases", () => {
   const companyReport = buildCompanyReport();
   const payload = buildSerpReportPayload(
     companyReport,
     new Date("2026-07-26T12:00:00.000Z"),
   );
 
-  assert.deepEqual(payload, {
-    report_id: "report_example",
-    slug: "example-report",
-    website_url: "https://example.com/",
-    company_name: "Example Co",
-    status: "complete",
-    artifact: companyReport,
-    updated_at: "2026-07-26T12:00:00.000Z",
-  });
-  assert.equal(payload.artifact, companyReport);
+  assert.deepEqual(
+    {
+      report_id: payload.report_id,
+      slug: payload.slug,
+      website_url: payload.website_url,
+      company_name: payload.company_name,
+      status: payload.status,
+      updated_at: payload.updated_at,
+    },
+    {
+      report_id: "report_example",
+      slug: "example-report",
+      website_url: "https://example.com/",
+      company_name: "Example Co",
+      status: "complete",
+      updated_at: "2026-07-26T12:00:00.000Z",
+    },
+  );
+  assertSupabaseCompatibilityArtifact(payload.artifact, companyReport);
   assert.equal(Object.hasOwn(payload, "id"), false);
   assert.equal(Object.hasOwn(payload, "created_at"), false);
 });
@@ -62,7 +72,10 @@ test("no matching slug inserts a new row", async () => {
   });
   assert.equal(client.insertPayloads.length, 1);
   assert.equal(client.updatePayloads.length, 0);
-  assert.equal(client.insertPayloads[0].artifact, companyReport);
+  assertSupabaseCompatibilityArtifact(
+    client.insertPayloads[0].artifact,
+    companyReport,
+  );
   assert.equal(Object.hasOwn(client.insertPayloads[0], "id"), false);
   assert.equal(Object.hasOwn(client.insertPayloads[0], "created_at"), false);
 });
@@ -92,7 +105,10 @@ test("one matching slug updates that exact row by UUID", async () => {
   assert.equal(client.insertPayloads.length, 0);
   assert.equal(client.updatePayloads.length, 1);
   assert.deepEqual(client.updateFilters, [{ column: "id", value: "existing_row" }]);
-  assert.equal(client.updatePayloads[0].artifact, companyReport);
+  assertSupabaseCompatibilityArtifact(
+    client.updatePayloads[0].artifact,
+    companyReport,
+  );
   assert.equal(Object.hasOwn(client.updatePayloads[0], "id"), false);
   assert.equal(Object.hasOwn(client.updatePayloads[0], "created_at"), false);
 });
@@ -237,15 +253,83 @@ class FakeSupabaseClient implements CompanyReportSupabaseClient {
 
 function buildCompanyReport(): CompanyReport {
   return {
+    schema_version: "2.1.0",
     report_id: "report_example",
     report_slug: "example-report",
     website_url: "https://example.com/",
     status: "complete",
+    scoring_method: OPPORTUNITY_SCORING_METHOD,
     company: {
       name: "Example Co",
+    },
+    content_plan: {
+      items: [
+        {
+          opportunity_metrics: {
+            search_volume_used: 301_000,
+            territory_p95_search_volume: 12_100,
+            demand_score: 1,
+            keyword_difficulty_original: 60,
+            keyword_difficulty_used: 60,
+            keyword_difficulty_was_imputed: false,
+            attainability_score: 0.4,
+            opportunity_score: 82,
+          },
+        },
+      ],
     },
     nested: {
       preserved: true,
     },
   } as unknown as CompanyReport;
+}
+
+function assertSupabaseCompatibilityArtifact(
+  artifact: unknown,
+  companyReport: CompanyReport,
+): void {
+  const persistedArtifact = artifact as {
+    scoring_method: unknown;
+    content_plan: {
+      items: Array<{
+        opportunity_metrics: Record<string, unknown>;
+      }>;
+    };
+  };
+  const canonicalMetrics =
+    companyReport.content_plan.items[0].opportunity_metrics;
+  const persistedMetrics =
+    persistedArtifact.content_plan.items[0].opportunity_metrics;
+
+  assert.notEqual(artifact, companyReport);
+  assert.deepEqual(persistedArtifact, {
+    ...companyReport,
+    content_plan: {
+      ...companyReport.content_plan,
+      items: companyReport.content_plan.items.map((item) => ({
+        ...item,
+        opportunity_metrics: {
+          ...item.opportunity_metrics,
+          maximum_territory_search_volume:
+            item.opportunity_metrics.territory_p95_search_volume,
+          volume_score: item.opportunity_metrics.demand_score,
+          difficulty_score: item.opportunity_metrics.attainability_score,
+        },
+      })),
+    },
+  });
+  assert.deepEqual(persistedArtifact.scoring_method, OPPORTUNITY_SCORING_METHOD);
+  assert.deepEqual(persistedMetrics, {
+    ...canonicalMetrics,
+    maximum_territory_search_volume:
+      canonicalMetrics.territory_p95_search_volume,
+    volume_score: canonicalMetrics.demand_score,
+    difficulty_score: canonicalMetrics.attainability_score,
+  });
+  assert.equal(
+    Object.hasOwn(canonicalMetrics, "maximum_territory_search_volume"),
+    false,
+  );
+  assert.equal(Object.hasOwn(canonicalMetrics, "volume_score"), false);
+  assert.equal(Object.hasOwn(canonicalMetrics, "difficulty_score"), false);
 }

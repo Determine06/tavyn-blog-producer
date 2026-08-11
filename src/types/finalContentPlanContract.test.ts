@@ -149,7 +149,7 @@ function buildQueryRecommendations(
   );
 
   return {
-    schema_version: "1.2.0",
+    schema_version: "2.0.0",
     run_id: "run_test",
     generated_at: "2026-07-26T00:00:00.000Z",
     source_artifacts: ["company-profile.json", "query-opportunities.json"],
@@ -228,12 +228,12 @@ function buildRecommendation(
     metrics: buildMetrics(),
     opportunity_metrics: {
       search_volume_used: 100,
-      maximum_territory_search_volume: 1000,
-      volume_score: 0.5,
+      territory_p95_search_volume: 10_200,
+      demand_score: 0.5,
       keyword_difficulty_original: 20,
       keyword_difficulty_used: 20,
       keyword_difficulty_was_imputed: false,
-      difficulty_score: 0.8,
+      attainability_score: 0.8,
       opportunity_score: 59,
     },
   };

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1.0",
-  "run_id": "888dcf82-ee13-4750-9aa8-4ffd5e064a94",
-  "generated_at": "2026-07-27T20:08:07.640Z",
+  "run_id": "da98c5f2-0848-4325-893c-aca971cd7d23",
+  "generated_at": "2026-08-10T03:25:34.561Z",
   "source_artifacts": [
     "company-profile.json",
     "query-recommendations.json",
@@ -9,13 +9,11 @@
   ],
   "status": "complete",
   "warnings": [
-    "problem_demand_034 returned 9 organic results instead of 10.",
-    "problem_demand_034: This query sits in a high-stakes dosing context, so the page should stay educational and include a clear reminder that it does not replace licensed clinical guidance.",
-    "problem_demand_034: The live SERP narrows the meaning of the query toward reconstitution and syringe-unit calculation rather than a broad peptide reference topic.",
-    "solution_demand_076: The SERP is broad and competitive, with established nutrition apps and listicles that are not peptide-specific.",
-    "solution_demand_076: The page should frame REGEN as a specialized protocol workflow with macro tracking, not as a full replacement for mainstream nutrition apps.",
-    "solution_demand_053: This query is broad consumer app territory, while REGEN only supports sleep as part of a larger biomarker workflow.",
-    "solution_demand_053: The SERP favors dedicated sleep apps and review content, so the page will need a careful angle to avoid overclaiming sleep-specific functionality."
+    "problem_demand_144 returned 8 organic results instead of 10.",
+    "solution_demand_053 returned 9 organic results instead of 10.",
+    "problem_demand_144: The SERP includes dosage, reconstitution, and product-style results, so the page should avoid prescriptive instructions and should be reviewed carefully because the topic is high-stakes.",
+    "solution_demand_235: The SERP is strongly commercial and dominated by established nutrition apps, so REGEN should frame itself as a niche protocol-aware option rather than a pure macro-tracking specialist.",
+    "solution_demand_053: Google is rewarding dedicated sleep apps and app-store listings, so a broader REGEN feature page may underfit the query and confidence is low."
   ],
   "website_url": "https://regenhealth.app/",
   "source_profile": {
@@ -27,62 +25,60 @@
     {
       "recommendation_id": "problem_demand_recommendation_01",
       "recommendation_rank": 1,
-      "query_id": "problem_demand_034",
+      "query_id": "problem_demand_144",
       "territory": "problem_demand",
-      "primary_query": "peptide calculator",
+      "primary_query": "aod 9604 peptide",
       "serp_analysis": {
-        "dominant_intent": "transactional",
-        "dominant_page_type": "tool",
-        "serp_consistency": "high",
-        "summary": "Searchers appear to want a calculator that converts peptide vial size, reconstitution inputs, and target dose into syringe draw units, and Google is rewarding dedicated calculator tools with a few supporting video and forum results.",
+        "dominant_intent": "informational",
+        "dominant_page_type": "mixed",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to want an evidence-backed overview of AOD-9604 with practical protocol context, and Google is rewarding dosage guides, research references, safety content, and other educational resources rather than one uniform page format.",
         "recurring_concepts": [
-          "reconstitution",
           "dosage",
-          "syringe units",
-          "BAC water",
-          "dose conversion"
+          "reconstitution",
+          "safety and tolerability",
+          "metabolic and obesity research",
+          "protocol use"
         ]
       },
       "editorial_recommendation": {
-        "recommended_title": "Peptide Calculator for Reconstitution, Dosage, and Syringe Units",
-        "recommended_page_type": "interactive_tool",
-        "content_angle": "The page should help readers verify peptide dose math step by step, with clear input handling for reconstitution volume, target dose, and syringe units so the calculator feels trustworthy for protocol users.",
-        "product_connection": "REGEN can appear naturally as the cited calculator and reference layer that helps users check BAC water math, IU conversion, and units-per-click before they draw.",
+        "recommended_title": "AOD-9604 Peptide: Evidence, Safety Notes, and Tracking Considerations",
+        "recommended_page_type": "guide",
+        "content_angle": "The page should give a citation-backed, non-prescriptive overview of AOD-9604, explain why searchers are seeing dosage and reconstitution content, and help adults already running protocols understand which tracking and safety questions matter most.",
+        "product_connection": "REGEN can appear as the cited reference and tracking layer for adults already running peptide protocols, with biomarker, dose, and inventory logs supporting the educational content.",
         "confidence": "medium",
         "warnings": [
-          "This query sits in a high-stakes dosing context, so the page should stay educational and include a clear reminder that it does not replace licensed clinical guidance.",
-          "The live SERP narrows the meaning of the query toward reconstitution and syringe-unit calculation rather than a broad peptide reference topic."
+          "The SERP includes dosage, reconstitution, and product-style results, so the page should avoid prescriptive instructions and should be reviewed carefully because the topic is high-stakes."
         ]
       }
     },
     {
       "recommendation_id": "solution_demand_recommendation_01",
       "recommendation_rank": 1,
-      "query_id": "solution_demand_076",
+      "query_id": "solution_demand_235",
       "territory": "solution_demand",
-      "primary_query": "macro tracking app",
+      "primary_query": "best macro tracking app",
       "serp_analysis": {
         "dominant_intent": "commercial",
-        "dominant_page_type": "mixed",
+        "dominant_page_type": "product_page",
         "serp_consistency": "medium",
-        "summary": "Searchers appear to be comparing macro tracking apps for calorie and macro logging, and Google is rewarding a mix of product pages, listicles, app listings, and community recommendations.",
+        "summary": "Searchers appear to be comparing macro tracking apps, and Google is rewarding dedicated product pages alongside roundup-style comparisons and community discussion about accuracy, free access, and coaching features.",
         "recurring_concepts": [
-          "macro tracking",
-          "calorie tracking",
-          "app recommendations",
+          "calories and macros",
+          "accuracy",
+          "AI coaching",
           "free options",
-          "science-backed"
+          "app comparisons"
         ]
       },
       "editorial_recommendation": {
-        "recommended_title": "Macro Tracking App for Protocol-Aware Nutrition Logging",
-        "recommended_page_type": "category_guide",
-        "content_angle": "The page should explain how a macro tracking app fits into a protocol-aware nutrition workflow, emphasizing lower-friction logging, clearer macro estimates, and a better fit for people who want their nutrition data tied to a broader regimen.",
-        "product_connection": "REGEN can fit naturally by showing its photo macro scan and window-aware logging as one part of a broader protocol dashboard rather than pretending to be a generic nutrition app.",
+        "recommended_title": "Best Macro Tracking Apps: A Comparison for Protocol-Aware Nutrition Logging",
+        "recommended_page_type": "comparison_page",
+        "content_angle": "The page should compare macro tracking apps on the practical criteria the SERP keeps surfacing—accuracy, free access, AI coaching, and logging workflows—while positioning REGEN as a protocol-aware option for users who also want meal tracking inside a broader health system.",
+        "product_connection": "REGEN can naturally show its photo macro scan and window-aware logging as a niche fit for users who want nutrition tracking inside a broader protocol app.",
         "confidence": "medium",
         "warnings": [
-          "The SERP is broad and competitive, with established nutrition apps and listicles that are not peptide-specific.",
-          "The page should frame REGEN as a specialized protocol workflow with macro tracking, not as a full replacement for mainstream nutrition apps."
+          "The SERP is strongly commercial and dominated by established nutrition apps, so REGEN should frame itself as a niche protocol-aware option rather than a pure macro-tracking specialist."
         ]
       }
     },
@@ -93,27 +89,26 @@
       "territory": "solution_demand",
       "primary_query": "sleep tracker app",
       "serp_analysis": {
-        "dominant_intent": "commercial",
-        "dominant_page_type": "mixed",
+        "dominant_intent": "transactional",
+        "dominant_page_type": "app_listing",
         "serp_consistency": "medium",
-        "summary": "Searchers appear to want recommendations for sleep tracking apps, and Google is rewarding reviews, app listings, product pages, and community discussion rather than a pure educational explainer.",
+        "summary": "Searchers appear to want a standalone app to track sleep, and Google is primarily rewarding app listings and product pages with some review and comparison content mixed in.",
         "recurring_concepts": [
           "sleep tracking",
-          "app recommendations",
-          "sleep quality",
+          "science-based coaching",
           "smart alarm",
-          "science-backed"
+          "wearables and sensors",
+          "reviews and comparisons"
         ]
       },
       "editorial_recommendation": {
-        "recommended_title": "Sleep Tracker App for Biomarker Trend Monitoring",
-        "recommended_page_type": "category_guide",
-        "content_angle": "The page should position sleep as one biomarker inside a larger trend-tracking workflow, focusing on logging, drift detection, and retest timing for readers who manage their own protocols.",
-        "product_connection": "REGEN can fit naturally by showing its sleep biomarker tracking and trend analysis alongside the rest of the protocol dashboard.",
+        "recommended_title": "Sleep Tracker App: How REGEN Logs Sleep as a Biomarker Over Time",
+        "recommended_page_type": "feature_page",
+        "content_angle": "The page should explain sleep tracking as one biomarker inside a broader protocol dashboard, emphasizing trend review, reminders, and simple logging rather than pretending to be a standalone consumer sleep app.",
+        "product_connection": "REGEN can naturally connect by showing how sleep logs, biomarker trends, and reminders live alongside the rest of the protocol workflow.",
         "confidence": "low",
         "warnings": [
-          "This query is broad consumer app territory, while REGEN only supports sleep as part of a larger biomarker workflow.",
-          "The SERP favors dedicated sleep apps and review content, so the page will need a careful angle to avoid overclaiming sleep-specific functionality."
+          "Google is rewarding dedicated sleep apps and app-store listings, so a broader REGEN feature page may underfit the query and confidence is low."
         ]
       }
     }
