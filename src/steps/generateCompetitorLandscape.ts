@@ -6,6 +6,13 @@ import {
   recordDataForSeoUsage,
 } from "../lib/logger.js";
 import {
+  hostnameMatchesDomain,
+  isGenericVisibilityExcluded,
+  loadGenericVisibilityExclusions,
+  normalizeCandidateHostname,
+  type GenericVisibilityExclusions,
+} from "../lib/genericVisibilityExclusions.js";
+import {
   ConfirmedQueriesSchema,
   type ConfirmedQueries,
 } from "../types/confirmedQueries.schema.js";
@@ -23,6 +30,7 @@ const LANGUAGE_CODE = "en";
 const INCLUDE_SUBDOMAINS = true;
 const ITEM_TYPES = ["organic"] as const;
 const COMPETITOR_LIMIT = 50;
+const PROVIDER_CANDIDATE_LIMIT = 1000;
 const ORDER_BY = ["rating,desc"] as const;
 const PROVIDER_KEYWORD_LIMIT = 200;
 const TASK_TAG = "competitor_landscape";
@@ -55,7 +63,7 @@ type DataForSeoResult = {
 };
 
 type DataForSeoItem = {
-  domain: string;
+  domain: string | null;
   avg_position: number | null;
   median_position: number | null;
   rating: number | null;
@@ -80,6 +88,8 @@ export async function generateCompetitorLandscape(
   const validatedConfirmedQueries =
     ConfirmedQueriesSchema.parse(confirmedQueries);
   const targetDomain = getTargetDomain(validatedConfirmedQueries.website_url);
+  const genericVisibilityExclusions =
+    await loadGenericVisibilityExclusions();
 
   if (validatedConfirmedQueries.confirmed_queries.length === 0) {
     throw new Error(
@@ -135,20 +145,22 @@ export async function generateCompetitorLandscape(
     );
   }
 
-  if (response.task.result.items_count < COMPETITOR_LIMIT) {
-    warnings.push(
-      `DataForSEO returned ${response.task.result.items_count} competitor domain${response.task.result.items_count === 1 ? "" : "s"} instead of ${COMPETITOR_LIMIT}.`,
-    );
-  }
-
   const unmatchedProviderKeys = new Set<string>();
-  const competitors = normalizeCompetitors(
+  const normalizedCompetitors = normalizeCompetitors(
     response.task.result.items,
     targetDomain,
+    genericVisibilityExclusions,
     providerSubmittedQueryEntries,
     validatedConfirmedQueries.confirmed_queries,
     unmatchedProviderKeys,
   );
+  const competitors = normalizedCompetitors.competitors;
+
+  if (competitors.length < COMPETITOR_LIMIT) {
+    warnings.push(
+      `${competitors.length} valid visibility competitor${competitors.length === 1 ? "" : "s"} survived filtering; fewer than the requested ${COMPETITOR_LIMIT}.`,
+    );
+  }
 
   for (const unmatchedProviderKey of unmatchedProviderKeys) {
     warnings.push(
@@ -186,7 +198,7 @@ export async function generateCompetitorLandscape(
       language_code: LANGUAGE_CODE,
       include_subdomains: INCLUDE_SUBDOMAINS,
       item_types: ITEM_TYPES,
-      limit: COMPETITOR_LIMIT,
+      limit: PROVIDER_CANDIDATE_LIMIT,
       order_by: ORDER_BY,
       target_domain_exclusion_filter: targetDomainExclusionFilter,
     },
@@ -204,7 +216,11 @@ export async function generateCompetitorLandscape(
     summary: {
       total_domains_found: response.task.result.total_count,
       domains_received: response.task.result.items_count,
+      raw_candidates_received: response.task.result.items_count,
+      generic_candidates_filtered:
+        normalizedCompetitors.genericCandidatesFiltered,
       competitors_included: competitors.length,
+      final_competitors_profiled: competitors.length,
       target_domain_excluded: targetDomainExcluded,
     },
     competitors,
@@ -214,6 +230,9 @@ export async function generateCompetitorLandscape(
     `Total domains found: ${competitorLandscape.summary.total_domains_found}`,
   );
   logInfo(`Domains received: ${competitorLandscape.summary.domains_received}`);
+  logInfo(
+    `Generic candidates filtered: ${competitorLandscape.summary.generic_candidates_filtered}`,
+  );
   logInfo(
     `Competitors retained: ${competitorLandscape.summary.competitors_included}`,
   );
@@ -225,9 +244,15 @@ export async function generateCompetitorLandscape(
 }
 
 function getTargetDomain(websiteUrl: string): string {
-  return new URL(websiteUrl).hostname
-    .replace(/^www\./, "")
-    .toLowerCase();
+  const targetDomain = normalizeCandidateHostname(new URL(websiteUrl).hostname);
+
+  if (targetDomain === null) {
+    throw new Error(
+      `Cannot generate competitor landscape because website_url has no valid hostname: ${websiteUrl}.`,
+    );
+  }
+
+  return targetDomain;
 }
 
 function prepareQueries(confirmedQueries: ConfirmedQuery[]) {
@@ -276,7 +301,7 @@ async function fetchCompetitorLandscape(
         language_code: LANGUAGE_CODE,
         include_subdomains: INCLUDE_SUBDOMAINS,
         item_types: ITEM_TYPES,
-        limit: COMPETITOR_LIMIT,
+        limit: PROVIDER_CANDIDATE_LIMIT,
         order_by: ORDER_BY,
         filters: ["domain", "not_regex", targetDomainExclusionFilter],
         tag: TASK_TAG,
@@ -369,7 +394,7 @@ function parseItem(value: unknown): DataForSeoItem {
   const item = requireRecord(value, "DataForSEO item");
 
   return {
-    domain: requireString(item.domain, "item domain"),
+    domain: getStringOrNull(item.domain),
     avg_position: getPositiveNumberOrNull(
       item.avg_position,
       "item avg_position",
@@ -402,53 +427,70 @@ function parseItem(value: unknown): DataForSeoItem {
 function normalizeCompetitors(
   items: DataForSeoItem[],
   targetDomain: string,
+  genericVisibilityExclusions: GenericVisibilityExclusions,
   normalizedQueryEntries: Map<string, NormalizedQueryEntry>,
   confirmedQueries: ConfirmedQuery[],
   unmatchedProviderKeys: Set<string>,
-): CompetitorLandscape["competitors"] {
+): {
+  competitors: CompetitorLandscape["competitors"];
+  genericCandidatesFiltered: number;
+} {
   const competitors: CompetitorInput[] = [];
   const seenDomains = new Set<string>();
+  let genericCandidatesFiltered = 0;
 
   for (const item of items) {
-    const normalizedDomain = normalizeDomain(item.domain);
+    const normalizedDomain = normalizeCandidateHostname(item.domain);
 
     if (
-      normalizedDomain === targetDomain ||
-      normalizedDomain.endsWith(`.${targetDomain}`) ||
+      normalizedDomain === null ||
+      hostnameMatchesDomain(normalizedDomain, targetDomain) ||
       seenDomains.has(normalizedDomain)
     ) {
       continue;
     }
 
     seenDomains.add(normalizedDomain);
-    competitors.push({ item, normalizedDomain });
 
-    if (competitors.length === COMPETITOR_LIMIT) {
-      break;
+    if (
+      isGenericVisibilityExcluded(
+        normalizedDomain,
+        genericVisibilityExclusions,
+      )
+    ) {
+      genericCandidatesFiltered += 1;
+      continue;
     }
+
+    competitors.push({ item, normalizedDomain });
   }
 
-  return competitors.map(({ item, normalizedDomain }, index) => ({
-    competitor_id: `competitor_${normalizedDomain.replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
-    rank: index + 1,
-    domain: normalizedDomain,
-    average_position: item.avg_position,
-    median_position: item.median_position,
-    visibility_rating: item.rating,
-    visibility_index: item.visibility,
-    estimated_traffic_from_analyzed_queries: item.etv,
-    keywords_ranked_count: item.keywords_count,
-    query_coverage_percentage: roundToTwoDecimals(
-      (item.keywords_count / normalizedQueryEntries.size) * 100,
-    ),
-    relevant_serp_items: item.relevant_serp_items,
-    query_positions: normalizeQueryPositions(
-      item.keywords_positions,
-      normalizedQueryEntries,
-      confirmedQueries,
-      unmatchedProviderKeys,
-    ),
-  }));
+  const selectedCompetitors = competitors.slice(0, COMPETITOR_LIMIT);
+
+  return {
+    competitors: selectedCompetitors.map(({ item, normalizedDomain }, index) => ({
+      competitor_id: `competitor_${normalizedDomain.replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+      rank: index + 1,
+      domain: normalizedDomain,
+      average_position: item.avg_position,
+      median_position: item.median_position,
+      visibility_rating: item.rating,
+      visibility_index: item.visibility,
+      estimated_traffic_from_analyzed_queries: item.etv,
+      keywords_ranked_count: item.keywords_count,
+      query_coverage_percentage: roundToTwoDecimals(
+        (item.keywords_count / normalizedQueryEntries.size) * 100,
+      ),
+      relevant_serp_items: item.relevant_serp_items,
+      query_positions: normalizeQueryPositions(
+        item.keywords_positions,
+        normalizedQueryEntries,
+        confirmedQueries,
+        unmatchedProviderKeys,
+      ),
+    })),
+    genericCandidatesFiltered,
+  };
 }
 
 function normalizeQueryPositions(
@@ -516,14 +558,6 @@ function normalizeQuery(value: string): string {
   return value.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
-function normalizeDomain(value: string): string {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/^www\./, "")
-    .replace(/\.$/, "");
-}
-
 function buildTargetDomainRegex(targetDomain: string): string {
   return `(^|\\.)${escapeRegex(targetDomain)}$`;
 }
@@ -561,6 +595,12 @@ function requireString(value: unknown, label: string): string {
   }
 
   return value.trim();
+}
+
+function getStringOrNull(value: unknown): string | null {
+  return typeof value === "string" && value.trim().length > 0
+    ? value.trim()
+    : null;
 }
 
 function requireNumber(value: unknown, label: string): number {

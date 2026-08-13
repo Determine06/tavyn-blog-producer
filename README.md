@@ -119,6 +119,16 @@ To sync completed company reports to Supabase, run the pipeline with:
 npm run dev -- --save-to-supabase
 ```
 
+For an interactive full run, use:
+
+```bash
+npm run dev
+```
+
+Enter the company website when prompted. An argument-free run uses cached
+artifacts when available, runs through company-report, and saves the completed
+report to Supabase.
+
 Without `--save-to-supabase`, the pipeline does not create a Supabase client or require Supabase environment variables.
 
 Hyperparameter logging can be enabled for OpenAI structured prompt calls:

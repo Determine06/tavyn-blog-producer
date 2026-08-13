@@ -13,6 +13,7 @@ import {
   createSafeHostname,
   slugify,
 } from "./pipeline/artifacts.js";
+import { resolvePipelineArgs } from "./pipeline/interactiveOptions.js";
 import { parsePipelineCliOptions } from "./pipeline/options.js";
 import type { PipelineStageId } from "./pipeline/stages.js";
 import { CompanyReportSchema } from "./types/companyReport.schema.js";
@@ -70,6 +71,7 @@ function normalizeWebsiteUrlInput(websiteUrl: string): string {
 
 async function main(): Promise<void> {
   try {
+    const pipelineArgs = await resolvePipelineArgs(process.argv.slice(2));
     const {
       websiteUrl,
       artifactRoot,
@@ -89,7 +91,7 @@ async function main(): Promise<void> {
       forceCompetitorLandscape,
       forceCompanyReport,
       saveToSupabase,
-    } = parsePipelineCliOptions(process.argv.slice(2));
+    } = parsePipelineCliOptions(pipelineArgs);
     const runContext = createRunContext(websiteUrl);
     const safeHostname = createSafeHostname(runContext.websiteUrl);
     const artifactPaths = createPipelineArtifactPaths(
