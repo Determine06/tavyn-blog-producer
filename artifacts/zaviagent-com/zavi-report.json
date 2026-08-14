@@ -1,0 +1,1166 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "report_6786ae65-a952-4edf-a82d-349f50e76aa0",
+  "report_slug": "zavi-seo-analysis",
+  "run_id": "6786ae65-a952-4edf-a82d-349f50e76aa0",
+  "generated_at": "2026-08-14T19:13:43.441Z",
+  "status": "complete",
+  "warnings": [
+    "problem_demand had 2 confirmed queries; selected all 2 instead of 10.",
+    "solution_demand had no confirmed queries; selected 0 instead of 10.",
+    "solution_demand produced 0 recommendations instead of target 2: No solution-demand queries were supplied, so zero selections are appropriate in this territory.",
+    "problem_demand_030 returned 6 organic results instead of 10.",
+    "problem_demand_052 returned 9 organic results instead of 10.",
+    "problem_demand_030: Google is interpreting this query as Facebook Marketplace listing management, so a general marketplace-ops page may need a sharper marketplace-specific framing to compete.",
+    "problem_demand_052: The SERP is split between consumer alert setup and third-party alert tools, so an operator-focused page may not fully match the dominant Facebook Marketplace interpretation.",
+    "DataForSEO returned 32 competitor domains instead of 50."
+  ],
+  "website_url": "https://www.zaviagent.com/",
+  "search_market": {
+    "search_engine": "google",
+    "country": "United States",
+    "location_code": 2840,
+    "language_name": "English",
+    "language_code": "en",
+    "device": "desktop"
+  },
+  "company": {
+    "name": "Zavi",
+    "domain": "zaviagent.com",
+    "product_summary": "AI super agent for marketplaces that builds, grows, and runs marketplace operations.",
+    "product_category": "marketplace operations automation platform",
+    "product_angle": "Zavi positions itself as an AI super agent built specifically for marketplaces, replacing many fragmented tools with one autonomous system that builds, grows, and runs the marketplace.",
+    "primary_icp": {
+      "name": "marketplace founders and operators",
+      "description": "People building or running marketplaces who want help with operations, growth, and support."
+    },
+    "primary_differentiators": [
+      {
+        "title": "Marketplace-specific specialization",
+        "description": "It focuses on marketplace operations rather than generic automation."
+      },
+      {
+        "title": "End-to-end lifecycle coverage",
+        "description": "Claims to cover build, growth, and run phases in one system."
+      },
+      {
+        "title": "Crew of specialist agents",
+        "description": "A single front-end agent coordinates specialist agents for different functions."
+      },
+      {
+        "title": "Slack-native workflow",
+        "description": "The agent works in Slack threads and mentions where work already happens."
+      },
+      {
+        "title": "Usage-based credits model",
+        "description": "Pricing is tied to credits and model usage rather than per-seat licensing."
+      }
+    ],
+    "category_point_of_view": "Marketplace growth and operations should be handled by an always-on AI system that coordinates specialist work, not by separate point tools or manual operator effort."
+  },
+  "analysis_coverage": {
+    "queries_discovered": 200,
+    "queries_evaluated": 200,
+    "queries_validated": 2,
+    "queries_rejected": 198,
+    "problem_queries_validated": 2,
+    "solution_queries_validated": 0,
+    "competitor_queries_analyzed": 2,
+    "competitor_domains_found": 32,
+    "content_opportunities_scored": 2,
+    "content_recommendations_selected": 2,
+    "live_serps_analyzed": 2,
+    "ranking_pages_analyzed": 15
+  },
+  "validated_queries": {
+    "summary": {
+      "total": 2,
+      "problem_demand": 2,
+      "solution_demand": 0,
+      "queries_with_search_volume": 2,
+      "combined_monthly_search_volume": 500,
+      "average_monthly_search_volume": 250,
+      "median_monthly_search_volume": 250,
+      "average_keyword_difficulty": 12,
+      "median_keyword_difficulty": 12,
+      "average_cpc": 6.19
+    },
+    "queries": [
+      {
+        "query_id": "problem_demand_030",
+        "query": "marketplace listings",
+        "territory": "problem_demand",
+        "validation_reasoning": "This reflects the core marketplace workflow of managing listings, which is part of the company’s marketplace operations scope.",
+        "source_seed_keywords": [
+          "marketplace operations",
+          "marketplace growth strategy",
+          "marketplace seller onboarding",
+          "marketplace trust and safety",
+          "marketplace management",
+          "marketplace support operations"
+        ],
+        "discovery_rank": 30,
+        "core_keyword": "marketplace list",
+        "detected_language": "en",
+        "metrics": {
+          "search_volume": 390,
+          "search_volume_trend": {
+            "monthly": 85,
+            "quarterly": 85,
+            "yearly": 125
+          },
+          "cpc": 3.48,
+          "paid_competition": 0.04,
+          "paid_competition_level": "LOW",
+          "keyword_difficulty": 15,
+          "search_intent": {
+            "main": "informational",
+            "secondary": []
+          },
+          "average_top_10": {
+            "backlinks": 2528.8,
+            "referring_domains": 914.8,
+            "main_domain_rank": 818.6
+          }
+        }
+      },
+      {
+        "query_id": "problem_demand_052",
+        "query": "marketplace alerts",
+        "territory": "problem_demand",
+        "validation_reasoning": "This reflects an operator workflow around marketplace monitoring and notifications, which fits the company’s marketplace operations scope.",
+        "source_seed_keywords": [
+          "marketplace operations",
+          "marketplace growth strategy",
+          "marketplace seller onboarding",
+          "marketplace trust and safety",
+          "marketplace management",
+          "marketplace support operations"
+        ],
+        "discovery_rank": 52,
+        "core_keyword": null,
+        "detected_language": "en",
+        "metrics": {
+          "search_volume": 110,
+          "search_volume_trend": {
+            "monthly": -36,
+            "quarterly": -36,
+            "yearly": 0
+          },
+          "cpc": 8.9,
+          "paid_competition": 0.26,
+          "paid_competition_level": "LOW",
+          "keyword_difficulty": 9,
+          "search_intent": {
+            "main": "informational",
+            "secondary": []
+          },
+          "average_top_10": {
+            "backlinks": 201.4,
+            "referring_domains": 18.7,
+            "main_domain_rank": 662
+          }
+        }
+      }
+    ]
+  },
+  "competitor_landscape": {
+    "scope": {
+      "provider": "dataforseo",
+      "based_on": "all_validated_queries",
+      "query_count": 2,
+      "include_subdomains": true,
+      "item_types": [
+        "organic"
+      ],
+      "generated_at": "2026-08-14T19:13:43.382Z",
+      "provider_cost_usd": 0.01584,
+      "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+    },
+    "summary": {
+      "total_domains_found": 32,
+      "competitors_included": 32,
+      "target_domain_excluded": true
+    },
+    "competitors": [
+      {
+        "competitor_id": "competitor_facebook-com",
+        "rank": 1,
+        "domain": "facebook.com",
+        "average_position": 3,
+        "median_position": 1,
+        "visibility_rating": 194,
+        "visibility_index": 1.6,
+        "estimated_traffic_from_analyzed_queries": 123.71900000000001,
+        "keywords_ranked_count": 2,
+        "query_coverage_percentage": 100,
+        "relevant_serp_items": 2,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              1
+            ]
+          },
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_play-google-com",
+        "rank": 2,
+        "domain": "play.google.com",
+        "average_position": 5,
+        "median_position": 3,
+        "visibility_rating": 190,
+        "visibility_index": 1.2000000000000002,
+        "estimated_traffic_from_analyzed_queries": 40.763,
+        "keywords_ranked_count": 2,
+        "query_coverage_percentage": 100,
+        "relevant_serp_items": 2,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              3
+            ]
+          },
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_youtube-com",
+        "rank": 3,
+        "domain": "youtube.com",
+        "average_position": 7,
+        "median_position": 5,
+        "visibility_rating": 186,
+        "visibility_index": 0.8,
+        "estimated_traffic_from_analyzed_queries": 19.941,
+        "keywords_ranked_count": 2,
+        "query_coverage_percentage": 100,
+        "relevant_serp_items": 2,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              5
+            ]
+          },
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_reddit-com",
+        "rank": 4,
+        "domain": "reddit.com",
+        "average_position": 1,
+        "median_position": 1,
+        "visibility_rating": 99,
+        "visibility_index": 1,
+        "estimated_traffic_from_analyzed_queries": 33.44,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_getswoopa-com",
+        "rank": 5,
+        "domain": "getswoopa.com",
+        "average_position": 2,
+        "median_position": 2,
+        "visibility_rating": 98,
+        "visibility_index": 0.9,
+        "estimated_traffic_from_analyzed_queries": 17.82,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_howtogeek-com",
+        "rank": 6,
+        "domain": "howtogeek.com",
+        "average_position": 3,
+        "median_position": 3,
+        "visibility_rating": 97,
+        "visibility_index": 0.8,
+        "estimated_traffic_from_analyzed_queries": 10.703,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_browsemarketplaces-com",
+        "rank": 7,
+        "domain": "browsemarketplaces.com",
+        "average_position": 4,
+        "median_position": 4,
+        "visibility_rating": 96,
+        "visibility_index": 0.7,
+        "estimated_traffic_from_analyzed_queries": 25.701,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_flipifyapp-com",
+        "rank": 8,
+        "domain": "flipifyapp.com",
+        "average_position": 4,
+        "median_position": 4,
+        "visibility_rating": 96,
+        "visibility_index": 0.7,
+        "estimated_traffic_from_analyzed_queries": 7.249,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_apps-apple-com",
+        "rank": 9,
+        "domain": "apps.apple.com",
+        "average_position": 6,
+        "median_position": 6,
+        "visibility_rating": 94,
+        "visibility_index": 0.5,
+        "estimated_traffic_from_analyzed_queries": 3.7179999999999995,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_mymarketplacebuilder-com",
+        "rank": 10,
+        "domain": "mymarketplacebuilder.com",
+        "average_position": 9,
+        "median_position": 9,
+        "visibility_rating": 91,
+        "visibility_index": 0.2,
+        "estimated_traffic_from_analyzed_queries": 5.85,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_carsnipe-com",
+        "rank": 11,
+        "domain": "carsnipe.com",
+        "average_position": 10,
+        "median_position": 10,
+        "visibility_rating": 90,
+        "visibility_index": 0.1,
+        "estimated_traffic_from_analyzed_queries": 1.2429999999999999,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_instagram-com",
+        "rank": 12,
+        "domain": "instagram.com",
+        "average_position": 11,
+        "median_position": 11,
+        "visibility_rating": 89,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 3.5490000000000004,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_searchtempest-com",
+        "rank": 13,
+        "domain": "searchtempest.com",
+        "average_position": 13,
+        "median_position": 13,
+        "visibility_rating": 87,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 2.301,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_iorad-com",
+        "rank": 14,
+        "domain": "iorad.com",
+        "average_position": 13,
+        "median_position": 13,
+        "visibility_rating": 87,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 0.649,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              13
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_producthunt-com",
+        "rank": 15,
+        "domain": "producthunt.com",
+        "average_position": 16,
+        "median_position": 16,
+        "visibility_rating": 84,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 0.473,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_webapps-stackexchange-com",
+        "rank": 16,
+        "domain": "webapps.stackexchange.com",
+        "average_position": 17,
+        "median_position": 17,
+        "visibility_rating": 83,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 0.473,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_quora-com",
+        "rank": 17,
+        "domain": "quora.com",
+        "average_position": 19,
+        "median_position": 19,
+        "visibility_rating": 81,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 0.29700000000000004,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              19
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_dealhunter-io",
+        "rank": 18,
+        "domain": "dealhunter.io",
+        "average_position": 20,
+        "median_position": 20,
+        "visibility_rating": 80,
+        "visibility_index": 0.05,
+        "estimated_traffic_from_analyzed_queries": 0.26399999999999996,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              20
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_jdmarket-cc",
+        "rank": 19,
+        "domain": "jdmarket.cc",
+        "average_position": 21,
+        "median_position": 21,
+        "visibility_rating": 79,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.253,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              21
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_trendhunter-com",
+        "rank": 20,
+        "domain": "trendhunter.com",
+        "average_position": 22,
+        "median_position": 22,
+        "visibility_rating": 78,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.24200000000000002,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_marketplaceapp-com",
+        "rank": 21,
+        "domain": "marketplaceapp.com",
+        "average_position": 24,
+        "median_position": 24,
+        "visibility_rating": 76,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.819,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_techsavvy-life",
+        "rank": 22,
+        "domain": "techsavvy.life",
+        "average_position": 24,
+        "median_position": 24,
+        "visibility_rating": 76,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              24
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_tiktok-com",
+        "rank": 23,
+        "domain": "tiktok.com",
+        "average_position": 26,
+        "median_position": 26,
+        "visibility_rating": 74,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              26
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_alphr-com",
+        "rank": 24,
+        "domain": "alphr.com",
+        "average_position": 27,
+        "median_position": 27,
+        "visibility_rating": 73,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              27
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_fen-fastnuggets-com",
+        "rank": 25,
+        "domain": "fen.fastnuggets.com",
+        "average_position": 30,
+        "median_position": 30,
+        "visibility_rating": 70,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.819,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_bigflippa-com",
+        "rank": 26,
+        "domain": "bigflippa.com",
+        "average_position": 30,
+        "median_position": 30,
+        "visibility_rating": 70,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_marketplace-com",
+        "rank": 27,
+        "domain": "marketplace.com",
+        "average_position": 31,
+        "median_position": 31,
+        "visibility_rating": 69,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.819,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_030",
+            "query": "marketplace listings",
+            "positions": [
+              31
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_marketplacemonitor-com",
+        "rank": 28,
+        "domain": "marketplacemonitor.com",
+        "average_position": 32,
+        "median_position": 32,
+        "visibility_rating": 68,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_outpostalerts-com",
+        "rank": 29,
+        "domain": "outpostalerts.com",
+        "average_position": 41,
+        "median_position": 41,
+        "visibility_rating": 59,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              41
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_antdiy-vip",
+        "rank": 30,
+        "domain": "antdiy.vip",
+        "average_position": 44,
+        "median_position": 44,
+        "visibility_rating": 56,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              44
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_ucompares-com",
+        "rank": 31,
+        "domain": "ucompares.com",
+        "average_position": 46,
+        "median_position": 46,
+        "visibility_rating": 54,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              46
+            ]
+          }
+        ]
+      },
+      {
+        "competitor_id": "competitor_noypigeeks-com",
+        "rank": 32,
+        "domain": "noypigeeks.com",
+        "average_position": 51,
+        "median_position": 51,
+        "visibility_rating": 49,
+        "visibility_index": 0,
+        "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+        "keywords_ranked_count": 1,
+        "query_coverage_percentage": 50,
+        "relevant_serp_items": 1,
+        "query_positions": [
+          {
+            "query_id": "problem_demand_052",
+            "query": "marketplace alerts",
+            "positions": [
+              51
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "content_plan": {
+    "summary": {
+      "selected_count": 2,
+      "problem_demand_count": 2,
+      "solution_demand_count": 0
+    },
+    "items": [
+      {
+        "recommendation_id": "problem_demand_recommendation_01",
+        "recommendation_rank": 1,
+        "query_id": "problem_demand_030",
+        "territory": "problem_demand",
+        "primary_query": "marketplace listings",
+        "source_seed_keywords": [
+          "marketplace operations",
+          "marketplace growth strategy",
+          "marketplace seller onboarding",
+          "marketplace trust and safety",
+          "marketplace management",
+          "marketplace support operations"
+        ],
+        "discovery_rank": 30,
+        "core_keyword": "marketplace list",
+        "detected_language": "en",
+        "query_metrics": {
+          "search_volume": 390,
+          "search_volume_trend": {
+            "monthly": 85,
+            "quarterly": 85,
+            "yearly": 125
+          },
+          "cpc": 3.48,
+          "paid_competition": 0.04,
+          "paid_competition_level": "LOW",
+          "keyword_difficulty": 15,
+          "search_intent": {
+            "main": "informational",
+            "secondary": []
+          },
+          "average_top_10": {
+            "backlinks": 2528.8,
+            "referring_domains": 914.8,
+            "main_domain_rank": 818.6
+          }
+        },
+        "opportunity_metrics": {
+          "search_volume_used": 390,
+          "maximum_territory_search_volume": 390,
+          "volume_score": 1,
+          "keyword_difficulty_original": 15,
+          "keyword_difficulty_used": 15,
+          "keyword_difficulty_was_imputed": false,
+          "difficulty_score": 0.85,
+          "opportunity_score": 85
+        },
+        "serp_results": {
+          "provider": "serper",
+          "searched_at": "2026-07-19T18:47:24.242Z",
+          "results_received": 6,
+          "ranking_pages": [
+            {
+              "position": 1,
+              "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped",
+              "url": "https://www.facebook.com/marketplace/",
+              "domain": "facebook.com",
+              "snippet": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses ... Marketplace. · Sell · Categories. . Popular listings. . San ...",
+              "published_date": null
+            },
+            {
+              "position": 2,
+              "title": "Selling on Marketplace | Facebook Help Center",
+              "url": "https://m.facebook.com/help/153832041692242?locale2=en_US",
+              "domain": "m.facebook.com",
+              "snippet": "Create a listing Manage my listings. Create and Manage Listings. Buy and sell responsibly on Facebook",
+              "published_date": null
+            },
+            {
+              "position": 3,
+              "title": "Sell something on Facebook Marketplace | Facebook Help Center",
+              "url": "https://m.facebook.com/help/iphone-app/561376580709359?locale2=en_US",
+              "domain": "m.facebook.com",
+              "snippet": "When you sell something on Marketplace, you create a public listing that can be seen by anyone on Marketplace and in Feed, search and other places on or off ...",
+              "published_date": null
+            },
+            {
+              "position": 4,
+              "title": "How To Find Your Listing On Facebook Marketplace: Easy Access!",
+              "url": "https://www.youtube.com/watch?v=pDfH95qse0Q",
+              "domain": "youtube.com",
+              "snippet": "This video shows how to find your listing step by step. Learn where to view your active, pending, and sold listings easily. Manage your items ...",
+              "published_date": null
+            },
+            {
+              "position": 5,
+              "title": "Find items to buy on Facebook Marketplace | Facebook Help Center",
+              "url": "https://m.facebook.com/help/222424444801203?locale2=en_US",
+              "domain": "m.facebook.com",
+              "snippet": "To find items on Marketplace, you can: Search for something specific. Browse by category. Filter your results. Change the location of the items you're looking ...",
+              "published_date": null
+            },
+            {
+              "position": 6,
+              "title": "How to Sell on Facebook Marketplace (Step-by-Step for Small Businesses)",
+              "url": "https://www.youtube.com/watch?v=PKVuNqaK558",
+              "domain": "youtube.com",
+              "snippet": "I'm going to show you step by step how to sell on Facebook Marketplace the right way we're going to cover what you can and cannot sell.",
+              "published_date": null
+            }
+          ]
+        },
+        "selection_reasoning": "This is the strongest fit because it matches a core marketplace-operations problem, has the highest observed demand, and supports a focused informational page with a natural connection to Zavi's supply-onboarding positioning.",
+        "content_angle": "Explain how marketplace listings affect supply quality, activation, and catalog upkeep, with practical guidance for operators who need a durable listings workflow rather than consumer selling tips.",
+        "product_connection": "Zavi can appear as the system that helps recruit, verify, and activate supply so marketplace listings do not run dry.",
+        "recommended_title": "Marketplace Listings: How to Create and Manage Them for Healthy Supply",
+        "recommended_page_type": "guide",
+        "confidence": "medium"
+      },
+      {
+        "recommendation_id": "problem_demand_recommendation_02",
+        "recommendation_rank": 2,
+        "query_id": "problem_demand_052",
+        "territory": "problem_demand",
+        "primary_query": "marketplace alerts",
+        "source_seed_keywords": [
+          "marketplace operations",
+          "marketplace growth strategy",
+          "marketplace seller onboarding",
+          "marketplace trust and safety",
+          "marketplace management",
+          "marketplace support operations"
+        ],
+        "discovery_rank": 52,
+        "core_keyword": null,
+        "detected_language": "en",
+        "query_metrics": {
+          "search_volume": 110,
+          "search_volume_trend": {
+            "monthly": -36,
+            "quarterly": -36,
+            "yearly": 0
+          },
+          "cpc": 8.9,
+          "paid_competition": 0.26,
+          "paid_competition_level": "LOW",
+          "keyword_difficulty": 9,
+          "search_intent": {
+            "main": "informational",
+            "secondary": []
+          },
+          "average_top_10": {
+            "backlinks": 201.4,
+            "referring_domains": 18.7,
+            "main_domain_rank": 662
+          }
+        },
+        "opportunity_metrics": {
+          "search_volume_used": 110,
+          "maximum_territory_search_volume": 390,
+          "volume_score": 0.789,
+          "keyword_difficulty_original": 9,
+          "keyword_difficulty_used": 9,
+          "keyword_difficulty_was_imputed": false,
+          "difficulty_score": 0.91,
+          "opportunity_score": 71.8
+        },
+        "serp_results": {
+          "provider": "serper",
+          "searched_at": "2026-07-19T18:47:24.242Z",
+          "results_received": 9,
+          "ranking_pages": [
+            {
+              "position": 1,
+              "title": "Faster Facebook Marketplace Alerts? : r/Flipping",
+              "url": "https://www.reddit.com/r/Flipping/comments/188jj5w/faster_facebook_marketplace_alerts/",
+              "domain": "reddit.com",
+              "snippet": "Does anyone know of a good way to get faster alerts on Facebook Marketplace? I've found that their built-in alert function is slow and most good deals ...",
+              "published_date": null
+            },
+            {
+              "position": 2,
+              "title": "Swoopa: Marketplace Alerts for Private Party Car Deals & Sourcing",
+              "url": "https://getswoopa.com/",
+              "domain": "getswoopa.com",
+              "snippet": "Swoopa sends instant Marketplace alerts from Facebook, Craigslist, OfferUp, Kijiji, Gumtree, Nextdoor, and eBay so you message the seller before anyone else",
+              "published_date": null
+            },
+            {
+              "position": 3,
+              "title": "How to Set Up Facebook Marketplace Alerts (So You Never Miss a Deal)",
+              "url": "https://www.howtogeek.com/819768/how-to-set-up-facebook-marketplace-alerts/",
+              "domain": "howtogeek.com",
+              "snippet": "First, head on over to Facebook.com. Click the \"Marketplace\" Now click the \"Notify Me\" button under the search bar. Click \"Create Alert\" to ...",
+              "published_date": "Jun 8, 2024"
+            },
+            {
+              "position": 4,
+              "title": "Turn your Marketplace notifications on or off",
+              "url": "https://m.facebook.com/help/2229494877335159?locale2=en_US",
+              "domain": "m.facebook.com",
+              "snippet": "Tap Menu in the top right of Facebook. Scroll down to Settings & privacy, then tap Settings. Scroll down, then tap Notifications.",
+              "published_date": null
+            },
+            {
+              "position": 5,
+              "title": "Flipify: Fast Marketplace Alerts for Flippers",
+              "url": "https://www.flipifyapp.com/",
+              "domain": "flipifyapp.com",
+              "snippet": "Flipify monitors Facebook Marketplace, eBay, OfferUp, and more around the clock, then alerts you when a new listing matches your watchlist.",
+              "published_date": null
+            },
+            {
+              "position": 6,
+              "title": "How To Turn On Marketplace Notifications on Facebook | Step-By ...",
+              "url": "https://www.youtube.com/watch?v=TRnlG3tgoyU&vl=en-US",
+              "domain": "youtube.com",
+              "snippet": "In this tutorial, you'll discover how to enable alerts for new listings, messages, and updates on Facebook Marketplace. Marketplace ...",
+              "published_date": null
+            },
+            {
+              "position": 7,
+              "title": "Turn your Facebook Marketplace notifications on or off | Messenger ...",
+              "url": "https://m.facebook.com/help/messenger-app/2229494877335159?locale2=en_US",
+              "domain": "m.facebook.com",
+              "snippet": "Tap Marketplace profile, then tap Settings. Tap Notifications. Tap on the notification category saved searches, tips for sellers) you'd like to turn on or off.",
+              "published_date": null
+            },
+            {
+              "position": 8,
+              "title": "Best Facebook Marketplace Alerts App: Get Notified in 3 Minutes (2026)",
+              "url": "https://carsnipe.com/blog/facebook-marketplace-notification-app",
+              "domain": "carsnipe.com",
+              "snippet": "A dedicated Facebook Marketplace notification app like CarSnipe monitors your searches every 3 minutes and sends instant Telegram alerts the moment matching ...",
+              "published_date": null
+            },
+            {
+              "position": 9,
+              "title": "Never miss a listing. Now you can save your searches in Marketplace to get ...",
+              "url": "https://www.facebook.com/facebook/posts/never-miss-a-listing-now-you-can-save-your-searches-in-marketplace-to-get-update/1233643168807701/",
+              "domain": "facebook.com",
+              "snippet": "Never miss a listing. Now you can save your searches in Marketplace to get updates when there's new stuff you want.",
+              "published_date": null
+            }
+          ]
+        },
+        "selection_reasoning": "This is a distinct and credible operator workflow query with enough demand to justify a separate page, and it aligns with Zavi's proactive tasks, Slack-native execution, and escalation workflows.",
+        "content_angle": "Cover the alert types marketplace operators need, when each should trigger, and how alerts fit into ongoing monitoring and escalation workflows, with an operator-first angle instead of consumer deal hunting.",
+        "product_connection": "Zavi can fit naturally as the always-on assistant that runs scheduled checks, drafts updates, and routes operator escalations inside Slack.",
+        "recommended_title": "Marketplace Alerts: What to Track and How Operators Should Set Them Up",
+        "recommended_page_type": "guide",
+        "confidence": "low"
+      }
+    ]
+  }
+}

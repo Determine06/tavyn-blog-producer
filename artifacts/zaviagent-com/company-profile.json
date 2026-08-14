@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0.0",
+  "website_url": "https://www.zaviagent.com/",
+  "generated_at": "2026-07-17T01:01:16.657Z",
+  "source_pages": [
+    {
+      "url": "https://www.zaviagent.com/",
+      "title": "Zavi — marketplace ops, run by the agents that run Upcar"
+    },
+    {
+      "url": "https://www.zaviagent.com/pricing",
+      "title": "Pricing — Zavi"
+    },
+    {
+      "url": "https://www.zaviagent.com/start",
+      "title": "Zavi — the first AI super agent for marketplaces"
+    },
+    {
+      "url": "https://www.zaviagent.com/start?seg=marketplaces",
+      "title": "Zavi — the first AI super agent for marketplaces"
+    },
+    {
+      "url": "https://www.zaviagent.com/about",
+      "title": "About — Zavi"
+    }
+  ],
+  "company_identity": {
+    "company_name": {
+      "value": "Zavi",
+      "confidence": "high",
+      "evidence": [
+        "Homepage title: \"Zavi — marketplace ops, run by the agents that run Upcar\"",
+        "Pricing page title: \"Pricing — Zavi\"",
+        "About page: \"About Zavi\""
+      ]
+    },
+    "domain": "zaviagent.com",
+    "one_sentence_description": {
+      "value": "AI super agent for marketplaces that builds, grows, and runs marketplace operations.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Zavi builds, grows, and runs your marketplace\"",
+        "Homepage: \"The first AI super agent for marketplaces.\"",
+        "About: \"describe your marketplace and a super agent builds, grows, and runs it.\""
+      ]
+    },
+    "product_category": {
+      "value": "marketplace operations automation platform",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"marketplace ops\"",
+        "Homepage: \"Zavi builds, grows, and runs your marketplace\"",
+        "Pricing: credits apply across \"seller onboarding, fraud reviews, disputes, and operator escalations\""
+      ]
+    },
+    "business_model": {
+      "value": "usage-based SaaS with free trial/credits and enterprise plan",
+      "confidence": "medium",
+      "evidence": [
+        "Pricing page: \"$50/mo\" Team plan with \"20,000 Credits/mo\"",
+        "Pricing page: \"Enterprise Custom\" and \"invoicing, security review, SLA\"",
+        "Pricing page: \"Start free with $100 in credits. No credit card, no sales call.\""
+      ]
+    },
+    "stage_or_maturity": {
+      "value": "early-stage launch",
+      "confidence": "medium",
+      "evidence": [
+        "Pricing page: \"Start free with $100 in credits\"",
+        "About page: \"From idea to live in days\"",
+        "Start page: \"Let's get started\" and onboarding-style choice between \"Grow my Company\" / \"Create a new company\""
+      ]
+    }
+  },
+  "icp_and_audience": {
+    "primary_icp": {
+      "value": "marketplace founders and operators",
+      "description": "People building or running marketplaces who want help with operations, growth, and support.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Do 10x more on your marketplace with the team you have.\"",
+        "Homepage: \"The first AI super agent for marketplaces.\"",
+        "About: \"describe your marketplace and a super agent builds, grows, and runs it.\""
+      ]
+    },
+    "secondary_audiences": [
+      {
+        "value": "marketplace growth teams",
+        "description": "Teams responsible for paid acquisition, retention, and repeat business.",
+        "confidence": "medium",
+        "evidence": [
+          "Homepage: \"growth experiments\"",
+          "Homepage: \"Runs your ads\" and \"Wins repeat business\"",
+          "Pricing: includes \"Scheduled tasks & crons (reports, audits, proactive check-ins)\""
+        ]
+      },
+      {
+        "value": "marketplace support and trust & safety teams",
+        "description": "Teams handling support, disputes, fraud review, and escalation workflows.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"fraud and disputes\"",
+          "Pricing: credits apply across \"fraud reviews, disputes, and operator escalations\"",
+          "Homepage: crew includes \"Dispute response Trust & Safety\" and \"Support Lead Support\""
+        ]
+      }
+    ],
+    "audience_notes": {
+      "value": "The site consistently addresses marketplace operators and founders; it also references specialist functions like growth, support, disputes, and engineering as parts of the workflow, not separate buyer segments.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"one super agent. The whole marketplace lifecycle.\"",
+        "Homepage: \"Behind the scenes it runs a crew of specialist agents for marketing, disputes, support, and engineering.\""
+      ]
+    }
+  },
+  "buyer_pains": [
+    {
+      "pain": "Marketplace teams have too few people to handle many operational functions.",
+      "description": "The site emphasizes doing much more with the team you already have.",
+      "audience_segment": "marketplace founders and operators",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Do 10x more on your marketplace with the team you have.\""
+      ]
+    },
+    {
+      "pain": "Marketplace operations are fragmented across build, growth, support, and dispute workflows.",
+      "description": "The company positions one agent as covering the whole marketplace lifecycle instead of separate tools for each slice.",
+      "audience_segment": "marketplace operators",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Most tools do one slice. Zavi does the whole arc\"",
+        "About: \"Not another tool to manage.\""
+      ]
+    },
+    {
+      "pain": "Seller supply needs constant recruiting, verification, and activation to avoid empty listings.",
+      "description": "The platform claims to onboard supply so listings do not run dry.",
+      "audience_segment": "marketplace growth/operators",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Onboards supply\" and \"Recruits, verifies, and activates new sellers so your listings never run dry.\""
+      ]
+    },
+    {
+      "pain": "Marketplace growth requires ongoing ad optimization and repeat-business experiments.",
+      "description": "The copy points to managing paid campaigns, retention, and funnel leak fixes as recurring pain points.",
+      "audience_segment": "marketplace growth teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Runs your ads\"",
+        "Homepage: \"Wins repeat business\"",
+        "Homepage: \"Plugs the leaks\""
+      ]
+    },
+    {
+      "pain": "Operators need to keep support, disputes, and escalations moving continuously.",
+      "description": "The site frames around-the-clock operations as necessary for marketplaces.",
+      "audience_segment": "marketplace support and trust & safety teams",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Run24/7\"",
+        "Pricing: credits apply across \"seller onboarding, fraud reviews, disputes, and operator escalations\"",
+        "About: \"keep ops, support, and disputes moving\""
+      ]
+    }
+  ],
+  "product_capabilities": [
+    {
+      "capability": "build marketplace surfaces",
+      "description": "Creates the marketplace product or surface from a description.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "About: \"describe your marketplace and a super agent builds, grows, and runs it.\"",
+        "About: \"Build. Launch the marketplace surface.\""
+      ]
+    },
+    {
+      "capability": "plan, code, and deploy projects autonomously",
+      "description": "The start page says the agent plans, codes, and deploys projects.",
+      "capability_type": "core",
+      "confidence": "high",
+      "evidence": [
+        "Start page: \"Zavi thinks, builds, and markets your projects autonomously. It plans, codes, deploys.\""
+      ]
+    },
+    {
+      "capability": "onboards, verifies, and activates supply",
+      "description": "Handles seller onboarding and activation workflows.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"seller onboarding\"",
+        "Homepage: \"Recruits, verifies, and activates new sellers\""
+      ]
+    },
+    {
+      "capability": "manages fraud reviews and disputes",
+      "description": "Supports trust and safety operations around fraud and disputes.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"fraud and disputes\"",
+        "Pricing: credits apply across \"fraud reviews, disputes\""
+      ]
+    },
+    {
+      "capability": "runs paid ads across Meta and Google",
+      "description": "Launches and tunes paid campaigns and reallocates spend based on conversion.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Runs your ads\" and \"Launches and tunes paid campaigns across Meta and Google\""
+      ]
+    },
+    {
+      "capability": "runs referral and retention experiments",
+      "description": "Tests repeat-business strategies and keeps the ones that work.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Wins repeat business\" and \"Runs referral and retention experiments\""
+      ]
+    },
+    {
+      "capability": "detects and fixes funnel drop-offs",
+      "description": "Identifies growth leaks and addresses them.",
+      "capability_type": "analysis",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Plugs the leaks\" and \"Spots the funnel drop-offs quietly bleeding your growth and fixes them fast.\""
+      ]
+    },
+    {
+      "capability": "operates inside Slack and other connected tools",
+      "description": "Works in Slack threads and mentions, with integrations and tool execution.",
+      "capability_type": "integration",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Meet your AI teammate, live in Slack\"",
+        "Pricing: \"Slack-native agent in threads + mentions\"",
+        "Pricing: \"Integrations + tool execution\""
+      ]
+    },
+    {
+      "capability": "drafts reports, tickets, docs, and updates",
+      "description": "Produces outputs such as reports and artifacts where supported.",
+      "capability_type": "publishing",
+      "confidence": "high",
+      "evidence": [
+        "Pricing: \"Drafts + artifacts (updates, tickets/docs where supported)\"",
+        "Pricing: \"Scheduled tasks & crons (reports, audits, proactive check-ins)\""
+      ]
+    },
+    {
+      "capability": "supports scheduled proactive tasks",
+      "description": "Runs recurring automations like reports, audits, and check-ins.",
+      "capability_type": "workflow",
+      "confidence": "high",
+      "evidence": [
+        "Pricing: \"Scheduled tasks & crons (reports, audits, proactive check-ins)\""
+      ]
+    }
+  ],
+  "differentiation_and_positioning": {
+    "positioning_summary": {
+      "value": "Zavi positions itself as an AI super agent built specifically for marketplaces, replacing many fragmented tools with one autonomous system that builds, grows, and runs the marketplace.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"The first AI super agent for marketplaces.\"",
+        "Homepage: \"Most tools do one slice. Zavi does the whole arc\"",
+        "About: \"Not another tool to manage.\""
+      ]
+    },
+    "primary_differentiators": [
+      {
+        "differentiator": "Marketplace-specific specialization",
+        "description": "It focuses on marketplace operations rather than generic automation.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"marketplace ops\"",
+          "Homepage: \"The first AI super agent for marketplaces.\""
+        ]
+      },
+      {
+        "differentiator": "End-to-end lifecycle coverage",
+        "description": "Claims to cover build, growth, and run phases in one system.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"Build0 → 1\"",
+          "Homepage: \"Grow1 → n\"",
+          "Homepage: \"Run24/7\""
+        ]
+      },
+      {
+        "differentiator": "Crew of specialist agents",
+        "description": "A single front-end agent coordinates specialist agents for different functions.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"Behind the scenes it runs a crew of specialist agents for marketing, disputes, support, and engineering.\""
+        ]
+      },
+      {
+        "differentiator": "Slack-native workflow",
+        "description": "The agent works in Slack threads and mentions where work already happens.",
+        "confidence": "high",
+        "evidence": [
+          "Homepage: \"Meet your AI teammate, live in Slack\"",
+          "Pricing: \"Slack-native agent in threads + mentions\""
+        ]
+      },
+      {
+        "differentiator": "Usage-based credits model",
+        "description": "Pricing is tied to credits and model usage rather than per-seat licensing.",
+        "confidence": "high",
+        "evidence": [
+          "Pricing: \"Credits are the fuel behind every action Zavi takes.\"",
+          "Pricing: \"No per-seat licenses, no minimums\""
+        ]
+      }
+    ],
+    "category_point_of_view": {
+      "value": "Marketplace growth and operations should be handled by an always-on AI system that coordinates specialist work, not by separate point tools or manual operator effort.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Most tools do one slice. Zavi does the whole arc\"",
+        "Homepage: \"One super agent. The whole marketplace lifecycle.\"",
+        "About: \"A super agent doing the listings, campaigns, support, and fixes while you sleep.\""
+      ]
+    },
+    "positioning_notes": {
+      "value": "The site repeatedly uses AI-speed, autonomous execution, and marketplace lifecycle language to frame Zavi as an operator replacement/augmentation layer for marketplaces.",
+      "confidence": "high",
+      "evidence": [
+        "About: \"The future belongs to whoever moves at AI speed.\"",
+        "Homepage: \"you ask, Zavi acts, the outcome lands.\"",
+        "Start page: \"Zavi thinks, builds, and markets your projects autonomously.\""
+      ]
+    }
+  },
+  "brand_voice_and_communication_style": {
+    "tone": {
+      "values": [
+        "confident",
+        "aspirational",
+        "operator-focused",
+        "fast-moving"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Do 10x more on your marketplace with the team you have.\"",
+        "About: \"Move at AI speed.\"",
+        "Homepage: \"you ask, Zavi acts, the outcome lands.\""
+      ]
+    },
+    "writing_style": {
+      "value": "Punchy, declarative, and outcome-led, with short headline fragments and repeated lifecycle metaphors.",
+      "confidence": "high",
+      "evidence": [
+        "Homepage: \"Build0 → 1 / Grow1 → n / Run24/7\"",
+        "Homepage: \"One super agent. The whole marketplace lifecycle.\"",
+        "About: \"Not another tool to manage.\""
+      ]
+    },
+    "common_phrases": [
+      {
+        "phrase": "super agent",
+        "context": "Used as the core category label across homepage, pricing, and start pages.",
+        "evidence": [
+          "Homepage: \"The first AI super agent for marketplaces.\"",
+          "Pricing: \"Run your marketplace with a super agent that works 24/7.\""
+        ]
+      },
+      {
+        "phrase": "builds, grows, and runs",
+        "context": "Repeated as the central promise for the product.",
+        "evidence": [
+          "Homepage: \"Zavi builds, grows, and runs your marketplace\"",
+          "About: \"a super agent builds, grows, and runs it.\""
+        ]
+      },
+      {
+        "phrase": "works 24/7",
+        "context": "Used to emphasize continuous operation.",
+        "evidence": [
+          "Homepage: \"Run24/7\"",
+          "Pricing: \"Run your marketplace with a super agent thatworks 24/7.\""
+        ]
+      },
+      {
+        "phrase": "AI speed",
+        "context": "Used in the about page to contrast the product with manual workflows.",
+        "evidence": [
+          "About: \"The future belongs to whoever moves at AI speed.\"",
+          "About: \"Move at AI speed.\""
+        ]
+      }
+    ],
+    "messaging_patterns": [
+      {
+        "pattern": "Pairs broad promise with concrete marketplace functions such as onboarding, disputes, ads, and support.",
+        "description": "The marketing alternates between high-level category claims and specific operational tasks.",
+        "evidence": [
+          "Homepage: \"seller onboarding, fraud and disputes, growth experiments, and daily operator updates\"",
+          "Homepage: \"Runs your ads\""
+        ]
+      },
+      {
+        "pattern": "Frames the product as a replacement for many tools and many roles.",
+        "description": "The copy emphasizes one agent and a crew behind it instead of point solutions.",
+        "evidence": [
+          "Homepage: \"Most tools do one slice. Zavi does the whole arc\"",
+          "Homepage: \"one super agent, a whole crew behind it\""
+        ]
+      },
+      {
+        "pattern": "Emphasizes user control through approvals and dashboards.",
+        "description": "Autonomy is balanced with human approval for bigger actions.",
+        "evidence": [
+          "Homepage: \"You approve the big moves from one dashboard.\"",
+          "Homepage: \"Approve money and message moves before they fire\""
+        ]
+      },
+      {
+        "pattern": "Uses credit-based pricing language to connect usage with action volume.",
+        "description": "Pricing copy explains what credits do and how they map to work.",
+        "evidence": [
+          "Pricing: \"Credits power everything Zavi does\"",
+          "Pricing: \"Pay for what your super agent does\""
+        ]
+      }
+    ]
+  },
+  "profile_quality": {
+    "overall_confidence": "high",
+    "missing_information": [
+      "Specific customer examples beyond marketplaces are not provided.",
+      "Company size, founding date, and broader stage signals are not fully stated.",
+      "Integrations are listed, but the exact depth of each integration is not described.",
+      "Detailed pricing tiers beyond Team and Enterprise are not shown in the crawl."
+    ],
+    "potential_risks": [
+      "The crawl contains several mock Slack/dashboard examples; these should not be mistaken for separate product categories or customer segments.",
+      "Some pages repeat similar hero and CTA copy, which may overstate message frequency slightly.",
+      "The product is described with strong autonomous language, but the exact scope of autonomy and human approval boundaries are not fully detailed."
+    ],
+    "notes": "The crawl provides strong, consistent evidence for a marketplace-specific AI operations product with clear positioning, pricing, and core workflow claims. Evidence quality is good, with limited ambiguity primarily around maturity and exact feature boundaries."
+  }
+}

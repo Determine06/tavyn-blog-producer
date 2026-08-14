@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
+  "generated_at": "2026-07-19T18:47:25.235Z",
+  "source_artifacts": [
+    "query-recommendations.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand_030 returned 6 organic results instead of 10.",
+    "problem_demand_052 returned 9 organic results instead of 10."
+  ],
+  "website_url": "https://www.zaviagent.com/",
+  "provider": {
+    "name": "serper",
+    "endpoint": "https://google.serper.dev/search",
+    "search_engine": "google",
+    "country_code": "us",
+    "language_code": "en",
+    "requested_results_per_query": 10,
+    "http_requests_made": 2,
+    "total_credits_used": 2
+  },
+  "query_serps": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "query": "marketplace listings",
+      "requested_at": "2026-07-19T18:47:24.242Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 6,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped",
+          "url": "https://www.facebook.com/marketplace/",
+          "domain": "facebook.com",
+          "snippet": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses ... Marketplace. · Sell · Categories. . Popular listings. . San ...",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "Selling on Marketplace | Facebook Help Center",
+          "url": "https://m.facebook.com/help/153832041692242?locale2=en_US",
+          "domain": "m.facebook.com",
+          "snippet": "Create a listing Manage my listings. Create and Manage Listings. Buy and sell responsibly on Facebook",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "Sell something on Facebook Marketplace | Facebook Help Center",
+          "url": "https://m.facebook.com/help/iphone-app/561376580709359?locale2=en_US",
+          "domain": "m.facebook.com",
+          "snippet": "When you sell something on Marketplace, you create a public listing that can be seen by anyone on Marketplace and in Feed, search and other places on or off ...",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "How To Find Your Listing On Facebook Marketplace: Easy Access!",
+          "url": "https://www.youtube.com/watch?v=pDfH95qse0Q",
+          "domain": "youtube.com",
+          "snippet": "This video shows how to find your listing step by step. Learn where to view your active, pending, and sold listings easily. Manage your items ...",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Find items to buy on Facebook Marketplace | Facebook Help Center",
+          "url": "https://m.facebook.com/help/222424444801203?locale2=en_US",
+          "domain": "m.facebook.com",
+          "snippet": "To find items on Marketplace, you can: Search for something specific. Browse by category. Filter your results. Change the location of the items you're looking ...",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "How to Sell on Facebook Marketplace (Step-by-Step for Small Businesses)",
+          "url": "https://www.youtube.com/watch?v=PKVuNqaK558",
+          "domain": "youtube.com",
+          "snippet": "I'm going to show you step by step how to sell on Facebook Marketplace the right way we're going to cover what you can and cannot sell.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "marketplace alerts",
+      "requested_at": "2026-07-19T18:47:24.242Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Faster Facebook Marketplace Alerts? : r/Flipping",
+          "url": "https://www.reddit.com/r/Flipping/comments/188jj5w/faster_facebook_marketplace_alerts/",
+          "domain": "reddit.com",
+          "snippet": "Does anyone know of a good way to get faster alerts on Facebook Marketplace? I've found that their built-in alert function is slow and most good deals ...",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "Swoopa: Marketplace Alerts for Private Party Car Deals & Sourcing",
+          "url": "https://getswoopa.com/",
+          "domain": "getswoopa.com",
+          "snippet": "Swoopa sends instant Marketplace alerts from Facebook, Craigslist, OfferUp, Kijiji, Gumtree, Nextdoor, and eBay so you message the seller before anyone else",
+          "date": null
+        },
+        {
+          "position": 3,
+          "title": "How to Set Up Facebook Marketplace Alerts (So You Never Miss a Deal)",
+          "url": "https://www.howtogeek.com/819768/how-to-set-up-facebook-marketplace-alerts/",
+          "domain": "howtogeek.com",
+          "snippet": "First, head on over to Facebook.com. Click the \"Marketplace\" Now click the \"Notify Me\" button under the search bar. Click \"Create Alert\" to ...",
+          "date": "Jun 8, 2024"
+        },
+        {
+          "position": 4,
+          "title": "Turn your Marketplace notifications on or off",
+          "url": "https://m.facebook.com/help/2229494877335159?locale2=en_US",
+          "domain": "m.facebook.com",
+          "snippet": "Tap Menu in the top right of Facebook. Scroll down to Settings & privacy, then tap Settings. Scroll down, then tap Notifications.",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Flipify: Fast Marketplace Alerts for Flippers",
+          "url": "https://www.flipifyapp.com/",
+          "domain": "flipifyapp.com",
+          "snippet": "Flipify monitors Facebook Marketplace, eBay, OfferUp, and more around the clock, then alerts you when a new listing matches your watchlist.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "How To Turn On Marketplace Notifications on Facebook | Step-By ...",
+          "url": "https://www.youtube.com/watch?v=TRnlG3tgoyU&vl=en-US",
+          "domain": "youtube.com",
+          "snippet": "In this tutorial, you'll discover how to enable alerts for new listings, messages, and updates on Facebook Marketplace. Marketplace ...",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Turn your Facebook Marketplace notifications on or off | Messenger ...",
+          "url": "https://m.facebook.com/help/messenger-app/2229494877335159?locale2=en_US",
+          "domain": "m.facebook.com",
+          "snippet": "Tap Marketplace profile, then tap Settings. Tap Notifications. Tap on the notification category saved searches, tips for sellers) you'd like to turn on or off.",
+          "date": null
+        },
+        {
+          "position": 8,
+          "title": "Best Facebook Marketplace Alerts App: Get Notified in 3 Minutes (2026)",
+          "url": "https://carsnipe.com/blog/facebook-marketplace-notification-app",
+          "domain": "carsnipe.com",
+          "snippet": "A dedicated Facebook Marketplace notification app like CarSnipe monitors your searches every 3 minutes and sends instant Telegram alerts the moment matching ...",
+          "date": null
+        },
+        {
+          "position": 9,
+          "title": "Never miss a listing. Now you can save your searches in Marketplace to get ...",
+          "url": "https://www.facebook.com/facebook/posts/never-miss-a-listing-now-you-can-save-your-searches-in-marketplace-to-get-update/1233643168807701/",
+          "domain": "facebook.com",
+          "snippet": "Never miss a listing. Now you can save your searches in Marketplace to get updates when there's new stuff you want.",
+          "date": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "recommended_queries_received": 2,
+    "serp_requests_completed": 2,
+    "total_organic_results": 15,
+    "queries_with_fewer_than_ten_results": [
+      "problem_demand_030",
+      "problem_demand_052"
+    ]
+  }
+}

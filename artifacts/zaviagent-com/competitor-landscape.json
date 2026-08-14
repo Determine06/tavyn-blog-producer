@@ -1,0 +1,778 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "6786ae65-a952-4edf-a82d-349f50e76aa0",
+  "generated_at": "2026-08-14T19:13:43.382Z",
+  "source_artifacts": [
+    "confirmed-queries.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "DataForSEO returned 32 competitor domains instead of 50."
+  ],
+  "website_url": "https://www.zaviagent.com/",
+  "target_domain": "zaviagent.com",
+  "provider": {
+    "name": "dataforseo",
+    "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
+    "http_requests_made": 1,
+    "tasks_submitted": 1,
+    "task_id": "08141913-2045-0383-0000-441260530c9c",
+    "task_status_code": 20000,
+    "task_status_message": "Ok.",
+    "total_cost_usd": 0.01584
+  },
+  "request_config": {
+    "location_code": 2840,
+    "language_code": "en",
+    "include_subdomains": true,
+    "item_types": [
+      "organic"
+    ],
+    "limit": 50,
+    "order_by": [
+      "rating,desc"
+    ],
+    "target_domain_exclusion_filter": "(^|\\.)zaviagent\\.com$"
+  },
+  "scope": {
+    "based_on": "all_validated_queries",
+    "confirmed_queries_received": 2,
+    "unique_queries_submitted": 2,
+    "duplicate_queries_removed": 0,
+    "provider_keyword_limit": 200,
+    "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
+  },
+  "summary": {
+    "total_domains_found": 32,
+    "domains_received": 32,
+    "competitors_included": 32,
+    "target_domain_excluded": true
+  },
+  "competitors": [
+    {
+      "competitor_id": "competitor_facebook-com",
+      "rank": 1,
+      "domain": "facebook.com",
+      "average_position": 3,
+      "median_position": 1,
+      "visibility_rating": 194,
+      "visibility_index": 1.6,
+      "estimated_traffic_from_analyzed_queries": 123.71900000000001,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 100,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_play-google-com",
+      "rank": 2,
+      "domain": "play.google.com",
+      "average_position": 5,
+      "median_position": 3,
+      "visibility_rating": 190,
+      "visibility_index": 1.2000000000000002,
+      "estimated_traffic_from_analyzed_queries": 40.763,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 100,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_youtube-com",
+      "rank": 3,
+      "domain": "youtube.com",
+      "average_position": 7,
+      "median_position": 5,
+      "visibility_rating": 186,
+      "visibility_index": 0.8,
+      "estimated_traffic_from_analyzed_queries": 19.941,
+      "keywords_ranked_count": 2,
+      "query_coverage_percentage": 100,
+      "relevant_serp_items": 2,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_reddit-com",
+      "rank": 4,
+      "domain": "reddit.com",
+      "average_position": 1,
+      "median_position": 1,
+      "visibility_rating": 99,
+      "visibility_index": 1,
+      "estimated_traffic_from_analyzed_queries": 33.44,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_getswoopa-com",
+      "rank": 5,
+      "domain": "getswoopa.com",
+      "average_position": 2,
+      "median_position": 2,
+      "visibility_rating": 98,
+      "visibility_index": 0.9,
+      "estimated_traffic_from_analyzed_queries": 17.82,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_howtogeek-com",
+      "rank": 6,
+      "domain": "howtogeek.com",
+      "average_position": 3,
+      "median_position": 3,
+      "visibility_rating": 97,
+      "visibility_index": 0.8,
+      "estimated_traffic_from_analyzed_queries": 10.703,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_browsemarketplaces-com",
+      "rank": 7,
+      "domain": "browsemarketplaces.com",
+      "average_position": 4,
+      "median_position": 4,
+      "visibility_rating": 96,
+      "visibility_index": 0.7,
+      "estimated_traffic_from_analyzed_queries": 25.701,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_flipifyapp-com",
+      "rank": 8,
+      "domain": "flipifyapp.com",
+      "average_position": 4,
+      "median_position": 4,
+      "visibility_rating": 96,
+      "visibility_index": 0.7,
+      "estimated_traffic_from_analyzed_queries": 7.249,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_apps-apple-com",
+      "rank": 9,
+      "domain": "apps.apple.com",
+      "average_position": 6,
+      "median_position": 6,
+      "visibility_rating": 94,
+      "visibility_index": 0.5,
+      "estimated_traffic_from_analyzed_queries": 3.7179999999999995,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mymarketplacebuilder-com",
+      "rank": 10,
+      "domain": "mymarketplacebuilder.com",
+      "average_position": 9,
+      "median_position": 9,
+      "visibility_rating": 91,
+      "visibility_index": 0.2,
+      "estimated_traffic_from_analyzed_queries": 5.85,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_carsnipe-com",
+      "rank": 11,
+      "domain": "carsnipe.com",
+      "average_position": 10,
+      "median_position": 10,
+      "visibility_rating": 90,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 1.2429999999999999,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_instagram-com",
+      "rank": 12,
+      "domain": "instagram.com",
+      "average_position": 11,
+      "median_position": 11,
+      "visibility_rating": 89,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 3.5490000000000004,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_searchtempest-com",
+      "rank": 13,
+      "domain": "searchtempest.com",
+      "average_position": 13,
+      "median_position": 13,
+      "visibility_rating": 87,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 2.301,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_iorad-com",
+      "rank": 14,
+      "domain": "iorad.com",
+      "average_position": 13,
+      "median_position": 13,
+      "visibility_rating": 87,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.649,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_producthunt-com",
+      "rank": 15,
+      "domain": "producthunt.com",
+      "average_position": 16,
+      "median_position": 16,
+      "visibility_rating": 84,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.473,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_webapps-stackexchange-com",
+      "rank": 16,
+      "domain": "webapps.stackexchange.com",
+      "average_position": 17,
+      "median_position": 17,
+      "visibility_rating": 83,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.473,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_quora-com",
+      "rank": 17,
+      "domain": "quora.com",
+      "average_position": 19,
+      "median_position": 19,
+      "visibility_rating": 81,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.29700000000000004,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_dealhunter-io",
+      "rank": 18,
+      "domain": "dealhunter.io",
+      "average_position": 20,
+      "median_position": 20,
+      "visibility_rating": 80,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 0.26399999999999996,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_jdmarket-cc",
+      "rank": 19,
+      "domain": "jdmarket.cc",
+      "average_position": 21,
+      "median_position": 21,
+      "visibility_rating": 79,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.253,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_trendhunter-com",
+      "rank": 20,
+      "domain": "trendhunter.com",
+      "average_position": 22,
+      "median_position": 22,
+      "visibility_rating": 78,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.24200000000000002,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_marketplaceapp-com",
+      "rank": 21,
+      "domain": "marketplaceapp.com",
+      "average_position": 24,
+      "median_position": 24,
+      "visibility_rating": 76,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.819,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_techsavvy-life",
+      "rank": 22,
+      "domain": "techsavvy.life",
+      "average_position": 24,
+      "median_position": 24,
+      "visibility_rating": 76,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_tiktok-com",
+      "rank": 23,
+      "domain": "tiktok.com",
+      "average_position": 26,
+      "median_position": 26,
+      "visibility_rating": 74,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_alphr-com",
+      "rank": 24,
+      "domain": "alphr.com",
+      "average_position": 27,
+      "median_position": 27,
+      "visibility_rating": 73,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_fen-fastnuggets-com",
+      "rank": 25,
+      "domain": "fen.fastnuggets.com",
+      "average_position": 30,
+      "median_position": 30,
+      "visibility_rating": 70,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.819,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_bigflippa-com",
+      "rank": 26,
+      "domain": "bigflippa.com",
+      "average_position": 30,
+      "median_position": 30,
+      "visibility_rating": 70,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_marketplace-com",
+      "rank": 27,
+      "domain": "marketplace.com",
+      "average_position": 31,
+      "median_position": 31,
+      "visibility_rating": 69,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.819,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_030",
+          "query": "marketplace listings",
+          "positions": [
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_marketplacemonitor-com",
+      "rank": 28,
+      "domain": "marketplacemonitor.com",
+      "average_position": 32,
+      "median_position": 32,
+      "visibility_rating": 68,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_outpostalerts-com",
+      "rank": 29,
+      "domain": "outpostalerts.com",
+      "average_position": 41,
+      "median_position": 41,
+      "visibility_rating": 59,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_antdiy-vip",
+      "rank": 30,
+      "domain": "antdiy.vip",
+      "average_position": 44,
+      "median_position": 44,
+      "visibility_rating": 56,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_ucompares-com",
+      "rank": 31,
+      "domain": "ucompares.com",
+      "average_position": 46,
+      "median_position": 46,
+      "visibility_rating": 54,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_noypigeeks-com",
+      "rank": 32,
+      "domain": "noypigeeks.com",
+      "average_position": 51,
+      "median_position": 51,
+      "visibility_rating": 49,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
+      "keywords_ranked_count": 1,
+      "query_coverage_percentage": 50,
+      "relevant_serp_items": 1,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_052",
+          "query": "marketplace alerts",
+          "positions": [
+            51
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1419 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
+  "generated_at": "2026-07-19T18:46:14.516Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "keyword_metrics.json"
+  ],
+  "status": "complete",
+  "warnings": [],
+  "website_url": "https://www.zaviagent.com/",
+  "source_profile": {
+    "company_name": "Zavi",
+    "product_category": "marketplace operations automation platform",
+    "primary_icp": "marketplace founders and operators"
+  },
+  "query_validations": [
+    {
+      "query_id": "problem_demand_001",
+      "territory": "problem_demand",
+      "query": "marketplace seller meaning",
+      "verdict": "invalid",
+      "reasoning": "This is a definition lookup for the term “marketplace seller,” not a concrete marketplace-operations problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "query": "marketplace seller definition",
+      "verdict": "invalid",
+      "reasoning": "This is a definitional query about a marketplace participant, which is generic market terminology rather than a supported operator problem."
+    },
+    {
+      "query_id": "problem_demand_003",
+      "territory": "problem_demand",
+      "query": "meridial marketplace support",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a named or ambiguous entity query, so its ordinary meaning is not a clear marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_004",
+      "territory": "problem_demand",
+      "query": "marketplace buy and sell",
+      "verdict": "invalid",
+      "reasoning": "This is broad marketplace commerce wording without a specific workflow, problem, decision, or operator outcome."
+    },
+    {
+      "query_id": "problem_demand_005",
+      "territory": "problem_demand",
+      "query": "h and y marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named or ambiguous entity phrase, not an identifiable marketplace-operations problem demand."
+    },
+    {
+      "query_id": "problem_demand_006",
+      "territory": "problem_demand",
+      "query": "buyer and seller show",
+      "verdict": "invalid",
+      "reasoning": "The phrase is ambiguous and does not clearly describe a marketplace workflow or outcome the company helps operators manage."
+    },
+    {
+      "query_id": "problem_demand_007",
+      "territory": "problem_demand",
+      "query": "marketplace sell and buy",
+      "verdict": "invalid",
+      "reasoning": "This is generic marketplace trading language and does not express a concrete operator problem or process."
+    },
+    {
+      "query_id": "problem_demand_008",
+      "territory": "problem_demand",
+      "query": "found and fancy marketplace",
+      "verdict": "invalid",
+      "reasoning": "This reads as an ambiguous named-entity or phrase query, not a clear marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_009",
+      "territory": "problem_demand",
+      "query": "marketplace or marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous and does not state a concrete problem, workflow, or decision."
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "query": "marketplace vs marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a comparison without specified alternatives, so it does not express a clear supported marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_011",
+      "territory": "problem_demand",
+      "query": "bow marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity style phrase and does not clearly indicate a marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_012",
+      "territory": "problem_demand",
+      "query": "coconut marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrase that does not clearly map to a marketplace workflow or operator outcome."
+    },
+    {
+      "query_id": "problem_demand_013",
+      "territory": "problem_demand",
+      "query": "marketplace simulation",
+      "verdict": "invalid",
+      "reasoning": "This suggests a simulation concept rather than a concrete marketplace-operations problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_014",
+      "territory": "problem_demand",
+      "query": "marketplace questions and answers",
+      "verdict": "invalid",
+      "reasoning": "This is a generic content-format phrase and not a specific marketplace operational problem or process."
+    },
+    {
+      "query_id": "problem_demand_015",
+      "territory": "problem_demand",
+      "query": "marketplace buy and sell locally",
+      "verdict": "invalid",
+      "reasoning": "This is consumer-local transaction wording, not a marketplace-operator workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_016",
+      "territory": "problem_demand",
+      "query": "barrel and boards marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase and does not clearly indicate a supported marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_017",
+      "territory": "problem_demand",
+      "query": "country marketplace and fuel",
+      "verdict": "invalid",
+      "reasoning": "The phrase is too ambiguous and does not describe a concrete marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_018",
+      "territory": "problem_demand",
+      "query": "market and marketplace difference",
+      "verdict": "invalid",
+      "reasoning": "This is a definitional comparison of terms, not a concrete operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_019",
+      "territory": "problem_demand",
+      "query": "monday marketplace",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a named entity query and does not clearly express marketplace-operations demand."
+    },
+    {
+      "query_id": "problem_demand_020",
+      "territory": "problem_demand",
+      "query": "karrot marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named entity query without commercial comparison or a concrete operator workflow."
+    },
+    {
+      "query_id": "problem_demand_021",
+      "territory": "problem_demand",
+      "query": "marketplace events",
+      "verdict": "invalid",
+      "reasoning": "This is a broad market-topic phrase without a specific marketplace problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_022",
+      "territory": "problem_demand",
+      "query": "metaforge marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase rather than a clear marketplace-operations problem query."
+    },
+    {
+      "query_id": "problem_demand_023",
+      "territory": "problem_demand",
+      "query": "marketplace synonym",
+      "verdict": "invalid",
+      "reasoning": "This is a language-definition query, not a concrete marketplace workflow or operator problem."
+    },
+    {
+      "query_id": "problem_demand_024",
+      "territory": "problem_demand",
+      "query": "liquidation marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous category phrase and does not clearly represent a marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_025",
+      "territory": "problem_demand",
+      "query": "spring seller",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous and does not specify a marketplace operation or outcome."
+    },
+    {
+      "query_id": "problem_demand_026",
+      "territory": "problem_demand",
+      "query": "marketplace in",
+      "verdict": "invalid",
+      "reasoning": "The query is incomplete and does not express a clear, valid marketplace problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_027",
+      "territory": "problem_demand",
+      "query": "cumming marketplace",
+      "verdict": "invalid",
+      "reasoning": "This reads like a place or named-entity query, not a concrete marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_028",
+      "territory": "problem_demand",
+      "query": "marketplace meaning",
+      "verdict": "invalid",
+      "reasoning": "This is a definitional query about the term marketplace, not a concrete operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_029",
+      "territory": "problem_demand",
+      "query": "marketplace drive",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to establish a concrete marketplace workflow, decision, or desired outcome."
+    },
+    {
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "query": "marketplace listings",
+      "verdict": "valid",
+      "reasoning": "This reflects the core marketplace workflow of managing listings, which is part of the company’s marketplace operations scope."
+    },
+    {
+      "query_id": "problem_demand_031",
+      "territory": "problem_demand",
+      "query": "marketplace panama",
+      "verdict": "invalid",
+      "reasoning": "This is likely a location-qualified or named-entity query, not a concrete marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_032",
+      "territory": "problem_demand",
+      "query": "anagram marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous phrase that does not clearly map to a supported marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_033",
+      "territory": "problem_demand",
+      "query": "synonym marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a language-related query, not an operator problem or marketplace workflow."
+    },
+    {
+      "query_id": "problem_demand_034",
+      "territory": "problem_demand",
+      "query": "saturated marketplace",
+      "verdict": "invalid",
+      "reasoning": "This describes a market condition rather than a concrete marketplace operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_035",
+      "territory": "problem_demand",
+      "query": "marketplace alternatives",
+      "verdict": "invalid",
+      "reasoning": "This is a broad comparison/search-for-options phrase, not a specific marketplace operational problem."
+    },
+    {
+      "query_id": "problem_demand_036",
+      "territory": "problem_demand",
+      "query": "marketplace exchange",
+      "verdict": "invalid",
+      "reasoning": "This is a broad market-category phrase without a concrete workflow, decision, or operator outcome."
+    },
+    {
+      "query_id": "problem_demand_037",
+      "territory": "problem_demand",
+      "query": "create marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a broad creation query that goes beyond the company’s marketplace operations focus and lacks a specific supported workflow."
+    },
+    {
+      "query_id": "problem_demand_038",
+      "territory": "problem_demand",
+      "query": "invisible marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to establish a concrete marketplace problem or operator workflow."
+    },
+    {
+      "query_id": "problem_demand_039",
+      "territory": "problem_demand",
+      "query": "marketplace def",
+      "verdict": "invalid",
+      "reasoning": "This is a definition lookup for the term marketplace, not a concrete problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "query": "synonyms marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a language query rather than a marketplace-operations problem or outcome."
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "query": "marketplace liquidation",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous category phrase and does not clearly describe a marketplace operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_042",
+      "territory": "problem_demand",
+      "query": "feng marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity style phrase, not a clear marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_043",
+      "territory": "problem_demand",
+      "query": "marketplace selections",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to represent a concrete marketplace workflow or operator outcome."
+    },
+    {
+      "query_id": "problem_demand_044",
+      "territory": "problem_demand",
+      "query": "marketplace whittier",
+      "verdict": "invalid",
+      "reasoning": "This is likely location- or entity-based and does not clearly state a marketplace operations problem."
+    },
+    {
+      "query_id": "problem_demand_045",
+      "territory": "problem_demand",
+      "query": "marketplace selling",
+      "verdict": "invalid",
+      "reasoning": "This is broad commerce wording without a specific operator workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_046",
+      "territory": "problem_demand",
+      "query": "evolved marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not identify a concrete marketplace problem or process."
+    },
+    {
+      "query_id": "problem_demand_047",
+      "territory": "problem_demand",
+      "query": "marketplace thailand",
+      "verdict": "invalid",
+      "reasoning": "This is location-qualified and does not clearly express a marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_048",
+      "territory": "problem_demand",
+      "query": "marketplace vs non marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a conceptual comparison rather than a concrete marketplace operational problem or decision."
+    },
+    {
+      "query_id": "problem_demand_049",
+      "territory": "problem_demand",
+      "query": "exodus marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase and not a clear marketplace-operations workflow."
+    },
+    {
+      "query_id": "problem_demand_050",
+      "territory": "problem_demand",
+      "query": "gassers marketplace",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a named entity or phrase query, not a concrete marketplace problem."
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "query": "mighty marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to establish a specific marketplace workflow or operator need."
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "marketplace alerts",
+      "verdict": "valid",
+      "reasoning": "This reflects an operator workflow around marketplace monitoring and notifications, which fits the company’s marketplace operations scope."
+    },
+    {
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "query": "marketplace businesses",
+      "verdict": "invalid",
+      "reasoning": "This is a generic market-category phrase, not a concrete marketplace problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_054",
+      "territory": "problem_demand",
+      "query": "where buyer and seller meet",
+      "verdict": "invalid",
+      "reasoning": "This is a broad marketplace definition concept rather than an operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_055",
+      "territory": "problem_demand",
+      "query": "buyer market and seller market",
+      "verdict": "invalid",
+      "reasoning": "This is a market-structure concept, not a concrete marketplace operations problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_056",
+      "territory": "problem_demand",
+      "query": "marketplace duke",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity style query and does not clearly indicate a marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_057",
+      "territory": "problem_demand",
+      "query": "newhaven marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is likely location- or entity-based and does not clearly express marketplace-operations demand."
+    },
+    {
+      "query_id": "problem_demand_058",
+      "territory": "problem_demand",
+      "query": "lemon marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase, not a concrete marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "query": "cuts marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to identify a supported marketplace operator problem."
+    },
+    {
+      "query_id": "problem_demand_060",
+      "territory": "problem_demand",
+      "query": "replenish marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is vague and does not clearly describe a concrete marketplace workflow or desired outcome."
+    },
+    {
+      "query_id": "problem_demand_061",
+      "territory": "problem_demand",
+      "query": "warrior marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity style phrase and not a clear marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_062",
+      "territory": "problem_demand",
+      "query": "marketplace notion",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly map to a concrete marketplace-operations workflow."
+    },
+    {
+      "query_id": "problem_demand_063",
+      "territory": "problem_demand",
+      "query": "pride marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to establish a concrete marketplace problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_064",
+      "territory": "problem_demand",
+      "query": "grow marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is broad growth language without a specific marketplace workflow, decision, or outcome."
+    },
+    {
+      "query_id": "problem_demand_065",
+      "territory": "problem_demand",
+      "query": "tango marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase, not a clear marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_066",
+      "territory": "problem_demand",
+      "query": "marketplace examples",
+      "verdict": "invalid",
+      "reasoning": "This is an example-seeking query about the category itself, not a concrete operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_067",
+      "territory": "problem_demand",
+      "query": "agentic marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a broad conceptual phrase and does not clearly express a concrete marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_068",
+      "territory": "problem_demand",
+      "query": "booth marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly describe a supported marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_069",
+      "territory": "problem_demand",
+      "query": "governor's marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named-entity or place-style query rather than a concrete marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_070",
+      "territory": "problem_demand",
+      "query": "governors marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named-entity style phrase and does not clearly indicate marketplace-operations demand."
+    },
+    {
+      "query_id": "problem_demand_071",
+      "territory": "problem_demand",
+      "query": "flerish marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous named-entity wording and not a clear marketplace workflow query."
+    },
+    {
+      "query_id": "problem_demand_072",
+      "territory": "problem_demand",
+      "query": "marketplace companies",
+      "verdict": "invalid",
+      "reasoning": "This is a generic list-of-businesses query, not a concrete marketplace problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_073",
+      "territory": "problem_demand",
+      "query": "distru marketplace",
+      "verdict": "invalid",
+      "reasoning": "This appears to be a named entity and does not clearly express marketplace-operations demand."
+    },
+    {
+      "query_id": "problem_demand_074",
+      "territory": "problem_demand",
+      "query": "rooted marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to identify a concrete marketplace workflow or operator need."
+    },
+    {
+      "query_id": "problem_demand_075",
+      "territory": "problem_demand",
+      "query": "thangs marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named-entity style phrase, not a clear marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_076",
+      "territory": "problem_demand",
+      "query": "marketplace wheelbarrow",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly describe a supported marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_077",
+      "territory": "problem_demand",
+      "query": "basilicos marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is likely a named entity or place-style phrase rather than a concrete marketplace problem."
+    },
+    {
+      "query_id": "problem_demand_078",
+      "territory": "problem_demand",
+      "query": "as marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is incomplete and too ambiguous to establish a clear marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_079",
+      "territory": "problem_demand",
+      "query": "marketplace 45",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not identify a concrete marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_080",
+      "territory": "problem_demand",
+      "query": "marketplace products",
+      "verdict": "invalid",
+      "reasoning": "This is broad category language without a concrete operational problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_081",
+      "territory": "problem_demand",
+      "query": "marketplace mayhem",
+      "verdict": "invalid",
+      "reasoning": "This is a vague descriptive phrase and does not specify a concrete marketplace problem or process."
+    },
+    {
+      "query_id": "problem_demand_082",
+      "territory": "problem_demand",
+      "query": "marketplace product",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and does not describe a concrete marketplace operator problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_083",
+      "territory": "problem_demand",
+      "query": "faire wholesale marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named brand query and does not explicitly ask for comparison or another supported solution need."
+    },
+    {
+      "query_id": "problem_demand_084",
+      "territory": "problem_demand",
+      "query": "marketplace job",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly identify a marketplace-operations problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_085",
+      "territory": "problem_demand",
+      "query": "moscow marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is likely location-based and does not clearly express a marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_086",
+      "territory": "problem_demand",
+      "query": "bamboo marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase and not a clear marketplace workflow query."
+    },
+    {
+      "query_id": "problem_demand_087",
+      "territory": "problem_demand",
+      "query": "warsaw marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is location-qualified and does not clearly state a concrete marketplace problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_088",
+      "territory": "problem_demand",
+      "query": "marketplace festival",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous and does not identify a supported marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_089",
+      "territory": "problem_demand",
+      "query": "nile marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous named-entity phrase rather than a concrete marketplace problem."
+    },
+    {
+      "query_id": "problem_demand_090",
+      "territory": "problem_demand",
+      "query": "bar marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to establish a concrete marketplace workflow or operator outcome."
+    },
+    {
+      "query_id": "problem_demand_091",
+      "territory": "problem_demand",
+      "query": "petersburg marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is likely location-based and does not clearly represent a marketplace-operations problem."
+    },
+    {
+      "query_id": "problem_demand_092",
+      "territory": "problem_demand",
+      "query": "marketplace weights",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly map to a concrete marketplace workflow or outcome."
+    },
+    {
+      "query_id": "problem_demand_093",
+      "territory": "problem_demand",
+      "query": "renewal marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is vague and does not clearly identify a supported marketplace-operations problem or process."
+    },
+    {
+      "query_id": "problem_demand_094",
+      "territory": "problem_demand",
+      "query": "marketplace offers",
+      "verdict": "invalid",
+      "reasoning": "This is broad marketplace wording without a specific workflow, decision, or outcome."
+    },
+    {
+      "query_id": "problem_demand_095",
+      "territory": "problem_demand",
+      "query": "1920 marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly express a concrete marketplace-operations need."
+    },
+    {
+      "query_id": "problem_demand_096",
+      "territory": "problem_demand",
+      "query": "gag marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous to identify a concrete marketplace workflow or operator problem."
+    },
+    {
+      "query_id": "problem_demand_097",
+      "territory": "problem_demand",
+      "query": "marketplace morning",
+      "verdict": "invalid",
+      "reasoning": "This is vague and does not clearly describe a marketplace problem, workflow, or outcome."
+    },
+    {
+      "query_id": "problem_demand_098",
+      "territory": "problem_demand",
+      "query": "marketplace aggregator",
+      "verdict": "invalid",
+      "reasoning": "This is a broad category phrase and not a concrete operator problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_099",
+      "territory": "problem_demand",
+      "query": "marketplace business",
+      "verdict": "invalid",
+      "reasoning": "This is generic market terminology rather than a concrete marketplace-operations problem or workflow."
+    },
+    {
+      "query_id": "problem_demand_100",
+      "territory": "problem_demand",
+      "query": "bajan marketplace buy and sell",
+      "verdict": "invalid",
+      "reasoning": "This is consumer-commerce wording with a location or regional qualifier, not a specific marketplace operator problem."
+    },
+    {
+      "query_id": "solution_demand_001",
+      "territory": "solution_demand",
+      "query": "operations management software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic software category that is too broad and not the company’s exact marketplace-operations product category."
+    },
+    {
+      "query_id": "solution_demand_002",
+      "territory": "solution_demand",
+      "query": "software for operations management",
+      "verdict": "invalid",
+      "reasoning": "This is a broad operations software query that lacks the marketplace-specific solution category Zavi sells."
+    },
+    {
+      "query_id": "solution_demand_003",
+      "territory": "solution_demand",
+      "query": "it operations automation software",
+      "verdict": "invalid",
+      "reasoning": "This is an IT-operations category, which is a separate solution space from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_004",
+      "territory": "solution_demand",
+      "query": "production and operations management software",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing/operations category and not the company’s marketplace-specific product category."
+    },
+    {
+      "query_id": "solution_demand_005",
+      "territory": "solution_demand",
+      "query": "business operations management software",
+      "verdict": "invalid",
+      "reasoning": "This is a remote umbrella category that is broader than marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_006",
+      "territory": "solution_demand",
+      "query": "it operations management software",
+      "verdict": "invalid",
+      "reasoning": "This is an IT operations category, not a directly supported marketplace operations solution category."
+    },
+    {
+      "query_id": "solution_demand_007",
+      "territory": "solution_demand",
+      "query": "operations performance management software",
+      "verdict": "invalid",
+      "reasoning": "This is a broad performance-management category rather than the company’s marketplace-operations platform."
+    },
+    {
+      "query_id": "solution_demand_008",
+      "territory": "solution_demand",
+      "query": "asset management operations software",
+      "verdict": "invalid",
+      "reasoning": "This is a separate asset-management category, not a marketplace-operations solution."
+    },
+    {
+      "query_id": "solution_demand_009",
+      "territory": "solution_demand",
+      "query": "operations management system software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic operations software phrase that does not specifically match the company’s marketplace focus."
+    },
+    {
+      "query_id": "solution_demand_010",
+      "territory": "solution_demand",
+      "query": "operations management software development",
+      "verdict": "invalid",
+      "reasoning": "This seeks development services rather than software product evaluation, which is outside the company’s solution demand."
+    },
+    {
+      "query_id": "solution_demand_011",
+      "territory": "solution_demand",
+      "query": "operations management software comparison",
+      "verdict": "invalid",
+      "reasoning": "This is a comparison query for a broad operations category that is not the company’s marketplace-specific solution."
+    },
+    {
+      "query_id": "solution_demand_012",
+      "territory": "solution_demand",
+      "query": "training operations management software",
+      "verdict": "invalid",
+      "reasoning": "This is a training/education phrase about a broad operations category, not a qualified marketplace-operations software query."
+    },
+    {
+      "query_id": "solution_demand_013",
+      "territory": "solution_demand",
+      "query": "operations and information management",
+      "verdict": "invalid",
+      "reasoning": "This is an academic or conceptual phrase, not commercial demand for the company’s software category."
+    },
+    {
+      "query_id": "solution_demand_014",
+      "territory": "solution_demand",
+      "query": "manufacturing operations management mom software",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing MOM category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_015",
+      "territory": "solution_demand",
+      "query": "software operations",
+      "verdict": "invalid",
+      "reasoning": "This is ambiguous and does not clearly indicate a software category the company sells."
+    },
+    {
+      "query_id": "solution_demand_016",
+      "territory": "solution_demand",
+      "query": "it operations management software market",
+      "verdict": "invalid",
+      "reasoning": "This is a market-research query for IT operations software, not the company’s marketplace solution category."
+    },
+    {
+      "query_id": "solution_demand_017",
+      "territory": "solution_demand",
+      "query": "operations management in software company",
+      "verdict": "invalid",
+      "reasoning": "This is an informational query about managing a software company, not product-category demand for marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_018",
+      "territory": "solution_demand",
+      "query": "system and operations management",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and does not identify a market-qualified software category the company sells."
+    },
+    {
+      "query_id": "solution_demand_019",
+      "territory": "solution_demand",
+      "query": "software used for operations",
+      "verdict": "invalid",
+      "reasoning": "This is a generic umbrella query that lacks the marketplace-specific solution intent needed here."
+    },
+    {
+      "query_id": "solution_demand_020",
+      "territory": "solution_demand",
+      "query": "dss for operations management",
+      "verdict": "invalid",
+      "reasoning": "This is a decision-support-system category for general operations, not the company’s marketplace operations platform."
+    },
+    {
+      "query_id": "solution_demand_021",
+      "territory": "solution_demand",
+      "query": "erp for operations management",
+      "verdict": "invalid",
+      "reasoning": "This is an ERP query, which is a remote umbrella category and not the company’s solution category."
+    },
+    {
+      "query_id": "solution_demand_022",
+      "territory": "solution_demand",
+      "query": "management for software",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not represent a qualified software category relevant to Zavi."
+    },
+    {
+      "query_id": "solution_demand_023",
+      "territory": "solution_demand",
+      "query": "business automation software",
+      "verdict": "invalid",
+      "reasoning": "This is a broad umbrella category that is not specific enough to the company’s marketplace operations automation product."
+    },
+    {
+      "query_id": "solution_demand_024",
+      "territory": "solution_demand",
+      "query": "manufacturing operations management mom software market",
+      "verdict": "invalid",
+      "reasoning": "This is a market-research query for a manufacturing software category, not marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "query": "operations management system",
+      "verdict": "invalid",
+      "reasoning": "This is a broad operations software category and not the company’s exact marketplace-specific solution."
+    },
+    {
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "query": "it operations automation framework",
+      "verdict": "invalid",
+      "reasoning": "This is an IT operations framework query, which is separate from marketplace operations automation software."
+    },
+    {
+      "query_id": "solution_demand_027",
+      "territory": "solution_demand",
+      "query": "utilization operations management",
+      "verdict": "invalid",
+      "reasoning": "This is too ambiguous and does not indicate a market-qualified software category the company sells."
+    },
+    {
+      "query_id": "solution_demand_028",
+      "territory": "solution_demand",
+      "query": "virtual operations management",
+      "verdict": "invalid",
+      "reasoning": "This is a broad operations concept, not a concrete software category aligned to Zavi’s marketplace focus."
+    },
+    {
+      "query_id": "solution_demand_029",
+      "territory": "solution_demand",
+      "query": "production and operations management system",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing/operations system category and not the company’s marketplace operations platform."
+    },
+    {
+      "query_id": "solution_demand_030",
+      "territory": "solution_demand",
+      "query": "operations and management information systems",
+      "verdict": "invalid",
+      "reasoning": "This is an academic or umbrella information-systems phrase, not commercial demand for Zavi’s category."
+    },
+    {
+      "query_id": "solution_demand_031",
+      "territory": "solution_demand",
+      "query": "software for requirements management",
+      "verdict": "invalid",
+      "reasoning": "This is a separate requirements-management category that is not the company’s marketplace operations product."
+    },
+    {
+      "query_id": "solution_demand_032",
+      "territory": "solution_demand",
+      "query": "procurement automation software",
+      "verdict": "invalid",
+      "reasoning": "This is a procurement category, which is not the company’s marketplace operations automation solution."
+    },
+    {
+      "query_id": "solution_demand_033",
+      "territory": "solution_demand",
+      "query": "management software",
+      "verdict": "invalid",
+      "reasoning": "This is far too broad and generic to qualify as demand for Zavi’s specific product category."
+    },
+    {
+      "query_id": "solution_demand_034",
+      "territory": "solution_demand",
+      "query": "mrp operations management",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing planning/operations query and not a marketplace operations software category."
+    },
+    {
+      "query_id": "solution_demand_035",
+      "territory": "solution_demand",
+      "query": "operations manager software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic role-based software phrase rather than a marketplace-specific product category."
+    },
+    {
+      "query_id": "solution_demand_036",
+      "territory": "solution_demand",
+      "query": "digital operations management",
+      "verdict": "invalid",
+      "reasoning": "This is an umbrella phrase that is broader than marketplace operations automation and too undefined."
+    },
+    {
+      "query_id": "solution_demand_037",
+      "territory": "solution_demand",
+      "query": "customer management software",
+      "verdict": "invalid",
+      "reasoning": "This is a separate CRM-like category, not the company’s marketplace operations automation platform."
+    },
+    {
+      "query_id": "solution_demand_038",
+      "territory": "solution_demand",
+      "query": "operations management applications",
+      "verdict": "invalid",
+      "reasoning": "This is a generic application-category phrase without the marketplace-specific qualification needed here."
+    },
+    {
+      "query_id": "solution_demand_039",
+      "territory": "solution_demand",
+      "query": "enterprise software marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is an ambiguous marketplace phrase that does not clearly represent demand for Zavi’s product category."
+    },
+    {
+      "query_id": "solution_demand_040",
+      "territory": "solution_demand",
+      "query": "marketplace software development",
+      "verdict": "invalid",
+      "reasoning": "This primarily seeks development services, which are explicitly outside the company’s software solution category."
+    },
+    {
+      "query_id": "solution_demand_041",
+      "territory": "solution_demand",
+      "query": "services marketplace software",
+      "verdict": "invalid",
+      "reasoning": "This is a marketplace-platform category, but it is not clearly the company’s marketplace operations automation product."
+    },
+    {
+      "query_id": "solution_demand_042",
+      "territory": "solution_demand",
+      "query": "service marketplace software",
+      "verdict": "invalid",
+      "reasoning": "This is a marketplace-platform category that does not specifically match Zavi’s marketplace operations automation focus."
+    },
+    {
+      "query_id": "solution_demand_043",
+      "territory": "solution_demand",
+      "query": "operations simulation software",
+      "verdict": "invalid",
+      "reasoning": "This is a simulation category, not commercial demand for marketplace operations automation software."
+    },
+    {
+      "query_id": "solution_demand_044",
+      "territory": "solution_demand",
+      "query": "people operations software",
+      "verdict": "invalid",
+      "reasoning": "This is an HR/people-ops category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_045",
+      "territory": "solution_demand",
+      "query": "operations control software",
+      "verdict": "invalid",
+      "reasoning": "This is a broad control-software category and not the company’s marketplace-specific product category."
+    },
+    {
+      "query_id": "solution_demand_046",
+      "territory": "solution_demand",
+      "query": "production operations software",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing operations category, not a marketplace operations solution."
+    },
+    {
+      "query_id": "solution_demand_047",
+      "territory": "solution_demand",
+      "query": "software company operations",
+      "verdict": "invalid",
+      "reasoning": "This is an informational query about operating a software company, not solution demand for Zavi."
+    },
+    {
+      "query_id": "solution_demand_048",
+      "territory": "solution_demand",
+      "query": "operations center software",
+      "verdict": "invalid",
+      "reasoning": "This is a broad operations-center category that is not the company’s marketplace-specific solution."
+    },
+    {
+      "query_id": "solution_demand_049",
+      "territory": "solution_demand",
+      "query": "software for inventory and order management",
+      "verdict": "invalid",
+      "reasoning": "This is an inventory/order-management category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_050",
+      "territory": "solution_demand",
+      "query": "operations management environment",
+      "verdict": "invalid",
+      "reasoning": "This is too vague and does not indicate a market-qualified software category."
+    },
+    {
+      "query_id": "solution_demand_051",
+      "territory": "solution_demand",
+      "query": "operations management module",
+      "verdict": "invalid",
+      "reasoning": "This is a component-level phrase rather than a standalone category that matches Zavi’s product."
+    },
+    {
+      "query_id": "solution_demand_052",
+      "territory": "solution_demand",
+      "query": "operations management modules",
+      "verdict": "invalid",
+      "reasoning": "This is a component-level phrase, not a clear software category or product search."
+    },
+    {
+      "query_id": "solution_demand_053",
+      "territory": "solution_demand",
+      "query": "operations management utilization",
+      "verdict": "invalid",
+      "reasoning": "This is too vague to represent qualified solution demand for the company’s category."
+    },
+    {
+      "query_id": "solution_demand_054",
+      "territory": "solution_demand",
+      "query": "operations management interface",
+      "verdict": "invalid",
+      "reasoning": "This is a UI/component phrase, not commercial demand for a software category."
+    },
+    {
+      "query_id": "solution_demand_055",
+      "territory": "solution_demand",
+      "query": "software ag marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a named-brand or ambiguous marketplace phrase, not explicit evaluation intent for Zavi’s category."
+    },
+    {
+      "query_id": "solution_demand_056",
+      "territory": "solution_demand",
+      "query": "b2b software marketplace",
+      "verdict": "invalid",
+      "reasoning": "This is a marketplace concept rather than a clear demand signal for marketplace operations automation software."
+    },
+    {
+      "query_id": "solution_demand_057",
+      "territory": "solution_demand",
+      "query": "erp software for industrial automation",
+      "verdict": "invalid",
+      "reasoning": "This is a separate ERP/industrial automation category and not the company’s marketplace operations product."
+    },
+    {
+      "query_id": "solution_demand_058",
+      "territory": "solution_demand",
+      "query": "software for business process automation",
+      "verdict": "invalid",
+      "reasoning": "This is a broad automation umbrella category that does not specifically match Zavi’s marketplace operations focus."
+    },
+    {
+      "query_id": "solution_demand_059",
+      "territory": "solution_demand",
+      "query": "software for contract management",
+      "verdict": "invalid",
+      "reasoning": "This is a contract-management category, not the company’s marketplace operations automation solution."
+    },
+    {
+      "query_id": "solution_demand_060",
+      "territory": "solution_demand",
+      "query": "automation release management",
+      "verdict": "invalid",
+      "reasoning": "This is a software-release-management category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_061",
+      "territory": "solution_demand",
+      "query": "release management automation",
+      "verdict": "invalid",
+      "reasoning": "This is a release-management category and not the company’s marketplace-operations product."
+    },
+    {
+      "query_id": "solution_demand_062",
+      "territory": "solution_demand",
+      "query": "resource management automation",
+      "verdict": "invalid",
+      "reasoning": "This is a broad resource-management category that is not clearly marketplace-specific."
+    },
+    {
+      "query_id": "solution_demand_063",
+      "territory": "solution_demand",
+      "query": "user management automation",
+      "verdict": "invalid",
+      "reasoning": "This is a user-management category, not marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_064",
+      "territory": "solution_demand",
+      "query": "client management automation",
+      "verdict": "invalid",
+      "reasoning": "This is a client-management category and does not match the company’s marketplace operations product category."
+    },
+    {
+      "query_id": "solution_demand_065",
+      "territory": "solution_demand",
+      "query": "software design and management",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and does not represent qualified demand for a marketplace operations automation platform."
+    },
+    {
+      "query_id": "solution_demand_066",
+      "territory": "solution_demand",
+      "query": "monitoring and management software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic monitoring/management umbrella category and not the company’s marketplace-specific solution."
+    },
+    {
+      "query_id": "solution_demand_067",
+      "territory": "solution_demand",
+      "query": "inventory management software",
+      "verdict": "invalid",
+      "reasoning": "This is a separate inventory-management category, not marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_068",
+      "territory": "solution_demand",
+      "query": "application software for management",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and generic to qualify as demand for Zavi’s product category."
+    },
+    {
+      "query_id": "solution_demand_069",
+      "territory": "solution_demand",
+      "query": "software for hospitality management",
+      "verdict": "invalid",
+      "reasoning": "This is a hospitality category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "query": "software for operation management",
+      "verdict": "invalid",
+      "reasoning": "This is a generic operations-management phrase that is not specific to the company’s marketplace category."
+    },
+    {
+      "query_id": "solution_demand_071",
+      "territory": "solution_demand",
+      "query": "software for strategic management",
+      "verdict": "invalid",
+      "reasoning": "This is a broad strategic-management category, not a marketplace operations automation product search."
+    },
+    {
+      "query_id": "solution_demand_072",
+      "territory": "solution_demand",
+      "query": "software for delivery management",
+      "verdict": "invalid",
+      "reasoning": "This is a delivery-management category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_073",
+      "territory": "solution_demand",
+      "query": "software management inventory",
+      "verdict": "invalid",
+      "reasoning": "This is an inventory-management query and does not match the company’s marketplace operations product category."
+    },
+    {
+      "query_id": "solution_demand_074",
+      "territory": "solution_demand",
+      "query": "workforce management software",
+      "verdict": "invalid",
+      "reasoning": "This is an HR/workforce category, not a marketplace operations automation solution."
+    },
+    {
+      "query_id": "solution_demand_075",
+      "territory": "solution_demand",
+      "query": "contract management software for government",
+      "verdict": "invalid",
+      "reasoning": "This is a government contract-management category and unrelated to the company’s product."
+    },
+    {
+      "query_id": "solution_demand_076",
+      "territory": "solution_demand",
+      "query": "operations support system ppt",
+      "verdict": "invalid",
+      "reasoning": "This is a presentation/education query about OSS, not commercial demand for the company’s solution category."
+    },
+    {
+      "query_id": "solution_demand_077",
+      "territory": "solution_demand",
+      "query": "operations support systems examples",
+      "verdict": "invalid",
+      "reasoning": "This is an informational examples query, not solution-selection intent for Zavi’s category."
+    },
+    {
+      "query_id": "solution_demand_078",
+      "territory": "solution_demand",
+      "query": "operations information system and contingency management",
+      "verdict": "invalid",
+      "reasoning": "This is an academic or informational phrase, not commercial demand for marketplace operations software."
+    },
+    {
+      "query_id": "solution_demand_079",
+      "territory": "solution_demand",
+      "query": "operation support system and management support system",
+      "verdict": "invalid",
+      "reasoning": "This is a broad systems-concept query, not demand for the company’s marketplace software category."
+    },
+    {
+      "query_id": "solution_demand_080",
+      "territory": "solution_demand",
+      "query": "it management software",
+      "verdict": "invalid",
+      "reasoning": "This is an IT management category, which is separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_081",
+      "territory": "solution_demand",
+      "query": "vendor and contract management software",
+      "verdict": "invalid",
+      "reasoning": "This is a vendor/contract-management category and not the company’s marketplace-operations solution."
+    },
+    {
+      "query_id": "solution_demand_082",
+      "territory": "solution_demand",
+      "query": "it operations management tools",
+      "verdict": "invalid",
+      "reasoning": "This is an IT operations category and not a directly supported marketplace operations solution category."
+    },
+    {
+      "query_id": "solution_demand_083",
+      "territory": "solution_demand",
+      "query": "inventory management and ordering software",
+      "verdict": "invalid",
+      "reasoning": "This is an inventory/order-management category, not marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_084",
+      "territory": "solution_demand",
+      "query": "inventory and order management software",
+      "verdict": "invalid",
+      "reasoning": "This is a separate inventory/order-management category and does not match Zavi’s product."
+    },
+    {
+      "query_id": "solution_demand_085",
+      "territory": "solution_demand",
+      "query": "hospitality management software",
+      "verdict": "invalid",
+      "reasoning": "This is a hospitality software category and not the company’s marketplace operations platform."
+    },
+    {
+      "query_id": "solution_demand_086",
+      "territory": "solution_demand",
+      "query": "manufacturing operations management systems",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing category and not the company’s marketplace operations automation product."
+    },
+    {
+      "query_id": "solution_demand_087",
+      "territory": "solution_demand",
+      "query": "resource management software",
+      "verdict": "invalid",
+      "reasoning": "This is a generic resource-management category and not specific to marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_088",
+      "territory": "solution_demand",
+      "query": "production management software",
+      "verdict": "invalid",
+      "reasoning": "This is a production-management category, not a marketplace operations solution."
+    },
+    {
+      "query_id": "solution_demand_089",
+      "territory": "solution_demand",
+      "query": "equipment management software",
+      "verdict": "invalid",
+      "reasoning": "This is an equipment-management category and not related to the company’s marketplace product."
+    },
+    {
+      "query_id": "solution_demand_090",
+      "territory": "solution_demand",
+      "query": "job management software for trades and services",
+      "verdict": "invalid",
+      "reasoning": "This is a trades/services field-service category, which is unrelated to marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_091",
+      "territory": "solution_demand",
+      "query": "inventory and production management software",
+      "verdict": "invalid",
+      "reasoning": "This is a manufacturing/inventory category, not the company’s marketplace-specific solution."
+    },
+    {
+      "query_id": "solution_demand_092",
+      "territory": "solution_demand",
+      "query": "business automation software solutions",
+      "verdict": "invalid",
+      "reasoning": "This is a broad umbrella category that does not specifically indicate marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_093",
+      "territory": "solution_demand",
+      "query": "continuity of operations software",
+      "verdict": "invalid",
+      "reasoning": "This is a continuity/disaster-recovery style category, not the company’s marketplace-operations platform."
+    },
+    {
+      "query_id": "solution_demand_094",
+      "territory": "solution_demand",
+      "query": "workplace management software",
+      "verdict": "invalid",
+      "reasoning": "This is a workplace-facilities category rather than marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_095",
+      "territory": "solution_demand",
+      "query": "product management software",
+      "verdict": "invalid",
+      "reasoning": "This is a product-management category, not the company’s marketplace operations software."
+    },
+    {
+      "query_id": "solution_demand_096",
+      "territory": "solution_demand",
+      "query": "software management system",
+      "verdict": "invalid",
+      "reasoning": "This is too broad and ambiguous to qualify as demand for Zavi’s category."
+    },
+    {
+      "query_id": "solution_demand_097",
+      "territory": "solution_demand",
+      "query": "software asset and configuration management",
+      "verdict": "invalid",
+      "reasoning": "This is an IT asset/configuration management category, separate from marketplace operations automation."
+    },
+    {
+      "query_id": "solution_demand_098",
+      "territory": "solution_demand",
+      "query": "hotel and restaurant management software",
+      "verdict": "invalid",
+      "reasoning": "This is a hospitality category and not the company’s marketplace operations product."
+    },
+    {
+      "query_id": "solution_demand_099",
+      "territory": "solution_demand",
+      "query": "operations in software company",
+      "verdict": "invalid",
+      "reasoning": "This is an informational query about software-company operations, not commercial demand for Zavi."
+    },
+    {
+      "query_id": "solution_demand_100",
+      "territory": "solution_demand",
+      "query": "operations management information technology",
+      "verdict": "invalid",
+      "reasoning": "This is a broad IT/operations phrase and not a clear marketplace operations automation solution query."
+    }
+  ]
+}

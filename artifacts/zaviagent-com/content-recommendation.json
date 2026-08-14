@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "6786ae65-a952-4edf-a82d-349f50e76aa0",
+  "generated_at": "2026-08-14T19:13:18.191Z",
+  "source_artifacts": [
+    "company-profile.json",
+    "query-recommendations.json",
+    "serp-results.json"
+  ],
+  "status": "complete",
+  "warnings": [
+    "problem_demand had 2 confirmed queries; selected all 2 instead of 10.",
+    "solution_demand had no confirmed queries; selected 0 instead of 10.",
+    "solution_demand produced 0 recommendations instead of target 2: No solution-demand queries were supplied, so zero selections are appropriate in this territory.",
+    "problem_demand_030 returned 6 organic results instead of 10.",
+    "problem_demand_052 returned 9 organic results instead of 10.",
+    "problem_demand_030: Google is interpreting this query as Facebook Marketplace listing management, so a general marketplace-ops page may need a sharper marketplace-specific framing to compete.",
+    "problem_demand_052: The SERP is split between consumer alert setup and third-party alert tools, so an operator-focused page may not fully match the dominant Facebook Marketplace interpretation."
+  ],
+  "website_url": "https://www.zaviagent.com/",
+  "source_profile": {
+    "company_name": "Zavi",
+    "product_category": "marketplace operations automation platform",
+    "primary_icp": "marketplace founders and operators"
+  },
+  "content_recommendations": [
+    {
+      "recommendation_id": "problem_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "problem_demand_030",
+      "territory": "problem_demand",
+      "primary_query": "marketplace listings",
+      "serp_analysis": {
+        "dominant_intent": "informational",
+        "dominant_page_type": "guide",
+        "serp_consistency": "high",
+        "summary": "Searchers appear to want help creating and managing Facebook Marketplace listings, and Google is rewarding Facebook help pages and step-by-step guides with occasional video support.",
+        "recurring_concepts": [
+          "Facebook Marketplace",
+          "create and manage listings",
+          "buy and sell items",
+          "step-by-step help"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Marketplace Listings: How to Create and Manage Them for Healthy Supply",
+        "recommended_page_type": "guide",
+        "content_angle": "Explain how marketplace listings affect supply quality, activation, and catalog upkeep, with practical guidance for operators who need a durable listings workflow rather than consumer selling tips.",
+        "product_connection": "Zavi can appear as the system that helps recruit, verify, and activate supply so marketplace listings do not run dry.",
+        "confidence": "medium",
+        "warnings": [
+          "Google is interpreting this query as Facebook Marketplace listing management, so a general marketplace-ops page may need a sharper marketplace-specific framing to compete."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "problem_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "primary_query": "marketplace alerts",
+      "serp_analysis": {
+        "dominant_intent": "mixed",
+        "dominant_page_type": "mixed",
+        "serp_consistency": "low",
+        "summary": "Searchers appear to want either faster Facebook Marketplace alert setup or dedicated alert tools, and Google is splitting results between how-to/help content and alert apps.",
+        "recurring_concepts": [
+          "Facebook Marketplace alerts",
+          "notifications",
+          "instant or fast alerts",
+          "saved searches",
+          "apps and tools"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Marketplace Alerts: What to Track and How Operators Should Set Them Up",
+        "recommended_page_type": "guide",
+        "content_angle": "Cover the alert types marketplace operators need, when each should trigger, and how alerts fit into ongoing monitoring and escalation workflows, with an operator-first angle instead of consumer deal hunting.",
+        "product_connection": "Zavi can fit naturally as the always-on assistant that runs scheduled checks, drafts updates, and routes operator escalations inside Slack.",
+        "confidence": "low",
+        "warnings": [
+          "The SERP is split between consumer alert setup and third-party alert tools, so an operator-focused page may not fully match the dominant Facebook Marketplace interpretation."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "recommendations_received": 2,
+    "recommendations_analyzed": 2,
+    "problem_demand_count": 2,
+    "solution_demand_count": 0,
+    "high_confidence_count": 0,
+    "medium_confidence_count": 1,
+    "low_confidence_count": 1,
+    "mixed_intent_count": 1,
+    "insufficient_serp_count": 0
+  }
+}
