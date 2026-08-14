@@ -22,6 +22,14 @@ const QueryValidationItemSchema = z
   })
   .strict();
 
+const QueryValidationBatchItemSchema = z
+  .object({
+    query_id: NonEmptyStringSchema,
+    verdict: VerdictSchema,
+    reasoning: NonEmptyStringSchema,
+  })
+  .strict();
+
 export const QueryValidationSchema = z
   .object({
     schema_version: z.literal("1.0.0"),
@@ -66,3 +74,28 @@ export const QueryValidationSchema = z
   });
 
 export type QueryValidation = z.infer<typeof QueryValidationSchema>;
+
+export const QueryValidationBatchSchema = z
+  .object({
+    query_validations: z.array(QueryValidationBatchItemSchema),
+  })
+  .strict()
+  .superRefine((batch, context) => {
+    const seenQueryIds = new Set<string>();
+
+    for (const [index, validation] of batch.query_validations.entries()) {
+      if (seenQueryIds.has(validation.query_id)) {
+        context.addIssue({
+          code: "custom",
+          message: `query_id must be unique within a batch; found duplicate ${validation.query_id}.`,
+          path: ["query_validations", index, "query_id"],
+        });
+      }
+
+      seenQueryIds.add(validation.query_id);
+    }
+  });
+
+export type QueryValidationBatch = z.infer<
+  typeof QueryValidationBatchSchema
+>;

@@ -26,7 +26,7 @@
     "item_types": [
       "organic"
     ],
-    "limit": 50,
+    "limit": 1000,
     "order_by": [
       "rating,desc"
     ],
@@ -41,9 +41,12 @@
     "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
   },
   "summary": {
-    "total_domains_found": 25,
-    "domains_received": 50,
+    "total_domains_found": 100,
+    "domains_received": 100,
+    "raw_candidates_received": 100,
+    "generic_candidates_filtered": 8,
     "competitors_included": 50,
+    "final_competitors_profiled": 50,
     "target_domain_excluded": true
   },
   "competitors": [

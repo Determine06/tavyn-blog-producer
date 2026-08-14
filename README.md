@@ -107,7 +107,29 @@ FIRECRAWL_API_KEY
 SERPER_API_KEY
 DATAFORSEO_LOGIN
 DATAFORSEO_PASSWORD
+SUPABASE_URL=https://umrswzyshnynqijujwqq.supabase.co
+SUPABASE_SECRET_KEY=your_server_secret_key
 ```
+
+`SUPABASE_SECRET_KEY` is server-only. Never put it in frontend code or expose it through `NEXT_PUBLIC_` variables.
+
+To sync completed company reports to Supabase, run the pipeline with:
+
+```bash
+npm run dev -- --save-to-supabase
+```
+
+For an interactive full run, use:
+
+```bash
+npm run dev
+```
+
+Enter the company website when prompted. An argument-free run uses cached
+artifacts when available, runs through company-report, and saves the completed
+report to Supabase.
+
+Without `--save-to-supabase`, the pipeline does not create a Supabase client or require Supabase environment variables.
 
 Hyperparameter logging can be enabled for OpenAI structured prompt calls:
 

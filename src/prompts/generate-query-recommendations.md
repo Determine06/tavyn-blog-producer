@@ -1,7 +1,7 @@
 ---
 
 prompt_name: generate-query-recommendations
-prompt_version: 0.3.0
+prompt_version: 0.4.0
 output_mode: structured_json
 schema_name: QueryRecommendationDecisionSchema
 model: gpt-5.4-mini
@@ -26,40 +26,31 @@ The input contains:
 * average top-ten ranking-page metrics
 * deterministic opportunity scores
 
-Select:
+Select exactly three queries:
 
-* at least one and up to two `problem_demand` queries when at least one problem-demand candidate is supplied
-* at least one and up to two `solution_demand` queries when at least one solution-demand candidate is supplied
-* no more than four queries total
+* exactly one `problem_demand` query
+* exactly two distinct `solution_demand` queries
 
-When a territory contains one or more candidates, select at least one recommendation from that territory.
+The final composition must always be one problem-demand recommendation plus two solution-demand recommendations.
 
-When a territory contains zero candidates, select zero recommendations from that territory.
+Never select duplicate, near-duplicate, cannibalizing, unsafe, misleading, or poorly positioned queries merely to reach three.
 
-The second recommendation is optional.
-
-Select a second recommendation only when it represents a genuinely distinct, credible, strategically useful content opportunity.
-
-Two recommendations per territory is a target, not a quota.
-
-Do not let the target of two influence whether a second candidate is suitable.
-
-Never select a weak, duplicate, unsafe, misleading, or poorly positioned second query merely to reach the target.
-
-Never invent a query to satisfy the minimum.
+Never invent a query to satisfy the exact count.
 
 # Required Selection Procedure
 
-Evaluate all supplied candidates before selecting any recommendations.
+Evaluate all supplied problem-demand and solution-demand candidates before selecting any recommendations.
 
-For each territory:
+Use this selection procedure:
 
-1. Identify the strongest candidate based on company fit, search intent, content suitability, product connection, demand, and attainability.
-2. Select the strongest candidate when at least one candidate exists.
-3. Evaluate every remaining candidate as a possible second recommendation.
-4. Apply the distinctness, dominant-intent, positioning, service-intent, and safety rules.
-5. Select a second candidate only when it would require a meaningfully different standalone page.
-6. Otherwise, return one recommendation and explain the limitation in the territory assessment.
+1. Select exactly one strongest `problem_demand` candidate based on company fit, search intent, content suitability, product connection, demand, and attainability.
+2. Inspect all supplied top-ten `solution_demand` opportunities for credible product-specific queries.
+3. Select exactly two distinct `solution_demand` candidates.
+4. One solution selection must be the strongest credible solution opportunity.
+5. One solution selection must be the strongest credible product-specific opportunity when one exists.
+6. If the strongest solution opportunity is already product-specific, use it as the product-specific item and choose the strongest remaining distinct solution opportunity for the other solution slot.
+7. If no credible product-specific query exists, select the two strongest distinct solution-demand opportunities and clearly state in the solution territory assessment that the product-specific slot used the fallback.
+8. Apply the distinctness, dominant-intent, positioning, service-intent, safety, and one-article coverage rules across all three selected queries.
 
 Do not begin with the two highest opportunity scores and attempt to justify them afterward.
 
@@ -124,6 +115,36 @@ The company must plausibly satisfy the dominant search need represented by that 
 Do not select a remote umbrella category merely because the product is technically included within it.
 
 Do not select a separate service or product category merely because the company has one related capability.
+
+# Product-Specific Solution Requirement
+
+Treat a solution-demand query as product-specific only when all of the following are true:
+
+* it directly represents the company’s exact product category or an immediate parent category
+* its dominant intent is to find, compare, evaluate, or purchase software, tools, platforms, or products in that category
+* the company can credibly satisfy the category as a primary product
+* the connection is based on the company’s actual product positioning, not one supporting feature
+
+Do not treat a query as product-specific when it represents:
+
+* a remote umbrella category
+* an adjacent product category
+* a category supported by only one feature
+* a generic business or software category
+* a service, agency, consulting, or custom-development category
+* a category the company could only address by changing its positioning
+
+Apply the category-membership counterfactual:
+
+> If the related capability were removed, would the company still belong to the category represented by the query?
+
+If not, it is not a credible product-specific opportunity.
+
+Inspect all supplied top-ten `solution_demand` opportunities for credible product-specific queries.
+
+When a credible product-specific candidate exists, one of the two solution recommendations must be the strongest credible product-specific candidate.
+
+When no credible product-specific candidate exists, the second solution slot must fall back to the strongest remaining distinct `solution_demand` query, and the solution territory assessment must clearly state that the product-specific slot used this fallback.
 
 # Dominant Search-Intent Rule
 
@@ -554,36 +575,13 @@ Reject output such as:
 
 Rewrite every incomplete field before returning the structured output.
 
-# Insufficient Opportunity Rule
+# Exact Count Rule
 
-It is acceptable to select:
+Return exactly one problem-demand selection and exactly two solution-demand selections.
 
-* two recommendations when two distinct, credible opportunities exist
-* one recommendation when candidates exist but no credible second opportunity exists
-* zero recommendations only when zero candidates were supplied
+If the supplied candidates cannot support that exact composition without violating the selection rules, do not invent, rewrite, or move queries; choose the strongest distinct supplied candidates that remain credible under the rules.
 
-Return exactly one when:
-
-* only one candidate exists
-* all remaining candidates are weak
-* all remaining candidates substantially overlap with the first
-* remaining candidates have incompatible dominant intent
-* remaining candidates require unsupported positioning
-* remaining candidates represent another business model
-* remaining candidates create high-stakes content risk
-* remaining candidates have a forced product connection
-
-The second recommendation is always optional.
-
-The target of two must never influence whether a second recommendation is selected.
-
-Do not replace a missing solution recommendation with a third problem recommendation.
-
-Do not replace a missing problem recommendation with a third solution recommendation.
-
-The maximum remains two per territory.
-
-For each territory, provide one concise, complete `assessment` explaining why the selected quantity is appropriate.
+For each territory, provide one concise, complete `assessment` explaining why the selected queries are appropriate.
 
 # Prohibited Output
 
@@ -602,8 +600,9 @@ Do not:
 * estimate traffic
 * change metric values
 * create clusters
-* select more than two queries per territory
-* select more than four queries total
+* select more than one problem-demand query
+* select anything other than two solution-demand queries
+* select anything other than three queries total
 * fill a quota with weak recommendations
 * infer different SERP page types without live SERP evidence
 * convert a service query into a software query through content framing
@@ -618,7 +617,7 @@ Before returning the structured output, verify all of the following.
 * every supplied candidate was considered before selection
 * the highest opportunity scores were not followed mechanically
 * the first recommendation is the strongest overall fit
-* each second recommendation independently passes every selection rule
+* both solution recommendations independently pass every selection rule
 
 ## Identity
 
@@ -630,11 +629,11 @@ Before returning the structured output, verify all of the following.
 
 ## Counts
 
-* a nonempty territory contains at least one selection
-* an empty territory contains zero selections
-* no territory contains more than two selections
-* no more than four total queries were selected
-* the target of two did not influence the decision
+* exactly one problem-demand query was selected
+* exactly two solution-demand queries were selected
+* exactly three total queries were selected
+* the product-specific solution requirement was applied
+* the solution assessment states the fallback when no credible product-specific candidate exists
 * no query was invented to satisfy the minimum
 
 ## Distinctness
@@ -644,7 +643,7 @@ Before returning the structured output, verify all of the following.
 * no unmodified category query and `best`, `top`, `free`, or `cheap` variant were both selected
 * no broad guide and broad reference variant were both selected
 * no two high-stakes recommendations cover the same decision domain
-* every second recommendation requires a meaningfully different page
+* every selected recommendation requires a meaningfully different page
 
 ## Dominant Intent
 

@@ -1,7 +1,7 @@
 ---
 
 prompt_name: generate-content-recommendation
-prompt_version: 1.0.0
+prompt_version: 1.0.1
 output_mode: structured_json
 schema_name: ContentRecommendationDecisionSchema
 model: gpt-5.4-mini
@@ -19,12 +19,14 @@ Analyze the live Google organic results for every supplied query recommendation 
 The input contains:
 
 * a validated company profile
-* between zero and four previously selected query recommendations
+* exactly three previously selected query recommendations
 * the existing selection reasoning, content angle, product connection, metrics, and opportunity score for each recommendation
 * up to ten live organic results for each selected query
 * each organic result's position, title, URL, domain, snippet, and displayed date when available
 
 Analyze every supplied recommendation exactly once.
+
+The response must contain exactly three analyses, preserving input order.
 
 Do not select, reject, replace, merge, or reprioritize queries.
 

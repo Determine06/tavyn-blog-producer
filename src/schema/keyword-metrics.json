@@ -18,12 +18,53 @@
   "request_config": {
     "location_code": 2840,
     "language_code": "en",
-    "limit_per_task": 100,
+    "limit_per_task": 500,
     "closely_variants": true,
     "ignore_synonyms": false,
-    "include_serp_info": false,
+    "include_serp_info": true,
     "include_clickstream_data": false,
-    "minimum_search_volume": 1
+    "filters": [
+      [
+        "keyword_info.search_volume",
+        ">",
+        50
+      ],
+      "and",
+      [
+        "keyword_properties.is_another_language",
+        "=",
+        false
+      ],
+      "and",
+      [
+        "keyword_properties.words_count",
+        ">=",
+        2
+      ],
+      "and",
+      [
+        "serp_info.serp_item_types",
+        "has_not",
+        "local_pack"
+      ],
+      "and",
+      [
+        "keyword",
+        "not_regex",
+        "(^|\\s)(near me|nearby|in my area|open now|opening hours|directions)(\\s|$)"
+      ],
+      "and",
+      [
+        "search_intent_info.main_intent",
+        "<>",
+        "navigational"
+      ]
+    ],
+    "order_by": [
+      "relevance,desc",
+      "keyword_info.search_volume,desc"
+    ],
+    "minimum_search_volume": 50
   },
   "query_sets": [
     {

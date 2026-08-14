@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "last_reviewed": "2026-08-10",
+  "purpose": "Deterministically exclude generic cross-category aggregators and platforms before selecting SaaS visibility competitors.",
+  "matching_policy": {
+    "normalize_hostname": [
+      "lowercase",
+      "remove_trailing_dot",
+      "remove_leading_www"
+    ],
+    "registrable_domain_rule": "Exclude when hostname equals the listed domain or is a subdomain of it.",
+    "exact_host_rule": "Exclude only when hostname exactly equals the listed host.",
+    "never_use_substring_matching": true,
+    "always_keep_target_domain": true
+  },
+  "exclusions": {
+    "registrable_domains": {
+      "software_discovery_reviews_and_comparisons": [
+        "alternative.me",
+        "alternativeto.net",
+        "appvizer.com",
+        "capterra.com",
+        "clutch.co",
+        "comparecamp.com",
+        "crowdreviews.com",
+        "crozdesk.com",
+        "featuredcustomers.com",
+        "financesonline.com",
+        "g2.com",
+        "getapp.com",
+        "goodfirms.co",
+        "peerspot.com",
+        "saashub.com",
+        "saasworthy.com",
+        "selecthub.com",
+        "serchen.com",
+        "softwareadvice.com",
+        "softwareconnect.com",
+        "softwarereviews.com",
+        "softwaresuggest.com",
+        "softwareworld.co",
+        "sourceforge.net",
+        "tekpon.com",
+        "trustradius.com"
+      ],
+      "product_and_startup_discovery": [
+        "appsumo.com",
+        "betalist.com",
+        "f6s.com",
+        "launchingnext.com",
+        "producthunt.com",
+        "startupstash.com"
+      ],
+      "software_download_catalogs": [
+        "download.com",
+        "filehippo.com",
+        "softonic.com",
+        "softpedia.com",
+        "uptodown.com"
+      ],
+      "generic_review_and_reputation_platforms": [
+        "bbb.org",
+        "consumeraffairs.com",
+        "resellerratings.com",
+        "reviews.io",
+        "sitejabber.com",
+        "smartcustomer.com",
+        "trustpilot.com"
+      ],
+      "social_ugc_and_publishing_platforms": [
+        "facebook.com",
+        "flipboard.com",
+        "instagram.com",
+        "issuu.com",
+        "linkedin.com",
+        "medium.com",
+        "pinterest.com",
+        "quora.com",
+        "reddit.com",
+        "scribd.com",
+        "slideshare.net",
+        "substack.com",
+        "threads.net",
+        "tiktok.com",
+        "tumblr.com",
+        "twitter.com",
+        "x.com",
+        "youtube.com"
+      ],
+      "shared_site_and_blog_hosts": [
+        "blogspot.com",
+        "weebly.com",
+        "wixsite.com",
+        "wordpress.com"
+      ],
+      "general_reference_aggregators": [
+        "archive.org",
+        "wikidata.org",
+        "wikimedia.org",
+        "wikipedia.org",
+        "wikiquote.org",
+        "wiktionary.org"
+      ]
+    },
+    "exact_hosts": {
+      "general_app_marketplaces": [
+        "apps.apple.com",
+        "apps.microsoft.com",
+        "appsource.microsoft.com",
+        "chromewebstore.google.com",
+        "marketplace.microsoft.com",
+        "play.google.com"
+      ],
+      "shared_content_hosts": [
+        "sites.google.com"
+      ]
+    }
+  },
+  "allowlist": [],
+  "provenance": {
+    "methodology": "First-party platform descriptions were preferred; domains were included only when their primary role is broad third-party listing, review, discovery, hosting, or aggregation rather than category-specific editorial coverage.",
+    "source_urls": [
+      "https://docs.dataforseo.com/v3/dataforseo_labs-google-serp_competitors-live/",
+      "https://company.g2.com/news/g2-acquires-capterra-software-advice-getapp",
+      "https://www.g2.com/",
+      "https://www.trustradius.com/",
+      "https://alternativeto.net/software/alternativeto/about/",
+      "https://www.saasworthy.com/",
+      "https://crozdesk.com/",
+      "https://serchen.com/",
+      "https://financesonline.com/",
+      "https://sourceforge.net/software/",
+      "https://www.producthunt.com/about",
+      "https://betalist.com/",
+      "https://startupstash.com/",
+      "https://hello.softonic.com/",
+      "https://www.trustpilot.com/about",
+      "https://redditinc.com/",
+      "https://www.youtube.com/howyoutubeworks/",
+      "https://medium.com/about",
+      "https://substack.com/about",
+      "https://www.apple.com/app-store/",
+      "https://google.play/howplayworks/",
+      "https://developer.chrome.com/docs/webstore",
+      "https://marketplace.microsoft.com/",
+      "https://wikimediafoundation.org/what-we-do/wikimedia-projects/"
+    ]
+  }
+}

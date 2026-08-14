@@ -49,6 +49,12 @@ export async function generateSerpResults(
       })),
     );
 
+  if (recommendations.length !== 3) {
+    throw new Error(
+      `Cannot generate SERP results because query recommendations supplied ${recommendations.length} recommendations; required exactly 3.`,
+    );
+  }
+
   logInfo(`Recommended query count: ${recommendations.length}`);
 
   const apiKey = getRequiredEnvVar("SERPER_API_KEY");
@@ -85,7 +91,7 @@ export async function generateSerpResults(
     : null;
 
   const serpResults = SerpResultsSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     run_id: runId,
     generated_at: new Date().toISOString(),
     source_artifacts: ["query-recommendations.json"],

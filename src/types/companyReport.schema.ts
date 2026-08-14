@@ -1,26 +1,18 @@
 import { z } from "zod";
 
 import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
+import {
+  OpportunityMetricsSchema,
+  OpportunityScoringMethodSchema,
+} from "./opportunityScoring.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const ConfidenceSchema = z.enum(["high", "medium", "low"]);
+const SEEDS_PER_TERRITORY = 15;
 const FinalQueryMetricsSchema = QueryMetricsSchema.omit({
   monthly_searches: true,
 });
-
-const OpportunityMetricsSchema = z
-  .object({
-    search_volume_used: z.number().int().min(0),
-    maximum_territory_search_volume: z.number().int().min(0),
-    volume_score: z.number().min(0).max(1),
-    keyword_difficulty_original: z.number().int().min(0).max(100).nullable(),
-    keyword_difficulty_used: z.number().int().min(0).max(100),
-    keyword_difficulty_was_imputed: z.boolean(),
-    difficulty_score: z.number().min(0).max(1),
-    opportunity_score: z.number().min(0).max(100),
-  })
-  .strict();
 
 const SearchMarketSchema = z
   .object({
@@ -69,7 +61,7 @@ const AnalysisCoverageSchema = z
     competitor_queries_analyzed: z.number().int().positive(),
     competitor_domains_found: z.number().int().min(0),
     content_opportunities_scored: z.number().int().min(0),
-    content_recommendations_selected: z.number().int().min(0).max(4),
+    content_recommendations_selected: z.literal(3),
     live_serps_analyzed: z.number().int().min(0),
     ranking_pages_analyzed: z.number().int().min(0),
   })
@@ -81,11 +73,14 @@ const ValidatedQuerySchema = z
     query: NonEmptyStringSchema,
     territory: TerritorySchema,
     validation_reasoning: NonEmptyStringSchema,
-    source_seed_keywords: z.array(NonEmptyStringSchema).length(6),
+    source_seed_keywords: z
+      .array(NonEmptyStringSchema)
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
     metrics: FinalQueryMetricsSchema,
+    opportunity_metrics: OpportunityMetricsSchema,
   })
   .strict();
 
@@ -177,7 +172,9 @@ const ContentPlanItemSchema = z
     query_id: NonEmptyStringSchema,
     territory: TerritorySchema,
     primary_query: NonEmptyStringSchema,
-    source_seed_keywords: z.array(NonEmptyStringSchema).length(6),
+    source_seed_keywords: z
+      .array(NonEmptyStringSchema)
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -204,18 +201,19 @@ const ContentPlanSchema = z
   .object({
     summary: z
       .object({
-        selected_count: z.number().int().min(2).max(4),
-        problem_demand_count: z.number().int().min(0).max(2),
-        solution_demand_count: z.number().int().min(0).max(2),
+        selected_count: z.literal(3),
+        problem_demand_count: z.literal(1),
+        solution_demand_count: z.literal(2),
+        average_opportunity_score: z.number().min(0).max(100),
       })
       .strict(),
-    items: z.array(ContentPlanItemSchema).min(2).max(4),
+    items: z.array(ContentPlanItemSchema).length(3),
   })
   .strict();
 
 const CompanyReportBaseSchema = z
   .object({
-    schema_version: z.literal("1.0.0"),
+    schema_version: z.literal("2.1.0"),
     report_id: NonEmptyStringSchema,
     report_slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     run_id: NonEmptyStringSchema,
@@ -223,6 +221,7 @@ const CompanyReportBaseSchema = z
     status: z.enum(["complete", "partial"]),
     warnings: z.array(NonEmptyStringSchema),
     website_url: z.string().url(),
+    scoring_method: OpportunityScoringMethodSchema,
     search_market: SearchMarketSchema,
     company: CompanySchema,
     analysis_coverage: AnalysisCoverageSchema,
@@ -324,9 +323,10 @@ function validateCompetitorLandscape(
   context: z.RefinementCtx,
 ): void {
   const competitors = report.competitor_landscape.competitors;
-  const validQueryIds = new Set(
-    report.validated_queries.queries.map((query) => query.query_id),
+  const validatedQueriesById = new Map(
+    report.validated_queries.queries.map((query) => [query.query_id, query]),
   );
+  const validQueryIds = new Set(validatedQueriesById.keys());
 
   if (
     report.competitor_landscape.summary.competitors_included !==
@@ -407,9 +407,10 @@ function validateContentPlan(
   const solutionDemand = items.filter(
     (item) => item.territory === "solution_demand",
   ).length;
-  const validQueryIds = new Set(
-    report.validated_queries.queries.map((query) => query.query_id),
+  const validatedQueriesById = new Map(
+    report.validated_queries.queries.map((query) => [query.query_id, query]),
   );
+  const validQueryIds = new Set(validatedQueriesById.keys());
 
   if (report.content_plan.summary.selected_count !== items.length) {
     context.addIssue({
@@ -437,6 +438,42 @@ function validateContentPlan(
     });
   }
 
+  const averageValidatedOpportunityScore = average(
+    report.validated_queries.queries.map(
+      (query) => query.opportunity_metrics.opportunity_score,
+    ),
+  );
+
+  if (
+    report.content_plan.summary.average_opportunity_score !==
+    averageValidatedOpportunityScore
+  ) {
+    context.addIssue({
+      code: "custom",
+      message:
+        "content_plan.average_opportunity_score must equal the average opportunity score across all validated queries.",
+      path: ["content_plan", "summary", "average_opportunity_score"],
+    });
+  }
+
+  if (items[0]?.territory !== "problem_demand") {
+    context.addIssue({
+      code: "custom",
+      message: "content_plan.items[0] must be problem_demand.",
+      path: ["content_plan", "items", 0, "territory"],
+    });
+  }
+
+  for (const index of [1, 2]) {
+    if (items[index]?.territory !== "solution_demand") {
+      context.addIssue({
+        code: "custom",
+        message: "content_plan.items[1] and content_plan.items[2] must be solution_demand.",
+        path: ["content_plan", "items", index, "territory"],
+      });
+    }
+  }
+
   const recommendationIds = new Set<string>();
   const queryIds = new Set<string>();
 
@@ -446,6 +483,23 @@ function validateContentPlan(
         code: "custom",
         message: `content-plan query_id ${item.query_id} must exist in validated_queries.queries.`,
         path: ["content_plan", "items", index, "query_id"],
+      });
+    }
+
+    const validatedQuery = validatedQueriesById.get(item.query_id);
+
+    if (
+      validatedQuery !== undefined &&
+      !opportunityMetricsEqual(
+        item.opportunity_metrics,
+        validatedQuery.opportunity_metrics,
+      )
+    ) {
+      context.addIssue({
+        code: "custom",
+        message:
+          "content-plan opportunity_metrics must match the corresponding validated-query opportunity_metrics.",
+        path: ["content_plan", "items", index, "opportunity_metrics"],
       });
     }
 
@@ -525,6 +579,7 @@ function validateAnalysisCoverage(
       report.competitor_landscape.scope.query_count,
     competitor_domains_found:
       report.competitor_landscape.summary.total_domains_found,
+    content_opportunities_scored: report.validated_queries.summary.total,
     content_recommendations_selected: report.content_plan.items.length,
     live_serps_analyzed: report.content_plan.items.length,
     ranking_pages_analyzed: report.content_plan.items.reduce(
@@ -545,6 +600,25 @@ function validateAnalysisCoverage(
       });
     }
   }
+}
+
+function opportunityMetricsEqual(
+  first: z.infer<typeof OpportunityMetricsSchema>,
+  second: z.infer<typeof OpportunityMetricsSchema>,
+): boolean {
+  return (
+    first.search_volume_used === second.search_volume_used &&
+    first.territory_p95_search_volume ===
+      second.territory_p95_search_volume &&
+    first.demand_score === second.demand_score &&
+    first.keyword_difficulty_original ===
+      second.keyword_difficulty_original &&
+    first.keyword_difficulty_used === second.keyword_difficulty_used &&
+    first.keyword_difficulty_was_imputed ===
+      second.keyword_difficulty_was_imputed &&
+    first.attainability_score === second.attainability_score &&
+    first.opportunity_score === second.opportunity_score
+  );
 }
 
 function average(values: number[]): number | null {

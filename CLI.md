@@ -24,6 +24,39 @@ What it does:
 - Uses cached crawl artifact for that website if it exists
 - Runs Firecrawl only if no cached crawl artifact exists
 
+## Stop after a pipeline stage
+
+Command:
+
+npm run dev -- https://example.com --stop-after seed-keywords
+
+Equivalent form:
+
+npm run dev -- https://example.com --stop-after=seed-keywords
+
+What it does:
+- Runs the pipeline through the selected stage
+- Saves or reuses that stage's artifact normally
+- Exits before any downstream stages run
+
+Supported stages:
+- crawl
+- company-profile
+- seed-keywords
+- keyword-metrics
+- query-validation
+- confirmed-queries
+- query-opportunities
+- query-recommendations
+- serp-results
+- content-recommendation
+- competitor-landscape
+- company-report
+
+Generate only Tavyn seed keywords:
+
+npm run dev -- https://tavyn.dev --force-seed-keywords --stop-after seed-keywords
+
 ## Force default website crawl
 
 Command:

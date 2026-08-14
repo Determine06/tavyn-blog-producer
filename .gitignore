@@ -1,6 +1,8 @@
 node_modules
 dist
+artifacts/
 .env
+.env.local
 .env.bak
 .DS_Store
 

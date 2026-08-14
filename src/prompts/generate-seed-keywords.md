@@ -9,6 +9,18 @@ temperature: 0.1
 max_output_tokens: 10000
 ---
 
+---
+
+prompt_name: generate-seed-keywords
+prompt_version: 0.3.0
+output_mode: structured_json
+schema_name: SeedKeywordsSchema
+model: gpt-5.4-mini
+reasoning_effort: low
+temperature: 0.1
+max_output_tokens: 10000
+------------------------
+
 # Developer Instructions
 
 # Task
@@ -17,113 +29,139 @@ Generate a structured seed-keyword strategy from a validated company profile.
 
 Your job is to identify:
 
-- one primary problem-demand territory
-- one primary solution-demand territory
-- exactly six seed keywords for each territory
-- exactly twelve seed keywords in total
+* one primary problem-demand territory
+* one primary solution-demand territory
+* exactly fifteen problem-demand seed keywords
+* exactly fifteen solution-demand seed keywords
+* coverage across every required bucket
+* exactly thirty seed keywords in total
 
-The seed keywords will be submitted to an external keyword-discovery provider that returns observed keyword ideas, search volume, keyword difficulty, search intent, CPC, and average ranking-domain metrics.
+Required problem-demand buckets:
+
+1. `P1_core_customer_job`
+2. `P2_primary_workflow`
+3. `P3_adjacent_workflow`
+4. `P4_pain_or_failure_state`
+5. `P5_desired_outcome`
+6. `P6_icp_specific_responsibility`
+
+Required solution-demand buckets:
+
+1. `S1_core_product_category`
+2. `S2_qualified_product_category`
+3. `S3_primary_workflow_solution`
+4. `S4_adjacent_workflow_solution`
+5. `S5_mechanism_or_approach`
+6. `S6_alternative_commercial_category`
+
+The seed keywords will be submitted to an external keyword-discovery provider that returns observed keyword ideas and keyword metrics.
 
 The external provider receives only the literal seed-keyword strings.
 
 It does not receive:
 
-- the company profile
-- territory names
-- territory summaries
-- the primary ICP
-- product connections
-- evidence
-- selection reasoning
-- surrounding output context
+* the company profile
+* bucket names
+* territory names
+* territory summaries
+* the primary ICP
+* product connections
+* evidence
+* selection reasoning
+* surrounding output context
 
-Every seed must therefore contain enough market context to function as an independent keyword-discovery input.
+Every seed must therefore contain enough market context to function independently as a keyword-discovery input.
 
 Seed keywords are discovery inputs. They are not final target keywords, article titles, content clusters, pillar pages, or SEO recommendations.
 
 Do not generate:
 
-- final search queries
-- long-tail query lists
-- content clusters
-- pillar pages
-- supporting pages
-- blog-post recommendations
-- comparison pages
-- article titles
-- content briefs
-- SERP analysis
-- opportunity scores
-- traffic estimates
+* final search queries
+* long-tail query lists
+* content clusters
+* pillar pages
+* supporting pages
+* blog-post recommendations
+* comparison pages
+* article titles
+* content briefs
+* SERP analysis
+* opportunity scores
+* traffic estimates
 
 Do not estimate or claim:
 
-- search volume
-- keyword difficulty
-- CPC
-- ranking potential
-- traffic potential
-- domain authority
-- SERP weakness
-- keyword popularity
+* search volume
+* keyword difficulty
+* CPC
+* ranking potential
+* traffic potential
+* domain authority
+* SERP weakness
+* keyword popularity
 
 # Runtime Input
 
 The runtime input contains:
 
-- `schema_version`
-- `run_id`
-- `generated_at`
-- `company_profile`
+* `schema_version`
+* `run_id`
+* `generated_at`
+* `company_profile`
 
 Expected runtime input format:
 
-    <seed_keyword_input>
-      <schema_version>{schemaVersion}</schema_version>
-      <run_id>{runId}</run_id>
-      <generated_at>{generatedAt}</generated_at>
+```
+<seed_keyword_input>
+  <schema_version>{schemaVersion}</schema_version>
+  <run_id>{runId}</run_id>
+  <generated_at>{generatedAt}</generated_at>
 
-      <company_profile>
-        {companyProfile as JSON}
-      </company_profile>
-    </seed_keyword_input>
+  <company_profile>
+    {companyProfile as JSON}
+  </company_profile>
+</seed_keyword_input>
+```
 
 Use the company profile as the only source of company-specific facts.
 
-General knowledge may be used to express a supported product category, customer problem, or solution approach in natural market language.
+General market knowledge may be used to translate a supported customer problem, workflow, product category, or solution approach into natural market language.
 
 Do not use general knowledge to invent unsupported:
 
-- company facts
-- audiences
-- capabilities
-- integrations
-- competitors
-- positioning
-- geographic markets
-- product categories
+* company facts
+* audiences
+* capabilities
+* workflows
+* integrations
+* competitors
+* positioning
+* geographic markets
+* product categories
+* technical environments
+* use cases
 
 # Top-Level Output Rules
 
 Copy the following values directly from the runtime input:
 
-- `schema_version`
-- `run_id`
-- `generated_at`
+* `schema_version`
+* `run_id`
+* `generated_at`
 
 Set:
 
-- `source_artifacts` to exactly `["company-profile.json"]`
-- `status` to `complete` when both territories can be generated with sufficient evidence
-- `status` to `partial` when the company profile is materially unclear but a conservative strategy can still be produced
-- `warnings` to an empty array unless there is a material seed-generation limitation
-- `website_url` from `company_profile.website_url`
+* `source_artifacts` to exactly `["company-profile.json"]`
+* `status` to `complete` when both territories and all thirty seeds can be generated with sufficient evidence
+* `status` to `partial` when the profile is materially unclear but a conservative portfolio can still be produced
+* `warnings` to an empty array unless a material seed-generation limitation exists
+* `website_url` from `company_profile.website_url`
 
 Populate `source_profile` from:
 
-- `company_identity.company_name.value`
-- `company_identity.product_category.value`
-- `icp_and_audience.primary_icp.value`
+* `company_identity.company_name.value`
+* `company_identity.product_category.value`
+* `icp_and_audience.primary_icp.value`
 
 Return exactly two items in `demand_territories`.
 
@@ -134,788 +172,971 @@ Return them in this order:
 
 Do not generate additional territories.
 
+The `problem_demand` territory must cover these buckets, grouped in this order:
+
+1. `P1_core_customer_job`
+2. `P2_primary_workflow`
+3. `P3_adjacent_workflow`
+4. `P4_pain_or_failure_state`
+5. `P5_desired_outcome`
+6. `P6_icp_specific_responsibility`
+
+The `solution_demand` territory must cover these buckets, grouped in this order:
+
+1. `S1_core_product_category`
+2. `S2_qualified_product_category`
+3. `S3_primary_workflow_solution`
+4. `S4_adjacent_workflow_solution`
+5. `S5_mechanism_or_approach`
+6. `S6_alternative_commercial_category`
+
+Every bucket must appear at least twice. Use the three remaining seeds in each territory for the strongest evidence-backed buckets.
+
 # Seed Strategy Goal
 
-The seed strategy should provide focused entry points into the company’s real search market.
+Do not brainstorm thirty generally relevant phrases.
+
+Construct a deliberate portfolio in which every seed:
+
+* fills one specific bucket
+* represents one useful discovery direction
+* is directly supported by the company profile
+* independently identifies the company’s intended market
+* is broad enough to generate multiple relevant ideas
+* is distinct from the other twenty-nine seeds
+
+The twelve bucket groups are intended to cover the primary ways customers discover SaaS markets.
+
+Problem-demand seeds cover:
+
+* the central job
+* the primary workflow
+* an adjacent workflow
+* a recurring failure
+* a desired outcome
+* a buyer-specific responsibility
+
+Solution-demand seeds cover:
+
+* the main product category
+* the qualified product category
+* the primary workflow tool category
+* the adjacent workflow tool category
+* the product’s mechanism or approach
+* an alternative commercial category
 
 The company profile should determine:
 
-- which customer problem matters most
-- which desired outcome matters most
-- which ICP should qualify the topic
-- which solution category the product belongs to
-- which product approach is central to the solution
+* which customer job matters most
+* which workflow creates the most value
+* which adjacent workflow is materially supported
+* which pain creates demand
+* which outcome the buyer wants
+* which ICP or environment should qualify the market
+* which established product category applies
+* which solution mechanism is central
+* which alternative category buyers might evaluate
 
 The company’s exact marketing language should not automatically become seed-keyword language.
 
-Translate supported company positioning into concise terms a buyer could plausibly type into a search engine.
+Translate supported positioning into concise terms a buyer could plausibly type into a search engine.
 
 The output should be product-aware without being product-overfitted.
 
-The seed set should maximize useful market coverage rather than simply produce six grammatical variations of the same phrase.
+# Internal Market Map
+
+Before generating candidates, internally construct the following market map:
+
+* primary buyer
+* primary user
+* industry or vertical
+* business model
+* technical environment
+* core job to be done
+* primary recurring workflow
+* upstream workflow
+* downstream workflow
+* main pain or failure state
+* desired operational or business outcome
+* established core product category
+* narrower qualified product category
+* central mechanism or technical approach
+* existing alternative or adjacent category
+* important market qualifier
+
+The `important market qualifier` is the smallest natural qualifier needed to preserve the intended meaning.
+
+It may be:
+
+* an industry or vertical
+* a team or business function
+* a buyer or user type
+* a business model
+* a technical environment
+* a programming language or platform
+* a workflow
+* a type of data, content, or system
+
+Examples include:
+
+* `SaaS`
+* `for product teams`
+* `wedding planner`
+* `TypeScript`
+* `background jobs`
+* `marketplace`
+* `subscription`
+* `product feedback`
+
+Do not automatically add:
+
+* `SaaS`
+* `B2B`
+* `AI`
+* `software`
+* `platform`
+
+Use a qualifier only when it is supported and materially reduces semantic ambiguity.
+
+If a market-map field is unsupported, treat it as unavailable. Do not invent information to fill a bucket.
 
 # External Provider Context Rule
 
-The external keyword-discovery provider receives only the seed strings.
+The external provider receives only the literal seed string.
 
-Never justify an underspecified seed by claiming that context will be supplied by:
+Evaluate every candidate as though no other context will be available.
 
-- the territory
-- the ICP field
-- the market topic
-- the product connection
-- the evidence
-- the company profile
+Never justify an underspecified seed by relying on:
 
-For example, if the company serves marketplace operators:
+* its bucket
+* its territory
+* the ICP field
+* the market topic
+* the company profile
+* evidence
+* selection reasoning
 
-Bad:
-
-- seller onboarding
-- trust and safety operations
-- AI operations software
-
-These phrases can belong to many unrelated markets.
-
-Better:
-
-- marketplace seller onboarding
-- marketplace trust and safety
-- AI for marketplace operations
-
-If the company serves adults managing peptide protocols:
+For example:
 
 Bad:
 
-- dose calculation app
-- biomarker tracking app
-- protocol tracking software
+* `customer support`
+* `wedding planning`
+* `TypeScript workflows`
+* `workflow automation`
 
 Better:
 
-- peptide dose calculator
-- peptide biomarker app
-- peptide protocol tracker
+* `SaaS customer support operations`
+* `wedding planner business operations`
+* `TypeScript background job workflows`
+* `developer workflow orchestration`
 
-Every seed must be evaluated as though it were submitted to the provider alone.
+Use the shortest natural phrase that keeps the external provider inside the intended market.
 
 # Demand Territory Definitions
 
 ## Problem Demand
 
-The `problem_demand` territory represents the fundamental problem, job, process, or desired outcome the product helps its primary ICP address.
+The `problem_demand` territory represents customer jobs, workflows, pains, strategies, and desired outcomes.
 
-The searcher does not need to know that the company’s product or any software product is the solution.
+The searcher does not need to know that software is the solution.
 
-The problem territory should usually represent:
+Problem-demand seeds must not primarily describe:
 
-- a task the ICP needs to complete
-- a problem the ICP needs to solve
-- a process the ICP needs to improve
-- a strategy the ICP needs to understand
-- an outcome the ICP wants to achieve
-- an area in which the ICP needs education or guidance
+* software
+* tools
+* applications
+* platforms
+* vendors
+* product comparisons
+* product alternatives
+* commercial evaluation
 
-Problem demand should be broader than one product feature.
+Avoid solution-category modifiers such as:
 
-Do not define the problem territory around:
-
-- the company’s interface
-- its publishing method
-- its approval system
-- one supporting feature
-- an internal workflow detail
-- a proprietary term
-- a marketing slogan
-
-For an AI SEO product serving SaaS companies:
-
-Good problem territory:
-
-- SaaS SEO and organic growth
-
-Bad problem territories:
-
-- email-native content approvals
-- GitHub blog publishing
-- founder-question workflows
-- automated brief generation
-
-Those may be differentiators or capabilities, but they are not the fundamental market problem.
+* software
+* platform
+* app
+* tool
+* tools
+* alternatives
+* best software
 
 ## Solution Demand
 
-The `solution_demand` territory represents the established solution category, product approach, or type of software that buyers could evaluate to solve the problem.
+The `solution_demand` territory represents software categories, commercial product categories, solution approaches, and tools buyers could evaluate.
 
-The searcher understands that a product, tool, platform, application, service, or automated approach may be the solution.
+The searcher recognizes that software, a platform, a tool, or a technical approach may solve the problem.
 
-The solution territory should usually represent:
+Solution-demand seeds should imply:
 
-- the product’s main software category
-- a recognized automation category
-- the central product approach
-- a category buyers could compare
-- a category buyers could look for tools within
+* a software category
+* a product category
+* an automation category
+* a commercial tool category
+* a platform category
+* a technical solution approach
+* a category buyers could compare
 
-The solution territory should not be:
+Do not create branded comparison seeds.
 
-- the company name
-- a proprietary category invented by the company
-- a list of disconnected features
-- a positioning slogan
-- an exact description of the entire product workflow
+Do not use:
 
-For an AI SEO product serving SaaS companies:
-
-Good solution territory:
-
-- AI SEO tools and SEO automation
-
-Bad solution territories:
-
-- founder-informed email-native SEO publishing
-- automated brief approval and GitHub delivery
-- personalized search-landscape execution system
-
-The bad examples describe the product but do not represent established solution-category language.
-
-# Territory Selection Rules
-
-Select the single strongest problem territory and single strongest solution territory.
-
-Prioritize:
-
-- direct relevance to the primary ICP
-- direct connection to the core product
-- support from the company profile
-- breadth sufficient for keyword discovery
-- specificity sufficient to avoid unrelated markets
-- established and understandable market language
-
-Do not create multiple territories because the company has multiple features.
-
-If the company has several capabilities, identify the central customer problem and central product category connecting those capabilities.
-
-If the company genuinely serves multiple unrelated products or audiences:
-
-- prioritize the product and audience most strongly supported by core positioning
-- mention the ambiguity in `warnings`
-- lower `generation_quality.overall_confidence`
-- describe the excluded ambiguity in `potential_risks`
-
-Do not combine unrelated customer problems into one vague territory.
+* company names
+* competitor names
+* `versus`
+* `vs`
+* named alternatives
 
 # Market Topic Rules
 
 Each territory must include one `market_topic`.
 
-The market topic is a concise description of the search area that the seeds collectively define.
+The market topic is a concise description of the search area collectively represented by the fifteen seeds.
 
 Good market topics:
 
-- SaaS SEO and organic growth
-- peptide protocol management
-- marketplace operations and growth
-- subscription billing management
-- customer support operations
-- cloud cost optimization
-- AI SEO automation
-- peptide tracking apps
-- marketplace operations software
-- subscription billing software
+* SaaS SEO and organic growth
+* product feedback management
+* wedding planning business operations
+* background job orchestration
+* subscription billing management
+* customer support operations
+* cloud cost optimization
+* AI SEO automation
+* product feedback software
+* wedding planning software
+* developer workflow infrastructure
 
 Bad market topics:
 
-- growth
-- better workflows
-- AI automation
-- business software
-- all-in-one platform
-- increase efficiency
+* growth
+* better workflows
+* AI automation
+* business software
+* increase efficiency
+* all-in-one platform
 
-The market topic should be specific enough to identify a real market while remaining broader than one long-tail query.
+The market topic should identify a real market while remaining broader than one final query.
 
-# Product Awareness Rules
+# Required Problem-Demand Buckets
 
-Use the company profile to select the right market, ICP qualifier, and solution category.
+## P1 — `P1_core_customer_job`
 
-Do not force every product capability or differentiator into the seed keywords.
+Generate the clearest description of the central job the customer is trying to accomplish, independent of the company’s product.
 
-Differentiators should usually influence later content positioning, not initial keyword discovery.
+Selection method:
 
-For example, if the company provides:
+1. Identify why the buyer initially begins looking for help.
+2. Find the principal job connecting the product’s major capabilities.
+3. Express the job using established market language.
+4. Preserve the object being managed, analyzed, monitored, created, or improved.
+5. Add the minimum qualifier needed to identify the correct market.
 
-- SEO automation
-- founder-input collection
-- email approvals
-- GitHub publishing
+Strong examples:
 
-The seeds should focus on:
+* `product feedback management`
+* `subscription revenue reporting`
+* `wedding planner operations`
+* `cloud infrastructure monitoring`
+* `customer onboarding management`
 
-- SaaS SEO
-- SaaS keyword research
-- AI SEO tools
-- SEO automation
+Reject generic activities such as:
 
-The seeds should not focus on:
+* `analytics`
+* `planning`
+* `communication`
+* `management`
+* `automation`
+* `customer support`
 
-- founder-input SEO workflows
-- email approval SEO tools
-- GitHub blog publishing automation
+P1 should represent the broadest useful problem-side entry point without becoming ambiguous.
 
-A seed may reflect a specific product approach when that approach is itself recognizable market language.
+## P2 — `P2_primary_workflow`
 
-Examples:
+Generate the specific recurring workflow the product most directly improves.
 
-- billing automation
-- support automation
-- SEO automation
-- product analytics
-- cloud cost optimization
+Selection method:
 
-A product capability may also become a seed when:
+1. Identify the workflow responsible for the largest portion of the product’s practical value.
+2. Name the complete workflow rather than one generic action within it.
+3. Preserve the object or system on which the workflow operates.
+4. Use language the buyer would recognize outside the company’s website.
+5. Qualify the workflow if its unqualified form has major unrelated meanings.
 
-- it represents a recognizable customer job
-- it is independently searchable
-- it remains clearly connected to the company’s market
-- it is not ordinary internal product functionality
+Strong examples:
 
-# Internal Candidate Selection
+* `feature request prioritization`
+* `recurring payment reconciliation`
+* `background job orchestration`
+* `wedding vendor coordination`
+* `sales pipeline forecasting`
 
-Before producing the final structured output:
+P2 must be more operational and specific than P1.
 
-1. Internally generate at least ten candidate seeds for each territory.
-2. Evaluate each candidate against all seed-quality rules.
-3. Remove candidates that are:
-   - unnatural
-   - grammatically incorrect
-   - underspecified
-   - context-dependent
-   - redundant
-   - product-invented
-   - excessively broad
-   - excessively narrow
-   - unsupported by the company profile
-4. Select the strongest six candidates for each territory.
-5. Output only the selected six seeds per territory.
+Do not use a minor feature or internal product action.
+
+## P3 — `P3_adjacent_workflow`
+
+Generate a materially supported workflow immediately upstream, downstream, or alongside P2.
+
+Selection method:
+
+1. Determine what produces the inputs used in P2.
+2. Determine what the customer does after P2 is completed.
+3. Identify an adjacent recurring workflow the product materially supports.
+4. Choose the direction most likely to produce a different candidate pool from P2.
+5. Ensure the workflow remains central enough to matter to the product’s buyer.
+
+Strong examples:
+
+* `product roadmap planning`
+* `failed payment recovery`
+* `workflow execution monitoring`
+* `wedding timeline management`
+* `customer health scoring`
+
+If no separate secondary workflow exists, use this fallback order:
+
+1. An upstream input-collection or management stage
+2. A downstream reporting or monitoring stage
+3. An approval or optimization stage
+4. A distinct lifecycle stage of the primary workflow
+
+Never invent an unrelated use case merely to fill P3.
+
+## P4 — `P4_pain_or_failure_state`
+
+Generate a concrete, recognizable problem created when the customer’s workflow is performed poorly.
+
+Selection method:
+
+1. Identify what repeatedly breaks, fails, becomes inaccurate, creates risk, or causes loss.
+2. Preserve the relevant object, workflow, user, or market inside the phrase.
+3. Prefer a problem customers would actively diagnose or research.
+4. Express the problem as a topic rather than a full question.
+5. Avoid vague frustration that could apply to any company.
+
+Strong examples:
+
+* `scattered customer feedback`
+* `subscription payment failures`
+* `background job reliability`
+* `wedding vendor communication problems`
+* `inaccurate sales forecasting`
+
+Reject vague pains such as:
+
+* `manual work`
+* `poor communication`
+* `lack of visibility`
+* `inefficient workflows`
+* `wasted time`
+* `business problems`
+
+## P5 — `P5_desired_outcome`
+
+Generate the principal operational or business result the customer wants to achieve.
+
+Selection method:
+
+1. Identify the most important result promised by the product.
+2. Preserve the relevant workflow, object, market, or metric.
+3. Use language that exists outside the company’s marketing copy.
+4. Choose an outcome customers could research before selecting software.
+5. Keep it broad enough to generate related strategies, questions, and methods.
+
+Strong examples:
+
+* `reduce involuntary churn`
+* `improve trial activation`
+* `reliable background job processing`
+* `scale wedding planning business`
+* `improve customer feedback response`
+
+Reject unqualified outcomes such as:
+
+* `grow revenue`
+* `increase efficiency`
+* `save time`
+* `improve productivity`
+* `scale business`
+* `get better results`
+
+## P6 — `P6_icp_specific_responsibility`
+
+Generate a problem-side topic specifically associated with the company’s primary buyer, user, vertical, business model, or technical environment.
+
+Selection method:
+
+1. Identify a responsibility the primary buyer or user actually owns.
+2. Identify which market qualifier makes this responsibility specific to the company’s audience.
+3. Use language that audience would recognize naturally.
+4. Select a discovery direction meaningfully different from P1 through P5.
+5. Do not manufacture a vertical or audience unsupported by the profile.
+
+Strong examples:
+
+* `SaaS product feedback strategy`
+* `wedding planner client management`
+* `developer background job monitoring`
+* `marketplace payment operations`
+* `agency client reporting`
+
+For horizontal SaaS, qualify using the most relevant:
+
+* team or function
+* workflow owner
+* technical environment
+* business model
+* data type
+* platform or programming language
+
+P6 must not simply repeat another problem seed with `for SaaS` appended.
+
+# Required Solution-Demand Buckets
+
+## S1 — `S1_core_product_category`
+
+Generate the clearest established commercial category for the overall product.
+
+Selection method:
+
+1. Identify the category buyers and competitors already use.
+2. Choose the category covering the largest portion of the product’s value.
+3. Prefer established market terminology over company-created language.
+4. Leave the phrase unqualified only if the literal category is already unambiguous.
+5. Prefer the category buyers would use when comparing products.
+
+Strong examples:
+
+* `product feedback software`
+* `subscription analytics software`
+* `background job platform`
+* `wedding planning CRM`
+* `cloud security platform`
+
+Do not use:
+
+* the company name
+* a branded product term
+* a positioning slogan
+* a compressed description of the entire product
+
+## S2 — `S2_qualified_product_category`
+
+Generate the strongest commercial category containing the company’s most important market qualifier.
+
+The qualifier may represent:
+
+* the buyer
+* the user
+* the vertical
+* the business model
+* the platform
+* the programming language
+* the technical environment
+* the workflow
+
+Selection method:
+
+1. Identify what makes the company’s market narrower than S1.
+2. Add that distinction using natural commercial language.
+3. Ensure the phrase enters a more specific, commercially relevant market.
+4. Confirm it should produce a meaningfully different candidate pool from S1.
+5. Reject redundant or unnatural qualification.
+
+Strong examples:
+
+* `customer portal software for SaaS`
+* `CRM for wedding planners`
+* `TypeScript job orchestration platform`
+* `subscription analytics for mobile apps`
+* `client reporting software for agencies`
+
+S2 must not merely be S1 with an unnecessary ICP modifier.
+
+For example, if `wedding planning CRM` is S1, do not use `wedding planning CRM for wedding planners` as S2.
+
+## S3 — `S3_primary_workflow_solution`
+
+Generate the commercial software or tool category used to perform the P2 workflow.
+
+Selection method:
+
+1. Convert the primary workflow into natural solution-search language.
+2. Preserve the specific object or process being handled.
+3. Use a commercial category noun only when it sounds natural.
+4. Choose language buyers might use when searching for a tool.
+5. Ensure the phrase is not merely another wording of S1.
+
+Possible category nouns include:
+
+* software
+* platform
+* tools
+* system
+* engine
+* app
+* service
+
+Strong examples:
+
+* `feature request management tools`
+* `payment reconciliation software`
+* `background job monitoring tools`
+* `wedding vendor management software`
+* `sales forecasting software`
+
+## S4 — `S4_adjacent_workflow_solution`
+
+Generate the commercial software category associated with the P3 workflow.
+
+Selection method:
+
+1. Use the strongest supported upstream, downstream, or adjacent workflow.
+2. Express it using established commercial category language.
+3. Ensure it should produce different results from S3.
+4. Avoid selecting a minor feature without an independent market.
+5. Confirm the company materially participates in this category.
+
+Strong examples:
+
+* `product roadmap software`
+* `failed payment recovery software`
+* `workflow observability tools`
+* `wedding timeline software`
+* `customer health score software`
+
+If no separate adjacent category exists, use the strongest supported solution category for:
+
+1. Input collection or management
+2. Monitoring or reporting
+3. Approval or optimization
+4. A distinct lifecycle stage
+
+Do not invent a distant software category to create artificial diversity.
+
+## S5 — `S5_mechanism_or_approach`
+
+Generate a seed based on the central method through which the product solves the problem.
+
+Possible mechanisms include:
+
+* AI analysis
+* automation
+* orchestration
+* real-time processing
+* APIs
+* embedded software
+* no-code systems
+* headless architecture
+* predictive analytics
+* durable execution
+
+Selection method:
+
+1. Identify the mechanism central to the product’s value or differentiation.
+2. Combine it with the workflow, object, data, or technical environment on which it operates.
+3. Confirm the resulting phrase represents recognizable market language.
+4. Reject standalone technology labels.
+5. Do not force a mechanism into this bucket when it is merely an implementation detail.
+
+Strong examples:
+
+* `AI customer feedback analysis`
+* `automated revenue recognition`
+* `durable workflow orchestration`
+* `automated wedding client communication`
+* `real-time product analytics`
+
+Reject generic phrases such as:
+
+* `AI tools`
+* `automation software`
+* `API platform`
+* `machine learning`
+* `workflow automation`
+* `AI automation`
+
+If the central mechanism is not independently meaningful market language, use the strongest supported specialized implementation category.
+
+## S6 — `S6_alternative_commercial_category`
+
+Generate another established product category through which the correct buyer could reasonably discover, compare, or replace the product.
+
+Selection method:
+
+1. Identify what customers use instead of this product.
+2. Identify which adjacent category appears in real buying comparisons.
+3. Confirm the product genuinely competes with or replaces part of that category.
+4. Choose a category meaningfully different from S1 through S5.
+5. Keep the category close to the product’s central market.
+
+Strong examples:
+
+* `user feedback platform`
+* `revenue operations software`
+* `serverless workflow engine`
+* `wedding business management software`
+* `customer success platform`
+
+Use this fallback order:
+
+1. An established category synonym expected to produce meaningfully different keyword ideas
+2. An adjacent category the product replaces
+3. A broader parent category with a necessary qualifier
+4. A specialized subcategory directly supported by the profile
+
+Do not select a distant category solely to make the portfolio appear diverse.
+
+# Internal Candidate Generation
+
+For every required bucket, internally generate exactly four candidate seeds:
+
+1. The shortest natural version
+2. A market-qualified version
+3. A workflow- or object-qualified version
+4. An established market-language version
 
 Do not output:
 
-- rejected candidates
-- internal rankings
-- internal analysis
-- hidden reasoning
-- the candidate-selection process
+* internal candidates
+* rejected candidates
+* internal rankings
+* internal scores
+* provider-expansion predictions
+* hidden analysis
+* the candidate-selection process
 
-The requirement to generate six seeds does not justify using filler.
+The four candidates are internal alternatives for the same bucket. They are not four separate output seeds.
 
-If the sixth seed requires more interpretation than the others:
+# Literal Provider-Expansion Test
 
-- keep it conservative
-- assign an appropriate confidence level
-- explain the limitation in `generation_quality`
-- do not invent unnatural market language
+For every candidate, internally ask:
+
+> If the external keyword-discovery provider received only this literal phrase and no company profile, what types of keyword ideas would it probably return?
+
+Estimate the five most likely semantic result groups.
+
+Reject or minimally qualify the candidate if the largest expected group would be:
+
+* jobs or careers
+* consumer advice
+* courses or education
+* movies, books, celebrities, or entertainment
+* unrelated templates
+* language syntax or definitions unrelated to the product
+* generic AI or productivity tools
+* an unrelated industry
+* an unrelated type of software
+* an unrelated brand
+* purely informational content with no connection to the company’s market
+
+The candidate does not need to eliminate all noise.
+
+Its dominant semantic neighborhood must match the company’s actual market.
+
+# Candidate Quality Gates
+
+Every selected candidate must pass all six gates.
+
+## 1. Evidence
+
+The seed must be directly supported by the company profile.
+
+A natural market-language translation is allowed, but the underlying:
+
+* audience
+* workflow
+* pain
+* outcome
+* product category
+* solution approach
+
+must be supported.
+
+## 2. Standalone Meaning
+
+The seed must make sense without:
+
+* the company profile
+* the bucket name
+* the territory
+* selection reasoning
+* evidence
+* surrounding output
+
+## 3. Market Precision
+
+The seed’s dominant interpretation must belong to the company’s actual market.
+
+Reject the seed if an unrelated market is likely to dominate provider expansion.
+
+## 4. Natural Search Language
+
+The seed must:
+
+* sound grammatically natural
+* use conventional word order
+* resemble something a buyer could type verbatim
+* avoid internal strategy language
+* avoid compressed product-description language
+
+## 5. Expansion Value
+
+The seed must be:
+
+* broad enough to generate multiple useful keyword ideas
+* narrow enough to avoid major semantic drift
+* more general than one exact long-tail query
+* more specific than an empty industry term
+
+## 6. Portfolio Distinction
+
+The seed must open a meaningfully different discovery direction from the other twenty-nine seeds.
+
+Reject any candidate that:
+
+* requires company context to understand
+* contains the company name
+* contains a competitor name
+* uses a branded feature
+* is a generic action, technology, pain, or outcome
+* represents a minor product feature rather than a meaningful market topic
+* has a dominant unrelated interpretation
+* differs from another seed only by singular or plural
+* differs only by word order
+* differs only by `software`, `platform`, `system`, `app`, or `tool`
+* is merely another seed with `AI`, `automated`, `best`, or another modifier
+* is so specific that useful expansion is unlikely
+* is so broad that unrelated markets will dominate
+
+# Candidate Scoring
+
+Internally score each candidate from `0` to `2` on:
+
+* profile fidelity
+* market precision
+* natural search language
+* expansion potential
+* portfolio distinction
+
+Maximum score: `10`
+
+A selected candidate must score at least `8`.
+
+Automatically reject any candidate receiving `0` for:
+
+* profile fidelity
+* market precision
+* natural search language
+
+For ties, prefer candidates in this order:
+
+1. Lower risk of wrong-market expansion
+2. More established market language
+3. Stronger direct support from the company profile
+4. Greater distinction from the rest of the portfolio
+5. Shorter natural phrasing
+
+Do not output scores or scoring reasoning.
 
 # Seed Keyword Requirements
 
-Generate exactly six seed keywords for `problem_demand`.
+Generate exactly fifteen seed keywords for each territory.
 
-Generate exactly six seed keywords for `solution_demand`.
+Generate exactly fifteen seeds for `problem_demand`.
 
-Generate exactly twelve seed keywords in total.
+Generate exactly fifteen seeds for `solution_demand`.
 
-Every seed keyword must:
+Generate exactly thirty seed keywords in total.
 
-- be globally unique after trimming whitespace and converting to lowercase
-- contain no company name
-- contain no competitor name
-- contain no unsupported audience
-- contain no unsupported product category
-- be grammatically correct
-- sound natural when read independently
-- represent one clear concept
-- be useful as an external keyword-discovery input
-- be supported by the selected territory
-- be understandable without additional context
-- preserve enough market context to avoid obvious category drift
-- resemble language a buyer could plausibly type verbatim
+Every seed must:
 
-Prefer seeds between two and five words.
+* use its required bucket identifier
+* be globally unique after normalization
+* contain no company name
+* contain no competitor name
+* contain no unsupported audience
+* contain no unsupported product category
+* be grammatically correct
+* sound natural independently
+* represent one clear concept
+* preserve enough market context
+* be useful as an external discovery input
+* be directly connected to the selected territory
+* resemble language a buyer could plausibly search
 
-A one-word seed is acceptable only when it represents a precise, established category and is not excessively broad.
+Prefer seeds between two and six words.
 
-Avoid seeds longer than six words.
+A one-word seed is acceptable only when it represents a precise, established category and cannot easily drift into unrelated markets.
+
+A seed may exceed six words only when a longer natural phrase is necessary to prevent substantial semantic ambiguity.
 
 Do not write seeds as full questions or sentences.
 
 Avoid:
 
-- what is
-- why does
-- how can I
-- should I
-- question marks
-- conversational filler
+* `what is`
+* `why does`
+* `how can I`
+* `should I`
+* question marks
+* conversational filler
 
-The external keyword-discovery provider will generate observed questions, how-to queries, modifiers, and long-tail variants from the seeds.
+The external provider will generate questions, modifiers, and long-tail variants.
 
-# Standalone Seed Test
+# Qualification Rules
 
-Evaluate every candidate seed using this test:
+Use the shortest natural phrase that preserves the intended market.
 
-> If this seed were submitted to the external keyword-discovery provider without any other information, would the returned ideas likely remain inside the company’s intended market?
+Do not add qualifiers mechanically.
 
-Reject the seed when the answer is no.
+A phrase such as `product feedback software` may already be sufficiently precise.
+
+Add a qualifier when the unqualified phrase has a major competing interpretation.
 
 Examples:
 
-Bad:
+* `customer support` → `SaaS customer support operations`
+* `wedding planning` → `wedding planner business operations`
+* `TypeScript workflows` → `TypeScript background job workflows`
+* `workflow automation` → `developer workflow orchestration`
+* `seller onboarding` → `marketplace seller onboarding`
+* `dose calculation app` → `peptide dose calculator`
 
-- organic visibility
-- seller onboarding
-- dose calculation app
-- biomarker tracking app
-- protocol tracking software
-- AI operations software
+The qualifier must represent the actual company.
 
-Better:
+Do not automatically append:
 
-- SaaS organic visibility
-- marketplace seller onboarding
-- peptide dose calculator
-- peptide biomarker app
-- peptide protocol tracker
-- AI for marketplace operations
+* `SaaS`
+* `B2B`
+* `AI`
+* the ICP
+* the product category
 
-A broad phrase is acceptable when it is itself the company’s established market category.
+Phrase length is secondary to market precision and natural language.
 
-For example:
+# Product Awareness Rules
 
-- customer onboarding
-- subscription billing
-- product analytics
-- cloud cost optimization
+Use the company profile to select:
 
-Do not add qualifiers mechanically when the unqualified phrase already represents a precise and relevant category.
+* the correct market
+* the central job
+* the central workflow
+* the necessary ICP qualifier
+* the established product category
+* the central solution approach
 
-# Natural Search-Language Test
+Do not force every product capability or differentiator into the seeds.
 
-Every candidate seed should pass all of the following tests:
+Differentiators should influence seed generation only when they represent:
 
-- A buyer could plausibly type the phrase into Google.
-- The phrase is grammatically correct.
-- The phrase does not sound like an internal strategy label.
-- The phrase does not sound like a compressed product description.
-- The phrase does not depend on its selection reasoning to make sense.
-- The phrase does not require knowledge of the company’s website.
-- The phrase uses a conventional word order.
+* a recognizable customer job
+* an independent workflow
+* an established solution approach
+* a commercial category
+* natural market language
 
-Reject phrases such as:
+For example, if an SEO product provides:
 
-- search opportunity prioritization
-- peptide health management
-- marketplaces operations
-- peptide apps for tracking
-- marketplace software for operators
-- founder-informed content execution workflow
+* SERP analysis
+* founder-input collection
+* email approvals
+* GitHub publishing
 
-Prefer phrases such as:
+The seeds should focus on market directions such as:
 
-- SaaS keyword research
-- peptide reconstitution
-- marketplace operations
-- peptide tracking app
-- marketplace management software
-- SaaS content strategy
+* `SaaS SEO`
+* `SaaS keyword research`
+* `SEO automation`
+* `AI SEO tools`
+
+They should not focus on synthetic phrases such as:
+
+* `founder input SEO workflows`
+* `email approval SEO tools`
+* `GitHub blog publishing automation`
+
+Ordinary product functionality does not automatically deserve its own discovery seed.
 
 # Seed Breadth Rules
 
-Seeds should be broad enough to produce multiple relevant keyword ideas.
-
-Seeds should be narrow enough to remain within the company’s actual market.
-
 Bad because they are too broad:
 
-- marketing
-- software
-- analytics
-- automation
-- growth
-- management
-- operations software
-- tracking app
+* `software`
+* `analytics`
+* `automation`
+* `growth`
+* `management`
+* `communication`
+* `operations software`
+* `tracking app`
 
 Bad because they are too narrow or product-overfitted:
 
-- founder email SEO approval workflow
-- GitHub publishing for AI SaaS blogs
-- automated content revision approval tool
-- AI billing reconciliation for seed-stage SaaS founders
+* `founder email SEO approval workflow`
+* `GitHub publishing for AI SaaS blogs`
+* `automated content revision approval tool`
+* `AI billing reconciliation for seed-stage founders`
 
 Better:
 
-- SaaS SEO
-- SEO for SaaS
-- SaaS organic growth
-- SEO automation
-- AI SEO tools
-- peptide dose calculator
-- marketplace seller onboarding
-- subscription billing software
-- customer support automation
-- cloud cost optimization
+* `SaaS SEO`
+* `product feedback management`
+* `wedding planner operations`
+* `background job orchestration`
+* `AI SEO tools`
+* `subscription billing software`
 
 # Seed Diversity Rules
 
-The six seeds within a territory must not be six minor rewrites of the same phrase.
+The thirty seeds must cover multiple discovery directions without leaving the company’s central market.
 
-Together, they should define the territory from several useful entry points while remaining coherent.
+Do not create artificial diversity by introducing:
 
-Useful diversity may come from:
+* unsupported workflows
+* minor features
+* secondary audiences
+* unrelated product categories
+* distant customer problems
 
-- the central market topic
-- the ICP-qualified topic
-- a major process
-- a desired outcome
-- an established synonym
-- a recognized solution approach
-- an established software category
-- a supported capability with independent market demand
+Do not treat a commercial modifier as meaningful diversity.
 
-Do not create artificial diversity by introducing unrelated problems or categories.
+Usually too similar:
 
-Do not treat a commercial modifier as sufficient diversity.
+* `AI SEO tools`
+* `best AI SEO tools`
 
-Examples that are usually too similar:
+Usually too similar:
 
-- AI SEO tools
-- best AI SEO tools
+* `product feedback software`
+* `product feedback platform`
 
-- peptide tracking app
-- best peptide tracking apps
+Usually too similar:
 
-- marketplace operations software
-- marketplace operations platform
+* `background job tool`
+* `background job tools`
 
-- SEO automation
-- AI SEO automation
-- automated SEO
-- SEO automation software
+Usually too similar:
 
-A modifier variant may be retained only when it represents a genuinely different established market direction and does not crowd out a more distinct seed.
+* `SEO automation`
+* `automated SEO`
 
-# Required Problem-Demand Roles
+Usually too similar:
 
-The six `problem_demand` seeds may use only:
+* `wedding planning CRM`
+* `wedding planning software`
+* `CRM for wedding planners`
 
-- `core_problem`
-- `icp_qualified_problem`
-- `process_or_outcome`
-- `market_synonym`
+If two required buckets initially produce overlapping seeds:
 
-The problem territory must contain at least one seed for each of these four roles.
-
-## `core_problem`
-
-The shortest useful description of the fundamental problem or job.
-
-Examples:
-
-- SaaS SEO
-- peptide protocols
-- marketplace operations
-- subscription billing
-- customer onboarding
-- cloud cost optimization
-
-## `icp_qualified_problem`
-
-The problem or job qualified by the supported ICP or market.
-
-Examples:
-
-- SEO for SaaS
-- peptide protocol tracking
-- marketplace seller onboarding
-- billing for SaaS companies
-- onboarding for mobile apps
-- cloud costs for startups
-
-Do not attach the ICP to every seed unnecessarily.
-
-However, add the relevant market qualifier when the unqualified seed would drift into unrelated markets.
-
-## `process_or_outcome`
-
-A supported process, strategy, or desired outcome related to the problem.
-
-Examples:
-
-- SaaS SEO strategy
-- SaaS keyword research
-- peptide dose calculation
-- marketplace growth strategy
-- subscription revenue recovery
-- user onboarding optimization
-- reduce cloud costs
-
-Do not turn an ordinary supporting product feature into the entire customer problem.
-
-## `market_synonym`
-
-A distinct, understandable expression of the same market topic.
-
-Examples:
-
-- SaaS organic growth
-- peptide protocol management
-- marketplace management
-- recurring billing management
-- product adoption strategy
-- cloud spend management
-
-A market synonym must add a genuinely useful discovery angle.
-
-It must not merely:
-
-- change word order
-- change singular to plural
-- add an empty modifier
-- replace `software` with `platform`
-- repeat the same phrase unnaturally
-
-# Required Solution-Demand Roles
-
-The six `solution_demand` seeds may use only:
-
-- `core_solution_category`
-- `icp_qualified_solution`
-- `solution_approach`
-- `commercial_category`
-
-The solution territory must contain at least one seed for each of these four roles.
-
-## `core_solution_category`
-
-The shortest useful description of the product’s established solution category.
-
-Examples:
-
-- AI SEO tools
-- peptide tracking app
-- marketplace operations software
-- subscription billing software
-- onboarding software
-- cloud cost management software
-
-## `icp_qualified_solution`
-
-The solution category qualified by the supported ICP or market.
-
-Examples:
-
-- SEO tools for SaaS
-- peptide protocol app
-- marketplace management software
-- billing software for SaaS
-- onboarding tools for mobile apps
-- cloud cost tools for startups
-
-Do not qualify every seed mechanically.
-
-Qualify seeds when qualification is necessary to preserve the intended market.
-
-## `solution_approach`
-
-A recognized approach through which the product solves the problem.
-
-Examples:
-
-- SEO automation
-- peptide dose calculator
-- marketplace automation
-- billing automation
-- onboarding automation
-- cloud cost optimization tools
-
-Use an approach supported by the product capabilities.
-
-Do not invent a new solution approach by combining ordinary product features into a synthetic phrase.
-
-## `commercial_category`
-
-A concise commercial-discovery seed representing a recognizable product or tool category.
-
-Examples:
-
-- AI SEO software
-- peptide protocol tracker
-- marketplace support automation
-- subscription billing platforms
-- customer onboarding tools
-- cloud cost management platforms
-
-Commercial modifiers such as `best`, `top`, or `leading` should not be used merely to create another seed.
-
-Do not include:
-
-- company names
-- competitor names
-- `versus`
-- `vs`
-- named alternatives
-
-# Problem-Demand Restrictions
-
-Problem-demand seeds must not primarily describe:
-
-- software
-- tools
-- applications
-- platforms
-- generators
-- product comparisons
-- vendors
-- alternatives
-- automation products
-
-Avoid solution-category modifiers such as:
-
-- software
-- app
-- platform
-- tool
-- generator
-- alternatives
-- versus
-- best tools
-
-A problem seed may contain a general process term such as `automation` only when automation is itself the customer problem or established subject, not when it turns the seed into a product search.
-
-# Solution-Demand Restrictions
-
-Solution-demand seeds should imply:
-
-- a product category
-- an automation approach
-- a tool category
-- a software category
-- a platform category
-- a commercial evaluation area
-
-Do not create branded comparison seeds.
-
-Do not use the company name.
-
-Do not use competitor names.
-
-Do not create seeds such as:
-
-- Company A versus Company B
-- Company A alternatives
-- best alternatives to Company A
-
-Competitor-specific opportunities will be handled after the competitor set is validated.
-
-# Modifier and Redundancy Rules
-
-Two seeds are not meaningfully distinct when one is primarily another seed plus a modifier such as:
-
-- best
-- top
-- leading
-- AI
-- automated
-- software
-- tool
-- tools
-- app
-- platform
-- solution
-
-Examples:
-
-Too similar:
-
-- AI SEO tools
-- best AI SEO tools
-
-Too similar:
-
-- peptide tracking app
-- peptide tracking apps
-- best peptide tracking apps
-
-Too similar:
-
-- marketplace operations software
-- marketplace operations platform
-
-Too similar:
-
-- SEO automation
-- automated SEO
-
-Choose the strongest version unless the modifier creates a genuinely different and established category.
-
-The role requirements must not force semantic duplication.
-
-# Generic Capability Qualification Rules
-
-A feature-oriented seed must preserve the relevant market qualifier when the unqualified phrase could belong to many industries.
-
-Reject:
-
-- dose calculation app
-- biomarker tracking app
-- seller onboarding
-- trust and safety operations
-- protocol tracking software
-- AI operations software
-
-Prefer:
-
-- peptide dose calculator
-- peptide biomarker app
-- marketplace seller onboarding
-- marketplace trust and safety
-- peptide protocol tracker
-- AI for marketplace operations
-
-Do not assume the provider will infer the intended industry.
-
-# Natural Market-Language Rules
-
-Prefer language a buyer could understand and plausibly use without knowing the company’s internal terminology.
-
-Do not simply copy awkward website phrases.
-
-Do not concatenate:
-
-- multiple pains
-- several capabilities
-- the ICP
-- the product category
-- a differentiator
-
-into one seed.
-
-Bad:
-
-- AI SaaS SEO content planning approval publishing tool
-
-Better:
-
-- SaaS SEO
-- AI SEO tools
-- SEO automation
-- SEO tools for SaaS
-
-Do not claim that a term is popular, high-volume, low-competition, or proven.
-
-The seed only needs to be a strong, evidence-backed discovery hypothesis.
-
-External keyword data will determine whether related demand exists.
+1. Keep the stronger seed in the bucket it fits most directly.
+2. Return to the weaker bucket.
+3. Select a different supported discovery direction.
+4. Do not weaken relevance merely to create diversity.
 
 # Evidence Rules
 
@@ -925,178 +1146,69 @@ Use only the company profile.
 
 Each evidence item must contain:
 
-- `source_field`
-- `evidence_text`
-- `reasoning`
+* `source_field`
+* `evidence_text`
+* `reasoning`
 
-`source_field` should identify a real path in the company profile.
+`source_field` must identify a real path in the company profile.
 
-Good source fields:
+Good source fields include:
 
-- `company_identity.product_category.value`
-- `company_identity.one_sentence_description.value`
-- `icp_and_audience.primary_icp.value`
-- `buyer_pains[0].pain`
-- `product_capabilities[0].capability`
-- `differentiation_and_positioning.positioning_summary.value`
-- `differentiation_and_positioning.category_point_of_view.value`
+* `company_identity.product_category.value`
+* `company_identity.one_sentence_description.value`
+* `icp_and_audience.primary_icp.value`
+* `buyer_pains[0].pain`
+* `product_capabilities[0].capability`
+* `differentiation_and_positioning.positioning_summary.value`
+* `differentiation_and_positioning.category_point_of_view.value`
 
 Do not invent source paths.
 
-`evidence_text` should be a concise value or summary from that field.
+`evidence_text` should contain a concise value or summary from the referenced field.
 
 `reasoning` should explain why the evidence supports the selected territory.
 
-Evidence supports the territory selection. It does not prove that a seed has search volume.
+Evidence supports territory and seed selection.
+
+It does not prove:
+
+* search volume
+* keyword difficulty
+* commercial value
+* ranking potential
 
 # Confidence Rules
 
 Use `high` when:
 
-- the company profile directly states the problem, ICP, or product category
-- the seed is a direct and conservative expression of that information
-- the seed uses natural and established market language
+* the company profile directly states the relevant job, workflow, pain, ICP, or category
+* the seed is a conservative expression of that information
+* the seed uses natural and established market language
+* the provider-expansion risk is low
 
 Use `medium` when:
 
-- the seed is a reasonable market-language translation
-- the exact category wording is not directly stated
-- the phrase is relevant but may represent an emerging category
-- the seed represents a narrower supported capability
+* the seed is a reasonable market-language translation
+* the exact wording is not directly stated
+* the category may be emerging
+* the seed represents a narrower but supported capability
+* the seed requires a meaningful qualifier
 
 Use `low` when:
 
-- the company profile is vague
-- the product category is novel or unclear
-- the audience is uncertain
-- the seed requires substantial interpretation
-- the phrase may not represent established market language
+* the profile is vague
+* the product category is novel or unclear
+* the audience is uncertain
+* the seed requires substantial interpretation
+* the phrase may not represent established market language
+* the required bucket has limited direct evidence
 
 Do not use `high` merely because:
 
-- the seed sounds plausible
-- the seed is grammatically correct
-- the product supports the feature
-- the phrase resembles the company’s own copy
-
-# Illustrative Examples
-
-These examples demonstrate the desired level of abstraction.
-
-Do not copy their topics unless they match the supplied company profile.
-
-## SEO Automation Product for SaaS
-
-Good problem-demand seeds:
-
-- SaaS SEO
-- SEO for SaaS
-- SaaS SEO strategy
-- SaaS organic growth
-- SaaS content marketing
-- SaaS keyword research
-
-Good solution-demand seeds:
-
-- AI SEO tools
-- SEO tools for SaaS
-- SEO automation
-- AI SEO automation
-- content brief software
-- AI SEO software
-
-Bad seeds:
-
-- organic visibility
-- search opportunity prioritization
-- SEO content workflow software
-- best AI SEO tools when `AI SEO tools` is already present
-- founder input SEO brief software
-- email-native SEO approval workflow
-- GitHub publishing SEO agent
-
-## Peptide Protocol Tracking Product
-
-Good problem-demand seeds:
-
-- peptide protocols
-- peptide protocol tracking
-- peptide dose calculation
-- peptide reconstitution
-- peptide inventory tracking
-- peptide biomarker tracking
-
-Good solution-demand seeds:
-
-- peptide tracking app
-- peptide protocol app
-- peptide protocol tracker
-- peptide dose calculator
-- peptide reconstitution calculator
-- peptide biomarker app
-
-Bad seeds:
-
-- biomarker trend tracking
-- peptide health management
-- peptide apps for tracking
-- protocol tracking software
-- dose calculation app
-- biomarker tracking app
-- best peptide tracking apps when `peptide tracking app` is already present
-
-## Marketplace Operations Product
-
-Good problem-demand seeds:
-
-- marketplace operations
-- marketplace growth strategy
-- marketplace management
-- marketplace seller onboarding
-- marketplace trust and safety
-- marketplace dispute management
-
-Good solution-demand seeds:
-
-- marketplace operations software
-- marketplace management software
-- marketplace automation
-- AI for marketplace operations
-- marketplace support automation
-- marketplace trust and safety software
-
-Bad seeds:
-
-- marketplaces operations
-- seller onboarding
-- trust and safety operations
-- marketplace software for operators
-- AI operations software
-- marketplace operations platform when `marketplace operations software` is already present
-
-## Subscription Billing Product
-
-Good problem-demand seeds:
-
-- subscription billing
-- recurring billing management
-- SaaS billing
-- subscription revenue recovery
-- billing operations
-
-Good solution-demand seeds:
-
-- subscription billing software
-- recurring billing platform
-- billing automation
-- billing software for SaaS
-- subscription management tools
-
-Bad seeds:
-
-- finance team billing reconciliation approval workflow
-- automated invoice corrections for growing SaaS companies
-- founder-friendly revenue recovery dashboard
+* the phrase sounds plausible
+* the phrase is grammatically correct
+* the product technically supports a related feature
+* the phrase resembles the company’s marketing copy
 
 # Deduplication Rules
 
@@ -1105,89 +1217,117 @@ Normalize every seed by:
 1. trimming leading and trailing whitespace
 2. converting it to lowercase
 
-All twelve normalized seed keywords must be unique.
+All thirty normalized strings must be unique.
 
 Textual uniqueness is necessary but not sufficient.
 
 Also reject semantic near-duplicates.
 
-Do not use the following as separate seeds unless they represent meaningfully different concepts:
+Do not use the following as separate seeds unless they genuinely represent different discovery directions:
 
-- singular and plural forms
-- word-order changes
-- the same phrase with an ICP word added
-- the same phrase with `best`
-- the same phrase with `AI`
-- the same phrase with `software`
-- the same phrase with `platform`
-- the same phrase with `tools`
-- close grammatical rewrites
-
-Examples of semantic near-duplicates:
-
-- marketplace operations
-- marketplaces operations
-
-- peptide tracking app
-- peptide apps for tracking
-- best peptide tracking apps
-
-- AI SEO tools
-- best AI SEO tools
-
-- marketplace operations software
-- marketplace operations platform
+* singular and plural forms
+* word-order changes
+* the same concept with an ICP added
+* the same concept with `AI`
+* the same concept with `automated`
+* the same concept with `software`
+* the same concept with `platform`
+* the same concept with `tools`
+* close grammatical rewrites
+* category-noun substitutions
 
 Choose the strongest and most natural version.
 
 # Generation Quality
 
-Use `generation_quality` to describe the reliability of the seed strategy.
+Use `generation_quality` to describe the reliability of the portfolio.
 
 Only include missing information that materially affects:
 
-- territory selection
-- market qualification
-- seed relevance
-- ICP targeting
-- solution-category identification
+* territory selection
+* bucket selection
+* market qualification
+* seed relevance
+* ICP targeting
+* workflow identification
+* solution-category identification
 
 Relevant missing information includes:
 
-- unclear primary ICP
-- unclear product category
-- multiple unrelated product categories
-- vague buyer pains
-- limited product-capability evidence
-- unsupported or proprietary category language
-- unclear geographic or language market when materially relevant
+* unclear primary ICP
+* unclear product category
+* multiple unrelated product categories
+* unclear primary workflow
+* no supported adjacent workflow
+* vague buyer pains
+* unclear desired outcome
+* proprietary category language
+* unclear solution mechanism
+* no clear alternative commercial category
 
 Do not include irrelevant missing information such as:
 
-- absent pricing
-- absent customer logos
-- absent named customers
-- unspecified implementation details
-- unspecified operating systems unless platform availability materially changes the search market
-- unrelated product facts that do not affect keyword discovery
+* absent pricing
+* absent customer logos
+* unspecified named customers
+* unrelated implementation details
+* general business uncertainty
 
-Potential risks should describe risks in seed selection, not general business risks or SEO conclusions.
+Potential risks must describe seed-selection uncertainty.
 
-Good potential risks:
+Good risks:
 
-- `The product category is described using proprietary language, so the closest established solution category was inferred with medium confidence.`
-- `The company serves multiple audiences, but the primary ICP is not clearly prioritized.`
-- `The company profile describes several workflows without identifying one central customer problem.`
-- `Several capabilities use generic language, so market qualifiers were added to prevent category drift.`
+* `The product category uses proprietary language, so the closest established commercial category was inferred with medium confidence.`
+* `The company supports multiple workflows without clearly identifying one primary workflow.`
+* `No distinct adjacent workflow is stated, so P3 and S4 use a downstream monitoring stage.`
+* `Several supported concepts have broad alternate meanings, so market qualifiers were added.`
 
-Bad potential risks:
+Bad risks:
 
-- `The keywords may not rank.`
-- `The company may fail.`
-- `The market is too competitive.`
-- `Search volume may be low.`
+* `The keywords may not rank.`
+* `Search volume may be low.`
+* `The market may be competitive.`
+* `The business may fail.`
 
-Search-volume and ranking conclusions belong to later pipeline stages.
+# Portfolio-Level Review
+
+After selecting all thirty provisional seeds, review the portfolio as a whole.
+
+Confirm:
+
+1. Exactly two demand territories exist.
+2. `problem_demand` appears first.
+3. `solution_demand` appears second.
+4. Each territory contains exactly fifteen seeds.
+5. Exactly thirty seeds exist in total.
+6. Every required bucket appears at least twice.
+7. Buckets appear in canonical order.
+8. Every P bucket belongs to `problem_demand`.
+9. Every S bucket belongs to `solution_demand`.
+10. All normalized seed strings are globally unique.
+11. No pair is a singular or plural variation.
+12. No pair differs only by word order.
+13. No pair differs only by a commercial modifier.
+14. No pair is expected to produce substantially the same candidate pool.
+15. Every seed is directly supported by the company profile.
+16. Every seed independently identifies the intended market.
+17. Every seed sounds like natural search language.
+18. Both territories cover multiple discovery directions.
+19. No problem seed primarily describes software or tools.
+20. Every solution seed represents a commercial category or supported solution approach.
+21. The portfolio represents the company’s central market rather than every product feature.
+
+If two seeds overlap:
+
+1. Retain the stronger seed in the bucket it fits most directly.
+2. Regenerate the weaker bucket.
+3. Use the bucket’s fallback procedure.
+4. Repeat all quality gates and scoring.
+5. Review the complete portfolio again.
+
+Do not pursue artificial diversity.
+
+Relevant overlap is preferable to unrelated diversity, but no two seeds should be simple wording variants.
 
 # Final Validation Checklist
 
@@ -1195,83 +1335,106 @@ Before returning the structured output, verify:
 
 ## Structure
 
-- exactly two demand territories are present
-- `problem_demand` appears exactly once
-- `solution_demand` appears exactly once
-- `problem_demand` appears first
-- each territory contains exactly six seed keywords
-- exactly twelve seed keywords exist in total
-- all four required roles appear in each territory
-- output matches `SeedKeywordsSchema`
+* exactly two demand territories are present
+* `problem_demand` appears exactly once
+* `solution_demand` appears exactly once
+* `problem_demand` appears first
+* each territory contains exactly fifteen seeds
+* exactly thirty seeds exist
+* every required bucket appears at least twice
+* bucket ordering is correct
+* output matches `SeedKeywordsSchema`
 
 ## Uniqueness
 
-- all twelve normalized seed keywords are globally unique
-- no two seeds differ only by singular or plural
-- no two seeds differ only by word order
-- no two seeds differ only by a commercial modifier
-- no two seeds represent the same discovery direction unnecessarily
+* all thirty normalized keywords are globally unique
+* no two seeds differ only by singular or plural
+* no two seeds differ only by word order
+* no two seeds differ only by a commercial modifier
+* no two seeds unnecessarily represent the same discovery direction
 
-## Market quality
+## Market Quality
 
-- every seed is grammatically correct
-- every seed sounds natural when read independently
-- every seed could plausibly be typed verbatim by a buyer
-- every seed retains enough market context without the territory
-- no seed relies on selection reasoning to become understandable
-- no seed uses internally constructed strategy language
-- no seed merely compresses the product description
-- no generic capability seed can drift into unrelated markets
+* every seed is grammatically correct
+* every seed sounds natural independently
+* every seed could plausibly be typed verbatim
+* every seed retains enough context without its territory
+* no seed relies on selection reasoning to make sense
+* no seed uses internal strategy language
+* no seed compresses the full product description
+* no generic seed can easily drift into an unrelated market
+* every seed passes the literal provider-expansion test
+
+## Bucket Quality
+
+* P1 represents the central customer job
+* P2 represents the primary recurring workflow
+* P3 represents a supported adjacent or lifecycle workflow
+* P4 represents a concrete pain or failure state
+* P5 represents a qualified desired outcome
+* P6 represents an ICP-specific responsibility
+* S1 represents the established core category
+* S2 represents a narrower qualified category
+* S3 represents the primary workflow solution
+* S4 represents the adjacent workflow solution
+* S5 represents the central mechanism or approach
+* S6 represents an alternative commercial category
 
 ## Scope
 
-- every problem seed uses an allowed problem-demand role
-- every solution seed uses an allowed solution-demand role
-- no seed contains the company name
-- no seed contains a competitor name
-- no seed contains an unsupported audience
-- no seed contains an unsupported category
-- no seed claims search volume, difficulty, or ranking potential
-- no seed is a full question or sentence
-- no problem seed primarily describes software or a tool
-- all seeds remain within one coherent market topic per territory
+* no seed contains the company name
+* no seed contains a competitor name
+* no seed contains an unsupported audience
+* no seed contains an unsupported category
+* no seed claims search volume, difficulty, or ranking potential
+* no seed is a full question or sentence
+* no problem seed primarily describes software
+* all seeds remain within one coherent market per territory
 
-## Evidence and confidence
+## Evidence and Confidence
 
-- evidence refers to real company-profile fields
-- evidence supports the territory rather than claiming keyword demand
-- confidence reflects the strength of both company evidence and market-language translation
-- `missing_information` includes only gaps material to seed generation
-- `potential_risks` describes seed-selection uncertainty rather than business or ranking risk
+* evidence refers to real company-profile fields
+* evidence supports the territory and seeds
+* evidence does not claim keyword demand
+* confidence reflects both profile evidence and market-language reliability
+* `missing_information` includes only material gaps
+* `potential_risks` describes seed-selection uncertainty
 
 Fix every violation before returning.
 
 # Output Semantics
 
-Return a valid structured output matching `SeedKeywordsSchema`.
+Return valid structured output matching `SeedKeywordsSchema`.
 
 Do not add commentary outside the structured output.
 
-Do not include hidden reasoning or chain-of-thought.
+Do not include:
+
+* internal market-map analysis
+* internal candidates
+* rejected candidates
+* internal scores
+* provider-expansion predictions
+* hidden reasoning
+* chain-of-thought
 
 Use concise reasoning only inside:
 
-- `territory_summary`
-- `product_connection`
-- evidence `reasoning`
-- seed `selection_reasoning`
-- `generation_quality`
-- `warnings`
+* `territory_summary`
+* `product_connection`
+* evidence `reasoning`
+* seed `selection_reasoning`
+* `generation_quality`
+* `warnings`
 
-Do not fill fields with unsupported claims merely because the schema requires a value.
+When the profile is unclear:
 
-When the company profile is unclear:
-
-- remain conservative
-- lower confidence
-- use `partial` status when appropriate
-- record the limitation in `warnings`
-- explain the uncertainty in `generation_quality`
+* remain conservative
+* lower confidence
+* use `partial` status when appropriate
+* record the limitation in `warnings`
+* explain the uncertainty in `generation_quality`
+* do not invent unsupported facts to satisfy a bucket
 
 # Input Instructions
 

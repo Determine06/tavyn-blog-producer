@@ -1,7 +1,9 @@
 import { z } from "zod";
 
+
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
+const SEEDS_PER_TERRITORY = 15;
 const SearchIntentSchema = z.enum([
   "informational",
   "navigational",
@@ -13,7 +15,7 @@ const DataForSeoKeywordIdeasFiltersSchema = z.tuple([
   z.tuple([
     z.literal("keyword_info.search_volume"),
     z.literal(">"),
-    z.literal(0),
+    z.literal(50),
   ]),
   z.literal("and"),
   z.tuple([
@@ -123,7 +125,7 @@ const QuerySetSchema = z
   .object({
     territory: TerritorySchema,
     task_tag: TerritorySchema,
-    seeds_used: z.array(NonEmptyStringSchema).length(6),
+    seeds_used: z.array(NonEmptyStringSchema).length(SEEDS_PER_TERRITORY),
     task_result: TaskResultSchema,
     queries: z.array(KeywordQuerySchema),
   })

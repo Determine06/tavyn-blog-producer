@@ -1,24 +1,12 @@
 import { z } from "zod";
 
 import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
+import { OpportunityMetricsSchema } from "./opportunityScoring.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const ConfidenceSchema = z.enum(["high", "medium", "low"]);
-const SelectionStatusSchema = z.enum(["fulfilled", "limited", "none"]);
-
-const OpportunityMetricsSchema = z
-  .object({
-    search_volume_used: z.number().int().min(0),
-    maximum_territory_search_volume: z.number().int().min(0),
-    volume_score: z.number().min(0).max(1),
-    keyword_difficulty_original: z.number().int().min(0).max(100).nullable(),
-    keyword_difficulty_used: z.number().int().min(0).max(100),
-    keyword_difficulty_was_imputed: z.boolean(),
-    difficulty_score: z.number().min(0).max(1),
-    opportunity_score: z.number().min(0).max(100),
-  })
-  .strict();
+const SEEDS_PER_TERRITORY = 15;
 
 const QueryRecommendationDecisionQuerySchema = z
   .object({
@@ -111,10 +99,26 @@ export const QueryRecommendationDecisionSchema = z
       }
     }
 
-    if (totalSelected > 4) {
+    if (problemDecision?.selected_queries.length !== 1) {
       context.addIssue({
         code: "custom",
-        message: "No more than four queries may be selected.",
+        message: "problem_demand must select exactly one query.",
+        path: ["territory_decisions", 0, "selected_queries"],
+      });
+    }
+
+    if (solutionDecision?.selected_queries.length !== 2) {
+      context.addIssue({
+        code: "custom",
+        message: "solution_demand must select exactly two queries.",
+        path: ["territory_decisions", 1, "selected_queries"],
+      });
+    }
+
+    if (totalSelected !== 3) {
+      context.addIssue({
+        code: "custom",
+        message: "Exactly three queries must be selected.",
         path: ["territory_decisions"],
       });
     }
@@ -130,11 +134,12 @@ const SourceProfileSchema = z
 
 const SelectionPolicySchema = z
   .object({
-    maximum_total_recommendations: z.literal(4),
-    target_per_territory: z.literal(2),
-    minimum_per_nonempty_territory: z.literal(1),
-    maximum_per_territory: z.literal(2),
-    allow_fewer_than_target: z.literal(true),
+    problem_demand_target: z.literal(1),
+    solution_demand_target: z.literal(2),
+    total_target: z.literal(3),
+    require_exact_total: z.literal(true),
+    prefer_product_specific_solution: z.literal(true),
+    product_specific_fallback: z.literal("best_distinct_solution_demand"),
   })
   .strict();
 
@@ -151,7 +156,9 @@ const QueryRecommendationSchema = z
     confidence: ConfidenceSchema,
     opportunity_rank: z.number().int().min(1).max(10),
     validation_reasoning: NonEmptyStringSchema,
-    source_seed_keywords: z.array(NonEmptyStringSchema).length(6),
+    source_seed_keywords: z
+      .array(NonEmptyStringSchema)
+      .length(SEEDS_PER_TERRITORY),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -164,11 +171,10 @@ const TerritoryRecommendationsSchema = z
   .object({
     territory: TerritorySchema,
     candidates_available: z.number().int().min(0),
-    target_recommendations: z.literal(2),
-    recommendations_selected: z.number().int().min(0).max(2),
-    selection_status: SelectionStatusSchema,
+    target_recommendations: z.number().int().min(1).max(2),
+    recommendations_selected: z.number().int().min(1).max(2),
     assessment: NonEmptyStringSchema,
-    recommendations: z.array(QueryRecommendationSchema).max(2),
+    recommendations: z.array(QueryRecommendationSchema).min(1).max(2),
   })
   .strict();
 
@@ -177,18 +183,17 @@ const SummarySchema = z
     total_candidates_considered: z.number().int().min(0),
     problem_candidates_considered: z.number().int().min(0),
     solution_candidates_considered: z.number().int().min(0),
-    target_recommendations: z.literal(4),
-    problem_recommendations_selected: z.number().int().min(0).max(2),
-    solution_recommendations_selected: z.number().int().min(0).max(2),
-    total_recommendations_selected: z.number().int().min(0).max(4),
-    target_fulfilled: z.boolean(),
-    insufficient_opportunity_territories: z.array(TerritorySchema),
+    target_recommendations: z.literal(3),
+    problem_recommendations_selected: z.literal(1),
+    solution_recommendations_selected: z.literal(2),
+    total_recommendations_selected: z.literal(3),
+    target_fulfilled: z.literal(true),
   })
   .strict();
 
 export const QueryRecommendationsSchema = z
   .object({
-    schema_version: z.literal("1.1.0"),
+    schema_version: z.literal("2.0.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z
@@ -244,12 +249,8 @@ export const QueryRecommendationsSchema = z
       territoryRecommendation,
     ] of artifact.territory_recommendations.entries()) {
       const selectedCount = territoryRecommendation.recommendations.length;
-      const expectedStatus =
-        selectedCount === 2
-          ? "fulfilled"
-          : selectedCount === 1
-            ? "limited"
-            : "none";
+      const expectedTarget =
+        territoryRecommendation.territory === "problem_demand" ? 1 : 2;
 
       if (territoryRecommendation.recommendations_selected !== selectedCount) {
         context.addIssue({
@@ -263,14 +264,28 @@ export const QueryRecommendationsSchema = z
         });
       }
 
-      if (territoryRecommendation.selection_status !== expectedStatus) {
+      if (territoryRecommendation.target_recommendations !== expectedTarget) {
         context.addIssue({
           code: "custom",
-          message: `selection_status must be ${expectedStatus}.`,
+          message: `target_recommendations must be ${expectedTarget}.`,
           path: [
             "territory_recommendations",
             territoryIndex,
-            "selection_status",
+            "target_recommendations",
+          ],
+        });
+      }
+
+      if (
+        territoryRecommendation.recommendations.length !== expectedTarget
+      ) {
+        context.addIssue({
+          code: "custom",
+          message: `${territoryRecommendation.territory} must contain exactly ${expectedTarget} recommendation${expectedTarget === 1 ? "" : "s"}.`,
+          path: [
+            "territory_recommendations",
+            territoryIndex,
+            "recommendations",
           ],
         });
       }
@@ -287,38 +302,6 @@ export const QueryRecommendationsSchema = z
             "territory_recommendations",
             territoryIndex,
             "candidates_available",
-          ],
-        });
-      }
-
-      if (
-        territoryRecommendation.candidates_available > 0 &&
-        territoryRecommendation.recommendations_selected < 1
-      ) {
-        context.addIssue({
-          code: "custom",
-          message:
-            "A territory with candidates must select at least one recommendation.",
-          path: [
-            "territory_recommendations",
-            territoryIndex,
-            "recommendations_selected",
-          ],
-        });
-      }
-
-      if (
-        territoryRecommendation.candidates_available === 0 &&
-        territoryRecommendation.recommendations_selected !== 0
-      ) {
-        context.addIssue({
-          code: "custom",
-          message:
-            "A territory with zero candidates must select zero recommendations.",
-          path: [
-            "territory_recommendations",
-            territoryIndex,
-            "recommendations_selected",
           ],
         });
       }
@@ -393,9 +376,6 @@ export const QueryRecommendationsSchema = z
     const problemSelected = problemRecommendations?.recommendations.length ?? 0;
     const solutionSelected = solutionRecommendations?.recommendations.length ?? 0;
     const totalSelected = problemSelected + solutionSelected;
-    const insufficientTerritories = artifact.territory_recommendations
-      .filter((territory) => territory.recommendations.length < 2)
-      .map((territory) => territory.territory);
     const expectedSummary = {
       total_candidates_considered:
         (problemRecommendations?.candidates_available ?? 0) +
@@ -407,7 +387,7 @@ export const QueryRecommendationsSchema = z
       problem_recommendations_selected: problemSelected,
       solution_recommendations_selected: solutionSelected,
       total_recommendations_selected: totalSelected,
-      target_fulfilled: totalSelected === 4,
+      target_fulfilled: true,
     };
 
     for (const [key, expectedValue] of Object.entries(expectedSummary)) {
@@ -421,21 +401,6 @@ export const QueryRecommendationsSchema = z
           path: ["summary", key],
         });
       }
-    }
-
-    if (
-      artifact.summary.insufficient_opportunity_territories.length !==
-        insufficientTerritories.length ||
-      artifact.summary.insufficient_opportunity_territories.some(
-        (territory, index) => territory !== insufficientTerritories[index],
-      )
-    ) {
-      context.addIssue({
-        code: "custom",
-        message:
-          "summary.insufficient_opportunity_territories must contain exactly the territories with fewer than two recommendations.",
-        path: ["summary", "insufficient_opportunity_territories"],
-      });
     }
   });
 
