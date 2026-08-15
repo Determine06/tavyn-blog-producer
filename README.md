@@ -151,6 +151,16 @@ npm run dev -- https://zaviagent.com --no-cache --stop-after query-validation
 This command makes live provider requests when real credentials are configured;
 do not use it as an automated test.
 
+To reuse validated cached artifacts through `query-validation` and regenerate
+the complete downstream pipeline, run:
+
+```bash
+npm run dev -- https://zaviagent.com --cache --force confirmed-queries
+```
+
+This does not rerun Keyword Ideas discovery. It does rerun downstream model,
+Serper, and competitor-landscape provider stages.
+
 Run TypeScript validation with:
 
 ```bash
