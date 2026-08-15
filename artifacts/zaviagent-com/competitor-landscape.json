@@ -1,25 +1,23 @@
 {
   "schema_version": "1.0.0",
-  "run_id": "6786ae65-a952-4edf-a82d-349f50e76aa0",
-  "generated_at": "2026-08-14T19:13:43.382Z",
+  "run_id": "46ad305f-82ca-4d9b-87aa-d3e92c9e9e7d",
+  "generated_at": "2026-08-15T01:27:27.959Z",
   "source_artifacts": [
     "confirmed-queries.json"
   ],
   "status": "complete",
-  "warnings": [
-    "DataForSEO returned 32 competitor domains instead of 50."
-  ],
-  "website_url": "https://www.zaviagent.com/",
+  "warnings": [],
+  "website_url": "https://zaviagent.com/",
   "target_domain": "zaviagent.com",
   "provider": {
     "name": "dataforseo",
     "endpoint": "/v3/dataforseo_labs/google/serp_competitors/live",
     "http_requests_made": 1,
     "tasks_submitted": 1,
-    "task_id": "08141913-2045-0383-0000-441260530c9c",
+    "task_id": "08150127-2045-0383-0000-c12466b77cf5",
     "task_status_code": 20000,
     "task_status_message": "Ok.",
-    "total_cost_usd": 0.01584
+    "total_cost_usd": 0.132
   },
   "request_config": {
     "location_code": 2840,
@@ -28,7 +26,7 @@
     "item_types": [
       "organic"
     ],
-    "limit": 50,
+    "limit": 1000,
     "order_by": [
       "rating,desc"
     ],
@@ -36,71 +34,202 @@
   },
   "scope": {
     "based_on": "all_validated_queries",
-    "confirmed_queries_received": 2,
-    "unique_queries_submitted": 2,
+    "confirmed_queries_received": 50,
+    "unique_queries_available": 50,
+    "unique_queries_submitted": 50,
     "duplicate_queries_removed": 0,
+    "provider_limit_queries_omitted": 0,
     "provider_keyword_limit": 200,
     "estimated_traffic_definition": "Estimated traffic from the analyzed query set, not total domain-wide organic traffic."
   },
   "summary": {
-    "total_domains_found": 32,
-    "domains_received": 32,
-    "competitors_included": 32,
+    "total_domains_found": 1025,
+    "domains_received": 1000,
+    "raw_candidates_received": 1000,
+    "generic_candidates_filtered": 29,
+    "competitors_included": 50,
+    "final_competitors_profiled": 50,
     "target_domain_excluded": true
   },
   "competitors": [
     {
-      "competitor_id": "competitor_facebook-com",
+      "competitor_id": "competitor_marketplacer-com",
       "rank": 1,
-      "domain": "facebook.com",
-      "average_position": 3,
-      "median_position": 1,
-      "visibility_rating": 194,
-      "visibility_index": 1.6,
-      "estimated_traffic_from_analyzed_queries": 123.71900000000001,
-      "keywords_ranked_count": 2,
-      "query_coverage_percentage": 100,
-      "relevant_serp_items": 2,
+      "domain": "marketplacer.com",
+      "average_position": 22,
+      "median_position": 14,
+      "visibility_rating": 936,
+      "visibility_index": 3.2,
+      "estimated_traffic_from_analyzed_queries": 45.431,
+      "keywords_ranked_count": 12,
+      "query_coverage_percentage": 24,
+      "relevant_serp_items": 12,
       "query_positions": [
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
           "positions": [
             1
           ]
         },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_251",
+          "query": "marketplace business",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
           "positions": [
             5
+          ]
+        },
+        {
+          "query_id": "problem_demand_437",
+          "query": "market operator",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
+          "positions": [
+            57
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            1
           ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_play-google-com",
+      "competitor_id": "competitor_cs-cart-com",
       "rank": 2,
-      "domain": "play.google.com",
-      "average_position": 5,
-      "median_position": 3,
-      "visibility_rating": 190,
-      "visibility_index": 1.2000000000000002,
-      "estimated_traffic_from_analyzed_queries": 40.763,
-      "keywords_ranked_count": 2,
-      "query_coverage_percentage": 100,
-      "relevant_serp_items": 2,
+      "domain": "cs-cart.com",
+      "average_position": 17,
+      "median_position": 7,
+      "visibility_rating": 830,
+      "visibility_index": 2.4,
+      "estimated_traffic_from_analyzed_queries": 31.381,
+      "keywords_ranked_count": 10,
+      "query_coverage_percentage": 20,
+      "relevant_serp_items": 10,
       "query_positions": [
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
           "positions": [
-            3
+            7
           ]
         },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
           "positions": [
             7
           ]
@@ -108,72 +237,70 @@
       ]
     },
     {
-      "competitor_id": "competitor_youtube-com",
+      "competitor_id": "competitor_sharetribe-com",
       "rank": 3,
-      "domain": "youtube.com",
-      "average_position": 7,
-      "median_position": 5,
-      "visibility_rating": 186,
-      "visibility_index": 0.8,
-      "estimated_traffic_from_analyzed_queries": 19.941,
-      "keywords_ranked_count": 2,
-      "query_coverage_percentage": 100,
-      "relevant_serp_items": 2,
+      "domain": "sharetribe.com",
+      "average_position": 8.75,
+      "median_position": 4,
+      "visibility_rating": 730,
+      "visibility_index": 4.1000000000000005,
+      "estimated_traffic_from_analyzed_queries": 74.05499999999999,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 16,
+      "relevant_serp_items": 8,
       "query_positions": [
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
           "positions": [
-            5
+            12
           ]
         },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
           "positions": [
-            9
+            20
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_reddit-com",
-      "rank": 4,
-      "domain": "reddit.com",
-      "average_position": 1,
-      "median_position": 1,
-      "visibility_rating": 99,
-      "visibility_index": 1,
-      "estimated_traffic_from_analyzed_queries": 33.44,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            23
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
           "positions": [
             1
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_getswoopa-com",
-      "rank": 5,
-      "domain": "getswoopa.com",
-      "average_position": 2,
-      "median_position": 2,
-      "visibility_rating": 98,
-      "visibility_index": 0.9,
-      "estimated_traffic_from_analyzed_queries": 17.82,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
           "positions": [
             2
           ]
@@ -181,21 +308,70 @@
       ]
     },
     {
-      "competitor_id": "competitor_howtogeek-com",
-      "rank": 6,
-      "domain": "howtogeek.com",
-      "average_position": 3,
-      "median_position": 3,
-      "visibility_rating": 97,
-      "visibility_index": 0.8,
-      "estimated_traffic_from_analyzed_queries": 10.703,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_nauticalcommerce-com",
+      "rank": 4,
+      "domain": "nauticalcommerce.com",
+      "average_position": 17.625,
+      "median_position": 13,
+      "visibility_rating": 659,
+      "visibility_index": 1.4500000000000002,
+      "estimated_traffic_from_analyzed_queries": 6.893000000000001,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 16,
+      "relevant_serp_items": 8,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
+          "positions": [
+            9
+          ]
+        },
+        {
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            46
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
           "positions": [
             3
           ]
@@ -203,87 +379,63 @@
       ]
     },
     {
-      "competitor_id": "competitor_browsemarketplaces-com",
-      "rank": 7,
-      "domain": "browsemarketplaces.com",
-      "average_position": 4,
-      "median_position": 4,
-      "visibility_rating": 96,
-      "visibility_index": 0.7,
-      "estimated_traffic_from_analyzed_queries": 25.701,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_shipturtle-com",
+      "rank": 5,
+      "domain": "shipturtle.com",
+      "average_position": 13.428571428571429,
+      "median_position": 13,
+      "visibility_rating": 606,
+      "visibility_index": 1.15,
+      "estimated_traffic_from_analyzed_queries": 50.822,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 14,
+      "relevant_serp_items": 7,
       "query_positions": [
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
           "positions": [
             4
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_flipifyapp-com",
-      "rank": 8,
-      "domain": "flipifyapp.com",
-      "average_position": 4,
-      "median_position": 4,
-      "visibility_rating": 96,
-      "visibility_index": 0.7,
-      "estimated_traffic_from_analyzed_queries": 7.249,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
           "positions": [
-            4
+            13
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_apps-apple-com",
-      "rank": 9,
-      "domain": "apps.apple.com",
-      "average_position": 6,
-      "median_position": 6,
-      "visibility_rating": 94,
-      "visibility_index": 0.5,
-      "estimated_traffic_from_analyzed_queries": 3.7179999999999995,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
           "positions": [
-            6
+            16
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_mymarketplacebuilder-com",
-      "rank": 10,
-      "domain": "mymarketplacebuilder.com",
-      "average_position": 9,
-      "median_position": 9,
-      "visibility_rating": 91,
-      "visibility_index": 0.2,
-      "estimated_traffic_from_analyzed_queries": 5.85,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
           "positions": [
             9
           ]
@@ -291,153 +443,255 @@
       ]
     },
     {
-      "competitor_id": "competitor_carsnipe-com",
-      "rank": 11,
-      "domain": "carsnipe.com",
-      "average_position": 10,
-      "median_position": 10,
-      "visibility_rating": 90,
-      "visibility_index": 0.1,
-      "estimated_traffic_from_analyzed_queries": 1.2429999999999999,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_clarity-ventures-com",
+      "rank": 6,
+      "domain": "clarity-ventures.com",
+      "average_position": 34.625,
+      "median_position": 33,
+      "visibility_rating": 523,
+      "visibility_index": 1.05,
+      "estimated_traffic_from_analyzed_queries": 9.485,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 16,
+      "relevant_serp_items": 8,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
           "positions": [
-            10
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_251",
+          "query": "marketplace business",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            48
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            58
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            60
           ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_instagram-com",
-      "rank": 12,
-      "domain": "instagram.com",
-      "average_position": 11,
-      "median_position": 11,
-      "visibility_rating": 89,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 3.5490000000000004,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_dokan-co",
+      "rank": 7,
+      "domain": "dokan.co",
+      "average_position": 35.75,
+      "median_position": 29,
+      "visibility_rating": 514,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 5.3389999999999995,
+      "keywords_ranked_count": 8,
+      "query_coverage_percentage": 16,
+      "relevant_serp_items": 8,
       "query_positions": [
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
           "positions": [
-            11
+            50
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_searchtempest-com",
-      "rank": 13,
-      "domain": "searchtempest.com",
-      "average_position": 13,
-      "median_position": 13,
-      "visibility_rating": 87,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 2.301,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
-          "positions": [
-            13
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_iorad-com",
-      "rank": 14,
-      "domain": "iorad.com",
-      "average_position": 13,
-      "median_position": 13,
-      "visibility_rating": 87,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 0.649,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
-          "positions": [
-            13
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_producthunt-com",
-      "rank": 15,
-      "domain": "producthunt.com",
-      "average_position": 16,
-      "median_position": 16,
-      "visibility_rating": 84,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 0.473,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
-          "positions": [
-            16
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_webapps-stackexchange-com",
-      "rank": 16,
-      "domain": "webapps.stackexchange.com",
-      "average_position": 17,
-      "median_position": 17,
-      "visibility_rating": 83,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 0.473,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
           "positions": [
             17
           ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            17
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            76
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            29
+          ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_quora-com",
-      "rank": 17,
-      "domain": "quora.com",
-      "average_position": 19,
-      "median_position": 19,
-      "visibility_rating": 81,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 0.29700000000000004,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_cedcommerce-com",
+      "rank": 8,
+      "domain": "cedcommerce.com",
+      "average_position": 22,
+      "median_position": 20,
+      "visibility_rating": 468,
+      "visibility_index": 0.30000000000000004,
+      "estimated_traffic_from_analyzed_queries": 5.788,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_273",
+          "query": "saturated marketplace",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            32
+          ]
+        },
+        {
+          "query_id": "problem_demand_420",
+          "query": "marketplace problem",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "problem_demand_449",
+          "query": "marketplace issues",
+          "positions": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_yo-kart-com",
+      "rank": 9,
+      "domain": "yo-kart.com",
+      "average_position": 22.333333333333332,
+      "median_position": 19,
+      "visibility_rating": 466,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 0.872,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
           "positions": [
             19
           ]
@@ -445,285 +699,491 @@
       ]
     },
     {
-      "competitor_id": "competitor_dealhunter-io",
-      "rank": 18,
-      "domain": "dealhunter.io",
-      "average_position": 20,
-      "median_position": 20,
-      "visibility_rating": 80,
-      "visibility_index": 0.05,
-      "estimated_traffic_from_analyzed_queries": 0.26399999999999996,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_ycombinator-com",
+      "rank": 10,
+      "domain": "ycombinator.com",
+      "average_position": 8,
+      "median_position": 3,
+      "visibility_rating": 460,
+      "visibility_index": 2.75,
+      "estimated_traffic_from_analyzed_queries": 74.384,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
           "positions": [
-            20
+            1
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_jdmarket-cc",
-      "rank": 19,
-      "domain": "jdmarket.cc",
-      "average_position": 21,
-      "median_position": 21,
-      "visibility_rating": 79,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.253,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
           "positions": [
-            21
+            2
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_trendhunter-com",
-      "rank": 20,
-      "domain": "trendhunter.com",
-      "average_position": 22,
-      "median_position": 22,
-      "visibility_rating": 78,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.24200000000000002,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
           "positions": [
             22
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_marketplaceapp-com",
-      "rank": 21,
-      "domain": "marketplaceapp.com",
-      "average_position": 24,
-      "median_position": 24,
-      "visibility_rating": 76,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.819,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
           "positions": [
-            24
+            12
           ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_techsavvy-life",
-      "rank": 22,
-      "domain": "techsavvy.life",
-      "average_position": 24,
-      "median_position": 24,
-      "visibility_rating": 76,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_marketplace-org",
+      "rank": 11,
+      "domain": "marketplace.org",
+      "average_position": 24.333333333333332,
+      "median_position": 15,
+      "visibility_rating": 454,
+      "visibility_index": 1.1,
+      "estimated_traffic_from_analyzed_queries": 23.738,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
-          "positions": [
-            24
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_tiktok-com",
-      "rank": 23,
-      "domain": "tiktok.com",
-      "average_position": 26,
-      "median_position": 26,
-      "visibility_rating": 74,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
-          "positions": [
-            26
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_alphr-com",
-      "rank": 24,
-      "domain": "alphr.com",
-      "average_position": 27,
-      "median_position": 27,
-      "visibility_rating": 73,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
-          "positions": [
-            27
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_fen-fastnuggets-com",
-      "rank": 25,
-      "domain": "fen.fastnuggets.com",
-      "average_position": 30,
-      "median_position": 30,
-      "visibility_rating": 70,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.819,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
-          "positions": [
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_bigflippa-com",
-      "rank": 26,
-      "domain": "bigflippa.com",
-      "average_position": 30,
-      "median_position": 30,
-      "visibility_rating": 70,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
-          "positions": [
-            30
-          ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_marketplace-com",
-      "rank": 27,
-      "domain": "marketplace.com",
-      "average_position": 31,
-      "median_position": 31,
-      "visibility_rating": 69,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.819,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
-        {
-          "query_id": "problem_demand_030",
-          "query": "marketplace listings",
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
           "positions": [
             31
           ]
+        },
+        {
+          "query_id": "problem_demand_251",
+          "query": "marketplace business",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            52
+          ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_marketplacemonitor-com",
-      "rank": 28,
-      "domain": "marketplacemonitor.com",
-      "average_position": 32,
-      "median_position": 32,
-      "visibility_rating": 68,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_everythingmarketplaces-com",
+      "rank": 12,
+      "domain": "everythingmarketplaces.com",
+      "average_position": 36.142857142857146,
+      "median_position": 31,
+      "visibility_rating": 447,
+      "visibility_index": 1.1,
+      "estimated_traffic_from_analyzed_queries": 8.801000000000002,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 14,
+      "relevant_serp_items": 7,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            75
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_sloboda-studio-com",
+      "rank": 13,
+      "domain": "sloboda-studio.com",
+      "average_position": 36.57142857142857,
+      "median_position": 30,
+      "visibility_rating": 444,
+      "visibility_index": 0.35,
+      "estimated_traffic_from_analyzed_queries": 5.145,
+      "keywords_ranked_count": 7,
+      "query_coverage_percentage": 14,
+      "relevant_serp_items": 7,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            60
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_a16z-com",
+      "rank": 14,
+      "domain": "a16z.com",
+      "average_position": 14.4,
+      "median_position": 3,
+      "visibility_rating": 428,
+      "visibility_index": 2.8,
+      "estimated_traffic_from_analyzed_queries": 123.572,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
           "positions": [
             32
           ]
-        }
-      ]
-    },
-    {
-      "competitor_id": "competitor_outpostalerts-com",
-      "rank": 29,
-      "domain": "outpostalerts.com",
-      "average_position": 41,
-      "median_position": 41,
-      "visibility_rating": 59,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
-      "query_positions": [
+        },
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
           "positions": [
-            41
+            35
           ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_antdiy-vip",
-      "rank": 30,
-      "domain": "antdiy.vip",
-      "average_position": 44,
-      "median_position": 44,
-      "visibility_rating": 56,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_stripe-com",
+      "rank": 15,
+      "domain": "stripe.com",
+      "average_position": 15.8,
+      "median_position": 14,
+      "visibility_rating": 421,
+      "visibility_index": 1.95,
+      "estimated_traffic_from_analyzed_queries": 32.867,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_fatbit-com",
+      "rank": 16,
+      "domain": "fatbit.com",
+      "average_position": 34.166666666666664,
+      "median_position": 24,
+      "visibility_rating": 395,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 2.2510000000000003,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            51
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            24
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_domo-com",
+      "rank": 17,
+      "domain": "domo.com",
+      "average_position": 1.75,
+      "median_position": 2,
+      "visibility_rating": 393,
+      "visibility_index": 3.6999999999999997,
+      "estimated_traffic_from_analyzed_queries": 220.62000000000003,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            2
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_forbes-com",
+      "rank": 18,
+      "domain": "forbes.com",
+      "average_position": 35.166666666666664,
+      "median_position": 26,
+      "visibility_rating": 389,
+      "visibility_index": 1.05,
+      "estimated_traffic_from_analyzed_queries": 19.945999999999998,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "problem_demand_273",
+          "query": "saturated marketplace",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            74
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_444",
+          "query": "marketplace evolution",
           "positions": [
             44
           ]
@@ -731,45 +1191,1391 @@
       ]
     },
     {
-      "competitor_id": "competitor_ucompares-com",
-      "rank": 31,
-      "domain": "ucompares.com",
-      "average_position": 46,
-      "median_position": 46,
-      "visibility_rating": 54,
-      "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "competitor_id": "competitor_tapclicks-com",
+      "rank": 19,
+      "domain": "tapclicks.com",
+      "average_position": 10.5,
+      "median_position": 10,
+      "visibility_rating": 358,
+      "visibility_index": 0.8,
+      "estimated_traffic_from_analyzed_queries": 16.902,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "solution_demand_070",
+          "query": "report automation",
           "positions": [
-            46
+            10
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            5
           ]
         }
       ]
     },
     {
-      "competitor_id": "competitor_noypigeeks-com",
-      "rank": 32,
-      "domain": "noypigeeks.com",
-      "average_position": 51,
-      "median_position": 51,
-      "visibility_rating": 49,
+      "competitor_id": "competitor_theretailexec-com",
+      "rank": 20,
+      "domain": "theretailexec.com",
+      "average_position": 40.666666666666664,
+      "median_position": 40,
+      "visibility_rating": 356,
       "visibility_index": 0,
-      "estimated_traffic_from_analyzed_queries": 0.23099999999999998,
-      "keywords_ranked_count": 1,
-      "query_coverage_percentage": 50,
-      "relevant_serp_items": 1,
+      "estimated_traffic_from_analyzed_queries": 2.604,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
       "query_positions": [
         {
-          "query_id": "problem_demand_052",
-          "query": "marketplace alerts",
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
           "positions": [
-            51
+            44
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            50
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_fleexy-dev",
+      "rank": 21,
+      "domain": "fleexy.dev",
+      "average_position": 29.4,
+      "median_position": 28,
+      "visibility_rating": 353,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 5.445,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            13
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            15
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_teamwork-com",
+      "rank": 22,
+      "domain": "teamwork.com",
+      "average_position": 12.5,
+      "median_position": 1,
+      "visibility_rating": 350,
+      "visibility_index": 3,
+      "estimated_traffic_from_analyzed_queries": 192.339,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_bigcommerce-com",
+      "rank": 23,
+      "domain": "bigcommerce.com",
+      "average_position": 41.833333333333336,
+      "median_position": 43,
+      "visibility_rating": 349,
+      "visibility_index": 0.3,
+      "estimated_traffic_from_analyzed_queries": 15.465,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            38
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            52
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_webkul-com",
+      "rank": 24,
+      "domain": "webkul.com",
+      "average_position": 13.25,
+      "median_position": 6,
+      "visibility_rating": 347,
+      "visibility_index": 1.4000000000000001,
+      "estimated_traffic_from_analyzed_queries": 13.772,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            10
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            34
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_thectoclub-com",
+      "rank": 25,
+      "domain": "thectoclub.com",
+      "average_position": 14.25,
+      "median_position": 12,
+      "visibility_rating": 343,
+      "visibility_index": 0.5,
+      "estimated_traffic_from_analyzed_queries": 8.712,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            22
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_displayr-com",
+      "rank": 26,
+      "domain": "displayr.com",
+      "average_position": 16.75,
+      "median_position": 6,
+      "visibility_rating": 333,
+      "visibility_index": 1.3,
+      "estimated_traffic_from_analyzed_queries": 24.857999999999997,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_investopedia-com",
+      "rank": 27,
+      "domain": "investopedia.com",
+      "average_position": 18,
+      "median_position": 4,
+      "visibility_rating": 328,
+      "visibility_index": 1.7,
+      "estimated_traffic_from_analyzed_queries": 490.11499999999995,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_273",
+          "query": "saturated marketplace",
+          "positions": [
+            1
+          ]
+        },
+        {
+          "query_id": "problem_demand_305",
+          "query": "marketplace benefits",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_425",
+          "query": "marketplace dynamics",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_437",
+          "query": "market operator",
+          "positions": [
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_cubesoftware-com",
+      "rank": 28,
+      "domain": "cubesoftware.com",
+      "average_position": 18.5,
+      "median_position": 14,
+      "visibility_rating": 326,
+      "visibility_index": 0.35,
+      "estimated_traffic_from_analyzed_queries": 6.5729999999999995,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            25
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_mymarketplacebuilder-com",
+      "rank": 29,
+      "domain": "mymarketplacebuilder.com",
+      "average_position": 35,
+      "median_position": 36,
+      "visibility_rating": 325,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 2.439,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            43
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_rollstack-com",
+      "rank": 30,
+      "domain": "rollstack.com",
+      "average_position": 19.5,
+      "median_position": 11,
+      "visibility_rating": 322,
+      "visibility_index": 0.15000000000000002,
+      "estimated_traffic_from_analyzed_queries": 7.077,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            42
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_gartner-com",
+      "rank": 31,
+      "domain": "gartner.com",
+      "average_position": 20,
+      "median_position": 11,
+      "visibility_rating": 320,
+      "visibility_index": 0.65,
+      "estimated_traffic_from_analyzed_queries": 2.072,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_explo-co",
+      "rank": 32,
+      "domain": "explo.co",
+      "average_position": 21.25,
+      "median_position": 20,
+      "visibility_rating": 315,
+      "visibility_index": 0.45,
+      "estimated_traffic_from_analyzed_queries": 7.182,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            37
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            20
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_nomtek-com",
+      "rank": 33,
+      "domain": "nomtek.com",
+      "average_position": 37.6,
+      "median_position": 33,
+      "visibility_rating": 312,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 2.6430000000000002,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            29
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            21
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            33
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_shopify-com",
+      "rank": 34,
+      "domain": "shopify.com",
+      "average_position": 23.75,
+      "median_position": 19,
+      "visibility_rating": 305,
+      "visibility_index": 0.35,
+      "estimated_traffic_from_analyzed_queries": 2.7910000000000004,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_046",
+          "query": "ecommerce marketplace software",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            28
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_asdonline-com",
+      "rank": 35,
+      "domain": "asdonline.com",
+      "average_position": 24.25,
+      "median_position": 18,
+      "visibility_rating": 303,
+      "visibility_index": 0.45,
+      "estimated_traffic_from_analyzed_queries": 19.698,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            18
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_dittofi-com",
+      "rank": 36,
+      "domain": "dittofi.com",
+      "average_position": 25.25,
+      "median_position": 14,
+      "visibility_rating": 299,
+      "visibility_index": 0.1,
+      "estimated_traffic_from_analyzed_queries": 4.4799999999999995,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            47
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            14
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_reportportal-io",
+      "rank": 37,
+      "domain": "reportportal.io",
+      "average_position": 3.6666666666666665,
+      "median_position": 4,
+      "visibility_rating": 289,
+      "visibility_index": 2.2,
+      "estimated_traffic_from_analyzed_queries": 65.625,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_wellfound-com",
+      "rank": 38,
+      "domain": "wellfound.com",
+      "average_position": 5.333333333333333,
+      "median_position": 5,
+      "visibility_rating": 284,
+      "visibility_index": 1.7,
+      "estimated_traffic_from_analyzed_queries": 16.444,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_taxually-com",
+      "rank": 39,
+      "domain": "taxually.com",
+      "average_position": 44.2,
+      "median_position": 50,
+      "visibility_rating": 279,
+      "visibility_index": 0.8,
+      "estimated_traffic_from_analyzed_queries": 22.826999999999998,
+      "keywords_ranked_count": 5,
+      "query_coverage_percentage": 10,
+      "relevant_serp_items": 5,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            36
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            78
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            54
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_jaspersoft-com",
+      "rank": 40,
+      "domain": "jaspersoft.com",
+      "average_position": 9.333333333333334,
+      "median_position": 6,
+      "visibility_rating": 272,
+      "visibility_index": 1.25,
+      "estimated_traffic_from_analyzed_queries": 33.492,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_bluecart-com",
+      "rank": 41,
+      "domain": "bluecart.com",
+      "average_position": 32.5,
+      "median_position": 5,
+      "visibility_rating": 270,
+      "visibility_index": 1.4,
+      "estimated_traffic_from_analyzed_queries": 12.985,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_251",
+          "query": "marketplace business",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            53
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            69
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_app-dealroom-co",
+      "rank": 42,
+      "domain": "app.dealroom.co",
+      "average_position": 10.333333333333334,
+      "median_position": 12,
+      "visibility_rating": 269,
+      "visibility_index": 0.6000000000000001,
+      "estimated_traffic_from_analyzed_queries": 4.503,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_002",
+          "query": "marketplace startups",
+          "positions": [
+            6
+          ]
+        },
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            12
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_multimerch-com",
+      "rank": 43,
+      "domain": "multimerch.com",
+      "average_position": 33.25,
+      "median_position": 26,
+      "visibility_rating": 267,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 7.434,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            26
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            11
+          ]
+        },
+        {
+          "query_id": "problem_demand_309",
+          "query": "marketplace companies",
+          "positions": [
+            41
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_borngroup-com",
+      "rank": 44,
+      "domain": "borngroup.com",
+      "average_position": 11.666666666666666,
+      "median_position": 4,
+      "visibility_rating": 265,
+      "visibility_index": 1.5,
+      "estimated_traffic_from_analyzed_queries": 13.664000000000001,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_039",
+          "query": "marketplace business model",
+          "positions": [
+            3
+          ]
+        },
+        {
+          "query_id": "problem_demand_251",
+          "query": "marketplace business",
+          "positions": [
+            4
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_journeyh-io",
+      "rank": 45,
+      "domain": "journeyh.io",
+      "average_position": 11.666666666666666,
+      "median_position": 11,
+      "visibility_rating": 265,
+      "visibility_index": 0.39999999999999997,
+      "estimated_traffic_from_analyzed_queries": 5.095,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "problem_demand_375",
+          "query": "marketplace launch",
+          "positions": [
+            8
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_syndicode-com",
+      "rank": 46,
+      "domain": "syndicode.com",
+      "average_position": 12.333333333333334,
+      "median_position": 5,
+      "visibility_rating": 263,
+      "visibility_index": 1.6,
+      "estimated_traffic_from_analyzed_queries": 14.349,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_281",
+          "query": "create marketplace",
+          "positions": [
+            31
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            5
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_unito-io",
+      "rank": 47,
+      "domain": "unito.io",
+      "average_position": 34.5,
+      "median_position": 30,
+      "visibility_rating": 262,
+      "visibility_index": 0.05,
+      "estimated_traffic_from_analyzed_queries": 2.268,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_070",
+          "query": "report automation",
+          "positions": [
+            40
+          ]
+        },
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            30
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            49
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_torryharrisproducts-com",
+      "rank": 48,
+      "domain": "torryharrisproducts.com",
+      "average_position": 34.75,
+      "median_position": 33,
+      "visibility_rating": 261,
+      "visibility_index": 0.4,
+      "estimated_traffic_from_analyzed_queries": 2.12,
+      "keywords_ranked_count": 4,
+      "query_coverage_percentage": 8,
+      "relevant_serp_items": 4,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_291",
+          "query": "marketplace businesses",
+          "positions": [
+            35
+          ]
+        },
+        {
+          "query_id": "problem_demand_425",
+          "query": "marketplace dynamics",
+          "positions": [
+            7
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            64
+          ]
+        },
+        {
+          "query_id": "problem_demand_472",
+          "query": "marketplace operators",
+          "positions": [
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_zoho-com",
+      "rank": 49,
+      "domain": "zoho.com",
+      "average_position": 15,
+      "median_position": 16,
+      "visibility_rating": 255,
+      "visibility_index": 0.2,
+      "estimated_traffic_from_analyzed_queries": 3.843,
+      "keywords_ranked_count": 3,
+      "query_coverage_percentage": 6,
+      "relevant_serp_items": 3,
+      "query_positions": [
+        {
+          "query_id": "solution_demand_142",
+          "query": "report automation tools",
+          "positions": [
+            19
+          ]
+        },
+        {
+          "query_id": "solution_demand_143",
+          "query": "automation reporting tools",
+          "positions": [
+            16
+          ]
+        },
+        {
+          "query_id": "solution_demand_144",
+          "query": "reporting automation tools",
+          "positions": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "competitor_id": "competitor_arateg-com",
+      "rank": 50,
+      "domain": "arateg.com",
+      "average_position": 57.666666666666664,
+      "median_position": 39,
+      "visibility_rating": 254,
+      "visibility_index": 0,
+      "estimated_traffic_from_analyzed_queries": 2.415,
+      "keywords_ranked_count": 6,
+      "query_coverage_percentage": 12,
+      "relevant_serp_items": 6,
+      "query_positions": [
+        {
+          "query_id": "problem_demand_040",
+          "query": "marketplace vs platform",
+          "positions": [
+            39
+          ]
+        },
+        {
+          "query_id": "problem_demand_304",
+          "query": "marketplace examples",
+          "positions": [
+            27
+          ]
+        },
+        {
+          "query_id": "problem_demand_364",
+          "query": "marketplace advantages",
+          "positions": [
+            71
+          ]
+        },
+        {
+          "query_id": "problem_demand_388",
+          "query": "develop marketplace",
+          "positions": [
+            77
+          ]
+        },
+        {
+          "query_id": "problem_demand_428",
+          "query": "marketplace infrastructure",
+          "positions": [
+            99
+          ]
+        },
+        {
+          "query_id": "problem_demand_492",
+          "query": "marketplace developers",
+          "positions": [
+            33
           ]
         }
       ]

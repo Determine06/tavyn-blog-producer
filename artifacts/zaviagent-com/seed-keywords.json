@@ -1,154 +1,312 @@
 {
-  "schema_version": "1.0.0",
-  "run_id": "842db52e-39b5-4fed-8114-251ff9378bf5",
-  "generated_at": "2026-07-18T01:04:47.856Z",
+  "schema_version": "2.1.0",
+  "run_id": "42ea52dd-2cb8-415c-bd9f-38541b29c214",
+  "generated_at": "2026-08-15T00:47:15.995Z",
   "source_artifacts": [
     "company-profile.json"
   ],
   "status": "complete",
   "warnings": [],
-  "website_url": "https://www.zaviagent.com/",
+  "website_url": "https://zaviagent.com/",
   "source_profile": {
     "company_name": "Zavi",
-    "product_category": "marketplace operations automation platform",
-    "primary_icp": "marketplace founders and operators"
+    "product_category": "AI marketplace operations platform",
+    "primary_icp": "Marketplace operators and founders"
   },
-  "demand_territories": [
+  "demand_groups": [
     {
-      "territory_id": "problem_demand",
-      "territory_name": "Marketplace operations and growth",
-      "territory_summary": "Search demand around the core job of building, growing, and running a marketplace through seller onboarding, growth, support, and trust and safety work.",
-      "market_topic": "marketplace operations and growth",
-      "primary_icp": "marketplace founders and operators",
-      "product_connection": "Zavi is positioned as an AI super agent for marketplaces that handles marketplace operations across the full lifecycle, making marketplace operations and growth the central problem territory.",
+      "group_id": "core_problem_demand",
+      "group_name": "Marketplace operations pain points",
+      "group_summary": "Search demand around the day-to-day pains and workflows marketplace teams need to handle manually, especially supply onboarding, fraud, disputes, growth bottlenecks, and ongoing operator workload.",
+      "market_topic": "Marketplace operations workflows and failure states",
+      "primary_icp": "Marketplace operators and founders",
+      "product_connection": "Zavi directly claims to handle marketplace onboarding, fraud and disputes, growth experiments, and operator updates inside existing tools.",
       "evidence": [
         {
-          "source_field": "company_identity.one_sentence_description.value",
-          "evidence_text": "AI super agent for marketplaces that builds, grows, and runs marketplace operations.",
-          "reasoning": "Directly supports a marketplace operations and growth problem territory."
+          "source_field": "buyer_pains[0].pain",
+          "evidence_text": "Marketplace teams have too little bandwidth to run many operational workflows manually.",
+          "reasoning": "Supports demand around overloaded marketplace ops and manual workflow handling."
         },
         {
-          "source_field": "icp_and_audience.primary_icp.value",
-          "evidence_text": "marketplace founders and operators",
-          "reasoning": "Confirms the primary audience for marketplace operations search intent."
+          "source_field": "buyer_pains[1].pain",
+          "evidence_text": "Marketplace sellers and supply are hard to onboard and keep active.",
+          "reasoning": "Supports seed territory around supply onboarding and activation pain."
         },
         {
           "source_field": "buyer_pains[2].pain",
-          "evidence_text": "Seller supply needs constant recruiting, verification, and activation to avoid empty listings.",
-          "reasoning": "Supports seller onboarding and supply growth as part of the core problem space."
+          "evidence_text": "Fraud, disputes, and escalations need ongoing handling.",
+          "reasoning": "Supports seeds related to trust and safety operations and dispute handling."
+        },
+        {
+          "source_field": "buyer_pains[3].pain",
+          "evidence_text": "Growth work is fragmented across ads, retention, and funnel fixes.",
+          "reasoning": "Supports demand around growth ops bottlenecks and funnel leakage."
         }
       ],
       "seed_keywords": [
         {
-          "seed_id": "pd1",
-          "keyword": "marketplace operations",
-          "seed_role": "core_problem",
-          "selection_reasoning": "Shortest, clearest description of the fundamental marketplace management problem.",
-          "confidence": "high"
-        },
-        {
-          "seed_id": "pd2",
-          "keyword": "marketplace growth strategy",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Captures the recurring growth work tied to acquiring sellers and improving marketplace performance.",
-          "confidence": "high"
-        },
-        {
-          "seed_id": "pd3",
+          "seed_id": "core_problem_demand_01",
           "keyword": "marketplace seller onboarding",
-          "seed_role": "icp_qualified_problem",
-          "selection_reasoning": "Adds marketplace context to a generic operational task that is central to this ICP.",
+          "seed_role": "core operational workflow",
+          "selection_reasoning": "Directly matches the product’s stated supply onboarding and activation workflow for marketplaces.",
           "confidence": "high"
         },
         {
-          "seed_id": "pd4",
-          "keyword": "marketplace trust and safety",
-          "seed_role": "market_synonym",
-          "selection_reasoning": "A distinct, established synonym for a major marketplace operations area involving fraud and disputes.",
+          "seed_id": "core_problem_demand_02",
+          "keyword": "marketplace supply activation",
+          "seed_role": "activation workflow pain",
+          "selection_reasoning": "Captures the downstream goal of getting new supply live and active, which Zavi explicitly supports.",
           "confidence": "high"
         },
         {
-          "seed_id": "pd5",
-          "keyword": "marketplace management",
-          "seed_role": "market_synonym",
-          "selection_reasoning": "A broad but still market-specific synonym that can surface adjacent marketplace operations demand.",
+          "seed_id": "core_problem_demand_03",
+          "keyword": "marketplace dispute handling",
+          "seed_role": "trust and safety workflow",
+          "selection_reasoning": "Maps to Zavi’s fraud and disputes handling capability and named dispute response work.",
           "confidence": "high"
         },
         {
-          "seed_id": "pd6",
-          "keyword": "marketplace support operations",
-          "seed_role": "process_or_outcome",
-          "selection_reasoning": "Represents the continuous support and escalation work marketplaces need to keep running.",
+          "seed_id": "core_problem_demand_04",
+          "keyword": "marketplace fraud review",
+          "seed_role": "risk and abuse workflow",
+          "selection_reasoning": "Supported by the explicit fraud handling claim and relevant to marketplace trust and safety operations.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "core_problem_demand_05",
+          "keyword": "marketplace growth operations",
+          "seed_role": "growth execution workflow",
+          "selection_reasoning": "Fits the product’s growth experiments, ads, and repeat-business work without over-specifying the tactic.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "core_problem_demand_06",
+          "keyword": "marketplace funnel leaks",
+          "seed_role": "conversion bottleneck pain",
+          "selection_reasoning": "Directly grounded in the product copy about spotting and plugging funnel drop-offs that hurt marketplace growth.",
           "confidence": "high"
         }
       ]
     },
     {
-      "territory_id": "solution_demand",
-      "territory_name": "Marketplace operations software and automation",
-      "territory_summary": "Search demand for software and automation categories that help buyers evaluate tools for marketplace operations, support, trust and safety, and growth workflows.",
-      "market_topic": "marketplace operations software",
-      "primary_icp": "marketplace founders and operators",
-      "product_connection": "Zavi is marketed as a marketplace-specific AI agent that automates operations, so solution-seeking searches should center on software and automation categories for marketplaces.",
+      "group_id": "adjacent_problem_demand",
+      "group_name": "Adjacent marketplace growth and control pains",
+      "group_summary": "Search demand for closely related marketplace operator problems that sit upstream or downstream of core ops, including acquisition efficiency, retention, repeat business, and real-time operational control.",
+      "market_topic": "Marketplace growth, retention, and operator control problems",
+      "primary_icp": "Marketplace operators and founders",
+      "product_connection": "Zavi explicitly handles ads, retention experiments, repeat business, leak detection, and Slack-native updates, so these adjacent problems naturally connect to its core workflows.",
       "evidence": [
         {
-          "source_field": "company_identity.product_category.value",
-          "evidence_text": "marketplace operations automation platform",
-          "reasoning": "Directly supports a software-and-automation solution category."
+          "source_field": "product_capabilities[4].capability",
+          "evidence_text": "Repeat business and retention experiments.",
+          "reasoning": "Supports adjacent demand around retention optimization and repeat purchases."
         },
         {
-          "source_field": "differentiation_and_positioning.positioning_summary.value",
-          "evidence_text": "AI super agent built specifically for marketplaces, replacing many fragmented tools with one autonomous system.",
-          "reasoning": "Supports solution-language around marketplace automation tools and platforms."
+          "source_field": "product_capabilities[5].capability",
+          "evidence_text": "Funnel leak detection and fixes.",
+          "reasoning": "Supports adjacent demand around growth bottlenecks and conversion optimization."
         },
         {
-          "source_field": "product_capabilities[3].capability",
-          "evidence_text": "manages fraud reviews and disputes",
-          "reasoning": "Confirms trust and safety operations as a meaningful solution area within the product category."
+          "source_field": "buyer_pains[4].pain",
+          "evidence_text": "Operators need updates and actions delivered in the tools they already use.",
+          "reasoning": "Supports demand related to workflow visibility and operational control inside existing tools."
+        },
+        {
+          "source_field": "icp_and_audience.secondary_audiences[0].value",
+          "evidence_text": "Marketplace growth teams.",
+          "reasoning": "Supports adjacent growth-oriented search territory beyond pure ops."
         }
       ],
       "seed_keywords": [
         {
-          "seed_id": "sd1",
+          "seed_id": "adjacent_problem_demand_01",
+          "keyword": "marketplace retention",
+          "seed_role": "repeat customer outcome",
+          "selection_reasoning": "A natural adjacent problem because the product explicitly runs retention experiments and wins repeat business.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "adjacent_problem_demand_02",
+          "keyword": "marketplace repeat business",
+          "seed_role": "customer reactivation outcome",
+          "selection_reasoning": "Directly mirrors the product language and connects to ongoing marketplace growth workflows.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "adjacent_problem_demand_03",
+          "keyword": "marketplace acquisition efficiency",
+          "seed_role": "growth efficiency pain",
+          "selection_reasoning": "Fits the ad management and spend-shifting claims without inventing a new capability.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "adjacent_problem_demand_04",
+          "keyword": "marketplace conversion drop-offs",
+          "seed_role": "funnel analysis pain",
+          "selection_reasoning": "Grounded in the explicit claim about spotting funnel drop-offs that bleed growth.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "adjacent_problem_demand_05",
+          "keyword": "marketplace operator updates",
+          "seed_role": "workflow visibility pain",
+          "selection_reasoning": "Matches the promise of daily operator updates and actions in existing tools.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "adjacent_problem_demand_06",
+          "keyword": "marketplace growth bottlenecks",
+          "seed_role": "general growth friction",
+          "selection_reasoning": "An established operator term that naturally extends from leak detection, retention, and paid growth work.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "group_id": "core_solution_demand",
+      "group_name": "Marketplace ops platform categories",
+      "group_summary": "Search demand for the established solution categories Zavi directly belongs to, centered on AI automation for marketplace operations, trust and safety, and growth execution.",
+      "market_topic": "AI marketplace operations software categories",
+      "primary_icp": "Marketplace operators and founders",
+      "product_connection": "Zavi is explicitly positioned as an AI super agent and marketplace operations platform that builds, grows, and runs marketplaces end to end.",
+      "evidence": [
+        {
+          "source_field": "company_identity.product_category.value",
+          "evidence_text": "AI marketplace operations platform.",
+          "reasoning": "Directly supports the main solution category seed territory."
+        },
+        {
+          "source_field": "differentiation_and_positioning.positioning_summary.value",
+          "evidence_text": "Zavi positions itself as a Slack-native AI super agent for marketplaces that can build, grow, and run the whole marketplace lifecycle.",
+          "reasoning": "Supports solution-category language around AI marketplace automation and operations."
+        },
+        {
+          "source_field": "differentiation_and_positioning.category_point_of_view.value",
+          "evidence_text": "Marketplace ops should be handled by an always-on AI team that acts inside existing tools and covers build, growth, and operations end to end.",
+          "reasoning": "Supports category terms around marketplace operations software and automation."
+        },
+        {
+          "source_field": "product_capabilities[6].capability",
+          "evidence_text": "Slack-native agent interactions.",
+          "reasoning": "Supports solution language around Slack-native workflow software."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "core_solution_demand_01",
           "keyword": "marketplace operations software",
-          "seed_role": "core_solution_category",
-          "selection_reasoning": "Most direct established solution-category phrase for the product.",
+          "seed_role": "core category term",
+          "selection_reasoning": "Directly aligned with the company’s stated product category and core positioning.",
           "confidence": "high"
         },
         {
-          "seed_id": "sd2",
-          "keyword": "marketplace management software",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "A common commercial category buyers could use when evaluating marketplace tools.",
+          "seed_id": "core_solution_demand_02",
+          "keyword": "ai marketplace automation",
+          "seed_role": "automation category term",
+          "selection_reasoning": "Captures the AI-first approach to running marketplace workflows end to end.",
           "confidence": "high"
         },
         {
-          "seed_id": "sd3",
-          "keyword": "marketplace automation",
-          "seed_role": "solution_approach",
-          "selection_reasoning": "Captures the central automation approach without overfitting to one workflow.",
+          "seed_id": "core_solution_demand_03",
+          "keyword": "marketplace ops platform",
+          "seed_role": "platform category term",
+          "selection_reasoning": "A concise established category phrase that matches the product’s marketplace operations focus.",
           "confidence": "high"
         },
         {
-          "seed_id": "sd4",
-          "keyword": "ai for marketplace operations",
-          "seed_role": "solution_approach",
-          "selection_reasoning": "Reflects the product’s AI-native positioning in a market-specific way.",
+          "seed_id": "core_solution_demand_04",
+          "keyword": "trust and safety automation",
+          "seed_role": "risk ops category term",
+          "selection_reasoning": "Supported by the explicit fraud and dispute workflows and relevant to marketplace operations buyers.",
           "confidence": "high"
         },
         {
-          "seed_id": "sd5",
-          "keyword": "marketplace support automation",
-          "seed_role": "commercial_category",
-          "selection_reasoning": "A distinct solution angle aligned with continuous support and escalation workflows.",
+          "seed_id": "core_solution_demand_05",
+          "keyword": "marketplace growth automation",
+          "seed_role": "growth workflow category",
+          "selection_reasoning": "Directly reflects the product’s ads, retention, and funnel-fix capabilities for marketplaces.",
           "confidence": "high"
         },
         {
-          "seed_id": "sd6",
-          "keyword": "marketplace trust and safety software",
-          "seed_role": "icp_qualified_solution",
-          "selection_reasoning": "Qualifies the solution category for a key marketplace operator workflow supported by the profile.",
+          "seed_id": "core_solution_demand_06",
+          "keyword": "slack workflow automation",
+          "seed_role": "interface category term",
+          "selection_reasoning": "Supported by the Slack-native positioning and useful as an established solution category adjacent to the core platform.",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "group_id": "adjacent_solution_demand",
+      "group_name": "Adjacent point-solution categories",
+      "group_summary": "Search demand for established point solutions that Zavi can credibly replace, consolidate, or substantially perform across marketplace teams, especially where it can absorb multiple specialist tools or workflows.",
+      "market_topic": "Consolidated point solutions for marketplace teams",
+      "primary_icp": "Marketplace operators and founders",
+      "product_connection": "Zavi claims to replace slices of work across growth, support, disputes, scheduling, drafting, and tool execution, making these adjacent solution categories natural comparison points.",
+      "evidence": [
+        {
+          "source_field": "differentiation_and_positioning.positioning_notes.value",
+          "evidence_text": "The site repeatedly contrasts Zavi with narrower point solutions by saying most tools do one slice, while Zavi covers the whole arc.",
+          "reasoning": "Supports adjacent solution categories that Zavi can consolidate or replace."
+        },
+        {
+          "source_field": "product_capabilities[10].capability",
+          "evidence_text": "Drafting updates, tickets, and docs.",
+          "reasoning": "Supports adjacent solutions in ticketing and drafting workflows."
+        },
+        {
+          "source_field": "product_capabilities[9].capability",
+          "evidence_text": "Scheduled tasks and proactive check-ins.",
+          "reasoning": "Supports adjacent solutions in scheduling and recurring workflow automation."
+        },
+        {
+          "source_field": "product_capabilities[8].capability",
+          "evidence_text": "Tool execution and integrations.",
+          "reasoning": "Supports replacing point tools that coordinate work across connected systems."
+        }
+      ],
+      "seed_keywords": [
+        {
+          "seed_id": "adjacent_solution_demand_01",
+          "keyword": "customer support automation",
+          "seed_role": "support point solution category",
+          "selection_reasoning": "Credible adjacent category because Zavi explicitly includes support workflows and drafts updates/tickets where supported.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "adjacent_solution_demand_02",
+          "keyword": "help desk automation",
+          "seed_role": "support workflow replacement",
+          "selection_reasoning": "A natural adjacent point-solution category for the support and ticketing work Zavi can assist with.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "adjacent_solution_demand_03",
+          "keyword": "fraud detection software",
+          "seed_role": "risk point solution category",
+          "selection_reasoning": "Adjacent because Zavi handles fraud workflows and dispute response, though it is broader than a dedicated fraud product.",
+          "confidence": "medium"
+        },
+        {
+          "seed_id": "adjacent_solution_demand_04",
+          "keyword": "dispute management software",
+          "seed_role": "trust and safety point solution",
+          "selection_reasoning": "Directly connected to Zavi’s dispute response workflow and suitable as a replacement/consolidation category.",
           "confidence": "high"
+        },
+        {
+          "seed_id": "adjacent_solution_demand_05",
+          "keyword": "marketing operations automation",
+          "seed_role": "growth ops point solution",
+          "selection_reasoning": "Fits Zavi’s ads, retention experiments, and growth operations, while remaining a recognized solution category.",
+          "confidence": "high"
+        },
+        {
+          "seed_id": "adjacent_solution_demand_06",
+          "keyword": "workflow orchestration software",
+          "seed_role": "cross-tool coordination category",
+          "selection_reasoning": "Supported by tool execution, scheduled tasks, and multi-tool coordination across workspace systems.",
+          "confidence": "medium"
         }
       ]
     }
@@ -156,12 +314,15 @@
   "generation_quality": {
     "overall_confidence": "high",
     "missing_information": [
-      "The product is described with strong marketplace-specific positioning, but the exact boundaries between autonomous execution and human approval are not fully detailed."
+      "The profile does not provide named customer segments beyond marketplace operators and founders, so some adjacent seeds use broader marketplace language.",
+      "The profile does not specify a strict product subcategory beyond marketplace operations and AI super agent positioning, so a few solution seeds are broader established categories.",
+      "Exact packaging and plan limits are unclear, but this does not materially affect seed generation."
     ],
     "potential_risks": [
-      "The company uses broad AI agent language, so solution seeds were kept anchored to marketplace operations to avoid drifting into generic AI software.",
-      "Marketplace operations spans several related workflows; seeds were diversified across growth, onboarding, support, and trust and safety to preserve market coverage without inventing new categories."
+      "A few adjacent solution seeds are broader than the core category and may return mixed keyword ideas outside marketplaces, though they remain materially connected to the product.",
+      "Some terminology such as marketing operations automation and workflow orchestration software can be interpreted broadly; however, the profile supports these as adjacent solution territories.",
+      "The crawl includes illustrative workflow examples; seeds were limited to capabilities explicitly stated in the profile rather than inferred features."
     ],
-    "notes": "The profile provides clear evidence for a single coherent market: marketplace founders and operators seeking help with operations, growth, support, and trust and safety. Seed language was kept conservative and marketplace-specific so each seed can stand alone for external keyword discovery."
+    "notes": "All seeds were derived from company-profile evidence and kept independent, concise, and market-language oriented. Core groups are tightly aligned to explicit marketplace ops workflows, while adjacent groups extend only to natural upstream/downstream problems and credible solution categories."
   }
 }

@@ -213,27 +213,157 @@ Use `undetermined` only when the supplied SERP evidence is insufficient and no r
 
 Do not recommend an app-store listing, community discussion, or video as the company’s primary owned page. Translate that evidence into the closest suitable owned page format.
 
-# Recommended Title
+# SEO-Ready Recommended Title
 
-Create one original `recommended_title`.
+Create one original `recommended_title` for each recommendation.
+
+Treat `recommended_title` as the proposed primary page title and SEO title. It must accurately describe the page the company would need to publish to satisfy the demonstrated search intent.
+
+The title’s primary job is to communicate a clear and relevant search promise. Do not force the company’s product pitch or differentiated positioning into the title when that information belongs more naturally in `content_angle` or `product_connection`.
+
+## Title Evidence Priority
+
+Use evidence in this order:
+
+1. the dominant search intent
+2. the dominant ranking-page type and format
+3. the recurring promise or angle visible in ranking titles and snippets
+4. the specific search task the page must satisfy
+5. a company-specific angle, only when it improves relevance for the searcher
+6. the natural wording of the primary query
+
+Do not prioritize exact keyword placement over clarity or intent alignment.
+
+## Title Generation Procedure
+
+For each recommendation:
+
+1. State internally what the searcher expects to receive from the page.
+2. Determine the title structure best suited to the recommended page type.
+3. Silently draft at least three materially different candidate titles.
+4. Compare the candidates for intent alignment, clarity, specificity, natural keyword targeting, credibility and concision.
+5. Return only the strongest title.
+
+Do not output the discarded title candidates or internal evaluation.
+
+## Query Usage
+
+The title must clearly target the primary query, but it does not always need to repeat the exact query verbatim.
+
+The exact-copy requirements in the Query Integrity Rule apply only to the output `query` field. They do not require the `recommended_title` to begin with or exactly reproduce the query.
+
+Use the exact query when it reads naturally. Otherwise, use a close grammatical variation that preserves the same meaning and search intent.
+
+Do not:
+
+* stuff the query into the title
+* repeat synonymous keyword variations
+* automatically place the query at the beginning
+* automatically follow the query with a colon
+* rewrite the query into a materially different topic
+* use the title to disguise a mismatch between the SERP and the company
+
+## Title Structure
+
+Select the structure that best matches the demonstrated search intent and page type.
+
+Possible structures include:
+
+* `How to [achieve outcome]`
+* `[Number] [solutions or examples] for [audience or use case]`
+* `[Topic] for [audience]: [specific promise]`
+* `[Option A] vs. [Option B]: [decision the reader needs to make]`
+* `How [audience] Can [achieve outcome]`
+* `Choosing the Right [solution category]`
+* `What Is [topic] and How Does It Work?`
+* `[Specific outcome] Without [important constraint]`
+* a concise descriptive product or category-page title
+
+These are options, not mandatory templates. Do not force a structure that the SERP does not support.
+
+Question titles do not automatically outperform descriptive titles. Use a question only when it is the clearest expression of the searcher’s task.
+
+Use numbers only when the recommended page will genuinely contain that number of items.
+
+Use a year only when freshness is materially important in the SERP and the page will be maintained accordingly.
+
+## Title Quality Requirements
 
 The title must:
 
-* satisfy the demonstrated search intent
-* include the primary query naturally when grammatically appropriate
-* clearly communicate the page’s purpose
+* satisfy the dominant search intent
 * fit the recommended page type
-* reflect the company’s ICP or differentiated angle when natural
-* avoid copying any supplied ranking title
-* avoid unsupported superlatives
-* avoid fake statistics
-* avoid unsupported dates
-* avoid clickbait
-* avoid medical, financial, legal, or performance guarantees
+* make the page’s specific benefit or deliverable clear
+* be understandable without seeing the query or content angle
+* accurately represent content the company can credibly publish
+* use natural human language
+* be meaningfully distinct from the supplied ranking titles
+* avoid unsupported claims, guarantees and superlatives
+* avoid vague promises such as “everything you need to know”
+* avoid clickbait and exaggerated urgency
+* avoid unnecessary brand naming
+* avoid repeated or boilerplate syntax
 
-Aim for a concise search title.
+Aim for approximately 40–65 characters when the topic can be expressed clearly in that space.
 
-Do not sacrifice clarity to satisfy an exact character count.
+This is a soft readability target, not a hard requirement. A slightly longer or shorter title is acceptable when it communicates the search promise more accurately.
+
+Do not remove necessary context merely to meet a character target.
+
+## Differentiation Rule
+
+Differentiate through a useful promise, audience, method, decision framework, artifact or outcome supported by the company profile.
+
+Good differentiation answers a real searcher question such as:
+
+* Who is this specifically for?
+* What practical result will the page help them achieve?
+* What decision will it help them make?
+* What workflow, framework or evidence will make it more useful?
+* What does the current SERP leave unclear?
+
+Do not differentiate merely by appending the company’s product category or ICP to the query.
+
+The company’s product connection should generally remain in `content_angle` and `product_connection` unless it is directly relevant to the searcher’s click decision.
+
+## SERP-Mismatch Rule
+
+When the dominant SERP interpretation conflicts with the company’s desired interpretation, do not create a title that quietly changes the query’s meaning.
+
+Follow the dominant SERP interpretation, lower confidence, and include a warning.
+
+If the company cannot credibly publish a page satisfying that intent, use `undetermined` as the recommended page type rather than manufacturing an operator, product or commercial angle through the title.
+
+## Cross-Recommendation Title Review
+
+After drafting all three titles, review them together.
+
+Confirm that:
+
+* each title uses the structure best suited to its individual intent
+* the set does not look mechanically templated
+* the exact-query-plus-colon structure is not used more than once
+* the same opening construction is not repeated unnecessarily
+* all three titles are independently clear and specific
+* stylistic variation does not come at the expense of search-intent alignment
+
+If more than one title begins with its exact primary query followed by a colon, rewrite the weaker title or titles using a more natural structure.
+
+# Additional Final Validation Checklist
+
+Before returning the structured output, verify:
+
+* the exact-copy query rule was not incorrectly applied to `recommended_title`
+* every title states a recognizable search promise
+* every title matches its recommended page type
+* no title reinterprets a SERP mismatch to fit the company
+* no title forces the product connection into the headline
+* no title copies or lightly paraphrases a ranking title
+* no unsupported number, year, claim or superlative appears
+* the three titles do not share the same unnecessary syntax
+* no more than one title uses the exact-query-plus-colon structure
+* title variety follows search intent rather than arbitrary stylistic variation
+
 
 # Content Angle
 

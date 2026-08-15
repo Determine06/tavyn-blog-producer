@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0.0",
-  "run_id": "6786ae65-a952-4edf-a82d-349f50e76aa0",
-  "generated_at": "2026-08-14T19:13:18.191Z",
+  "schema_version": "1.1.0",
+  "run_id": "f8bcfcf6-fe14-4c7f-9843-b21c9bf8bc89",
+  "generated_at": "2026-08-15T01:47:18.066Z",
   "source_artifacts": [
     "company-profile.json",
     "query-recommendations.json",
@@ -9,90 +9,122 @@
   ],
   "status": "complete",
   "warnings": [
-    "problem_demand had 2 confirmed queries; selected all 2 instead of 10.",
-    "solution_demand had no confirmed queries; selected 0 instead of 10.",
-    "solution_demand produced 0 recommendations instead of target 2: No solution-demand queries were supplied, so zero selections are appropriate in this territory.",
-    "problem_demand_030 returned 6 organic results instead of 10.",
-    "problem_demand_052 returned 9 organic results instead of 10.",
-    "problem_demand_030: Google is interpreting this query as Facebook Marketplace listing management, so a general marketplace-ops page may need a sharper marketplace-specific framing to compete.",
-    "problem_demand_052: The SERP is split between consumer alert setup and third-party alert tools, so an operator-focused page may not fully match the dominant Facebook Marketplace interpretation."
+    "solution_demand had 6 confirmed queries; selected all 6 instead of 10.",
+    "solution_demand_070 returned 9 organic results instead of 10.",
+    "solution_demand_026 returned 9 organic results instead of 10.",
+    "problem_demand_281: The SERP includes a local business/entity result at the top, so the page should align with the guide intent without ignoring that query ambiguity.",
+    "solution_demand_070: The SERP is broad and mostly generic, so the page should lead with general report automation use cases before narrowing to marketplace operations.",
+    "solution_demand_070: A pure product page would miss the comparison-heavy intent that Google is currently rewarding.",
+    "solution_demand_026: The SERP is dominated by marketplace software vendors and comparison content, so Zavi should be positioned as an operations layer rather than a generic marketplace software substitute."
   ],
-  "website_url": "https://www.zaviagent.com/",
+  "website_url": "https://zaviagent.com/",
   "source_profile": {
     "company_name": "Zavi",
-    "product_category": "marketplace operations automation platform",
-    "primary_icp": "marketplace founders and operators"
+    "product_category": "AI marketplace operations platform",
+    "primary_icp": "Marketplace operators and founders"
   },
   "content_recommendations": [
     {
       "recommendation_id": "problem_demand_recommendation_01",
       "recommendation_rank": 1,
-      "query_id": "problem_demand_030",
+      "query_id": "problem_demand_281",
       "territory": "problem_demand",
-      "primary_query": "marketplace listings",
+      "primary_query": "create marketplace",
       "serp_analysis": {
         "dominant_intent": "informational",
         "dominant_page_type": "guide",
-        "serp_consistency": "high",
-        "summary": "Searchers appear to want help creating and managing Facebook Marketplace listings, and Google is rewarding Facebook help pages and step-by-step guides with occasional video support.",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to want guidance on building a marketplace from scratch, and Google is rewarding step-by-step educational guides even though a local entity result also appears for the same wording.",
         "recurring_concepts": [
-          "Facebook Marketplace",
-          "create and manage listings",
-          "buy and sell items",
-          "step-by-step help"
+          "step-by-step build process",
+          "from scratch",
+          "validate the idea",
+          "choose marketplace software",
+          "attract sellers"
         ]
       },
       "editorial_recommendation": {
-        "recommended_title": "Marketplace Listings: How to Create and Manage Them for Healthy Supply",
+        "recommended_title": "How to Create a Marketplace From Scratch",
         "recommended_page_type": "guide",
-        "content_angle": "Explain how marketplace listings affect supply quality, activation, and catalog upkeep, with practical guidance for operators who need a durable listings workflow rather than consumer selling tips.",
-        "product_connection": "Zavi can appear as the system that helps recruit, verify, and activate supply so marketplace listings do not run dry.",
+        "content_angle": "Write a practical build guide for marketplace founders that focuses on the earliest decisions, launch steps, and operator workflows, which matches Zavi's build-stage value and speaks directly to its primary ICP.",
+        "product_connection": "Zavi can appear as the AI super agent that helps stand up a marketplace from nothing and then supports the ongoing operational work that follows launch.",
         "confidence": "medium",
         "warnings": [
-          "Google is interpreting this query as Facebook Marketplace listing management, so a general marketplace-ops page may need a sharper marketplace-specific framing to compete."
+          "The SERP includes a local business/entity result at the top, so the page should align with the guide intent without ignoring that query ambiguity."
         ]
       }
     },
     {
-      "recommendation_id": "problem_demand_recommendation_02",
-      "recommendation_rank": 2,
-      "query_id": "problem_demand_052",
-      "territory": "problem_demand",
-      "primary_query": "marketplace alerts",
+      "recommendation_id": "solution_demand_recommendation_01",
+      "recommendation_rank": 1,
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "primary_query": "report automation",
       "serp_analysis": {
-        "dominant_intent": "mixed",
-        "dominant_page_type": "mixed",
-        "serp_consistency": "low",
-        "summary": "Searchers appear to want either faster Facebook Marketplace alert setup or dedicated alert tools, and Google is splitting results between how-to/help content and alert apps.",
+        "dominant_intent": "commercial",
+        "dominant_page_type": "listicle",
+        "serp_consistency": "medium",
+        "summary": "Searchers seem to be evaluating report automation tools and reporting automation workflows, and Google is mainly rewarding tool roundups alongside a few explainer and product pages.",
         "recurring_concepts": [
-          "Facebook Marketplace alerts",
-          "notifications",
-          "instant or fast alerts",
-          "saved searches",
-          "apps and tools"
+          "automated reporting tools",
+          "reporting automation definitions",
+          "scheduled delivery",
+          "tool comparison",
+          "time savings"
         ]
       },
       "editorial_recommendation": {
-        "recommended_title": "Marketplace Alerts: What to Track and How Operators Should Set Them Up",
-        "recommended_page_type": "guide",
-        "content_angle": "Cover the alert types marketplace operators need, when each should trigger, and how alerts fit into ongoing monitoring and escalation workflows, with an operator-first angle instead of consumer deal hunting.",
-        "product_connection": "Zavi can fit naturally as the always-on assistant that runs scheduled checks, drafts updates, and routes operator escalations inside Slack.",
+        "recommended_title": "Report Automation Tools for Operations Teams",
+        "recommended_page_type": "listicle",
+        "content_angle": "Make the page a tool-focused roundup and selection guide for recurring reports, audits, and proactive check-ins, with a clear lens for operations teams that need automation inside existing workflows.",
+        "product_connection": "Zavi can be presented as the Slack-native agent that runs scheduled reports, audits, and check-ins across connected tools without forcing the reader into a generic BI workflow.",
+        "confidence": "medium",
+        "warnings": [
+          "The SERP is broad and mostly generic, so the page should lead with general report automation use cases before narrowing to marketplace operations.",
+          "A pure product page would miss the comparison-heavy intent that Google is currently rewarding."
+        ]
+      }
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "recommendation_rank": 2,
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "primary_query": "service marketplace software",
+      "serp_analysis": {
+        "dominant_intent": "commercial",
+        "dominant_page_type": "category_page",
+        "serp_consistency": "medium",
+        "summary": "Searchers appear to be comparing service marketplace software options, and Google is rewarding category pages, platform homepages, and comparison guides that explain features and selection criteria.",
+        "recurring_concepts": [
+          "service marketplace platforms",
+          "features and pricing",
+          "comparison and selection",
+          "guide to building a marketplace",
+          "marketplace software"
+        ]
+      },
+      "editorial_recommendation": {
+        "recommended_title": "Service Marketplace Software: Features, Tools, and Use Cases",
+        "recommended_page_type": "category_guide",
+        "content_angle": "Frame the page as a category guide for service marketplaces that explains what the software needs to handle, especially onboarding, disputes, and growth workflows that matter to marketplace operators and founders.",
+        "product_connection": "Zavi can appear as the AI marketplace operations platform that helps service-marketplace teams automate recurring workflows inside their existing stack.",
         "confidence": "low",
         "warnings": [
-          "The SERP is split between consumer alert setup and third-party alert tools, so an operator-focused page may not fully match the dominant Facebook Marketplace interpretation."
+          "The SERP is dominated by marketplace software vendors and comparison content, so Zavi should be positioned as an operations layer rather than a generic marketplace software substitute."
         ]
       }
     }
   ],
   "summary": {
-    "recommendations_received": 2,
-    "recommendations_analyzed": 2,
-    "problem_demand_count": 2,
-    "solution_demand_count": 0,
+    "recommendations_received": 3,
+    "recommendations_analyzed": 3,
+    "problem_demand_count": 1,
+    "solution_demand_count": 2,
     "high_confidence_count": 0,
-    "medium_confidence_count": 1,
+    "medium_confidence_count": 2,
     "low_confidence_count": 1,
-    "mixed_intent_count": 1,
+    "mixed_intent_count": 0,
     "insufficient_serp_count": 0
   }
 }
