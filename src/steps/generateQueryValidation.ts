@@ -23,7 +23,10 @@ type QueryValidationInputQuery = {
   query_id: string;
   territory: "problem_demand" | "solution_demand";
   query: string;
+  discovery_group: KeywordMetrics["query_sets"][number]["queries"][number]["discovery_group"];
+  source_seed_keywords: string[];
   core_keyword: string | null;
+  search_intent: KeywordMetrics["query_sets"][number]["queries"][number]["metrics"]["search_intent"];
 };
 type QueryValidationTerritory = QueryValidationInputQuery["territory"];
 
@@ -49,6 +52,7 @@ type CanonicalMetricQuery = {
   territory: "problem_demand" | "solution_demand";
   query: string;
   source_seed_keywords: string[];
+  discovery_group: QueryValidationInputQuery["discovery_group"];
   discovery_rank: number;
   core_keyword: string | null;
   detected_language: string | null;
@@ -132,6 +136,12 @@ export async function generateQueryValidation(
     (validation) => validation.verdict === "valid",
   ).length;
   const invalidCount = queryValidation.query_validations.length - validCount;
+  const directCount = queryValidation.query_validations.filter(
+    (validation) => validation.relevance_scope === "direct",
+  ).length;
+  const adjacentCount = queryValidation.query_validations.filter(
+    (validation) => validation.relevance_scope === "adjacent",
+  ).length;
 
   logSuccess("Query validation completed");
   logInfo(
@@ -139,6 +149,8 @@ export async function generateQueryValidation(
   );
   logInfo(`Valid query count: ${validCount}`);
   logInfo(`Invalid query count: ${invalidCount}`);
+  logInfo(`Direct query count: ${directCount}`);
+  logInfo(`Adjacent query count: ${adjacentCount}`);
 
   return queryValidation;
 }
@@ -239,6 +251,10 @@ function buildBatchRuntimeInput(
         query_id: query.query_id,
         territory: query.territory,
         query: query.query,
+        discovery_group: query.discovery_group,
+        source_seed_keywords: query.source_seed_keywords,
+        core_keyword: query.core_keyword,
+        search_intent: query.search_intent,
       })),
       null,
       2,
@@ -256,6 +272,7 @@ function deduplicateInputQueries(queries: QueryValidationInputQuery[]): {
       territory: QueryValidationTerritory;
       query: string;
       verdict: "invalid";
+      relevance_scope: "irrelevant";
       reasoning: string;
     }
   >;
@@ -272,6 +289,7 @@ function deduplicateInputQueries(queries: QueryValidationInputQuery[]): {
       territory: QueryValidationTerritory;
       query: string;
       verdict: "invalid";
+      relevance_scope: "irrelevant";
       reasoning: string;
     }
   >();
@@ -301,6 +319,7 @@ function deduplicateInputQueries(queries: QueryValidationInputQuery[]): {
       territory: query.territory,
       query: query.query,
       verdict: "invalid",
+      relevance_scope: "irrelevant",
       reasoning: `This query is a normalized duplicate of "${representative.query}" and is excluded to prevent redundant SEO opportunities.`,
     });
   }
@@ -423,6 +442,7 @@ function reconstructQueryValidationArtifact(input: {
       territory: QueryValidationTerritory;
       query: string;
       verdict: "invalid";
+      relevance_scope: "irrelevant";
       reasoning: string;
     }
   >;
@@ -475,17 +495,19 @@ function reconstructQueryValidationArtifact(input: {
       territory: inputQuery.territory,
       query: inputQuery.query,
       verdict: decision.verdict,
+      relevance_scope: decision.relevance_scope,
       reasoning: decision.reasoning,
     };
   });
+  const warnings = buildBelowTargetWarnings(reconstructedValidations);
 
   return QueryValidationSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     run_id: input.runId,
     generated_at: input.generatedAt,
     source_artifacts: ["company-profile.json", "keyword_metrics.json"],
     status: "complete",
-    warnings: [],
+    warnings,
     website_url: input.companyProfile.website_url,
     source_profile: {
       company_name: input.companyProfile.company_identity.company_name.value,
@@ -495,6 +517,41 @@ function reconstructQueryValidationArtifact(input: {
     },
     query_validations: reconstructedValidations,
   });
+}
+
+function buildBelowTargetWarnings(
+  validations: Array<{
+    territory: QueryValidationTerritory;
+    relevance_scope: "direct" | "adjacent" | "irrelevant";
+  }>,
+): string[] {
+  const directQueriesAccepted = validations.filter(
+    (validation) => validation.relevance_scope === "direct",
+  ).length;
+  const adjacentQueriesAccepted = validations.filter(
+    (validation) => validation.relevance_scope === "adjacent",
+  ).length;
+  const validQueryCount = directQueriesAccepted + adjacentQueriesAccepted;
+
+  if (validQueryCount >= 50) {
+    return [];
+  }
+
+  const irrelevantQueriesRejected = validations.length - validQueryCount;
+  const problemDemandCount = validations.filter(
+    (validation) =>
+      validation.territory === "problem_demand" &&
+      validation.relevance_scope !== "irrelevant",
+  ).length;
+  const solutionDemandCount = validations.filter(
+    (validation) =>
+      validation.territory === "solution_demand" &&
+      validation.relevance_scope !== "irrelevant",
+  ).length;
+
+  return [
+    `below_target_valid_query_count: total_candidates_evaluated=${validations.length}; direct_queries_accepted=${directQueriesAccepted}; adjacent_queries_accepted=${adjacentQueriesAccepted}; irrelevant_queries_rejected=${irrelevantQueriesRejected}; problem_demand_count=${problemDemandCount}; solution_demand_count=${solutionDemandCount}.`,
+  ];
 }
 
 export function generateConfirmedQueries(
@@ -588,6 +645,8 @@ export function generateConfirmedQueries(
           territory: validation.territory,
           query: validation.query,
           validation_reasoning: validation.reasoning,
+          relevance_scope: validation.relevance_scope,
+          discovery_group: metricQuery.discovery_group,
           source_seed_keywords: metricQuery.source_seed_keywords,
           discovery_rank: metricQuery.discovery_rank,
           core_keyword: metricQuery.core_keyword,
@@ -607,8 +666,14 @@ export function generateConfirmedQueries(
   const totalQueriesConfirmed = confirmedQueries.length;
   const totalQueriesRejected =
     totalQueriesEvaluated - totalQueriesConfirmed;
+  const directQueriesConfirmed = confirmedQueries.filter(
+    (query) => query.relevance_scope === "direct",
+  ).length;
+  const adjacentQueriesConfirmed = confirmedQueries.filter(
+    (query) => query.relevance_scope === "adjacent",
+  ).length;
   const confirmedQueryArtifact = ConfirmedQueriesSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     run_id: validatedQueryValidation.run_id,
     generated_at: validatedQueryValidation.generated_at,
     source_artifacts: ["query-validations.json", "keyword_metrics.json"],
@@ -626,6 +691,9 @@ export function generateConfirmedQueries(
       total_queries_rejected: totalQueriesRejected,
       problem_queries_confirmed: problemQueriesConfirmed,
       solution_queries_confirmed: solutionQueriesConfirmed,
+      direct_queries_confirmed: directQueriesConfirmed,
+      adjacent_queries_confirmed: adjacentQueriesConfirmed,
+      irrelevant_queries_rejected: totalQueriesRejected,
     },
   });
 
@@ -645,6 +713,8 @@ export function generateConfirmedQueries(
   logInfo(
     `Solution-demand confirmed: ${confirmedQueryArtifact.summary.solution_queries_confirmed}`,
   );
+  logInfo(`Direct confirmed: ${directQueriesConfirmed}`);
+  logInfo(`Adjacent confirmed: ${adjacentQueriesConfirmed}`);
 
   return confirmedQueryArtifact;
 }
@@ -659,7 +729,10 @@ function buildInputQueries(
       query_id: createStableQueryId(territory, index),
       territory,
       query: query.query,
+      discovery_group: query.discovery_group,
+      source_seed_keywords: query.source_seed_keywords,
       core_keyword: query.core_keyword,
+      search_intent: query.metrics.search_intent,
     }));
   });
 }
@@ -674,7 +747,8 @@ function buildCanonicalMetricQueries(
       query_id: createStableQueryId(territory, index),
       territory,
       query: query.query,
-      source_seed_keywords: querySet.seeds_used,
+      source_seed_keywords: query.source_seed_keywords,
+      discovery_group: query.discovery_group,
       discovery_rank: query.discovery_rank,
       core_keyword: query.core_keyword,
       detected_language: query.detected_language,

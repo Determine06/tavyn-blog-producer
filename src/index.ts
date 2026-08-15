@@ -248,24 +248,17 @@ async function main(): Promise<void> {
       },
     });
     const seedKeywords = seedKeywordsResult.data;
-    const problemDemandSeedCount =
-      seedKeywords.demand_territories.find(
-        (territory) => territory.territory_id === "problem_demand",
-      )?.seed_keywords.length ?? 0;
-    const solutionDemandSeedCount =
-      seedKeywords.demand_territories.find(
-        (territory) => territory.territory_id === "solution_demand",
-      )?.seed_keywords.length ?? 0;
-    const totalSeedCount = seedKeywords.demand_territories.reduce(
-      (total, territory) => total + territory.seed_keywords.length,
+    const totalSeedCount = seedKeywords.demand_groups.reduce(
+      (total, group) => total + group.seed_keywords.length,
       0,
     );
 
     logInfo(`Seed keywords cache hit: ${seedKeywordsResult.cacheHit}`);
     logInfo(`Seed keyword step ran: ${seedKeywordsResult.didRun}`);
-    logInfo(`Demand territory count: ${seedKeywords.demand_territories.length}`);
-    logInfo(`Problem-demand seed count: ${problemDemandSeedCount}`);
-    logInfo(`Solution-demand seed count: ${solutionDemandSeedCount}`);
+    logInfo(`Demand group count: ${seedKeywords.demand_groups.length}`);
+    for (const group of seedKeywords.demand_groups) {
+      logInfo(`${group.group_id} seed count: ${group.seed_keywords.length}`);
+    }
     logInfo(`Total seed count: ${totalSeedCount}`);
     logInfo(
       `Seed generation confidence: ${seedKeywords.generation_quality.overall_confidence}`,

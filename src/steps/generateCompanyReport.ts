@@ -50,6 +50,7 @@ type ContentRecommendationItem =
 type QueryMetrics = ConfirmedQuery["metrics"];
 type ValidatedQueries = CompanyReport["validated_queries"];
 type ValidatedQuery = ValidatedQueries["queries"][number];
+type ReportCompetitor = CompetitorLandscape["competitors"][number];
 type SearchIntent =
   | "informational"
   | "navigational"
@@ -110,7 +111,7 @@ export function generateCompanyReport(
     validatedQueries,
   );
   const report = CompanyReportSchema.parse({
-    schema_version: "2.1.0",
+    schema_version: "2.2.0",
     report_id: `report_${runId}`,
     report_slug: `${slugify(companyName)}-seo-analysis`,
     run_id: runId,
@@ -170,6 +171,7 @@ export function generateCompanyReport(
         validatedConfirmedQueries.summary.total_queries_evaluated,
       queries_validated:
         validatedConfirmedQueries.summary.total_queries_confirmed,
+      queries_retained_for_visualization: validatedQueries.summary.total,
       queries_rejected:
         validatedConfirmedQueries.summary.total_queries_evaluated -
         validatedConfirmedQueries.summary.total_queries_confirmed,
@@ -214,7 +216,10 @@ export function generateCompanyReport(
         target_domain_excluded:
           validatedCompetitorLandscape.summary.target_domain_excluded,
       },
-      competitors: validatedCompetitorLandscape.competitors,
+      competitors: filterCompetitorQueryPositions(
+        validatedCompetitorLandscape.competitors,
+        new Set(validatedQueries.queries.map((query) => query.query_id)),
+      ),
     },
     content_plan: contentPlan,
   });
@@ -348,7 +353,7 @@ function buildValidatedQueries(
     );
   }
 
-  const queries = confirmedQueries.confirmed_queries.map((query) => {
+  const allQueries = confirmedQueries.confirmed_queries.map((query) => {
     const scoredQuery = requireMapValue(
       scoredQueriesById,
       query.query_id,
@@ -366,6 +371,8 @@ function buildValidatedQueries(
       query: query.query,
       territory: query.territory,
       validation_reasoning: query.validation_reasoning,
+      relevance_scope: query.relevance_scope,
+      discovery_group: query.discovery_group,
       source_seed_keywords: query.source_seed_keywords,
       discovery_rank: query.discovery_rank,
       core_keyword: query.core_keyword,
@@ -383,6 +390,7 @@ function buildValidatedQueries(
       `Cannot generate company report because authoritative scored query ${extraScoredQueryId} does not map to a validated query.`,
     );
   }
+  const queries = selectVisualizationQueries(allQueries);
   const searchVolumes = queries
     .map((query) => query.metrics.search_volume)
     .filter((value): value is number => value !== null);
@@ -415,6 +423,67 @@ function buildValidatedQueries(
     },
     queries,
   };
+}
+
+export function selectVisualizationQueries(
+  queries: ValidatedQuery[],
+): ValidatedQuery[] {
+  const maximumQueryCount = 100;
+
+  if (queries.length <= maximumQueryCount) {
+    return queries;
+  }
+
+  const rankedQueries = [...queries].sort(
+    (left, right) =>
+      right.opportunity_metrics.opportunity_score -
+        left.opportunity_metrics.opportunity_score ||
+      (right.metrics.search_volume ?? -1) -
+        (left.metrics.search_volume ?? -1) ||
+      left.discovery_rank - right.discovery_rank ||
+      left.query_id.localeCompare(right.query_id),
+  );
+  const selectedQueryIds = new Set<string>();
+  const selectFromBucket = (
+    predicate: (query: ValidatedQuery) => boolean,
+    limit: number,
+  ) => {
+    for (const query of rankedQueries) {
+      if (selectedQueryIds.size >= maximumQueryCount || limit === 0) {
+        break;
+      }
+
+      if (!selectedQueryIds.has(query.query_id) && predicate(query)) {
+        selectedQueryIds.add(query.query_id);
+        limit -= 1;
+      }
+    }
+  };
+
+  selectFromBucket((query) => query.territory === "problem_demand", 60);
+  selectFromBucket(
+    (query) => query.discovery_group === "adjacent_solution_demand",
+    30,
+  );
+  selectFromBucket(
+    (query) => query.discovery_group === "core_solution_demand",
+    10,
+  );
+  selectFromBucket(() => true, maximumQueryCount - selectedQueryIds.size);
+
+  return queries.filter((query) => selectedQueryIds.has(query.query_id));
+}
+
+function filterCompetitorQueryPositions(
+  competitors: ReportCompetitor[],
+  retainedQueryIds: Set<string>,
+): ReportCompetitor[] {
+  return competitors.map((competitor) => ({
+    ...competitor,
+    query_positions: competitor.query_positions.filter((queryPosition) =>
+      retainedQueryIds.has(queryPosition.query_id),
+    ),
+  }));
 }
 
 function buildContentPlan(

@@ -1,13 +1,15 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "run_id": "run_example",
-  "generated_at": "ISO-8601",
+  "generated_at": "2026-08-14T00:00:00.000Z",
   "source_artifacts": [
     "company-profile.json",
     "keyword_metrics.json"
   ],
   "status": "complete",
-  "warnings": [],
+  "warnings": [
+    "below_target_valid_query_count: total_candidates_evaluated=4; direct_queries_accepted=1; adjacent_queries_accepted=1; irrelevant_queries_rejected=2; problem_demand_count=1; solution_demand_count=1."
+  ],
   "website_url": "https://example.com",
   "source_profile": {
     "company_name": "Example Company",
@@ -20,6 +22,7 @@
       "territory": "problem_demand",
       "query": "example problem-demand query",
       "verdict": "valid",
+      "relevance_scope": "direct",
       "reasoning": "The query describes a problem, process, or outcome directly connected to the company’s primary ICP and product."
     },
     {
@@ -27,6 +30,7 @@
       "territory": "problem_demand",
       "query": "unrelated problem-demand query",
       "verdict": "invalid",
+      "relevance_scope": "irrelevant",
       "reasoning": "The query uses similar language but refers to an unrelated market, brand, place, industry, or customer problem."
     },
     {
@@ -34,6 +38,7 @@
       "territory": "solution_demand",
       "query": "example solution-demand query",
       "verdict": "valid",
+      "relevance_scope": "adjacent",
       "reasoning": "The query represents a product category or solution approach the company’s target customer could reasonably evaluate."
     },
     {
@@ -41,6 +46,7 @@
       "territory": "solution_demand",
       "query": "unrelated solution-demand query",
       "verdict": "invalid",
+      "relevance_scope": "irrelevant",
       "reasoning": "The query represents a software category or solution use case that the company does not serve."
     }
   ]

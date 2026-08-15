@@ -1,7 +1,7 @@
 ---
 
 prompt_name: generate-query-validation
-prompt_version: 1.1.1
+prompt_version: 1.2.0
 output_mode: structured_json
 schema_name: QueryValidationBatchSchema
 model: gpt-5.4-mini
@@ -37,6 +37,24 @@ The fact that a company could mention its product somewhere in an article is not
 The product connection must be central and useful to the searcher—not a creative tangent, incidental feature, possible integration, or audience association.
 
 </central_standard>
+
+<relevance_scope>
+
+Classify every query into exactly one relevance scope:
+
+direct: The query expresses a problem, job, outcome, workflow, or solution category the product directly addresses.
+
+adjacent: The query expresses an established upstream or downstream problem, outcome, workflow, or point-solution category that the product materially improves, replaces, consolidates, or performs. The company-profile evidence and the exact query must support a natural connection. Shared audience, shared vocabulary, or topical similarity alone is insufficient.
+
+irrelevant: The query matches only through shared words, uses an ambiguous term in another meaning, targets a materially different audience, has only a hypothetical or weak product connection, or would require an awkward product mention.
+
+Both direct and adjacent relevance require a valid verdict. Irrelevant relevance requires an invalid verdict.
+
+Discovery origin is evidence, not a verdict. Never classify a query as adjacent merely because it came from an adjacent discovery group.
+
+Relevance scope and demand territory are separate dimensions. `direct` or `adjacent` describes the product connection; `problem_demand` or `solution_demand` describes what the searcher wants.
+
+</relevance_scope>
 
 <company_model>
 
@@ -576,7 +594,7 @@ Do not begin by looking for any possible company connection. Establish the query
 
 For close cases, do not automatically prefer valid.
 
-A close case should be valid only when the relevant interpretation is ordinary and the company connection is direct. If the connection requires speculation or reframing, return invalid.
+A close case should be valid only when the relevant interpretation is ordinary and the company connection is direct or materially adjacent with explicit profile evidence. If the connection requires speculation or reframing, return invalid.
 
 </private_decision_process>
 
@@ -678,7 +696,15 @@ territory
 
 query
 
-Use territory only as discovery context.
+discovery_group
+
+source_seed_keywords
+
+core_keyword
+
+search_intent
+
+Use territory and discovery_group only as discovery context. Use source seeds to understand provenance, not to override the query’s ordinary meaning. Use the supplied company-profile evidence, exact query wording, and available intent context for the decision.
 
 Territory must not rescue an unrelated query or invalidate an otherwise relevant query.
 
@@ -695,6 +721,7 @@ Return a strict JSON object with exactly this structure:
     {
       "query_id": "problem_demand_001",
       "verdict": "valid",
+      "relevance_scope": "direct",
       "reasoning": "The query addresses a feedback-collection workflow that the company’s product directly supports."
     }
   ]
@@ -710,6 +737,8 @@ query_id
 
 verdict
 
+relevance_scope
+
 reasoning
 
 verdict must be exactly:
@@ -717,6 +746,16 @@ verdict must be exactly:
 valid
 
 invalid
+
+relevance_scope must be exactly:
+
+direct
+
+adjacent
+
+irrelevant
+
+`direct` and `adjacent` must use verdict `valid`. `irrelevant` must use verdict `invalid`.
 
 reasoning must be one concise, self-contained sentence.
 
@@ -790,7 +829,9 @@ Every verdict is exactly valid or invalid.
 
 Every reasoning is one sentence.
 
-Every result contains only the three required fields.
+Every relevance_scope is exactly direct, adjacent, or irrelevant and agrees with its verdict.
+
+Every result contains only the four required fields.
 
 The response conforms to QueryValidationBatchSchema.
 

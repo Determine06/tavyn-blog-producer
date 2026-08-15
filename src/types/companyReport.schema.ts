@@ -9,7 +9,14 @@ import {
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const ConfidenceSchema = z.enum(["high", "medium", "low"]);
-const SEEDS_PER_TERRITORY = 15;
+const RelevanceScopeSchema = z.enum(["direct", "adjacent"]);
+const DiscoveryGroupSchema = z.enum([
+  "core_problem_demand",
+  "adjacent_problem_demand",
+  "core_solution_demand",
+  "adjacent_solution_demand",
+]);
+const SEEDS_PER_DISCOVERY_GROUP = 6;
 const FinalQueryMetricsSchema = QueryMetricsSchema.omit({
   monthly_searches: true,
 });
@@ -55,6 +62,7 @@ const AnalysisCoverageSchema = z
     queries_discovered: z.number().int().min(0),
     queries_evaluated: z.number().int().min(0),
     queries_validated: z.number().int().min(0),
+    queries_retained_for_visualization: z.number().int().min(0).max(100),
     queries_rejected: z.number().int().min(0),
     problem_queries_validated: z.number().int().min(0),
     solution_queries_validated: z.number().int().min(0),
@@ -73,9 +81,11 @@ const ValidatedQuerySchema = z
     query: NonEmptyStringSchema,
     territory: TerritorySchema,
     validation_reasoning: NonEmptyStringSchema,
+    relevance_scope: RelevanceScopeSchema,
+    discovery_group: DiscoveryGroupSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(SEEDS_PER_TERRITORY),
+      .length(SEEDS_PER_DISCOVERY_GROUP),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -100,7 +110,7 @@ const ValidatedQueriesSchema = z
         average_cpc: z.number().min(0).nullable(),
       })
       .strict(),
-    queries: z.array(ValidatedQuerySchema),
+    queries: z.array(ValidatedQuerySchema).max(100),
   })
   .strict();
 
@@ -174,7 +184,7 @@ const ContentPlanItemSchema = z
     primary_query: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(SEEDS_PER_TERRITORY),
+      .length(SEEDS_PER_DISCOVERY_GROUP),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -213,7 +223,7 @@ const ContentPlanSchema = z
 
 const CompanyReportBaseSchema = z
   .object({
-    schema_version: z.literal("2.1.0"),
+    schema_version: z.literal("2.2.0"),
     report_id: NonEmptyStringSchema,
     report_slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     run_id: NonEmptyStringSchema,
@@ -567,19 +577,15 @@ function validateAnalysisCoverage(
   context: z.RefinementCtx,
 ): void {
   const expected = {
-    queries_validated: report.validated_queries.summary.total,
+    queries_retained_for_visualization:
+      report.validated_queries.summary.total,
     queries_rejected:
       report.analysis_coverage.queries_evaluated -
       report.analysis_coverage.queries_validated,
-    problem_queries_validated:
-      report.validated_queries.summary.problem_demand,
-    solution_queries_validated:
-      report.validated_queries.summary.solution_demand,
     competitor_queries_analyzed:
       report.competitor_landscape.scope.query_count,
     competitor_domains_found:
       report.competitor_landscape.summary.total_domains_found,
-    content_opportunities_scored: report.validated_queries.summary.total,
     content_recommendations_selected: report.content_plan.items.length,
     live_serps_analyzed: report.content_plan.items.length,
     ranking_pages_analyzed: report.content_plan.items.reduce(

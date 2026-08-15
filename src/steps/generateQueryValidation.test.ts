@@ -1,9 +1,13 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import type { CompanyProfile } from "../types/companyProfile.schema.js";
 import type { KeywordMetrics } from "../types/keywordMetrics.schema.js";
-import { QueryValidationSchema } from "../types/queryValidation.schema.js";
+import {
+  QueryValidationBatchSchema,
+  QueryValidationSchema,
+} from "../types/queryValidation.schema.js";
 import {
   generateConfirmedQueries,
   generateQueryValidation,
@@ -18,12 +22,28 @@ type BatchCall = {
     query_id: string;
     territory: "problem_demand" | "solution_demand";
     query: string;
+    discovery_group:
+      | "core_problem_demand"
+      | "adjacent_problem_demand"
+      | "core_solution_demand"
+      | "adjacent_solution_demand";
+    source_seed_keywords: string[];
+    core_keyword: string | null;
+    search_intent: {
+      main: "informational" | "navigational" | "commercial" | "transactional" | null;
+      secondary: Array<"informational" | "navigational" | "commercial" | "transactional">;
+    };
   }>;
   runtimeInput: string;
 };
 type QueryFixture = {
   query: string;
   core_keyword?: string | null;
+  discovery_group?:
+    | "core_problem_demand"
+    | "adjacent_problem_demand"
+    | "core_solution_demand"
+    | "adjacent_solution_demand";
 };
 
 test("1,000 queries create four concurrent 250-query validation calls", async () => {
@@ -79,6 +99,9 @@ test("1,000 queries create four concurrent 250-query validation calls", async ()
 
   assert.equal(artifact.query_validations.length, 1000);
   assert.equal(calls[0].queries[0].query_id, "problem_demand_001");
+  assert.equal(calls[0].queries[0].discovery_group, "core_problem_demand");
+  assert.equal(calls[0].queries[0].source_seed_keywords.length, 6);
+  assert.match(calls[0].runtimeInput, /"search_intent"/);
   assert.equal(calls[3].queries[249].query_id, "solution_demand_500");
 });
 
@@ -120,6 +143,7 @@ test("compact model responses restore full artifact fields in canonical order", 
         query_validations: call.queries.map((query, index) => ({
           query_id: query.query_id,
           verdict: index % 2 === 0 ? "valid" : "invalid",
+          relevance_scope: index % 2 === 0 ? "direct" : "irrelevant",
           reasoning: `Decision for ${query.query_id}.`,
         })),
       }),
@@ -130,6 +154,7 @@ test("compact model responses restore full artifact fields in canonical order", 
     "query",
     "query_id",
     "reasoning",
+    "relevance_scope",
     "territory",
     "verdict",
   ]);
@@ -162,7 +187,182 @@ test("compact model responses restore full artifact fields in canonical order", 
       },
     ],
   );
-  assert.equal(QueryValidationSchema.parse(artifact), artifact);
+  assert.deepEqual(QueryValidationSchema.parse(artifact), artifact);
+});
+
+test("relevance scope requires direct and adjacent to be valid and irrelevant to be invalid", () => {
+  for (const relevanceScope of ["direct", "adjacent"] as const) {
+    assert.doesNotThrow(() =>
+      QueryValidationBatchSchema.parse({
+        query_validations: [
+          {
+            query_id: "problem_demand_001",
+            verdict: "valid",
+            relevance_scope: relevanceScope,
+            reasoning: "The query has a supported product connection.",
+          },
+        ],
+      }),
+    );
+  }
+
+  assert.doesNotThrow(() =>
+    QueryValidationBatchSchema.parse({
+      query_validations: [
+        {
+          query_id: "problem_demand_001",
+          verdict: "invalid",
+          relevance_scope: "irrelevant",
+          reasoning: "The query has an unrelated dominant meaning.",
+        },
+      ],
+    }),
+  );
+  assert.throws(() =>
+    QueryValidationBatchSchema.parse({
+      query_validations: [
+        {
+          query_id: "problem_demand_001",
+          verdict: "valid",
+          relevance_scope: "irrelevant",
+          reasoning: "Contradictory fixture.",
+        },
+      ],
+    }),
+  );
+});
+
+test("query-validation prompt requires evidence-backed adjacency and rejects ambiguous lexical overlap", () => {
+  const prompt = readFileSync(
+    new URL("../prompts/generate-query-validation.md", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(prompt, /shared audience, shared vocabulary, or topical similarity alone is insufficient/i);
+  assert.match(prompt, /uses an ambiguous term in another meaning/i);
+  assert.match(prompt, /never classify a query as adjacent merely because it came from an adjacent discovery group/i);
+  assert.match(prompt, /source_seed_keywords/);
+  assert.match(prompt, /search_intent/);
+});
+
+test("Zavi regression cases accept direct and evidence-backed adjacent demand while rejecting lexical overlap", async () => {
+  const directQueries = new Set([
+    "marketplace seller onboarding",
+    "marketplace dispute resolution",
+    "marketplace customer support",
+    "marketplace analytics software",
+    "multi vendor marketplace software",
+  ]);
+  const adjacentQueries = new Set([
+    "how to attract sellers to a marketplace",
+    "vendor onboarding software",
+    "customer support automation",
+  ]);
+  const irrelevantQueries = [
+    "fed liquidity",
+    "liquidity in economics",
+    "supply curve",
+    "growth of money supply",
+    "open market operations",
+    "property management software",
+    "legal billing software",
+    "auction software",
+  ];
+  const expectedValid = [...directQueries, ...adjacentQueries];
+  const metrics = buildKeywordMetricsFromQueries(
+    [
+      ...expectedValid
+        .filter((query) => !query.includes("software") && query !== "customer support automation")
+        .map((query) => ({ query })),
+      ...irrelevantQueries.slice(0, 5).map((query) => ({
+        query,
+        discovery_group: "adjacent_problem_demand" as const,
+      })),
+    ],
+    [
+      ...expectedValid
+        .filter((query) => query.includes("software") || query === "customer support automation")
+        .map((query) => ({ query })),
+      ...irrelevantQueries.slice(5).map((query) => ({
+        query,
+        discovery_group: "adjacent_solution_demand" as const,
+      })),
+    ],
+  );
+  const artifact = await generateQueryValidation(
+    buildCompanyProfile(),
+    metrics,
+    "run_zavi_regression",
+    {
+      batchRunner: async (call) => ({
+        query_validations: call.queries.map((query) => {
+          const relevanceScope = directQueries.has(query.query)
+            ? "direct"
+            : adjacentQueries.has(query.query)
+              ? "adjacent"
+              : "irrelevant";
+
+          return {
+            query_id: query.query_id,
+            verdict: relevanceScope === "irrelevant" ? "invalid" : "valid",
+            relevance_scope: relevanceScope,
+            reasoning:
+              relevanceScope === "irrelevant"
+                ? "The lexical overlap reflects a different audience, category, or ordinary meaning."
+                : `The query has a ${relevanceScope} evidence-backed connection to marketplace operations.`,
+          };
+        }),
+      }),
+    },
+  );
+
+  for (const query of expectedValid) {
+    const validation = artifact.query_validations.find(
+      (candidate) => candidate.query === query,
+    );
+    assert.equal(validation?.verdict, "valid", query);
+    assert.ok(
+      validation?.relevance_scope === "direct" ||
+        validation?.relevance_scope === "adjacent",
+      query,
+    );
+  }
+
+  for (const query of irrelevantQueries) {
+    const validation = artifact.query_validations.find(
+      (candidate) => candidate.query === query,
+    );
+    const sourceQuery = metrics.query_sets
+      .flatMap((querySet) => querySet.queries)
+      .find((candidate) => candidate.query === query);
+
+    assert.match(sourceQuery?.discovery_group ?? "", /^adjacent_/i, query);
+    assert.equal(validation?.verdict, "invalid", query);
+    assert.equal(validation?.relevance_scope, "irrelevant", query);
+  }
+});
+
+test("below-target diagnostic reports direct, adjacent, irrelevant, problem, and solution counts", async () => {
+  const artifact = await generateQueryValidation(
+    buildCompanyProfile(),
+    buildKeywordMetrics(3, 1),
+    "run_below_target",
+    {
+      batchRunner: async (call) => ({
+        query_validations: call.queries.map((query, index) => ({
+          query_id: query.query_id,
+          verdict: index === 3 ? "invalid" : "valid",
+          relevance_scope:
+            index === 2 ? "adjacent" : index === 3 ? "irrelevant" : "direct",
+          reasoning: `Evidence-backed decision for ${query.query_id}.`,
+        })),
+      }),
+    },
+  );
+
+  assert.deepEqual(artifact.warnings, [
+    "below_target_valid_query_count: total_candidates_evaluated=4; direct_queries_accepted=2; adjacent_queries_accepted=1; irrelevant_queries_rejected=1; problem_demand_count=3; solution_demand_count=0.",
+  ]);
 });
 
 test("hyphen and whitespace variants produce one representative LLM input", async () => {
@@ -456,6 +656,43 @@ test("duplicate validations cannot enter confirmed queries", async () => {
   );
 });
 
+test("confirmed queries preserve the originating discovery group's six seeds", async () => {
+  const keywordMetrics = buildKeywordMetrics(251, 0);
+  const validation = await generateQueryValidation(
+    buildCompanyProfile(),
+    keywordMetrics,
+    "run_test",
+    {
+      generatedAt: "2026-07-25T00:00:00.000Z",
+      batchRunner: async (call) => buildBatchResponse(call.queries),
+    },
+  );
+  const confirmedQueries = generateConfirmedQueries(validation, keywordMetrics);
+
+  assert.deepEqual(
+    confirmedQueries.confirmed_queries[0].source_seed_keywords,
+    [
+      "core_problem_demand seed 1",
+      "core_problem_demand seed 2",
+      "core_problem_demand seed 3",
+      "core_problem_demand seed 4",
+      "core_problem_demand seed 5",
+      "core_problem_demand seed 6",
+    ],
+  );
+  assert.deepEqual(
+    confirmedQueries.confirmed_queries[250].source_seed_keywords,
+    [
+      "adjacent_problem_demand seed 1",
+      "adjacent_problem_demand seed 2",
+      "adjacent_problem_demand seed 3",
+      "adjacent_problem_demand seed 4",
+      "adjacent_problem_demand seed 5",
+      "adjacent_problem_demand seed 6",
+    ],
+  );
+});
+
 test("identical normalized queries in different territories are preserved once per territory", async () => {
   const calls: BatchCall[] = [];
 
@@ -589,11 +826,13 @@ test("duplicate IDs within a batch fail", async () => {
               {
                 query_id: call.queries[0].query_id,
                 verdict: "valid",
+                relevance_scope: "direct",
                 reasoning: "First decision.",
               },
               {
                 query_id: call.queries[0].query_id,
                 verdict: "invalid",
+                relevance_scope: "irrelevant",
                 reasoning: "Duplicate decision.",
               },
             ],
@@ -619,6 +858,7 @@ test("duplicate IDs across batches fail", async () => {
                   ? "problem_demand_001"
                   : query.query_id,
               verdict: "valid",
+              relevance_scope: "direct",
               reasoning: `Decision for ${query.query_id}.`,
             })),
           }),
@@ -641,6 +881,7 @@ test("unknown IDs fail", async () => {
               {
                 query_id: "unknown_001",
                 verdict: "valid",
+                relevance_scope: "direct",
                 reasoning: "Unknown decision.",
               },
             ],
@@ -663,6 +904,7 @@ test("missing IDs fail", async () => {
             query_validations: [call.queries[0]].map((query) => ({
               query_id: query.query_id,
               verdict: "valid",
+              relevance_scope: "direct",
               reasoning: "Only one decision.",
             })),
           }),
@@ -688,6 +930,7 @@ test("missing batch response is retried once before completing", async () => {
             query_validations: [call.queries[0]].map((query) => ({
               query_id: query.query_id,
               verdict: "valid",
+              relevance_scope: "direct",
               reasoning: "Only one decision.",
             })),
           };
@@ -717,6 +960,7 @@ test("reordered IDs within a batch fail", async () => {
             query_validations: [...call.queries].reverse().map((query) => ({
               query_id: query.query_id,
               verdict: "valid",
+              relevance_scope: "direct",
               reasoning: `Decision for ${query.query_id}.`,
             })),
           }),
@@ -758,6 +1002,7 @@ function buildBatchResponse(queries: BatchCall["queries"]) {
     query_validations: queries.map((query) => ({
       query_id: query.query_id,
       verdict: "valid" as const,
+      relevance_scope: "direct" as const,
       reasoning: `The query ${query.query_id} is topically relevant.`,
     })),
   };
@@ -815,7 +1060,7 @@ function buildKeywordMetricsFromQueries(
   solutionQueries: QueryFixture[],
 ): KeywordMetrics {
   return {
-    schema_version: "1.0.0",
+    schema_version: "2.1.0",
     run_id: "run_metrics",
     generated_at: "2026-07-25T00:00:00.000Z",
     source_artifacts: ["seed-keywords.json"],
@@ -825,20 +1070,20 @@ function buildKeywordMetricsFromQueries(
     provider: {
       name: "dataforseo",
       endpoint: "/v3/dataforseo_labs/google/keyword_ideas/live",
-      http_requests_made: 2,
-      tasks_submitted: 2,
+      http_requests_made: 4,
+      tasks_submitted: 4,
       total_cost_usd: 0,
     },
     request_config: {
       location_code: 2840,
       language_code: "en",
-      limit_per_task: 500,
+      limit_per_task: 250,
       closely_variants: true,
       ignore_synonyms: false,
       include_serp_info: true,
       include_clickstream_data: false,
       filters: [
-        ["keyword_info.search_volume", ">", 50],
+        ["keyword_info.search_volume", ">", 10],
         "and",
         ["keyword_properties.is_another_language", "=", false],
         "and",
@@ -855,7 +1100,7 @@ function buildKeywordMetricsFromQueries(
         ["search_intent_info.main_intent", "<>", "navigational"],
       ],
       order_by: ["relevance,desc", "keyword_info.search_volume,desc"],
-      minimum_search_volume: 50,
+      minimum_search_volume: 10,
     },
     query_sets: [
       buildQuerySet("problem_demand", problemQueries),
@@ -870,7 +1115,7 @@ function buildKeywordMetricsFromQueries(
       missing_search_volume_count: 0,
       missing_keyword_difficulty_count: 0,
       missing_search_intent_count: 0,
-      missing_average_top_10_count: 0,
+      missing_average_top_10_count: problemQueries.length + solutionQueries.length,
     },
   } as KeywordMetrics;
 }
@@ -879,28 +1124,72 @@ function buildQuerySet(
   territory: "problem_demand" | "solution_demand",
   queries: QueryFixture[],
 ) {
+  const coreGroup =
+    territory === "problem_demand"
+      ? "core_problem_demand"
+      : "core_solution_demand";
+  const adjacentGroup =
+    territory === "problem_demand"
+      ? "adjacent_problem_demand"
+      : "adjacent_solution_demand";
+  const coreSeeds = Array.from(
+    { length: 6 },
+    (_, index) => `${coreGroup} seed ${index + 1}`,
+  );
+  const adjacentSeeds = Array.from(
+    { length: 6 },
+    (_, index) => `${adjacentGroup} seed ${index + 1}`,
+  );
+  const queryGroups = queries.map(
+    (query, index) =>
+      query.discovery_group ?? (index < 250 ? coreGroup : adjacentGroup),
+  );
+  const actualCoreCount = queryGroups.filter(
+    (group) => group === coreGroup,
+  ).length;
+  const adjacentCount = queryGroups.length - actualCoreCount;
+
   return {
     territory,
-    task_tag: territory,
-    seeds_used: Array.from(
-      { length: 15 },
-      (_, index) => `${territory} seed ${index + 1}`,
-    ),
-    task_result: {
-      task_id: `${territory}_task`,
-      status_code: 20000,
-      status_message: "Ok.",
-      cost_usd: 0,
-      total_available_results: queries.length,
-      items_received: queries.length,
-    },
+    discovery_tasks: [
+      buildDiscoveryTask(coreGroup, coreSeeds, actualCoreCount),
+      buildDiscoveryTask(adjacentGroup, adjacentSeeds, adjacentCount),
+    ],
     queries: queries.map((query, index) => ({
       query: query.query,
       discovery_rank: index + 1,
+      discovery_group: queryGroups[index],
+      source_seed_keywords:
+        queryGroups[index] === coreGroup ? coreSeeds : adjacentSeeds,
       core_keyword: query.core_keyword ?? null,
       detected_language: "en",
       metrics: buildQueryMetrics(index),
     })),
+  };
+}
+
+function buildDiscoveryTask(
+  discoveryGroup:
+    | "core_problem_demand"
+    | "adjacent_problem_demand"
+    | "core_solution_demand"
+    | "adjacent_solution_demand",
+  seeds: string[],
+  queryCount: number,
+) {
+  return {
+    discovery_group: discoveryGroup,
+    task_tag: discoveryGroup,
+    seeds_used: seeds,
+    task_result: {
+      task_id: `${discoveryGroup}_task`,
+      status_code: 20000,
+      status_message: "Ok.",
+      cost_usd: 0,
+      total_available_results: queryCount,
+      items_received: queryCount,
+      queries_retained: queryCount,
+    },
   };
 }
 

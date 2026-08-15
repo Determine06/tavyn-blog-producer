@@ -189,7 +189,7 @@ function buildDataForSeoResponse(items: MockCompetitorItem[]) {
 
 function buildConfirmedQueries(): ConfirmedQueries {
   return {
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     run_id: "run_test",
     generated_at: "2026-08-10T00:00:00.000Z",
     source_artifacts: ["query-validations.json", "keyword_metrics.json"],
@@ -207,8 +207,10 @@ function buildConfirmedQueries(): ConfirmedQueries {
         territory: "problem_demand",
         query: "example query",
         validation_reasoning: "Relevant query.",
+        relevance_scope: "direct",
+        discovery_group: "core_problem_demand",
         source_seed_keywords: Array.from(
-          { length: 15 },
+          { length: 6 },
           (_, index) => `seed ${index + 1}`,
         ),
         discovery_rank: 1,
@@ -233,6 +235,9 @@ function buildConfirmedQueries(): ConfirmedQueries {
       total_queries_rejected: 0,
       problem_queries_confirmed: 1,
       solution_queries_confirmed: 0,
+      direct_queries_confirmed: 1,
+      adjacent_queries_confirmed: 0,
+      irrelevant_queries_rejected: 0,
     },
   };
 }

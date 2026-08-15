@@ -253,7 +253,7 @@ class FakeSupabaseClient implements CompanyReportSupabaseClient {
 
 function buildCompanyReport(): CompanyReport {
   return {
-    schema_version: "2.1.0",
+    schema_version: "2.2.0",
     report_id: "report_example",
     report_slug: "example-report",
     website_url: "https://example.com/",

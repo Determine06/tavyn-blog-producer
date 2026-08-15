@@ -3,6 +3,11 @@ import { z } from "zod";
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
 const VerdictSchema = z.enum(["valid", "invalid"]);
+export const RelevanceScopeSchema = z.enum([
+  "direct",
+  "adjacent",
+  "irrelevant",
+]);
 
 const SourceProfileSchema = z
   .object({
@@ -18,6 +23,7 @@ const QueryValidationItemSchema = z
     territory: TerritorySchema,
     query: NonEmptyStringSchema,
     verdict: VerdictSchema,
+    relevance_scope: RelevanceScopeSchema,
     reasoning: NonEmptyStringSchema,
   })
   .strict();
@@ -26,13 +32,14 @@ const QueryValidationBatchItemSchema = z
   .object({
     query_id: NonEmptyStringSchema,
     verdict: VerdictSchema,
+    relevance_scope: RelevanceScopeSchema,
     reasoning: NonEmptyStringSchema,
   })
   .strict();
 
 export const QueryValidationSchema = z
   .object({
-    schema_version: z.literal("1.0.0"),
+    schema_version: z.literal("1.1.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z
@@ -61,6 +68,11 @@ export const QueryValidationSchema = z
     }
 
     for (const [index, validation] of artifact.query_validations.entries()) {
+      validateVerdictScopeConsistency(validation, context, [
+        "query_validations",
+        index,
+      ]);
+
       if (seenQueryIds.has(validation.query_id)) {
         context.addIssue({
           code: "custom",
@@ -84,6 +96,11 @@ export const QueryValidationBatchSchema = z
     const seenQueryIds = new Set<string>();
 
     for (const [index, validation] of batch.query_validations.entries()) {
+      validateVerdictScopeConsistency(validation, context, [
+        "query_validations",
+        index,
+      ]);
+
       if (seenQueryIds.has(validation.query_id)) {
         context.addIssue({
           code: "custom",
@@ -99,3 +116,23 @@ export const QueryValidationBatchSchema = z
 export type QueryValidationBatch = z.infer<
   typeof QueryValidationBatchSchema
 >;
+
+function validateVerdictScopeConsistency(
+  validation: {
+    verdict: "valid" | "invalid";
+    relevance_scope: "direct" | "adjacent" | "irrelevant";
+  },
+  context: z.RefinementCtx,
+  path: Array<string | number>,
+): void {
+  const expectedVerdict =
+    validation.relevance_scope === "irrelevant" ? "invalid" : "valid";
+
+  if (validation.verdict !== expectedVerdict) {
+    context.addIssue({
+      code: "custom",
+      message: `${validation.relevance_scope} relevance requires verdict ${expectedVerdict}.`,
+      path: [...path, "verdict"],
+    });
+  }
+}

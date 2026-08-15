@@ -1,9 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import type { SeedKeywords } from "../types/seedKeywords.schema.js";
+import {
+  DISCOVERY_GROUP_IDS,
+  type DiscoveryGroupId,
+  type SeedKeywords,
+} from "../types/seedKeywords.schema.js";
 
-type Territory = "problem_demand" | "solution_demand";
 type MockKeywordItem =
   | string
   | {
@@ -11,20 +14,31 @@ type MockKeywordItem =
       searchVolume?: number | null;
       omitKeywordInfo?: boolean;
     };
-type MockResponseConfig = Record<Territory, MockKeywordItem[]>;
+type MockResponseConfig = Record<DiscoveryGroupId, MockKeywordItem[]>;
 
-test("DataForSEO request construction uses fifteen seeds, limit 500, search volume > 50, and relevance-first ordering", async () => {
-  const { buildKeywordIdeasTask } = await importKeywordMetricsModule();
-  const seeds = buildSeeds("problem");
-
-  const task = buildKeywordIdeasTask("problem_demand", seeds);
+test("DataForSEO task construction preserves configuration and provides 1,000 total capacity", async () => {
+  const {
+    buildKeywordIdeasTask,
+    CANDIDATES_PER_DISCOVERY_GROUP,
+    MAX_TOTAL_CANDIDATES,
+  } = await importKeywordMetricsModule();
+  const seeds = buildSeeds("core_problem_demand");
+  const task = buildKeywordIdeasTask("core_problem_demand", seeds);
 
   assert.deepEqual(task.keywords, seeds);
-  assert.equal(task.limit, 500);
-  assert.equal(task.tag, "problem_demand");
+  assert.equal(task.limit, 250);
+  assert.equal(task.tag, "core_problem_demand");
+  assert.equal(CANDIDATES_PER_DISCOVERY_GROUP * 4, 1_000);
+  assert.equal(MAX_TOTAL_CANDIDATES, 1_000);
+  assert.equal(task.location_code, 2840);
+  assert.equal(task.language_code, "en");
+  assert.equal(task.closely_variants, true);
+  assert.equal(task.ignore_synonyms, false);
+  assert.equal(task.include_serp_info, true);
+  assert.equal(task.include_clickstream_data, false);
   assert.ok(
     JSON.stringify(task.filters).includes(
-      JSON.stringify(["keyword_info.search_volume", ">", 50]),
+      JSON.stringify(["keyword_info.search_volume", ">", 10]),
     ),
   );
   assert.deepEqual(task.order_by, [
@@ -33,145 +47,197 @@ test("DataForSEO request construction uses fifteen seeds, limit 500, search volu
   ]);
 });
 
-test("generateKeywordMetrics makes exactly two territory-level DataForSEO calls", async () => {
+test("generateKeywordMetrics makes exactly four correctly tagged group requests", async () => {
   const { generateKeywordMetrics } = await importKeywordMetricsModule();
   const fetchCalls: Array<{ body: string }> = [];
 
-  await withMockedFetch(
-    fetchCalls,
-    {
-      problem_demand: ["problem query 1", "problem query 2"],
-      solution_demand: ["solution query 1"],
-    },
-    async () => {
-      const artifact = await generateKeywordMetrics(
-        buildSeedKeywords(),
-        "run_test",
-      );
-      const tasks = fetchCalls.map((call) => JSON.parse(call.body)[0]);
+  await withMockedFetch(fetchCalls, buildResponseConfig(), async () => {
+    const artifact = await generateKeywordMetrics(buildSeedKeywords(), "run_test");
+    const tasks = fetchCalls.map((call) => JSON.parse(call.body)[0]);
 
-      assert.equal(fetchCalls.length, 2);
-      assert.deepEqual(tasks[0].keywords, buildSeeds("problem"));
-      assert.deepEqual(tasks[1].keywords, buildSeeds("solution"));
-      assert.deepEqual(
-        tasks.map((task) => task.limit),
-        [500, 500],
-      );
-      assert.deepEqual(
-        tasks.map((task) => task.tag),
-        ["problem_demand", "solution_demand"],
-      );
-      assert.deepEqual(
-        tasks.map((task) => task.order_by),
-        [
-          ["relevance,desc", "keyword_info.search_volume,desc"],
-          ["relevance,desc", "keyword_info.search_volume,desc"],
-        ],
-      );
-      assert.equal(artifact.provider.http_requests_made, 2);
-      assert.equal(artifact.provider.tasks_submitted, 2);
-      assert.equal(artifact.request_config.limit_per_task, 500);
-      assert.equal(artifact.summary.problem_queries_received, 2);
-      assert.equal(artifact.summary.solution_queries_received, 1);
-      assert.equal(artifact.status, "complete");
-    },
-  );
+    assert.equal(fetchCalls.length, 4);
+    assert.deepEqual(
+      tasks.map((task) => task.keywords),
+      DISCOVERY_GROUP_IDS.map(buildSeeds),
+    );
+    assert.deepEqual(
+      tasks.map((task) => task.tag),
+      DISCOVERY_GROUP_IDS,
+    );
+    assert.deepEqual(
+      tasks.map((task) => task.limit),
+      [250, 250, 250, 250],
+    );
+    assert.equal(artifact.provider.http_requests_made, 4);
+    assert.equal(artifact.provider.tasks_submitted, 4);
+    assert.equal(artifact.provider.total_cost_usd, 0.04);
+    assert.equal(artifact.request_config.limit_per_task, 250);
+    assert.deepEqual(
+      artifact.query_sets.flatMap((set) =>
+        set.discovery_tasks.map((task) => task.task_result.task_id),
+      ),
+      DISCOVERY_GROUP_IDS.map((group) => `${group}-task`),
+    );
+  });
 });
 
-test("defensive response filtering excludes search volumes 50, below 50, null, and missing", async () => {
+test("core and adjacent results merge deterministically with deduped queries and regenerated ranks", async () => {
   const { generateKeywordMetrics } = await importKeywordMetricsModule();
   const fetchCalls: Array<{ body: string }> = [];
+  const config = buildResponseConfig({
+    core_problem_demand: ["core first", "shared problem", "core last"],
+    adjacent_problem_demand: [
+      "adjacent first",
+      "  SHARED PROBLEM  ",
+      "adjacent last",
+    ],
+    core_solution_demand: ["core solution"],
+    adjacent_solution_demand: ["adjacent solution"],
+  });
 
-  await withMockedFetch(
-    fetchCalls,
-    {
-      problem_demand: [
-        { keyword: "volume 51", searchVolume: 51 },
-        { keyword: "volume 50", searchVolume: 50 },
-        { keyword: "volume 49", searchVolume: 49 },
-        { keyword: "volume null", searchVolume: null },
-        { keyword: "missing keyword info", omitKeywordInfo: true },
+  await withMockedFetch(fetchCalls, config, async () => {
+    const artifact = await generateKeywordMetrics(buildSeedKeywords(), "run_test");
+    const [problemSet, solutionSet] = artifact.query_sets;
+
+    assert.equal(problemSet.territory, "problem_demand");
+    assert.deepEqual(
+      problemSet.queries.map((query) => query.query),
+      ["core first", "shared problem", "core last", "adjacent first", "adjacent last"],
+    );
+    assert.deepEqual(
+      problemSet.queries.map((query) => query.discovery_rank),
+      [1, 2, 3, 4, 5],
+    );
+    assert.deepEqual(
+      problemSet.queries.map((query) => query.discovery_group),
+      [
+        "core_problem_demand",
+        "core_problem_demand",
+        "core_problem_demand",
+        "adjacent_problem_demand",
+        "adjacent_problem_demand",
       ],
-      solution_demand: [{ keyword: "solution volume 51", searchVolume: 51 }],
-    },
-    async () => {
-      const artifact = await generateKeywordMetrics(
-        buildSeedKeywords(),
-        "run_test",
-      );
-
-      assert.deepEqual(
-        artifact.query_sets[0].queries.map((query) => query.query),
-        ["volume 51"],
-      );
-      assert.deepEqual(
-        artifact.query_sets[1].queries.map((query) => query.query),
-        ["solution volume 51"],
-      );
-      assert.equal(artifact.query_sets[0].territory, "problem_demand");
-      assert.equal(artifact.query_sets[1].territory, "solution_demand");
-    },
-  );
+    );
+    assert.deepEqual(
+      problemSet.queries[3].source_seed_keywords,
+      buildSeeds("adjacent_problem_demand"),
+    );
+    assert.deepEqual(
+      problemSet.discovery_tasks.map((task) => task.task_result.queries_retained),
+      [3, 2],
+    );
+    assert.equal(solutionSet.territory, "solution_demand");
+    assert.deepEqual(
+      solutionSet.queries.map((query) => query.query),
+      ["core solution", "adjacent solution"],
+    );
+  });
 });
 
-test("fewer than 500 results is accepted normally", async () => {
+test("defensive response filtering accepts 11 and excludes search volumes 10, below 10, null, and missing", async () => {
+  const { generateKeywordMetrics } = await importKeywordMetricsModule();
+  const fetchCalls: Array<{ body: string }> = [];
+  const config = buildResponseConfig({
+    core_problem_demand: [
+      { keyword: "volume 11", searchVolume: 11 },
+      { keyword: "volume 10", searchVolume: 10 },
+      { keyword: "volume 9", searchVolume: 9 },
+      { keyword: "volume null", searchVolume: null },
+      { keyword: "missing keyword info", omitKeywordInfo: true },
+    ],
+  });
+
+  await withMockedFetch(fetchCalls, config, async () => {
+    const artifact = await generateKeywordMetrics(buildSeedKeywords(), "run_test");
+
+    assert.deepEqual(
+      artifact.query_sets[0].queries.map((query) => query.query),
+      ["volume 11"],
+    );
+  });
+});
+
+test("fewer than 1,000 results is accepted normally", async () => {
   const { generateKeywordMetrics } = await importKeywordMetricsModule();
   const fetchCalls: Array<{ body: string }> = [];
 
   await withMockedFetch(
     fetchCalls,
-    {
-      problem_demand: ["problem query"],
-      solution_demand: [],
-    },
+    buildResponseConfig({ core_problem_demand: ["problem query"] }),
     async () => {
-      const artifact = await generateKeywordMetrics(
-        buildSeedKeywords(),
-        "run_test",
-      );
+      const artifact = await generateKeywordMetrics(buildSeedKeywords(), "run_test");
 
       assert.equal(artifact.summary.problem_queries_received, 1);
       assert.equal(artifact.summary.solution_queries_received, 0);
       assert.equal(artifact.summary.total_queries_received, 1);
       assert.equal(artifact.status, "complete");
+      assert.equal(fetchCalls.length, 4);
     },
   );
 });
 
-test("duplicate provider results are removed within each territory", async () => {
+test("provider overflow is capped at 250 per group, 500 per territory, and 1,000 total", async () => {
+  const { generateKeywordMetrics } = await importKeywordMetricsModule();
+  const fetchCalls: Array<{ body: string }> = [];
+  const config = buildResponseConfig(
+    Object.fromEntries(
+      DISCOVERY_GROUP_IDS.map((group) => [
+        group,
+        Array.from(
+          { length: 251 },
+          (_, index) => `${group} candidate ${index + 1}`,
+        ),
+      ]),
+    ) as MockResponseConfig,
+  );
+
+  await withMockedFetch(fetchCalls, config, async () => {
+    const artifact = await generateKeywordMetrics(buildSeedKeywords(), "run_test");
+
+    assert.deepEqual(
+      artifact.query_sets.map((querySet) => querySet.queries.length),
+      [500, 500],
+    );
+    assert.deepEqual(
+      artifact.query_sets.flatMap((querySet) =>
+        querySet.discovery_tasks.map(
+          (task) => task.task_result.items_received,
+        ),
+      ),
+      [250, 250, 250, 250],
+    );
+    assert.equal(artifact.summary.total_queries_received, 1_000);
+  });
+});
+
+test("duplicate provider results within a discovery group are removed", async () => {
   const { generateKeywordMetrics } = await importKeywordMetricsModule();
   const fetchCalls: Array<{ body: string }> = [];
 
   await withMockedFetch(
     fetchCalls,
-    {
-      problem_demand: ["duplicate query", "duplicate query", "unique query"],
-      solution_demand: [],
-    },
+    buildResponseConfig({
+      core_problem_demand: ["duplicate query", "duplicate query", "unique query"],
+    }),
     async () => {
-      const artifact = await generateKeywordMetrics(
-        buildSeedKeywords(),
-        "run_test",
-      );
+      const artifact = await generateKeywordMetrics(buildSeedKeywords(), "run_test");
+      const problemSet = artifact.query_sets[0];
 
       assert.deepEqual(
-        artifact.query_sets[0].queries.map((query) => query.query),
+        problemSet.queries.map((query) => query.query),
         ["duplicate query", "unique query"],
       );
-      assert.equal(artifact.query_sets[0].task_result.items_received, 2);
+      assert.equal(problemSet.discovery_tasks[0].task_result.items_received, 3);
+      assert.equal(problemSet.discovery_tasks[0].task_result.queries_retained, 2);
     },
   );
 });
 
-test("DataForSEO root-level errors are surfaced", async () => {
+test("DataForSEO root-level errors are surfaced without fallback expansion", async () => {
   const { generateKeywordMetrics } = await importKeywordMetricsModule();
 
   await withRawMockedFetch(
-    {
-      status_code: 40000,
-      status_message: "Root failure",
-      tasks: [],
-    },
+    () => ({ status_code: 40000, status_message: "Root failure", tasks: [] }),
     async () => {
       await assert.rejects(
         () => generateKeywordMetrics(buildSeedKeywords(), "run_test"),
@@ -185,21 +251,21 @@ test("DataForSEO task-level errors are surfaced", async () => {
   const { generateKeywordMetrics } = await importKeywordMetricsModule();
 
   await withRawMockedFetch(
-    {
+    (group) => ({
       status_code: 20000,
       status_message: "Ok.",
       cost: 0,
       tasks: [
         {
-          id: "problem-task",
-          status_code: 40000,
-          status_message: "Task failure",
+          id: `${group}-task`,
+          status_code: group === "core_problem_demand" ? 40000 : 20000,
+          status_message: group === "core_problem_demand" ? "Task failure" : "Ok.",
           cost: 0,
-          data: { tag: "problem_demand" },
-          result: [],
+          data: { tag: group },
+          result: [{ total_count: 0, items: [] }],
         },
       ],
-    },
+    }),
     async () => {
       await assert.rejects(
         () => generateKeywordMetrics(buildSeedKeywords(), "run_test"),
@@ -229,12 +295,11 @@ async function withMockedFetch(
   globalThis.fetch = (async (_url, init) => {
     const body = String(init?.body ?? "");
     fetchCalls.push({ body });
-    const [request] = JSON.parse(body) as Array<{ tag: Territory }>;
+    const [request] = JSON.parse(body) as Array<{ tag: DiscoveryGroupId }>;
 
     return {
       ok: true,
-      json: async () =>
-        buildDataForSeoResponse(request.tag, responseConfig[request.tag]),
+      json: async () => buildDataForSeoResponse(request.tag, responseConfig[request.tag]),
     } as Response;
   }) as typeof fetch;
 
@@ -246,16 +311,20 @@ async function withMockedFetch(
 }
 
 async function withRawMockedFetch(
-  responseBody: unknown,
+  buildResponse: (group: DiscoveryGroupId) => unknown,
   run: () => Promise<void>,
 ): Promise<void> {
   const originalFetch = globalThis.fetch;
 
-  globalThis.fetch = (async () =>
-    ({
+  globalThis.fetch = (async (_url, init) => {
+    const [request] = JSON.parse(String(init?.body ?? "")) as Array<{
+      tag: DiscoveryGroupId;
+    }>;
+    return {
       ok: true,
-      json: async () => responseBody,
-    }) as Response) as typeof fetch;
+      json: async () => buildResponse(request.tag),
+    } as Response;
+  }) as typeof fetch;
 
   try {
     await run();
@@ -264,27 +333,30 @@ async function withRawMockedFetch(
   }
 }
 
-function buildDataForSeoResponse(
-  territory: Territory,
-  items: MockKeywordItem[],
-) {
+function buildResponseConfig(
+  overrides: Partial<MockResponseConfig> = {},
+): MockResponseConfig {
+  return Object.fromEntries(
+    DISCOVERY_GROUP_IDS.map((group) => [group, overrides[group] ?? []]),
+  ) as MockResponseConfig;
+}
+
+function buildDataForSeoResponse(group: DiscoveryGroupId, items: MockKeywordItem[]) {
   return {
     status_code: 20000,
     status_message: "Ok.",
     cost: 0.01,
     tasks: [
       {
-        id: `${territory}-task`,
+        id: `${group}-task`,
         status_code: 20000,
         status_message: "Ok.",
         cost: 0.01,
-        data: {
-          tag: territory,
-        },
+        data: { tag: group },
         result: [
           {
             total_count: items.length,
-            items: items.map((item) => buildDataForSeoItem(item)),
+            items: items.map(buildDataForSeoItem),
           },
         ],
       },
@@ -329,7 +401,7 @@ function buildDataForSeoItem(item: MockKeywordItem) {
 
 function buildSeedKeywords(): SeedKeywords {
   return {
-    schema_version: "1.0.0",
+    schema_version: "2.1.0",
     run_id: "run_test",
     generated_at: "2026-07-24T00:00:00.000Z",
     source_artifacts: ["company-profile.json"],
@@ -341,24 +413,28 @@ function buildSeedKeywords(): SeedKeywords {
       product_category: "Example software",
       primary_icp: "Example buyers",
     },
-    demand_territories: [
-      buildTerritory("problem_demand", buildSeeds("problem"), [
-        "core_problem",
-        "icp_qualified_problem",
-        "process_or_outcome",
-        "market_synonym",
-        "core_problem",
-        "process_or_outcome",
-      ]),
-      buildTerritory("solution_demand", buildSeeds("solution"), [
-        "core_solution_category",
-        "icp_qualified_solution",
-        "solution_approach",
-        "commercial_category",
-        "core_solution_category",
-        "commercial_category",
-      ]),
-    ],
+    demand_groups: DISCOVERY_GROUP_IDS.map((groupId) => ({
+      group_id: groupId,
+      group_name: `${groupId} group`,
+      group_summary: `${groupId} summary.`,
+      market_topic: `${groupId} market`,
+      primary_icp: "Example buyers",
+      product_connection: "Supported by the company profile.",
+      evidence: [
+        {
+          source_field: "company_identity.product_category.value",
+          evidence_text: "Example software",
+          reasoning: "The evidence supports this group.",
+        },
+      ],
+      seed_keywords: buildSeeds(groupId).map((keyword, index) => ({
+        seed_id: `${groupId}_seed_${index + 1}`,
+        keyword,
+        seed_role: `discovery_angle_${index + 1}`,
+        selection_reasoning: "Distinct discovery angle.",
+        confidence: "medium",
+      })),
+    })),
     generation_quality: {
       overall_confidence: "medium",
       missing_information: [],
@@ -368,35 +444,9 @@ function buildSeedKeywords(): SeedKeywords {
   };
 }
 
-function buildTerritory(
-  territory: Territory,
-  seeds: string[],
-  roles: string[],
-): SeedKeywords["demand_territories"][number] {
-  return {
-    territory_id: territory,
-    territory_name: `${territory} territory`,
-    territory_summary: `${territory} summary.`,
-    market_topic: `${territory} market`,
-    primary_icp: "Example buyers",
-    product_connection: "Supported by the company profile.",
-    evidence: [
-      {
-        source_field: "company_identity.product_category.value",
-        evidence_text: "Example software",
-        reasoning: "The evidence supports this territory.",
-      },
-    ],
-    seed_keywords: seeds.map((keyword, index) => ({
-      seed_id: `${territory}_seed_${String(index + 1).padStart(2, "0")}`,
-      keyword,
-      seed_role: roles[index % roles.length],
-      selection_reasoning: "Distinct discovery angle.",
-      confidence: "medium",
-    })),
-  };
-}
-
-function buildSeeds(prefix: string): string[] {
-  return Array.from({ length: 15 }, (_, index) => `${prefix} seed ${index + 1}`);
+function buildSeeds(group: DiscoveryGroupId): string[] {
+  return Array.from(
+    { length: 6 },
+    (_, index) => `${group.replaceAll("_", " ")} seed ${index + 1}`,
+  );
 }

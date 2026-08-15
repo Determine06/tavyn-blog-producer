@@ -4,7 +4,14 @@ import { QueryMetricsSchema } from "./keywordMetrics.schema.js";
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
-const SEEDS_PER_TERRITORY = 15;
+const DiscoveryGroupSchema = z.enum([
+  "core_problem_demand",
+  "adjacent_problem_demand",
+  "core_solution_demand",
+  "adjacent_solution_demand",
+]);
+const RelevanceScopeSchema = z.enum(["direct", "adjacent"]);
+const SEEDS_PER_DISCOVERY_GROUP = 6;
 
 const SourceProfileSchema = z
   .object({
@@ -20,9 +27,11 @@ const ConfirmedQuerySchema = z
     territory: TerritorySchema,
     query: NonEmptyStringSchema,
     validation_reasoning: NonEmptyStringSchema,
+    relevance_scope: RelevanceScopeSchema,
+    discovery_group: DiscoveryGroupSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(SEEDS_PER_TERRITORY),
+      .length(SEEDS_PER_DISCOVERY_GROUP),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),
@@ -46,12 +55,15 @@ const SummarySchema = z
     total_queries_rejected: z.number().int().min(0),
     problem_queries_confirmed: z.number().int().min(0),
     solution_queries_confirmed: z.number().int().min(0),
+    direct_queries_confirmed: z.number().int().min(0),
+    adjacent_queries_confirmed: z.number().int().min(0),
+    irrelevant_queries_rejected: z.number().int().min(0),
   })
   .strict();
 
 export const ConfirmedQueriesSchema = z
   .object({
-    schema_version: z.literal("1.0.0"),
+    schema_version: z.literal("1.1.0"),
     run_id: NonEmptyStringSchema,
     generated_at: z.string().datetime(),
     source_artifacts: z.tuple([
@@ -88,6 +100,12 @@ export const ConfirmedQueriesSchema = z
       (query) => query.territory === "solution_demand",
     ).length;
     const totalQueriesConfirmed = artifact.confirmed_queries.length;
+    const directQueriesConfirmed = artifact.confirmed_queries.filter(
+      (query) => query.relevance_scope === "direct",
+    ).length;
+    const adjacentQueriesConfirmed = artifact.confirmed_queries.filter(
+      (query) => query.relevance_scope === "adjacent",
+    ).length;
     const expectedRejected =
       artifact.summary.total_queries_evaluated - totalQueriesConfirmed;
 
@@ -140,6 +158,46 @@ export const ConfirmedQueriesSchema = z
         message:
           "Problem plus solution confirmed counts must equal total confirmed count.",
         path: ["summary"],
+      });
+    }
+
+    if (artifact.summary.direct_queries_confirmed !== directQueriesConfirmed) {
+      context.addIssue({
+        code: "custom",
+        message: "summary.direct_queries_confirmed must equal the actual direct count.",
+        path: ["summary", "direct_queries_confirmed"],
+      });
+    }
+
+    if (
+      artifact.summary.adjacent_queries_confirmed !== adjacentQueriesConfirmed
+    ) {
+      context.addIssue({
+        code: "custom",
+        message: "summary.adjacent_queries_confirmed must equal the actual adjacent count.",
+        path: ["summary", "adjacent_queries_confirmed"],
+      });
+    }
+
+    if (
+      directQueriesConfirmed + adjacentQueriesConfirmed !==
+      totalQueriesConfirmed
+    ) {
+      context.addIssue({
+        code: "custom",
+        message: "Direct plus adjacent confirmed counts must equal total confirmed count.",
+        path: ["summary"],
+      });
+    }
+
+    if (
+      artifact.summary.irrelevant_queries_rejected !==
+      artifact.summary.total_queries_rejected
+    ) {
+      context.addIssue({
+        code: "custom",
+        message: "summary.irrelevant_queries_rejected must equal total_queries_rejected.",
+        path: ["summary", "irrelevant_queries_rejected"],
       });
     }
   });

@@ -9,7 +9,7 @@ import { generateQueryOpportunities } from "./generateQueryOpportunities.js";
 
 type ReportArguments = Parameters<typeof generateCompanyReport>;
 
-test("REGEN report propagates authoritative metrics to all 101 validated queries", async () => {
+test("REGEN report retains 100 visualization queries with authoritative metrics", async () => {
   const { confirmedQueries, queryOpportunities, report } =
     await buildRegenReport();
   const confirmedIds = confirmedQueries.confirmed_queries.map(
@@ -34,15 +34,20 @@ test("REGEN report propagates authoritative metrics to all 101 validated queries
   assert.equal(confirmedIds.length, 101);
   assert.equal(scoredIds.length, 101);
   assert.equal(new Set(scoredIds).size, 101);
-  assert.equal(reportIds.length, 101);
-  assert.deepEqual(reportIds, confirmedIds);
-  assert.deepEqual(new Set(reportIds), new Set(confirmedIds));
-  assert.equal(report.validated_queries.summary.problem_demand, 71);
-  assert.equal(report.validated_queries.summary.solution_demand, 30);
+  assert.equal(reportIds.length, 100);
+  assert.equal(new Set(reportIds).size, 100);
+  assert.ok(reportIds.every((queryId) => confirmedIds.includes(queryId)));
+  assert.equal(
+    report.validated_queries.summary.problem_demand +
+      report.validated_queries.summary.solution_demand,
+    100,
+  );
   assert.equal(queryOpportunities.summary.problem_queries_scored, 71);
   assert.equal(queryOpportunities.summary.solution_queries_scored, 30);
   assert.equal(queryOpportunities.territory_rankings[0].queries.length, 10);
   assert.equal(queryOpportunities.territory_rankings[1].queries.length, 10);
+  assert.equal(report.analysis_coverage.queries_validated, 101);
+  assert.equal(report.analysis_coverage.queries_retained_for_visualization, 100);
   assert.equal(report.analysis_coverage.content_opportunities_scored, 101);
 
   for (const validatedQuery of report.validated_queries.queries) {
@@ -86,26 +91,6 @@ test("REGEN report propagates authoritative metrics to all 101 validated queries
   );
   assert.equal(aboveP95.opportunity_metrics.demand_score, 1);
 
-  const imputedDifficulty = validatedById.get("problem_demand_364");
-
-  assert.ok(imputedDifficulty);
-  assert.equal(
-    imputedDifficulty.opportunity_metrics.keyword_difficulty_original,
-    null,
-  );
-  assert.equal(
-    imputedDifficulty.opportunity_metrics.keyword_difficulty_used,
-    50,
-  );
-  assert.equal(
-    imputedDifficulty.opportunity_metrics.keyword_difficulty_was_imputed,
-    true,
-  );
-  assert.equal(
-    imputedDifficulty.opportunity_metrics.attainability_score,
-    0.5,
-  );
-
   for (const contentItem of report.content_plan.items) {
     assert.deepEqual(
       contentItem.opportunity_metrics,
@@ -114,11 +99,11 @@ test("REGEN report propagates authoritative metrics to all 101 validated queries
   }
 
   const expectedAverage = roundToTwoDecimals(
-    queryOpportunities.all_scored_queries.reduce(
+    report.validated_queries.queries.reduce(
       (total, query) =>
         total + query.opportunity_metrics.opportunity_score,
       0,
-    ) / queryOpportunities.all_scored_queries.length,
+    ) / report.validated_queries.queries.length,
   );
 
   assert.equal(
@@ -134,37 +119,38 @@ test("report assembly uses persisted scores and fails clearly for missing mappin
     inputs.confirmedQueries,
     "run_regen_persisted_score_test",
   );
-  const nonRankedQueryId = "problem_demand_001";
-  const nonRankedQuery = queryOpportunities.all_scored_queries.find(
-    (query) => query.query_id === nonRankedQueryId,
+  const retainedQueryId =
+    queryOpportunities.territory_rankings[0].queries[0].query_id;
+  const retainedQuery = queryOpportunities.all_scored_queries.find(
+    (query) => query.query_id === retainedQueryId,
   );
 
-  assert.ok(nonRankedQuery);
-  nonRankedQuery.opportunity_metrics.opportunity_score += 0.1;
+  assert.ok(retainedQuery);
+  retainedQuery.opportunity_metrics.opportunity_score += 0.1;
   const report = generateReport(inputs, queryOpportunities);
   const propagatedQuery = report.validated_queries.queries.find(
-    (query) => query.query_id === nonRankedQueryId,
+    (query) => query.query_id === retainedQueryId,
   );
 
   assert.ok(propagatedQuery);
   assert.equal(
     propagatedQuery.opportunity_metrics.opportunity_score,
-    nonRankedQuery.opportunity_metrics.opportunity_score,
+    retainedQuery.opportunity_metrics.opportunity_score,
   );
   assert.equal(
     report.content_plan.summary.average_opportunity_score,
     roundToTwoDecimals(
-      queryOpportunities.all_scored_queries.reduce(
+      report.validated_queries.queries.reduce(
         (total, query) =>
           total + query.opportunity_metrics.opportunity_score,
         0,
-      ) / queryOpportunities.all_scored_queries.length,
+      ) / report.validated_queries.queries.length,
     ),
   );
 
   const missingMapping = structuredClone(queryOpportunities);
   const missingIndex = missingMapping.all_scored_queries.findIndex(
-    (query) => query.query_id === nonRankedQueryId,
+    (query) => query.query_id === retainedQueryId,
   );
 
   assert.notEqual(missingIndex, -1);
@@ -172,7 +158,9 @@ test("report assembly uses persisted scores and fails clearly for missing mappin
     "problem_demand_unmapped";
   assert.throws(
     () => generateReport(inputs, missingMapping),
-    /missing authoritative opportunity metrics for validated query problem_demand_001/,
+    new RegExp(
+      `missing authoritative opportunity metrics for validated query ${retainedQueryId}`,
+    ),
   );
 });
 

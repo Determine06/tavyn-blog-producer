@@ -139,6 +139,18 @@ LOG_HYPERPARAMETERS=true npm run dev -- --force-profile
 
 ## Development Checks
 
+Seed-keyword and keyword-metrics artifact version 2.1 uses four six-seed
+discovery groups and a minimum search-volume threshold greater than 10. It is
+incompatible with earlier cached seed and keyword-metrics artifacts. Test this
+flow with a clean run through query validation:
+
+```bash
+npm run dev -- https://zaviagent.com --no-cache --stop-after query-validation
+```
+
+This command makes live provider requests when real credentials are configured;
+do not use it as an automated test.
+
 Run TypeScript validation with:
 
 ```bash

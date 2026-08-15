@@ -254,7 +254,7 @@ function buildConfirmedQueries(): ConfirmedQueries {
   const confirmedQueries = [...problemQueries, ...solutionQueries];
 
   return ConfirmedQueriesSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "1.1.0",
     run_id: "run_confirmed_queries",
     generated_at: "2026-08-08T00:00:00.000Z",
     source_artifacts: [
@@ -276,6 +276,9 @@ function buildConfirmedQueries(): ConfirmedQueries {
       total_queries_rejected: 0,
       problem_queries_confirmed: problemQueries.length,
       solution_queries_confirmed: solutionQueries.length,
+      direct_queries_confirmed: confirmedQueries.length,
+      adjacent_queries_confirmed: 0,
+      irrelevant_queries_rejected: 0,
     },
   });
 }
@@ -336,8 +339,13 @@ function buildConfirmedQuery(options: {
     territory: options.territory,
     query: `${options.territory} ${options.suffix}`,
     validation_reasoning: "Deterministic scoring fixture.",
+    relevance_scope: "direct" as const,
+    discovery_group:
+      options.territory === "problem_demand"
+        ? ("core_problem_demand" as const)
+        : ("core_solution_demand" as const),
     source_seed_keywords: Array.from(
-      { length: 15 },
+      { length: 6 },
       (_, index) => `${options.territory} seed ${index + 1}`,
     ),
     discovery_rank: options.discoveryRank,

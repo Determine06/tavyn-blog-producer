@@ -219,7 +219,7 @@ function buildRecommendation(
     opportunity_rank: rank,
     validation_reasoning: "The query is relevant.",
     source_seed_keywords: Array.from(
-      { length: 15 },
+      { length: 6 },
       (_, index) => `seed ${index + 1}`,
     ),
     discovery_rank: rank,
