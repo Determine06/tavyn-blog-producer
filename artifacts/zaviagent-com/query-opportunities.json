@@ -1,70 +1,1002 @@
 {
-  "schema_version": "1.2.0",
-  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
-  "generated_at": "2026-07-19T18:47:05.184Z",
+  "schema_version": "2.1.0",
+  "run_id": "46ad305f-82ca-4d9b-87aa-d3e92c9e9e7d",
+  "generated_at": "2026-08-15T01:26:12.743Z",
   "source_artifacts": [
     "confirmed-queries.json"
   ],
   "status": "complete",
   "warnings": [
-    "problem_demand had 2 confirmed queries; selected all 2 instead of 10.",
-    "solution_demand had no confirmed queries; selected 0 instead of 10."
+    "solution_demand had 6 confirmed queries; selected all 6 instead of 10."
   ],
-  "website_url": "https://www.zaviagent.com/",
+  "website_url": "https://zaviagent.com/",
   "scoring_method": {
-    "name": "search_demand_times_organic_attainability",
-    "version": "1.1.0",
+    "name": "relative_search_demand_plus_organic_attainability",
+    "version": "2.0.0",
     "missing_keyword_difficulty_default": 50,
-    "volume_normalization": "log1p_relative_to_territory_max",
-    "combination_method": "multiplicative",
-    "formula": "100 * volume_score * difficulty_score"
+    "combination_method": "weighted_additive",
+    "formula": "100 * (0.70 * demand_score + 0.30 * attainability_score)",
+    "weights": {
+      "demand_score": 0.7,
+      "attainability_score": 0.3
+    },
+    "demand_normalization": {
+      "method": "log1p_territory_p95_capped",
+      "territory_specific": true,
+      "cap": 1
+    },
+    "score_scope": "within_territory_relative_priority"
   },
+  "all_scored_queries": [
+    {
+      "query_id": "problem_demand_002",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 1,
+        "keyword_difficulty_used": 1,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.99,
+        "opportunity_score": 72.8
+      }
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 31,
+        "keyword_difficulty_used": 31,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.69,
+        "opportunity_score": 54.1
+      }
+    },
+    {
+      "query_id": "problem_demand_039",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.7068,
+        "keyword_difficulty_original": 1,
+        "keyword_difficulty_used": 1,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.99,
+        "opportunity_score": 79.2
+      }
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 73.1
+      }
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 21,
+        "keyword_difficulty_used": 21,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.79,
+        "opportunity_score": 57.1
+      }
+    },
+    {
+      "query_id": "problem_demand_046",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 16,
+        "keyword_difficulty_used": 16,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.84,
+        "opportunity_score": 68.3
+      }
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 30,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5381,
+        "keyword_difficulty_original": 29,
+        "keyword_difficulty_used": 29,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.71,
+        "opportunity_score": 59
+      }
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 30,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5381,
+        "keyword_difficulty_original": 8,
+        "keyword_difficulty_used": 8,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.92,
+        "opportunity_score": 65.3
+      }
+    },
+    {
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 30,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5381,
+        "keyword_difficulty_original": 34,
+        "keyword_difficulty_used": 34,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.66,
+        "opportunity_score": 57.5
+      }
+    },
+    {
+      "query_id": "problem_demand_054",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": null,
+        "keyword_difficulty_used": 50,
+        "keyword_difficulty_was_imputed": true,
+        "attainability_score": 0.5,
+        "opportunity_score": 48.4
+      }
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 3,
+        "keyword_difficulty_used": 3,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.97,
+        "opportunity_score": 62.5
+      }
+    },
+    {
+      "query_id": "problem_demand_074",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 62.8
+      }
+    },
+    {
+      "query_id": "problem_demand_075",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 62.8
+      }
+    },
+    {
+      "query_id": "problem_demand_083",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 13,
+        "keyword_difficulty_used": 13,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.87,
+        "opportunity_score": 59.5
+      }
+    },
+    {
+      "query_id": "problem_demand_194",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.4
+      }
+    },
+    {
+      "query_id": "problem_demand_196",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 63.4
+      }
+    },
+    {
+      "query_id": "problem_demand_199",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.8386,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 88.1
+      }
+    },
+    {
+      "query_id": "problem_demand_241",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 40,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5819,
+        "keyword_difficulty_original": 8,
+        "keyword_difficulty_used": 8,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.92,
+        "opportunity_score": 68.3
+      }
+    },
+    {
+      "query_id": "problem_demand_251",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6679,
+        "keyword_difficulty_original": 11,
+        "keyword_difficulty_used": 11,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.89,
+        "opportunity_score": 73.5
+      }
+    },
+    {
+      "query_id": "problem_demand_273",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 1600,
+        "territory_p95_search_volume": 590,
+        "demand_score": 1,
+        "keyword_difficulty_original": 11,
+        "keyword_difficulty_used": 11,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.89,
+        "opportunity_score": 96.7
+      }
+    },
+    {
+      "query_id": "problem_demand_281",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 590,
+        "territory_p95_search_volume": 590,
+        "demand_score": 1,
+        "keyword_difficulty_original": 17,
+        "keyword_difficulty_used": 17,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.83,
+        "opportunity_score": 94.9
+      }
+    },
+    {
+      "query_id": "problem_demand_289",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.738,
+        "keyword_difficulty_original": 9,
+        "keyword_difficulty_used": 9,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.91,
+        "opportunity_score": 79
+      }
+    },
+    {
+      "query_id": "problem_demand_291",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 320,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.9044,
+        "keyword_difficulty_original": 44,
+        "keyword_difficulty_used": 44,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.56,
+        "opportunity_score": 80.1
+      }
+    },
+    {
+      "query_id": "problem_demand_304",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 720,
+        "territory_p95_search_volume": 590,
+        "demand_score": 1,
+        "keyword_difficulty_original": 6,
+        "keyword_difficulty_used": 6,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.94,
+        "opportunity_score": 98.2
+      }
+    },
+    {
+      "query_id": "problem_demand_305",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.8057,
+        "keyword_difficulty_original": 63,
+        "keyword_difficulty_used": 63,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.37,
+        "opportunity_score": 67.5
+      }
+    },
+    {
+      "query_id": "problem_demand_309",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6679,
+        "keyword_difficulty_original": 19,
+        "keyword_difficulty_used": 19,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.81,
+        "opportunity_score": 71.1
+      }
+    },
+    {
+      "query_id": "problem_demand_317",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 210,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.8386,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 88.7
+      }
+    },
+    {
+      "query_id": "problem_demand_347",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": null,
+        "keyword_difficulty_used": 50,
+        "keyword_difficulty_was_imputed": true,
+        "attainability_score": 0.5,
+        "opportunity_score": 48.4
+      }
+    },
+    {
+      "query_id": "problem_demand_364",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.8057,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 86.4
+      }
+    },
+    {
+      "query_id": "problem_demand_375",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 110,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.738,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 81.7
+      }
+    },
+    {
+      "query_id": "problem_demand_385",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.7068,
+        "keyword_difficulty_original": 19,
+        "keyword_difficulty_used": 19,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.81,
+        "opportunity_score": 73.8
+      }
+    },
+    {
+      "query_id": "problem_demand_388",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 90,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.7068,
+        "keyword_difficulty_original": 16,
+        "keyword_difficulty_used": 16,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.84,
+        "opportunity_score": 74.7
+      }
+    },
+    {
+      "query_id": "problem_demand_390",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6679,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 76.8
+      }
+    },
+    {
+      "query_id": "problem_demand_407",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 70,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6679,
+        "keyword_difficulty_original": 3,
+        "keyword_difficulty_used": 3,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.97,
+        "opportunity_score": 75.9
+      }
+    },
+    {
+      "query_id": "problem_demand_420",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 71
+      }
+    },
+    {
+      "query_id": "problem_demand_422",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 73.1
+      }
+    },
+    {
+      "query_id": "problem_demand_425",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 73.1
+      }
+    },
+    {
+      "query_id": "problem_demand_428",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 50,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.6161,
+        "keyword_difficulty_original": 3,
+        "keyword_difficulty_used": 3,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.97,
+        "opportunity_score": 72.2
+      }
+    },
+    {
+      "query_id": "problem_demand_437",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 30,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5381,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 67.7
+      }
+    },
+    {
+      "query_id": "problem_demand_444",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 40,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5819,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 70.7
+      }
+    },
+    {
+      "query_id": "problem_demand_449",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 40,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5819,
+        "keyword_difficulty_original": 14,
+        "keyword_difficulty_used": 14,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.86,
+        "opportunity_score": 66.5
+      }
+    },
+    {
+      "query_id": "problem_demand_469",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 30,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5381,
+        "keyword_difficulty_original": 0,
+        "keyword_difficulty_used": 0,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 1,
+        "opportunity_score": 67.7
+      }
+    },
+    {
+      "query_id": "problem_demand_472",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 30,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.5381,
+        "keyword_difficulty_original": 13,
+        "keyword_difficulty_used": 13,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.87,
+        "opportunity_score": 63.8
+      }
+    },
+    {
+      "query_id": "problem_demand_492",
+      "territory": "problem_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 590,
+        "demand_score": 0.4771,
+        "keyword_difficulty_original": 8,
+        "keyword_difficulty_used": 8,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.92,
+        "opportunity_score": 61
+      }
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 320,
+        "demand_score": 0.5275,
+        "keyword_difficulty_original": 11,
+        "keyword_difficulty_used": 11,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.89,
+        "opportunity_score": 63.6
+      }
+    },
+    {
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 20,
+        "territory_p95_search_volume": 320,
+        "demand_score": 0.5275,
+        "keyword_difficulty_original": 8,
+        "keyword_difficulty_used": 8,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.92,
+        "opportunity_score": 64.5
+      }
+    },
+    {
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 320,
+        "territory_p95_search_volume": 320,
+        "demand_score": 1,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 99.4
+      }
+    },
+    {
+      "query_id": "solution_demand_142",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 320,
+        "demand_score": 0.8909,
+        "keyword_difficulty_original": 13,
+        "keyword_difficulty_used": 13,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.87,
+        "opportunity_score": 88.5
+      }
+    },
+    {
+      "query_id": "solution_demand_143",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 320,
+        "demand_score": 0.8909,
+        "keyword_difficulty_original": 7,
+        "keyword_difficulty_used": 7,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.93,
+        "opportunity_score": 90.3
+      }
+    },
+    {
+      "query_id": "solution_demand_144",
+      "territory": "solution_demand",
+      "opportunity_metrics": {
+        "search_volume_used": 170,
+        "territory_p95_search_volume": 320,
+        "demand_score": 0.8909,
+        "keyword_difficulty_original": 2,
+        "keyword_difficulty_used": 2,
+        "keyword_difficulty_was_imputed": false,
+        "attainability_score": 0.98,
+        "opportunity_score": 91.8
+      }
+    }
+  ],
   "territory_rankings": [
     {
       "territory": "problem_demand",
-      "confirmed_query_count": 2,
-      "maximum_search_volume": 390,
-      "selected_query_count": 2,
+      "confirmed_query_count": 44,
+      "territory_p95_search_volume": 590,
+      "selected_query_count": 10,
       "queries": [
         {
           "rank": 1,
-          "query_id": "problem_demand_030",
+          "query_id": "problem_demand_304",
           "territory": "problem_demand",
-          "query": "marketplace listings",
-          "validation_reasoning": "This reflects the core marketplace workflow of managing listings, which is part of the company’s marketplace operations scope.",
+          "query": "marketplace examples",
+          "validation_reasoning": "Marketplace examples are legitimate early-funnel education for marketplace founders and operators, which naturally bridges to Zavi’s core category.",
           "source_seed_keywords": [
-            "marketplace operations",
-            "marketplace growth strategy",
-            "marketplace seller onboarding",
-            "marketplace trust and safety",
-            "marketplace management",
-            "marketplace support operations"
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
           ],
-          "discovery_rank": 30,
-          "core_keyword": "marketplace list",
+          "discovery_rank": 304,
+          "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 390,
+            "search_volume": 720,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 720
+                "search_volume": 110
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 390
+                "search_volume": 320
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 390
+                "search_volume": 720
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 390
+                "search_volume": 720
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 480
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 720
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -66,
+              "quarterly": -85,
+              "yearly": -48
+            },
+            "cpc": 3.7,
+            "paid_competition": 0.02,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 6,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 81.2,
+              "referring_domains": 26.9,
+              "main_domain_rank": 475.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 720,
+            "territory_p95_search_volume": 590,
+            "demand_score": 1,
+            "keyword_difficulty_original": 6,
+            "keyword_difficulty_used": 6,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.94,
+            "opportunity_score": 98.2
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "problem_demand_273",
+          "territory": "problem_demand",
+          "query": "saturated marketplace",
+          "validation_reasoning": "The query describes a saturated marketplace growth problem that Zavi’s growth experiments and funnel-fix workflows can address.",
+          "source_seed_keywords": [
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
+          ],
+          "discovery_rank": 273,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 1600,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 1300
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 1600
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 1900
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 1600
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1900
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 1300
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 1300
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -32,
+              "quarterly": -45,
+              "yearly": -32
+            },
+            "cpc": null,
+            "paid_competition": 0,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 11,
+            "search_intent": {
+              "main": "informational",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 51.5,
+              "referring_domains": 33.9,
+              "main_domain_rank": 538.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 1600,
+            "territory_p95_search_volume": 590,
+            "demand_score": 1,
+            "keyword_difficulty_original": 11,
+            "keyword_difficulty_used": 11,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.89,
+            "opportunity_score": 96.7
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "problem_demand_281",
+          "territory": "problem_demand",
+          "query": "create marketplace",
+          "validation_reasoning": "The query asks how to create a marketplace, which matches Zavi’s marketplace build assistance.",
+          "source_seed_keywords": [
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
+          ],
+          "discovery_rank": 281,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 590,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 1000
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 590
               },
               {
                 "year": 2026,
@@ -74,12 +1006,12 @@
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 320
+                "search_volume": 590
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 260
+                "search_volume": 720
               },
               {
                 "year": 2025,
@@ -94,7 +1026,7 @@
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 390
+                "search_volume": 480
               },
               {
                 "year": 2025,
@@ -104,54 +1036,727 @@
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 320
+                "search_volume": 390
               }
             ],
             "search_volume_trend": {
-              "monthly": 85,
-              "quarterly": 85,
-              "yearly": 125
+              "monthly": 14,
+              "quarterly": 14,
+              "yearly": 108
             },
-            "cpc": 3.48,
+            "cpc": 2.82,
+            "paid_competition": 0.09,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 17,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 2689,
+              "referring_domains": 959.9,
+              "main_domain_rank": 601.1
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 590,
+            "territory_p95_search_volume": 590,
+            "demand_score": 1,
+            "keyword_difficulty_original": 17,
+            "keyword_difficulty_used": 17,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.83,
+            "opportunity_score": 94.9
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "problem_demand_317",
+          "territory": "problem_demand",
+          "query": "grow marketplace",
+          "validation_reasoning": "The query asks how to grow a marketplace, which matches Zavi’s growth and retention workflows.",
+          "source_seed_keywords": [
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
+          ],
+          "discovery_rank": 317,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 210,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -18,
+              "yearly": -33
+            },
+            "cpc": null,
             "paid_competition": 0.04,
             "paid_competition_level": "LOW",
-            "keyword_difficulty": 15,
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": [
+                "navigational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 2915.5,
+              "referring_domains": 20.1,
+              "main_domain_rank": 304.8
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 210,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.8386,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 1,
+            "opportunity_score": 88.7
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "problem_demand_199",
+          "territory": "problem_demand",
+          "query": "marketplace tools",
+          "validation_reasoning": "The query asks for marketplace tools, which is the company's core software category for marketplace operators.",
+          "source_seed_keywords": [
+            "marketplace seller onboarding",
+            "marketplace supply activation",
+            "marketplace dispute handling",
+            "marketplace fraud review",
+            "marketplace growth operations",
+            "marketplace funnel leaks"
+          ],
+          "discovery_rank": 199,
+          "core_keyword": "tooling marketplace",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 210,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 210
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -34,
+              "quarterly": 0,
+              "yearly": -19
+            },
+            "cpc": 0.88,
+            "paid_competition": 0.63,
+            "paid_competition_level": "MEDIUM",
+            "keyword_difficulty": 2,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 1.4,
+              "referring_domains": 1,
+              "main_domain_rank": 1000
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 210,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.8386,
+            "keyword_difficulty_original": 2,
+            "keyword_difficulty_used": 2,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.98,
+            "opportunity_score": 88.1
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "problem_demand_364",
+          "territory": "problem_demand",
+          "query": "marketplace advantages",
+          "validation_reasoning": "Marketplace advantages is an early-funnel educational topic for marketplace founders and operators that naturally bridges to Zavi’s category.",
+          "source_seed_keywords": [
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
+          ],
+          "discovery_rank": 364,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 170,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 170
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -50,
+              "quarterly": -36,
+              "yearly": -50
+            },
+            "cpc": null,
+            "paid_competition": 0.02,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
             "search_intent": {
               "main": "informational",
               "secondary": []
             },
             "average_top_10": {
-              "backlinks": 2528.8,
-              "referring_domains": 914.8,
-              "main_domain_rank": 818.6
+              "backlinks": 5.1,
+              "referring_domains": 3.4,
+              "main_domain_rank": 462.8
             }
           },
           "opportunity_metrics": {
-            "search_volume_used": 390,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 1,
-            "keyword_difficulty_original": 15,
-            "keyword_difficulty_used": 15,
+            "search_volume_used": 170,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.8057,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.85,
-            "opportunity_score": 85
+            "attainability_score": 1,
+            "opportunity_score": 86.4
           }
         },
         {
-          "rank": 2,
-          "query_id": "problem_demand_052",
+          "rank": 7,
+          "query_id": "problem_demand_375",
+          "territory": "problem_demand",
+          "query": "marketplace launch",
+          "validation_reasoning": "The query asks about launching a marketplace, which is directly aligned with Zavi’s build and growth lifecycle coverage.",
+          "source_seed_keywords": [
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
+          ],
+          "discovery_rank": 375,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 110,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 110
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -18,
+              "yearly": -57
+            },
+            "cpc": null,
+            "paid_competition": 0.02,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 0,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial",
+                "navigational"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 15.8,
+              "referring_domains": 11,
+              "main_domain_rank": 540.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 110,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.738,
+            "keyword_difficulty_original": 0,
+            "keyword_difficulty_used": 0,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 1,
+            "opportunity_score": 81.7
+          }
+        },
+        {
+          "rank": 8,
+          "query_id": "problem_demand_291",
+          "territory": "problem_demand",
+          "query": "marketplace businesses",
+          "validation_reasoning": "The query targets marketplace businesses, which are the company’s ICP and can naturally be written about in a marketplace ops context.",
+          "source_seed_keywords": [
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
+          ],
+          "discovery_rank": 291,
+          "core_keyword": "business-to-business marketplace",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 210
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 1000
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 140
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -18,
+              "quarterly": -33,
+              "yearly": -33
+            },
+            "cpc": null,
+            "paid_competition": 0.15,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 44,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 4432.6,
+              "referring_domains": 617.7,
+              "main_domain_rank": 500.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.9044,
+            "keyword_difficulty_original": 44,
+            "keyword_difficulty_used": 44,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.56,
+            "opportunity_score": 80.1
+          }
+        },
+        {
+          "rank": 9,
+          "query_id": "problem_demand_039",
+          "territory": "problem_demand",
+          "query": "marketplace business model",
+          "validation_reasoning": "The query is a marketplace business-model topic that marketplace founders and operators search when evaluating how to run the business.",
+          "source_seed_keywords": [
+            "marketplace seller onboarding",
+            "marketplace supply activation",
+            "marketplace dispute handling",
+            "marketplace fraud review",
+            "marketplace growth operations",
+            "marketplace funnel leaks"
+          ],
+          "discovery_rank": 39,
+          "core_keyword": "business model marketplace",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 90,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 70
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 90
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -22,
+              "quarterly": -22,
+              "yearly": -50
+            },
+            "cpc": 1.75,
+            "paid_competition": 0.15,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 1,
+            "search_intent": {
+              "main": "informational",
+              "secondary": [
+                "commercial"
+              ]
+            },
+            "average_top_10": {
+              "backlinks": 49.3,
+              "referring_domains": 9.5,
+              "main_domain_rank": 396.6
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 90,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.7068,
+            "keyword_difficulty_original": 1,
+            "keyword_difficulty_used": 1,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.99,
+            "opportunity_score": 79.2
+          }
+        },
+        {
+          "rank": 10,
+          "query_id": "problem_demand_289",
           "territory": "problem_demand",
           "query": "marketplace alerts",
-          "validation_reasoning": "This reflects an operator workflow around marketplace monitoring and notifications, which fits the company’s marketplace operations scope.",
+          "validation_reasoning": "Marketplace alerts are a natural operator workflow for proactive check-ins and monitoring that Zavi supports.",
           "source_seed_keywords": [
-            "marketplace operations",
-            "marketplace growth strategy",
-            "marketplace seller onboarding",
-            "marketplace trust and safety",
-            "marketplace management",
-            "marketplace support operations"
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
           ],
-          "discovery_rank": 52,
+          "discovery_rank": 289,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
@@ -239,32 +1844,703 @@
           },
           "opportunity_metrics": {
             "search_volume_used": 110,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.789,
+            "territory_p95_search_volume": 590,
+            "demand_score": 0.738,
             "keyword_difficulty_original": 9,
             "keyword_difficulty_used": 9,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.91,
-            "opportunity_score": 71.8
+            "attainability_score": 0.91,
+            "opportunity_score": 79
           }
         }
       ]
     },
     {
       "territory": "solution_demand",
-      "confirmed_query_count": 0,
-      "maximum_search_volume": 0,
-      "selected_query_count": 0,
-      "queries": []
+      "confirmed_query_count": 6,
+      "territory_p95_search_volume": 320,
+      "selected_query_count": 6,
+      "queries": [
+        {
+          "rank": 1,
+          "query_id": "solution_demand_070",
+          "territory": "solution_demand",
+          "query": "report automation",
+          "validation_reasoning": "Automated reporting is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 70,
+          "core_keyword": "automated reports",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 480
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -19,
+              "yearly": -64
+            },
+            "cpc": 16.27,
+            "paid_competition": 0.18,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 2,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 102.4,
+              "referring_domains": 36.9,
+              "main_domain_rank": 444.1
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "territory_p95_search_volume": 320,
+            "demand_score": 1,
+            "keyword_difficulty_original": 2,
+            "keyword_difficulty_used": 2,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.98,
+            "opportunity_score": 99.4
+          }
+        },
+        {
+          "rank": 2,
+          "query_id": "solution_demand_144",
+          "territory": "solution_demand",
+          "query": "reporting automation tools",
+          "validation_reasoning": "Reporting automation is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 144,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 170,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 27,
+              "quarterly": 27,
+              "yearly": -76
+            },
+            "cpc": 11.79,
+            "paid_competition": 0.08,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 2,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 21.6,
+              "referring_domains": 8.9,
+              "main_domain_rank": 478.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 170,
+            "territory_p95_search_volume": 320,
+            "demand_score": 0.8909,
+            "keyword_difficulty_original": 2,
+            "keyword_difficulty_used": 2,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.98,
+            "opportunity_score": 91.8
+          }
+        },
+        {
+          "rank": 3,
+          "query_id": "solution_demand_143",
+          "territory": "solution_demand",
+          "query": "automation reporting tools",
+          "validation_reasoning": "Reporting automation is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 143,
+          "core_keyword": "reporting automation tools",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 170,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 27,
+              "quarterly": 27,
+              "yearly": -76
+            },
+            "cpc": 11.79,
+            "paid_competition": 0.08,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 7,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 531.2,
+              "referring_domains": 86.6,
+              "main_domain_rank": 411.5
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 170,
+            "territory_p95_search_volume": 320,
+            "demand_score": 0.8909,
+            "keyword_difficulty_original": 7,
+            "keyword_difficulty_used": 7,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.93,
+            "opportunity_score": 90.3
+          }
+        },
+        {
+          "rank": 4,
+          "query_id": "solution_demand_142",
+          "territory": "solution_demand",
+          "query": "report automation tools",
+          "validation_reasoning": "Reporting automation is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 142,
+          "core_keyword": "reporting automation tools",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 170,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 140
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 110
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 480
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 170
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 390
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 260
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 27,
+              "quarterly": 27,
+              "yearly": -76
+            },
+            "cpc": 11.79,
+            "paid_competition": 0.08,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 13,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 108.9,
+              "referring_domains": 40,
+              "main_domain_rank": 419.7
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 170,
+            "territory_p95_search_volume": 320,
+            "demand_score": 0.8909,
+            "keyword_difficulty_original": 13,
+            "keyword_difficulty_used": 13,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.87,
+            "opportunity_score": 88.5
+          }
+        },
+        {
+          "rank": 5,
+          "query_id": "solution_demand_026",
+          "territory": "solution_demand",
+          "query": "service marketplace software",
+          "validation_reasoning": "Service marketplace software is still marketplace software, and Zavi is built for marketplace operators across that subtype.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 26,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 20,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -50,
+              "yearly": -33
+            },
+            "cpc": null,
+            "paid_competition": 0.06,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 8,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 3110.3,
+              "referring_domains": 139,
+              "main_domain_rank": 446.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 20,
+            "territory_p95_search_volume": 320,
+            "demand_score": 0.5275,
+            "keyword_difficulty_original": 8,
+            "keyword_difficulty_used": 8,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.92,
+            "opportunity_score": 64.5
+          }
+        },
+        {
+          "rank": 6,
+          "query_id": "solution_demand_025",
+          "territory": "solution_demand",
+          "query": "services marketplace software",
+          "validation_reasoning": "Service marketplace software is a marketplace software subtype, and Zavi directly serves marketplace operators with build, grow, and run workflows.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 25,
+          "core_keyword": "service marketplace software",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 20,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -50,
+              "yearly": -33
+            },
+            "cpc": null,
+            "paid_competition": 0.06,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 11,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 3118.1,
+              "referring_domains": 142.8,
+              "main_domain_rank": 412.9
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 20,
+            "territory_p95_search_volume": 320,
+            "demand_score": 0.5275,
+            "keyword_difficulty_original": 11,
+            "keyword_difficulty_used": 11,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.89,
+            "opportunity_score": 63.6
+          }
+        }
+      ]
     }
   ],
   "summary": {
-    "confirmed_queries_considered": 2,
-    "problem_queries_considered": 2,
-    "solution_queries_considered": 0,
-    "problem_queries_selected": 2,
-    "solution_queries_selected": 0,
-    "total_queries_selected": 2,
+    "confirmed_queries_considered": 50,
+    "problem_queries_considered": 44,
+    "solution_queries_considered": 6,
+    "problem_queries_selected": 10,
+    "solution_queries_selected": 6,
+    "total_queries_selected": 16,
+    "total_queries_scored": 50,
+    "problem_queries_scored": 44,
+    "solution_queries_scored": 6,
+    "missing_keyword_difficulty_scored": 2,
     "missing_keyword_difficulty_selected": 0
   }
 }

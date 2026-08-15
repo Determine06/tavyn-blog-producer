@@ -17,8 +17,16 @@ import { resolvePipelineArgs } from "./pipeline/interactiveOptions.js";
 import { parsePipelineCliOptions } from "./pipeline/options.js";
 import type { PipelineStageId } from "./pipeline/stages.js";
 import { CompanyReportSchema } from "./types/companyReport.schema.js";
+import { CompanyProfileSchema } from "./types/companyProfile.schema.js";
+import { CompetitorLandscapeSchema } from "./types/competitorLandscape.schema.js";
+import { ConfirmedQueriesSchema } from "./types/confirmedQueries.schema.js";
+import { ContentRecommendationSchema } from "./types/contentRecommendation.schema.js";
+import { KeywordMetricsSchema } from "./types/keywordMetrics.schema.js";
 import { QueryOpportunitiesSchema } from "./types/queryOpportunities.schema.js";
 import { QueryRecommendationsSchema } from "./types/queryRecommendations.schema.js";
+import { QueryValidationSchema } from "./types/queryValidation.schema.js";
+import { SeedKeywordsSchema } from "./types/seedKeywords.schema.js";
+import { SerpResultsSchema } from "./types/serpResults.schema.js";
 
 type RunContext = {
   runId: string;
@@ -85,6 +93,7 @@ async function main(): Promise<void> {
       forceSerp,
       forceQueryMetrics,
       forceQueryValidation,
+      forceConfirmedQueries,
       forceQueryOpportunities,
       forceQueryRecommendations,
       forceContentRecommendation,
@@ -133,6 +142,7 @@ async function main(): Promise<void> {
     logInfo(`forceSerp: ${forceSerp}`);
     logInfo(`forceQueryMetrics: ${forceQueryMetrics}`);
     logInfo(`forceQueryValidation: ${forceQueryValidation}`);
+    logInfo(`forceConfirmedQueries: ${forceConfirmedQueries}`);
     logInfo(`forceQueryOpportunities: ${forceQueryOpportunities}`);
     logInfo(`forceQueryRecommendations: ${forceQueryRecommendations}`);
     logInfo(`forceContentRecommendation: ${forceContentRecommendation}`);
@@ -198,6 +208,7 @@ async function main(): Promise<void> {
       stepName: "company-profile-generation",
       artifactPath: companyProfileArtifactPath,
       force: shouldForceProfile,
+      parseCached: (artifact) => CompanyProfileSchema.parse(artifact),
       run: async () => {
         const { generateCompanyProfileFromContext } = await import(
           "./steps/generateCompanyProfile.js"
@@ -239,6 +250,7 @@ async function main(): Promise<void> {
       stepName: "seed-keyword-generation",
       artifactPath: seedKeywordsArtifactPath,
       force: shouldForceSeedKeywords,
+      parseCached: (artifact) => SeedKeywordsSchema.parse(artifact),
       run: async () => {
         const { generateSeedKeywords } = await import(
           "./steps/generateSeedKeywords.js"
@@ -248,24 +260,17 @@ async function main(): Promise<void> {
       },
     });
     const seedKeywords = seedKeywordsResult.data;
-    const problemDemandSeedCount =
-      seedKeywords.demand_territories.find(
-        (territory) => territory.territory_id === "problem_demand",
-      )?.seed_keywords.length ?? 0;
-    const solutionDemandSeedCount =
-      seedKeywords.demand_territories.find(
-        (territory) => territory.territory_id === "solution_demand",
-      )?.seed_keywords.length ?? 0;
-    const totalSeedCount = seedKeywords.demand_territories.reduce(
-      (total, territory) => total + territory.seed_keywords.length,
+    const totalSeedCount = seedKeywords.demand_groups.reduce(
+      (total, group) => total + group.seed_keywords.length,
       0,
     );
 
     logInfo(`Seed keywords cache hit: ${seedKeywordsResult.cacheHit}`);
     logInfo(`Seed keyword step ran: ${seedKeywordsResult.didRun}`);
-    logInfo(`Demand territory count: ${seedKeywords.demand_territories.length}`);
-    logInfo(`Problem-demand seed count: ${problemDemandSeedCount}`);
-    logInfo(`Solution-demand seed count: ${solutionDemandSeedCount}`);
+    logInfo(`Demand group count: ${seedKeywords.demand_groups.length}`);
+    for (const group of seedKeywords.demand_groups) {
+      logInfo(`${group.group_id} seed count: ${group.seed_keywords.length}`);
+    }
     logInfo(`Total seed count: ${totalSeedCount}`);
     logInfo(
       `Seed generation confidence: ${seedKeywords.generation_quality.overall_confidence}`,
@@ -289,6 +294,7 @@ async function main(): Promise<void> {
       stepName: "keyword-metrics-generation",
       artifactPath: keywordMetricsArtifactPath,
       force: shouldForceKeywordMetrics,
+      parseCached: (artifact) => KeywordMetricsSchema.parse(artifact),
       run: async () => {
         const { generateKeywordMetrics } = await import(
           "./steps/generateKeywordMetrics.js"
@@ -346,6 +352,7 @@ async function main(): Promise<void> {
       stepName: "query-validation",
       artifactPath: queryValidationArtifactPath,
       force: shouldForceQueryValidation,
+      parseCached: (artifact) => QueryValidationSchema.parse(artifact),
       run: async () => {
         const { generateQueryValidation } = await import(
           "./steps/generateQueryValidation.js"
@@ -381,7 +388,11 @@ async function main(): Promise<void> {
     const confirmedQueriesResult = await runCachedStep({
       stepName: "confirmed-query-generation",
       artifactPath: confirmedQueriesArtifactPath,
-      force: queryValidationResult.didRun || keywordMetricsResult.didRun,
+      force:
+        forceConfirmedQueries ||
+        queryValidationResult.didRun ||
+        keywordMetricsResult.didRun,
+      parseCached: (artifact) => ConfirmedQueriesSchema.parse(artifact),
       run: async () => {
         const { generateConfirmedQueries } = await import(
           "./steps/generateQueryValidation.js"
@@ -522,6 +533,7 @@ async function main(): Promise<void> {
       stepName: "serper-organic-serp-collection",
       artifactPath: serpResultsArtifactPath,
       force: shouldForceSerpResults,
+      parseCached: (artifact) => SerpResultsSchema.parse(artifact),
       run: async () => {
         const { generateSerpResults } = await import(
           "./steps/generateSerpResults.js"
@@ -573,6 +585,7 @@ async function main(): Promise<void> {
       stepName: "serp-informed-content-recommendation",
       artifactPath: contentRecommendationArtifactPath,
       force: shouldForceContentRecommendation,
+      parseCached: (artifact) => ContentRecommendationSchema.parse(artifact),
       run: async () => {
         const { generateContentRecommendation } = await import(
           "./steps/generateContentRecommendation.js"
@@ -637,6 +650,7 @@ async function main(): Promise<void> {
       stepName: "dataforseo-serp-competitor-landscape",
       artifactPath: competitorLandscapeArtifactPath,
       force: shouldForceCompetitorLandscape,
+      parseCached: (artifact) => CompetitorLandscapeSchema.parse(artifact),
       run: async () => {
         const { generateCompetitorLandscape } = await import(
           "./steps/generateCompetitorLandscape.js"

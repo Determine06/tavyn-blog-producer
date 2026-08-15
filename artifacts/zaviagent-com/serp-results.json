@@ -1,16 +1,16 @@
 {
-  "schema_version": "1.0.0",
-  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
-  "generated_at": "2026-07-19T18:47:25.235Z",
+  "schema_version": "1.1.0",
+  "run_id": "46ad305f-82ca-4d9b-87aa-d3e92c9e9e7d",
+  "generated_at": "2026-08-15T01:27:02.323Z",
   "source_artifacts": [
     "query-recommendations.json"
   ],
   "status": "complete",
   "warnings": [
-    "problem_demand_030 returned 6 organic results instead of 10.",
-    "problem_demand_052 returned 9 organic results instead of 10."
+    "solution_demand_070 returned 9 organic results instead of 10.",
+    "solution_demand_026 returned 9 organic results instead of 10."
   ],
-  "website_url": "https://www.zaviagent.com/",
+  "website_url": "https://zaviagent.com/",
   "provider": {
     "name": "serper",
     "endpoint": "https://google.serper.dev/search",
@@ -18,160 +18,275 @@
     "country_code": "us",
     "language_code": "en",
     "requested_results_per_query": 10,
-    "http_requests_made": 2,
-    "total_credits_used": 2
+    "http_requests_made": 3,
+    "total_credits_used": 3
   },
   "query_serps": [
     {
       "recommendation_id": "problem_demand_recommendation_01",
-      "query_id": "problem_demand_030",
+      "query_id": "problem_demand_281",
       "territory": "problem_demand",
-      "query": "marketplace listings",
-      "requested_at": "2026-07-19T18:47:24.242Z",
+      "query": "create marketplace",
+      "requested_at": "2026-08-15T01:27:01.095Z",
       "provider_credits_used": 1,
-      "organic_results_received": 6,
+      "organic_results_received": 10,
       "organic_results": [
         {
           "position": 1,
-          "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped",
-          "url": "https://www.facebook.com/marketplace/",
-          "domain": "facebook.com",
-          "snippet": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses ... Marketplace. · Sell · Categories. . Popular listings. . San ...",
+          "title": "Create Marketplace – Create Marketplace",
+          "url": "https://createmarketplace.co/",
+          "domain": "createmarketplace.co",
+          "snippet": "90k+ products sold, 5-star vibes. Get the inside scoop. Email. No SPAM. Pinky promise. Create Marketplace. 14647 Delaware St Suite 700. Westminster, ...",
           "date": null
         },
         {
           "position": 2,
-          "title": "Selling on Marketplace | Facebook Help Center",
-          "url": "https://m.facebook.com/help/153832041692242?locale2=en_US",
-          "domain": "m.facebook.com",
-          "snippet": "Create a listing Manage my listings. Create and Manage Listings. Buy and sell responsibly on Facebook",
+          "title": "marketplace - Facebook",
+          "url": "https://www.facebook.com/marketplace/create/",
+          "domain": "facebook.com",
+          "snippet": "No information is available for this page. · Learn why",
           "date": null
         },
         {
           "position": 3,
-          "title": "Sell something on Facebook Marketplace | Facebook Help Center",
-          "url": "https://m.facebook.com/help/iphone-app/561376580709359?locale2=en_US",
-          "domain": "m.facebook.com",
-          "snippet": "When you sell something on Marketplace, you create a public listing that can be seen by anyone on Marketplace and in Feed, search and other places on or off ...",
+          "title": "Create Marketplace (@createmarketplace) - Instagram",
+          "url": "https://www.instagram.com/createmarketplace/",
+          "domain": "instagram.com",
+          "snippet": "A place for makers … ariety of handmade, creative, and unique. Come get your 3D prints and other home made crafts!! Create Marketplace is open for business!",
           "date": null
         },
         {
           "position": 4,
-          "title": "How To Find Your Listing On Facebook Marketplace: Easy Access!",
-          "url": "https://www.youtube.com/watch?v=pDfH95qse0Q",
-          "domain": "youtube.com",
-          "snippet": "This video shows how to find your listing step by step. Learn where to view your active, pending, and sold listings easily. Manage your items ...",
+          "title": "Create a marketplace: Build your platform and business in 10 steps",
+          "url": "https://www.sharetribe.com/academy/guide/",
+          "domain": "sharetribe.com",
+          "snippet": "Learn how to create a marketplace platform from scratch. Build without coding, validate your idea, attract users, and scale—with proven strategies",
           "date": null
         },
         {
           "position": 5,
-          "title": "Find items to buy on Facebook Marketplace | Facebook Help Center",
-          "url": "https://m.facebook.com/help/222424444801203?locale2=en_US",
-          "domain": "m.facebook.com",
-          "snippet": "To find items on Marketplace, you can: Search for something specific. Browse by category. Filter your results. Change the location of the items you're looking ...",
+          "title": "Tannenbaum Marketplace | Broomfield CO - Facebook",
+          "url": "https://www.facebook.com/p/Tannenbaum-Marketplace-100095166184897/",
+          "domain": "facebook.com",
+          "snippet": "New inventory is at the store! Head on over to Create Marketplace in the Orchard and check out all the items we have available!",
           "date": null
         },
         {
           "position": 6,
-          "title": "How to Sell on Facebook Marketplace (Step-by-Step for Small Businesses)",
-          "url": "https://www.youtube.com/watch?v=PKVuNqaK558",
-          "domain": "youtube.com",
-          "snippet": "I'm going to show you step by step how to sell on Facebook Marketplace the right way we're going to cover what you can and cannot sell.",
+          "title": "how do people create marketplace startups? - Reddit",
+          "url": "https://www.reddit.com/r/startups/comments/113cc62/how_do_people_create_marketplace_startups/",
+          "domain": "reddit.com",
+          "snippet": "It depends on many things… you can start a marketplace by using Shopify for less then $200 and slowly grow it. MVP's are mostly used for custom ...",
+          "date": "Feb 15, 2023"
+        },
+        {
+          "position": 7,
+          "title": "How to Start an Online Marketplace from Scratch in 2026 - CS-Cart",
+          "url": "https://www.cs-cart.com/blog/how-to-create-an-ecommerce-marketplace-from-scratch/",
+          "domain": "cs-cart.com",
+          "snippet": "To build a successful marketplace, you need to validate your idea, choose the right business model, select marketplace software, attract sellers ...",
+          "date": "Jun 15, 2026"
+        },
+        {
+          "position": 8,
+          "title": "Create Marketplace - Orchard Town Center",
+          "url": "https://theorchardtowncenter.com/tenants/create-marketplace/",
+          "domain": "theorchardtowncenter.com",
+          "snippet": "Discover a world of creativity with our new makers market. Are you a lover of all things handmade and unique? Do you appreciate the craftsmanship, creativity, ...",
           "date": null
+        },
+        {
+          "position": 9,
+          "title": "How to build a marketplace website that drives sales - Wix.com",
+          "url": "https://www.wix.com/blog/how-to-build-a-marketplace-website",
+          "domain": "wix.com",
+          "snippet": "How to make a marketplace website in 9 steps · 01. Define your niche and business model · 02. Select a domain name and web host · 03. Pick a ...",
+          "date": "Apr 28, 2026"
+        },
+        {
+          "position": 10,
+          "title": "How To Create a Marketplace: 7 Essential Steps to make it",
+          "url": "https://www.medialem.com/en/marketplace-creation-maker/",
+          "domain": "medialem.com",
+          "snippet": "This is how to create an online marketplace with no code in 7 simple steps. This is the guide of the entire process to build a marketplace.",
+          "date": "Oct 15, 2025"
         }
       ]
     },
     {
-      "recommendation_id": "problem_demand_recommendation_02",
-      "query_id": "problem_demand_052",
-      "territory": "problem_demand",
-      "query": "marketplace alerts",
-      "requested_at": "2026-07-19T18:47:24.242Z",
+      "recommendation_id": "solution_demand_recommendation_01",
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "query": "report automation",
+      "requested_at": "2026-08-15T01:27:01.095Z",
       "provider_credits_used": 1,
       "organic_results_received": 9,
       "organic_results": [
         {
           "position": 1,
-          "title": "Faster Facebook Marketplace Alerts? : r/Flipping",
-          "url": "https://www.reddit.com/r/Flipping/comments/188jj5w/faster_facebook_marketplace_alerts/",
-          "domain": "reddit.com",
-          "snippet": "Does anyone know of a good way to get faster alerts on Facebook Marketplace? I've found that their built-in alert function is slow and most good deals ...",
-          "date": null
+          "title": "10 Best Automated Reporting Tools for Your Business in 2026 - Domo",
+          "url": "https://www.domo.com/learn/article/automated-reporting-tools",
+          "domain": "domo.com",
+          "snippet": "Automated reporting tools are software platforms that collect, organize, and visualize data in a structured, visually captivating waywithout ...",
+          "date": "Mar 17, 2026"
         },
         {
           "position": 2,
-          "title": "Swoopa: Marketplace Alerts for Private Party Car Deals & Sourcing",
-          "url": "https://getswoopa.com/",
-          "domain": "getswoopa.com",
-          "snippet": "Swoopa sends instant Marketplace alerts from Facebook, Craigslist, OfferUp, Kijiji, Gumtree, Nextdoor, and eBay so you message the seller before anyone else",
-          "date": null
+          "title": "How to Create Report Automation (From Excel to Final Presentation)",
+          "url": "https://www.youtube.com/watch?v=jsoQSQpAJvo",
+          "domain": "youtube.com",
+          "snippet": "Subscribe to our YOUTUBE Channel ➜ https://bit.ly/free-excel-videos ...",
+          "date": "Jun 27, 2024"
         },
         {
           "position": 3,
-          "title": "How to Set Up Facebook Marketplace Alerts (So You Never Miss a Deal)",
-          "url": "https://www.howtogeek.com/819768/how-to-set-up-facebook-marketplace-alerts/",
-          "domain": "howtogeek.com",
-          "snippet": "First, head on over to Facebook.com. Click the \"Marketplace\" Now click the \"Notify Me\" button under the search bar. Click \"Create Alert\" to ...",
-          "date": "Jun 8, 2024"
+          "title": "Automate report from data - Reddit",
+          "url": "https://www.reddit.com/r/automation/comments/1ovtlf6/automate_report_from_data/",
+          "domain": "reddit.com",
+          "snippet": "I am seeking a solution to automate a designed report, with charts, referencing an adobe In Design template and an Excel data file.",
+          "date": "Nov 13, 2025"
         },
         {
           "position": 4,
-          "title": "Turn your Marketplace notifications on or off",
-          "url": "https://m.facebook.com/help/2229494877335159?locale2=en_US",
-          "domain": "m.facebook.com",
-          "snippet": "Tap Menu in the top right of Facebook. Scroll down to Settings & privacy, then tap Settings. Scroll down, then tap Notifications.",
-          "date": null
+          "title": "10 Best Reporting Tools for 2026 (Tested & Compared)",
+          "url": "https://www.teamwork.com/blog/reporting-tools/",
+          "domain": "teamwork.com",
+          "snippet": "Traditional reporting automation follows a simple pattern: schedule a data pull, format the output, deliver it on a set cadence. You define the ...",
+          "date": "Jul 3, 2026"
         },
         {
           "position": 5,
-          "title": "Flipify: Fast Marketplace Alerts for Flippers",
-          "url": "https://www.flipifyapp.com/",
-          "domain": "flipifyapp.com",
-          "snippet": "Flipify monitors Facebook Marketplace, eBay, OfferUp, and more around the clock, then alerts you when a new listing matches your watchlist.",
+          "title": "ReportPortal test automation analytics platform and real-time reporting ...",
+          "url": "https://reportportal.io/",
+          "domain": "reportportal.io",
+          "snippet": "Centralized test automation dashboard. Provides AI-based defects triage and real time test report dashboard.",
           "date": null
         },
         {
           "position": 6,
-          "title": "How To Turn On Marketplace Notifications on Facebook | Step-By ...",
-          "url": "https://www.youtube.com/watch?v=TRnlG3tgoyU&vl=en-US",
-          "domain": "youtube.com",
-          "snippet": "In this tutorial, you'll discover how to enable alerts for new listings, messages, and updates on Facebook Marketplace. Marketplace ...",
-          "date": null
+          "title": "Mastering Reporting Automation - DocsAutomator",
+          "url": "https://www.docsautomator.co/blog/reporting-automation/",
+          "domain": "docsautomator.co",
+          "snippet": "Discover how reporting automation saves time, eliminates errors, and provides real-time insights. Learn to build automated workflows with ...",
+          "date": "Jul 5, 2025"
         },
         {
           "position": 7,
-          "title": "Turn your Facebook Marketplace notifications on or off | Messenger ...",
-          "url": "https://m.facebook.com/help/messenger-app/2229494877335159?locale2=en_US",
-          "domain": "m.facebook.com",
-          "snippet": "Tap Marketplace profile, then tap Settings. Tap Notifications. Tap on the notification category saved searches, tips for sellers) you'd like to turn on or off.",
+          "title": "What is Reporting Automation? - Jaspersoft",
+          "url": "https://www.jaspersoft.com/articles/what-is-reporting-automation",
+          "domain": "jaspersoft.com",
+          "snippet": "Reporting automation is a tool used in business to automatically generate and share specific information, to selected people, on a pre-decided time interval.",
           "date": null
         },
         {
           "position": 8,
-          "title": "Best Facebook Marketplace Alerts App: Get Notified in 3 Minutes (2026)",
-          "url": "https://carsnipe.com/blog/facebook-marketplace-notification-app",
-          "domain": "carsnipe.com",
-          "snippet": "A dedicated Facebook Marketplace notification app like CarSnipe monitors your searches every 3 minutes and sends instant Telegram alerts the moment matching ...",
+          "title": "9 Report Automation Tools That Actually Work for Marketing ... - Swydo",
+          "url": "https://www.swydo.com/blog/best-report-automation-tools/",
+          "domain": "swydo.com",
+          "snippet": "Stop burning $135K annually on manual reports. This comprehensive guide reviews 9 report automation tools with real 2025 pricing, ...",
+          "date": "Dec 1, 2025"
+        },
+        {
+          "position": 9,
+          "title": "Automated Reporting - Deloitte",
+          "url": "https://www.deloitte.com/cz-sk/en/services/consulting/services/business-intelligence/automated-reporting.html",
+          "domain": "deloitte.com",
+          "snippet": "Automated reporting is about bringing users data-driven insights in a timely way, without the users having to seek out the information for themselves.",
+          "date": null
+        }
+      ]
+    },
+    {
+      "recommendation_id": "solution_demand_recommendation_02",
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "query": "service marketplace software",
+      "requested_at": "2026-08-15T01:27:01.096Z",
+      "provider_credits_used": 1,
+      "organic_results_received": 9,
+      "organic_results": [
+        {
+          "position": 1,
+          "title": "Sharetribe - Marketplace Software for Founders",
+          "url": "https://www.sharetribe.com/",
+          "domain": "sharetribe.com",
+          "snippet": "Marketplace software to easily build any type of marketplace. Launch today with a no-code builder, extend your platform with code, scale to any size.",
+          "date": null
+        },
+        {
+          "position": 2,
+          "title": "How to Create a Service Marketplace: Complete Guide",
+          "url": "https://www.cs-cart.com/online-marketplace-for-professional-services.html",
+          "domain": "cs-cart.com",
+          "snippet": "Unlock success with our step-by-step guide to creating a thriving service marketplace. From inception to excellence, build your platform ...",
+          "date": "Jan 16, 2026"
+        },
+        {
+          "position": 3,
+          "title": "Best Service Marketplace Platforms in 2025 (Compared)",
+          "url": "https://www.shipturtle.com/blog/top-service-marketplace-platforms-in-2025",
+          "domain": "shipturtle.com",
+          "snippet": "Comparing the top service marketplace platforms of 2025. We break down features, pricing, and Shopify compatibility so you can choose the right one.",
+          "date": null
+        },
+        {
+          "position": 4,
+          "title": "Marketplace Platform",
+          "url": "https://www.appdirect.com/platform/marketplace-platform",
+          "domain": "appdirect.com",
+          "snippet": "AppDirect is the leading digital commerce platform to sell Microsoft 365 and other popular Microsoft cloud products to succeed in the digital economy.",
+          "date": null
+        },
+        {
+          "position": 5,
+          "title": "Top Rated Marketplace Software with Self service portal",
+          "url": "https://www.getapp.com/website-ecommerce-software/marketplace/f/self-service-portal/",
+          "domain": "getapp.com",
+          "snippet": "Tashi is the #1 travel marketplace software, built to launch and scale multi-vendor platforms with supplier onboarding, payments, and commission tracking.",
+          "date": null
+        },
+        {
+          "position": 6,
+          "title": "Marketplace Software | Glossary",
+          "url": "https://www.cloudblue.com/glossary/marketplace-software/",
+          "domain": "cloudblue.com",
+          "snippet": "Marketplace software is a type of software that allows companies to create their own marketplace, where they can sell products or services.",
+          "date": null
+        },
+        {
+          "position": 7,
+          "title": "Service Marketplaces: Complete Guide & Platforms Selection",
+          "url": "https://virtocommerce.com/blog/service-marketplace",
+          "domain": "virtocommerce.com",
+          "snippet": "Service marketplace tools for buyers are typically similar to those available in an eCommerce platform, such as a catalog of services or service ...",
+          "date": "Apr 26, 2024"
+        },
+        {
+          "position": 8,
+          "title": "Best Marketplace Software to Build a Multi-Vendor ...",
+          "url": "https://www.nauticalcommerce.com/blog/top-marketplace-software",
+          "domain": "nauticalcommerce.com",
+          "snippet": "Arcadier is a cloud-based marketplace platform designed for product, service, rental, and B2B marketplaces. It provides pre-built templates",
           "date": null
         },
         {
           "position": 9,
-          "title": "Never miss a listing. Now you can save your searches in Marketplace to get ...",
-          "url": "https://www.facebook.com/facebook/posts/never-miss-a-listing-now-you-can-save-your-searches-in-marketplace-to-get-update/1233643168807701/",
-          "domain": "facebook.com",
-          "snippet": "Never miss a listing. Now you can save your searches in Marketplace to get updates when there's new stuff you want.",
-          "date": null
+          "title": "Which are the best software to build a multi-niche service ...",
+          "url": "https://www.quora.com/Which-are-the-best-software-to-build-a-multi-niche-service-marketplace",
+          "domain": "quora.com",
+          "snippet": "1. Sharetribe: Sharetribe is a popular software platform that allows businesses to build a multi-niche service marketplace. · 2. Arcadier: ...",
+          "date": "3 years ago"
         }
       ]
     }
   ],
   "summary": {
-    "recommended_queries_received": 2,
-    "serp_requests_completed": 2,
-    "total_organic_results": 15,
+    "recommended_queries_received": 3,
+    "serp_requests_completed": 3,
+    "total_organic_results": 28,
     "queries_with_fewer_than_ten_results": [
-      "problem_demand_030",
-      "problem_demand_052"
+      "solution_demand_070",
+      "solution_demand_026"
     ]
   }
 }

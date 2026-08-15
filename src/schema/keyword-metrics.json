@@ -1,194 +1,157 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "run_id": "run_example",
-  "generated_at": "ISO-8601",
-  "source_artifacts": [
-    "seed-keywords.json"
-  ],
+  "generated_at": "2026-08-14T00:00:00.000Z",
+  "source_artifacts": ["seed-keywords.json"],
   "status": "complete",
   "warnings": [],
   "website_url": "https://example.com",
   "provider": {
     "name": "dataforseo",
     "endpoint": "/v3/dataforseo_labs/google/keyword_ideas/live",
-    "http_requests_made": 2,
-    "tasks_submitted": 2,
-    "total_cost_usd": 0
+    "http_requests_made": 4,
+    "tasks_submitted": 4,
+    "total_cost_usd": 0.04
   },
   "request_config": {
     "location_code": 2840,
     "language_code": "en",
-    "limit_per_task": 500,
+    "limit_per_task": 250,
     "closely_variants": true,
     "ignore_synonyms": false,
     "include_serp_info": true,
     "include_clickstream_data": false,
     "filters": [
-      [
-        "keyword_info.search_volume",
-        ">",
-        50
-      ],
+      ["keyword_info.search_volume", ">", 10],
       "and",
-      [
-        "keyword_properties.is_another_language",
-        "=",
-        false
-      ],
+      ["keyword_properties.is_another_language", "=", false],
       "and",
-      [
-        "keyword_properties.words_count",
-        ">=",
-        2
-      ],
+      ["keyword_properties.words_count", ">=", 2],
       "and",
-      [
-        "serp_info.serp_item_types",
-        "has_not",
-        "local_pack"
-      ],
+      ["serp_info.serp_item_types", "has_not", "local_pack"],
       "and",
-      [
-        "keyword",
-        "not_regex",
-        "(^|\\s)(near me|nearby|in my area|open now|opening hours|directions)(\\s|$)"
-      ],
+      ["keyword", "not_regex", "(^|\\s)(near me|nearby|in my area|open now|opening hours|directions)(\\s|$)"],
       "and",
-      [
-        "search_intent_info.main_intent",
-        "<>",
-        "navigational"
-      ]
+      ["search_intent_info.main_intent", "<>", "navigational"]
     ],
-    "order_by": [
-      "relevance,desc",
-      "keyword_info.search_volume,desc"
-    ],
-    "minimum_search_volume": 50
+    "order_by": ["relevance,desc", "keyword_info.search_volume,desc"],
+    "minimum_search_volume": 10
   },
   "query_sets": [
     {
       "territory": "problem_demand",
-      "task_tag": "problem_demand",
-      "seeds_used": [
-        "problem seed one",
-        "problem seed two",
-        "problem seed three",
-        "problem seed four",
-        "problem seed five",
-        "problem seed six"
+      "discovery_tasks": [
+        {
+          "discovery_group": "core_problem_demand",
+          "task_tag": "core_problem_demand",
+          "seeds_used": ["marketplace seller onboarding", "marketplace dispute management", "marketplace support operations", "marketplace fraud prevention", "marketplace funnel optimization", "marketplace performance reporting"],
+          "task_result": {
+            "task_id": "dataforseo-core-problem-task-id",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "cost_usd": 0.01,
+            "total_available_results": 1,
+            "items_received": 1,
+            "queries_retained": 1
+          }
+        },
+        {
+          "discovery_group": "adjacent_problem_demand",
+          "task_tag": "adjacent_problem_demand",
+          "seeds_used": ["marketplace liquidity", "marketplace supply growth", "marketplace retention strategy", "marketplace seller acquisition", "two sided marketplace growth", "marketplace seller activation"],
+          "task_result": {
+            "task_id": "dataforseo-adjacent-problem-task-id",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "cost_usd": 0.01,
+            "total_available_results": 0,
+            "items_received": 0,
+            "queries_retained": 0
+          }
+        }
       ],
-      "task_result": {
-        "task_id": "dataforseo-problem-task-id",
-        "status_code": 20000,
-        "status_message": "Ok.",
-        "cost_usd": 0,
-        "total_available_results": 0,
-        "items_received": 0
-      },
       "queries": [
         {
-          "query": "example problem query",
+          "query": "marketplace seller management",
           "discovery_rank": 1,
-          "core_keyword": "example core keyword",
+          "discovery_group": "core_problem_demand",
+          "source_seed_keywords": ["marketplace seller onboarding", "marketplace dispute management", "marketplace support operations", "marketplace fraud prevention", "marketplace funnel optimization", "marketplace performance reporting"],
+          "core_keyword": "seller management",
           "detected_language": "en",
           "metrics": {
             "search_volume": 100,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 110
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 10,
-              "quarterly": 20,
-              "yearly": 35
-            },
+            "monthly_searches": [{ "year": 2026, "month": 6, "search_volume": 110 }],
+            "search_volume_trend": { "monthly": 10, "quarterly": 20, "yearly": 35 },
             "cpc": 4.25,
             "paid_competition": 0.42,
             "paid_competition_level": "MEDIUM",
             "keyword_difficulty": 24,
-            "search_intent": {
-              "main": "informational",
-              "secondary": [
-                "commercial"
-              ]
-            },
-            "average_top_10": {
-              "backlinks": 120.5,
-              "referring_domains": 28.3,
-              "main_domain_rank": 462.8
-            }
+            "search_intent": { "main": "informational", "secondary": ["commercial"] },
+            "average_top_10": { "backlinks": 120.5, "referring_domains": 28.3, "main_domain_rank": 462.8 }
           }
         }
       ]
     },
     {
       "territory": "solution_demand",
-      "task_tag": "solution_demand",
-      "seeds_used": [
-        "solution seed one",
-        "solution seed two",
-        "solution seed three",
-        "solution seed four",
-        "solution seed five",
-        "solution seed six"
+      "discovery_tasks": [
+        {
+          "discovery_group": "core_solution_demand",
+          "task_tag": "core_solution_demand",
+          "seeds_used": ["marketplace operations software", "marketplace management system", "marketplace workflow automation", "seller management software", "marketplace analytics software", "multi vendor marketplace software"],
+          "task_result": {
+            "task_id": "dataforseo-core-solution-task-id",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "cost_usd": 0.01,
+            "total_available_results": 1,
+            "items_received": 1,
+            "queries_retained": 1
+          }
+        },
+        {
+          "discovery_group": "adjacent_solution_demand",
+          "task_tag": "adjacent_solution_demand",
+          "seeds_used": ["seller onboarding software", "marketplace trust and safety", "marketplace fraud detection", "vendor management software", "customer support automation", "workflow automation software"],
+          "task_result": {
+            "task_id": "dataforseo-adjacent-solution-task-id",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "cost_usd": 0.01,
+            "total_available_results": 0,
+            "items_received": 0,
+            "queries_retained": 0
+          }
+        }
       ],
-      "task_result": {
-        "task_id": "dataforseo-solution-task-id",
-        "status_code": 20000,
-        "status_message": "Ok.",
-        "cost_usd": 0,
-        "total_available_results": 0,
-        "items_received": 0
-      },
       "queries": [
         {
-          "query": "example solution query",
+          "query": "marketplace operations platform",
           "discovery_rank": 1,
-          "core_keyword": "example core keyword",
+          "discovery_group": "core_solution_demand",
+          "source_seed_keywords": ["marketplace operations software", "marketplace management system", "marketplace workflow automation", "seller management software", "marketplace analytics software", "multi vendor marketplace software"],
+          "core_keyword": "marketplace operations",
           "detected_language": "en",
           "metrics": {
             "search_volume": 90,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 100
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 11,
-              "quarterly": 18,
-              "yearly": 30
-            },
+            "monthly_searches": [{ "year": 2026, "month": 6, "search_volume": 100 }],
+            "search_volume_trend": { "monthly": 11, "quarterly": 18, "yearly": 30 },
             "cpc": 7.5,
             "paid_competition": 0.65,
             "paid_competition_level": "HIGH",
             "keyword_difficulty": 31,
-            "search_intent": {
-              "main": "commercial",
-              "secondary": [
-                "transactional"
-              ]
-            },
-            "average_top_10": {
-              "backlinks": 180.2,
-              "referring_domains": 36.4,
-              "main_domain_rank": 510.6
-            }
+            "search_intent": { "main": "commercial", "secondary": ["transactional"] },
+            "average_top_10": { "backlinks": 180.2, "referring_domains": 36.4, "main_domain_rank": 510.6 }
           }
         }
       ]
     }
   ],
   "summary": {
-    "problem_queries_received": 0,
-    "solution_queries_received": 0,
-    "total_queries_received": 0,
-    "unique_queries_received": 0,
+    "problem_queries_received": 1,
+    "solution_queries_received": 1,
+    "total_queries_received": 2,
+    "unique_queries_received": 2,
     "queries_returned_in_both_sets": 0,
     "missing_search_volume_count": 0,
     "missing_keyword_difficulty_count": 0,

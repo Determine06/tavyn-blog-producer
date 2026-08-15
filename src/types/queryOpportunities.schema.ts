@@ -8,7 +8,7 @@ import {
 
 const NonEmptyStringSchema = z.string().min(1);
 const TerritorySchema = z.enum(["problem_demand", "solution_demand"]);
-const SEEDS_PER_TERRITORY = 15;
+const SEEDS_PER_DISCOVERY_GROUP = 6;
 
 const OpportunityQuerySchema = z
   .object({
@@ -19,7 +19,7 @@ const OpportunityQuerySchema = z
     validation_reasoning: NonEmptyStringSchema,
     source_seed_keywords: z
       .array(NonEmptyStringSchema)
-      .length(SEEDS_PER_TERRITORY),
+      .length(SEEDS_PER_DISCOVERY_GROUP),
     discovery_rank: z.number().int().positive(),
     core_keyword: z.string().nullable(),
     detected_language: z.string().nullable(),

@@ -10,7 +10,9 @@ import {
   type KeywordMetrics,
 } from "../types/keywordMetrics.schema.js";
 import {
+  DISCOVERY_GROUP_IDS,
   SeedKeywordsSchema,
+  type DiscoveryGroupId,
   type SeedKeywords,
 } from "../types/seedKeywords.schema.js";
 
@@ -20,9 +22,11 @@ const DATAFORSEO_KEYWORD_IDEAS_ENDPOINT =
   "/v3/dataforseo_labs/google/keyword_ideas/live";
 const LOCATION_CODE = 2840;
 const LANGUAGE_CODE = "en";
-export const CANDIDATES_PER_TERRITORY = 500;
-export const SEEDS_PER_TERRITORY = 15;
-export const MINIMUM_SEARCH_VOLUME = 50;
+export const CANDIDATES_PER_DISCOVERY_GROUP = 250;
+export const SEEDS_PER_DISCOVERY_GROUP = 6;
+export const MAX_CANDIDATES_PER_TERRITORY = 500;
+export const MAX_TOTAL_CANDIDATES = 1000;
+export const MINIMUM_SEARCH_VOLUME = 10;
 const DATAFORSEO_KEYWORD_IDEAS_FILTERS = [
   ["keyword_info.search_volume", ">", MINIMUM_SEARCH_VOLUME],
   "and",
@@ -60,9 +64,15 @@ type DataForSeoResponse = {
   task: DataForSeoTask;
 };
 
+type DiscoveryGroupTaskInput = {
+  groupId: DiscoveryGroupId;
+  seeds: string[];
+  response: DataForSeoResponse;
+};
+
 export type DataForSeoTask = {
   id: string;
-  tag: Territory;
+  tag: DiscoveryGroupId;
   status_code: number;
   status_message: string;
   cost: number;
@@ -119,32 +129,38 @@ export async function generateKeywordMetrics(
   logStep("Starting keyword metrics generation");
 
   const validatedSeedKeywords = SeedKeywordsSchema.parse(seedKeywords);
-  const problemSeeds = getTerritorySeeds(
-    validatedSeedKeywords,
-    "problem_demand",
-  );
-  const solutionSeeds = getTerritorySeeds(
-    validatedSeedKeywords,
-    "solution_demand",
+  const groupSeeds = new Map<DiscoveryGroupId, string[]>(
+    DISCOVERY_GROUP_IDS.map((groupId) => [
+      groupId,
+      getDiscoveryGroupSeeds(validatedSeedKeywords, groupId),
+    ]),
   );
 
-  logInfo(`Problem seed count: ${problemSeeds.length}`);
-  logInfo(`Solution seed count: ${solutionSeeds.length}`);
-  logInfo("DataForSEO HTTP requests made: 2");
-  logInfo("DataForSEO tasks submitted: 2");
+  for (const groupId of DISCOVERY_GROUP_IDS) {
+    logInfo(`${groupId} seed count: ${groupSeeds.get(groupId)?.length ?? 0}`);
+  }
+  logInfo("DataForSEO HTTP requests made: 4");
+  logInfo("DataForSEO tasks submitted: 4");
 
-  const [problemResponse, solutionResponse] = await Promise.all([
-    fetchKeywordIdeasForTerritory("problem_demand", problemSeeds),
-    fetchKeywordIdeasForTerritory("solution_demand", solutionSeeds),
+  const responses = await Promise.all(
+    DISCOVERY_GROUP_IDS.map((groupId) =>
+      fetchKeywordIdeasForDiscoveryGroup(
+        groupId,
+        getRequiredGroupSeeds(groupSeeds, groupId),
+      ),
+    ),
+  );
+  const responseByGroup = new Map(
+    responses.map((response) => [response.task.tag, response]),
+  );
+  const problemQuerySet = buildQuerySet("problem_demand", [
+    getGroupTaskInput(responseByGroup, groupSeeds, "core_problem_demand"),
+    getGroupTaskInput(responseByGroup, groupSeeds, "adjacent_problem_demand"),
   ]);
-  const problemTask = problemResponse.task;
-  const solutionTask = solutionResponse.task;
-  const problemQuerySet = buildQuerySet("problem_demand", problemSeeds, problemTask);
-  const solutionQuerySet = buildQuerySet(
-    "solution_demand",
-    solutionSeeds,
-    solutionTask,
-  );
+  const solutionQuerySet = buildQuerySet("solution_demand", [
+    getGroupTaskInput(responseByGroup, groupSeeds, "core_solution_demand"),
+    getGroupTaskInput(responseByGroup, groupSeeds, "adjacent_solution_demand"),
+  ]);
   const querySets = [problemQuerySet, solutionQuerySet];
   const allQueries = querySets.flatMap((querySet) => querySet.queries);
   const problemNormalized = new Set(
@@ -168,10 +184,10 @@ export async function generateKeywordMetrics(
   const missingAverageTop10Count = allQueries.filter(
     (query) => query.metrics.average_top_10 === null,
   ).length;
-  const totalCost = problemResponse.cost + solutionResponse.cost;
-  recordDataForSeoUsage("Keyword metrics", 2, 2, totalCost);
+  const totalCost = responses.reduce((total, response) => total + response.cost, 0);
+  recordDataForSeoUsage("Keyword metrics", 4, 4, totalCost);
   const keywordMetrics = KeywordMetricsSchema.parse({
-    schema_version: "1.0.0",
+    schema_version: "2.1.0",
     run_id: runId,
     generated_at: new Date().toISOString(),
     source_artifacts: ["seed-keywords.json"],
@@ -181,14 +197,14 @@ export async function generateKeywordMetrics(
     provider: {
       name: "dataforseo",
       endpoint: DATAFORSEO_KEYWORD_IDEAS_ENDPOINT,
-      http_requests_made: 2,
-      tasks_submitted: 2,
+      http_requests_made: 4,
+      tasks_submitted: 4,
       total_cost_usd: totalCost,
     },
     request_config: {
       location_code: LOCATION_CODE,
       language_code: LANGUAGE_CODE,
-      limit_per_task: CANDIDATES_PER_TERRITORY,
+      limit_per_task: CANDIDATES_PER_DISCOVERY_GROUP,
       closely_variants: true,
       ignore_synonyms: false,
       include_serp_info: true,
@@ -231,38 +247,69 @@ export async function generateKeywordMetrics(
   return keywordMetrics;
 }
 
-function getTerritorySeeds(
+function getDiscoveryGroupSeeds(
   seedKeywords: SeedKeywords,
-  territory: Territory,
+  groupId: DiscoveryGroupId,
 ): string[] {
-  const demandTerritory = seedKeywords.demand_territories.find(
-    (item) => item.territory_id === territory,
+  const demandGroup = seedKeywords.demand_groups.find(
+    (item) => item.group_id === groupId,
   );
 
-  if (demandTerritory === undefined) {
-    throw new Error(`Seed keywords artifact is missing ${territory}.`);
+  if (demandGroup === undefined) {
+    throw new Error(`Seed keywords artifact is missing ${groupId}.`);
   }
 
-  if (demandTerritory.seed_keywords.length !== SEEDS_PER_TERRITORY) {
+  if (demandGroup.seed_keywords.length !== SEEDS_PER_DISCOVERY_GROUP) {
     throw new Error(
-      `${territory} must contain exactly ${SEEDS_PER_TERRITORY} seed keywords; found ${demandTerritory.seed_keywords.length}.`,
+      `${groupId} must contain exactly ${SEEDS_PER_DISCOVERY_GROUP} seed keywords; found ${demandGroup.seed_keywords.length}.`,
     );
   }
 
-  return demandTerritory.seed_keywords.map((seed) => seed.keyword);
+  return demandGroup.seed_keywords.map((seed) => seed.keyword);
 }
 
-async function fetchKeywordIdeasForTerritory(
-  territory: Territory,
+function getRequiredGroupSeeds(
+  groupSeeds: Map<DiscoveryGroupId, string[]>,
+  groupId: DiscoveryGroupId,
+): string[] {
+  const seeds = groupSeeds.get(groupId);
+
+  if (seeds === undefined) {
+    throw new Error(`Seed keywords artifact is missing ${groupId}.`);
+  }
+
+  return seeds;
+}
+
+function getGroupTaskInput(
+  responses: Map<DiscoveryGroupId, DataForSeoResponse>,
+  groupSeeds: Map<DiscoveryGroupId, string[]>,
+  groupId: DiscoveryGroupId,
+): DiscoveryGroupTaskInput {
+  const response = responses.get(groupId);
+
+  if (response === undefined) {
+    throw new Error(`DataForSEO response is missing ${groupId}.`);
+  }
+
+  return {
+    groupId,
+    seeds: getRequiredGroupSeeds(groupSeeds, groupId),
+    response,
+  };
+}
+
+async function fetchKeywordIdeasForDiscoveryGroup(
+  groupId: DiscoveryGroupId,
   seeds: string[],
 ): Promise<DataForSeoResponse> {
-  if (seeds.length !== SEEDS_PER_TERRITORY) {
+  if (seeds.length !== SEEDS_PER_DISCOVERY_GROUP) {
     throw new Error(
-      `${territory} keyword ideas request requires exactly ${SEEDS_PER_TERRITORY} seeds; found ${seeds.length}.`,
+      `${groupId} keyword ideas request requires exactly ${SEEDS_PER_DISCOVERY_GROUP} seeds; found ${seeds.length}.`,
     );
   }
 
-  logStep(`Fetching DataForSEO keyword ideas for ${territory}`);
+  logStep(`Fetching DataForSEO keyword ideas for ${groupId}`);
 
   const login = getRequiredEnvVar("DATAFORSEO_LOGIN");
   const password = getRequiredEnvVar("DATAFORSEO_PASSWORD");
@@ -273,19 +320,28 @@ async function fetchKeywordIdeasForTerritory(
       Authorization: `Basic ${authorization}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify([buildKeywordIdeasTask(territory, seeds)]),
+    body: JSON.stringify([buildKeywordIdeasTask(groupId, seeds)]),
   });
 
   if (!response.ok) {
     throw new Error(
-      `DataForSEO keyword ideas for ${territory} returned HTTP ${response.status}: ${await response.text()}`,
+      `DataForSEO keyword ideas for ${groupId} returned HTTP ${response.status}: ${await response.text()}`,
     );
   }
 
-  return parseDataForSeoResponse(await response.json(), territory);
+  return parseDataForSeoResponse(await response.json(), groupId);
 }
 
-export function buildKeywordIdeasTask(territory: Territory, keywords: string[]) {
+export function buildKeywordIdeasTask(
+  groupId: DiscoveryGroupId,
+  keywords: string[],
+) {
+  if (keywords.length !== SEEDS_PER_DISCOVERY_GROUP) {
+    throw new Error(
+      `${groupId} keyword ideas task requires exactly ${SEEDS_PER_DISCOVERY_GROUP} seeds; found ${keywords.length}.`,
+    );
+  }
+
   return {
     keywords,
     location_code: LOCATION_CODE,
@@ -294,16 +350,16 @@ export function buildKeywordIdeasTask(territory: Territory, keywords: string[]) 
     ignore_synonyms: false,
     include_serp_info: true,
     include_clickstream_data: false,
-    limit: CANDIDATES_PER_TERRITORY,
+    limit: CANDIDATES_PER_DISCOVERY_GROUP,
     filters: DATAFORSEO_KEYWORD_IDEAS_FILTERS,
     order_by: DATAFORSEO_KEYWORD_IDEAS_ORDER_BY,
-    tag: territory,
+    tag: groupId,
   };
 }
 
 function parseDataForSeoResponse(
   value: unknown,
-  requestedTerritory: Territory,
+  requestedGroup: DiscoveryGroupId,
 ): DataForSeoResponse {
   const root = requireRecord(value, "DataForSEO response root");
   const statusCode = requireNumber(root.status_code, "root status_code");
@@ -311,7 +367,7 @@ function parseDataForSeoResponse(
 
   if (statusCode !== 20000) {
     throw new Error(
-      `DataForSEO keyword ideas ${requestedTerritory} root status ${statusCode}: ${statusMessage}`,
+      `DataForSEO keyword ideas ${requestedGroup} root status ${statusCode}: ${statusMessage}`,
     );
   }
 
@@ -319,11 +375,11 @@ function parseDataForSeoResponse(
 
   if (tasks.length !== 1) {
     throw new Error(
-      `DataForSEO keyword ideas ${requestedTerritory} expected exactly one task; found ${tasks.length}.`,
+      `DataForSEO keyword ideas ${requestedGroup} expected exactly one task; found ${tasks.length}.`,
     );
   }
 
-  const task = parseTask(tasks[0], requestedTerritory);
+  const task = parseTask(tasks[0], requestedGroup);
 
   return {
     status_code: statusCode,
@@ -335,17 +391,17 @@ function parseDataForSeoResponse(
 
 function parseTask(
   value: unknown,
-  requestedTerritory: Territory,
+  requestedGroup: DiscoveryGroupId,
 ): DataForSeoTask {
   const task = requireRecord(value, "DataForSEO task");
   const taskData = getOptionalRecord(task.data, "task data", (record) => record);
-  const tag = requireTerritory(taskData?.tag, "task data tag");
+  const tag = requireDiscoveryGroup(taskData?.tag, "task data tag");
   const statusCode = requireNumber(task.status_code, "task status_code");
   const statusMessage = requireString(task.status_message, "task status_message");
 
-  if (tag !== requestedTerritory) {
+  if (tag !== requestedGroup) {
     throw new Error(
-      `DataForSEO keyword ideas expected ${requestedTerritory} task tag; received ${tag}.`,
+      `DataForSEO keyword ideas expected ${requestedGroup} task tag; received ${tag}.`,
     );
   }
 
@@ -462,14 +518,68 @@ function parseMonthlySearch(value: unknown) {
 
 function buildQuerySet(
   territory: Territory,
-  seeds: string[],
-  task: DataForSeoTask,
+  groupInputs: DiscoveryGroupTaskInput[],
 ) {
-  const result = task.result[0];
-  const dedupedItems = dedupeItemsWithinTerritory(result.items);
-  const queries = dedupedItems.map((item, index) => ({
+  const seenQueries = new Set<string>();
+  const queries: Array<ReturnType<typeof buildKeywordQuery>> = [];
+  const discoveryTasks = groupInputs.map(({ groupId, seeds, response }) => {
+    const task = response.task;
+    const result = task.result[0];
+    let queriesRetained = 0;
+
+    for (const item of result.items.slice(0, CANDIDATES_PER_DISCOVERY_GROUP)) {
+      const normalizedQuery = normalize(item.keyword);
+
+      if (seenQueries.has(normalizedQuery)) {
+        continue;
+      }
+
+      seenQueries.add(normalizedQuery);
+      queries.push(buildKeywordQuery(item, groupId, seeds, queries.length + 1));
+      queriesRetained += 1;
+
+      if (queries.length === MAX_CANDIDATES_PER_TERRITORY) {
+        break;
+      }
+    }
+
+    return {
+      discovery_group: groupId,
+      task_tag: task.tag,
+      seeds_used: seeds,
+      task_result: {
+        task_id: task.id,
+        status_code: task.status_code,
+        status_message: task.status_message,
+        cost_usd: task.cost,
+        total_available_results: toIntegerOrNull(result.total_count) ?? 0,
+        items_received: Math.min(
+          result.items.length,
+          CANDIDATES_PER_DISCOVERY_GROUP,
+        ),
+        queries_retained: queriesRetained,
+      },
+    };
+  });
+
+  return {
+    territory,
+    discovery_tasks: discoveryTasks,
+    queries,
+  };
+}
+
+function buildKeywordQuery(
+  item: DataForSeoItem,
+  groupId: DiscoveryGroupId,
+  seeds: string[],
+  discoveryRank: number,
+) {
+  return {
     query: item.keyword,
-    discovery_rank: index + 1,
+    discovery_rank: discoveryRank,
+    discovery_group: groupId,
+    source_seed_keywords: seeds,
     core_keyword: item.keyword_properties?.core_keyword ?? null,
     detected_language: item.keyword_properties?.detected_language ?? null,
     metrics: {
@@ -503,40 +613,7 @@ function buildQuerySet(
               main_domain_rank: item.avg_backlinks_info.main_domain_rank,
             },
     },
-  }));
-
-  return {
-    territory,
-    task_tag: territory,
-    seeds_used: seeds,
-    task_result: {
-      task_id: task.id,
-      status_code: task.status_code,
-      status_message: task.status_message,
-      cost_usd: task.cost,
-      total_available_results: toIntegerOrNull(result.total_count) ?? 0,
-      items_received: queries.length,
-    },
-    queries,
   };
-}
-
-function dedupeItemsWithinTerritory(items: DataForSeoItem[]): DataForSeoItem[] {
-  const seenQueries = new Set<string>();
-  const dedupedItems: DataForSeoItem[] = [];
-
-  for (const item of items) {
-    const normalizedQuery = normalize(item.keyword);
-
-    if (seenQueries.has(normalizedQuery)) {
-      continue;
-    }
-
-    seenQueries.add(normalizedQuery);
-    dedupedItems.push(item);
-  }
-
-  return dedupedItems;
 }
 
 function normalizeMonthlySearches(
@@ -598,12 +675,18 @@ function requireNumber(value: unknown, label: string): number {
   return numberValue;
 }
 
-function requireTerritory(value: unknown, label: string): Territory {
-  if (value === "problem_demand" || value === "solution_demand") {
-    return value;
+function requireDiscoveryGroup(
+  value: unknown,
+  label: string,
+): DiscoveryGroupId {
+  if (
+    typeof value === "string" &&
+    (DISCOVERY_GROUP_IDS as readonly string[]).includes(value)
+  ) {
+    return value as DiscoveryGroupId;
   }
 
-  throw new Error(`Expected ${label} to be a known demand territory.`);
+  throw new Error(`Expected ${label} to be a known discovery group.`);
 }
 
 function getOptionalRecord<T>(

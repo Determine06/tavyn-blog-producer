@@ -22,6 +22,7 @@ export type PipelineCliOptions = {
   forceSerp: boolean;
   forceQueryMetrics: boolean;
   forceQueryValidation: boolean;
+  forceConfirmedQueries: boolean;
   forceQueryOpportunities: boolean;
   forceQueryRecommendations: boolean;
   forceContentRecommendation: boolean;
@@ -64,6 +65,11 @@ export function parsePipelineCliOptions(argv: string[]): PipelineCliOptions {
     "--force-query-validation",
     "query-validation",
   );
+  const forceConfirmedQueries = hasLegacyForce(
+    argv,
+    "--force-confirmed-queries",
+    "confirmed-queries",
+  );
   const forceQueryOpportunities = hasLegacyForce(
     argv,
     "--force-query-opportunities",
@@ -103,6 +109,7 @@ export function parsePipelineCliOptions(argv: string[]): PipelineCliOptions {
     forceSerp,
     forceQueryMetrics,
     forceQueryValidation,
+    forceConfirmedQueries,
     forceQueryOpportunities,
     forceQueryRecommendations,
     forceContentRecommendation,
@@ -159,6 +166,9 @@ function parseLegacyForceStages(argv: string[]): PipelineStageId[] {
   }
   if (argv.includes("--force-query-validation")) {
     stages.push("query-validation");
+  }
+  if (argv.includes("--force-confirmed-queries")) {
+    stages.push("confirmed-queries");
   }
   if (argv.includes("--force-query-opportunities")) {
     stages.push("query-opportunities");

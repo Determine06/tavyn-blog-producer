@@ -82,6 +82,23 @@ test("legacy force flags normalize into typed force configuration", () => {
   assert.equal(options.stopAfter, "query-validation");
 });
 
+test("confirmed queries can be forced with modern and legacy flags", () => {
+  const modernOptions = parsePipelineCliOptions([
+    "https://example.com",
+    "--force",
+    "confirmed-queries",
+  ]);
+  const legacyOptions = parsePipelineCliOptions([
+    "https://example.com",
+    "--force-confirmed-queries",
+  ]);
+
+  assert.deepEqual(modernOptions.forceStages, ["confirmed-queries"]);
+  assert.equal(modernOptions.forceConfirmedQueries, true);
+  assert.deepEqual(legacyOptions.forceStages, ["confirmed-queries"]);
+  assert.equal(legacyOptions.forceConfirmedQueries, true);
+});
+
 test("artifact root parses without becoming the website URL", () => {
   const options = parsePipelineCliOptions([
     "https://example.com",

@@ -1,296 +1,408 @@
 {
-  "schema_version": "1.1.0",
-  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
-  "generated_at": "2026-07-19T18:47:05.198Z",
+  "schema_version": "2.0.0",
+  "run_id": "46ad305f-82ca-4d9b-87aa-d3e92c9e9e7d",
+  "generated_at": "2026-08-15T01:26:12.836Z",
   "source_artifacts": [
     "company-profile.json",
     "query-opportunities.json"
   ],
   "status": "complete",
   "warnings": [
-    "problem_demand had 2 confirmed queries; selected all 2 instead of 10.",
-    "solution_demand had no confirmed queries; selected 0 instead of 10.",
-    "solution_demand produced 0 recommendations instead of target 2: No solution-demand queries were supplied, so zero selections are appropriate in this territory."
+    "solution_demand had 6 confirmed queries; selected all 6 instead of 10."
   ],
-  "website_url": "https://www.zaviagent.com/",
+  "website_url": "https://zaviagent.com/",
   "source_profile": {
     "company_name": "Zavi",
-    "product_category": "marketplace operations automation platform",
-    "primary_icp": "marketplace founders and operators"
+    "product_category": "AI marketplace operations platform",
+    "primary_icp": "Marketplace operators and founders"
   },
   "selection_policy": {
-    "maximum_total_recommendations": 4,
-    "target_per_territory": 2,
-    "minimum_per_nonempty_territory": 1,
-    "maximum_per_territory": 2,
-    "allow_fewer_than_target": true
+    "problem_demand_target": 1,
+    "solution_demand_target": 2,
+    "total_target": 3,
+    "require_exact_total": true,
+    "prefer_product_specific_solution": true,
+    "product_specific_fallback": "best_distinct_solution_demand"
   },
   "territory_recommendations": [
     {
       "territory": "problem_demand",
-      "candidates_available": 2,
-      "target_recommendations": 2,
-      "recommendations_selected": 2,
-      "selection_status": "fulfilled",
-      "assessment": "These are the only confirmed problem-demand candidates, and both map to distinct marketplace-operations needs without overlapping enough to be satisfied by one focused page.",
+      "candidates_available": 10,
+      "target_recommendations": 1,
+      "recommendations_selected": 1,
+      "assessment": "Create marketplace is the strongest problem-demand choice because it matches Zavi's build-stage value proposition, has strong observed demand, and works as a standalone educational guide for marketplace founders.",
       "recommendations": [
         {
           "recommendation_id": "problem_demand_recommendation_01",
           "recommendation_rank": 1,
-          "query_id": "problem_demand_030",
+          "query_id": "problem_demand_281",
           "territory": "problem_demand",
-          "query": "marketplace listings",
-          "selection_reasoning": "This is the strongest fit because it matches a core marketplace-operations problem, has the highest observed demand, and supports a focused informational page with a natural connection to Zavi's supply-onboarding positioning.",
-          "content_angle": "Explain how marketplace listings affect supply quality, activation, and ongoing catalog upkeep, with practical guidance for operators.",
-          "product_connection": "Zavi can appear as the system that helps recruit, verify, and activate supply so marketplace listings do not run dry.",
-          "confidence": "medium",
-          "opportunity_rank": 1,
-          "validation_reasoning": "This reflects the core marketplace workflow of managing listings, which is part of the company’s marketplace operations scope.",
+          "query": "create marketplace",
+          "selection_reasoning": "This is the strongest problem-demand opportunity because it matches a real marketplace creation need, has strong demand and attainability, and gives Zavi a natural build-stage entry point.",
+          "content_angle": "Write the page as a practical guide to creating a marketplace, emphasizing the early build decisions and operator workflows that Zavi can help automate.",
+          "product_connection": "Zavi can appear as the AI super agent that helps stand up a marketplace from nothing and then support the next operational steps.",
+          "confidence": "high",
+          "opportunity_rank": 3,
+          "validation_reasoning": "The query asks how to create a marketplace, which matches Zavi’s marketplace build assistance.",
           "source_seed_keywords": [
-            "marketplace operations",
-            "marketplace growth strategy",
-            "marketplace seller onboarding",
-            "marketplace trust and safety",
-            "marketplace management",
-            "marketplace support operations"
+            "marketplace retention",
+            "marketplace repeat business",
+            "marketplace acquisition efficiency",
+            "marketplace conversion drop-offs",
+            "marketplace operator updates",
+            "marketplace growth bottlenecks"
           ],
-          "discovery_rank": 30,
-          "core_keyword": "marketplace list",
-          "detected_language": "en",
-          "metrics": {
-            "search_volume": 390,
-            "monthly_searches": [
-              {
-                "year": 2026,
-                "month": 6,
-                "search_volume": 720
-              },
-              {
-                "year": 2026,
-                "month": 5,
-                "search_volume": 390
-              },
-              {
-                "year": 2026,
-                "month": 4,
-                "search_volume": 390
-              },
-              {
-                "year": 2026,
-                "month": 3,
-                "search_volume": 390
-              },
-              {
-                "year": 2026,
-                "month": 2,
-                "search_volume": 390
-              },
-              {
-                "year": 2026,
-                "month": 1,
-                "search_volume": 320
-              },
-              {
-                "year": 2025,
-                "month": 12,
-                "search_volume": 260
-              },
-              {
-                "year": 2025,
-                "month": 11,
-                "search_volume": 390
-              },
-              {
-                "year": 2025,
-                "month": 10,
-                "search_volume": 390
-              },
-              {
-                "year": 2025,
-                "month": 9,
-                "search_volume": 390
-              },
-              {
-                "year": 2025,
-                "month": 8,
-                "search_volume": 390
-              },
-              {
-                "year": 2025,
-                "month": 7,
-                "search_volume": 320
-              }
-            ],
-            "search_volume_trend": {
-              "monthly": 85,
-              "quarterly": 85,
-              "yearly": 125
-            },
-            "cpc": 3.48,
-            "paid_competition": 0.04,
-            "paid_competition_level": "LOW",
-            "keyword_difficulty": 15,
-            "search_intent": {
-              "main": "informational",
-              "secondary": []
-            },
-            "average_top_10": {
-              "backlinks": 2528.8,
-              "referring_domains": 914.8,
-              "main_domain_rank": 818.6
-            }
-          },
-          "opportunity_metrics": {
-            "search_volume_used": 390,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 1,
-            "keyword_difficulty_original": 15,
-            "keyword_difficulty_used": 15,
-            "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.85,
-            "opportunity_score": 85
-          }
-        },
-        {
-          "recommendation_id": "problem_demand_recommendation_02",
-          "recommendation_rank": 2,
-          "query_id": "problem_demand_052",
-          "territory": "problem_demand",
-          "query": "marketplace alerts",
-          "selection_reasoning": "This is a distinct and credible operator workflow query with enough demand to justify a separate page, and it aligns with Zavi's proactive tasks, Slack-native execution, and escalation workflows.",
-          "content_angle": "Cover the kinds of alerts marketplace operators need, when to trigger them, and how they fit into ongoing monitoring and escalation workflows.",
-          "product_connection": "Zavi can be positioned as the always-on assistant that runs scheduled checks, drafts updates, and routes operator escalations inside Slack.",
-          "confidence": "medium",
-          "opportunity_rank": 2,
-          "validation_reasoning": "This reflects an operator workflow around marketplace monitoring and notifications, which fits the company’s marketplace operations scope.",
-          "source_seed_keywords": [
-            "marketplace operations",
-            "marketplace growth strategy",
-            "marketplace seller onboarding",
-            "marketplace trust and safety",
-            "marketplace management",
-            "marketplace support operations"
-          ],
-          "discovery_rank": 52,
+          "discovery_rank": 281,
           "core_keyword": null,
           "detected_language": "en",
           "metrics": {
-            "search_volume": 110,
+            "search_volume": 590,
             "monthly_searches": [
               {
                 "year": 2026,
                 "month": 6,
-                "search_volume": 90
+                "search_volume": 1000
               },
               {
                 "year": 2026,
                 "month": 5,
-                "search_volume": 140
+                "search_volume": 880
               },
               {
                 "year": 2026,
                 "month": 4,
-                "search_volume": 140
+                "search_volume": 880
               },
               {
                 "year": 2026,
                 "month": 3,
-                "search_volume": 110
+                "search_volume": 590
               },
               {
                 "year": 2026,
                 "month": 2,
-                "search_volume": 90
+                "search_volume": 390
               },
               {
                 "year": 2026,
                 "month": 1,
-                "search_volume": 110
+                "search_volume": 590
               },
               {
                 "year": 2025,
                 "month": 12,
-                "search_volume": 70
+                "search_volume": 720
               },
               {
                 "year": 2025,
                 "month": 11,
-                "search_volume": 70
+                "search_volume": 390
               },
               {
                 "year": 2025,
                 "month": 10,
-                "search_volume": 90
+                "search_volume": 390
               },
               {
                 "year": 2025,
                 "month": 9,
-                "search_volume": 90
+                "search_volume": 480
               },
               {
                 "year": 2025,
                 "month": 8,
-                "search_volume": 90
+                "search_volume": 390
               },
               {
                 "year": 2025,
                 "month": 7,
-                "search_volume": 140
+                "search_volume": 390
               }
             ],
             "search_volume_trend": {
-              "monthly": -36,
-              "quarterly": -36,
-              "yearly": 0
+              "monthly": 14,
+              "quarterly": 14,
+              "yearly": 108
             },
-            "cpc": 8.9,
-            "paid_competition": 0.26,
+            "cpc": 2.82,
+            "paid_competition": 0.09,
             "paid_competition_level": "LOW",
-            "keyword_difficulty": 9,
+            "keyword_difficulty": 17,
             "search_intent": {
-              "main": "informational",
+              "main": "commercial",
               "secondary": []
             },
             "average_top_10": {
-              "backlinks": 201.4,
-              "referring_domains": 18.7,
-              "main_domain_rank": 662
+              "backlinks": 2689,
+              "referring_domains": 959.9,
+              "main_domain_rank": 601.1
             }
           },
           "opportunity_metrics": {
-            "search_volume_used": 110,
-            "maximum_territory_search_volume": 390,
-            "volume_score": 0.789,
-            "keyword_difficulty_original": 9,
-            "keyword_difficulty_used": 9,
+            "search_volume_used": 590,
+            "territory_p95_search_volume": 590,
+            "demand_score": 1,
+            "keyword_difficulty_original": 17,
+            "keyword_difficulty_used": 17,
             "keyword_difficulty_was_imputed": false,
-            "difficulty_score": 0.91,
-            "opportunity_score": 71.8
+            "attainability_score": 0.83,
+            "opportunity_score": 94.9
           }
         }
       ]
     },
     {
       "territory": "solution_demand",
-      "candidates_available": 0,
+      "candidates_available": 6,
       "target_recommendations": 2,
-      "recommendations_selected": 0,
-      "selection_status": "none",
-      "assessment": "No solution-demand queries were supplied, so zero selections are appropriate in this territory.",
-      "recommendations": []
+      "recommendations_selected": 2,
+      "assessment": "No supplied solution query cleanly matches Zavi's exact product category, so I selected the two strongest distinct commercial software opportunities as the fallback, with report automation as the clearest workflow fit and service marketplace software as the closest category-adjacent fit.",
+      "recommendations": [
+        {
+          "recommendation_id": "solution_demand_recommendation_01",
+          "recommendation_rank": 1,
+          "query_id": "solution_demand_070",
+          "territory": "solution_demand",
+          "query": "report automation",
+          "selection_reasoning": "This is the strongest solution-demand opportunity because it aligns directly with Zavi's scheduled reports and audits capability and has the best demand-attainability balance among the reporting variants.",
+          "content_angle": "Make the page about automating recurring reports, audits, and proactive check-ins rather than generic productivity automation.",
+          "product_connection": "Zavi can be presented as the Slack-native agent that runs scheduled reports, audits, and check-ins across connected tools.",
+          "confidence": "high",
+          "opportunity_rank": 1,
+          "validation_reasoning": "Automated reporting is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 70,
+          "core_keyword": "automated reports",
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 320,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 260
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 320
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 880
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 390
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 210
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 260
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 320
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 590
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 480
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 0,
+              "quarterly": -19,
+              "yearly": -64
+            },
+            "cpc": 16.27,
+            "paid_competition": 0.18,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 2,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 102.4,
+              "referring_domains": 36.9,
+              "main_domain_rank": 444.1
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 320,
+            "territory_p95_search_volume": 320,
+            "demand_score": 1,
+            "keyword_difficulty_original": 2,
+            "keyword_difficulty_used": 2,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.98,
+            "opportunity_score": 99.4
+          }
+        },
+        {
+          "recommendation_id": "solution_demand_recommendation_02",
+          "recommendation_rank": 2,
+          "query_id": "solution_demand_026",
+          "territory": "solution_demand",
+          "query": "service marketplace software",
+          "selection_reasoning": "This is the strongest remaining distinct solution opportunity after the reporting cluster, and it still fits Zavi's operator-focused marketplace positioning without overlapping the other selected page.",
+          "content_angle": "Frame the page around the software category and explain why service marketplaces need an operator platform for onboarding, disputes, and growth work.",
+          "product_connection": "Zavi can appear as the AI marketplace operations platform that helps service-marketplace teams automate recurring workflows inside their existing stack.",
+          "confidence": "low",
+          "opportunity_rank": 5,
+          "validation_reasoning": "Service marketplace software is still marketplace software, and Zavi is built for marketplace operators across that subtype.",
+          "source_seed_keywords": [
+            "marketplace operations software",
+            "ai marketplace automation",
+            "marketplace ops platform",
+            "trust and safety automation",
+            "marketplace growth automation",
+            "slack workflow automation"
+          ],
+          "discovery_rank": 26,
+          "core_keyword": null,
+          "detected_language": "en",
+          "metrics": {
+            "search_volume": 20,
+            "monthly_searches": [
+              {
+                "year": 2026,
+                "month": 6,
+                "search_volume": 20
+              },
+              {
+                "year": 2026,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 4,
+                "search_volume": 40
+              },
+              {
+                "year": 2026,
+                "month": 3,
+                "search_volume": 30
+              },
+              {
+                "year": 2026,
+                "month": 2,
+                "search_volume": 10
+              },
+              {
+                "year": 2026,
+                "month": 1,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 20
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -33,
+              "quarterly": -50,
+              "yearly": -33
+            },
+            "cpc": null,
+            "paid_competition": 0.06,
+            "paid_competition_level": "LOW",
+            "keyword_difficulty": 8,
+            "search_intent": {
+              "main": "commercial",
+              "secondary": []
+            },
+            "average_top_10": {
+              "backlinks": 3110.3,
+              "referring_domains": 139,
+              "main_domain_rank": 446.4
+            }
+          },
+          "opportunity_metrics": {
+            "search_volume_used": 20,
+            "territory_p95_search_volume": 320,
+            "demand_score": 0.5275,
+            "keyword_difficulty_original": 8,
+            "keyword_difficulty_used": 8,
+            "keyword_difficulty_was_imputed": false,
+            "attainability_score": 0.92,
+            "opportunity_score": 64.5
+          }
+        }
+      ]
     }
   ],
   "summary": {
-    "total_candidates_considered": 2,
-    "problem_candidates_considered": 2,
-    "solution_candidates_considered": 0,
-    "target_recommendations": 4,
-    "problem_recommendations_selected": 2,
-    "solution_recommendations_selected": 0,
-    "total_recommendations_selected": 2,
-    "target_fulfilled": false,
-    "insufficient_opportunity_territories": [
-      "solution_demand"
-    ]
+    "total_candidates_considered": 16,
+    "problem_candidates_considered": 10,
+    "solution_candidates_considered": 6,
+    "target_recommendations": 3,
+    "problem_recommendations_selected": 1,
+    "solution_recommendations_selected": 2,
+    "total_recommendations_selected": 3,
+    "target_fulfilled": true
   }
 }

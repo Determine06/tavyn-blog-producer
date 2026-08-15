@@ -1,58 +1,2113 @@
 {
-  "schema_version": "1.0.0",
-  "run_id": "55f7bfe9-f024-47c1-9227-d7e9f807a9da",
-  "generated_at": "2026-07-19T18:46:14.516Z",
+  "schema_version": "1.1.0",
+  "run_id": "42ea52dd-2cb8-415c-bd9f-38541b29c214",
+  "generated_at": "2026-08-15T00:47:40.532Z",
   "source_artifacts": [
     "query-validations.json",
     "keyword_metrics.json"
   ],
   "status": "complete",
   "warnings": [],
-  "website_url": "https://www.zaviagent.com/",
+  "website_url": "https://zaviagent.com/",
   "source_profile": {
     "company_name": "Zavi",
-    "product_category": "marketplace operations automation platform",
-    "primary_icp": "marketplace founders and operators"
+    "product_category": "AI marketplace operations platform",
+    "primary_icp": "Marketplace operators and founders"
   },
   "confirmed_queries": [
     {
-      "query_id": "problem_demand_030",
+      "query_id": "problem_demand_002",
       "territory": "problem_demand",
-      "query": "marketplace listings",
-      "validation_reasoning": "This reflects the core marketplace workflow of managing listings, which is part of the company’s marketplace operations scope.",
+      "query": "marketplace startups",
+      "validation_reasoning": "The query targets marketplace startups, and the company serves the founders and operators who build and run them.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
       "source_seed_keywords": [
-        "marketplace operations",
-        "marketplace growth strategy",
         "marketplace seller onboarding",
-        "marketplace trust and safety",
-        "marketplace management",
-        "marketplace support operations"
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
       ],
-      "discovery_rank": 30,
-      "core_keyword": "marketplace list",
+      "discovery_rank": 2,
+      "core_keyword": "marketplace startup",
       "detected_language": "en",
       "metrics": {
-        "search_volume": 390,
+        "search_volume": 50,
         "monthly_searches": [
           {
             "year": 2026,
             "month": 6,
-            "search_volume": 720
+            "search_volume": 40
           },
           {
             "year": 2026,
             "month": 5,
-            "search_volume": 390
+            "search_volume": 40
           },
           {
             "year": 2026,
             "month": 4,
-            "search_volume": 390
+            "search_volume": 40
           },
           {
             "year": 2026,
             "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -43
+        },
+        "cpc": 6.53,
+        "paid_competition": 0.23,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 1,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 310.1,
+          "referring_domains": 39.6,
+          "main_domain_rank": 450.1
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_010",
+      "territory": "problem_demand",
+      "query": "marketplace refunds",
+      "validation_reasoning": "The query addresses marketplace refund handling, which is part of the company's dispute and trust-and-safety workflow.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 10,
+      "core_keyword": "marketplace refund",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -50,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 31,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 65.7,
+          "referring_domains": 16,
+          "main_domain_rank": 642.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_039",
+      "territory": "problem_demand",
+      "query": "marketplace business model",
+      "validation_reasoning": "The query is a marketplace business-model topic that marketplace founders and operators search when evaluating how to run the business.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 39,
+      "core_keyword": "business model marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -22,
+          "quarterly": -22,
+          "yearly": -50
+        },
+        "cpc": 1.75,
+        "paid_competition": 0.15,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 1,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 49.3,
+          "referring_domains": 9.5,
+          "main_domain_rank": 396.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_040",
+      "territory": "problem_demand",
+      "query": "marketplace vs platform",
+      "validation_reasoning": "The query is a marketplace-versus-platform comparison that speaks to founders evaluating the marketplace business model.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 40,
+      "core_keyword": "platform vs marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 40
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -25,
+          "quarterly": -40,
+          "yearly": -57
+        },
+        "cpc": null,
+        "paid_competition": 0.05,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 3,
+          "referring_domains": 2.1,
+          "main_domain_rank": 499.4
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_041",
+      "territory": "problem_demand",
+      "query": "marketplace purchase protection",
+      "validation_reasoning": "The query addresses marketplace purchase protection, a close trust-and-safety outcome tied to the company's dispute and fraud handling.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 41,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 50,
+          "quarterly": 50,
+          "yearly": 200
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 21,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "transactional",
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 740.9,
+          "referring_domains": 30.3,
+          "main_domain_rank": 842
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_046",
+      "territory": "problem_demand",
+      "query": "ecommerce marketplace software",
+      "validation_reasoning": "The query seeks software for running an e-commerce marketplace, which is a broader parent category of the company's marketplace operations platform.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 46,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
             "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -50,
+          "yearly": -86
+        },
+        "cpc": null,
+        "paid_competition": 0.14,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 16,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 448.5,
+          "referring_domains": 22.4,
+          "main_domain_rank": 447.3
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_051",
+      "territory": "problem_demand",
+      "query": "ecommerce marketplace solution",
+      "validation_reasoning": "The query seeks an e-commerce marketplace solution, which is a broader software category that can include the company's marketplace operations platform.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 51,
+      "core_keyword": "marketplace ecommerce solution",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -75,
+          "yearly": -67
+        },
+        "cpc": null,
+        "paid_competition": 0.57,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 29,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1359.3,
+          "referring_domains": 317.2,
+          "main_domain_rank": 603
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_052",
+      "territory": "problem_demand",
+      "query": "ecommerce marketplace solutions",
+      "validation_reasoning": "The query seeks e-commerce marketplace solutions, which is a broader software category that can include the company's marketplace operations platform.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 52,
+      "core_keyword": "marketplace ecommerce solution",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -75,
+          "yearly": -67
+        },
+        "cpc": null,
+        "paid_competition": 0.57,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 8,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 745.2,
+          "referring_domains": 148.8,
+          "main_domain_rank": 482
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_053",
+      "territory": "problem_demand",
+      "query": "marketplace ecommerce solution",
+      "validation_reasoning": "The query seeks a marketplace ecommerce solution, which is a broad solution category aligned with the company's marketplace operations software.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 53,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -75,
+          "yearly": -67
+        },
+        "cpc": null,
+        "paid_competition": 0.57,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 34,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1481.5,
+          "referring_domains": 268.9,
+          "main_domain_rank": 627
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_054",
+      "territory": "problem_demand",
+      "query": "retailer vs marketplace",
+      "validation_reasoning": "The query is a retailer-versus-marketplace comparison that is relevant to marketplace founders and operators.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 54,
+      "core_keyword": "marketplace vs retailer",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_059",
+      "territory": "problem_demand",
+      "query": "ecommerce marketplace strategy",
+      "validation_reasoning": "The query asks about strategy for an e-commerce marketplace, an operator-level topic the product is built to improve.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 59,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -75,
+          "quarterly": -80,
+          "yearly": -75
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 3,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 10.7,
+          "referring_domains": 7.4,
+          "main_domain_rank": 434.7
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_074",
+      "territory": "problem_demand",
+      "query": "e commerce marketplace management",
+      "validation_reasoning": "The query asks about managing an e-commerce marketplace, which directly matches the company's marketplace operations workflow.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 74,
+      "core_keyword": "ecommerce marketplace management",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -50
+        },
+        "cpc": null,
+        "paid_competition": 0.12,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 780.6,
+          "referring_domains": 150.3,
+          "main_domain_rank": 419.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_075",
+      "territory": "problem_demand",
+      "query": "e-commerce vs marketplace",
+      "validation_reasoning": "The query is a conceptual comparison for marketplace founders and operators, which naturally bridges to marketplace operations content.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 75,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -33,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.03,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "informational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 3.1,
+          "referring_domains": 2.8,
+          "main_domain_rank": 591.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_083",
+      "territory": "problem_demand",
+      "query": "two sided marketplace business model",
+      "validation_reasoning": "The query is about the two-sided marketplace business model, a foundational concept for the company's target operators and founders.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 83,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -50,
+          "quarterly": 0,
+          "yearly": -75
+        },
+        "cpc": null,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 62.9,
+          "referring_domains": 28.6,
+          "main_domain_rank": 529.1
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_194",
+      "territory": "problem_demand",
+      "query": "supplier onboarding tools",
+      "validation_reasoning": "The query is about supplier onboarding tools, which directly matches the company's supply onboarding and activation workflow.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 194,
+      "core_keyword": "supplier onboarding tool",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": 100,
+          "yearly": -71
+        },
+        "cpc": 140.15,
+        "paid_competition": 0.35,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 37.4,
+          "referring_domains": 19.2,
+          "main_domain_rank": 334.4
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_196",
+      "territory": "problem_demand",
+      "query": "supplier onboarding tool",
+      "validation_reasoning": "The query is about a supplier onboarding tool, which directly matches the company's supply onboarding and activation workflow.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 196,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": 100,
+          "yearly": -71
+        },
+        "cpc": 140.15,
+        "paid_competition": 0.35,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 33.2,
+          "referring_domains": 19.1,
+          "main_domain_rank": 318.7
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_199",
+      "territory": "problem_demand",
+      "query": "marketplace tools",
+      "validation_reasoning": "The query asks for marketplace tools, which is the company's core software category for marketplace operators.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 199,
+      "core_keyword": "tooling marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 210,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 210
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -34,
+          "quarterly": 0,
+          "yearly": -19
+        },
+        "cpc": 0.88,
+        "paid_competition": 0.63,
+        "paid_competition_level": "MEDIUM",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 1.4,
+          "referring_domains": 1,
+          "main_domain_rank": 1000
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_241",
+      "territory": "problem_demand",
+      "query": "marketplace blueprint",
+      "validation_reasoning": "The query asks for a marketplace blueprint, a manual planning artifact that can naturally bridge to the company's marketplace build and run workflows.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_problem_demand",
+      "source_seed_keywords": [
+        "marketplace seller onboarding",
+        "marketplace supply activation",
+        "marketplace dispute handling",
+        "marketplace fraud review",
+        "marketplace growth operations",
+        "marketplace funnel leaks"
+      ],
+      "discovery_rank": 241,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -81,
+          "quarterly": 33,
+          "yearly": 100
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 8,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 36.9,
+          "referring_domains": 11.7,
+          "main_domain_rank": 720
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_251",
+      "territory": "problem_demand",
+      "query": "marketplace business",
+      "validation_reasoning": "The query targets marketplace business broadly, which naturally bridges to the company's marketplace operations platform for founders and operators.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 251,
+      "core_keyword": "business-to-business marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 70,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -29,
+          "quarterly": -29,
+          "yearly": -29
+        },
+        "cpc": null,
+        "paid_competition": 0.24,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 11,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 12916.1,
+          "referring_domains": 195.2,
+          "main_domain_rank": 576.9
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_273",
+      "territory": "problem_demand",
+      "query": "saturated marketplace",
+      "validation_reasoning": "The query describes a saturated marketplace growth problem that Zavi’s growth experiments and funnel-fix workflows can address.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 273,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 1600,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 1300
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 1600
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 1900
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 1900
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 1600
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 1300
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -32,
+          "quarterly": -45,
+          "yearly": -32
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 11,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 51.5,
+          "referring_domains": 33.9,
+          "main_domain_rank": 538.9
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_281",
+      "territory": "problem_demand",
+      "query": "create marketplace",
+      "validation_reasoning": "The query asks how to create a marketplace, which matches Zavi’s marketplace build assistance.",
+      "relevance_scope": "direct",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 281,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 590,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 1000
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 590
           },
           {
             "year": 2026,
@@ -62,12 +2117,12 @@
           {
             "year": 2026,
             "month": 1,
-            "search_volume": 320
+            "search_volume": 590
           },
           {
             "year": 2025,
             "month": 12,
-            "search_volume": 260
+            "search_volume": 720
           },
           {
             "year": 2025,
@@ -82,7 +2137,7 @@
           {
             "year": 2025,
             "month": 9,
-            "search_volume": 390
+            "search_volume": 480
           },
           {
             "year": 2025,
@@ -92,43 +2147,45 @@
           {
             "year": 2025,
             "month": 7,
-            "search_volume": 320
+            "search_volume": 390
           }
         ],
         "search_volume_trend": {
-          "monthly": 85,
-          "quarterly": 85,
-          "yearly": 125
+          "monthly": 14,
+          "quarterly": 14,
+          "yearly": 108
         },
-        "cpc": 3.48,
-        "paid_competition": 0.04,
+        "cpc": 2.82,
+        "paid_competition": 0.09,
         "paid_competition_level": "LOW",
-        "keyword_difficulty": 15,
+        "keyword_difficulty": 17,
         "search_intent": {
-          "main": "informational",
+          "main": "commercial",
           "secondary": []
         },
         "average_top_10": {
-          "backlinks": 2528.8,
-          "referring_domains": 914.8,
-          "main_domain_rank": 818.6
+          "backlinks": 2689,
+          "referring_domains": 959.9,
+          "main_domain_rank": 601.1
         }
       }
     },
     {
-      "query_id": "problem_demand_052",
+      "query_id": "problem_demand_289",
       "territory": "problem_demand",
       "query": "marketplace alerts",
-      "validation_reasoning": "This reflects an operator workflow around marketplace monitoring and notifications, which fits the company’s marketplace operations scope.",
+      "validation_reasoning": "Marketplace alerts are a natural operator workflow for proactive check-ins and monitoring that Zavi supports.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
       "source_seed_keywords": [
-        "marketplace operations",
-        "marketplace growth strategy",
-        "marketplace seller onboarding",
-        "marketplace trust and safety",
-        "marketplace management",
-        "marketplace support operations"
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
       ],
-      "discovery_rank": 52,
+      "discovery_rank": 289,
       "core_keyword": null,
       "detected_language": "en",
       "metrics": {
@@ -214,13 +2271,2892 @@
           "main_domain_rank": 662
         }
       }
+    },
+    {
+      "query_id": "problem_demand_291",
+      "territory": "problem_demand",
+      "query": "marketplace businesses",
+      "validation_reasoning": "The query targets marketplace businesses, which are the company’s ICP and can naturally be written about in a marketplace ops context.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 291,
+      "core_keyword": "business-to-business marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 320,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -18,
+          "quarterly": -33,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.15,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 44,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 4432.6,
+          "referring_domains": 617.7,
+          "main_domain_rank": 500.7
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_304",
+      "territory": "problem_demand",
+      "query": "marketplace examples",
+      "validation_reasoning": "Marketplace examples are legitimate early-funnel education for marketplace founders and operators, which naturally bridges to Zavi’s core category.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 304,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 720,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 720
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 1000
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -66,
+          "quarterly": -85,
+          "yearly": -48
+        },
+        "cpc": 3.7,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 6,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 81.2,
+          "referring_domains": 26.9,
+          "main_domain_rank": 475.4
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_305",
+      "territory": "problem_demand",
+      "query": "marketplace benefits",
+      "validation_reasoning": "Marketplace benefits is a credible early-funnel topic for marketplace founders and operators, which can bridge to Zavi’s marketplace operations focus.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 305,
+      "core_keyword": "benefits marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 170,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 21,
+          "quarterly": 0,
+          "yearly": 55
+        },
+        "cpc": 9.67,
+        "paid_competition": 0.72,
+        "paid_competition_level": "HIGH",
+        "keyword_difficulty": 63,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 74481.2,
+          "referring_domains": 2663.7,
+          "main_domain_rank": 504.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_309",
+      "territory": "problem_demand",
+      "query": "marketplace companies",
+      "validation_reasoning": "Marketplace companies is an ICP-adjacent topic about the businesses Zavi serves and can naturally connect to marketplace operations.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 309,
+      "core_keyword": "company marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 70,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 110
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -55
+        },
+        "cpc": 9.47,
+        "paid_competition": 0.13,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 19,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 4131.4,
+          "referring_domains": 534.3,
+          "main_domain_rank": 454.2
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_317",
+      "territory": "problem_demand",
+      "query": "grow marketplace",
+      "validation_reasoning": "The query asks how to grow a marketplace, which matches Zavi’s growth and retention workflows.",
+      "relevance_scope": "direct",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 317,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 210,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -18,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.04,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 2915.5,
+          "referring_domains": 20.1,
+          "main_domain_rank": 304.8
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_347",
+      "territory": "problem_demand",
+      "query": "broken marketplace",
+      "validation_reasoning": "A broken marketplace is a core operational problem state that Zavi’s build, growth, and support workflows can help fix.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 347,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": null
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": null,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": null
+      }
+    },
+    {
+      "query_id": "problem_demand_364",
+      "territory": "problem_demand",
+      "query": "marketplace advantages",
+      "validation_reasoning": "Marketplace advantages is an early-funnel educational topic for marketplace founders and operators that naturally bridges to Zavi’s category.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 364,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 170,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 170
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -50,
+          "quarterly": -36,
+          "yearly": -50
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 5.1,
+          "referring_domains": 3.4,
+          "main_domain_rank": 462.8
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_375",
+      "territory": "problem_demand",
+      "query": "marketplace launch",
+      "validation_reasoning": "The query asks about launching a marketplace, which is directly aligned with Zavi’s build and growth lifecycle coverage.",
+      "relevance_scope": "direct",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 375,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 110,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 110
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -18,
+          "quarterly": -18,
+          "yearly": -57
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial",
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 15.8,
+          "referring_domains": 11,
+          "main_domain_rank": 540.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_385",
+      "territory": "problem_demand",
+      "query": "marketplace forms",
+      "validation_reasoning": "Marketplace forms can map to seller onboarding and other manual form workflows that Zavi can replace or automate.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 385,
+      "core_keyword": "marketplace form",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 210
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -20,
+          "quarterly": -76,
+          "yearly": -20
+        },
+        "cpc": null,
+        "paid_competition": 0.07,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 19,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 67178.1,
+          "referring_domains": 2367.4,
+          "main_domain_rank": 500.7
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_388",
+      "territory": "problem_demand",
+      "query": "develop marketplace",
+      "validation_reasoning": "The query asks how to develop a marketplace, which matches Zavi’s marketplace build assistance.",
+      "relevance_scope": "direct",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 388,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 90,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -36
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 16,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 1806.4,
+          "referring_domains": 141.8,
+          "main_domain_rank": 536.8
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_390",
+      "territory": "problem_demand",
+      "query": "marketplace message",
+      "validation_reasoning": "Marketplace message can map to operator communications and draftable updates, which Zavi supports in marketplace workflows.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 390,
+      "core_keyword": "marketplace messages",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 70,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -44,
+          "quarterly": 0,
+          "yearly": -29
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 162.4,
+          "referring_domains": 60.8,
+          "main_domain_rank": 859.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_407",
+      "territory": "problem_demand",
+      "query": "crowded marketplace",
+      "validation_reasoning": "A crowded marketplace is a core growth problem state that Zavi’s retention and funnel-fix workflows can help address.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 407,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 70,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 100,
+          "quarterly": 180,
+          "yearly": 367
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 3,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 6.7,
+          "referring_domains": 5.4,
+          "main_domain_rank": 615.7
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_420",
+      "territory": "problem_demand",
+      "query": "marketplace problem",
+      "validation_reasoning": "Marketplace problem names a core operator pain point that Zavi’s marketplace operations platform is built to solve.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 420,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -40,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 7,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 10.4,
+          "referring_domains": 8.4,
+          "main_domain_rank": 849.3
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_422",
+      "territory": "problem_demand",
+      "query": "marketplace drafts",
+      "validation_reasoning": "Marketplace drafts map to the drafting of updates, tickets, and docs, which Zavi explicitly supports.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 422,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 40
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 33,
+          "quarterly": 33,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 0.3,
+          "referring_domains": 0.3,
+          "main_domain_rank": 743.6
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_425",
+      "territory": "problem_demand",
+      "query": "marketplace dynamics",
+      "validation_reasoning": "Marketplace dynamics is a credible educational topic for marketplace operators and founders that can naturally bridge to Zavi.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 425,
+      "core_keyword": "dynamics marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 40
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -60,
+          "quarterly": -50,
+          "yearly": -60
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 52.1,
+          "referring_domains": 35.4,
+          "main_domain_rank": 565
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_428",
+      "territory": "problem_demand",
+      "query": "marketplace infrastructure",
+      "validation_reasoning": "Marketplace infrastructure is an operator-adjacent topic about the systems that support a marketplace, which Zavi can help run.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 428,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 50,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -40,
+          "yearly": -25
+        },
+        "cpc": null,
+        "paid_competition": 0.01,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 3,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 153.5,
+          "referring_domains": 58.7,
+          "main_domain_rank": 595.4
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_437",
+      "territory": "problem_demand",
+      "query": "market operator",
+      "validation_reasoning": "Market operator names the operator role Zavi directly serves in its marketplace operations category.",
+      "relevance_scope": "direct",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 437,
+      "core_keyword": "operation market",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.03,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 0.1,
+          "referring_domains": 0.1,
+          "main_domain_rank": 418.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_444",
+      "territory": "problem_demand",
+      "query": "marketplace evolution",
+      "validation_reasoning": "Marketplace evolution is a credible early-funnel topic for marketplace operators and founders that can bridge to Zavi’s lifecycle framing.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 444,
+      "core_keyword": "evolution marketplace",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -60,
+          "quarterly": -50,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.02,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 4.4,
+          "referring_domains": 2.6,
+          "main_domain_rank": 353.9
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_449",
+      "territory": "problem_demand",
+      "query": "marketplace issues",
+      "validation_reasoning": "Marketplace issues names a core operator problem space that Zavi’s marketplace ops workflows are built to handle.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 449,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 40,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 133,
+          "quarterly": 40,
+          "yearly": 75
+        },
+        "cpc": null,
+        "paid_competition": 0.04,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 14,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 430.4,
+          "referring_domains": 220.3,
+          "main_domain_rank": 849.2
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_469",
+      "territory": "problem_demand",
+      "query": "marketplace fails",
+      "validation_reasoning": "Marketplace fails names a core operational failure state that Zavi’s build, growth, and support workflows can help prevent or fix.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 469,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -20,
+          "quarterly": 33,
+          "yearly": 33
+        },
+        "cpc": null,
+        "paid_competition": 0,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 0,
+        "search_intent": {
+          "main": "informational",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 0.4,
+          "referring_domains": 0.2,
+          "main_domain_rank": 716.2
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_472",
+      "territory": "problem_demand",
+      "query": "marketplace operators",
+      "validation_reasoning": "Marketplace operators are the company’s primary ICP and direct users of the product.",
+      "relevance_scope": "direct",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 472,
+      "core_keyword": "marketplace operations",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 30,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 0
+        },
+        "cpc": null,
+        "paid_competition": 0.03,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "informational",
+          "secondary": [
+            "navigational",
+            "commercial"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 2754.2,
+          "referring_domains": 203.4,
+          "main_domain_rank": 530.5
+        }
+      }
+    },
+    {
+      "query_id": "problem_demand_492",
+      "territory": "problem_demand",
+      "query": "marketplace developers",
+      "validation_reasoning": "Marketplace developers are meaningful collaborators in the marketplace-building workflow that Zavi supports through build and engineering tasks.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "adjacent_problem_demand",
+      "source_seed_keywords": [
+        "marketplace retention",
+        "marketplace repeat business",
+        "marketplace acquisition efficiency",
+        "marketplace conversion drop-offs",
+        "marketplace operator updates",
+        "marketplace growth bottlenecks"
+      ],
+      "discovery_rank": 492,
+      "core_keyword": "marketplace developments",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -50,
+          "quarterly": -50,
+          "yearly": -50
+        },
+        "cpc": null,
+        "paid_competition": 0.24,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 8,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": [
+            "navigational"
+          ]
+        },
+        "average_top_10": {
+          "backlinks": 2605.4,
+          "referring_domains": 151.1,
+          "main_domain_rank": 400.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_025",
+      "territory": "solution_demand",
+      "query": "services marketplace software",
+      "validation_reasoning": "Service marketplace software is a marketplace software subtype, and Zavi directly serves marketplace operators with build, grow, and run workflows.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_solution_demand",
+      "source_seed_keywords": [
+        "marketplace operations software",
+        "ai marketplace automation",
+        "marketplace ops platform",
+        "trust and safety automation",
+        "marketplace growth automation",
+        "slack workflow automation"
+      ],
+      "discovery_rank": 25,
+      "core_keyword": "service marketplace software",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -50,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 11,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 3118.1,
+          "referring_domains": 142.8,
+          "main_domain_rank": 412.9
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_026",
+      "territory": "solution_demand",
+      "query": "service marketplace software",
+      "validation_reasoning": "Service marketplace software is still marketplace software, and Zavi is built for marketplace operators across that subtype.",
+      "relevance_scope": "direct",
+      "discovery_group": "core_solution_demand",
+      "source_seed_keywords": [
+        "marketplace operations software",
+        "ai marketplace automation",
+        "marketplace ops platform",
+        "trust and safety automation",
+        "marketplace growth automation",
+        "slack workflow automation"
+      ],
+      "discovery_rank": 26,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 20,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -50,
+          "yearly": -33
+        },
+        "cpc": null,
+        "paid_competition": 0.06,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 8,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 3110.3,
+          "referring_domains": 139,
+          "main_domain_rank": 446.4
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_070",
+      "territory": "solution_demand",
+      "query": "report automation",
+      "validation_reasoning": "Automated reporting is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_solution_demand",
+      "source_seed_keywords": [
+        "marketplace operations software",
+        "ai marketplace automation",
+        "marketplace ops platform",
+        "trust and safety automation",
+        "marketplace growth automation",
+        "slack workflow automation"
+      ],
+      "discovery_rank": 70,
+      "core_keyword": "automated reports",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 320,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 260
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 320
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 880
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 390
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 480
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -19,
+          "yearly": -64
+        },
+        "cpc": 16.27,
+        "paid_competition": 0.18,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 102.4,
+          "referring_domains": 36.9,
+          "main_domain_rank": 444.1
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_142",
+      "territory": "solution_demand",
+      "query": "report automation tools",
+      "validation_reasoning": "Reporting automation is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_solution_demand",
+      "source_seed_keywords": [
+        "marketplace operations software",
+        "ai marketplace automation",
+        "marketplace ops platform",
+        "trust and safety automation",
+        "marketplace growth automation",
+        "slack workflow automation"
+      ],
+      "discovery_rank": 142,
+      "core_keyword": "reporting automation tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 170,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 27,
+          "quarterly": 27,
+          "yearly": -76
+        },
+        "cpc": 11.79,
+        "paid_competition": 0.08,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 13,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 108.9,
+          "referring_domains": 40,
+          "main_domain_rank": 419.7
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_143",
+      "territory": "solution_demand",
+      "query": "automation reporting tools",
+      "validation_reasoning": "Reporting automation is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_solution_demand",
+      "source_seed_keywords": [
+        "marketplace operations software",
+        "ai marketplace automation",
+        "marketplace ops platform",
+        "trust and safety automation",
+        "marketplace growth automation",
+        "slack workflow automation"
+      ],
+      "discovery_rank": 143,
+      "core_keyword": "reporting automation tools",
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 170,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 27,
+          "quarterly": 27,
+          "yearly": -76
+        },
+        "cpc": 11.79,
+        "paid_competition": 0.08,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 7,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 531.2,
+          "referring_domains": 86.6,
+          "main_domain_rank": 411.5
+        }
+      }
+    },
+    {
+      "query_id": "solution_demand_144",
+      "territory": "solution_demand",
+      "query": "reporting automation tools",
+      "validation_reasoning": "Reporting automation is an explicit scheduled-task workflow Zavi supports for marketplace operators.",
+      "relevance_scope": "adjacent",
+      "discovery_group": "core_solution_demand",
+      "source_seed_keywords": [
+        "marketplace operations software",
+        "ai marketplace automation",
+        "marketplace ops platform",
+        "trust and safety automation",
+        "marketplace growth automation",
+        "slack workflow automation"
+      ],
+      "discovery_rank": 144,
+      "core_keyword": null,
+      "detected_language": "en",
+      "metrics": {
+        "search_volume": 170,
+        "monthly_searches": [
+          {
+            "year": 2026,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2026,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2026,
+            "month": 3,
+            "search_volume": 480
+          },
+          {
+            "year": 2026,
+            "month": 2,
+            "search_volume": 170
+          },
+          {
+            "year": 2026,
+            "month": 1,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 27,
+          "quarterly": 27,
+          "yearly": -76
+        },
+        "cpc": 11.79,
+        "paid_competition": 0.08,
+        "paid_competition_level": "LOW",
+        "keyword_difficulty": 2,
+        "search_intent": {
+          "main": "commercial",
+          "secondary": []
+        },
+        "average_top_10": {
+          "backlinks": 21.6,
+          "referring_domains": 8.9,
+          "main_domain_rank": 478.7
+        }
+      }
     }
   ],
   "summary": {
-    "total_queries_evaluated": 200,
-    "total_queries_confirmed": 2,
-    "total_queries_rejected": 198,
-    "problem_queries_confirmed": 2,
-    "solution_queries_confirmed": 0
+    "total_queries_evaluated": 996,
+    "total_queries_confirmed": 50,
+    "total_queries_rejected": 946,
+    "problem_queries_confirmed": 44,
+    "solution_queries_confirmed": 6,
+    "direct_queries_confirmed": 14,
+    "adjacent_queries_confirmed": 36,
+    "irrelevant_queries_rejected": 946
   }
 }
